@@ -1,14 +1,28 @@
 [tool.poetry]
 name = "n2t"
-version = "0.1.0"
+version = "0.1.4"
 description = "Implementation of N2T in python"
 authors = ["datadavev <605409+datadavev@users.noreply.github.com>"]
 license = "MIT"
+packages = [
+	{ include = "lib_n2t" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+click = "^8.0.3"
+PyYAML = "^6.0"
+click-logging = "^1.0.1"
+sqlmodel = "^0.0.4"
+htrace = "^0.2.5"
+fastapi = "^0.70.0"
+uvicorn = "^0.15.0"
+jdcal = "^1.4.1"
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+n2t = 'scripts.n2t_cli:main'
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
