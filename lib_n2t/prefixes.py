@@ -46,11 +46,14 @@ def _cleanEntry(e):
 
 
 def fromYAML(fnsrc: str, fndest: str = None):
+    #if fndest is None:
+    #    _base, _ext = os.path.splitext(fnsrc)
+    #    fndest = f"{_base}.sqlite"
+    #    if os.path.exists(fndest):
+    #        raise ValueError("Target %s exists. Can not overwrite.")
     if fndest is None:
-        _base, _ext = os.path.splitext(fnsrc)
-        fndest = f"{_base}.sqlite"
-        if os.path.exists(fndest):
-            raise ValueError("Target %s exists. Can not overwrite.")
+        L.warning("Creating temporary in memory database.")
+        fndest = ":memory:"
     _data = {}
     L.info("Loading YAML source...")
     with open(fnsrc, "rb") as stream:
@@ -68,12 +71,16 @@ def fromYAML(fnsrc: str, fndest: str = None):
             session.add(lib_n2t.models.Prefix(**_entry))
             session.commit()
     L.info("Database load complete.")
+    return engine
 
 
 class PrefixList:
-    def __init__(self, cnstr):
+    def __init__(self, cnstr=None, engine=None):
         self.cnstr = cnstr
-        self.db = self.getDBConnection()
+        if engine is not None:
+            self.db = engine
+        else:
+            self.db = self.getDBConnection()
 
     def getDBConnection(self):
         engine = sqlmodel.create_engine(self.cnstr)

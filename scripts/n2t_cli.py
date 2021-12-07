@@ -115,8 +115,14 @@ def main(ctx, source):
     ctx.obj["source"] = source
     _base, _ext = os.path.splitext(source)
     if _ext.lower() == ".sqlite":
-        ctx.obj["cnstr"] = f"sqlite:///{source}"
-        ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(ctx.obj["cnstr"])
+        ctx.obj["cnstr"] = f"sqlite://{source}"
+        ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(cnstr=ctx.obj["cnstr"])
+    elif _ext.lower() in [".yaml", ".yml"]:
+        ctx.obj["cnstr"] = None
+        engine = lib_n2t.prefixes.fromYAML(ctx.obj["source"])
+        ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(engine=engine)
+
+
 
 @main.command()
 @click.pass_context
