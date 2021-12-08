@@ -1,5 +1,4 @@
 name: "Deploy to Deta"
-description: "GitHub Action to deploy current repo to a Deta Micro"
 on:
   push:
   workflow_dispatch: 
