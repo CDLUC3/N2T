@@ -39,5 +39,8 @@ cd micron2t
 uvicorn main:app
 ```
 
+Deployment to Deta is through a GH Action. Available as a Deta micro at https://rslv.deta.dev
+
+
 
 [^1]: As of 2021-12-07
