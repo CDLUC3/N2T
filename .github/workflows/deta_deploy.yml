@@ -1,5 +1,3 @@
-# Deploy micron2t to deta
-# Borrowed from https://github.com/BogDAAAMN/deta-deploy-action/blob/main/action.yml
 name: "Deploy to Deta"
 description: "GitHub Action to deploy current repo to a Deta Micro"
 on:
