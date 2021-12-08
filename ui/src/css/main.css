@@ -1,0 +1,101 @@
+/* https://simplecss.org/ */
+/*@import 'https://cdn.simplecss.org/simple.min.css';
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:200,500");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:200,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons");
+
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+
+:root {
+    --bg: #ffffff;
+    --accent-bg: #fefeff;
+    --base-fontsize: 14px;
+    --mono-font: 'Roboto Mono', Consolas, monospace;
+    --text-font: 'Roboto Condensed', sans-serif;
+    --max-body-width: 95%;
+    --color: #333333;
+    --record-font-size: var(--base-fontsize, 1rem);
+}
+
+body {
+    font-size: var(--base-fontsize, 14px);
+    max-width: var(--max-body-width, 95%);
+    font-family: var(--mono-font, 'Roboto Mono', Consolas, monospace);
+    font-weight: 300;
+    color: var(--color, #333333);
+}
+em {
+    background: #ffffb8;
+    font-style: normal;
+}
+.spacer {
+    width: 1rem;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1.0rem;
+}
+
+header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+dl {    
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 10rem;
+    text-align: left;    
+}
+
+dd {
+    margin: 0 0 0 11rem;
+    padding: 0 0 0.5rem 0;
+}
+
+
+code, kbd, pre, pre span, samp {
+    font-family: var(--mono-font, monospace);
+    font-size: 0.8rem; /* make mono and body text more similar in appearance*/
+}
+
+table {
+    font-size: var(--record-font-size, 1rem);
+}
+
+input {
+    font-family: var(--mono-font, monospace);
+}
+
+details {
+    border: none;
+}
+
+.data {
+    font-family: var(--mono-font);
+}
+
+.query {
+   width: 95%;
+}
