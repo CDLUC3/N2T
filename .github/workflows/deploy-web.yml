@@ -26,12 +26,16 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm i
-    - run: npm run deploy --if-present
+    - run: |
+        cd ./ui
+        npm i
+    - run: |
+        cd ./ui
+        npm run deploy --if-present
     #- run: npm test
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.ref == 'refs/heads/main' }}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        publish_dir: ./ui/dist
