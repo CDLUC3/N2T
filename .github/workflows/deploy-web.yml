@@ -27,12 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: 'ui/package-lock.json'
-    - run: |
-        cd ./ui
-        npm i
-    - run: |
-        cd ./ui
-        npm run deploy --if-present
+    - run: npm i
+    - run: npm run deploy --if-present
     #- run: npm test
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
