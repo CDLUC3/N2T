@@ -6,25 +6,29 @@ on:
 
 jobs:
   deploy:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v1
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install Poetry
-      uses: snok/install-poetry@v1.1.2
-    - name: Install Dependencies
-      run: |
-        poetry install
-    - name: Update rules
-      run: |
-        curl "https://n2t.net/e/n2t_full_prefixes.yaml" > "/tmp/prefixes.yaml"; \
-        poetry run n2t /tmp/prefixes.yaml topython > micron2t/data/__init__.py
-    - uses: BogDAAAMN/deta-deploy-action@v1.0.1
-      with:
-        deta-access-token: ${{ secrets.DETA_TOKEN }}
-        deta-name: 'micron2t'
-        deta-project-dir: './micron2t'
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Poetry
+        uses: snok/install-poetry@v1.1.2
+      - name: Install Dependencies
+        run: |
+          poetry install
+      - name: Update rules
+        run: |
+          curl "https://n2t.net/e/n2t_full_prefixes.yaml" > "/tmp/prefixes.yaml"; \
+          poetry run n2t /tmp/prefixes.yaml topython > micron2t/data/__init__.py
+      - uses: BogDAAAMN/deta-deploy-action@v1.0.1
+        with:
+          deta-access-token: ${{ secrets.DETA_TOKEN }}
+          deta-name: 'micron2t'
+          deta-project-dir: './micron2t'
     
