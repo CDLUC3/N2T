@@ -5,7 +5,7 @@ This is a reimplementation of N2T using python.
 The current[^1] status is EXPERIMENTAL, INCOMPLETE, and likely to change significantly.
 
 N2T is an identifier resolver / redirection service that supports many identifier 
-schemes. Visit the [N2T site])https://n2t.net/e/about.html_ for more information 
+schemes. Visit the [N2T site](https://n2t.net/e/about.html) for more information 
 about the current production system.
 
 ## Components
