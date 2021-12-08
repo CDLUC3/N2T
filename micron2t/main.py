@@ -2,12 +2,21 @@ import re
 import json
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import RedirectResponse
+from fastapi.middleware.cors import CORSMiddleware
 import data
 
 app = FastAPI(
     title="Micro N2T",
     version=data._VERSION_,
-)  
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*", ],
+    allow_credentials=True,
+    allow_methods=["GET","HEAD"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 async def read_root():
