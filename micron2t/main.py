@@ -49,12 +49,17 @@ async def db_resolve_prefix(request:Request, identifier: str=None):
     val = None
     try:
         pfx,val = identifier.split(":",1)
-    except ValueError as e:
+    except ValueError as e:        
         # Perhaps we received a string with no colon, see if it matches a prefix
-        if not identifier in data.PREFIXES:
-            return HTTPException(status_code=500, detail="Expected prefix:value")
+        #if not identifier in data.PREFIXES:
+        #    return HTTPException(status_code=500, detail="Expected prefix:value")
+        pass
+    if len(pfx) < 1:
+        return HTTPException(status_code=404, detail="No prefix provided")
     sql = "SELECT * FROM prefix WHERE id=:_id"
     resolver = await database.fetch_one(query=sql, values={"_id": pfx})
+    if resolver is None:
+        return HTTPException(status_code=404, detail=f"Unknown prefix {pfx}")
     return resolver
 
 ''' to be removed
