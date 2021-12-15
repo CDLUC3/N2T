@@ -36,7 +36,7 @@ Running micron2t:
 wget https://n2t.net/e/n2t_full_prefixes.yaml 
 n2t n2t_full_prefixes.yaml topython > micron2t/data/__init__.py
 cd micron2t
-uvicorn main:app
+uvicorn --reload main:app
 ```
 
 Deployment to Deta is through a GH Action. Available as a Deta micro at https://rslv.deta.dev

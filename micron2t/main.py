@@ -1,13 +1,17 @@
 import re
+import os
 import json
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
-import data
+from databases import Database
+from typing import Iterable
+
+database = Database(f"sqlite:///data/prefixes.sqlite")
 
 app = FastAPI(
     title="Micro N2T",
-    version=data._VERSION_,
+    version="0.1.5",
 )
 
 app.add_middleware(
@@ -18,14 +22,50 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.on_event("startup")
+async def database_connect():
+    await database.connect()
+
+@app.on_event("shutdown")
+async def database_disconnect():
+    await database.disconnect()
+
 @app.get("/")
+async def db_read_keys() -> Iterable[str]:
+    def _getkey(row):
+        return row['id']
+
+    sql = "SELECT id FROM prefix WHERE ptype = 'scheme' ORDER BY id"
+    return [
+        _getkey(row) async for row in database.iterate(query=sql)
+    ]
+
+@app.get("/{identifier:path}")
+async def db_resolve_prefix(request:Request, identifier: str=None):
+    if identifier is None or len(identifier) < 1:
+        # should never reach this, but just in case...
+        return RedirectResponse("/docs")
+    pfx = identifier
+    val = None
+    try:
+        pfx,val = identifier.split(":",1)
+    except ValueError as e:
+        # Perhaps we received a string with no colon, see if it matches a prefix
+        if not identifier in data.PREFIXES:
+            return HTTPException(status_code=500, detail="Expected prefix:value")
+    sql = "SELECT * FROM prefix WHERE id=:_id"
+    resolver = await database.fetch_one(query=sql, values={"_id": pfx})
+    return resolver
+
+''' to be removed
+@app.get("/_I/")
 async def read_root():
     res = list(data.PREFIXES.keys())
     res.sort()
     return res
 
 
-@app.get("/{identifier:path}")
+@app.get("/_I/{identifier:path}")
 async def resolve_prefix(request:Request, identifier: str = None):
     if identifier is None or len(identifier) < 1:
         # should never reach this, but just in case...
@@ -71,4 +111,4 @@ async def resolve_prefix(request:Request, identifier: str = None):
         return RedirectResponse(_redirect.format(id=val))
     raise HTTPException(status_code=404, detail=f"Invalid identifier value for {pfx}: {val}")
 
-
+'''
