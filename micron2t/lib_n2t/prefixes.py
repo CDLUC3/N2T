@@ -45,6 +45,19 @@ def _cleanEntry(e):
     return res
 
 
+def _adjustRedirectProtocol(r):
+    _protocols = ["http", "https", "ftp", "ftps", "sftp", ]
+    try:
+        a,b = r.split(":",1)
+        a = a.lower()
+        if not a in _protocols:
+            return f"http://{r.lstrip('/')}"
+        return r
+    except ValueError as e:
+        pass
+    return f"http://{r.lstrip('/')}"
+
+
 def fromYAML(fnsrc: str, fndest: str = None):
     #if fndest is None:
     #    _base, _ext = os.path.splitext(fnsrc)
@@ -68,6 +81,14 @@ def fromYAML(fnsrc: str, fndest: str = None):
             _entry = {"id": k}
             for field in values.keys():
                 _entry[_field_map.get(field, field)] = values[field]
+            _redirect = _entry.get("redirect", None)
+            if _redirect is not None:
+                _redirect = _redirect.replace("$id", "{id}")
+                _redirect = _redirect.replace("'", "%27")
+                _redirect = _redirect.replace('"', "%22")
+                _redirect = _adjustRedirectProtocol(_redirect)
+                _entry["redirect"] = _redirect
+
             session.add(lib_n2t.models.Prefix(**_entry))
             session.commit()
     L.info("Database load complete.")
@@ -167,17 +188,6 @@ class PrefixList:
 
 
     def toPython(self, version_info="dev"):        
-        def _adjustRedirectProtocol(r):
-            _protocols = ["http", "https", "ftp", "ftps", "sftp", ]
-            try:
-                a,b = r.split(":",1)
-                a = a.lower()
-                if not a in _protocols:
-                    return f"http://{r.lstrip('/')}"
-                return r
-            except ValueError as e:
-                pass
-            return f"http://{r.lstrip('/')}"
 
         # TODO: Split into three dicts:
         #  1. PREFIXES = scheme, synonym, and commonspfx
