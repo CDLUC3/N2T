@@ -24,6 +24,7 @@
 
         globalThis.data = {
             pfx: "",
+            resolver: prefixSource, 
             prefix: {
                 pfx:"",
                 name:""
@@ -80,6 +81,7 @@
             <dt>type</dt><dd x-text="prefix.type"></dd>
             <dt>redirect</dt><dd x-text="prefix.redirect"></dd>
             <dt>pattern</dt><dd x-text="prefix.pattern"></dd>
+            <dt>test</dt><dd><a target="_blank" x-bind:href="`${resolver}${pfx}:${prefix.test}`" x-text="prefix.test"></a></dd>
             <dt>description</dt><dd x-text="prefix.description"></dd>
         </dl>
     </section>
