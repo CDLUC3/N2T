@@ -1,1 +1,4 @@
 fastapi
+databases
+sqlmodel
+aiosqlite
