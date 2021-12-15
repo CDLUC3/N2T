@@ -24,7 +24,8 @@ jobs:
       - name: Update rules
         run: |
           curl "https://n2t.net/e/n2t_full_prefixes.yaml" > "/tmp/prefixes.yaml"; \
-          poetry run n2t /tmp/prefixes.yaml topython > micron2t/data/__init__.py
+          mkdir -p micron2t/data; \
+          poetry run n2t /tmp/prefixes.yaml tosql > micron2t/data/prefixes.sqlite
       - uses: BogDAAAMN/deta-deploy-action@v1.0.1
         with:
           deta-access-token: ${{ secrets.DETA_TOKEN }}

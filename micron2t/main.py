@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from databases import Database
 from typing import Iterable
 
-database = Database(f"sqlite:///data/n2t_full_prefixes.sqlite")
+database = Database(f"sqlite:///data/prefixes.sqlite")
 
 app = FastAPI(
     title="Micro N2T",

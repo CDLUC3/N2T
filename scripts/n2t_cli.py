@@ -11,6 +11,7 @@ import datetime
 import lib_n2t.prefixes
 import lib_n2t.models
 import jdcal
+import sqlite3
 
 
 # Global for access by event hooks
@@ -118,14 +119,25 @@ def main(ctx, source):
         ctx.obj["cnstr"] = f"sqlite:///{source}"
         ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(cnstr=ctx.obj["cnstr"])
     elif _ext.lower() in [".yaml", ".yml"]:
-        ctx.obj["cnstr"] = None
-        engine = lib_n2t.prefixes.fromYAML(ctx.obj["source"])
-        ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(engine=engine)
+        ctx.obj["cnstr"] = None        
+        ctx.obj["engine"] = lib_n2t.prefixes.fromYAML(ctx.obj["source"])
+        ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(
+            engine=ctx.obj["engine"]
+        )
 
 @main.command()
+@click.option("-d", "--dest", default=None, help="Destination sqlite")
 @click.pass_context
-def tosql(ctx):
-    lib_n2t.prefixes.fromYAML(ctx.obj["source"])
+def tosql(ctx, dest):
+    if dest is None:
+        _base, _ext = os.path.splitext(ctx.obj["source"])
+        dest = f"{_base}.sqlite"
+    target = sqlite3.connect(f'file:{dest}',detect_types=sqlite3.PARSE_DECLTYPES,uri=True)
+    with target:
+        conn = ctx.obj["engine"].raw_connection()
+        conn.backup(target)
+    target.close()
+    L.info("Persisted to %s", dest)
 
 @main.command()
 @click.pass_context
