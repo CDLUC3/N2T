@@ -7,8 +7,7 @@
 build({
     logLevel: "info",
     entryPoints: [
-        'src/js/main.js',
-        'src/js/autocomplete.js',
+        'src/js/main.js'
     ],
     bundle: true,
     outdir: "build/js",
