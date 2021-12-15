@@ -41,6 +41,20 @@ uvicorn --reload main:app
 
 Deployment to Deta is through a GH Action. Available as a Deta micro at https://rslv.deta.dev
 
+## `micron2t`
+
+Provides API documentation at `/docs`
+
+`/` Returns a list of supported prefixes
+
+`/{identifier}` Returns information about the identifier and other behavior.
+
+If the `identifier` has no colon, then it is treated as a prefix and prefix metadata is returned in JSON.
+
+If the `identifier` has a colon and the pattern matches, then a redirect response is returned unless a request is made
+with `Accept: application/json;profile=https://rslv.xyz/info`, in which case information about the intended action 
+is returned.
+
 
 
 [^1]: As of 2021-12-07

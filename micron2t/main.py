@@ -1,13 +1,15 @@
 import re
 import os
 import json
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request, Header
 from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 from databases import Database
-from typing import Iterable
+from typing import Optional,Iterable
 
 database = Database(f"sqlite:///data/prefixes.sqlite")
+
+META_ACCEPT = "application/json;profile=https://rslv.xyz/info"
 
 app = FastAPI(
     title="Micro N2T",
@@ -31,7 +33,7 @@ async def database_disconnect():
     await database.disconnect()
 
 @app.get("/")
-async def db_read_keys() -> Iterable[str]:
+async def list_prefixes() -> Iterable[str]:
     def _getkey(row):
         return row['id']
 
@@ -41,7 +43,11 @@ async def db_read_keys() -> Iterable[str]:
     ]
 
 @app.get("/{identifier:path}")
-async def db_resolve_prefix(request:Request, identifier: str=None):
+async def resolve_prefix(
+    request:Request, 
+    identifier: str=None, 
+    accept:Optional[str]=Header(None)
+):
     if identifier is None or len(identifier) < 1:
         # should never reach this, but just in case...
         return RedirectResponse("/docs")
@@ -60,15 +66,32 @@ async def db_resolve_prefix(request:Request, identifier: str=None):
     resolver = await database.fetch_one(query=sql, values={"_id": pfx})
     if resolver is None:
         return HTTPException(status_code=404, detail=f"Unknown prefix {pfx}")
-    return resolver
+    if val is None or len(val) < 1:
+        return resolver
+    _pattern = resolver.pattern
+    _redirect = resolver.redirect
+    if _redirect is None:
+        raise HTTPException(status_code=500, detail=f"No redirect is available for prefix {pfx}.")
+    # If there's no pattern to match then just redirect
+    if _pattern is None:
+        _url = _redirect.format(id=val)
+        if accept == META_ACCEPT:
+            return {
+                "resolver": resolver,
+                "redirect": _url,
+            }        
+        return RedirectResponse(_url)
+    if re.match(_pattern, val):
+        _url = _redirect.format(id=val)
+        if accept == META_ACCEPT:
+            return {
+                "resolver": resolver,
+                "redirect": _url,
+            }        
+        return RedirectResponse(_url)
+    raise HTTPException(status_code=404, detail=f"Invalid identifier value for {pfx}: {val}")
 
 ''' to be removed
-@app.get("/_I/")
-async def read_root():
-    res = list(data.PREFIXES.keys())
-    res.sort()
-    return res
-
 
 @app.get("/_I/{identifier:path}")
 async def resolve_prefix(request:Request, identifier: str = None):
