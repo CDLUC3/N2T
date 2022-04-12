@@ -58,6 +58,23 @@ def _adjustRedirectProtocol(r):
     return f"http://{r.lstrip('/')}"
 
 
+def cleanPrefix(key, data, field_map=None):
+    if field_map is None:
+        field_map = lib_n2t.models.Prefix.inverseFieldMap()
+    values = _cleanEntry(data)
+    _entry = {"id": key}
+    for field in values.keys():
+        _entry[field_map.get(field, field)] = values[field]
+    _redirect = _entry.get("redirect", None)
+    if _redirect is not None:
+        _redirect = _redirect.replace("$id", "{id}")
+        _redirect = _redirect.replace("'", "%27")
+        _redirect = _redirect.replace('"', "%22")
+        _redirect = _adjustRedirectProtocol(_redirect)
+        _entry["redirect"] = _redirect
+    return _entry
+
+
 def fromYAML(fnsrc: str, fndest: str = None):
     #if fndest is None:
     #    _base, _ext = os.path.splitext(fnsrc)
@@ -71,25 +88,17 @@ def fromYAML(fnsrc: str, fndest: str = None):
     L.info("Loading YAML source...")
     with open(fnsrc, "rb") as stream:
         _data = yaml.safe_load(stream)
-    engine = sqlmodel.create_engine(f"sqlite:///{fndest}")
+    cnstr = fndest
+    if not cnstr.startswith("sqlite:///"):
+        cnstr = f"sqlite:///{fndest}"
+    engine = sqlmodel.create_engine(cnstr)
     sqlmodel.SQLModel.metadata.create_all(engine)
     _field_map = lib_n2t.models.Prefix.inverseFieldMap()
     L.info("Populating database %s", fndest)
     with sqlmodel.Session(engine) as session:
         for k, v in _data.items():
-            values = _cleanEntry(v)
-            _entry = {"id": k}
-            for field in values.keys():
-                _entry[_field_map.get(field, field)] = values[field]
-            _redirect = _entry.get("redirect", None)
-            if _redirect is not None:
-                _redirect = _redirect.replace("$id", "{id}")
-                _redirect = _redirect.replace("'", "%27")
-                _redirect = _redirect.replace('"', "%22")
-                _redirect = _adjustRedirectProtocol(_redirect)
-                _entry["redirect"] = _redirect
-
-            session.add(lib_n2t.models.Prefix(**_entry))
+            _entry = cleanPrefix(k, v, _field_map)
+            session.merge(lib_n2t.models.Prefix(**_entry))
             session.commit()
     L.info("Database load complete.")
     return engine

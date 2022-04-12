@@ -103,7 +103,8 @@ L = logging.getLogger("n2t")
 @click.group()
 @click.pass_context
 @click.argument("source")
-def main(ctx, source):
+@click.option("-d", "--dbname", help="Load to database if yaml source", default=None)
+def main(ctx, source, dbname):
     lformat = "%(name)s %(message)s"
     #if log_time:
     #    lformat = "%(asctime)s.%(msecs)03d:%(name)s %(message)s"
@@ -119,8 +120,13 @@ def main(ctx, source):
         ctx.obj["cnstr"] = f"sqlite:///{source}"
         ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(cnstr=ctx.obj["cnstr"])
     elif _ext.lower() in [".yaml", ".yml"]:
-        ctx.obj["cnstr"] = None        
-        ctx.obj["engine"] = lib_n2t.prefixes.fromYAML(ctx.obj["source"])
+        ctx.obj["cnstr"] = None
+        if dbname is not None:
+            ctx.obj["cnstr"] = f"sqlite:///{dbname}"
+        ctx.obj["engine"] = lib_n2t.prefixes.fromYAML(
+            ctx.obj["source"],
+            fndest = ctx.obj["cnstr"]
+        )
         ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(
             engine=ctx.obj["engine"]
         )
