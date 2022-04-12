@@ -23,6 +23,7 @@ databases = "^0.5.3"
 aiosqlite = "^0.17.0"
 
 [tool.poetry.dev-dependencies]
+ipykernel = "^6.13.0"
 
 [tool.poetry.scripts]
 n2t = 'scripts.n2t_cli:main'
