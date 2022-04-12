@@ -21,14 +21,16 @@ def _convertValue(v):
     if len(v) < 1:
         return v
     vl = v.lower()
+    # booleans are represented in the table
+    # as optional ints, null = unset, 0 = False, 1 = True
     if vl == "true":
-        return True
+        return 1
     if vl == "false":
-        return False
-    try:
-        return int(v)
-    except ValueError:
-        pass
+        return 0
+    #try:
+    #    return int(v)
+    #except ValueError:
+    #    pass
     if DATE_MATCH.match(v):
         try:
             nv = datetime.datetime.strptime(v, DATE_PATTERN)
@@ -76,18 +78,13 @@ def cleanPrefix(key, data, field_map=None):
 
 
 def fromYAML(fnsrc: str, fndest: str = None):
-    #if fndest is None:
-    #    _base, _ext = os.path.splitext(fnsrc)
-    #    fndest = f"{_base}.sqlite"
-    #    if os.path.exists(fndest):
-    #        raise ValueError("Target %s exists. Can not overwrite.")
     if fndest is None:
         L.warning("Creating temporary in memory database.")
         fndest = ":memory:"
     _data = {}
     L.info("Loading YAML source...")
     with open(fnsrc, "rb") as stream:
-        _data = yaml.safe_load(stream)
+        _data = yaml.load(stream, Loader=yaml.SafeLoader)
     cnstr = fndest
     if not cnstr.startswith("sqlite:///"):
         cnstr = f"sqlite:///{fndest}"

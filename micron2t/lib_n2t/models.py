@@ -11,7 +11,7 @@ class Prefix(sqlmodel.SQLModel, table=True):
     name: typing.Optional[str] = None
     alias: typing.Optional[str] = None
     provider: typing.Optional[str] = None
-    pprimary: bool = sqlmodel.Field(default=False)
+    pprimary: typing.Optional[int] = None
     redirect: typing.Optional[str] = None
     test: typing.Optional[str] = None
     probe: typing.Optional[str] = None
@@ -20,7 +20,7 @@ class Prefix(sqlmodel.SQLModel, table=True):
     description: typing.Optional[str] = None
     location: typing.Optional[str] = None
     institution: typing.Optional[str] = None
-    prefixed: bool = sqlmodel.Field(default=False)
+    prefixed: typing.Optional[int] = None
     provider_id: typing.Optional[str] = None
     sort_score: int = sqlmodel.Field(default=0)
     subject: typing.Optional[str] = None
@@ -34,10 +34,10 @@ class Prefix(sqlmodel.SQLModel, table=True):
     na_policy: typing.Optional[str] = None
     how: typing.Optional[str] = None
     registration_agency: typing.Optional[str] = None
-    is_supershoulder: bool = sqlmodel.Field(default=False)
+    is_supershoulder: typing.Optional[int] = None
     datacenter: typing.Optional[str] = None
-    prefix_shares_datacenter: bool = sqlmodel.Field(default=False)
-    active: bool = sqlmodel.Field(default=True)
+    prefix_shares_datacenter: typing.Optional[int] = None
+    active: typing.Optional[int] = None
     pfor: typing.Optional[str] = None
 
     _field_map = {

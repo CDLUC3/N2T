@@ -103,84 +103,115 @@ L = logging.getLogger("n2t")
 @click.group()
 @click.pass_context
 @click.argument("source")
-@click.option("-d", "--dbname", help="Load to database if yaml source", default=None)
-def main(ctx, source, dbname):
-    lformat = "%(name)s %(message)s"
+def main(ctx, source):
+    lformat = "%(name)s: %(message)s"
     #if log_time:
     #    lformat = "%(asctime)s.%(msecs)03d:%(name)s %(message)s"
     logging.basicConfig(
         level=logging.INFO,
         format=lformat,
         datefmt="%Y-%m-%d %H:%M:%S",
-    )
+    )    
+    # Setup context for operations
     ctx.ensure_object(dict)
     ctx.obj["source"] = source
+    ctx.obj["cnstr"] = None
+    ctx.obj["pfx"] = None
+    ctx.obj["engine"] = None
+
+    # if provided a sqlite source, then open connection   
     _base, _ext = os.path.splitext(source)
     if _ext.lower() == ".sqlite":
         ctx.obj["cnstr"] = f"sqlite:///{source}"
         ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(cnstr=ctx.obj["cnstr"])
-    elif _ext.lower() in [".yaml", ".yml"]:
-        ctx.obj["cnstr"] = None
-        if dbname is not None:
-            ctx.obj["cnstr"] = f"sqlite:///{dbname}"
-        ctx.obj["engine"] = lib_n2t.prefixes.fromYAML(
-            ctx.obj["source"],
-            fndest = ctx.obj["cnstr"]
-        )
-        ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(
-            engine=ctx.obj["engine"]
-        )
+    #elif _ext.lower() in [".yaml", ".yml"]:
+    #    ctx.obj["cnstr"] = None
+    #    if dbname is not None:
+    #        ctx.obj["cnstr"] = f"sqlite:///{dbname}"
+    #    ctx.obj["engine"] = lib_n2t.prefixes.fromYAML(
+    #        ctx.obj["source"],
+    #        fndest = ctx.obj["cnstr"]
+    #    )
+    #    ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(
+    #        engine=ctx.obj["engine"]
+    #    )
 
 @main.command()
-@click.option("-d", "--dest", default=None, help="Destination sqlite")
+@click.option("-d", "--dbname", default=None, help="File name for target sqlite database")
 @click.pass_context
-def tosql(ctx, dest):
-    if dest is None:
+def tosql(ctx, dbname):
+    """
+    """
+    if dbname is None:
         _base, _ext = os.path.splitext(ctx.obj["source"])
-        dest = f"{_base}.sqlite"
-    target = sqlite3.connect(f'file:{dest}',detect_types=sqlite3.PARSE_DECLTYPES,uri=True)
-    with target:
-        conn = ctx.obj["engine"].raw_connection()
-        conn.backup(target)
-    target.close()
-    L.info("Persisted to %s", dest)
+        dbname = f"{_base}.sqlite"
+    dburl = f"sqlite:///{dbname}"
+    _engine = lib_n2t.prefixes.fromYAML(
+        ctx.obj["source"],
+        fndest = dburl
+    )
+    #target = sqlite3.connect(f'file:{dest}',detect_types=sqlite3.PARSE_DECLTYPES,uri=True)
+    #with target:
+    #    conn = ctx.obj["engine"].raw_connection()
+    #    conn.backup(target)
+    #target.close()
+    L.info("Persisted to %s", dbname)
+
+#@main.command()
+#@click.pass_context
+#def toPython(ctx):
+#    pfx = ctx.obj["pfx"]
+#    version_info = f"un2t:0.1.4;data:{datetimeToJD(datetime.datetime.utcnow())}"
+#    print(pfx.toPython(version_info))
 
 @main.command()
-@click.pass_context
-def toPython(ctx):
-    pfx = ctx.obj["pfx"]
-    version_info = f"un2t:0.1.4;data:{datetimeToJD(datetime.datetime.utcnow())}"
-    print(pfx.toPython(version_info))
-
-@main.command()
-@click.option("-f", "--field", default=None, help="S")
+@click.option("-f", "--field", default=None, help="Show distinct values for specified field")
 @click.pass_context
 def summary(ctx, field):
     pfx = ctx.obj["pfx"]
+    if pfx is None:
+        L.error("Operation available only with database source. Use tosql command first.")
+        return
     print(f"Source: {ctx.obj['source']}")
     print(f"Total prefixes: {pfx.length()}")
-    print(f" Count Key")
+    print(f"Row  Count Key")
     props = pfx.fields()
-    for k, v in props.items():
-        print(f"{v:6} {k}")
+    i = 0
+    for k in sorted(list(props.keys())):
+        print(f"{i:3} {props[k]:6} {k}")
+        i += 1
     if field is not None:
         fvalues = pfx.fieldValues(field)
         print("")
         print(f"Distinct values for field: {field}")
+        print(" Count Value")
         for k, v in fvalues.items():
             print(f"{v:6} {k}")
 
+@main.command()
+@click.pass_context
+def prefixes(ctx):
+    pfx = ctx.obj["pfx"]
+    if pfx is None:
+        L.error("Operation available only with database source. Use tosql command first.")
+        return
+    for prefix in pfx.prefixes():
+        print(prefix)
+
 
 @main.command()
-@click.option("-k", "--key", default=None, help="S")
+@click.option("-p", "--prefix", default=None, help="Show the entry for the specified id (prefix)")
 @click.pass_context
-def prefix(ctx, key):
+def prefix(ctx, prefix):
     pfx = ctx.obj["pfx"]
-    entry = pfx.getEntry(key)
+    if pfx is None:
+        L.error("Operation available only with database source. Use tosql command first.")
+        return
+    entry = pfx.getEntry(prefix)
     if entry is not None:
         print(json.dumps(entry.asDict(), indent=2, ensure_ascii=False))
         return
-    L.error("No entry found for %s", key)
+    L.error("No entry found for %s", prefix)
 
 
 @main.command()
