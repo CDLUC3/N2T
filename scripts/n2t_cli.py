@@ -219,6 +219,9 @@ def prefix(ctx, prefix):
 @click.argument("identifier")
 def resolver(ctx, identifier):
     pfx = ctx.obj["pfx"]
+    if pfx is None:
+        L.error("Operation available only with database source. Use tosql command first.")
+        return
     normalized = lib_n2t.normalizeIdentifier(identifier)
     nid = normalized["normal"]
     res = pfx.findResolver(nid)
@@ -247,6 +250,9 @@ def resolver(ctx, identifier):
 @click.option("-U", "--user-agent", default=None, help="User agent header value")
 def resolve(ctx, identifier, accept, test, timeout, insecure, link_type, link_profile, link_rel, user_agent):
     pfx = ctx.obj["pfx"]
+    if pfx is None:
+        L.error("Operation available only with database source. Use tosql command first.")
+        return
     normalized = lib_n2t.normalizeIdentifier(identifier)
     nid = normalized["normal"]
     res = pfx.findResolver(nid)
