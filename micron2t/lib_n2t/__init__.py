@@ -17,6 +17,13 @@ def normalizeIdentifier(identifier):
     }
     scheme, value = parseIdentifier(identifier)
     res["scheme"] = scheme
+
+    # Ensure ark identifier values have the form "ark:/..."
+    if scheme == "ark":
+        if value is not None and len(value) > 0:
+            if value[0] != "/":
+                value = "/"+value
+    
     res["value"] = value
     res["normal"] = f"{scheme}:{value}"
     return res

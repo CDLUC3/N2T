@@ -47,17 +47,17 @@ def _cleanEntry(e):
     return res
 
 
-def _adjustRedirectProtocol(r):
+def _adjustRedirectProtocol(r, default_protocol="https"):
     _protocols = ["http", "https", "ftp", "ftps", "sftp", ]
     try:
         a,b = r.split(":",1)
         a = a.lower()
         if not a in _protocols:
-            return f"http://{r.lstrip('/')}"
+            return f"{default_protocol}://{r.lstrip('/')}"
         return r
     except ValueError as e:
         pass
-    return f"http://{r.lstrip('/')}"
+    return f"{default_protocol}://{r.lstrip('/')}"
 
 
 def cleanPrefix(key, data, field_map=None):
@@ -77,7 +77,10 @@ def cleanPrefix(key, data, field_map=None):
     return _entry
 
 
-def fromYAML(fnsrc: str, fndest: str = None):
+def jsonFromYAML(fnsrc: str, fndest:str):
+    pass
+
+def dbFromYAML(fnsrc: str, fndest: str = None):
     if fndest is None:
         L.warning("Creating temporary in memory database.")
         fndest = ":memory:"
@@ -115,6 +118,8 @@ class PrefixList:
         return engine
 
     def fields(self):
+        """Return dict of fields and their occurrence
+        """
         res = {}
         columns = lib_n2t.models.Prefix.columns()
         with sqlmodel.Session(self.db) as session:
@@ -125,6 +130,8 @@ class PrefixList:
         return res
 
     def fieldValues(self, field):
+        """Return list of distinct values and counts for field
+        """
         res = {}
         with sqlmodel.Session(self.db) as session:
             sql = f"SELECT {field}, COUNT(*) AS CNT FROM prefix GROUP BY {field} ORDER BY cnt"
@@ -134,6 +141,8 @@ class PrefixList:
         return res
 
     def prefixes(self):
+        """Iterator of prefix keys
+        """
         with sqlmodel.Session(self.db) as session:
             sql = "SELECT id FROM prefix ORDER BY id"
             rs = session.execute(sql)
@@ -141,16 +150,22 @@ class PrefixList:
                 yield row[0]
 
     def length(self):
+        """Number of prefixes
+        """
         with sqlmodel.Session(self.db) as session:
             sql = "SELECT COUNT(*) FROM prefix"
             rs = session.execute(sql)
             return rs.fetchone()[0]
 
     def getEntry(self, key):
+        """Get prefix entry at key
+        """
         with sqlmodel.Session(self.db) as session:
             return session.query(lib_n2t.models.Prefix).get(key)
 
     def findResolver(self, identifier):
+        """Given identifier, return it's resolver
+        """
         res = []
         with sqlmodel.Session(self.db) as session:
             sql = (
@@ -168,6 +183,7 @@ class PrefixList:
             )
             for row in rs:
                 res.append(row[0])
+        L.info(res)
         return res
 
     def findEntries(self, identifier):
