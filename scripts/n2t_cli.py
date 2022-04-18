@@ -146,7 +146,7 @@ def tosql(ctx, dbname):
         _base, _ext = os.path.splitext(ctx.obj["source"])
         dbname = f"{_base}.sqlite"
     dburl = f"sqlite:///{dbname}"
-    _engine = lib_n2t.prefixes.fromYAML(
+    _engine = lib_n2t.prefixes.dbFromYAML(
         ctx.obj["source"],
         fndest = dburl
     )
@@ -200,7 +200,7 @@ def prefixes(ctx):
 
 
 @main.command()
-@click.option("-p", "--prefix", default=None, help="Show the entry for the specified id (prefix)")
+@click.argument("prefix")
 @click.pass_context
 def prefix(ctx, prefix):
     pfx = ctx.obj["pfx"]
@@ -230,7 +230,6 @@ def resolver(ctx, identifier):
     print(json.dumps(entry.asDict(), indent=2, ensure_ascii=False))
 
 
-
 @main.command()
 @click.pass_context
 @click.argument("identifier")
@@ -254,6 +253,7 @@ def resolve(ctx, identifier, accept, test, timeout, insecure, link_type, link_pr
         L.error("Operation available only with database source. Use tosql command first.")
         return
     normalized = lib_n2t.normalizeIdentifier(identifier)
+    L.info("Normalized identifier: %s", normalized)
     nid = normalized["normal"]
     res = pfx.findResolver(nid)
     L.info("Using resolver %s", res[0])
