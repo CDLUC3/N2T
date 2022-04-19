@@ -26,7 +26,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
+@app.get(
+    "/",
+    summary="Return list of available resolver prefixes",
+)
 async def list_prefixes() -> Iterable[str]:
     return [
         row for row in prefixes.prefixes()
@@ -36,22 +39,61 @@ async def list_prefixes() -> Iterable[str]:
 async def favicon():
     raise HTTPException(status_code=404)
 
-@app.get("/{identifier:path}")
+@app.get(
+    "/diagnostic/echo",
+    summary="Echo the request as a JSON response"
+)
+async def echo_request(request:Request):
+    return JSONResponse(
+        {
+            "url": str(request.url),
+            "path": str(request.url.path),
+            "query": {k: v for k,v in request.query_params.items()},
+            "headers": {k: v for k,v in request.headers.items()},
+        },
+        status_code=200
+    )
+
+@app.get(
+    "/about/{identifier:path}",
+    summary="Get information about the resolver for the provided identifier"
+)
+async def get_prefix(
+    request:Request,
+    identifier: str=None,
+    accept:Optional[str]=Header(None)
+):
+    '''Resolve identifier
+    '''
+    if identifier is None or len(identifier) < 1:
+        # should never reach this, but just in case...
+        return RedirectResponse("/docs")
+    normalized, resolver_key, resolver = prefixes.resolve(identifier)
+    if resolver_key is None:
+        return JSONResponse(
+            {
+                "error": f"No resolver available for {identifier}",
+                "detail": normalized
+            },
+            status_code = 404
+        )
+    return JSONResponse(
+        resolver,
+        status_code=200
+    )
+
+
+@app.get(
+    "/{identifier:path}",
+    summary="Redirect to the identified resource or present resolver information."
+)
 async def resolve_prefix(
     request:Request, 
     identifier: str=None, 
     accept:Optional[str]=Header(None)
 ):
-    #L.debug(request)
-    #return JSONResponse(
-    #    {
-    #        "url": str(request.url),
-    #        "path": str(request.url.path),
-    #        "headers": {k: v for k,v in request.headers.items()},
-    #        "dir": dir(request),
-    #    },
-    #    status_code=200
-    #)
+    '''Resolve identifier
+    '''
     _inflection = False
     rurl = str(request.url)
     if rurl.endswith("?") or rurl.endswith("??"):
@@ -62,7 +104,10 @@ async def resolve_prefix(
     normalized, resolver_key, resolver = prefixes.resolve(identifier)
     if resolver_key is None:
         return JSONResponse(
-            {"detail": normalized},
+            {
+                "error": f"No resolver available for {identifier}",
+                "detail": normalized
+            },
             status_code = 404
         )
     if _inflection:
@@ -72,6 +117,13 @@ async def resolve_prefix(
         )
     _url = normalized.get("url", None)
     if _url is None:
+        return JSONResponse(
+            {
+                "error": f"No redirect information available for {identifier}",
+                "resolver": resolver
+            },
+            status_code=404
+        )
         raise HTTPException(status_code=404, detail=f"No redirect available for: {identifier}")
 
     if accept == META_ACCEPT:
@@ -80,4 +132,3 @@ async def resolve_prefix(
             "redirect": _url,
         }        
     return RedirectResponse(_url)
-
