@@ -27,7 +27,7 @@ jobs:
         run: |
           curl "https://n2t.net/e/n2t_full_prefixes.yaml" > "/tmp/prefixes.yaml"; \
           mkdir -p micron2t/data; \
-          poetry run n2t /tmp/prefixes.yaml tosql -d micron2t/data/prefixes.sqlite
+          poetry run n2t /tmp/prefixes.yaml tojson -d micron2t/data/prefixes.json
       - uses: BogDAAAMN/deta-deploy-action@v1.0.1
         with:
           deta-access-token: ${{ secrets.DETA_TOKEN }}

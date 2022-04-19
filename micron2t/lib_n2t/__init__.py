@@ -37,7 +37,8 @@ def normalizeIdentifier(identifier):
                 pass
             res['value'] = _v
             res['resolver_key'] = f"{res['scheme']}:/{res['naan']}"
-
+    elif res["scheme"] == "doi":
+        res["resolver_key"] = "doi"
     res["normal"] = f"{res['scheme']}:{res['value']}"
     return res
 

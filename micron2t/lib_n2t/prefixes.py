@@ -164,6 +164,8 @@ class PrefixList:
         nid = lib_n2t.normalizeIdentifier(identifier)
         res_key = self.getLongestMatchingPrefix(nid['resolver_key'])
         resolver = self.getEntry(res_key)
+        if resolver is None:
+            return nid, res_key, resolver
         if resolver.get("type") == "synonym":
             res_key = resolver.get("for")
             resolver = self.getEntry(res_key)
