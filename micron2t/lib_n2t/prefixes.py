@@ -148,32 +148,35 @@ class PrefixList:
         """
         return self.data.get(key)
 
-    def getLongestMatchingPrefix(self, test):
+    def getLongestMatchingPrefix(self, test, scheme):
         '''Find longest key pattern that matches test
         '''
-        match = None
-        match_len = 0
-        for p in self.prefixes():
+        match = []
+        for p,v in self.data.items():
             if test.startswith(p):
-                plen = len(p)
-                if plen > match_len:
-                    match = p
-                    match_len = plen
-        return match        
+                sp = p
+                if v.get("type") == "synonym":
+                    sp = v.get("for", None)
+                    if sp is not None:
+                        match.append(sp)
+                else:
+                    match.append(p)
+                if sp == scheme:
+                    break
+        return sorted(match, key=len, reverse=True)
 
     def resolve(self, identifier):
         """Given identifier, return normalized, resolver_key, resolver
         """
         nid = lib_n2t.normalizeIdentifier(identifier)
-        res_key = self.getLongestMatchingPrefix(nid['resolver_key'])
-        resolver = self.getEntry(res_key)
-        if resolver is None:
-            return nid, res_key, resolver
-        if resolver.get("type") == "synonym":
-            res_key = resolver.get("for")
-            resolver = self.getEntry(res_key)
-        target = resolver.get("redirect")
+        res_keys = self.getLongestMatchingPrefix(nid['resolver_key'], nid['scheme'])
+        resolvers = []
+        redirect_url = None
         nid['url'] = None
-        if target is not None:
-            nid['url'] = target.format(id=nid['value'])
-        return nid, res_key, resolver
+        for k in res_keys:
+            resolver = self.getEntry(k)            
+            resolvers.append(resolver)
+            redirect_url = resolver.get("redirect", None)
+            if redirect_url is not None:
+                nid["url"] = redirect_url.format(id=nid["value"])
+        return nid, res_keys, resolvers

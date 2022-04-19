@@ -56,7 +56,7 @@ async def echo_request(request:Request):
 
 @app.get(
     "/about/{identifier:path}",
-    summary="Get information about the resolver for the provided identifier"
+    summary="Present resolver information for the provided identifier"
 )
 async def get_prefix(
     request:Request,
@@ -68,17 +68,20 @@ async def get_prefix(
     if identifier is None or len(identifier) < 1:
         # should never reach this, but just in case...
         return RedirectResponse("/docs")
-    normalized, resolver_key, resolver = prefixes.resolve(identifier)
-    if resolver_key is None:
+    normalized, resolver_keys, resolvers = prefixes.resolve(identifier)
+    if len(resolver_keys) == 0:
         return JSONResponse(
             {
-                "error": f"No resolver available for {identifier}",
+                "error": f"No resolvers available for {identifier}",
                 "detail": normalized
             },
             status_code = 404
         )
     return JSONResponse(
-        resolver,
+        {
+            "resolvers":resolvers,
+            "identifier": normalized,
+        },
         status_code=200
     )
 
@@ -92,8 +95,6 @@ async def resolve_prefix(
     identifier: str=None, 
     accept:Optional[str]=Header(None)
 ):
-    '''Resolve identifier
-    '''
     _inflection = False
     rurl = str(request.url)
     if rurl.endswith("?") or rurl.endswith("??"):
@@ -101,8 +102,8 @@ async def resolve_prefix(
     if identifier is None or len(identifier) < 1:
         # should never reach this, but just in case...
         return RedirectResponse("/docs")
-    normalized, resolver_key, resolver = prefixes.resolve(identifier)
-    if resolver_key is None:
+    normalized, resolver_keys, resolvers = prefixes.resolve(identifier)
+    if len(resolver_keys) == 0:
         return JSONResponse(
             {
                 "error": f"No resolver available for {identifier}",
@@ -110,9 +111,9 @@ async def resolve_prefix(
             },
             status_code = 404
         )
-    if _inflection:
+    if _inflection or resolver_keys[0] == normalized['normal']:
         return JSONResponse(
-            resolver,
+            resolvers,
             status_code=200
         )
     _url = normalized.get("url", None)
@@ -120,15 +121,14 @@ async def resolve_prefix(
         return JSONResponse(
             {
                 "error": f"No redirect information available for {identifier}",
-                "resolver": resolver
+                "resolver": resolvers
             },
             status_code=404
         )
-        raise HTTPException(status_code=404, detail=f"No redirect available for: {identifier}")
 
     if accept == META_ACCEPT:
         return {
-            "resolver": resolver,
+            "resolver": resolvers,
             "redirect": _url,
         }        
     return RedirectResponse(_url)

@@ -22,7 +22,9 @@ def normalizeIdentifier(identifier):
     }
     res["scheme"], res["value"] = parseIdentifier(identifier)
     _v = res["value"]
-    res["resolver_key"] = f"{res['scheme']}:{res['value']}"
+    res["resolver_key"] = res["scheme"]
+    if res["value"] is not None:
+        res["resolver_key"] = f"{res['scheme']}:{res['value']}"
 
     # Ensure ark identifier values have the form "ark:/..."
     # And get the naan and 
@@ -36,9 +38,9 @@ def normalizeIdentifier(identifier):
             except ValueError:
                 pass
             res['value'] = _v
-            res['resolver_key'] = f"{res['scheme']}:/{res['naan']}"
-    elif res["scheme"] == "doi":
-        res["resolver_key"] = "doi"
-    res["normal"] = f"{res['scheme']}:{res['value']}"
+            res['resolver_key'] = f"{res['scheme']}:{res['value']}"
+    #elif res["scheme"] == "doi":
+    #    res["resolver_key"] = "doi"
+    res["normal"] = f"{res['scheme']}:{res['value']  if res['value'] is not None else ''}"
     return res
 
