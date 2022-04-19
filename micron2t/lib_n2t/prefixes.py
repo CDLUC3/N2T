@@ -1,14 +1,9 @@
-import logging
 import os
 import yaml
 import json
 import re
 import datetime
-import sqlmodel
-import lib_n2t.models
-
-
-L = logging.getLogger("lib_n2t.prefixes")
+import lib_n2t
 
 DATE_MATCH = re.compile(r"\d{4}\.\d{2}\.\d{2}")
 DATE_PATTERN = "%Y.%m.%d"
@@ -80,10 +75,7 @@ def cleanPrefix(key, data, field_map=None):
 
 
 def jsonFromYAML(fnsrc: str, fndest:str = None):
-    if fndest is None:
-        L.warning("Not persisting JSON store.")
     _data = {}
-    L.info("Loading YAML source...")
     with open(fnsrc, "rb") as stream:
         _data = yaml.load(stream, Loader=yaml.SafeLoader)
     data = {}
@@ -93,7 +85,6 @@ def jsonFromYAML(fnsrc: str, fndest:str = None):
     if fndest is not None:
         with open(fndest, "w") as dest:
             json.dump(data, dest)
-        L.info("Wrote %s", fndest)
     return data
 
 
@@ -111,12 +102,10 @@ class PrefixList:
         else:
             with open(fn_src, "r") as src:
                 self.data = json.load(src)
-        L.info("Loaded from: %s", fn_src)
 
     def store(self, fn_dst):
         with open(fn_dst, "w") as dst:
             json.dump(self.data, dst)
-        L.info("stored to: %s", fn_dst)
 
     def fields(self):
         """Return dict of fields and their occurrence
@@ -170,7 +159,7 @@ class PrefixList:
         return match        
 
     def resolve(self, identifier):
-        """Given identifier, return it's resolver
+        """Given identifier, return normalized, resolver_key, resolver
         """
         nid = lib_n2t.normalizeIdentifier(identifier)
         res_key = self.getLongestMatchingPrefix(nid['resolver_key'])
