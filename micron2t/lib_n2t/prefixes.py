@@ -1,9 +1,12 @@
 import os
-import yaml
 import json
 import re
 import datetime
 import lib_n2t
+try:
+    import yaml
+except ImportError:
+    pass
 
 DATE_MATCH = re.compile(r"\d{4}\.\d{2}\.\d{2}")
 DATE_PATTERN = "%Y.%m.%d"
