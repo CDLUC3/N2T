@@ -15,6 +15,8 @@ DATE_PATTERN = "%Y.%m.%d"
 
 
 def _convertValue(v):
+    '''Return parsed representation of value loaded from YAML
+    '''
     if v is None:
         return v
     v = v.strip()
@@ -34,20 +36,15 @@ def _convertValue(v):
     if DATE_MATCH.match(v):
         try:
             nv = datetime.datetime.strptime(v, DATE_PATTERN)
-            return nv.date()
+            return nv.date().isoformat()
         except ValueError:
             pass
     return v
 
 
-def _cleanEntry(e):
-    res = {}
-    for k, v in e.items():
-        res[k] = _convertValue(v)
-    return res
-
-
 def _adjustRedirectProtocol(r, default_protocol="https"):
+    '''Make a redirect entry into a URL, if possible
+    '''
     _protocols = ["http", "https", "ftp", "ftps", "sftp", ]
     try:
         a,b = r.split(":",1)
@@ -61,12 +58,17 @@ def _adjustRedirectProtocol(r, default_protocol="https"):
 
 
 def cleanPrefix(key, data, field_map=None):
-    if field_map is None:
-        field_map = lib_n2t.models.Prefix.inverseFieldMap()
-    values = _cleanEntry(data)
+    '''Clean a prefix entry retrieved from YAML    
+    '''
+    values = {}
+    for k,v in data.items():
+        values[k] = _convertValue(v)
     _entry = {"id": key}
     for field in values.keys():
-        _entry[field_map.get(field, field)] = values[field]
+        if field_map is not None:
+            _entry[field_map.get(field, field)] = values[field]
+        else:
+            _entry[field] = values[field]
     _redirect = _entry.get("redirect", None)
     if _redirect is not None:
         _redirect = _redirect.replace("$id", "{id}")
@@ -77,177 +79,107 @@ def cleanPrefix(key, data, field_map=None):
     return _entry
 
 
-def jsonFromYAML(fnsrc: str, fndest:str):
-    pass
-
-def dbFromYAML(fnsrc: str, fndest: str = None):
+def jsonFromYAML(fnsrc: str, fndest:str = None):
     if fndest is None:
-        L.warning("Creating temporary in memory database.")
-        fndest = ":memory:"
+        L.warning("Not persisting JSON store.")
     _data = {}
     L.info("Loading YAML source...")
     with open(fnsrc, "rb") as stream:
         _data = yaml.load(stream, Loader=yaml.SafeLoader)
-    cnstr = fndest
-    if not cnstr.startswith("sqlite:///"):
-        cnstr = f"sqlite:///{fndest}"
-    engine = sqlmodel.create_engine(cnstr)
-    sqlmodel.SQLModel.metadata.create_all(engine)
-    _field_map = lib_n2t.models.Prefix.inverseFieldMap()
-    L.info("Populating database %s", fndest)
-    with sqlmodel.Session(engine) as session:
-        for k, v in _data.items():
-            _entry = cleanPrefix(k, v, _field_map)
-            session.merge(lib_n2t.models.Prefix(**_entry))
-            session.commit()
-    L.info("Database load complete.")
-    return engine
+    data = {}
+    # python 3.7+ preserves order in dicts
+    for k,v in _data.items():
+        data[k] = cleanPrefix(k, v)
+    if fndest is not None:
+        with open(fndest, "w") as dest:
+            json.dump(data, dest)
+        L.info("Wrote %s", fndest)
+    return data
 
 
 class PrefixList:
-    def __init__(self, cnstr=None, engine=None):
-        self.cnstr = cnstr
-        if engine is not None:
-            self.db = engine
-        else:
-            self.db = self.getDBConnection()
+    def __init__(self, fn_src=None):
+        self.data = {}
+        if fn_src is not None:
+            self.load(fn_src)
 
-    def getDBConnection(self):
-        engine = sqlmodel.create_engine(self.cnstr)
-        sqlmodel.SQLModel.metadata.create_all(engine)
-        return engine
+    def load(self, fn_src):
+        fn, ext = os.path.splitext(fn_src)
+        ext = ext.lower()
+        if ext in [".yml", ".yaml"]:
+            self.data = jsonFromYAML(fn_src)            
+        else:
+            with open(fn_src, "r") as src:
+                self.data = json.load(src)
+        L.info("Loaded from: %s", fn_src)
+
+    def store(self, fn_dst):
+        with open(fn_dst, "w") as dst:
+            json.dump(self.data, dst)
+        L.info("stored to: %s", fn_dst)
 
     def fields(self):
         """Return dict of fields and their occurrence
         """
         res = {}
-        columns = lib_n2t.models.Prefix.columns()
-        with sqlmodel.Session(self.db) as session:
-            for cname in columns:
-                sql = f"SELECT COUNT(*) FROM prefix WHERE {cname} IS NOT NULL;"
-                rs = session.execute(sql)
-                res[cname] = rs.fetchone()[0]
+        for k,v in self.data.items():
+            for cname in v.keys():
+                n = res.get(cname, 0)
+                n = n + 1
+                res[cname] = n
         return res
 
     def fieldValues(self, field):
         """Return list of distinct values and counts for field
         """
         res = {}
-        with sqlmodel.Session(self.db) as session:
-            sql = f"SELECT {field}, COUNT(*) AS CNT FROM prefix GROUP BY {field} ORDER BY cnt"
-            rs = session.execute(sql)
-            for row in rs:
-                res[row[0]] = row[1]
+        for prefix, entry in self.data.items():
+            v = entry.get(field, None)
+            if v is not None:
+                n = res.get(v, 0)
+                n = n + 1
+                res[v] = n
         return res
 
     def prefixes(self):
         """Iterator of prefix keys
         """
-        with sqlmodel.Session(self.db) as session:
-            sql = "SELECT id FROM prefix ORDER BY id"
-            rs = session.execute(sql)
-            for row in rs:
-                yield row[0]
+        return self.data.keys()
 
     def length(self):
         """Number of prefixes
         """
-        with sqlmodel.Session(self.db) as session:
-            sql = "SELECT COUNT(*) FROM prefix"
-            rs = session.execute(sql)
-            return rs.fetchone()[0]
+        return len(list(self.data.keys()))
 
     def getEntry(self, key):
         """Get prefix entry at key
         """
-        with sqlmodel.Session(self.db) as session:
-            return session.query(lib_n2t.models.Prefix).get(key)
+        return self.data.get(key)
 
-    def findResolver(self, identifier):
+    def getLongestMatchingPrefix(self, test):
+        '''Find longest key pattern that matches test
+        '''
+        match = None
+        match_len = 0
+        for p in self.prefixes():
+            if test.startswith(p):
+                plen = len(p)
+                if plen > match_len:
+                    match = p
+                    match_len = plen
+        return match        
+
+    def resolve(self, identifier):
         """Given identifier, return it's resolver
         """
-        res = []
-        with sqlmodel.Session(self.db) as session:
-            sql = (
-                "SELECT id FROM prefix "
-                "WHERE instr(:id, id) = 1 "
-                "AND (ptype='naan' OR "
-                "    (ptype='shoulder' AND redirect IS NOT NULL)) "
-                "ORDER BY LENGTH(id) DESC "
-            )
-            rs = session.execute(
-                sql,
-                {
-                    "id": identifier,
-                },
-            )
-            for row in rs:
-                res.append(row[0])
-        L.info(res)
-        return res
-
-    def findEntries(self, identifier):
-        """
-
-        Args:
-            identifier:
-
-        Returns:
-
-        """
-        lnid = len(identifier)
-        schemes = []
-        shorts = []
-        longs = []
-        for k in self.data:
-            if identifier.startswith(k):
-                shorts.append(k)
-            elif k.startswith(identifier):
-                longs.append(k)
-        short_candidates = sorted(shorts, key=len, reverse=True)
-        long_candidates = sorted(longs, key=len, reverse=True)
-        return short_candidates, long_candidates
-
-
-    def toPython(self, version_info="dev"):        
-
-        # TODO: Split into three dicts:
-        #  1. PREFIXES = scheme, synonym, and commonspfx
-        #  2. NAANS = naan
-        #  3. SHOULDERS = shoulder
-        # When resolving, try NAAN, then SHOULDER, then PREFIX
-        _L = [
-            '# !!Auto generated file. Any edits will be lost!!',
-            f'# Generated {datetime.datetime.utcnow().isoformat()}+00',
-            '',
-            'import re',
-            f'_VERSION_ = "{version_info}"',
-            'PREFIXES = {'
-        ]
-        with sqlmodel.Session(self.db) as session:
-            sql = "SELECT id FROM prefix"
-            rs = session.execute(sql)
-            _prefixes = []
-            for row in rs:
-                prefix = self.getEntry(row[0])
-                _redirect = prefix.redirect
-                if _redirect is not None:
-                    _redirect = _redirect.replace("$id", "{id}")
-                    _redirect = _redirect.replace("'", "%27")
-                    _redirect = _redirect.replace('"', "%22")
-                    _redirect = _adjustRedirectProtocol(_redirect)
-                entry = {
-                    "type": prefix.ptype,
-                    "redirect": _redirect,
-                    "pattern": prefix.pattern,
-                    "description": prefix.description,
-                    "name": prefix.name,
-                    "subject": prefix.subject,
-                    "location": prefix.location,
-                    "for": prefix.pfor,
-                }
-                _prefixes.append(f"  '{row[0]}':{entry}")
-                #_prefixes.append(f"  '{row[0]}':" + "{" + f"'r':'{_redirect}', 'm':r'{prefix.pattern}'" + "}")
-            _L.append(",\n".join(_prefixes))
-        _L.append("}\n\n")
-        return '\n'.join(_L)
+        nid = lib_n2t.normalizeIdentifier(identifier)
+        res_key = self.getLongestMatchingPrefix(nid['resolver_key'])
+        resolver = self.getEntry(res_key)
+        if resolver.get("type") == "synonym":
+            res_key = resolver.get("for")
+            resolver = self.getEntry(res_key)
+        target = resolver.get("redirect")
+        nid['url'] = None
+        if target is not None:
+            nid['url'] = target.format(id=nid['value'])
+        return nid, res_key, resolver

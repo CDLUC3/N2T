@@ -14,16 +14,30 @@ def parseIdentifier(identifier):
 def normalizeIdentifier(identifier):
     res = {
         "original": identifier,
+        "normal": None,
+        "resolver_key": None,
+        "scheme": None,
+        "value": None,
+        "naan": None,
     }
-    scheme, value = parseIdentifier(identifier)
-    res["scheme"] = scheme
+    res["scheme"], res["value"] = parseIdentifier(identifier)
+    _v = res["value"]
+    res["resolver_key"] = f"{res['scheme']}:{res['value']}"
 
     # Ensure ark identifier values have the form "ark:/..."
-    if scheme == "ark":
-        if value is not None and len(value) > 0:
-            if value[0] != "/":
-                value = "/"+value
-    
-    res["value"] = value
-    res["normal"] = f"{scheme}:{value}"
+    # And get the naan and 
+    if res["scheme"] == "ark":
+        if _v is not None and len(_v) > 0:
+            if _v[0] != "/":
+                _v = f"/{_v}"
+            res["naan"] = _v[1:]
+            try:
+                res["naan"], res["suffix"] = _v[1:].split("/",1)
+            except ValueError:
+                pass
+            res['value'] = _v
+            res['resolver_key'] = f"{res['scheme']}:/{res['naan']}"
+
+    res["normal"] = f"{res['scheme']}:{res['value']}"
     return res
+
