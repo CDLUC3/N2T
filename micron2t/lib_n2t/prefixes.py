@@ -155,14 +155,21 @@ class PrefixList:
         for p,v in self.data.items():
             if test.startswith(p):
                 sp = p
-                if v.get("type") == "synonym":
+                vt = v.get("type")
+                if vt == "synonym":
                     sp = v.get("for", None)
                     if sp is not None:
+                        v = self.data.get(sp)
+                        #match.append(sp)
+                #else:
+                #    match.append(sp)
+                if v.get("type") == "scheme":
+                    if sp == scheme:
                         match.append(sp)
                 else:
-                    match.append(p)
-                if sp == scheme:
-                    break
+                    match.append(sp)
+                #if sp == scheme:
+                #    break
         return sorted(match, key=len, reverse=True)
 
     def resolve(self, identifier):
@@ -177,6 +184,6 @@ class PrefixList:
             resolver = self.getEntry(k)            
             resolvers.append(resolver)
             redirect_url = resolver.get("redirect", None)
-            if redirect_url is not None:
+            if nid['url'] is None and redirect_url is not None:
                 nid["url"] = redirect_url.format(id=nid["value"])
         return nid, res_keys, resolvers

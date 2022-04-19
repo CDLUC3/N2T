@@ -79,6 +79,7 @@ async def get_prefix(
         )
     return JSONResponse(
         {
+            "resolver_keys": resolver_keys,
             "resolvers":resolvers,
             "identifier": normalized,
         },
@@ -111,7 +112,7 @@ async def resolve_prefix(
             },
             status_code = 404
         )
-    if _inflection or resolver_keys[0] == normalized['normal']:
+    if _inflection or resolver_keys[0] == normalized['normal'] :
         return JSONResponse(
             resolvers,
             status_code=200
