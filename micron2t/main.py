@@ -1,20 +1,22 @@
-import re
-import os
-import json
+import logging
 from fastapi import FastAPI, HTTPException, Request, Header
-from fastapi.responses import RedirectResponse
+from fastapi.responses import RedirectResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from databases import Database
 from typing import Optional,Iterable
-
-database = Database(f"sqlite:///data/prefixes.sqlite")
+import lib_n2t.prefixes
 
 META_ACCEPT = "application/json;profile=https://rslv.xyz/info"
+PREFIX_SOURCE = "data/prefixes.json"
+
+#logging.basicConfig(level=logging.DEBUG)
+#L = logging.getLogger(__name__)
 
 app = FastAPI(
     title="Micro N2T",
-    version="0.1.5",
+    version="0.2.0",
 )
+
+prefixes = lib_n2t.prefixes.PrefixList(fn_src=PREFIX_SOURCE)
 
 app.add_middleware(
     CORSMiddleware,
@@ -24,23 +26,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.on_event("startup")
-async def database_connect():
-    await database.connect()
-
-@app.on_event("shutdown")
-async def database_disconnect():
-    await database.disconnect()
-
 @app.get("/")
 async def list_prefixes() -> Iterable[str]:
-    def _getkey(row):
-        return row['id']
-
-    sql = "SELECT id FROM prefix WHERE ptype = 'scheme' ORDER BY id"
     return [
-        _getkey(row) async for row in database.iterate(query=sql)
+        row for row in prefixes.prefixes()
     ]
+
+@app.get("/favicon.ico")
+async def favicon():
+    raise HTTPException(status_code=404)
 
 @app.get("/{identifier:path}")
 async def resolve_prefix(
@@ -48,95 +42,42 @@ async def resolve_prefix(
     identifier: str=None, 
     accept:Optional[str]=Header(None)
 ):
+    #L.debug(request)
+    #return JSONResponse(
+    #    {
+    #        "url": str(request.url),
+    #        "path": str(request.url.path),
+    #        "headers": {k: v for k,v in request.headers.items()},
+    #        "dir": dir(request),
+    #    },
+    #    status_code=200
+    #)
+    _inflection = False
+    rurl = str(request.url)
+    if rurl.endswith("?") or rurl.endswith("??"):
+        _inflection = True
     if identifier is None or len(identifier) < 1:
         # should never reach this, but just in case...
         return RedirectResponse("/docs")
-    pfx = identifier
-    val = None
-    try:
-        pfx,val = identifier.split(":",1)
-    except ValueError as e:        
-        # Perhaps we received a string with no colon, see if it matches a prefix
-        #if not identifier in data.PREFIXES:
-        #    return HTTPException(status_code=500, detail="Expected prefix:value")
-        pass
-    if len(pfx) < 1:
-        return HTTPException(status_code=404, detail="No prefix provided")
-    sql = "SELECT * FROM prefix WHERE id=:_id"
-    resolver = await database.fetch_one(query=sql, values={"_id": pfx})
-    if resolver is None:
-        return HTTPException(status_code=404, detail=f"Unknown prefix {pfx}")
-    if val is None or len(val) < 1:
-        return resolver
-    _pattern = resolver.pattern
-    _redirect = resolver.redirect
-    if _redirect is None:
-        raise HTTPException(status_code=500, detail=f"No redirect is available for prefix {pfx}.")
-    # If there's no pattern to match then just redirect
-    if _pattern is None:
-        _url = _redirect.format(id=val)
-        if accept == META_ACCEPT:
-            return {
-                "resolver": resolver,
-                "redirect": _url,
-            }        
-        return RedirectResponse(_url)
-    if re.match(_pattern, val):
-        _url = _redirect.format(id=val)
-        if accept == META_ACCEPT:
-            return {
-                "resolver": resolver,
-                "redirect": _url,
-            }        
-        return RedirectResponse(_url)
-    raise HTTPException(status_code=404, detail=f"Invalid identifier value for {pfx}: {val}")
+    normalized, resolver_key, resolver = prefixes.resolve(identifier)
+    if resolver_key is None:
+        return JSONResponse(
+            {"detail": normalized},
+            status_code = 404
+        )
+    if _inflection:
+        return JSONResponse(
+            resolver,
+            status_code=200
+        )
+    _url = normalized.get("url", None)
+    if _url is None:
+        raise HTTPException(status_code=404, detail=f"No redirect available for: {identifier}")
 
-''' to be removed
+    if accept == META_ACCEPT:
+        return {
+            "resolver": resolver,
+            "redirect": _url,
+        }        
+    return RedirectResponse(_url)
 
-@app.get("/_I/{identifier:path}")
-async def resolve_prefix(request:Request, identifier: str = None):
-    if identifier is None or len(identifier) < 1:
-        # should never reach this, but just in case...
-        return RedirectResponse("/docs")
-    pfx = identifier
-    val = None
-    try:
-        pfx,val = identifier.split(":",1)
-    except ValueError as e:
-        # Perhaps we received a string with no colon, see if it matches a prefix
-        if not identifier in data.PREFIXES:
-            return HTTPException(status_code=500, detail="Expected prefix:value")
-    pfx = pfx.lower()
-    # Get the resolver by looking up the prefix.
-    resolver = data.PREFIXES.get(pfx, None)
-    if resolver is None:
-        raise HTTPException(status_code=404, detail=f"No resolver for {pfx}")
-    # If no value was provided then return the prefix info
-    if val is None or len(val) < 1:
-        return resolver
-    ptype = resolver.get("type", "scheme")
-    if ptype == "synonym":
-        pfor = resolver.get("for", None)
-        if pfor is None:
-            raise HTTPException(status_code=404, detail=f"No resolver for {pfx}")
-        try:
-            resolver = data.PREFIXES[pfor]
-        except KeyError as e:
-            raise HTTPException(status_code=404, detail=f"No resolver {pfor} for synonym {pfx}")
-    elif ptype == "shoulder":
-        raise NotImplementedError("No support for shoulders yet")
-    elif ptype == "naan":
-        raise NotImplementedError("No support for NAANs yet")
-    # Handle scheme types
-    _pattern = resolver.get("pattern", None)
-    _redirect = resolver.get("redirect", None)
-    if _redirect is None:
-        raise HTTPException(status_code=500, detail=f"No redirect is available for prefix {pfx}.")
-    # If there's no pattern to match then just redirect
-    if _pattern is None:
-        return RedirectResponse(_redirect.format(id=val))
-    if re.match(_pattern, val):
-        return RedirectResponse(_redirect.format(id=val))
-    raise HTTPException(status_code=404, detail=f"Invalid identifier value for {pfx}: {val}")
-
-'''

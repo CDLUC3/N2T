@@ -14,15 +14,13 @@ python = "^3.9"
 click = "^8.0.3"
 PyYAML = "^6.0"
 click-logging = "^1.0.1"
-sqlmodel = "^0.0.4"
 htrace = "^0.2.5"
 fastapi = "^0.70.0"
 uvicorn = "^0.15.0"
 jdcal = "^1.4.1"
-databases = "^0.5.3"
-aiosqlite = "^0.17.0"
 
 [tool.poetry.dev-dependencies]
+ipykernel = "^6.13.0"
 
 [tool.poetry.scripts]
 n2t = 'scripts.n2t_cli:main'

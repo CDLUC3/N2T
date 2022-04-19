@@ -33,7 +33,7 @@ poetry install
 Running micron2t:
 
 ```
-wget https://n2t.net/e/n2t_full_prefixes.yaml 
+wget -O data/prefixes.yaml https://n2t.net/e/n2t_full_prefixes.yaml 
 n2t n2t_full_prefixes.yaml topython > micron2t/data/__init__.py
 cd micron2t
 uvicorn --reload main:app
