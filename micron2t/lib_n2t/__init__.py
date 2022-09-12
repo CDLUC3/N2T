@@ -39,7 +39,6 @@ class IdentifierResolver(pydantic.BaseModel):
     institution: typing.Optional[str] = None
     more: typing.Optional[str] = None
     test: typing.Optional[str] = None
-    identifier: typing.Optional[NormalizedIdentifier] = None
 
 
 class ResolverTarget(pydantic.BaseModel):
