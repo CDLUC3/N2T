@@ -1,7 +1,9 @@
 
+import logging
 import typing
 import pydantic
 
+L = logging.getLogger("lib_n2t")
 
 
 def parseIdentifier(identifier:str) -> tuple:
@@ -47,12 +49,15 @@ class ResolverTarget(pydantic.BaseModel):
 
     def set_url(self, nid: NormalizedIdentifier):
         if self.resolver.redirect is not None and nid.value is not None:
-            self.url = self.resolver.redirect.format(id=nid.value)
+            try:
+                self.url = self.resolver.redirect.format(id=nid.value, nlid=nid.value)
+            except KeyError as e:
+                L.exception(e)
 
 
 class IdentifierResolution(pydantic.BaseModel):
     input: NormalizedIdentifier
-    resolution: list[ResolverTarget]
+    resolution: typing.List[ResolverTarget]
 
 
 def normalizeIdentifier(identifier:str) -> [NormalizedIdentifier, str]:

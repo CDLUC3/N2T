@@ -158,17 +158,20 @@ async def resolve_prefix(
         return fastapi.responses.JSONResponse(
             {
                 "error": f"No resolvers available for {identifier}",
-                "detail": res
+                "detail": res.dict(exclude_none=True)
             },
             status_code = 404,
             headers=headers
         )
-    target = res.resolution[0]
-    headers["Location"] = urllib.parse.quote(target.url, safe=URL_SAFE_CHARS)
-    return fastapi.responses.Response(
-        content=target.json(exclude_none=True),
-        status_code=307,
-        headers=headers,
-        media_type="application/json",
-    )
+    for target in res.resolution:
+        if target.url is not None:
+            headers["Location"] = urllib.parse.quote(target.url, safe=URL_SAFE_CHARS)
+            return fastapi.responses.Response(
+                content=target.json(exclude_none=True),
+                status_code=307,
+                headers=headers,
+                media_type="application/json",
+            )
+    # Fallback - return what we found out
+    return res
 

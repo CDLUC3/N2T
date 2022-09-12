@@ -184,7 +184,8 @@ class PrefixList:
         etest = f'/{test}'
         L.debug("Testing: %s  %s", test, etest)
         for p,v in self.data.items():
-            if p.startswith(test) or p.endswith(etest):
+            #if p.startswith(test) or p.endswith(etest):
+            if test.startswith(p) or p.endswith(etest):
                 L.debug("Hit key = %s",p)
                 vt = v.get('type')
                 if vt == 'scheme':
@@ -218,7 +219,10 @@ class PrefixList:
             resolvers.append(resolver)
             redirect_url = self.getRedirect(k) #resolver.get("redirect", None)
             if nid['url'] is None and redirect_url is not None:
-                nid["url"] = redirect_url.format(id=nid["value"])
+                try:
+                    nid["url"] = redirect_url.format(id=nid["value"])
+                except KeyError as e:
+                    L.error(e)
         return nid, res_keys, resolvers
 
     def _toIdentifierResolver(self, key:str, scheme:str) -> lib_n2t.IdentifierResolver:
