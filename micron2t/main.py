@@ -60,6 +60,14 @@ prefixes = lib_n2t.prefixes.PrefixList(fn_src=PREFIX_SOURCE)
 
 @app.get(
     "/",
+    include_in_schema=False
+)
+async def redirect_docs():
+    return fastapi.responses.RedirectResponse(url='/docs')
+
+
+@app.get(
+    "/.info",
     summary="Return list of available resolver prefixes",
 )
 async def list_prefixes() -> typing.Iterable[str]:
@@ -71,7 +79,7 @@ async def list_prefixes() -> typing.Iterable[str]:
 async def favicon():
     raise fastapi.HTTPException(status_code=404)
 
-
+'''
 @app.get(
     "/diagnostic/echo/{path_val:path}",
     summary="Echo the request as a JSON response"
@@ -88,12 +96,12 @@ async def echo_request(request:fastapi.Request, path_val:str=None):
         },
         status_code=200
     )
-
+'''
 
 @app.get(
     "/.info/{identifier:path}",
-    summary="Present resolver information for the provided identifier",
-    response_model=typing.List[lib_n2t.IdentifierResolver],
+    summary="Present resolver information for the provided identifier or part thereof",
+    response_model=lib_n2t.IdentifierResolution,
     response_model_exclude_none=True
 )
 async def get_prefix(
@@ -109,13 +117,10 @@ async def get_prefix(
     res = prefixes.info(identifier)
     _link = [
         f'<{request.url}>; rel="canonical"',
+        f'</.info/{res.input.normal}>; type="application/json"; rel="alternate" profile="{INFO_PROFILE}"'
     ]
-    for r in res[:1]:
-        _link.append(
-            f'</.info/{r.identifier.normal}>; type="application/json"; rel="alternate" profile="{INFO_PROFILE}"'
-        )
     headers = {"Link": ", ".join(_link)}
-    if len(res) == 0:
+    if len(res.resolution) == 0:
         return fastapi.responses.JSONResponse(
             {
                 "error": f"No resolvers available for {identifier}",
@@ -129,7 +134,8 @@ async def get_prefix(
 
 @app.get(
     "/{identifier:path}",
-    summary="Redirect to the identified resource or present resolver information."
+    summary="Redirect to the identified resource or present resolver information.",
+    response_model=lib_n2t.IdentifierResolution
 )
 async def resolve_prefix(
     request:fastapi.Request, 
@@ -145,25 +151,22 @@ async def resolve_prefix(
     res = prefixes.info(identifier)
     _link = [
         f'<{request.url}>; rel="canonical"',
+        f'</.info/{res.input.normal}>; type="application/json"; rel="alternate" profile="{INFO_PROFILE}"'
     ]
-    for r in res[:1]:
-        _link.append(
-            f'</.info/{r.identifier.normal}>; type="application/json"; rel="alternate" profile="{INFO_PROFILE}"'
-        )
     headers = {"Link": ", ".join(_link)}
-    if len(res) == 0:
+    if len(res.resolution) == 0:
         return fastapi.responses.JSONResponse(
             {
                 "error": f"No resolvers available for {identifier}",
-                #"detail": normalized
+                "detail": res
             },
             status_code = 404,
             headers=headers
         )
-    target = res[0]
-    headers["Location"] = urllib.parse.quote(target.identifier.url, safe=URL_SAFE_CHARS)
+    target = res.resolution[0]
+    headers["Location"] = urllib.parse.quote(target.url, safe=URL_SAFE_CHARS)
     return fastapi.responses.Response(
-        content=target.json(),
+        content=target.json(exclude_none=True),
         status_code=307,
         headers=headers,
         media_type="application/json",

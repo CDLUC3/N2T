@@ -41,13 +41,19 @@ class IdentifierResolver(pydantic.BaseModel):
     test: typing.Optional[str] = None
     identifier: typing.Optional[NormalizedIdentifier] = None
 
-    class Config:
-        underscore_attrs_are_private = True
 
-    def set_identifier(self, nid: NormalizedIdentifier):
-        self.identifier = nid.copy()
-        if self.redirect is not None and self.identifier.value is not None:
-            self.identifier.url = self.redirect.format(id=self.identifier.value)
+class ResolverTarget(pydantic.BaseModel):
+    url: typing.Optional[str]
+    resolver: IdentifierResolver
+
+    def set_url(self, nid: NormalizedIdentifier):
+        if self.resolver.redirect is not None and nid.value is not None:
+            self.url = self.resolver.redirect.format(id=nid.value)
+
+
+class IdentifierResolution(pydantic.BaseModel):
+    input: NormalizedIdentifier
+    resolution: list[ResolverTarget]
 
 
 def normalizeIdentifier(identifier:str) -> [NormalizedIdentifier, str]:
