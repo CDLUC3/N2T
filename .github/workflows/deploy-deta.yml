@@ -33,4 +33,3 @@ jobs:
           deta-access-token: ${{ secrets.DETA_TOKEN }}
           deta-name: 'micron2t'
           deta-project-dir: './micron2t'
-    

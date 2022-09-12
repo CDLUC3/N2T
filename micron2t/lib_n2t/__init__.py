@@ -1,5 +1,10 @@
 
-def parseIdentifier(identifier):
+import typing
+import pydantic
+
+
+
+def parseIdentifier(identifier:str) -> tuple:
     identifier = identifier.strip()
     parts = identifier.split(":", 1)
     scheme = parts[0].strip().lower()
@@ -11,36 +16,73 @@ def parseIdentifier(identifier):
     return scheme, value
 
 
-def normalizeIdentifier(identifier):
-    res = {
-        "original": identifier,
-        "normal": None,
-        "resolver_key": None,
-        "scheme": None,
-        "value": None,
-        "naan": None,
-    }
-    res["scheme"], res["value"] = parseIdentifier(identifier)
-    _v = res["value"]
-    res["resolver_key"] = res["scheme"]
-    if res["value"] is not None:
-        res["resolver_key"] = f"{res['scheme']}:{res['value']}"
+class NormalizedIdentifier(pydantic.BaseModel):
+    original: str
+    normal: str
+    value: typing.Optional[str] = None
+    scheme: typing.Optional[str] = None
+    naan: typing.Optional[str] = None
+    url: typing.Optional[str] = None
+
+
+class IdentifierResolver(pydantic.BaseModel):
+    id:str
+    idtype: str
+    redirect: str
+    name: typing.Optional[str] = None
+    alias: typing.Optional[str] = None
+    provider: typing.Optional[str] = None
+    provider_id: typing.Optional[str] = None
+    description: typing.Optional[str] = None
+    subject: typing.Optional[str] = None
+    location: typing.Optional[str] = None
+    institution: typing.Optional[str] = None
+    more: typing.Optional[str] = None
+    test: typing.Optional[str] = None
+    identifier: typing.Optional[NormalizedIdentifier] = None
+
+    class Config:
+        underscore_attrs_are_private = True
+
+    def set_identifier(self, nid: NormalizedIdentifier):
+        self.identifier = nid.copy()
+        if self.redirect is not None and self.identifier.value is not None:
+            self.identifier.url = self.redirect.format(id=self.identifier.value)
+
+
+def normalizeIdentifier(identifier:str) -> [NormalizedIdentifier, str]:
+    _scheme, _value = parseIdentifier(identifier)
+    _resolver_key = _scheme
+    if _value is not None:
+        _resolver_key = f"{_scheme}:{_value}"
 
     # Ensure ark identifier values have the form "ark:/..."
-    # And get the naan and 
-    if res["scheme"] == "ark":
-        if _v is not None and len(_v) > 0:
-            if _v[0] != "/":
-                _v = f"/{_v}"
-            res["naan"] = _v[1:]
+    # And get the naan and
+    _naan = None
+    if _scheme == "ark":
+        if _value is not None and len(_value) > 0:
+            if _value[0] != "/":
+                _value = f"/{_value}"
+            _naan = _value[1:]
             try:
-                res["naan"], res["suffix"] = _v[1:].split("/",1)
+                _naan, _suffix = _value[1:].split("/",1)
             except ValueError:
                 pass
-            res['value'] = _v
-            res['resolver_key'] = f"{res['scheme']}:{res['value']}"
+            _resolver_key = f"{_scheme}:{_value}"
     #elif res["scheme"] == "doi":
     #    res["resolver_key"] = "doi"
-    res["normal"] = f"{res['scheme']}:{res['value']  if res['value'] is not None else ''}"
-    return res
+    _normal = f"{_scheme}:{_value  if _value is not None else ''}"
+    res = NormalizedIdentifier(
+        original=identifier,
+        normal=_normal,
+        value=_value,
+        scheme=_scheme,
+        naan=_naan
+    )
+    return res, _resolver_key
+
+
+
+
+
 

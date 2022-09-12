@@ -121,12 +121,13 @@ def main(ctx, source):
 
 
 @main.command()
-@click.option("-d", "--destfn", default=None, help="File name for target JSON document")
+@click.option("-d", "--destfn", default=None, required=True, help="File name for target JSON document")
 @click.pass_context
 def tojson(ctx, destfn):
     """
     """
     ctx.obj['pfx'].store(destfn)
+
     L.info("Prefixes stored to JSON: %s", destfn)
 
 
