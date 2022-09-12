@@ -32,9 +32,14 @@ poetry install
 
 Running micron2t:
 
+First gather the prefixes and generate the JSON master file:
 ```
 wget -O data/prefixes.yaml https://n2t.net/e/n2t_full_prefixes.yaml 
-n2t n2t_full_prefixes.yaml topython > micron2t/data/__init__.py
+n2t data/prefixes.yaml tojson -d micron2t/data/prefixes.json
+```
+
+Then fire up the N2T web service:
+```
 cd micron2t
 uvicorn --reload main:app
 ```
@@ -56,5 +61,12 @@ with `Accept: application/json;profile=https://rslv.xyz/info`, in which case inf
 is returned.
 
 
-
 [^1]: As of 2021-12-07
+
+
+## Resolution
+
+The process of resolution returns either a resource or a location from which the resource can be retrieved. N2T does not hold identified resources, and so will only provide the registered location of the resource.
+
+
+

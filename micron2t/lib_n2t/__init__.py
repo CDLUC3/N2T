@@ -1,5 +1,8 @@
 
-def parseIdentifier(identifier):
+import pydantic
+
+
+def parseIdentifier(identifier:str) -> tuple:
     identifier = identifier.strip()
     parts = identifier.split(":", 1)
     scheme = parts[0].strip().lower()
@@ -11,7 +14,7 @@ def parseIdentifier(identifier):
     return scheme, value
 
 
-def normalizeIdentifier(identifier):
+def normalizeIdentifier(identifier:str) -> dict:
     res = {
         "original": identifier,
         "normal": None,
@@ -43,4 +46,32 @@ def normalizeIdentifier(identifier):
     #    res["resolver_key"] = "doi"
     res["normal"] = f"{res['scheme']}:{res['value']  if res['value'] is not None else ''}"
     return res
+
+
+class IdentifierPrefix(pydantic.BaseModel):
+    id:str
+    idtype: str
+    redirect: str
+    name: typing.Optional[str] = None
+    alias: typing.Optional[str] = None
+    provider: typing.Optional[str] = None
+    provider_id: typing.Optional[str] = None
+    description: typing.Optional[str] = None
+    subject: typing.Optional[str] = None
+    location: typing.Optional[str] = None
+    institution: typing.Optional[str] = None
+    more: typing.Optional[str] = None
+    test: typing.Optional[str] = None
+
+    _primary: int = 1
+    _prefixed: int = 0
+    _sort_score: int = 1
+    _synonym: typing.Optional[str] = None
+
+    class Config:
+        underscore_attrs_are_private = True
+
+
+class IdentifierPrefixes(pydantic.BaseModel):
+    pass
 

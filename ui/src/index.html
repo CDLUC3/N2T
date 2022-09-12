@@ -12,6 +12,8 @@
     <script type="module">
         import {GhCorner} from "./js/main.js";
         
+        const META_HEADER = {"Accept":"application/json;profile=https://rslv.xyz/info"};
+
         function selectPrefix(pfx) {
             return {
                 pfx:pfx,
@@ -19,7 +21,8 @@
             };
         }
 
-        const prefixSource = "https://rslv.deta.dev/";
+        //const prefixSource = "https://rslv.deta.dev/";
+        const prefixSource = "http://localhost:8000/";
         let allPrefixes = [];
 
         globalThis.data = {
@@ -32,7 +35,8 @@
             makeSuggestion: function (e){
                 console.log(this.pfx);
                 const _url = `${prefixSource}${this.pfx}`;
-                fetch(_url).then(response => {return response.json()})
+                console.log("_url", _url);
+                fetch(_url, {headers:META_HEADER}).then(response => {return response.json()})
                   .then(p => {
                       this.prefix = p;
                       console.log(this.prefix);

@@ -108,7 +108,7 @@ class PrefixList:
 
     def store(self, fn_dst):
         with open(fn_dst, "w") as dst:
-            json.dump(self.data, dst)
+            json.dump(self.data, dst, indent=2)
 
     def fields(self):
         """Return dict of fields and their occurrence
