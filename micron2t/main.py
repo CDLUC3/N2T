@@ -1,8 +1,10 @@
 '''
 MicroN2T - General purpose identifier resolver service
 '''
+import json
 import logging.config
 import typing
+import urllib.parse
 
 import fastapi
 import fastapi.responses
@@ -12,9 +14,11 @@ import uptrace
 
 import lib_n2t.prefixes
 
-META_ACCEPT:str = "application/json;profile=https://rslv.xyz/info"
+INFO_PROFILE:str = "https://rslv.xyz/info/"
+META_ACCEPT:str = "application/json;profile=https://rslv.xyz/info/"
 PREFIX_SOURCE:str  = "data/prefixes.json"
 VERSION = "0.5.0"
+URL_SAFE_CHARS = ":/%#?=@[]!$&'()*+,;"
 
 logging.config.fileConfig("logging.conf", disable_existing_loggers=False)
 L = logging.getLogger("resolver")
@@ -85,38 +89,42 @@ async def echo_request(request:fastapi.Request, path_val:str=None):
         status_code=200
     )
 
+
 @app.get(
     "/.info/{identifier:path}",
-    summary="Present resolver information for the provided identifier"
+    summary="Present resolver information for the provided identifier",
+    response_model=typing.List[lib_n2t.IdentifierResolver],
+    response_model_exclude_none=True
 )
 async def get_prefix(
     request:fastapi.Request,
     identifier: str=None,
-    #accept:typing.Optional[str]=fastapi.responses.Headers(None)
     accept:typing.Optional[str]=fastapi.Header(default=None)
 ):
-    '''Resolve identifier
+    '''Get resolver
     '''
     if identifier is None or len(identifier) < 1:
         # should never reach this, but just in case...
-        return fastapi.responses.RedirectResponse("/docs")
-    normalized, resolver_keys, resolvers = prefixes.resolve(identifier)
-    if len(resolver_keys) == 0:
+        raise fastapi.HTTPException(status_code=404)
+    res = prefixes.info(identifier)
+    _link = [
+        f'<{request.url}>; rel="canonical"',
+    ]
+    for r in res[:1]:
+        _link.append(
+            f'</.info/{r.identifier.normal}>; type="application/json"; rel="alternate" profile="{INFO_PROFILE}"'
+        )
+    headers = {"Link": ", ".join(_link)}
+    if len(res) == 0:
         return fastapi.responses.JSONResponse(
             {
                 "error": f"No resolvers available for {identifier}",
-                "detail": normalized
+                #"detail": normalized
             },
-            status_code = 404
+            status_code = 404,
+            headers=headers
         )
-    return fastapi.responses.JSONResponse(
-        {
-            "resolver_keys": resolver_keys,
-            "resolvers":resolvers,
-            "identifier": normalized,
-        },
-        status_code=200
-    )
+    return res
 
 
 @app.get(
@@ -128,41 +136,36 @@ async def resolve_prefix(
     identifier: str=None, 
     accept:typing.Optional[str]=fastapi.Header(None)
 ):
-    _inflection = False
-    rurl = str(request.url)
-    if rurl.endswith("?") or rurl.endswith("??"):
-        _inflection = True
     if identifier is None or len(identifier) < 1:
         # should never reach this, but just in case...
         return fastapi.responses.RedirectResponse("/docs")
-    normalized, resolver_keys, resolvers = prefixes.resolve(identifier)
-    if len(resolver_keys) == 0:
+    rurl = str(request.url)
+    if rurl.endswith("?") or rurl.endswith("??"):
+        return get_prefix(request, identifier, accept)
+    res = prefixes.info(identifier)
+    _link = [
+        f'<{request.url}>; rel="canonical"',
+    ]
+    for r in res[:1]:
+        _link.append(
+            f'</.info/{r.identifier.normal}>; type="application/json"; rel="alternate" profile="{INFO_PROFILE}"'
+        )
+    headers = {"Link": ", ".join(_link)}
+    if len(res) == 0:
         return fastapi.responses.JSONResponse(
             {
-                "error": f"No resolver available for {identifier}",
-                "detail": normalized
+                "error": f"No resolvers available for {identifier}",
+                #"detail": normalized
             },
-            status_code = 404
+            status_code = 404,
+            headers=headers
         )
-    if _inflection or resolver_keys[0] == normalized['normal'] :
-        return fastapi.responses.JSONResponse(
-            resolvers,
-            status_code=200
-        )
-    _url = normalized.get("url", None)
-    if _url is None:
-        return fastapi.responses.JSONResponse(
-            {
-                "error": f"No redirect information available for {identifier}",
-                "resolver": resolvers
-            },
-            status_code=404
-        )
-
-    if accept == META_ACCEPT:
-        return {
-            "resolver": resolvers,
-            "redirect": _url,
-        }        
-    return fastapi.responses.RedirectResponse(_url)
+    target = res[0]
+    headers["Location"] = urllib.parse.quote(target.identifier.url, safe=URL_SAFE_CHARS)
+    return fastapi.responses.Response(
+        content=target.json(),
+        status_code=307,
+        headers=headers,
+        media_type="application/json",
+    )
 
