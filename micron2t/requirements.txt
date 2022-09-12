@@ -1,1 +1,3 @@
 fastapi
+uptrace
+opentelemetry-instrumentation-fastapi
