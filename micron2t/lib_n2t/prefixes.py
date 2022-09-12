@@ -203,22 +203,6 @@ class PrefixList:
                     _for = v.get('for')
                     if _for is not None:
                         match.add(_for)
-                #sp = p
-                #vt = v.get("type")
-                #if vt == "synonym":
-                #    sp = v.get("for", None)
-                #    if sp is not None:
-                #        v = self.data.get(sp)
-                #        #match.append(sp)
-                #else:
-                #    match.append(sp)
-                #if vt == "scheme":
-                #    if sp == scheme:
-                #        match.add(sp)
-                #else:
-                #    match.add(sp)
-                ##if sp == scheme:
-                ##    break
         return sorted(list(match), key=len, reverse=True)
 
     def resolve(self, identifier):
@@ -264,15 +248,16 @@ class PrefixList:
         )
         return _t
 
-    def info(self, identifier:str)->typing.List[lib_n2t.IdentifierResolver]:
+    def info(self, identifier:str)->lib_n2t.IdentifierResolution:
         nid, rkey = lib_n2t.normalizeIdentifier(identifier)
+        result = lib_n2t.IdentifierResolution(input=nid, resolution=[])
         L.debug("nid = %s",nid)
         res_keys = self.getLongestMatchingPrefix(rkey, nid.scheme)
-        resolvers = []
         redirect_url = None
         for k in res_keys:
             r = self._toIdentifierResolver(k, nid.scheme)
-            L.debug("resolver = %s", r)
-            r.set_identifier(nid)
-            resolvers.append(r)
-        return resolvers
+            target = lib_n2t.ResolverTarget(url=None, resolver=r)
+            target.set_url(nid)
+            L.debug("target = %s", target)
+            result.resolution.append(target)
+        return result
