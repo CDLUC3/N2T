@@ -79,7 +79,7 @@ async def list_prefixes() -> typing.Iterable[str]:
 async def favicon():
     raise fastapi.HTTPException(status_code=404)
 
-'''
+
 @app.get(
     "/diagnostic/echo/{path_val:path}",
     summary="Echo the request as a JSON response"
@@ -96,7 +96,7 @@ async def echo_request(request:fastapi.Request, path_val:str=None):
         },
         status_code=200
     )
-'''
+
 
 @app.get(
     "/.info/{identifier:path}",
@@ -135,7 +135,7 @@ async def get_prefix(
 @app.get(
     "/{identifier:path}",
     summary="Redirect to the identified resource or present resolver information.",
-    response_model=lib_n2t.IdentifierResolution
+    #response_model=lib_n2t.IdentifierResolution
 )
 async def resolve_prefix(
     request:fastapi.Request, 
@@ -147,7 +147,7 @@ async def resolve_prefix(
         return fastapi.responses.RedirectResponse("/docs")
     rurl = str(request.url)
     if rurl.endswith("?") or rurl.endswith("??"):
-        return get_prefix(request, identifier, accept)
+        return await get_prefix(request, identifier, accept)
     res = prefixes.info(identifier)
     _link = [
         f'<{request.url}>; rel="canonical"',
@@ -158,7 +158,7 @@ async def resolve_prefix(
         return fastapi.responses.JSONResponse(
             {
                 "error": f"No resolvers available for {identifier}",
-                "detail": res.dict(exclude_none=True)
+                #"detail": res.dict(exclude_none=True)
             },
             status_code = 404,
             headers=headers
