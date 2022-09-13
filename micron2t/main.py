@@ -9,8 +9,8 @@ import urllib.parse
 import fastapi
 import fastapi.responses
 import fastapi.middleware.cors
-import opentelemetry.instrumentation.fastapi
-import uptrace
+#import opentelemetry.instrumentation.fastapi
+#import uptrace
 
 import lib_n2t.prefixes
 
@@ -52,8 +52,8 @@ app.add_middleware(
 )
 
 # Add telemetry for performance metrics
-uptrace.configure_opentelemetry(service_name="n2t_resolver",service_version=VERSION)
-opentelemetry.instrumentation.fastapi.FastAPIInstrumentor.instrument_app(app)
+#uptrace.configure_opentelemetry(service_name="n2t_resolver",service_version=VERSION)
+#opentelemetry.instrumentation.fastapi.FastAPIInstrumentor.instrument_app(app)
 
 prefixes = lib_n2t.prefixes.PrefixList(fn_src=PREFIX_SOURCE)
 
