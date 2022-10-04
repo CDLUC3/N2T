@@ -34,7 +34,7 @@
             },
             makeSuggestion: function (e){
                 console.log(this.pfx);
-                const _url = `${prefixSource}${this.pfx}`;
+                const _url = `${prefixSource}/${this.pfx}`;
                 console.log("_url", _url);
                 fetch(_url, {headers:META_HEADER}).then(response => {return response.json()})
                   .then(p => {
