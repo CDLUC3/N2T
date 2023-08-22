@@ -19,7 +19,7 @@ import lib_n2t.prefixes
 
 INFO_PROFILE: str = "https://rslv.xyz/info/"
 META_ACCEPT: str = "application/json;profile=https://rslv.xyz/info/"
-PREFIX_SOURCE: str  = "data/config.json"
+PREFIX_SOURCE: str  = "test_data/config.json"
 VERSION = "0.6.0"
 URL_SAFE_CHARS = ":/%#?=@[]!$&'()*+,;"
 

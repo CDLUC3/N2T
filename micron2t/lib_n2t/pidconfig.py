@@ -49,7 +49,7 @@ class PidConfig:
 
     @property
     def keys(self):
-        return (self._config.get("data", {}), )
+        return self._config.get("data", {}).keys()
 
     def get_entry(self, key: str, exact: bool = True) -> (typing.Optional['PidConfig'], typing.Optional[str]):
         """
@@ -66,10 +66,14 @@ class PidConfig:
         _data = self._config.get("data", {})
         try:
             _entry = _data[key]
-            _synonym_for = _entry.get("synonym_for", None)
-            if _synonym_for is not None:
-                cfg, _syn = self.get_entry(_synonym_for, exact=exact)
-                return cfg, _synonym_for
+            if isinstance(_entry, dict):
+                # check if entry is a synonym for another entry
+                _synonym_for = _entry.get("synonym_for", None)
+                if _synonym_for is not None:
+                    cfg, _syn = self.get_entry(_synonym_for, exact=exact)
+                    return cfg, _synonym_for
+            # Get the next level of configuration, which may be a config dict
+            # or a relative path to a json dict to load.
             return PidConfig(_entry, base_path=self._base_path), None
         except KeyError:
             if exact:
