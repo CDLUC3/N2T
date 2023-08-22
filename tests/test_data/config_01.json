@@ -1,0 +1,7 @@
+{
+  "target": "{pid}",
+  "parser": "pidparse.BasePidParser",
+  "data": {
+    "test": "config_02.json"
+  }
+}

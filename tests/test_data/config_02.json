@@ -1,0 +1,5 @@
+{
+  "target": "{group_value_raw}",
+  "parser": "pidparse.BasePidParser",
+  "data": {}
+}
