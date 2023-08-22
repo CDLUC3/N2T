@@ -1,14 +1,35 @@
 
 import logging
 import typing
+
 import pydantic
+import sqlmodel
 
 L = logging.getLogger("lib_n2t")
 
+SCHEME_DELIMITER = ":"
 
-def parseIdentifier(identifier:str) -> tuple:
+
+def get_scheme(identifier: str) -> tuple[str, typing.Optional[str]]:
+    """
+    Splits an identifier into scheme, value.
+
+    The delimiting character is a colon (":") and it is assumed the input
+    identifier string has been pre-processed. For example, a DOI identifier
+    will often be expressed as a URL like "https://doi.org/10.12345/foo"
+    instead of the expected form of "doi:10.12345/foo". A preprocessor
+    should be used to convert to the expected form.
+
+    Scheme is always returned as lower case with white space trimmed from the start and end.
+
+    Args:
+        identifier: An identifier string
+
+    Returns: (scheme, value)
+
+    """
     identifier = identifier.strip()
-    parts = identifier.split(":", 1)
+    parts = identifier.split(SCHEME_DELIMITER, 1)
     scheme = parts[0].strip().lower()
     value = None
     try:
@@ -16,6 +37,27 @@ def parseIdentifier(identifier:str) -> tuple:
     except IndexError:
         pass
     return scheme, value
+
+
+
+class IdentifierNAA(sqlmodel.SQLModel, table=True):
+    prefix: str = sqlmodel.Field(primary_key=True)
+    parent: typing.Optional[str] = None
+    delimiter: typing.Optional[str]
+    max_split: int = 1
+
+    def split_value(self, v: str) -> tuple[str, typing.Optional[str]]:
+        '''
+        Split the identifier value v into parts according to scheme rules.
+
+        Args:
+            v: the value part of an identifier (portion after scheme)
+
+        Returns: tuple of identifier parts
+        '''
+        if self.delimiter is None:
+            return (v, )
+        return v.split(self.delimiter, self.max_split)
 
 
 class NormalizedIdentifier(pydantic.BaseModel):
@@ -28,7 +70,7 @@ class NormalizedIdentifier(pydantic.BaseModel):
 
 
 class IdentifierResolver(pydantic.BaseModel):
-    id:str
+    id: str
     idtype: str
     redirect: str
     name: typing.Optional[str] = None
@@ -60,8 +102,16 @@ class IdentifierResolution(pydantic.BaseModel):
     resolution: typing.List[ResolverTarget]
 
 
-def normalizeIdentifier(identifier:str) -> [NormalizedIdentifier, str]:
-    _scheme, _value = parseIdentifier(identifier)
+def normalize_identifier(identifier: str) -> [NormalizedIdentifier, str]:
+    """
+
+    Args:
+        identifier:
+
+    Returns:
+
+    """
+    _scheme, _value = get_scheme(identifier)
     _resolver_key = _scheme
     if _value is not None:
         _resolver_key = f"{_scheme}:{_value}"

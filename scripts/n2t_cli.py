@@ -11,6 +11,7 @@ import lib_n2t.prefixes
 import jdcal
 
 
+
 # Global for access by event hooks
 _session = requests.Session()
 
@@ -98,6 +99,13 @@ def cbLinkFollow(response, *args, **kwargs):
                 L.info(f"Follow Link: {R}{link_url}{W}")
 
 
+def get_prefix_list(src: str) -> lib_n2t.prefixes.PrefixList:
+    ignore_types = ["naan", "shoulder", ]
+    pfxs = lib_n2t.prefixes.PrefixList(fn_src=src, ignore_types=None)
+    L.info("Prefixes loaded from: %s", src)
+    return pfxs
+
+
 @click.group()
 @click.pass_context
 @click.argument("source")
@@ -113,21 +121,16 @@ def main(ctx, source):
     # Setup context for operations
     ctx.ensure_object(dict)
     ctx.obj["source"] = source
-    ctx.obj["pfx"] = None
-
-    # if provided a sqlite source, then open connection   
-    ctx.obj["pfx"] = lib_n2t.prefixes.PrefixList(fn_src=ctx.obj["source"])
-    L.info("Prefixes loaded from: %s", ctx.obj["source"])
+    ctx.obj["pfx"] = get_prefix_list(source)
 
 
 @main.command()
 @click.option("-d", "--destfn", default=None, required=True, help="File name for target JSON document")
 @click.pass_context
 def tojson(ctx, destfn):
-    """
+    """Load prefixes from a source and output to JSON target
     """
     ctx.obj['pfx'].store(destfn)
-
     L.info("Prefixes stored to JSON: %s", destfn)
 
 
@@ -145,7 +148,7 @@ def summary(ctx, field):
         print(f"{i:3} {props[k]:6} {k}")
         i += 1
     if field is not None:
-        fvalues = pfx.fieldValues(field)
+        fvalues = pfx.field_values(field)
         print("")
         print(f"Distinct values for field: {field}")
         print(" Count Value")
@@ -157,20 +160,25 @@ def summary(ctx, field):
 @click.pass_context
 def prefixes(ctx):
     pfx = ctx.obj["pfx"]
-    for prefix in pfx.prefixes():
-        print(prefix)
+    charset = set()
+    for prefx in pfx.prefixes():
+        for c in prefx:
+            charset.add(c)
+        print(prefx)
+
+    print(f"Charset = {sorted(list(charset))}")
 
 
 @main.command()
 @click.argument("prefix")
 @click.pass_context
-def prefix(ctx, prefix):
+def prefix(ctx, prefx):
     pfx = ctx.obj["pfx"]
-    entry = pfx.getEntry(prefix)
+    entry = pfx.get_entry(prefx)
     if entry is not None:
         print(json.dumps(entry, indent=2, ensure_ascii=False))
         return
-    L.error("No entry found for %s", prefix)
+    L.error("No entry found for %s", prefx)
 
 
 @main.command()
@@ -178,11 +186,11 @@ def prefix(ctx, prefix):
 @click.argument("identifier")
 def resolver(ctx, identifier):
     pfx = ctx.obj["pfx"]
-    normalized, resolver_key, resolver = pfx.resolve(identifier)
+    normalized, resolver_key, resolvr = pfx.resolve(identifier)
     print(f"Normalized id: {normalized['normal']}")
     print(f"Resolved URL: {normalized['url']}")
     print(f"Resolver: {resolver_key}")
-    print(json.dumps(resolver, indent=2, ensure_ascii=False))
+    print(json.dumps(resolvr, indent=2, ensure_ascii=False))
 
 
 @main.command()
@@ -204,10 +212,10 @@ def resolver(ctx, identifier):
 @click.option("-U", "--user-agent", default=None, help="User agent header value")
 def resolve(ctx, identifier, accept, test, timeout, insecure, link_type, link_profile, link_rel, user_agent):
     pfx = ctx.obj["pfx"]
-    normalized, resolver_key, resolver = pfx.resolve(identifier)
+    normalized, resolver_key, resolvr = pfx.resolve(identifier)
     L.info("Normalized id: %s", normalized['normal'])
     L.info("Using resolver: %s", resolver_key)
-    L.debug(json.dumps(resolver, indent=2, ensure_ascii=False))
+    L.debug(json.dumps(resolvr, indent=2, ensure_ascii=False))
     url = normalized['url']
     L.info("URL: %s", url)
     if test:
@@ -236,8 +244,8 @@ def resolve(ctx, identifier, accept, test, timeout, insecure, link_type, link_pr
             verify=not insecure,
         )
         tend = time.time()
-        summary = htrace.responseSummary(response, tstart, tend)
-        printSummary(summary)
+        summar = htrace.responseSummary(response, tstart, tend)
+        printSummary(summar)
 
 
 if __name__ == "__main__":
