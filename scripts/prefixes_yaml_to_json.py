@@ -16,7 +16,7 @@ def main(source) -> int:
     if not os.path.exists(source):
         L.error("Source '%s' does not exist.", source)
         return 1
-    ignored_types = ("shoulder", "naan")
+    ignored_types = []
     data = lib_n2t.prefixes.jsonFromYAML(source, None, ignore_types=ignored_types, ignore_bad_targets=True)
     config = {
         "target": "{pid}",

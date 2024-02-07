@@ -29,6 +29,9 @@ class ParsedPid:
             params["group_value"] = self.group_value
         return params
 
+    def json_dict(self):
+        return self._get_params()
+
     def __str__(self):
         return self.canonical
 
@@ -57,7 +60,7 @@ class ParsedPid:
         params = self._get_params()
         try:
             return self.target_template.format(**params)
-        except KeyError:
+        except (KeyError, AttributeError, ):
             pass
         return None
 

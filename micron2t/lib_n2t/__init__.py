@@ -39,7 +39,6 @@ def get_scheme(identifier: str) -> tuple[str, typing.Optional[str]]:
     return scheme, value
 
 
-
 class IdentifierNAA(sqlmodel.SQLModel, table=True):
     prefix: str = sqlmodel.Field(primary_key=True)
     parent: typing.Optional[str] = None
@@ -47,14 +46,14 @@ class IdentifierNAA(sqlmodel.SQLModel, table=True):
     max_split: int = 1
 
     def split_value(self, v: str) -> tuple[str, typing.Optional[str]]:
-        '''
+        """
         Split the identifier value v into parts according to scheme rules.
 
         Args:
             v: the value part of an identifier (portion after scheme)
 
         Returns: tuple of identifier parts
-        '''
+        """
         if self.delimiter is None:
             return (v, )
         return v.split(self.delimiter, self.max_split)
@@ -140,9 +139,6 @@ def normalize_identifier(identifier: str) -> [NormalizedIdentifier, str]:
         naan=_naan
     )
     return res, _resolver_key
-
-
-
 
 
 

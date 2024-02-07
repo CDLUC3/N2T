@@ -6,7 +6,7 @@ import lib_n2t.pidparse
 config_ark = {
     "target": "https://arks.org/{group}/{value_raw}",
     "canonical": "{scheme}:{group_value}",
-    "parser": "lib_n2t.pidparse.ArkParser",
+    "parser": "rslv.lib_rslv.pidparse.ArkParser",
     "data": {
         "12345": {
             "target": "https://example.org/ark/{group}/{value_raw}"

@@ -1,67 +1,13 @@
-'''
-MicroN2T - General purpose identifier resolver service
-'''
-import json
-import logging.config
-import typing
-import urllib.parse
-
-import fastapi
-import fastapi.responses
-import fastapi.middleware.cors
-#import opentelemetry.instrumentation.fastapi
-#import uptrace
-
-import lib_n2t.model
-import lib_n2t.pidconfig
-import lib_n2t.pidparse
-import lib_n2t.prefixes
-
-INFO_PROFILE: str = "https://rslv.xyz/info/"
-META_ACCEPT: str = "application/json;profile=https://rslv.xyz/info/"
-PREFIX_SOURCE: str  = "test_data/config.json"
-VERSION = "0.6.0"
-URL_SAFE_CHARS = ":/%#?=@[]!$&'()*+,;"
-
-logging.config.fileConfig("logging.conf", disable_existing_loggers=False)
-L = logging.getLogger("resolver")
-
-# Intialize the application
-app = fastapi.FastAPI(
-    title="Micro N2T",
-    description=__doc__,
-    version=VERSION,
-    contact={"name": "Dave Vieglais", "url": "https://github.com/datadavev/"},
-    license_info={
-        "name": "MIT",
-        "url": "https://opensource.org/license/mit/",
-    },
-)
-
-# Enables CORS for UIs on different domains
-app.add_middleware(
-    fastapi.middleware.cors.CORSMiddleware,
-    allow_origins=[
-        "*",
-    ],
-    allow_credentials=True,
-    allow_methods=[
-        "GET",
-        "HEAD",
-    ],
-    allow_headers=[
-        "*",
-    ],
-)
 
 # Add telemetry for performance metrics
+
 #uptrace.configure_opentelemetry(service_name="n2t_resolver",service_version=VERSION)
 #opentelemetry.instrumentation.fastapi.FastAPIInstrumentor.instrument_app(app)
 
 prefixes = lib_n2t.prefixes.PrefixList(fn_src=PREFIX_SOURCE)
 
 pid_parser = lib_n2t.pidparse.BasePidParser(
-    config=lib_n2t.pid_config.PidConfig(PREFIX_SOURCE)
+    config=lib_n2t.pidconfig.PidConfig(PREFIX_SOURCE)
 )
 
 
@@ -213,9 +159,8 @@ async def resolve_prefix(
     headers = {"Link": ", ".join(_link)}
     headers["Location"] = urllib.parse.quote(parsed_pid.target, safe=URL_SAFE_CHARS)
     return fastapi.responses.Response(
-        content=parsed_pid.json(exclude_none=True),
+        content=json.dumps(parsed_pid.json_dict(), indent=2),
         status_code=307,
         headers=headers,
         media_type="application/json",
     )
-

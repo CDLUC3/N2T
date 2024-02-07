@@ -245,3 +245,4 @@ dist
 
 # TernJS port file
 .tern-port
+/main_naans
