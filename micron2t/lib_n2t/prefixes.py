@@ -113,6 +113,12 @@ class PrefixList:
         with open(fn_dst, "w") as dst:
             json.dump(self.data, dst, indent=2)
 
+    def store_jsonl(self, fn_dst):
+        with open(fn_dst, "w") as dst:
+            for k, v in self.data.items():
+                dst.write(json.dumps(v))
+                dst.write("\n")
+
     def fields(self):
         """Return dict of fields and their occurrence
         """

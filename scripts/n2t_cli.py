@@ -122,13 +122,16 @@ def main(ctx, source):
 
 @main.command()
 @click.option("-d", "--destfn", default=None, required=True, help="File name for target JSON document")
+@click.option("-l","--lines", is_flag=True, default=False, help="Output as JSON-lines")
 @click.pass_context
-def tojson(ctx, destfn):
+def tojson(ctx, destfn, lines):
     """
     """
-    ctx.obj['pfx'].store(destfn)
-
-    L.info("Prefixes stored to JSON: %s", destfn)
+    if lines:
+        ctx.obj['pfx'].store_jsonl(destfn)
+    else:
+        ctx.obj['pfx'].store(destfn)
+    L.info("Prefixes stored to: %s", destfn)
 
 
 @main.command()
