@@ -43,6 +43,34 @@ def _convertValue(v):
     return v
 
 
+def is_na_url(url:typing.Optional[str]) -> bool:
+    if url is None:
+        return True
+    url = url.lower()
+    url = url.strip()
+    if len(url) < 6:
+        return True
+    nas = [
+        "https://n/a",
+        "http://n/a",
+        "https://unavailable",
+        "http://unavailable",
+        "https://no search",
+        "http://no search",
+        "https://need login",
+        "http://need login",
+        "https://need a Login",
+        "http://need a Login",
+        "https://login needed",
+        "http://login needed",
+        "https://login required",
+        "http://login required",
+    ]
+    if url in nas:
+        return True
+    return False
+
+
 def _adjustRedirectProtocol(r, default_protocol="https"):
     '''Make a redirect entry into a URL, if possible
     '''
@@ -76,7 +104,12 @@ def cleanPrefix(key, data, field_map=None):
         _redirect = _redirect.replace("'", "%27")
         _redirect = _redirect.replace('"', "%22")
         _redirect = _adjustRedirectProtocol(_redirect)
-        _entry["redirect"] = _redirect
+        _test_na = is_na_url(_redirect)
+        print(f"{_redirect}  ->  {_test_na}")
+        if not _test_na:
+            _entry["redirect"] = _redirect
+        else:
+            _entry.pop("redirect", None)
     return _entry
 
 
@@ -100,6 +133,7 @@ class PrefixList:
         if fn_src is not None:
             self.load(fn_src)
 
+
     def load(self, fn_src):
         fn, ext = os.path.splitext(fn_src)
         ext = ext.lower()
@@ -113,11 +147,14 @@ class PrefixList:
         with open(fn_dst, "w") as dst:
             json.dump(self.data, dst, indent=2)
 
-    def store_jsonl(self, fn_dst):
+    def store_jsonl(self, fn_dst, exclude_types=None):
+        if exclude_types is None:
+            exclude_types = []
         with open(fn_dst, "w") as dst:
             for k, v in self.data.items():
-                dst.write(json.dumps(v))
-                dst.write("\n")
+                if v.get("type","") not in exclude_types:
+                    dst.write(json.dumps(v))
+                    dst.write("\n")
 
     def fields(self):
         """Return dict of fields and their occurrence

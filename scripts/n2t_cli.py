@@ -128,7 +128,7 @@ def tojson(ctx, destfn, lines):
     """
     """
     if lines:
-        ctx.obj['pfx'].store_jsonl(destfn)
+        ctx.obj['pfx'].store_jsonl(destfn, exclude_types = ['naan','shoulder','datacenter'])
     else:
         ctx.obj['pfx'].store(destfn)
     L.info("Prefixes stored to: %s", destfn)
