@@ -5,27 +5,28 @@ description = "Implementation of N2T in python"
 authors = ["datadavev <605409+datadavev@users.noreply.github.com>"]
 license = "MIT"
 packages = [
-	{ include = "lib_n2t", from="micron2t" },
 	{ include = "scripts" }
 ]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-click = "^8.0.3"
-PyYAML = "^6.0"
-click-logging = "^1.0.1"
-htrace = "^0.2.5"
-uvicorn = "^0.15.0"
-jdcal = "^1.4.1"
-pyldapi = "^4.2"
-fastapi = "^0.83.0"
+PyYAML = "^6"
+fastapi = "^0"
+pydantic-settings = "^2"
+rslv = {path = "/Users/vieglais/Documents/Projects/rslv", develop = true}
+click = "^8.1.7"
+aiosqlite = "^0.20.0"
 
 [tool.poetry.dev-dependencies]
-ipykernel = "^6.13.0"
-pytest = "^7.1.2"
+pytest = "^7"
+hopper = {path = "/Users/vieglais/Documents/Projects/looseroo", develop = true}
+uvicorn = "^0"
 
 [tool.poetry.scripts]
-n2t = 'scripts.n2t_cli:main'
+n2t = 'n2t.manage:main'
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.27.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

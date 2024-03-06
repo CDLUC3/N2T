@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block addstyle %}
+    <style>
+        #scheme_list {
+            column-count: 3;
+        }
+        #scheme_list p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+{% endblock %}
+{% block headertext %} - Schemes{% endblock %}
+{%  block main %}
+    <h1>N2T - Registered Schemes</h1>
+    <div>
+    <p>Identifiers take the form:</p>
+    <pre>
+scheme:prefix/value
+    </pre>
+        <p>N2T associates identifier schemes with resolver services. The resolver services are dedicated to
+            supporting particular schemes and provide the capabilities necessar for further resolving identifiers
+            to specifiec resources.</p>
+        <p>The following schemes are registered with this service.</p>
+        <p>Additions or edits to the scheme list are made in the <a href="https://github.com/CDLUC3/N2T">N2T GitHub repository</a>.</p>
+    </div>
+    <div id="scheme_list"></div>
+{% endblock %}
+{% block addendum %}
+<script>
+    function render_schemes(data) {
+        const parent_ele = document.getElementById("scheme_list");
+        for (const scheme of data.schemes ) {
+            const e = document.createElement("p");
+            e.innerHTML = `<a href=".info/${scheme}">${scheme}</a>`;
+            parent_ele.appendChild(e);
+        }
+    }
+
+    async function fetch_schemes() {
+        fetch("/.info?valid=1")
+            .then((response) => response.json())
+            .then((data) => render_schemes(data));
+    }
+
+    fetch_schemes();
+</script>
+{% endblock %}
