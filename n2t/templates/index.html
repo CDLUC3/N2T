@@ -1,37 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
-    <title>rslv</title>
-    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/gh-corner-wc/gh-corner.js?module">
-    </script>
-</head>
-<body>
-<gh-corner user="datadavev" repo="rslv" position="right"></gh-corner>
-<header>
-    <p>Note: This service is for development purposes. Please visit <a href="https://n2t.net/">N2T.net</a>
-    or <a href="https://identifiers.org/">identifiers.org</a> for your identifier resolution needs.</p>
-</header>
-<main>
-    <h1>rslv - Identifier Resolution Service</h1>
-    <content>
-    <p><code>rslv</code> is an identifier resolver service that takes a provided identifier,
-        and matches it to a definition. If there is a successful match the service
-        redirects to the registered target, or optionally presents information about the
-        matched definition.</p>
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{%  block main %}
+    <h1>N2T - Identifier Resolution Service</h1>
+    <div>
+    <p><code>N2T</code> is an identifier scheme resolver that given a provided identifier,
+        matches it to an identifier scheme definition. Depending on the form of the request,
+        a successful match will either redirect to the registered target or present
+        information about the matched definition.</p>
     <p>Identifiers take the form:</p>
     <pre>
 scheme:prefix/value
     </pre>
-    <p>Matching definitions are found by exact comparison with the <code>scheme</code> and
-    <code>prefix</code> parts of the identifier. A match on the <code>value</code>
-    portion is made by finding the longest value in the definitions matching scheme
-    and prefix that matches the start of the <code>value</code> of the identifier.
-    </p>
-    <p>The service API description is available at <a href="/api">/api</a>.
-    </content>
-</main>
-<footer></footer>
-</body>
+        <p>The service API description is available at <a href="/api">/api</a>.</p>
+        <p>The registered schemes are listed on the <a href="/_schemes.html">schemes page</a>.</p>
+    </div>
+{%  endblock %}

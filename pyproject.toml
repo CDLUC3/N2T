@@ -14,17 +14,19 @@ PyYAML = "^6"
 fastapi = "^0"
 pydantic-settings = "^2"
 rslv = {path = "/Users/vieglais/Documents/Projects/rslv", develop = true}
+click = "^8.1.7"
+aiosqlite = "^0.20.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7"
 hopper = {path = "/Users/vieglais/Documents/Projects/looseroo", develop = true}
+uvicorn = "^0"
 
 [tool.poetry.scripts]
 n2t = 'n2t.manage:main'
 
 [tool.poetry.group.dev.dependencies]
-uvicorn = "^0"
-duckdb = "^0.10.0"
+uvicorn = "^0.27.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

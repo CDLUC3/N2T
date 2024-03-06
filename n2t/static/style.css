@@ -18,6 +18,19 @@ h1, h2, h3, h4, h5, h6, strong, b {
     color: #222;
 }
 
+header a {
+    color: #444;
+}
+
+header::after {
+    display: block;
+    width: 36%;
+    border-top: 1px solid #999;
+    content: "";
+    padding: 0.4em 0;
+}
+
+
 a {
     color: #3273dc;
 }
@@ -96,6 +109,16 @@ blockquote {
 footer {
     padding: 25px;
     text-align: center;
+    font-size: smaller;
+}
+
+footer::before {
+    display: block;
+    width: 36%;
+    border-top: 1px solid #999;
+    content: "";
+    margin: 0 auto;
+    padding: 0.4em 0;
 }
 
 .helptext {
