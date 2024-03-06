@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{%  block main %}
+    <h1>N2T - Identifier Resolution Service</h1>
+    <div>
+    <p><code>N2T</code> is an identifier scheme resolver that given a provided identifier,
+        matches it to an identifier scheme definition. Depending on the form of the request,
+        a successful match will either redirect to the registered target or present
+        information about the matched definition.</p>
+    <p>Identifiers take the form:</p>
+    <pre>
+scheme:prefix/value
+    </pre>
+        <p>The service API description is available at <a href="/api">/api</a>.</p>
+        <p>The registered schemes are listed on the <a href="/_schemes.html">schemes page</a>.</p>
+    </div>
+{%  endblock %}

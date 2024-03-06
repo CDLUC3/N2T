@@ -2,23 +2,86 @@
 
 This is a reimplementation of N2T using python.
 
-The current[^1] status is EXPERIMENTAL, INCOMPLETE, and likely to change significantly.
+N2T is an identifier scheme resolver. Its role is to redirect clients to the 
+registered handler for an identifier scheme. The handler is expected to 
+continue interaction with the client for identifier resolution.
 
-N2T is an identifier resolver / redirection service that supports many identifier 
-schemes. Visit the [N2T site](https://n2t.net/e/about.html) for more information 
-about the current production system.
 
-## Components
+## Manual Deploy on Amazon Linux 2023
 
-The source data for N2T is the YAML source located at: https://n2t.net/e/n2t_full_prefixes.yaml
+On server instance:
 
-The following are provided here:
+Given the YUM repository description file `unit.repo`:
+```
+[unit]
+name=unit repo
+baseurl=https://packages.nginx.org/unit/amzn/2023/$basearch/
+gpgcheck=0
+enabled=1
+```
 
-`n2t` is a command line tool for working with the prefix list.
+Add the repository and install Nginx `unit`: 
+```
+sudo yum update
+sudo yum install yum-utils
+sudo /usr/bin/yum-config-manager --add-repo unit.repo
+sudo yum update
+sudo yum install unit
+sudo yum install unit-devel unit-jsc17 unit-python311 unit-wasm
+sudo cdlsysctl start unit
+```
 
-`lib_n2t` implements a model for resolvers and mechanisms for transforming to different formats.
+Note: The service is installed as disabled and it needs to be enabled unit, but 
+`cdlsysctl` doesn't allow that so needs to be done by an administrator, e.g.:
+```
+sudo systemctl enable unit
+```
 
-`micron2t` is a minimal web service implemented with FastAPI implementing the core functionality of N2T.
+Is the service running?
+```
+sudo cdlsysctl status unit
+● unit.service - NGINX Unit
+     Loaded: loaded (/usr/lib/systemd/system/unit.service; disabled; preset: disabled)
+     Active: active (running) since Wed 2024-02-28 04:32:23 PST; 4s ago
+   Main PID: 1893665 (unitd)
+      Tasks: 3 (limit: 1055)
+     Memory: 5.7M
+        CPU: 16ms
+     CGroup: /system.slice/unit.service
+             ├─1893665 "unit: main v1.32.0 [/usr/sbin/unitd --log /var/log/unit/unit.log --pid /var/run/unit/unit.pid --no-daemon]"
+             ├─1893667 "unit: controller"
+             └─1893668 "unit: router"
+```
+
+To enable access to `unit` by the `ezid` user, it is necessary to override the 
+default systemd startup for unit. This is done with an `override.conf` file in
+`/etc/systemd/system/unit.service.d`:
+```
+[Service]
+Environment="UNITD_OPTIONS=--log /var/log/unit/unit.log --pid /var/run/unit/unit.pid --user ezid --group ezid"
+Group=ezid
+ExecStartPost=/usr/bin/sh -c 'sleep 3; chmod 660 /var/run/unit/control.sock; chmod 640 /var/log/unit/*.log'
+```
+
+Show the current `unit` configuration:
+```
+```
+
+
+
+
+Setup python and application:
+
+```
+mkdir n2t
+cd n2t
+python3.11 -m venv venv
+source venv/bin/.activate
+python --version
+  Python 3.11.6
+python -m pip install -U pip
+```
+
 
 
 ## Developer Setup
