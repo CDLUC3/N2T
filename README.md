@@ -65,6 +65,12 @@ ExecStartPost=/usr/bin/sh -c 'sleep 3; chmod 660 /var/run/unit/control.sock; chm
 
 Show the current `unit` configuration:
 ```
+$ curl -X GET --unix-socket /var/run/unit/control.sock http://localhost/config/
+{
+	"listeners": {},
+	"routes": [],
+	"applications": {}
+}
 ```
 
 

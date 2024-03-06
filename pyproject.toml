@@ -4,22 +4,19 @@ version = "0.1.5"
 description = "Implementation of N2T in python"
 authors = ["datadavev <605409+datadavev@users.noreply.github.com>"]
 license = "MIT"
-packages = [
-	{ include = "scripts" }
-]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 PyYAML = "^6"
 fastapi = "^0"
 pydantic-settings = "^2"
-rslv = {path = "/Users/vieglais/Documents/Projects/rslv", develop = true}
+rslv = {git = "https://github.com/CDLUC3/resolver.git", branch="develop"}
 click = "^8.1.7"
 aiosqlite = "^0.20.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7"
-hopper = {path = "/Users/vieglais/Documents/Projects/looseroo", develop = true}
+hopper = {git = "https://github.com/datadavev/looseroo.git"}
 uvicorn = "^0"
 
 [tool.poetry.scripts]

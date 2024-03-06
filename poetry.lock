@@ -209,7 +209,7 @@ description = "The loose roo hops redirects"
 optional = false
 python-versions = "^3.9"
 files = []
-develop = true
+develop = false
 
 [package.dependencies]
 fastapi = "^0.103.1"
@@ -217,8 +217,10 @@ httpx = "^0.24.1"
 json-logging = "^1.3.0"
 
 [package.source]
-type = "directory"
-url = "../../../looseroo"
+type = "git"
+url = "https://github.com/datadavev/looseroo.git"
+reference = "HEAD"
+resolved_reference = "8b615ef45a9d1eac4d031cf93eff62a3627d53a3"
 
 [[package]]
 name = "httpcore"
@@ -625,22 +627,24 @@ files = [
 
 [[package]]
 name = "rslv"
-version = "0.4.1"
+version = "0.4.2"
 description = "Provides an identifier resolver service in FastAPI."
 optional = false
 python-versions = "^3.9"
 files = []
-develop = true
+develop = false
 
 [package.dependencies]
 fastapi = "^0"
-jinja2 = "^3.1.2"
+jinja2 = "^3"
 pydantic-settings = "^2"
-sqlalchemy = "^2.0.20"
+sqlalchemy = "^2"
 
 [package.source]
-type = "directory"
-url = "../../../rslv"
+type = "git"
+url = "https://github.com/CDLUC3/resolver.git"
+reference = "develop"
+resolved_reference = "920c915f85ec98fc35ca2d0b41501e27b780e7b5"
 
 [[package]]
 name = "sniffio"
@@ -802,4 +806,4 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "6697095f843263cc221b2b6845b74c15091c1b86db3ee90b3f757df1d85792dc"
+content-hash = "5149c4b43a892f07f0538b61f986f12f4c1564ab5410c6361e20ac049f6330f5"
