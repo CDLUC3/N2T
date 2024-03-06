@@ -18,20 +18,11 @@
       dest: "{{ deploy_dir }}"
       version: "{{ n2t_version }}"
       force: yes
-  
-  
-  #- name: Install n2t dependencies
-  #  ansible.builtin.pip:
-  #    state: present
-  #    chdir: "{{deploy_dir}}/n2t"
-  #    requirements: requirements.txt
-  #    virtualenv: "{{deploy_dir}}/venv"
-  #    virtualenv_command: "python3.11 -m venv"
 
   - name: Install n2t application
     ansible.builtin.pip:
       state: present
-      chdir: "{{deploy_dir}}/resolver"
+      chdir: "{{deploy_dir}}"
       virtualenv: "{{deploy_dir}}/venv"
       virtualenv_command: "python3.11 -m venv"
       name: .
@@ -40,22 +31,10 @@
     ansible.builtin.debug:
       msg: "{{ lookup('ansible.builtin.template', 'templates/unit.json.j2')| to_nice_json }}"
   
-  #- name: Configure nginx unit
-  #  ansible.builtin.uri:
-  #    url: http://localhost/config/
-  #    unix_socket: /var/run/unit/control.sock
-  #    method: PUT
-  #    body_format: json
-  #    body: "{{ lookup('ansible.builtin.template','templates/unit.json.j2') }}"
-
-  #- name: Initialize resolver application
-  #  ansible.builtin.script:
-  #    chdir: "{{deploy_dir}}"
-  #    cmd: "{{deploy_dir}}/scripts/run_command.sh {{deploy_dir}}/scripts/naan_manage.py init Initialized"
-  #    creates: "{{config_dir}}pid_config.sqlite"
-
-  #- name: Configure resolver application
-  #  ansible.builtin.script:
-  #    chdir: "{{deploy_dir}}"
-  #    cmd: "{{deploy_dir}}/scripts/run_command.sh {{deploy_dir}}/scripts/naan_manage.py naans"
-
+  - name: Configure nginx unit
+    ansible.builtin.uri:
+      url: http://localhost/config/
+      unix_socket: /var/run/unit/control.sock
+      method: PUT
+      body_format: json
+      body: "{{ lookup('ansible.builtin.template','templates/unit.json.j2') }}"
