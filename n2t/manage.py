@@ -288,7 +288,7 @@ try:
         help="Enable service reload on source change.",
     )
     def cli_serve(config: appconfig.Settings, reload) -> int:
-        uvicorn.run("n2t.app:app", host=config.host, log_level="info", reload=reload)
+        uvicorn.run("n2t.app:app", host=config.host, port=config.port, log_level="info", reload=reload)
         return 0
 
 except ImportError:
