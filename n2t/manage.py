@@ -12,11 +12,12 @@ import sys
 import typing
 
 import click
-import n2t.config
 import sqlalchemy
 
 import rslv.lib_rslv.n2tutils
 import rslv.lib_rslv.piddefine
+
+from . import config as appconfig
 
 APP_NAME = "n2t"
 
@@ -234,8 +235,9 @@ def records_to_db(
     default=None,
 )
 def cli(ctx, config) -> int:
+    os.environ[appconfig.SETTINGS_FILE_KEY] = config
     logging.basicConfig(level=logging.INFO)
-    ctx.obj = n2t.config.get_settings(env_file=config)
+    ctx.obj = appconfig.get_settings(env_file=config)
     return 0
 
 
@@ -252,7 +254,7 @@ def cli(ctx, config) -> int:
     ),
     default="n2t_full_prefixes.yaml",
 )
-def cli_yaml2json(config: n2t.config.Settings, yamlsrc: str) -> int:
+def cli_yaml2json(config: appconfig.Settings, yamlsrc: str) -> int:
     L = logging.getLogger(APP_NAME)
     ignore_types = ["datacenter", "naan", "shoulder"]
     records = load_yaml_to_dict(yamlsrc, ignore_types=ignore_types)
@@ -264,7 +266,7 @@ def cli_yaml2json(config: n2t.config.Settings, yamlsrc: str) -> int:
 
 @cli.command("loaddb")
 @click.pass_obj
-def cli_loaddb(config: n2t.config.Settings) -> int:
+def cli_loaddb(config: appconfig.Settings) -> int:
     L = logging.getLogger(APP_NAME)
     records = json_to_records(config.json_dir)
     res = records_to_db(records, config.db_connection_string)
@@ -285,7 +287,7 @@ try:
         default=False,
         help="Enable service reload on source change.",
     )
-    def cli_serve(config: n2t.config.Settings, reload) -> int:
+    def cli_serve(config: appconfig.Settings, reload) -> int:
         uvicorn.run("n2t.app:app", host=config.host, log_level="info", reload=reload)
         return 0
 

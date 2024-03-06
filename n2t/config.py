@@ -1,16 +1,20 @@
 import functools
+import os
 import os.path
 import typing
 
 import pydantic_settings
 
+ENV_PREFIX = "n2t_"
 BASE_FOLDER = os.path.dirname(os.path.abspath(__file__))
+SETTINGS_FILE_KEY = f"{ENV_PREFIX.upper()}SETTINGS"
+
 
 class Settings(pydantic_settings.BaseSettings):
     # env_prefix provides the environment variable prefix
     # for overriding these settings with env vars.
-    # e.g. RSLV_PORT=11000
-    model_config = pydantic_settings.SettingsConfigDict(env_prefix="rslv_", env_file=".env")
+    # e.g. N2T_PORT=11000
+    model_config = pydantic_settings.SettingsConfigDict(env_prefix=ENV_PREFIX, env_file=".env")
     host: str = "localhost"
     port: int = 8000
     protocol: str = "http"
@@ -25,5 +29,5 @@ class Settings(pydantic_settings.BaseSettings):
 @functools.lru_cache
 def get_settings(env_file=None):
     if env_file is None:
-        return Settings()
+        env_file = os.environ.get(SETTINGS_FILE_KEY, ".env")
     return Settings(_env_file=env_file)
