@@ -1,37 +1,35 @@
-Ansible Playbook `deploy_arksorg_site`
-=====================================
+Ansible Playbook `deploy_n2t_site`
+==================================
 
-The `deploy_arksorg_site.yaml` ansible playbook works in consort with the UC3 puppet module
-[`uc3_ezid_arks`](https://github.com/CDLUC3/uc3-ops-puppet-modules/tree/main/modules/uc3_ezid_arks)
-to perform end-to-end deployment of the arksorg-site service on AWS EC2 hosts.
+The `deploy_n2t.yaml` ansible playbook works in consort with the UC3 puppet module
+[`uc3_ezid_n2t`](https://github.com/CDLUC3/uc3-ops-puppet-modules/tree/main/modules/uc3_ezid_n2t)
+to perform end-to-end deployment of the n2t service on AWS EC2 hosts.
 
 
 ### What it Does
 
-- Clone arksorg-site repository into deployment directory `/ezid/arksorg`
-- Install ruby gems from arks.github.io Gemfile
-- Run `bundle exec jekyll` to build arks.github.io site
-- Install python dependencies for `resolver` app into virtual environment at `/ezid/arksorg/venv`.
-- Post site configuration data (`unit.josn`) into nginx-unit config api.
+- Clone n2t repository into deployment directory `/ezid/n2t`
+- Install `n2t` app into virtual environment at `/ezid/n2t/venv`.
+- Post site configuration data (`unit.json`) into nginx-unit config api.
 
 
 ### Usage
 
 Execute this playbook on the localhost as user `ezid`:
 ```
-cd ~/install/arksorg-site
+cd ~/install/n2t
 export ANSIBLE_STDOUT_CALLBACK=debug
 
-ansible-playbook -i hosts deploy_arksorg_site.yaml -CD
-ansible-playbook -i hosts deploy_arksorg_site.yaml
+ansible-playbook -i hosts deploy_n2t.yaml -CD
+ansible-playbook -i hosts deploy_n2t.yaml
 ```
 
-By default the playbook clones the `main` branch of the `arksorg-site`
+By default the playbook clones the `main` branch of the `n2t`
 repository into the deployment directory.  To Deploy a specific version of the
-arksorg application, supply the version number (git tag) on the command line as
-variable `arksorg_version`:
+n2t application, supply the version number (git tag) on the command line as
+variable `n2t_version`:
 ```
-ansible-playbook -i hosts deploy_arksorg_site.yaml -e arksorg_version=0.0.2
+ansible-playbook -i hosts deploy_n2t_site.yaml -e n2t_version=0.0.2
 ```
 
 
@@ -57,7 +55,6 @@ ansible-playbook -i hosts deploy_arksorg_site.yaml -e arksorg_version=0.0.2
 
 - ansible binaries installed local to ezid user using `pip3.11`.
 
-- ruby and bundler installed local to ezid user.  These are for building `arks.github.io` content.
 
 
 ### Debugging
