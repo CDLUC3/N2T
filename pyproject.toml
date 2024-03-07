@@ -1,9 +1,11 @@
 [tool.poetry]
 name = "n2t"
-version = "0.1.5"
+version = "0.6.0"
 description = "Implementation of N2T in python"
 authors = ["datadavev <605409+datadavev@users.noreply.github.com>"]
 license = "MIT"
+
+[tool.poetry_bumpversion.file."n2t/__init__.py"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
