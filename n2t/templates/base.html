@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
     <title>N2T {% block title %}{% endblock %}</title>
-    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+    <link href="{{ relurl_for('static', path='/style.css') }}" rel="stylesheet">
     {% block addstyle %}
     {% endblock %}
     <script type="module" src="https://unpkg.com/gh-corner-wc/gh-corner.js?module">
