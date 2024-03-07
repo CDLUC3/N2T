@@ -1,0 +1,40 @@
+{
+  "listeners": {
+    "*:18880": {
+      "pass": "routes/n2t"
+    }
+  },
+  "applications": {
+    "n2t": {
+      "type": "python 3.11",
+      "working_directory": "{{ deploy_dir }}/n2t",
+      "path": [
+        "{{ deploy_dir }}/n2t"
+      ],
+      "home": "{{ python_home }}",
+      "module": "n2t.app",
+      "callable": "app",
+      "environment": {
+        "N2T_SETTINGS":"{{ deploy_dir }}/n2t/dev-config.env"
+      }
+    }
+  },
+  "routes": {
+    "n2t": [
+      {
+        "match": {
+          "uri": [
+            "/*"
+          ]
+        },
+        "action": {
+          "pass": "applications/n2t"
+        }
+      }
+    ]
+  },
+  "access_log": {
+    "path": "/var/log/unit/access.log"
+  }
+}
+
