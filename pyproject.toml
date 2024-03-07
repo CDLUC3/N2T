@@ -20,7 +20,7 @@ hopper = {git = "https://github.com/datadavev/looseroo.git"}
 uvicorn = "^0"
 
 [tool.poetry.scripts]
-n2t = 'n2t.manage:main'
+n2t = 'n2t.__main__:main'
 
 [tool.poetry.group.dev.dependencies]
 uvicorn = "^0.27.1"

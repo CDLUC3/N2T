@@ -19,7 +19,7 @@ class Settings(pydantic_settings.BaseSettings):
     port: int = 8000
     protocol: str = "http"
     db_connection_string: str = f"sqlite:///{BASE_FOLDER}/data/n2t.sqlite"
-    json_dir: str = f"{BASE_FOLDER}/prefixes"
+    json_dir: str = f"{BASE_FOLDER}/schemes"
     static_dir: str = os.path.join(BASE_FOLDER, "static")
     template_dir: str = os.path.join(BASE_FOLDER, "templates")
     log_filename: typing.Optional[str] = None
