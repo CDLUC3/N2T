@@ -145,7 +145,7 @@ the `n2t` command is run. These properties may also use absolute paths, for
 example:
 
 ```
-N2T_DB_CONNECTION_STRING="sqlite:////ezid/n2t/data/n2t.sqlite"
+N2T_DB_CONNECTION_STRING="sqlite:////ezid/var/n2t.sqlite"
 N2T_JSON_DIR="/ezid/n2t/schemes"
 ```
 
