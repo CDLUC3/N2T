@@ -1,0 +1,9 @@
+{
+  "id": "idbd",
+  "target": {
+    "DEFAULT": "http://biomarker.korea.ac.kr/disease/disease_view_en.jsp?group=1&id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://biomarker.korea.ac.kr/disease/disease_view_en.jsp?group=1&id={content}",
+  "revision": 0
+}

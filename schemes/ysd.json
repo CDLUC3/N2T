@@ -1,0 +1,9 @@
+{
+  "id": "ysd",
+  "target": {
+    "DEFAULT": "http://people.biochem.umass.edu/sfournier/fournierlab/snornadb/snrs/{content}.php"
+  },
+  "type": "commonspfx",
+  "redirect": "http://people.biochem.umass.edu/sfournier/fournierlab/snornadb/snrs/{content}.php",
+  "revision": 0
+}

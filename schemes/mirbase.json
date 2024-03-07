@@ -1,0 +1,27 @@
+{
+  "id": "mirbase",
+  "target": {
+    "DEFAULT": "http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc={content}"
+  },
+  "type": "scheme",
+  "name": "miRBase Sequence Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100135",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=${ac}",
+  "redirect": "http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc={content}",
+  "description": "The miRBase Sequence Database is a searchable database of published miRNA sequences and annotation. The data were previously provided by the miRNA Registry. Each entry in the miRBase Sequence database represents a predicted hairpin portion of a miRNA transcript (termed mir in the database), with information on the location and sequence of the mature miRNA sequence (termed miR).",
+  "subject": "nucleotide; sequence",
+  "location": "UK",
+  "synonym": "MMMP Biomaps",
+  "institution": "Faculty of Life Sciences, University of Manchester",
+  "prefixed": 0,
+  "test": "MI0000001",
+  "probe": "http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000001",
+  "pattern": "MI\\d{7}",
+  "state": "93:Down",
+  "more": "http://www.mirbase.org/",
+  "revision": 0
+}

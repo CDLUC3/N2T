@@ -1,0 +1,9 @@
+{
+  "id": "innatedb",
+  "target": {
+    "DEFAULT": "http://www.innatedb.ca/getGeneCard.do?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.innatedb.ca/getGeneCard.do?id={content}",
+  "revision": 0
+}

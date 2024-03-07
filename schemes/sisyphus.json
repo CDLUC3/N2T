@@ -1,0 +1,9 @@
+{
+  "id": "sisyphus",
+  "target": {
+    "DEFAULT": "http://sisyphus.mrc-cpe.cam.ac.uk/sisyphus/alignment.jsp?ac={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://sisyphus.mrc-cpe.cam.ac.uk/sisyphus/alignment.jsp?ac={content}",
+  "revision": 0
+}

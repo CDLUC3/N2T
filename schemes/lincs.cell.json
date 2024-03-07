@@ -1,0 +1,27 @@
+{
+  "id": "lincs.cell",
+  "target": {
+    "DEFAULT": "http://lincsportal.ccs.miami.edu/cells/#/view/{content}"
+  },
+  "type": "scheme",
+  "name": "LINCS Portal",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100721",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://lincsportal.ccs.miami.edu/cells/#/view/${ac}",
+  "redirect": "http://lincsportal.ccs.miami.edu/cells/#/view/{content}",
+  "description": "The Library of Network-Based Cellular Signatures (LINCS) Program aims to  create a network-based understanding of biology by cataloging changes in gene expression and other cellular processes that occur when cells are exposed to a variety of perturbing agents. The LINCS cell model system can have the following cell categories: cell lines, primary cells, induced pluripotent stem cells, differentiated cells, and embryonic stem cells. The metadata contains information provided by each LINCS Data and Signature Generation Center (DSGC) and the association with a tissue or organ from which the cells were derived, in many cases are also associated to a disease.",
+  "subject": "human",
+  "location": "USA",
+  "synonym": "CPC",
+  "institution": "University of Miami, BD2K-LINCS DCIC",
+  "prefixed": 0,
+  "test": "LCL-2085",
+  "probe": "http://lincsportal.ccs.miami.edu/cells/#/view/LCL-2085",
+  "pattern": "(^LCL-\\d+$)|(^LDC-\\d+$)|(^ES-\\d+$)|(^LSC-\\d+$)|(^LPC-\\d+$)",
+  "state": "100:Probably up",
+  "more": "http://lincsportal.ccs.miami.edu/cells/",
+  "revision": 0
+}

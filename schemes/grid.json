@@ -1,0 +1,27 @@
+{
+  "id": "grid",
+  "target": {
+    "DEFAULT": "https://www.grid.ac/institutes/{content}"
+  },
+  "type": "scheme",
+  "name": "GRID at Digital Science & Research Ltd.",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100793",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.grid.ac/institutes/${ac}",
+  "redirect": "https://www.grid.ac/institutes/{content}",
+  "description": "International coverage of the world's leading research organisations, indexing 92% of funding allocated globally.",
+  "subject": "schema.org",
+  "location": "UK",
+  "synonym": "Global Research Identifier Database",
+  "institution": "Digital Science &amp;amp; Research Ltd, London",
+  "prefixed": 0,
+  "test": "grid.225360.0",
+  "probe": "https://www.grid.ac/institutes/grid.225360.0",
+  "pattern": "^grid\\.[0-9]+\\.[a-f0-9]{1,2}$",
+  "state": "100:Up",
+  "more": "https://www.grid.ac/",
+  "revision": 0
+}

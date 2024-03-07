@@ -1,0 +1,27 @@
+{
+  "id": "mimodb",
+  "target": {
+    "DEFAULT": "http://immunet.cn/bdb/index.php/mimoset/{content}"
+  },
+  "type": "scheme",
+  "name": "BDB at University of Electronic Science and Technology of China",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100322",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://immunet.cn/bdb/index.php/mimoset/${ac}",
+  "redirect": "http://immunet.cn/bdb/index.php/mimoset/{content}",
+  "description": "MimoDB is a database collecting peptides that have been selected from random peptide libraries based on their ability to bind small compounds, nucleic acids, proteins, cells, tissues and organs. It also stores other information such as the corresponding target, template, library, and structures. As of March 2016, this database was renamed Biopanning Data Bank.",
+  "subject": "interaction; protein",
+  "location": "China",
+  "synonym": "BDB; Biopanning Data Bank; Mimotope Database",
+  "institution": "Key Laboratory for Neuroinformation of Ministry of Education, University of Electronic Science and Technology of China, Sichuan",
+  "prefixed": 0,
+  "test": "1",
+  "probe": "http://immunet.cn/bdb/index.php/mimoset/1",
+  "pattern": "^\\d+$",
+  "state": "92:Up",
+  "more": "http://immunet.cn/bdb/",
+  "revision": 0
+}

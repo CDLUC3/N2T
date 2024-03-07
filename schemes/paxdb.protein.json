@@ -1,0 +1,27 @@
+{
+  "id": "paxdb.protein",
+  "target": {
+    "DEFAULT": "http://pax-db.org/#!protein/{content}"
+  },
+  "type": "scheme",
+  "name": "PaxDb v3 at University of Zurich",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100625",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://pax-db.org/#!protein/${ac}",
+  "redirect": "http://pax-db.org/#!protein/{content}",
+  "description": "PaxDb is a resource dedicated to integrating information on absolute protein abundance levels across different organisms. Publicly available experimental data are mapped onto a common namespace and, in the case of tandem mass spectrometry data, re-processed using a standardized spectral counting pipeline. Data sets are scored and ranked to assess consistency against externally provided protein-network information. PaxDb provides whole-organism data as well as tissue-resolved data, for numerous proteins. This collection references individual protein abundance levels.",
+  "subject": "protein; expression",
+  "location": "Switzerland",
+  "synonym": "OTL",
+  "institution": "Institute of Molecular Life Sciences, University of Zurich, Zurich",
+  "prefixed": 0,
+  "test": "977869",
+  "probe": "http://pax-db.org/#!protein/977869",
+  "pattern": "^\\d+$",
+  "state": "99:Probably up",
+  "more": "http://pax-db.org/",
+  "revision": 0
+}

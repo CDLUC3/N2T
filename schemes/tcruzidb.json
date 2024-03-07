@@ -1,0 +1,9 @@
+{
+  "id": "tcruzidb",
+  "target": {
+    "DEFAULT": "http://tcruzidb.org/tcruzidb/showRecord.do?name=GeneRecordClasses.GeneRecordClass&project_id=&primary_key={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://tcruzidb.org/tcruzidb/showRecord.do?name=GeneRecordClasses.GeneRecordClass&project_id=&primary_key={content}",
+  "revision": 0
+}

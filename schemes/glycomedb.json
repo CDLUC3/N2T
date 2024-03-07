@@ -1,0 +1,27 @@
+{
+  "id": "glycomedb",
+  "target": {
+    "DEFAULT": "https://glytoucan.org/Structures/Glycans/{content}"
+  },
+  "type": "scheme",
+  "name": "GlycomeDB carbohydrate structure database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100147",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://glytoucan.org/Structures/Glycans/${ac}",
+  "redirect": "https://glytoucan.org/Structures/Glycans/{content}",
+  "description": "GlycomeDB is the result of a systematic data integration effort, and provides an overview of all carbohydrate structures available in public databases, as well as cross-links.",
+  "subject": "structure",
+  "location": "Germany",
+  "synonym": "PDB-CCD; PDBeChem",
+  "institution": "German Cancer Research Center, Heidelberg",
+  "prefixed": 0,
+  "test": "G77500AY",
+  "probe": "https://glytoucan.org/Structures/Glycans/G77500AY",
+  "pattern": "^\\w+$",
+  "state": "78:Up",
+  "more": "https://glytoucan.org/",
+  "revision": 0
+}

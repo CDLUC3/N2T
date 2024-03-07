@@ -1,0 +1,27 @@
+{
+  "id": "ensembl.metazoa",
+  "target": {
+    "DEFAULT": "https://metazoa.ensembl.org/id/{content}"
+  },
+  "type": "scheme",
+  "name": "Enzembl Metazoa at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100263",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://metazoa.ensembl.org/id/${ac}",
+  "redirect": "https://metazoa.ensembl.org/id/{content}",
+  "description": "Ensembl Genomes consists of five sub-portals (for bacteria, protists, fungi, plants and invertebrate metazoa) designed to complement the availability of vertebrate genomes in Ensembl. This collection is concerned with metazoa genomes.",
+  "subject": "sequence; nucleotide; genome",
+  "location": "UK",
+  "synonym": "Ensembl Genomes Metazoa",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "FBtr0084214",
+  "probe": "https://metazoa.ensembl.org/id/FBtr0084214",
+  "pattern": "^\\w+(\\.)?\\d+$",
+  "state": "94:Up",
+  "more": "https://metazoa.ensembl.org/",
+  "revision": 0
+}

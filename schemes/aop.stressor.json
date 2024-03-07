@@ -1,0 +1,27 @@
+{
+  "id": "aop.stressor",
+  "target": {
+    "DEFAULT": "https://aopwiki.org/stressors/{content}"
+  },
+  "type": "scheme",
+  "name": "AOPWiki (Stressor)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100872",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://aopwiki.org/stressors/${ac}",
+  "redirect": "https://aopwiki.org/stressors/{content}",
+  "description": "International repository of Adverse Outcome Pathways.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "European Commision - DG Joint Research Centre and U.S Environmental Protection Agency",
+  "prefixed": 0,
+  "test": "9",
+  "probe": "https://aopwiki.org/stressors/9",
+  "pattern": "^\\d+$",
+  "state": "0:Unknown",
+  "more": "https://aopwiki.org/",
+  "revision": 0
+}

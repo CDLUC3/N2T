@@ -1,0 +1,9 @@
+{
+  "id": "molmovdb",
+  "target": {
+    "DEFAULT": "http://www.molmovdb.org/cgi-bin/morph.cgi?ID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.molmovdb.org/cgi-bin/morph.cgi?ID={content}",
+  "revision": 0
+}

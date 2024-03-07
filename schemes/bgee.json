@@ -1,0 +1,9 @@
+{
+  "id": "bgee",
+  "target": {
+    "DEFAULT": "http://bgee.unil.ch/bgee/bgee?page=gene&action=expression&gene_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bgee.unil.ch/bgee/bgee?page=gene&action=expression&gene_id={content}",
+  "revision": 0
+}

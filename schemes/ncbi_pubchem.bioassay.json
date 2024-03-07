@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/pubchem.bioassay",
+  "target": {},
+  "type": "synonym",
+  "for": "pubchem.bioassay",
+  "revision": 0
+}

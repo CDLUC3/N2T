@@ -1,0 +1,27 @@
+{
+  "id": "atcvet",
+  "target": {
+    "DEFAULT": "http://www.whocc.no/atcvet/atcvet_index/?code={content}"
+  },
+  "type": "scheme",
+  "name": "Anatomical Therapeutic Chemical Vet Index at WHO",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100344",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.whocc.no/atcvet/atcvet_index/?code=${ac}",
+  "redirect": "http://www.whocc.no/atcvet/atcvet_index/?code={content}",
+  "description": "The ATCvet system for the classification of veterinary medicines is based on the same overall principles as the ATC system for substances used in human medicine. In ATCvet systems, preparations are divided into groups, according to their therapeutic use. First, they are divided into 15 anatomical groups (1st level), classified as QA-QV in the ATCvet system, on the basis of their main therapeutic use.",
+  "subject": "drug; classification",
+  "location": "Switzerland",
+  "synonym": "Search Tool for Retrieval of Interacting Genes/Proteins",
+  "institution": "World Health Organisation",
+  "prefixed": 0,
+  "test": "QJ51RV02",
+  "probe": "http://www.whocc.no/atcvet/atcvet_index/?code=QJ51RV02",
+  "pattern": "^Q[A-Z0-9]+$",
+  "state": "81:Up",
+  "more": "http://www.whocc.no/atcvet/atcvet_index/",
+  "revision": 0
+}

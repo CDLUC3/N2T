@@ -1,0 +1,9 @@
+{
+  "id": "inparanoid",
+  "target": {
+    "DEFAULT": "http://inparanoid.sbc.su.se/cgi-bin/summary.cgi#[?species_name]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://inparanoid.sbc.su.se/cgi-bin/summary.cgi#[?species_name]",
+  "revision": 0
+}

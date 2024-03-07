@@ -1,0 +1,9 @@
+{
+  "id": "wfleabase",
+  "target": {
+    "DEFAULT": "http://wfleabase.org/genepage/daphnia/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://wfleabase.org/genepage/daphnia/{content}",
+  "revision": 0
+}

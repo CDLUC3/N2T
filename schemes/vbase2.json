@@ -1,0 +1,27 @@
+{
+  "id": "vbase2",
+  "target": {
+    "DEFAULT": "http://www.vbase2.org/vgene.php?id={content}"
+  },
+  "type": "scheme",
+  "name": "Vbase2 at German Research Centre for Biotechnology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100403",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.vbase2.org/vgene.php?id=${ac}",
+  "redirect": "http://www.vbase2.org/vgene.php?id={content}",
+  "description": "The database VBASE2 provides germ-line sequences of human and mouse immunoglobulin variable (V) genes.",
+  "subject": "sequence; human; immunogenetics",
+  "location": "Germany",
+  "synonym": "SDBS",
+  "institution": "Department of Experimental Immunology, German Research Centre for Biotechnology, Braunschweig",
+  "prefixed": 0,
+  "test": "humIGHV025",
+  "probe": "http://www.vbase2.org/vgene.php?id=humIGHV025",
+  "pattern": "^\\w+$",
+  "state": "100:Up",
+  "more": "http://www.vbase2.org/vbase2.php",
+  "revision": 0
+}

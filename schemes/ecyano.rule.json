@@ -1,0 +1,27 @@
+{
+  "id": "ecyano.rule",
+  "target": {
+    "DEFAULT": "http://e-cyanobacterium.org/bcs/rule/{content}/"
+  },
+  "type": "scheme",
+  "name": "e-cyanobacterium entity at Masaryk University Brno",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100784",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://e-cyanobacterium.org/bcs/rule/${ac}/",
+  "redirect": "http://e-cyanobacterium.org/bcs/rule/{content}/",
+  "description": "E-cyanobacterium.org is a web-based platform for public sharing, annotation, analysis, and visualisation of dynamical models and wet-lab experiments related to cyanobacteria. It allows models to be represented at different levels of abstraction &#x2014; as biochemical reaction networks or ordinary differential equations.It provides concise mappings of mathematical models to a formalised consortium-agreed biochemical description, with the aim of connecting the world of biological knowledge with benefits of mathematical description of dynamic processes. This collection references rules.",
+  "subject": "model; reaction",
+  "location": "Czech Republic",
+  "synonym": "WoRMS",
+  "institution": "Systems Biology Laboratory, Faculty of Informatics, Masaryk University Brno",
+  "prefixed": 0,
+  "test": "56",
+  "probe": "http://e-cyanobacterium.org/bcs/rule/56/",
+  "pattern": "^\\d+$",
+  "state": "64:Up",
+  "more": "http://www.e-cyanobacterium.org/bcs/rule/",
+  "revision": 0
+}

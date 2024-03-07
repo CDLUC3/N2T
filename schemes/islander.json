@@ -1,0 +1,9 @@
+{
+  "id": "islander",
+  "target": {
+    "DEFAULT": "http://kementari.bioinformatics.vt.edu/cgi-bin/island.cgi?island={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://kementari.bioinformatics.vt.edu/cgi-bin/island.cgi?island={content}",
+  "revision": 0
+}

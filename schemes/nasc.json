@@ -1,0 +1,27 @@
+{
+  "id": "nasc",
+  "target": {
+    "DEFAULT": "http://arabidopsis.info/StockInfo?NASC_id={content}"
+  },
+  "type": "scheme",
+  "name": "NASC at University of Nottingham",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100386",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://arabidopsis.info/StockInfo?NASC_id=${ac}",
+  "redirect": "http://arabidopsis.info/StockInfo?NASC_id={content}",
+  "description": "The Nottingham Arabidopsis Stock Centre (NASC) provides seed and information resources to the International Arabidopsis Genome Programme and the wider research community.",
+  "subject": "plant; strain",
+  "location": "UK",
+  "synonym": "The Nottingham Arabidopsis Stock Centre",
+  "institution": "The Nottingham Arabidopsis Stock Centre, University of Nottingham",
+  "prefixed": 0,
+  "test": "N1899",
+  "probe": "http://arabidopsis.info/StockInfo?NASC_id=N1899",
+  "pattern": "^(\\w+)?\\d+$",
+  "state": "99:Up",
+  "more": "http://arabidopsis.info/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "p3db.site",
+  "target": {
+    "DEFAULT": "http://www.p3db.org/phosphosite.php?id={content}&ref=0"
+  },
+  "type": "scheme",
+  "name": "P3DB Site at University of Missouri",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100643",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.p3db.org/phosphosite.php?id=${ac}&ref=0",
+  "redirect": "http://www.p3db.org/phosphosite.php?id={content}&ref=0",
+  "description": "Plant Protein Phosphorylation DataBase (P3DB) is a database that provides information on experimentally determined phosphorylation sites in the proteins of various plant species. This collection references phosphorylation sites in proteins.",
+  "subject": "plant; protein",
+  "location": "USA",
+  "synonym": "OdorDB",
+  "institution": "Department of Computer Science, University of Missouri, Columbia, Missouri",
+  "prefixed": 0,
+  "test": "65",
+  "probe": "http://www.p3db.org/phosphosite.php?id=65&ref=0",
+  "pattern": "^\\d+$",
+  "state": "98:Up",
+  "more": "http://www.p3db.org/",
+  "revision": 0
+}

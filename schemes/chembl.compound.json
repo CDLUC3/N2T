@@ -1,0 +1,27 @@
+{
+  "id": "chembl.compound",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/chembl/compound/inspect/{content}"
+  },
+  "type": "scheme",
+  "name": "ChEMBL compound database at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100115",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/chembl/compound/inspect/${ac}",
+  "redirect": "https://www.ebi.ac.uk/chembl/compound/inspect/{content}",
+  "description": "ChEMBL is a database of bioactive compounds, their quantitative properties and bioactivities (binding constants, pharmacology and ADMET, etc). The data is abstracted and curated from the primary scientific literature.",
+  "subject": "chemical; metabolite",
+  "location": "UK",
+  "synonym": "SO; Sequence Types and Features",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "CHEMBL308052",
+  "probe": "https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL308052",
+  "pattern": "^CHEMBL\\d+$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/chembldb/",
+  "revision": 0
+}

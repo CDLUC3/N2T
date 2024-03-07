@@ -1,0 +1,9 @@
+{
+  "id": "genespeed",
+  "target": {
+    "DEFAULT": "https://Need a Login"
+  },
+  "type": "commonspfx",
+  "redirect": "https://Need a Login",
+  "revision": 0
+}

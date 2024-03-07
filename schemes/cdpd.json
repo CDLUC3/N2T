@@ -1,0 +1,27 @@
+{
+  "id": "cdpd",
+  "target": {
+    "DEFAULT": "http://webprod3.hc-sc.gc.ca/dpd-bdpp/info.do?lang=eng&code={content}"
+  },
+  "type": "scheme",
+  "name": "Canadian Drug Identification Number at Health Canada",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100351",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://webprod3.hc-sc.gc.ca/dpd-bdpp/info.do?lang=eng&code=${ac}",
+  "redirect": "http://webprod3.hc-sc.gc.ca/dpd-bdpp/info.do?lang=eng&code={content}",
+  "description": "The Canadian Drug Product Database (DPD) contains product specific information on drugs approved for use in Canada, and includes human pharmaceutical and biological drugs, veterinary drugs and disinfectant products. This information includes 'brand name', 'route of administration' and a Canadian 'Drug Identification Number' (DIN).",
+  "subject": "drug; registry",
+  "location": "Canada",
+  "synonym": "DPD",
+  "institution": "Health Canada, Ottawa, Ontario",
+  "prefixed": 0,
+  "test": "63250",
+  "probe": "http://webprod3.hc-sc.gc.ca/dpd-bdpp/info.do?lang=eng&code=63250",
+  "pattern": "^\\d+$",
+  "state": "0:Unknown",
+  "more": "http://webprod3.hc-sc.gc.ca/dpd-bdpp/index-eng.jsp",
+  "revision": 0
+}

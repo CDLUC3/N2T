@@ -1,0 +1,9 @@
+{
+  "id": "snap",
+  "target": {
+    "DEFAULT": "http://snap.humgen.au.dk/views/geneview.cgi?gene={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://snap.humgen.au.dk/views/geneview.cgi?gene={content}",
+  "revision": 0
+}

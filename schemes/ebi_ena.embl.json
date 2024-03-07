@@ -1,0 +1,27 @@
+{
+  "id": "ebi/ena.embl",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/{content}"
+  },
+  "type": "scheme",
+  "name": "ENA at European Bioinformatics Institute",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100473",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ena/data/view/${ac}",
+  "redirect": "https://www.ebi.ac.uk/ena/data/view/{content}",
+  "description": "The European Nucleotide Archive (ENA) captures and presents information relating to experimental workflows that are based around nucleotide sequencing. ENA is made up of a number of distinct databases that includes EMBL-Bank, the Sequence Read Archive (SRA) and the Trace Archive each with their own data formats and standards. This collection references Embl-Bank identifiers.",
+  "subject": "sequence; nucleotide",
+  "location": "UK",
+  "synonym": "European Nucleotide Archive; Embl-Bank",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "BN000065",
+  "probe": "https://www.ebi.ac.uk/ena/data/view/BN000065",
+  "pattern": "^[A-Z]+[0-9]+(\\.\\d+)?$",
+  "state": "100:Probably up",
+  "more": "https://www.ebi.ac.uk/ena/",
+  "revision": 0
+}

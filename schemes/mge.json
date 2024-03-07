@@ -1,0 +1,27 @@
+{
+  "id": "mge",
+  "target": {
+    "DEFAULT": "http://aclame.ulb.ac.be/perl/Aclame/Genomes/mge_view.cgi?view=info&id=mge:{content}"
+  },
+  "type": "scheme",
+  "name": "Aclame database of mobile genetic elements",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100091",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://aclame.ulb.ac.be/perl/Aclame/Genomes/mge_view.cgi?view=info&id=mge:${ac}",
+  "redirect": "http://aclame.ulb.ac.be/perl/Aclame/Genomes/mge_view.cgi?view=info&id=mge:{content}",
+  "description": "ACLAME is a database dedicated to the collection and classification of mobile genetic elements (MGEs) from various sources, comprising all known phage genomes, plasmids and transposons.",
+  "subject": "gene",
+  "location": "Belgium",
+  "synonym": "Ligand Depot",
+  "institution": "Service de Conformation de Macromol&#xE9;cules Biologiques et de Bioinformatique, Universit&#xE9; Libre de Bruxelles",
+  "prefixed": 1,
+  "test": "2",
+  "probe": "http://aclame.ulb.ac.be/perl/Aclame/Genomes/mge_view.cgi?view=info&id=mge:2",
+  "pattern": "^mge:\\d+$",
+  "state": "96:Up",
+  "more": "http://aclame.ulb.ac.be/",
+  "revision": 0
+}

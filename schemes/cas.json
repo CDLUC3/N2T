@@ -1,0 +1,27 @@
+{
+  "id": "cas",
+  "target": {
+    "DEFAULT": "http://commonchemistry.org/ChemicalDetail.aspx?ref={content}"
+  },
+  "type": "scheme",
+  "name": "CAS through Common Chemistry",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100301",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://commonchemistry.org/ChemicalDetail.aspx?ref=${ac}",
+  "redirect": "http://commonchemistry.org/ChemicalDetail.aspx?ref={content}",
+  "description": "CAS (Chemical Abstracts Service) is a division of the American Chemical Society and is the producer of comprehensive databases of chemical information.",
+  "subject": "structure; chemical",
+  "location": "USA",
+  "synonym": "CAS Number; CAS Registry Number; Chemical Abstracts Service; CASRN",
+  "institution": "American Chemistry Society, Washington, DC",
+  "prefixed": 0,
+  "test": "50-00-0",
+  "probe": "http://commonchemistry.org/ChemicalDetail.aspx?ref=50-00-0",
+  "pattern": "^\\d{1,7}\\-\\d{2}\\-\\d$",
+  "state": "100:Up",
+  "more": "http://commonchemistry.org",
+  "revision": 0
+}

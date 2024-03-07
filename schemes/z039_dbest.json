@@ -1,0 +1,27 @@
+{
+  "id": "z039/dbest",
+  "target": {
+    "DEFAULT": "http://getentry.ddbj.nig.ac.jp/getentry/na/{content}"
+  },
+  "type": "scheme",
+  "name": "dbEST through DNA Data Bank of Japan (DDBJ)",
+  "alias": null,
+  "provider": "z039",
+  "provider_id": "MIR:00100651",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://getentry.ddbj.nig.ac.jp/getentry/na/${ac}",
+  "redirect": "http://getentry.ddbj.nig.ac.jp/getentry/na/{content}",
+  "description": "The dbEST contains sequence data and other information on \"single-pass\" cDNA sequences, or \"Expressed Sequence Tags\", from a number of organisms.",
+  "subject": "gene; expression",
+  "location": "Japan",
+  "synonym": "Database of Expressed Sequence Tags; NCBI EST",
+  "institution": "DNA Data Bank of Japan, Mishima, Shizuoka",
+  "prefixed": 0,
+  "test": "BP100000",
+  "probe": "http://getentry.ddbj.nig.ac.jp/getentry/na/BP100000",
+  "pattern": "^([A-Z]+)?\\d+(\\.\\d+)?$",
+  "state": "97:Up",
+  "more": "http://www.ddbj.nig.ac.jp/",
+  "revision": 0
+}

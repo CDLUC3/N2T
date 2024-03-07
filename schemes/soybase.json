@@ -1,0 +1,27 @@
+{
+  "id": "soybase",
+  "target": {
+    "DEFAULT": "http://www.soybase.org/sbt/search/search_results.php?category=SNP&search_term={content}"
+  },
+  "type": "scheme",
+  "name": "SoyBase at Iowa State University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100373",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.soybase.org/sbt/search/search_results.php?category=SNP&search_term=${ac}",
+  "redirect": "http://www.soybase.org/sbt/search/search_results.php?category=SNP&search_term={content}",
+  "description": "SoyBase is a repository for curated genetics, genomics and related data resources for soybean.",
+  "subject": "plant; gene",
+  "location": "USA",
+  "synonym": "Nematode Expression Pattern Database",
+  "institution": "USDA-ARS-CICGRU, Iowa State University, Iowa",
+  "prefixed": 0,
+  "test": "BARC-013845-01256",
+  "probe": "http://www.soybase.org/sbt/search/search_results.php?category=SNP&search_term=BARC-013845-01256",
+  "pattern": "^\\w+(\\-)?\\w+(\\-)?\\w+$",
+  "state": "59:Down",
+  "more": "http://soybase.org/",
+  "revision": 0
+}

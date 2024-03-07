@@ -1,0 +1,27 @@
+{
+  "id": "sib/dbsnp",
+  "target": {
+    "DEFAULT": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid={content}"
+  },
+  "type": "scheme",
+  "name": "SNP2TFBS",
+  "alias": null,
+  "provider": "sib",
+  "provider_id": "MIR:00100927",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid=${ac}",
+  "redirect": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid={content}",
+  "description": "The dbSNP database is a repository for both single base nucleotide subsitutions and short deletion and insertion polymorphisms.",
+  "subject": "gene; nucleotide",
+  "location": "Switzerland",
+  "synonym": "Database of Expressed Sequence Tags; NCBI EST",
+  "institution": "SIB Swiss Institute of Bioinformatics",
+  "prefixed": 0,
+  "test": "rs11603840",
+  "probe": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid=rs11603840",
+  "pattern": "^rs\\d+$",
+  "state": "0:Unknown",
+  "more": "https://ccg.epfl.ch/snp2tfbs/",
+  "revision": 0
+}

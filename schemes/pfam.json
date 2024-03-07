@@ -1,0 +1,27 @@
+{
+  "id": "pfam",
+  "target": {
+    "DEFAULT": "https://pfam.xfam.org/family/{content}"
+  },
+  "type": "scheme",
+  "name": "Pfam at EMBL-EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100685",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://pfam.xfam.org/family/${ac}",
+  "redirect": "https://pfam.xfam.org/family/{content}",
+  "description": "The Pfam database contains information about protein domains and families. For each entry a protein sequence alignment and a Hidden Markov Model is stored.",
+  "subject": "domain; protein",
+  "location": "UK",
+  "synonym": "Protein Family Database",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "PF01234",
+  "probe": "https://pfam.xfam.org/family/PF01234",
+  "pattern": "^PF\\d{5}$",
+  "state": "100:Up",
+  "more": "https://pfam.xfam.org/",
+  "revision": 0
+}

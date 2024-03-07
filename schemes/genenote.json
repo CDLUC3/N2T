@@ -1,0 +1,9 @@
+{
+  "id": "genenote",
+  "target": {
+    "DEFAULT": "http://bioinfo2.weizmann.ac.il/cgi-bin/genenote/GN_results.pl?keyword_type=2_gc_id&keyword={content}&data_type=norm2&results=yes"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioinfo2.weizmann.ac.il/cgi-bin/genenote/GN_results.pl?keyword_type=2_gc_id&keyword={content}&data_type=norm2&results=yes",
+  "revision": 0
+}

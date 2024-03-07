@@ -1,0 +1,9 @@
+{
+  "id": "operondb",
+  "target": {
+    "DEFAULT": "http://operondb.cbcb.umd.edu/cgi-bin/operondb/pairs.cgi?taxon_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://operondb.cbcb.umd.edu/cgi-bin/operondb/pairs.cgi?taxon_id={content}",
+  "revision": 0
+}

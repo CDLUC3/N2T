@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/homologene",
+  "target": {},
+  "type": "synonym",
+  "for": "homologene",
+  "revision": 0
+}

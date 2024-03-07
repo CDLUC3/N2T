@@ -1,0 +1,27 @@
+{
+  "id": "rbk",
+  "target": {
+    "DEFAULT": "https://www.rebuildingakidney.org/id/{content}"
+  },
+  "type": "scheme",
+  "name": "Rebuilding a Kidney",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100877",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://www.rebuildingakidney.org/id/${ac}",
+  "redirect": "https://www.rebuildingakidney.org/id/{content}",
+  "description": "(Re)Building a Kidney is an NIDDK-funded consortium of research projects working to optimize approaches for the isolation, expansion, and differentiation of appropriate kidney cell types and their integration into complex structures that replicate human kidney function.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "National Institute Of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+  "prefixed": 0,
+  "test": "Q-2958",
+  "probe": "https://www.rebuildingakidney.org/id/Q-2958",
+  "pattern": "^[-0-9a-zA-Z]+(@[-0-9a-zA-Z]+)?$",
+  "state": "0:Unknown",
+  "more": "https://www.rebuildingakidney.org/",
+  "revision": 0
+}

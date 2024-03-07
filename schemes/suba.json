@@ -1,0 +1,9 @@
+{
+  "id": "suba",
+  "target": {
+    "DEFAULT": "http://suba.plantenergy.uwa.edu.au/flatfile.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://suba.plantenergy.uwa.edu.au/flatfile.php?id={content}",
+  "revision": 0
+}

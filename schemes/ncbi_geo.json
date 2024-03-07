@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/geo",
+  "target": {},
+  "type": "synonym",
+  "for": "geo",
+  "revision": 0
+}

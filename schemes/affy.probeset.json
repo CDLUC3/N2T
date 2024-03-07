@@ -1,0 +1,27 @@
+{
+  "id": "affy.probeset",
+  "target": {
+    "DEFAULT": "https://www.affymetrix.com/LinkServlet?probeset={content}"
+  },
+  "type": "scheme",
+  "name": "Affymetrix ProbeSet in Santa Clara",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100514",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.affymetrix.com/LinkServlet?probeset=${ac}",
+  "redirect": "https://www.affymetrix.com/LinkServlet?probeset={content}",
+  "description": "An Affymetrix ProbeSet is a collection of up to 11 short (~22 nucleotide) microarray probes designed to measure a single gene or a family of genes as a unit. Multiple probe sets may be available for each gene under consideration.",
+  "subject": "genome; nucleotide",
+  "location": "USA",
+  "synonym": "Human Gene Mutation Database",
+  "institution": "Affymetrix, Santa Clara, California",
+  "prefixed": 0,
+  "test": "243002_at",
+  "probe": "https://www.affymetrix.com/LinkServlet?probeset=243002_at",
+  "pattern": "\\d{4,}((_[asx])?_at)?",
+  "state": "0:Unknown",
+  "more": "http://www.affymetrix.com/",
+  "revision": 0
+}

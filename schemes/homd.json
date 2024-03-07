@@ -1,0 +1,9 @@
+{
+  "id": "homd",
+  "target": {
+    "DEFAULT": "http://www.homd.org/modules.php?op=modload&name=HOMD&file=index&oraltaxonid={content}&view=dynamic"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.homd.org/modules.php?op=modload&name=HOMD&file=index&oraltaxonid={content}&view=dynamic",
+  "revision": 0
+}

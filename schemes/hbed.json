@@ -1,0 +1,9 @@
+{
+  "id": "hbed",
+  "target": {
+    "DEFAULT": "https://no longer maintained"
+  },
+  "type": "commonspfx",
+  "redirect": "https://no longer maintained",
+  "revision": 0
+}

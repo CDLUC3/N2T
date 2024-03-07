@@ -1,0 +1,9 @@
+{
+  "id": "hom.mdcdrg",
+  "target": {
+    "DEFAULT": "https://hom.i9pcs"
+  },
+  "type": "commonspfx",
+  "redirect": "https://hom.i9pcs",
+  "revision": 0
+}

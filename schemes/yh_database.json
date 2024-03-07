@@ -1,0 +1,9 @@
+{
+  "id": "yh_database",
+  "target": {
+    "DEFAULT": "http://yh.genomics.org.cn/mapview.jsp?path={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://yh.genomics.org.cn/mapview.jsp?path={content}",
+  "revision": 0
+}

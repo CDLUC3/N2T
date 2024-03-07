@@ -1,0 +1,9 @@
+{
+  "id": "dbpabp",
+  "target": {
+    "DEFAULT": "http://ppa.bcf.ku.edu/DB_PABP/protein_details.jsp?prot_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ppa.bcf.ku.edu/DB_PABP/protein_details.jsp?prot_id={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "z040/hssp",
+  "target": {
+    "DEFAULT": "ftp://ftp.embl-heidelberg.de/pub/databases/protein_extras/hssp/{content}.hssp.bz2"
+  },
+  "type": "scheme",
+  "name": "HSSP at EMBL",
+  "alias": null,
+  "provider": "z040",
+  "provider_id": "MIR:00100274",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "ftp://ftp.embl-heidelberg.de/pub/databases/protein_extras/hssp/${ac}.hssp.bz2",
+  "redirect": "ftp://ftp.embl-heidelberg.de/pub/databases/protein_extras/hssp/{content}.hssp.bz2",
+  "description": "HSSP (homology-derived structures of proteins) is a derived database merging structural (2-D and 3-D) and sequence information (1-D). For each protein of known 3D structure from the Protein Data Bank, the database has a file with all sequence homologues, properly aligned to the PDB protein.",
+  "subject": "clustering; sequence; protein",
+  "location": "Germany",
+  "synonym": "Homology-derived Structure of Proteins",
+  "institution": "Protein Design Group, European Molecular Biology Laboratory, Heidelberg",
+  "prefixed": 0,
+  "test": "102l",
+  "probe": "ftp://ftp.embl-heidelberg.de/pub/databases/protein_extras/hssp/102l.hssp.bz2",
+  "pattern": "^\\w{4}$",
+  "state": "68:Down",
+  "more": "http://swift.cmbi.kun.nl/swift/hssp/",
+  "revision": 0
+}

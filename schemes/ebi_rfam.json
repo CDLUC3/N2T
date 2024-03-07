@@ -1,0 +1,7 @@
+{
+  "id": "ebi/rfam",
+  "target": {},
+  "type": "synonym",
+  "for": "rfam",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "swissregulon",
+  "target": {
+    "DEFAULT": "http://swissregulon.unibas.ch/query/{content}"
+  },
+  "type": "scheme",
+  "name": "SwissRegulon",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100837",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://swissregulon.unibas.ch/query/${ac}",
+  "redirect": "http://swissregulon.unibas.ch/query/{content}",
+  "description": "A database of genome-wide annotations of regulatory sites. It contains annotations for 17 prokaryotes and 3 eukaryotes. The database frontend offers an intuitive interface showing genomic information in a graphical form.",
+  "subject": null,
+  "location": "Switzerland",
+  "synonym": "Microbial Genome Annotation & Analysis Platform",
+  "institution": "Swiss Institute of Bioinformatics",
+  "prefixed": 0,
+  "test": "AHR",
+  "probe": "http://swissregulon.unibas.ch/query/AHR",
+  "pattern": "^[A-Za-z0-9]+$",
+  "state": "0:Unknown",
+  "more": "http://swissregulon.unibas.ch",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "rh-mesh",
+  "target": {
+    "DEFAULT": "http://bioonto.de/mesh.owl#{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioonto.de/mesh.owl#{content}",
+  "revision": 0
+}

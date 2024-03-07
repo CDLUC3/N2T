@@ -1,0 +1,27 @@
+{
+  "id": "z028/mint",
+  "target": {
+    "DEFAULT": "http://mint.bio.uniroma2.it/mint/search/inFrameInteraction.do?interactionAc={content}"
+  },
+  "type": "scheme",
+  "name": "The Molecular INTeraction database (MINT)",
+  "alias": null,
+  "provider": "z028",
+  "provider_id": "MIR:00100070",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://mint.bio.uniroma2.it/mint/search/inFrameInteraction.do?interactionAc=${ac}",
+  "redirect": "http://mint.bio.uniroma2.it/mint/search/inFrameInteraction.do?interactionAc={content}",
+  "description": "The Molecular INTeraction database (MINT) stores, in a structured format, information about molecular interactions by extracting experimental details from work published in peer-reviewed journals.",
+  "subject": "protein; interaction",
+  "location": "Italy",
+  "synonym": "TCDB",
+  "institution": "University of Rome Tor Vergata, Rome",
+  "prefixed": 0,
+  "test": "MINT-10000",
+  "probe": "http://mint.bio.uniroma2.it/mint/search/inFrameInteraction.do?interactionAc=MINT-10000",
+  "pattern": "^MINT\\-\\d{1,7}$",
+  "state": "66:Down",
+  "more": "http://mint.bio.uniroma2.it/mint/",
+  "revision": 0
+}

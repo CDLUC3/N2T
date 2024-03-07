@@ -1,0 +1,27 @@
+{
+  "id": "sbo",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/sbo/main/SBO:{content}"
+  },
+  "type": "scheme",
+  "name": "SBO",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100034",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/sbo/main/SBO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/sbo/main/SBO:{content}",
+  "description": "The goal of the Systems Biology Ontology is to develop controlled vocabularies and ontologies tailored specifically for the kinds of problems being faced in Systems Biology, especially in the context of computational modeling. SBO is a project of the BioModels.net effort.",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "SBO",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "0000262",
+  "probe": "https://www.ebi.ac.uk/sbo/main/SBO:0000262",
+  "pattern": "^SBO:\\d{7}$",
+  "state": "100:Up",
+  "more": "https://www.ebi.ac.uk/sbo/",
+  "revision": 0
+}

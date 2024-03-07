@@ -1,0 +1,27 @@
+{
+  "id": "atfdb.family",
+  "target": {
+    "DEFAULT": "http://www.bioguo.org/AnimalTFDB/family.php?fam={content}"
+  },
+  "type": "scheme",
+  "name": "Animal TFDB at Hubei Bioinformatics & Molecular Imaging Key Laboratory",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100399",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.bioguo.org/AnimalTFDB/family.php?fam=${ac}",
+  "redirect": "http://www.bioguo.org/AnimalTFDB/family.php?fam={content}",
+  "description": "The Animal Transcription Factor DataBase (AnimalTFDB) classifies TFs in sequenced animal genomes, as well as collecting the transcription co-factors and chromatin remodeling factors of those genomes. This collections refers to transcription factor families, and the species in which they are found.",
+  "subject": "interaction; protein; DNA",
+  "location": "China",
+  "synonym": "Animal Transcription Factor Database",
+  "institution": "Hubei Bioinformatics and Molecular Imaging Key Laboratory, Wuhan",
+  "prefixed": 0,
+  "test": "CUT",
+  "probe": "http://www.bioguo.org/AnimalTFDB/family.php?fam=CUT",
+  "pattern": "^\\w+$",
+  "state": "68:Down",
+  "more": "http://www.bioguo.org/AnimalTFDB/family_index.php",
+  "revision": 0
+}

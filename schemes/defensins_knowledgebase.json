@@ -1,0 +1,9 @@
+{
+  "id": "defensins_knowledgebase",
+  "target": {
+    "DEFAULT": "http://defensins.bii.a-star.edu.sg/pops/pop_proteinDetails.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://defensins.bii.a-star.edu.sg/pops/pop_proteinDetails.php?id={content}",
+  "revision": 0
+}

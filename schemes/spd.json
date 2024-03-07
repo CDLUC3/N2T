@@ -1,0 +1,9 @@
+{
+  "id": "spd",
+  "target": {
+    "DEFAULT": "http://spd.cbi.pku.edu.cn/spd_pro.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://spd.cbi.pku.edu.cn/spd_pro.php?id={content}",
+  "revision": 0
+}

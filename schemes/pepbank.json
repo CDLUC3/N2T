@@ -1,0 +1,9 @@
+{
+  "id": "pepbank",
+  "target": {
+    "DEFAULT": "http://pepbank.mgh.harvard.edu/interactions/details/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pepbank.mgh.harvard.edu/interactions/details/{content}",
+  "revision": 0
+}

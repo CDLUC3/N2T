@@ -1,0 +1,9 @@
+{
+  "id": "lpfc",
+  "target": {
+    "DEFAULT": "http://helix-web.stanford.edu/cgi-bin/textsearch.cgi?key={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://helix-web.stanford.edu/cgi-bin/textsearch.cgi?key={content}",
+  "revision": 0
+}

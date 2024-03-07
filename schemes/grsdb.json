@@ -1,0 +1,27 @@
+{
+  "id": "grsdb",
+  "target": {
+    "DEFAULT": "http://bioinformatics.ramapo.edu/GRSDB2/geneview.php?geneID={content}"
+  },
+  "type": "scheme",
+  "name": "GRSDB v2 at  Ramapo College of New Jersey",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100636",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://bioinformatics.ramapo.edu/GRSDB2/geneview.php?geneID=${ac}",
+  "redirect": "http://bioinformatics.ramapo.edu/GRSDB2/geneview.php?geneID={content}",
+  "description": "GRSDB is a database of G-quadruplexes and contains information on composition and distribution of putative Quadruplex-forming G-Rich Sequences (QGRS) mapped in the eukaryotic pre-mRNA sequences, including those that are alternatively processed (alternatively spliced or alternatively polyadenylated). The data stored in the GRSDB is based on computational analysis of NCBI Entrez Gene entries and their corresponding annotated genomic nucleotide sequences of RefSeq/GenBank.",
+  "subject": "nucleotide; eukaryotic",
+  "location": "USA",
+  "synonym": "G-Rich Sequences DataBase",
+  "institution": "Bioinformatics Group, School of Theoretical and Applied Science, Ramapo College of New Jersey, Mahwah",
+  "prefixed": 0,
+  "test": "10142",
+  "probe": "http://bioinformatics.ramapo.edu/GRSDB2/geneview.php?geneID=10142",
+  "pattern": "^\\d+$",
+  "state": "95:Up",
+  "more": "http://bioinformatics.ramapo.edu/GRSDB2/",
+  "revision": 0
+}

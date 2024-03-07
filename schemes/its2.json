@@ -1,0 +1,9 @@
+{
+  "id": "its2",
+  "target": {
+    "DEFAULT": "http://its2.bioapps.biozentrum.uni-wuerzburg.de/cgi-bin/its2.pl?Taxon_id={content}&method=All"
+  },
+  "type": "commonspfx",
+  "redirect": "http://its2.bioapps.biozentrum.uni-wuerzburg.de/cgi-bin/its2.pl?Taxon_id={content}&method=All",
+  "revision": 0
+}

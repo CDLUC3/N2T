@@ -1,0 +1,27 @@
+{
+  "id": "z045/massbank",
+  "target": {
+    "DEFAULT": "http://www.massbank.eu/MassBank/jsp/FwdRecord.jsp?id={content}"
+  },
+  "type": "scheme",
+  "name": "MassBank in Europe",
+  "alias": null,
+  "provider": "z045",
+  "provider_id": "MIR:00100666",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.massbank.eu/MassBank/jsp/FwdRecord.jsp?id=${ac}",
+  "redirect": "http://www.massbank.eu/MassBank/jsp/FwdRecord.jsp?id={content}",
+  "description": "MassBank is a federated database of reference spectra from different instruments, including high-resolution mass spectra of small metabolites (<3000 Da).",
+  "subject": "chemical; mass spectrometry; metabolite",
+  "location": "Germany",
+  "synonym": "DPD",
+  "institution": "NORMAN Network and The MassBank Consortium",
+  "prefixed": 0,
+  "test": "PB000166",
+  "probe": "http://www.massbank.eu/MassBank/jsp/FwdRecord.jsp?id=PB000166",
+  "pattern": "^[A-Z]{2}[A-Z0-9][0-9]{5}$",
+  "state": "70:Down",
+  "more": "http://www.massbank.eu/",
+  "revision": 0
+}

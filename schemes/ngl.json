@@ -1,0 +1,27 @@
+{
+  "id": "ngl",
+  "target": {
+    "DEFAULT": "https://genelab-data.ndc.nasa.gov/genelab/accession/{content}"
+  },
+  "type": "scheme",
+  "name": "NASA GeneLab",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100822",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://genelab-data.ndc.nasa.gov/genelab/accession/${ac}",
+  "redirect": "https://genelab-data.ndc.nasa.gov/genelab/accession/{content}",
+  "description": "NASA's GeneLab gathers spaceflight genomic data, RNA and protein expression, and metabolic profiles, interfaces with existing databases for expanded research, will offer tools to conduct data analysis, and is in the process of creating a place online where scientists, researchers, teachers and students can connect with their peers, share their results, and communicate with NASA.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Marine Metagenomics Portal",
+  "institution": "NASA's Ames Research Center",
+  "prefixed": 0,
+  "test": "GLDS-141",
+  "probe": "https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-141",
+  "pattern": "^GLDS-\\d+$",
+  "state": "0:Unknown",
+  "more": "https://genelab-data.ndc.nasa.gov/genelab/",
+  "revision": 0
+}

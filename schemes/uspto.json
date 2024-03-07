@@ -1,0 +1,27 @@
+{
+  "id": "uspto",
+  "target": {
+    "DEFAULT": "http://patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/{content}"
+  },
+  "type": "scheme",
+  "name": "USPTO patents at USPTO",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100715",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/${ac}",
+  "redirect": "http://patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/{content}",
+  "description": "The United States Patent and Trademark Office (USPTO) is the federal agency for granting U.S. patents and registering trademarks. As a mechanism that protects new ideas and investments in innovation and creativity, the USPTO is at the cutting edge of the nation's technological progress and achievement.",
+  "subject": "registry",
+  "location": "USA",
+  "synonym": "United States Patent and Trademark Office",
+  "institution": "United States Patent and Trademark Office",
+  "prefixed": 0,
+  "test": "4145692",
+  "probe": "http://patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/4145692",
+  "pattern": "^(D|PP|R|T|H|X|AI)?\\d+$",
+  "state": "100:Up",
+  "more": "http://patft.uspto.gov/netahtml/PTO/index.html",
+  "revision": 0
+}

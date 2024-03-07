@@ -1,0 +1,15 @@
+{
+  "id": "ror",
+  "target": {
+    "DEFAULT": "https://ror.org/{content}"
+  },
+  "type": "scheme",
+  "name": "Research Organization Registry",
+  "alias": null,
+  "primary": 1,
+  "redirect": "https://ror.org/{content}",
+  "test": "03yrm5c26",
+  "probe": "https://ror.org/03yrm5c26",
+  "more": "http://ror.org",
+  "revision": 0
+}

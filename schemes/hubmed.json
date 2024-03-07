@@ -1,0 +1,9 @@
+{
+  "id": "hubmed",
+  "target": {
+    "DEFAULT": "http://www.hubmed.org/display.cgi?uids={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.hubmed.org/display.cgi?uids={content}",
+  "revision": 0
+}

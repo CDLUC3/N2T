@@ -1,0 +1,27 @@
+{
+  "id": "omicsdi/gxa.expt",
+  "target": {
+    "DEFAULT": "https://www.omicsdi.org/dataset/atlas-experiments/{content}"
+  },
+  "type": "scheme",
+  "name": "GXA Expt through OmicsDI",
+  "alias": null,
+  "provider": "omicsdi",
+  "provider_id": "MIR:00100857",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.omicsdi.org/dataset/atlas-experiments/${ac}",
+  "redirect": "https://www.omicsdi.org/dataset/atlas-experiments/{content}",
+  "description": "The Gene Expression Atlas (GXA) is a semantically enriched database of meta-analysis based summary statistics over a curated subset of ArrayExpress Archive, servicing queries for condition-specific gene expression patterns as well as broader exploratory searches for biologically interesting genes/samples. This collection references experiments.",
+  "subject": "expression; microarray",
+  "location": "UK",
+  "synonym": "Gene Expression Atlas Experiment",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "E-MTAB-2037",
+  "probe": "https://www.omicsdi.org/dataset/atlas-experiments/E-MTAB-2037",
+  "pattern": "^[AEP]-\\w{4}-\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.omicsdi.org/",
+  "revision": 0
+}

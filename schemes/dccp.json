@@ -1,0 +1,9 @@
+{
+  "id": "dccp",
+  "target": {
+    "DEFAULT": "http://sdbi.sdut.edu.cn/DCCP/en/Detail1D.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://sdbi.sdut.edu.cn/DCCP/en/Detail1D.php?id={content}",
+  "revision": 0
+}

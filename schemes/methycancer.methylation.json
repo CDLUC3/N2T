@@ -1,0 +1,9 @@
+{
+  "id": "methycancer.methylation",
+  "target": {
+    "DEFAULT": "http://methycancer.psych.ac.cn/methylationDetail.do?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://methycancer.psych.ac.cn/methylationDetail.do?id={content}",
+  "revision": 0
+}

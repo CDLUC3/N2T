@@ -1,0 +1,27 @@
+{
+  "id": "did",
+  "target": {
+    "DEFAULT": "https://uniresolver.io/#did:{content}"
+  },
+  "type": "scheme",
+  "name": "Decentralized Identifiers (DIDs)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100922",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://uniresolver.io/#did:${ac}",
+  "redirect": "https://uniresolver.io/#did:{content}",
+  "description": "DIDs are an effort by the W3C Credentials Community Group and the wider Internet identity community to define identifiers that can be registered, updated, resolved, and revoked without any dependency on a central authority or intermediary.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Open Citation Identifier",
+  "institution": "W3C Credentials Community Group",
+  "prefixed": 1,
+  "test": "sov:WRfXPg8dantKVubE3HX8pw",
+  "probe": "https://uniresolver.io/#did:sov:WRfXPg8dantKVubE3HX8pw",
+  "pattern": "^did:[a-z0-9]+:[A-Za-z0-9.\\-:]+$",
+  "state": "0:Unknown",
+  "more": "https://w3c-ccg.github.io/did-spec/",
+  "revision": 0
+}

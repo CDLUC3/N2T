@@ -1,0 +1,9 @@
+{
+  "id": "sulfolobus",
+  "target": {
+    "DEFAULT": "http://www.sulfolobus.org/cbin/mutagen.pl?page=misc&gidinfo={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.sulfolobus.org/cbin/mutagen.pl?page=misc&gidinfo={content}",
+  "revision": 0
+}

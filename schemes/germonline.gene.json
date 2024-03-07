@@ -1,0 +1,9 @@
+{
+  "id": "germonline.gene",
+  "target": {
+    "DEFAULT": "http://www.germonline.org/Homo_sapiens/geneview?db=core;gene={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.germonline.org/Homo_sapiens/geneview?db=core;gene={content}",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "homeodomain_resource",
+  "target": {
+    "DEFAULT": "http://research.nhgri.nih.gov/apps/homeodomain/web/index.cgi?mode=view&view=proteins&id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://research.nhgri.nih.gov/apps/homeodomain/web/index.cgi?mode=view&view=proteins&id={content}",
+  "revision": 0
+}

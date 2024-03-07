@@ -1,0 +1,27 @@
+{
+  "id": "gabi",
+  "target": {
+    "DEFAULT": "http://www.gabipd.org/database/cgi-bin/GreenCards.pl.cgi?BioObjectId={content}&Mode=ShowBioObject"
+  },
+  "type": "scheme",
+  "name": "GABI at Max Planck",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100210",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.gabipd.org/database/cgi-bin/GreenCards.pl.cgi?BioObjectId=${ac}&Mode=ShowBioObject",
+  "redirect": "http://www.gabipd.org/database/cgi-bin/GreenCards.pl.cgi?BioObjectId={content}&Mode=ShowBioObject",
+  "description": "GabiPD (Genome Analysis of Plant Biological Systems Primary Database) constitutes a repository for a wide array of heterogeneous data from high-throughput experiments in several plant species. These data (i.e. genomics, transcriptomics, proteomics and metabolomics), originating from different model or crop species, can be accessed through a central gene 'Green Card'.",
+  "subject": "plant; gene; genome",
+  "location": "Germany",
+  "synonym": "GABI PD",
+  "institution": "Max Planck Institute of Molecular Plant Physiology, Berlin",
+  "prefixed": 0,
+  "test": "2679240",
+  "probe": "http://www.gabipd.org/database/cgi-bin/GreenCards.pl.cgi?BioObjectId=2679240&Mode=ShowBioObject",
+  "pattern": "^\\w+$",
+  "state": "92:Up",
+  "more": "http://www.gabipd.org/",
+  "revision": 0
+}

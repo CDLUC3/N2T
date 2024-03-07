@@ -1,0 +1,9 @@
+{
+  "id": "bactibase",
+  "target": {
+    "DEFAULT": "http://bactibase.pfba-lab-tun.org/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bactibase.pfba-lab-tun.org/{content}",
+  "revision": 0
+}

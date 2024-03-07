@@ -1,0 +1,27 @@
+{
+  "id": "epd",
+  "target": {
+    "DEFAULT": "http://epd.vital-it.ch/cgi-bin/query_result.pl?out_format=NICE&Entry_0={content}"
+  },
+  "type": "scheme",
+  "name": "EPD at Swiss Institute of Bioinformatics",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100528",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://epd.vital-it.ch/cgi-bin/query_result.pl?out_format=NICE&Entry_0=${ac}",
+  "redirect": "http://epd.vital-it.ch/cgi-bin/query_result.pl?out_format=NICE&Entry_0={content}",
+  "description": "The Eukaryotic Promoter Database (EPD) is an annotated non-redundant collection of eukaryotic POL II promoters, for which the transcription start site has been determined experimentally. Access to promoter sequences is provided by pointers to positions in nucleotide sequence entries. The annotation part of an entry includes description of the initiation site mapping data, cross-references to other databases, and bibliographic references. EPD is structured in a way that facilitates dynamic extraction of biologically meaningful promoter subsets for comparative sequence analysis.",
+  "subject": "eukaryotic; DNA; sequence; expression",
+  "location": "Switzerland",
+  "synonym": "Eukaryotic Promoter Database",
+  "institution": "Swiss Institute of Bioinformatics (SIB), Geneva",
+  "prefixed": 0,
+  "test": "TA_H3",
+  "probe": "http://epd.vital-it.ch/cgi-bin/query_result.pl?out_format=NICE&Entry_0=TA_H3",
+  "pattern": "^[A-Z-_0-9]+$",
+  "state": "83:Down",
+  "more": "http://epd.vital-it.ch/",
+  "revision": 0
+}

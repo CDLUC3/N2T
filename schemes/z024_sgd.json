@@ -1,0 +1,27 @@
+{
+  "id": "z024/sgd",
+  "target": {
+    "DEFAULT": "http://sgd.bio2rdf.org/describe/?url=http://bio2rdf.org/sgd:{content}"
+  },
+  "type": "scheme",
+  "name": "Bio2RDF",
+  "alias": null,
+  "provider": "z024",
+  "provider_id": "MIR:00100703",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://sgd.bio2rdf.org/describe/?url=http://bio2rdf.org/sgd:${ac}",
+  "redirect": "http://sgd.bio2rdf.org/describe/?url=http://bio2rdf.org/sgd:{content}",
+  "description": "The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.",
+  "subject": "genome; eukaryotic; nucleotide",
+  "location": null,
+  "synonym": "Saccharomyces Genome Database",
+  "institution": "Bio2RDF.org",
+  "prefixed": 0,
+  "test": "S000003909",
+  "probe": "http://sgd.bio2rdf.org/describe/?url=http://bio2rdf.org/sgd:S000003909",
+  "pattern": "^((S\\d+$)|(Y[A-Z]{2}\\d{3}[a-zA-Z](\\-[A-Z])?))$",
+  "state": "58:Down",
+  "more": "http://sgd.bio2rdf.org/fct",
+  "revision": 0
+}

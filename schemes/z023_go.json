@@ -1,0 +1,27 @@
+{
+  "id": "z023/go",
+  "target": {
+    "DEFAULT": "http://www.pantherdb.org/panther/category.do?categoryAcc=GO:{content}"
+  },
+  "type": "scheme",
+  "name": "GO through PANTHER",
+  "alias": null,
+  "provider": "z023",
+  "provider_id": "MIR:00100585",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.pantherdb.org/panther/category.do?categoryAcc=GO:${ac}",
+  "redirect": "http://www.pantherdb.org/panther/category.do?categoryAcc=GO:{content}",
+  "description": "The Gene Ontology project provides a controlled vocabulary to describe gene and gene product attributes in any organism.",
+  "subject": "ontology",
+  "location": "USA",
+  "synonym": "GO",
+  "institution": "Keck School of Medicine, University of Southern California",
+  "prefixed": 1,
+  "test": "0000003",
+  "probe": "http://www.pantherdb.org/panther/category.do?categoryAcc=GO:0000003",
+  "pattern": "^GO:\\d{7}$",
+  "state": "99:Up",
+  "more": "http://www.pantherdb.org/",
+  "revision": 0
+}

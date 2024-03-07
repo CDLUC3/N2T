@@ -1,0 +1,9 @@
+{
+  "id": "methycancer.gene",
+  "target": {
+    "DEFAULT": "http://methycancer.psych.ac.cn/geneDetail.do?geneid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://methycancer.psych.ac.cn/geneDetail.do?geneid={content}",
+  "revision": 0
+}

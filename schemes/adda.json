@@ -1,0 +1,9 @@
+{
+  "id": "adda",
+  "target": {
+    "DEFAULT": "http://ekhidna.biocenter.helsinki.fi/sqgraph/pairsdb/report_sequence?nid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ekhidna.biocenter.helsinki.fi/sqgraph/pairsdb/report_sequence?nid={content}",
+  "revision": 0
+}

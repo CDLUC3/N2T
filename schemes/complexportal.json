@@ -1,0 +1,27 @@
+{
+  "id": "complexportal",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/complexportal/complex/{content}"
+  },
+  "type": "scheme",
+  "name": "Complex Portal",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100875",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/complexportal/complex/${ac}",
+  "redirect": "https://www.ebi.ac.uk/complexportal/complex/{content}",
+  "description": "A database that describes manually curated macromolecular complexes and provides links to details about these complexes in other databases.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "nmrCV",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "CPX-2158",
+  "probe": "https://www.ebi.ac.uk/complexportal/complex/CPX-2158",
+  "pattern": "^CPX-[0-9]+$",
+  "state": "0:Unknown",
+  "more": "https://www.ebi.ac.uk/complexportal",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "merops.family",
+  "target": {
+    "DEFAULT": "http://merops.sanger.ac.uk/cgi-bin/famsum?family={content}"
+  },
+  "type": "scheme",
+  "name": "Merops Family at Sanger Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100384",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://merops.sanger.ac.uk/cgi-bin/famsum?family=${ac}",
+  "redirect": "http://merops.sanger.ac.uk/cgi-bin/famsum?family={content}",
+  "description": "The MEROPS database is an information resource for peptidases (also termed proteases, proteinases and proteolytic enzymes) and the proteins that inhibit them. These are hierarchically classified and assigned to a Family on the basis of statistically significant similarities in amino acid sequence. Families thought to be homologous are grouped together in a Clan. This collection references peptidase families.",
+  "subject": "interaction; enzyme; protein",
+  "location": "UK",
+  "synonym": "Coli Genetic Stock Center",
+  "institution": "Wellcome Trust Sanger Institute, Hinxton",
+  "prefixed": 0,
+  "test": "S1",
+  "probe": "http://merops.sanger.ac.uk/cgi-bin/famsum?family=S1",
+  "pattern": "^[SCTAGMNU]\\d+$",
+  "state": "67:Down",
+  "more": "http://merops.sanger.ac.uk/index.htm",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "allergome",
+  "target": {
+    "DEFAULT": "http://www.allergome.org/script/dettaglio.php?id_molecule={content}"
+  },
+  "type": "scheme",
+  "name": "Allergome at Rome",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100429",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.allergome.org/script/dettaglio.php?id_molecule=${ac}",
+  "redirect": "http://www.allergome.org/script/dettaglio.php?id_molecule={content}",
+  "description": "Allergome is a repository of data related to all IgE-binding compounds. Its purpose is to collect a list of allergenic sources and molecules by using the widest selection criteria and sources.",
+  "subject": "chemical; human",
+  "location": "Italy",
+  "synonym": "Orientations of Proteins in Membranes",
+  "institution": "Center for Clinical and Experimental Allergology, Rome",
+  "prefixed": 0,
+  "test": "1948",
+  "probe": "http://www.allergome.org/script/dettaglio.php?id_molecule=1948",
+  "pattern": "^\\d+$",
+  "state": "95:Probably up",
+  "more": "http://www.allergome.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "charprot",
+  "target": {
+    "DEFAULT": "http://www.jcvi.org/charprotdb/index.cgi/view/{content}"
+  },
+  "type": "scheme",
+  "name": "CharProt at JCVI",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100436",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.jcvi.org/charprotdb/index.cgi/view/${ac}",
+  "redirect": "http://www.jcvi.org/charprotdb/index.cgi/view/{content}",
+  "description": "CharProt is a database of biochemically characterized proteins designed to support automated annotation pipelines. Entries are annotated with gene name, symbol and various controlled vocabulary terms, including Gene Ontology terms, Enzyme Commission number and TransportDB accession.",
+  "subject": "controlled vocabulary; gene; annotation",
+  "location": "USA",
+  "synonym": "Yeast Transcription Factor Specificity Compendium",
+  "institution": "J Craig Venter institute, Rockville, Maryland",
+  "prefixed": 0,
+  "test": "CH_001923",
+  "probe": "http://www.jcvi.org/charprotdb/index.cgi/view/CH_001923",
+  "pattern": "^CH_\\d+$",
+  "state": "65:Down",
+  "more": "http://www.jcvi.org/charprotdb",
+  "revision": 0
+}

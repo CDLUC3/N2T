@@ -1,0 +1,9 @@
+{
+  "id": "ehco",
+  "target": {
+    "DEFAULT": "http://ehco.iis.sinica.edu.tw/annotation.jsp?Gene_Symbol=[?gene_symbol]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ehco.iis.sinica.edu.tw/annotation.jsp?Gene_Symbol=[?gene_symbol]",
+  "revision": 0
+}

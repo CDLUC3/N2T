@@ -1,0 +1,27 @@
+{
+  "id": "dbg2introns",
+  "target": {
+    "DEFAULT": "http://webapps2.ucalgary.ca/~groupii/cgi-bin/intron.cgi?name={content}"
+  },
+  "type": "scheme",
+  "name": "Bacterial Group II Introns at University of Calgary",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100401",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://webapps2.ucalgary.ca/~groupii/cgi-bin/intron.cgi?name=${ac}",
+  "redirect": "http://webapps2.ucalgary.ca/~groupii/cgi-bin/intron.cgi?name={content}",
+  "description": "The Database for Bacterial Group II Introns  provides a catalogue of full-length, non-redundant group II introns present in bacterial DNA sequences in GenBank.",
+  "subject": "DNA; sequence",
+  "location": "Canada",
+  "synonym": "Database for Bacterial Group II Introns",
+  "institution": "Department of Biological Sciences, University of Calgary, Calgary, Alberta",
+  "prefixed": 0,
+  "test": "Cu.me.I1",
+  "probe": "http://webapps2.ucalgary.ca/~groupii/cgi-bin/intron.cgi?name=Cu.me.I1",
+  "pattern": "^\\w{1,2}\\.(\\w{1,2}\\.)?[A-Za-z0-9]+$",
+  "state": "96:Up",
+  "more": "http://webapps2.ucalgary.ca/~groupii/",
+  "revision": 0
+}

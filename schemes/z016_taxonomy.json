@@ -1,0 +1,27 @@
+{
+  "id": "z016/taxonomy",
+  "target": {
+    "DEFAULT": "http://taxonomy.bio2rdf.org/describe/?url=http://bio2rdf.org/taxonomy:{content}"
+  },
+  "type": "scheme",
+  "name": "Bio2RDF",
+  "alias": "taxon",
+  "provider": "z016",
+  "provider_id": "MIR:00100695",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://taxonomy.bio2rdf.org/describe/?url=http://bio2rdf.org/taxonomy:${ac}",
+  "redirect": "http://taxonomy.bio2rdf.org/describe/?url=http://bio2rdf.org/taxonomy:{content}",
+  "description": "The taxonomy contains the relationships between all living forms for which nucleic acid or protein sequence have been determined.",
+  "subject": "taxonomy",
+  "location": null,
+  "synonym": "NEWT; NCBI taxonomy; NCBITAXON",
+  "institution": "Bio2RDF.org",
+  "prefixed": 0,
+  "test": "9606",
+  "probe": "http://taxonomy.bio2rdf.org/describe/?url=http://bio2rdf.org/taxonomy:9606",
+  "pattern": "^\\d+$",
+  "state": "60:Down",
+  "more": "http://taxonomy.bio2rdf.org/fct/",
+  "revision": 0
+}

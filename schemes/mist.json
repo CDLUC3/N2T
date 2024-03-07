@@ -1,0 +1,9 @@
+{
+  "id": "mist",
+  "target": {
+    "DEFAULT": "http://genomics.ornl.gov/mist/view_organism.php?organism_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://genomics.ornl.gov/mist/view_organism.php?organism_id={content}",
+  "revision": 0
+}

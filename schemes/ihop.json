@@ -1,0 +1,9 @@
+{
+  "id": "ihop",
+  "target": {
+    "DEFAULT": "http://www.ihop-net.org/UniPub/iHOP/gs/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ihop-net.org/UniPub/iHOP/gs/{content}.html",
+  "revision": 0
+}

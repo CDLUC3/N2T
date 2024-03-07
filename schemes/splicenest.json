@@ -1,0 +1,9 @@
+{
+  "id": "splicenest",
+  "target": {
+    "DEFAULT": "http://splicenest.molgen.mpg.de/cgi-bin/splicegraph.cgi?cluster={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://splicenest.molgen.mpg.de/cgi-bin/splicegraph.cgi?cluster={content}",
+  "revision": 0
+}

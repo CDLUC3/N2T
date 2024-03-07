@@ -1,0 +1,27 @@
+{
+  "id": "bioentitylink/fb",
+  "target": {
+    "DEFAULT": "https://bioentity.link/#/lexicon/public/{content}"
+  },
+  "type": "scheme",
+  "name": "FlyBase through BioEntity Link",
+  "alias": null,
+  "provider": "bioentitylink",
+  "provider_id": "MIR:00100893",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://bioentity.link/#/lexicon/public/${ac}",
+  "redirect": "https://bioentity.link/#/lexicon/public/{content}",
+  "description": "FlyBase is the database of the Drosophila Genome Projects and of associated literature.",
+  "subject": "eukaryotic; genome; nucleotide",
+  "location": "USA",
+  "synonym": "GenBank; INSDC; International Nucleotide Sequence Database Collaboration; NCBI nucleotide",
+  "institution": "InSilico Inc, in Eugene, Oregon",
+  "prefixed": 0,
+  "test": "FBgn0011293",
+  "probe": "https://bioentity.link/#/lexicon/public/FBgn0011293",
+  "pattern": "^FB\\w{2}\\d{7}$",
+  "state": "0:Unknown",
+  "more": "https://bioentity.link/",
+  "revision": 0
+}

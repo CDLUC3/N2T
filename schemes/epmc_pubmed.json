@@ -1,0 +1,27 @@
+{
+  "id": "epmc/pubmed",
+  "target": {
+    "DEFAULT": "http://europepmc.org/abstract/MED/{content}"
+  },
+  "type": "scheme",
+  "name": "Europe PMC",
+  "alias": "pmid",
+  "provider": "epmc",
+  "provider_id": "MIR:00100497",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://europepmc.org/abstract/MED/${ac}",
+  "redirect": "http://europepmc.org/abstract/MED/{content}",
+  "description": "PubMed is a service of the U.S. National Library of Medicine that includes citations from MEDLINE and other life science journals for biomedical articles back to the 1950s.",
+  "subject": "schema.org; bibliography",
+  "location": "UK",
+  "synonym": "KEGG",
+  "institution": "Europe PubMed Central partners",
+  "prefixed": 0,
+  "test": "16333295",
+  "probe": "http://europepmc.org/abstract/MED/16333295",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "http://europepmc.org/",
+  "revision": 0
+}

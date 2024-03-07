@@ -1,0 +1,27 @@
+{
+  "id": "zinc",
+  "target": {
+    "DEFAULT": "http://zinc15.docking.org/substances/{content}"
+  },
+  "type": "scheme",
+  "name": "ZINC at University of California (San Francisco)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100688",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://zinc15.docking.org/substances/${ac}",
+  "redirect": "http://zinc15.docking.org/substances/{content}",
+  "description": "ZINC is a free public resource for ligand discovery. The database contains over twenty million commercially available molecules in biologically relevant representations that may be downloaded in popular ready-to-dock formats and subsets. The Web site enables searches by structure, biological activity, physical property, vendor, catalog number, name, and CAS number.",
+  "subject": "structure; chemical",
+  "location": "USA",
+  "synonym": "HPM",
+  "institution": "Shoichet Laboratory, Department of Pharmaceutical Chemistry, University of California, San Francisco",
+  "prefixed": 0,
+  "test": "ZINC1084",
+  "probe": "http://zinc15.docking.org/substances/ZINC1084",
+  "pattern": "^(ZINC)?\\d+$",
+  "state": "99:Up",
+  "more": "http://zinc15.docking.org/",
+  "revision": 0
+}

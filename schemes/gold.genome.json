@@ -1,0 +1,27 @@
+{
+  "id": "gold.genome",
+  "target": {
+    "DEFAULT": "http://www.genomesonline.org/cgi-bin/GOLD/GOLDCards.cgi?goldstamp={content}"
+  },
+  "type": "scheme",
+  "name": "GOLD genome at Department of Energy Joint Genome Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100521",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.genomesonline.org/cgi-bin/GOLD/GOLDCards.cgi?goldstamp=${ac}",
+  "redirect": "http://www.genomesonline.org/cgi-bin/GOLD/GOLDCards.cgi?goldstamp={content}",
+  "description": "The GOLD (Genomes OnLine Database)is a resource for centralized monitoring of genome and metagenome projects worldwide. It stores information on complete and ongoing projects, along with their associated metadata. This collection references the sequencing status of individual genomes.",
+  "subject": "registry; genome",
+  "location": "USA",
+  "synonym": "Statistical Torsional Angles Potentials of NMR",
+  "institution": "Department of Energy Joint Genome Institute, Microbial Genomics and Metagenomics Program, California",
+  "prefixed": 0,
+  "test": "Gi07796",
+  "probe": "http://www.genomesonline.org/cgi-bin/GOLD/GOLDCards.cgi?goldstamp=Gi07796",
+  "pattern": "^[Gi|Gc]\\d+$",
+  "state": "71:Down",
+  "more": "http://www.genomesonline.org/cgi-bin/GOLD/index.cgi",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "antweb",
+  "target": {
+    "DEFAULT": "http://www.antweb.org/specimen.do?name={content}"
+  },
+  "type": "scheme",
+  "name": "AntWeb at California Academy of Sciences",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100190",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.antweb.org/specimen.do?name=${ac}",
+  "redirect": "http://www.antweb.org/specimen.do?name={content}",
+  "description": "AntWeb is a website documenting the known species of ants, with records for each species linked to their geographical distribution, life history, and includes pictures.",
+  "subject": "classification",
+  "location": "USA",
+  "synonym": "CGD",
+  "institution": "California Academy of Sciences, Goldengate Park, San Francisco",
+  "prefixed": 0,
+  "test": "casent0106247",
+  "probe": "http://www.antweb.org/specimen.do?name=casent0106247",
+  "pattern": "^casent\\d+(\\-D\\d+)?$",
+  "state": "97:Up",
+  "more": "http://www.antweb.org/",
+  "revision": 0
+}

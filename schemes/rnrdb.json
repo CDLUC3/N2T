@@ -1,0 +1,9 @@
+{
+  "id": "rnrdb",
+  "target": {
+    "DEFAULT": "http://rnrdb.molbio.su.se/proteins_for_organism.html?organism_nr={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rnrdb.molbio.su.se/proteins_for_organism.html?organism_nr={content}",
+  "revision": 0
+}

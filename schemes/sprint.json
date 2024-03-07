@@ -1,0 +1,9 @@
+{
+  "id": "sprint",
+  "target": {
+    "DEFAULT": "http://www.bioinf.manchester.ac.uk/cgi-bin/dbbrowser/sprint/searchprintss.cgi?prints_accn={content}&display_opts=Prints&category=None&queryform=false&regexpr=off"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.bioinf.manchester.ac.uk/cgi-bin/dbbrowser/sprint/searchprintss.cgi?prints_accn={content}&display_opts=Prints&category=None&queryform=false&regexpr=off",
+  "revision": 0
+}

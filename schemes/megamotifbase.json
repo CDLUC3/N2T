@@ -1,0 +1,9 @@
+{
+  "id": "megamotifbase",
+  "target": {
+    "DEFAULT": "http://caps.ncbs.res.in/cgi-bin/mini/databases/MegaMotifbase/megamotif1.cgi?code={content}&opt=h"
+  },
+  "type": "commonspfx",
+  "redirect": "http://caps.ncbs.res.in/cgi-bin/mini/databases/MegaMotifbase/megamotif1.cgi?code={content}&opt=h",
+  "revision": 0
+}

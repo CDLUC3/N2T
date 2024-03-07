@@ -1,0 +1,27 @@
+{
+  "id": "hmdb",
+  "target": {
+    "DEFAULT": "http://www.hmdb.ca/metabolites/{content}"
+  },
+  "type": "scheme",
+  "name": "The Human Metabolome Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100079",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.hmdb.ca/metabolites/${ac}",
+  "redirect": "http://www.hmdb.ca/metabolites/{content}",
+  "description": "The Human Metabolome Database (HMDB) is a database containing detailed information about small molecule metabolites found in the human body.It contains or links 1) chemical 2) clinical and 3) molecular biology/biochemistry data.",
+  "subject": "human; chemical; metabolite",
+  "location": "Canada",
+  "synonym": "Human Metabolome Database",
+  "institution": "University of Alberta, Edmonton, AB",
+  "prefixed": 0,
+  "test": "HMDB00001",
+  "probe": "http://www.hmdb.ca/metabolites/HMDB00001",
+  "pattern": "^HMDB\\d+$",
+  "state": "99:Up",
+  "more": "http://www.hmdb.ca/",
+  "revision": 0
+}

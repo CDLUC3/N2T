@@ -1,0 +1,9 @@
+{
+  "id": "cutdb",
+  "target": {
+    "DEFAULT": "http://cutdb.burnham.org/relation/show/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://cutdb.burnham.org/relation/show/{content}",
+  "revision": 0
+}

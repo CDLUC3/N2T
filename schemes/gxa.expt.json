@@ -1,0 +1,27 @@
+{
+  "id": "gxa.expt",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/gxa/experiments/{content}"
+  },
+  "type": "scheme",
+  "name": "GXA Expt at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100483",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/gxa/experiments/${ac}",
+  "redirect": "https://www.ebi.ac.uk/gxa/experiments/{content}",
+  "description": "The Gene Expression Atlas (GXA) is a semantically enriched database of meta-analysis based summary statistics over a curated subset of ArrayExpress Archive, servicing queries for condition-specific gene expression patterns as well as broader exploratory searches for biologically interesting genes/samples. This collection references experiments.",
+  "subject": "expression; microarray",
+  "location": "UK",
+  "synonym": "Gene Expression Atlas Experiment",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "E-MTAB-2037",
+  "probe": "https://www.ebi.ac.uk/gxa/experiments/E-MTAB-2037",
+  "pattern": "^[AEP]-\\w{4}-\\d+$",
+  "state": "82:Up",
+  "more": "https://www.ebi.ac.uk/gxa/",
+  "revision": 0
+}

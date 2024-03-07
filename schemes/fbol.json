@@ -1,0 +1,27 @@
+{
+  "id": "fbol",
+  "target": {
+    "DEFAULT": "http://www.fungalbarcoding.org/BioloMICS.aspx?Table=Fungal barcodes&Rec={content}&Fields=All&ExactMatch=T"
+  },
+  "type": "scheme",
+  "name": "Fungal Barcode at Fungal Biodiversity Centre",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100532",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.fungalbarcoding.org/BioloMICS.aspx?Table=Fungal barcodes&Rec=${ac}&Fields=All&ExactMatch=T",
+  "redirect": "http://www.fungalbarcoding.org/BioloMICS.aspx?Table=Fungal barcodes&Rec={content}&Fields=All&ExactMatch=T",
+  "description": "DNA barcoding is the use of short standardised segments of the genome for identification of species in all the Kingdoms of Life. The goal of the Fungal Barcoding site is to promote the DNA barcoding of fungi and other fungus-like organisms.",
+  "subject": "eukaryotic; classification",
+  "location": "Netherlands",
+  "synonym": "International Fungal Working Group; FBOL; Fungal Barcode of Life",
+  "institution": "Fungal Biodiversity Centre, Utrecht",
+  "prefixed": 0,
+  "test": "2224",
+  "probe": "http://www.fungalbarcoding.org/BioloMICS.aspx?Table=Fungal barcodes&Rec=2224&Fields=All&ExactMatch=T",
+  "pattern": "^\\d+$",
+  "state": "91:Down",
+  "more": "http://www.fungalbarcoding.org/",
+  "revision": 0
+}

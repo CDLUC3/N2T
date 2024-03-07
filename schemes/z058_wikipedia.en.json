@@ -1,0 +1,27 @@
+{
+  "id": "z058/wikipedia.en",
+  "target": {
+    "DEFAULT": "http://en.wikipedia.org/wiki/{content}"
+  },
+  "type": "scheme",
+  "name": "Wikipedia (English)",
+  "alias": null,
+  "provider": "z058",
+  "provider_id": "MIR:00100495",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://en.wikipedia.org/wiki/${ac}",
+  "redirect": "http://en.wikipedia.org/wiki/{content}",
+  "description": "Wikipedia is a multilingual, web-based, free-content encyclopedia project based on an openly editable model. It is written collaboratively by largely anonymous Internet volunteers who write without pay.",
+  "subject": "encyclopedia",
+  "location": "USA",
+  "synonym": "IUPAC International Chemical Identifier",
+  "institution": "Wikimedia Foundation, San Francisco, California",
+  "prefixed": 0,
+  "test": "SM_UB-81",
+  "probe": "http://en.wikipedia.org/wiki/SM_UB-81",
+  "pattern": "^[A-Za-z-0-9_]+$",
+  "state": "92:Up",
+  "more": "http://en.wikipedia.org/wiki/Main_Page",
+  "revision": 0
+}

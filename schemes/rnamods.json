@@ -1,0 +1,27 @@
+{
+  "id": "rnamods",
+  "target": {
+    "DEFAULT": "http://mods.rna.albany.edu/mods/modifications/view/{content}"
+  },
+  "type": "scheme",
+  "name": "RNA Modification Database at University of Utah",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100391",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://mods.rna.albany.edu/mods/modifications/view/${ac}",
+  "redirect": "http://mods.rna.albany.edu/mods/modifications/view/{content}",
+  "description": "The RNA modification database provides a comprehensive listing of post-transcriptionally modified nucleosides from RNA. The database consists of all RNA-derived ribonucleosides of known structure, including those from established sequence positions, as well as those detected or characterized from hydrolysates of RNA.",
+  "subject": "nucleotide",
+  "location": "USA",
+  "synonym": "RNAmods",
+  "institution": "Department of Medicinal Chemistry and Department of Biochemistry, University of Utah, Salt Lake City, Utah",
+  "prefixed": 0,
+  "test": "101",
+  "probe": "http://mods.rna.albany.edu/mods/modifications/view/101",
+  "pattern": "^\\d{3}$",
+  "state": "87:Down",
+  "more": "http://rna-mdb.cas.albany.edu/RNAmods/rnaover.htm",
+  "revision": 0
+}

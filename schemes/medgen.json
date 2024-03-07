@@ -1,0 +1,27 @@
+{
+  "id": "medgen",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/medgen/{content}"
+  },
+  "type": "scheme",
+  "name": "MedGen at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100794",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/medgen/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/medgen/{content}",
+  "description": "MedGen is a portal for information about conditions and phenotypes related to Medical Genetics. Terms from multiple sources are aggregated into concepts, each of which is assigned a unique identifier and a preferred name and symbol. The core content of the record may include names, identifiers used by other databases, mode of inheritance, clinical features, and map location of the loci affecting the disorder.",
+  "subject": "gene; human; phenotype",
+  "location": "USA",
+  "synonym": "Global Research Identifier Database",
+  "institution": "National Center for Biotechnology Information (NCBI), NIH, Maryland",
+  "prefixed": 0,
+  "test": "760050",
+  "probe": "https://www.ncbi.nlm.nih.gov/medgen/760050",
+  "pattern": "^[CN]*\\d{4,7}$",
+  "state": "99:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/medgen/",
+  "revision": 0
+}

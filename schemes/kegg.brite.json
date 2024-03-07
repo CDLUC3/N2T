@@ -1,0 +1,9 @@
+{
+  "id": "kegg.brite",
+  "target": {
+    "DEFAULT": "http://www.genome.jp/kegg-bin/get_htext?-p+/kegg/brite/br+br{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.genome.jp/kegg-bin/get_htext?-p+/kegg/brite/br+br{content}",
+  "revision": 0
+}

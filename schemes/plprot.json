@@ -1,0 +1,9 @@
+{
+  "id": "plprot",
+  "target": {
+    "DEFAULT": "http://www.plprot.ethz.ch/index.php?page=ProteinDetails&plp_id={content}&organism=[?species_name]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.plprot.ethz.ch/index.php?page=ProteinDetails&plp_id={content}&organism=[?species_name]",
+  "revision": 0
+}

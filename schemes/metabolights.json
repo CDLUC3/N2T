@@ -1,0 +1,27 @@
+{
+  "id": "metabolights",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/metabolights/{content}"
+  },
+  "type": "scheme",
+  "name": "MetaboLights at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100486",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/metabolights/${ac}",
+  "redirect": "https://www.ebi.ac.uk/metabolights/{content}",
+  "description": "MetaboLights is a database for Metabolomics experiments and derived information. The database is cross-species, cross-technique and covers metabolite structures and their reference spectra as well as their biological roles, locations and concentrations, and experimental data from metabolic experiments. This collection references individual metabolomics studies.",
+  "subject": "metabolite",
+  "location": "UK",
+  "synonym": "Gene Expression Atlas Experiment",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "MTBLS1",
+  "probe": "https://www.ebi.ac.uk/metabolights/MTBLS1",
+  "pattern": "^MTBLS\\d+$",
+  "state": "98:Probably up",
+  "more": "https://www.ebi.ac.uk/metabolights/",
+  "revision": 0
+}

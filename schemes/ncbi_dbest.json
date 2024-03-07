@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/dbest",
+  "target": {},
+  "type": "synonym",
+  "for": "dbest",
+  "revision": 0
+}

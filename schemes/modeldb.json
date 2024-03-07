@@ -1,0 +1,27 @@
+{
+  "id": "modeldb",
+  "target": {
+    "DEFAULT": "http://senselab.med.yale.edu/ModelDB/ShowModel.asp?model={content}"
+  },
+  "type": "scheme",
+  "name": "ModelDB at SenseLab",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100171",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://senselab.med.yale.edu/ModelDB/ShowModel.asp?model=${ac}",
+  "redirect": "http://senselab.med.yale.edu/ModelDB/ShowModel.asp?model={content}",
+  "description": "ModelDB is a curated, searchable database of published models in the computational neuroscience domain. It accommodates models expressed in textual form, including procedural or declarative languages (e.g. C++, XML dialects) and source code written for any simulation environment.",
+  "subject": "model; neuroscience",
+  "location": "USA",
+  "synonym": "JWS",
+  "institution": "Yale University School of Medicine",
+  "prefixed": 0,
+  "test": "45539",
+  "probe": "http://senselab.med.yale.edu/ModelDB/ShowModel.asp?model=45539",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://senselab.med.yale.edu/ModelDB/",
+  "revision": 0
+}

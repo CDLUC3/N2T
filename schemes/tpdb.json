@@ -1,0 +1,9 @@
+{
+  "id": "tpdb",
+  "target": {
+    "DEFAULT": "http://tpdb.medchem.ku.edu:8080/protein_database/protein_details.jsp?prot_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://tpdb.medchem.ku.edu:8080/protein_database/protein_details.jsp?prot_id={content}",
+  "revision": 0
+}

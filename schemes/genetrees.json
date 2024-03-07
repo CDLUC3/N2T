@@ -1,0 +1,9 @@
+{
+  "id": "genetrees",
+  "target": {
+    "DEFAULT": "http://genetrees.vbi.vt.edu/GetAlignment?al={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://genetrees.vbi.vt.edu/GetAlignment?al={content}",
+  "revision": 0
+}

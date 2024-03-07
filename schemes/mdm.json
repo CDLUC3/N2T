@@ -1,0 +1,27 @@
+{
+  "id": "mdm",
+  "target": {
+    "DEFAULT": "https://medical-data-models.org/forms/{content}"
+  },
+  "type": "scheme",
+  "name": "MDM at University of Muenster",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100766",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://medical-data-models.org/forms/${ac}",
+  "redirect": "https://medical-data-models.org/forms/{content}",
+  "description": "The MDM (Medical Data Models) Portal is a meta-data registry for creating, analysing, sharing and reusing medical forms. Electronic forms are central in numerous processes involving data, including the collection of data through electronic health records (EHRs), Electronic Data Capture (EDC), and as case report forms (CRFs) for clinical trials. The MDM Portal provides medical forms in numerous export formats, facilitating the sharing and reuse of medical data models and exchange between information systems.",
+  "subject": "human; registry",
+  "location": "Germany",
+  "synonym": "Medical Data Models",
+  "institution": "Institute of Medical Informatics, University of Muenster",
+  "prefixed": 0,
+  "test": "4776",
+  "probe": "https://medical-data-models.org/forms/4776",
+  "pattern": "^\\d+$",
+  "state": "57:Up",
+  "more": "https://medical-data-models.org/",
+  "revision": 0
+}

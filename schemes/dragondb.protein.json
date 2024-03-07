@@ -1,0 +1,27 @@
+{
+  "id": "dragondb.protein",
+  "target": {
+    "DEFAULT": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name={content};class=Peptide"
+  },
+  "type": "scheme",
+  "name": "DragonDB Protein at University of British Columbia",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100380",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name=${ac};class=Peptide",
+  "redirect": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name={content};class=Peptide",
+  "description": "DragonDB is a genetic and genomic database for Antirrhinum majus (Snapdragon). This collection refers to protein sequence information.",
+  "subject": "plant; protein",
+  "location": "Canada",
+  "synonym": "Coli Genetic Stock Center",
+  "institution": "University of British Columbia, Vancouver",
+  "prefixed": 0,
+  "test": "AMDEFA",
+  "probe": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name=AMDEFA;class=Peptide",
+  "pattern": "^\\w+$",
+  "state": "53:Down",
+  "more": "http://www.antirrhinum.net/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "amoebadb",
+  "target": {
+    "DEFAULT": "https://amoebadb.org/amoeba/app/record/gene/{content}"
+  },
+  "type": "scheme",
+  "name": "AmoebaDB at EuPathDB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100193",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://amoebadb.org/amoeba/app/record/gene/${ac}",
+  "redirect": "https://amoebadb.org/amoeba/app/record/gene/{content}",
+  "description": "AmoebaDB is one of the databases that can be accessed through the EuPathDB (http://EuPathDB.org; formerly ApiDB) portal, covering eukaryotic pathogens of the genera Cryptosporidium, Giardia, Leishmania, Neospora, Plasmodium, Toxoplasma, Trichomonas and Trypanosoma. While each of these groups is supported by a taxon-specific database built upon the same infrastructure, the EuPathDB portal offers an entry point to all these resources, and the opportunity to leverage orthology for searches across genera.",
+  "subject": "eukaryotic",
+  "location": "USA",
+  "synonym": "PubMed Central; PMCI",
+  "institution": "Center for Tropical & Emerging Global Diseases, University of Georgia",
+  "prefixed": 0,
+  "test": "EDI_244000",
+  "probe": "https://amoebadb.org/amoeba/app/record/gene/EDI_244000",
+  "pattern": "^EDI_\\d+$",
+  "state": "69:Unknown",
+  "more": "http://amoebadb.org/amoeba/",
+  "revision": 0
+}

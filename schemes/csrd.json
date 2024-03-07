@@ -1,0 +1,9 @@
+{
+  "id": "csrd",
+  "target": {
+    "DEFAULT": "http://sundarlab.ucdavis.edu/cgi-bin/smrna_browse/?name={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://sundarlab.ucdavis.edu/cgi-bin/smrna_browse/?name={content}",
+  "revision": 0
+}

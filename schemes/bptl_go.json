@@ -1,0 +1,27 @@
+{
+  "id": "bptl/go",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/GO/GO:{content}"
+  },
+  "type": "scheme",
+  "name": "GO through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100237",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/GO/GO:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/GO/GO:{content}",
+  "description": "The Gene Ontology project provides a controlled vocabulary to describe gene and gene product attributes in any organism.",
+  "subject": "ontology",
+  "location": "USA",
+  "synonym": "GO",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 1,
+  "test": "0006915",
+  "probe": "http://purl.bioontology.org/ontology/GO/GO:0006915",
+  "pattern": "^GO:\\d{7}$",
+  "state": "95:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/GO",
+  "revision": 0
+}

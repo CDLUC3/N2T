@@ -1,0 +1,27 @@
+{
+  "id": "vmhreaction",
+  "target": {
+    "DEFAULT": "https://vmh.uni.lu/#reaction/{content}"
+  },
+  "type": "scheme",
+  "name": "VMH reaction",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100845",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://vmh.uni.lu/#reaction/${ac}",
+  "redirect": "https://vmh.uni.lu/#reaction/{content}",
+  "description": "The Virtual Metabolic Human (VMH) is a resource that combines human and gut microbiota metabolism with nutrition and disease.",
+  "subject": null,
+  "location": "Luxembourg",
+  "synonym": "nmrCV",
+  "institution": "Luxembourg Centre for Systems Biomedicine, University of Luxembourg",
+  "prefixed": 0,
+  "test": "HEX1",
+  "probe": "https://vmh.uni.lu/#reaction/HEX1",
+  "pattern": "[a-zA-Z0-9_\\(\\_\\)\\[\\]]+",
+  "state": "0:Unknown",
+  "more": "https://vmh.uni.lu",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "efsite",
+  "target": {
+    "DEFAULT": "http://ef-site.protein.osaka-u.ac.jp/eF-site/servlet/Summary?entry_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ef-site.protein.osaka-u.ac.jp/eF-site/servlet/Summary?entry_id={content}",
+  "revision": 0
+}

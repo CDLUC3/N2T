@@ -1,0 +1,27 @@
+{
+  "id": "iao",
+  "target": {
+    "DEFAULT": "http://purl.obolibrary.org/obo/IAO_{content}"
+  },
+  "type": "scheme",
+  "name": "IAO through Ontobee",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100804",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.obolibrary.org/obo/IAO_${ac}",
+  "redirect": "http://purl.obolibrary.org/obo/IAO_{content}",
+  "description": "An ontology of information entities, originally driven by work by the Ontology of Biomedical Investigation (OBI) digital entity and realizable information entity branch.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Database of Genotypes and Phenotypes",
+  "institution": "University of Pennsylvania",
+  "prefixed": 0,
+  "test": "0000030",
+  "probe": "http://purl.obolibrary.org/obo/IAO_0000030",
+  "pattern": "^\\d{7}$",
+  "state": "97:Up",
+  "more": "http://www.ontobee.org/ontology/IAO",
+  "revision": 0
+}

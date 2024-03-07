@@ -1,0 +1,27 @@
+{
+  "id": "rrid",
+  "target": {
+    "DEFAULT": "https://scicrunch.org/resolver/RRID:{content}"
+  },
+  "type": "scheme",
+  "name": "RRID at SciCrunch",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100735",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://scicrunch.org/resolver/RRID:${ac}",
+  "redirect": "https://scicrunch.org/resolver/RRID:{content}",
+  "description": "The Research Resource Identification Initiative provides RRIDs to 4 main classes of resources: Antibodies, Cell Lines, Model Organisms, and Databases / Software tools.: Antibodies, Model Organisms, and Databases / Software tools. The initiative works with participating journals to intercept manuscripts in the publication process that use these resources, and allows publication authors to incorporate RRIDs within the methods sections. It also provides resolver services that access curated data from 10 data sources: the antibody registry (a curated catalog of antibodies), the SciCrunch registry (a curated catalog of software tools and databases), and model organism nomenclature authority databases (MGI, FlyBase, WormBase, RGD), as well as various stock centers. These RRIDs are aggregated and can be searched through SciCrunch.",
+  "subject": "registry",
+  "location": "USA",
+  "synonym": "Research Resource IDentifier",
+  "institution": "University of California, San Diego",
+  "prefixed": 1,
+  "test": "AB_262044",
+  "probe": "https://scicrunch.org/resolver/RRID:AB_262044",
+  "pattern": "^RRID:[A-Z_a-z-0-9]+$",
+  "state": "83:Up",
+  "more": "https://scicrunch.org/resolver",
+  "revision": 0
+}

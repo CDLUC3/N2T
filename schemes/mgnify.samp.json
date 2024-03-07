@@ -1,0 +1,27 @@
+{
+  "id": "mgnify.samp",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/metagenomics/samples/{content}"
+  },
+  "type": "scheme",
+  "name": "MGnify Sample",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100656",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/metagenomics/samples/${ac}",
+  "redirect": "https://www.ebi.ac.uk/metagenomics/samples/{content}",
+  "description": "The EBI Metagenomics service is an automated pipeline for the analysis and archiving of metagenomic data that aims to provide insights into the phylogenetic diversity as well as the functional and metabolic potential of a sample. Metagenomics is the study of all genomes present in any given environment without the need for prior individual identification or amplification. This collection references samples.",
+  "subject": "genome",
+  "location": "UK",
+  "synonym": "OdorDB",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "SRS086444",
+  "probe": "https://www.ebi.ac.uk/metagenomics/samples/SRS086444",
+  "pattern": "^[A-Z]+[0-9]+$",
+  "state": "92:Up",
+  "more": "https://www.ebi.ac.uk/metagenomics",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "vfb",
+  "target": {
+    "DEFAULT": "http://virtualflybrain.org/reports/{content}"
+  },
+  "type": "scheme",
+  "name": "Virtual Fly Brain",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100911",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://virtualflybrain.org/reports/${ac}",
+  "redirect": "http://virtualflybrain.org/reports/{content}",
+  "description": "An interactive tool for neurobiologists to explore the detailed neuroanatomy, neuron connectivity and gene expression of the Drosophila melanogaster.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Open Citation Identifier",
+  "institution": "The University of Cambridge",
+  "prefixed": 0,
+  "test": "00000001",
+  "probe": "http://virtualflybrain.org/reports/00000001",
+  "pattern": "^[0-9a-zA-Z]{8}$",
+  "state": "0:Unknown",
+  "more": "https://VirtualFlyBrain.org",
+  "revision": 0
+}

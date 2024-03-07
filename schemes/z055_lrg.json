@@ -1,0 +1,27 @@
+{
+  "id": "z055/lrg",
+  "target": {
+    "DEFAULT": "http://asia.ensembl.org/Homo_sapiens/LRG/Summary?lrg={content}"
+  },
+  "type": "scheme",
+  "name": "Locus Reference Genomic through Ensembl mirror (asia)",
+  "alias": null,
+  "provider": "z055",
+  "provider_id": "MIR:00100629",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://asia.ensembl.org/Homo_sapiens/LRG/Summary?lrg=${ac}",
+  "redirect": "http://asia.ensembl.org/Homo_sapiens/LRG/Summary?lrg={content}",
+  "description": "Locus Reference Genomic (LRG) provides identifiers to stable genomic DNA sequences for regions of the human genome, providing a recognized reference-sequence standard for reporting sequence variants. LRG is maintained by the NCBI and the European Bioinformatics Institute (EBI).",
+  "subject": "sequence; genome; DNA; schema.org; human",
+  "location": "Singapore",
+  "synonym": "LRG",
+  "institution": null,
+  "prefixed": 0,
+  "test": "LRG_1",
+  "probe": "http://asia.ensembl.org/Homo_sapiens/LRG/Summary?lrg=LRG_1",
+  "pattern": "^LRG_\\d+$",
+  "state": "95:Up",
+  "more": "http://asia.ensembl.org/",
+  "revision": 0
+}

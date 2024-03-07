@@ -1,0 +1,7 @@
+{
+  "id": "ebi/sbo",
+  "target": {},
+  "type": "synonym",
+  "for": "sbo",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pathwaycommons",
+  "target": {
+    "DEFAULT": "http://www.pathwaycommons.org/pc/record2.do?id={content}"
+  },
+  "type": "scheme",
+  "name": "Pathway Commons",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100103",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.pathwaycommons.org/pc/record2.do?id=${ac}",
+  "redirect": "http://www.pathwaycommons.org/pc/record2.do?id={content}",
+  "description": "Pathway Commons is a convenient point of access to biological pathway information collected from public pathway databases, which you can browse or search. It is a collection of publicly available pathways from multiple organisms that provides researchers with convenient access to a comprehensive collection of pathways from multiple sources represented in a common language.",
+  "subject": "pathway",
+  "location": "USA",
+  "synonym": "KEGG",
+  "institution": "Memorial Sloan-Kettering Cancer Center",
+  "prefixed": 0,
+  "test": "485991",
+  "probe": "http://www.pathwaycommons.org/pc/record2.do?id=485991",
+  "pattern": "^\\d+$",
+  "state": "96:Up",
+  "more": "http://www.pathwaycommons.org/pc/",
+  "revision": 0
+}

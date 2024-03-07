@@ -1,0 +1,27 @@
+{
+  "id": "ebi/inchi",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/chebi/advancedSearchFT.do?searchString={content}"
+  },
+  "type": "scheme",
+  "name": "InChI through ChEBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100494",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/chebi/advancedSearchFT.do?searchString=${ac}",
+  "redirect": "https://www.ebi.ac.uk/chebi/advancedSearchFT.do?searchString={content}",
+  "description": "The IUPAC International Chemical Identifier (InChI) is a non-proprietary identifier for chemical substances that can be used in printed and electronic data sources. It is derived solely from a structural representation of that substance, such that a single compound always yields the same identifier.",
+  "subject": "chemical; structure",
+  "location": "UK",
+  "synonym": "IUPAC International Chemical Identifier",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+  "probe": "https://www.ebi.ac.uk/chebi/advancedSearchFT.do?searchString=InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+  "pattern": "^InChI\\=1S?\\/[A-Za-z0-9\\.]+(\\+[0-9]+)?(\\/[cnpqbtmsih][A-Za-z0-9\\-\\+\\(\\)\\,\\/\\?\\;\\.]+)*$",
+  "state": "98:Up",
+  "more": "https://www.ebi.ac.uk/chebi/",
+  "revision": 0
+}

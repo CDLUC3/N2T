@@ -1,0 +1,27 @@
+{
+  "id": "sgd.pathways",
+  "target": {
+    "DEFAULT": "http://pathway.yeastgenome.org/YEAST/new-image?type=PATHWAY&object={content}"
+  },
+  "type": "scheme",
+  "name": "Saccharomyces cerevisiae pathways at SGD.",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100085",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://pathway.yeastgenome.org/YEAST/new-image?type=PATHWAY&object=${ac}",
+  "redirect": "http://pathway.yeastgenome.org/YEAST/new-image?type=PATHWAY&object={content}",
+  "description": "Curated biochemical pathways for Saccharomyces cerevisiae at Saccharomyces genome database (SGD).",
+  "subject": "genome; sequence; pathway",
+  "location": "USA",
+  "synonym": "MOD; PSI-MOD",
+  "institution": "SGD, Stanford University",
+  "prefixed": 0,
+  "test": "PWY3O-214",
+  "probe": "http://pathway.yeastgenome.org/YEAST/new-image?type=PATHWAY&object=PWY3O-214",
+  "pattern": "^PWY\\w{2}\\-\\d{3}$",
+  "state": "97:Up",
+  "more": "http://pathway.yeastgenome.org/",
+  "revision": 0
+}

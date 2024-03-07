@@ -1,0 +1,7 @@
+{
+  "id": "ebi/hgnc.symbol",
+  "target": {},
+  "type": "synonym",
+  "for": "hgnc.symbol",
+  "revision": 0
+}

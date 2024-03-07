@@ -1,0 +1,27 @@
+{
+  "id": "doid",
+  "target": {
+    "DEFAULT": "http://disease-ontology.org/term/DOID:{content}"
+  },
+  "type": "scheme",
+  "name": "Human Disease Ontology at Northwestern University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100297",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://disease-ontology.org/term/DOID:${ac}",
+  "redirect": "http://disease-ontology.org/term/DOID:{content}",
+  "description": "The Disease Ontology has been developed as a standardized ontology for human disease with the purpose of providing the biomedical community with consistent, reusable and sustainable descriptions of human disease terms, phenotype characteristics and related medical vocabulary disease concepts.",
+  "subject": "disease; human; ontology",
+  "location": "USA",
+  "synonym": "DO",
+  "institution": "University of Maryland (Maryland) and Northwestern University (Illinois)",
+  "prefixed": 1,
+  "test": "11337",
+  "probe": "http://disease-ontology.org/term/DOID:11337",
+  "pattern": "^DOID\\:\\d+$",
+  "state": "99:Up",
+  "more": "http://disease-ontology.org/",
+  "revision": 0
+}

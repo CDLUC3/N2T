@@ -1,0 +1,27 @@
+{
+  "id": "lrg",
+  "target": {
+    "DEFAULT": "http://uswest.ensembl.org/Homo_sapiens/LRG/Summary?lrg={content}"
+  },
+  "type": "scheme",
+  "name": "Locus Reference Genomic through Ensembl mirror (US west)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100630",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://uswest.ensembl.org/Homo_sapiens/LRG/Summary?lrg=${ac}",
+  "redirect": "http://uswest.ensembl.org/Homo_sapiens/LRG/Summary?lrg={content}",
+  "description": "Locus Reference Genomic (LRG) provides identifiers to stable genomic DNA sequences for regions of the human genome, providing a recognized reference-sequence standard for reporting sequence variants. LRG is maintained by the NCBI and the European Bioinformatics Institute (EBI).",
+  "subject": "sequence; genome; DNA; schema.org; human",
+  "location": "USA",
+  "synonym": "LRG",
+  "institution": null,
+  "prefixed": 0,
+  "test": "LRG_1",
+  "probe": "http://uswest.ensembl.org/Homo_sapiens/LRG/Summary?lrg=LRG_1",
+  "pattern": "^LRG_\\d+$",
+  "state": "95:Up",
+  "more": "http://uswest.ensembl.org/",
+  "revision": 0
+}

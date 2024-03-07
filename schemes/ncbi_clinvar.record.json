@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/clinvar.record",
+  "target": {},
+  "type": "synonym",
+  "for": "clinvar.record",
+  "revision": 0
+}

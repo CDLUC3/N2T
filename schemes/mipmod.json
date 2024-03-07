@@ -1,0 +1,27 @@
+{
+  "id": "mipmod",
+  "target": {
+    "DEFAULT": "http://bioinfo.iitk.ac.in/MIPModDB/result.php?code={content}"
+  },
+  "type": "scheme",
+  "name": "MIPModDB at Indian Institute of Technology Kanpur",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100327",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://bioinfo.iitk.ac.in/MIPModDB/result.php?code=${ac}",
+  "redirect": "http://bioinfo.iitk.ac.in/MIPModDB/result.php?code={content}",
+  "description": "MIPModDb is a database of comparative protein structure models of MIP (Major Intrinsic Protein) family of proteins, identified from complete genome sequence. It provides key information of MIPs based on their sequence and structures.",
+  "subject": "protein; structure",
+  "location": "India",
+  "synonym": "Bacterial protein tYrosine Kinase database",
+  "institution": "Department of Biological Sciences and Bioengineering, Indian Institute of Technology Kanpur, Kanpur",
+  "prefixed": 0,
+  "test": "HOSAPI0399",
+  "probe": "http://bioinfo.iitk.ac.in/MIPModDB/result.php?code=HOSAPI0399",
+  "pattern": "^\\w+$",
+  "state": "95:Up",
+  "more": "http://bioinfo.iitk.ac.in/MIPModDB",
+  "revision": 0
+}

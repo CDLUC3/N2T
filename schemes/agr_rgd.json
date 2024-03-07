@@ -1,0 +1,27 @@
+{
+  "id": "agr/rgd",
+  "target": {
+    "DEFAULT": "https://www.alliancegenome.org/gene/RGD:{content}"
+  },
+  "type": "scheme",
+  "name": "RGD through the Alliance of Genome Resources",
+  "alias": null,
+  "provider": "agr",
+  "provider_id": "MIR:00100905",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://www.alliancegenome.org/gene/RGD:${ac}",
+  "redirect": "https://www.alliancegenome.org/gene/RGD:{content}",
+  "description": "Rat Genome Database seeks to collect, consolidate, and integrate rat genomic and genetic data with curated functional and physiological data and make these data widely available to the scientific community. This collection references genes.",
+  "subject": "annotation; phenotype; disease; eukaryotic; gene; sequence; nucleotide; genome; pathway; mammalian",
+  "location": "USA",
+  "synonym": "RGD",
+  "institution": "Alliance of Genome Resources",
+  "prefixed": 0,
+  "test": "2018",
+  "probe": "https://www.alliancegenome.org/gene/RGD:2018",
+  "pattern": "^\\d{4,}$",
+  "state": "0:Unknown",
+  "more": "https://www.alliancegenome.org",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "greengenes",
+  "target": {
+    "DEFAULT": "http://greengenes.lbl.gov/cgi-bin/show_one_record_v2.pl?prokMSA_id={content}"
+  },
+  "type": "scheme",
+  "name": "GreenGenes at Lawrence Berkeley",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100211",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://greengenes.lbl.gov/cgi-bin/show_one_record_v2.pl?prokMSA_id=${ac}",
+  "redirect": "http://greengenes.lbl.gov/cgi-bin/show_one_record_v2.pl?prokMSA_id={content}",
+  "description": "A 16S rRNA gene database which provides chimera screening, standard alignment, and taxonomic classification using multiple published taxonomies.",
+  "subject": "sequence",
+  "location": "USA",
+  "synonym": "GABI PD",
+  "institution": "Center for Environmental Biotechnology, Lawrence Berkeley National Laboratory, California",
+  "prefixed": 0,
+  "test": "100000",
+  "probe": "http://greengenes.lbl.gov/cgi-bin/show_one_record_v2.pl?prokMSA_id=100000",
+  "pattern": "^\\d+$",
+  "state": "71:Down",
+  "more": "http://greengenes.lbl.gov/",
+  "revision": 0
+}

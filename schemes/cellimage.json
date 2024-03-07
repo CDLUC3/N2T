@@ -1,0 +1,27 @@
+{
+  "id": "cellimage",
+  "target": {
+    "DEFAULT": "http://cellimagelibrary.org/images/{content}"
+  },
+  "type": "scheme",
+  "name": "Cell Image Library at American Society for Cell Biology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100328",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://cellimagelibrary.org/images/${ac}",
+  "redirect": "http://cellimagelibrary.org/images/{content}",
+  "description": "The Cell: An Image Library&#x2122; is a freely accessible, public repository of reviewed and annotated images, videos, and animations of cells from a variety of organisms, showcasing cell architecture, intracellular functionalities, and both normal and abnormal processes.",
+  "subject": "image library",
+  "location": "USA",
+  "synonym": "The Cell: An Image Library-CCDB; The Cell: An Image Library-Cell Centered Database; CIL",
+  "institution": "American Society for Cell Biology, Bethesda, Maryland and The National Center for Microscopy and Imaging Research, San Diego, California",
+  "prefixed": 0,
+  "test": "24801",
+  "probe": "http://cellimagelibrary.org/images/24801",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "http://cellimagelibrary.org/",
+  "revision": 0
+}

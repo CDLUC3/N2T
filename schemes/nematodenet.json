@@ -1,0 +1,9 @@
+{
+  "id": "nematodenet",
+  "target": {
+    "DEFAULT": "http://nematode.net/Species.Summaries/[?species_name]/index.php"
+  },
+  "type": "commonspfx",
+  "redirect": "http://nematode.net/Species.Summaries/[?species_name]/index.php",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "utrdb_utrsite",
+  "target": {
+    "DEFAULT": "http://utrdb.ba.itb.cnr.it/getgene/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://utrdb.ba.itb.cnr.it/getgene/{content}",
+  "revision": 0
+}

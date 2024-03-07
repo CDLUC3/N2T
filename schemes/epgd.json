@@ -1,0 +1,9 @@
+{
+  "id": "epgd",
+  "target": {
+    "DEFAULT": "http://epgd.biosino.org/EPGD/gene/geneinfor.jsp?geneID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://epgd.biosino.org/EPGD/gene/geneinfor.jsp?geneID={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "peptideatlas",
+  "target": {
+    "DEFAULT": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/Summarize_Peptide?query=QUERY&searchForThis={content}"
+  },
+  "type": "scheme",
+  "name": "PeptideAtlas at ISB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100081",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/Summarize_Peptide?query=QUERY&searchForThis=${ac}",
+  "redirect": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/Summarize_Peptide?query=QUERY&searchForThis={content}",
+  "description": "The PeptideAtlas Project provides a publicly accessible database of peptides identified in tandem mass spectrometry proteomics studies and software tools.",
+  "subject": "mass spectrometry",
+  "location": "USA",
+  "synonym": "LMSD",
+  "institution": "Institute for Systems Biology, Seattle",
+  "prefixed": 0,
+  "test": "PAp00000009",
+  "probe": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/Summarize_Peptide?query=QUERY&searchForThis=PAp00000009",
+  "pattern": "^PAp[0-9]{8}$",
+  "state": "94:Down",
+  "more": "http://www.peptideatlas.org/",
+  "revision": 0
+}

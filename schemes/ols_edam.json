@@ -1,0 +1,27 @@
+{
+  "id": "ols/edam",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/edam/terms?short_form={content}"
+  },
+  "type": "scheme",
+  "name": "EDAM through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100762",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/edam/terms?short_form=${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/edam/terms?short_form={content}",
+  "description": "EDAM is an ontology of general bioinformatics concepts, including topics, data types, formats, identifiers and operations. EDAM provides a controlled vocabulary for the description, in semantic terms, of things such as: web services (e.g. WSDL files), applications, tool collections and packages, work-benches and workflow software, databases and ontologies, XSD data schema and data objects, data syntax and file formats, web portals and pages, resource catalogues and documents (such as scientific publications).",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "EMBRACE Data and Methods Ontology",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "data_1664",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/edam/terms?short_form=data_1664",
+  "pattern": "^(data|topic|operation|format)\\_\\d{4}$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/edam",
+  "revision": 0
+}

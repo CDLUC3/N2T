@@ -1,0 +1,27 @@
+{
+  "id": "cst",
+  "target": {
+    "DEFAULT": "http://www.cellsignal.com/reference/pathway/{content}.html"
+  },
+  "type": "scheme",
+  "name": "CST Pathways at Cell Signaling Technology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100552",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.cellsignal.com/reference/pathway/${ac}.html",
+  "redirect": "http://www.cellsignal.com/reference/pathway/{content}.html",
+  "description": "Cell Signaling Technology is a commercial organisation which provides a pathway portal to showcase their phospho-antibody products. This collection references pathways.",
+  "subject": "immunogenetics; catalogue; pathway",
+  "location": "USA",
+  "synonym": "human DEPhOsphorylation Database",
+  "institution": "Cell Signaling Technology, Inc., Danvers, Massachusetts",
+  "prefixed": 0,
+  "test": "Akt_PKB",
+  "probe": "http://www.cellsignal.com/reference/pathway/Akt_PKB.html",
+  "pattern": "^[A-Za-z0-9_-]+$",
+  "state": "99:Up",
+  "more": "http://www.cellsignal.com/pathways/index.html",
+  "revision": 0
+}

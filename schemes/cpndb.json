@@ -1,0 +1,9 @@
+{
+  "id": "cpndb",
+  "target": {
+    "DEFAULT": "http://cpndb.cbr.nrc.ca/getRecord.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://cpndb.cbr.nrc.ca/getRecord.php?id={content}",
+  "revision": 0
+}

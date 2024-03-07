@@ -1,0 +1,9 @@
+{
+  "id": "rgap",
+  "target": {
+    "DEFAULT": "http://rice.plantbiology.msu.edu/cgi-bin/gbrowse/rice/?name={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rice.plantbiology.msu.edu/cgi-bin/gbrowse/rice/?name={content}",
+  "revision": 0
+}

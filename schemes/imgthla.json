@@ -1,0 +1,9 @@
+{
+  "id": "imgthla",
+  "target": {
+    "DEFAULT": "http://www.ebi.ac.uk/cgi-bin/ipd/imgt/hla/get_allele.cgi?"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ebi.ac.uk/cgi-bin/ipd/imgt/hla/get_allele.cgi?",
+  "revision": 0
+}

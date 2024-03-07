@@ -1,0 +1,9 @@
+{
+  "id": "humancyc.compounds",
+  "target": {
+    "DEFAULT": "http://biocyc.org/[?species]/NEW-IMAGE?type=COMPOUND&object={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://biocyc.org/[?species]/NEW-IMAGE?type=COMPOUND&object={content}",
+  "revision": 0
+}

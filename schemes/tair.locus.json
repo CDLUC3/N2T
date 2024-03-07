@@ -1,0 +1,27 @@
+{
+  "id": "tair.locus",
+  "target": {
+    "DEFAULT": "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:{content}"
+  },
+  "type": "scheme",
+  "name": "The Arabidopsis Information Resource (TAIR) Locus",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100078",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:${ac}",
+  "redirect": "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:{content}",
+  "description": "The Arabidopsis Information Resource (TAIR) maintains a database of genetic and molecular biology data for the model higher plant Arabidopsis thaliana. The name of a Locus is unique and used by TAIR, TIGR, and MIPS.",
+  "subject": "plant; genome; eukaryotic",
+  "location": "USA",
+  "synonym": "RGD",
+  "institution": "Carnegie Institution of Washington Department of Plant Biology and National Center for Genome Resources (NCGR)",
+  "prefixed": 0,
+  "test": "2200950",
+  "probe": "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:2200950",
+  "pattern": "^\\d{7}$",
+  "state": "74:Down",
+  "more": "http://arabidopsis.org/index.jsp",
+  "revision": 0
+}

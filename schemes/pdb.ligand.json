@@ -1,0 +1,27 @@
+{
+  "id": "pdb.ligand",
+  "target": {
+    "DEFAULT": "http://www.rcsb.org/pdb/ligand/ligandsummary.do?hetId={content}"
+  },
+  "type": "scheme",
+  "name": "PDB Ligand at RCSB",
+  "alias": null,
+  "provider": "rcsb",
+  "provider_id": "MIR:00100626",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.rcsb.org/pdb/ligand/ligandsummary.do?hetId=${ac}",
+  "redirect": "http://www.rcsb.org/pdb/ligand/ligandsummary.do?hetId={content}",
+  "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules. This collection references ligands.",
+  "subject": "protein; structure",
+  "location": "USA",
+  "synonym": "OTL",
+  "institution": "Rutgers, The State University of New Jersey",
+  "prefixed": 0,
+  "test": "TRQ",
+  "probe": "http://www.rcsb.org/pdb/ligand/ligandsummary.do?hetId=TRQ",
+  "pattern": "^[A-Za-z0-9]+$",
+  "state": "50:Down",
+  "more": "http://www.pdb.org/",
+  "revision": 0
+}

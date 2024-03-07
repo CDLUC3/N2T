@@ -1,0 +1,27 @@
+{
+  "id": "disprot",
+  "target": {
+    "DEFAULT": "http://www.disprot.org/{content}"
+  },
+  "type": "scheme",
+  "name": "DisProt at Indiana University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100258",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.disprot.org/${ac}",
+  "redirect": "http://www.disprot.org/{content}",
+  "description": "The Database of Protein Disorder (DisProt) is a curated database that provides information about proteins that lack fixed 3D structure in their putatively native states, either in their entirety or in part.",
+  "subject": "protein; structure",
+  "location": "USA",
+  "synonym": "Compluyeast-2D-DB",
+  "institution": "Center for Computational Biology and Bioinformatics, Indiana University School of Medicine, Indianapolis",
+  "prefixed": 0,
+  "test": "DP00003",
+  "probe": "http://www.disprot.org/DP00003",
+  "pattern": "^DP\\d{5}$",
+  "state": "98:Probably up",
+  "more": "http://www.disprot.org/",
+  "revision": 0
+}

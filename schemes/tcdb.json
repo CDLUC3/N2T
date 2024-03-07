@@ -1,0 +1,27 @@
+{
+  "id": "tcdb",
+  "target": {
+    "DEFAULT": "http://www.tcdb.org/search/result.php?tc={content}"
+  },
+  "type": "scheme",
+  "name": "TCDB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100068",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.tcdb.org/search/result.php?tc=${ac}",
+  "redirect": "http://www.tcdb.org/search/result.php?tc={content}",
+  "description": "The database details a comprehensive  IUBMB approved classification system for membrane transport proteins known as the Transporter Classification (TC) system. The TC system is analogous to the Enzyme Commission (EC) system for classification of enzymes, but incorporates phylogenetic information additionally.",
+  "subject": "classification; interaction; protein",
+  "location": "USA",
+  "synonym": "TCDB",
+  "institution": "Division of Biological Sciences, UCSD",
+  "prefixed": 0,
+  "test": "5.A.1.1.1",
+  "probe": "http://www.tcdb.org/search/result.php?tc=5.A.1.1.1",
+  "pattern": "^\\d+(\\.[A-Z])?(\\.\\d+)?(\\.\\d+)?(\\.\\d+)?$",
+  "state": "99:Up",
+  "more": "http://www.tcdb.org/",
+  "revision": 0
+}

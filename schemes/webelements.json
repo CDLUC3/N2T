@@ -1,0 +1,9 @@
+{
+  "id": "webelements",
+  "target": {
+    "DEFAULT": "http://webelements.com/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://webelements.com/{content}",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "transterm",
+  "target": {
+    "DEFAULT": "http://mrna.otago.ac.nz/cgi-bin/tt_data_browse/RNAMotif?PatID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://mrna.otago.ac.nz/cgi-bin/tt_data_browse/RNAMotif?PatID={content}",
+  "revision": 0
+}

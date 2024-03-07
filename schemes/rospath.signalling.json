@@ -1,0 +1,9 @@
+{
+  "id": "rospath.signalling",
+  "target": {
+    "DEFAULT": "http://rospath.ewha.ac.kr/signaling/SignalingDetailFrm.jsp?SIGNALING_ID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rospath.ewha.ac.kr/signaling/SignalingDetailFrm.jsp?SIGNALING_ID={content}",
+  "revision": 0
+}

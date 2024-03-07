@@ -1,0 +1,27 @@
+{
+  "id": "bykdb",
+  "target": {
+    "DEFAULT": "https://bykdb.ibcp.fr/data/html/annotated/{content}.html"
+  },
+  "type": "scheme",
+  "name": "BYKdb at CNRS",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100324",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://bykdb.ibcp.fr/data/html/annotated/${ac}.html",
+  "redirect": "https://bykdb.ibcp.fr/data/html/annotated/{content}.html",
+  "description": "The bacterial tyrosine kinase database (BYKdb) that collects sequences of putative and authentic bacterial tyrosine kinases,  providing structural and functional information.",
+  "subject": "sequence; microbial; domain",
+  "location": "France",
+  "synonym": "Bacterial protein tYrosine Kinase database",
+  "institution": "Unit&#xE9; Bases Mol&#xE9;culaires et Structurales des Syst&#xE8;mes Infectieux; CNRS - Universit&#xE9; Claude Bernard, Lyon",
+  "prefixed": 0,
+  "test": "A0A009E7X8",
+  "probe": "https://bykdb.ibcp.fr/data/html/annotated/A0A009E7X8.html",
+  "pattern": "^[A-Z0-9]+$",
+  "state": "66:Up",
+  "more": "https://bykdb.ibcp.fr/BYKdb/",
+  "revision": 0
+}

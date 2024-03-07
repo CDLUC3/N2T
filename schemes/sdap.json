@@ -1,0 +1,9 @@
+{
+  "id": "sdap",
+  "target": {
+    "DEFAULT": "http://fermi.utmb.edu/cgi-bin/SDAP/sdap_02?dB_Type=0&allid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://fermi.utmb.edu/cgi-bin/SDAP/sdap_02?dB_Type=0&allid={content}",
+  "revision": 0
+}

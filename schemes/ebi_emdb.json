@@ -1,0 +1,7 @@
+{
+  "id": "ebi/emdb",
+  "target": {},
+  "type": "synonym",
+  "for": "emdb",
+  "revision": 0
+}

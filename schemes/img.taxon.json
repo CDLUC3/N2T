@@ -1,0 +1,27 @@
+{
+  "id": "img.taxon",
+  "target": {
+    "DEFAULT": "http://img.jgi.doe.gov/cgi-bin/w/main.cgi?section=TaxonDetail&taxon_oid={content}"
+  },
+  "type": "scheme",
+  "name": "Integrated Microbial Genomes Taxon at Lawrence Berkeley National Laboratory",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100221",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://img.jgi.doe.gov/cgi-bin/w/main.cgi?section=TaxonDetail&taxon_oid=${ac}",
+  "redirect": "http://img.jgi.doe.gov/cgi-bin/w/main.cgi?section=TaxonDetail&taxon_oid={content}",
+  "description": "The integrated microbial genomes (IMG) system is a data management, analysis and annotation platform for all publicly available genomes. IMG contains both draft and complete JGI (DoE Joint Genome Institute) microbial genomes integrated with all other publicly available genomes from all three domains of life, together with a large number of plasmids and viruses. This datatype refers to taxon information.",
+  "subject": "genome; taxonomy",
+  "location": "USA",
+  "synonym": "IMG Taxon",
+  "institution": "Lawrence Berkeley National Laboratory, Berkeley",
+  "prefixed": 0,
+  "test": "648028003",
+  "probe": "http://img.jgi.doe.gov/cgi-bin/w/main.cgi?section=TaxonDetail&taxon_oid=648028003",
+  "pattern": "^\\d+$",
+  "state": "94:Unknown",
+  "more": "http://img.jgi.doe.gov/",
+  "revision": 0
+}

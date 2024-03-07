@@ -1,0 +1,9 @@
+{
+  "id": "humancyc.pathways",
+  "target": {
+    "DEFAULT": "http://biocyc.org/[?species]/NEW-IMAGE?type=PATHWAY&object={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://biocyc.org/[?species]/NEW-IMAGE?type=PATHWAY&object={content}",
+  "revision": 0
+}

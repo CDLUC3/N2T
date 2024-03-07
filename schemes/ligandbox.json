@@ -1,0 +1,27 @@
+{
+  "id": "ligandbox",
+  "target": {
+    "DEFAULT": "http://ligandbox.protein.osaka-u.ac.jp/ligandbox/cgi-bin/liginf.cgi?id={content}"
+  },
+  "type": "scheme",
+  "name": "LigandBox at",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100612",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://ligandbox.protein.osaka-u.ac.jp/ligandbox/cgi-bin/liginf.cgi?id=${ac}",
+  "redirect": "http://ligandbox.protein.osaka-u.ac.jp/ligandbox/cgi-bin/liginf.cgi?id={content}",
+  "description": "LigandBox is a database of 3D compound structures.  Compound information is collected from the catalogues of various commercial suppliers, with approved drugs and biochemical compounds taken from KEGG and PDB databases. Each chemical compound in the database has several 3D conformers with hydrogen atoms and atomic charges, which are ready to be docked into receptors using docking programs. Various physical properties, such as aqueous solubility (LogS) and carcinogenicity have also been calculated to characterize the ADME-Tox properties of the compounds.",
+  "subject": "structure; chemical",
+  "location": "Japan",
+  "synonym": "KEGG",
+  "institution": "nstitute for Protein Research, Osaka University and Fujitsu Kyushu R&amp;D Center, Life Science Systems Dept., Fujitsu",
+  "prefixed": 0,
+  "test": "D00001",
+  "probe": "http://ligandbox.protein.osaka-u.ac.jp/ligandbox/cgi-bin/liginf.cgi?id=D00001",
+  "pattern": "^D\\d{5}",
+  "state": "99:Up",
+  "more": "http://ligandbox.protein.osaka-u.ac.jp/ligandbox//cgi-bin/index.cgi?LANG=en",
+  "revision": 0
+}

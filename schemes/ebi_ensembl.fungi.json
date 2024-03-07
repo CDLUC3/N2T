@@ -1,0 +1,7 @@
+{
+  "id": "ebi/ensembl.fungi",
+  "target": {},
+  "type": "synonym",
+  "for": "ensembl.fungi",
+  "revision": 0
+}

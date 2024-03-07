@@ -1,0 +1,9 @@
+{
+  "id": "taed",
+  "target": {
+    "DEFAULT": "http://www.sbc.su.se/~malin_a/TAEDcorr/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.sbc.su.se/~malin_a/TAEDcorr/{content}.html",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "multicellds.snapshot",
+  "target": {
+    "DEFAULT": "http://multicellds.org/MultiCellDB/{content}"
+  },
+  "type": "scheme",
+  "name": "MultiCellDS snapshot at Keck School of Medicine",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100780",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://multicellds.org/MultiCellDB/${ac}",
+  "redirect": "http://multicellds.org/MultiCellDB/{content}",
+  "description": "MultiCellDS is data standard for multicellular simulation, experimental, and clinical data. A digital snapshot is a single-time output of the microenvironment (including basement membranes and the vascular network), any cells contained within, and essential metadata. Cells may include phenotypic data.",
+  "subject": "model",
+  "location": "USA",
+  "synonym": "WoRMS",
+  "institution": "Center for Applied Molecular Medicine, Keck School of Medicine, University of Southern California, California",
+  "prefixed": 0,
+  "test": "MCDS_S_0000000001",
+  "probe": "http://multicellds.org/MultiCellDB/MCDS_S_0000000001",
+  "pattern": "^MCDS_S_[a-zA-Z0-9]{1,10}$",
+  "state": "0:Down",
+  "more": "http://multicellds.org/MultiCellDB.php",
+  "revision": 0
+}

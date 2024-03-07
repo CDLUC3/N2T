@@ -1,0 +1,27 @@
+{
+  "id": "gtex",
+  "target": {
+    "DEFAULT": "https://www.gtexportal.org/home/gene/{content}"
+  },
+  "type": "scheme",
+  "name": "The GTEx Project",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100881",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://www.gtexportal.org/home/gene/${ac}",
+  "redirect": "https://www.gtexportal.org/home/gene/{content}",
+  "description": "The Genotype-Tissue Expression (GTEx) project aims to provide to the scientific community a resource with which to study human gene expression and regulation and its relationship to genetic variation.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Open Citation Identifier",
+  "institution": "The Broad Institute of MIT and Harvard",
+  "prefixed": 0,
+  "test": "BRIP1",
+  "probe": "https://www.gtexportal.org/home/gene/BRIP1",
+  "pattern": "^\\w.+$",
+  "state": "0:Unknown",
+  "more": "https://www.gtexportal.org",
+  "revision": 0
+}

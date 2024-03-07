@@ -1,0 +1,9 @@
+{
+  "id": "tess",
+  "target": {
+    "DEFAULT": "http://www.cbil.upenn.edu/cgi-bin/tess/tess?request=FCT-DBRTRV-Accno&key={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.cbil.upenn.edu/cgi-bin/tess/tess?request=FCT-DBRTRV-Accno&key={content}",
+  "revision": 0
+}

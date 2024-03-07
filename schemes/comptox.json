@@ -1,0 +1,27 @@
+{
+  "id": "comptox",
+  "target": {
+    "DEFAULT": "https://comptox.epa.gov/dashboard/{content}"
+  },
+  "type": "scheme",
+  "name": "CompTox Chemistry Dashboard",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100876",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://comptox.epa.gov/dashboard/${ac}",
+  "redirect": "https://comptox.epa.gov/dashboard/{content}",
+  "description": "The Chemistry Dashboard is a part of a suite of databases and web applications developed by the US Environmental Protection Agency's Chemical Safety for Sustainability Research Program. These databases and apps support EPA's computational toxicology research efforts to develop innovative methods to change how chemicals are currently evaluated for potential health risks.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "Environmental Protection Agency",
+  "prefixed": 0,
+  "test": "DTXSID2021028",
+  "probe": "https://comptox.epa.gov/dashboard/DTXSID2021028",
+  "pattern": "^DTXSID\\d+$",
+  "state": "0:Unknown",
+  "more": "https://comptox.epa.gov/dashboard",
+  "revision": 0
+}

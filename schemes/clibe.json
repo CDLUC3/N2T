@@ -1,0 +1,9 @@
+{
+  "id": "clibe",
+  "target": {
+    "DEFAULT": "http://bidd.nus.edu.sg/group/CLiBE/Detail.asp?ID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bidd.nus.edu.sg/group/CLiBE/Detail.asp?ID={content}",
+  "revision": 0
+}

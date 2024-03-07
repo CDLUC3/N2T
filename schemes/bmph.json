@@ -1,0 +1,9 @@
+{
+  "id": "bmph",
+  "target": {
+    "DEFAULT": "http://www.expasy.org/cgi-bin/show_image?{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.expasy.org/cgi-bin/show_image?{content}",
+  "revision": 0
+}

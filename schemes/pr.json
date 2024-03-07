@@ -1,0 +1,27 @@
+{
+  "id": "pr",
+  "target": {
+    "DEFAULT": "https://proconsortium.org/app/entry/PR:{content}"
+  },
+  "type": "scheme",
+  "name": "Protein Ontology at Georgetown",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100184",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://proconsortium.org/app/entry/PR:${ac}",
+  "redirect": "https://proconsortium.org/app/entry/PR:{content}",
+  "description": "The PRotein Ontology (PRO) has been designed to describe the relationships of proteins and protein evolutionary classes, to delineate the multiple protein forms of a gene locus (ontology for protein forms), and to interconnect existing ontologies.",
+  "subject": "protein; ontology",
+  "location": "USA",
+  "synonym": "National Cancer Institute Thesaurus; NCI thesaurus",
+  "institution": "Georgetown University Medical Center, Washington",
+  "prefixed": 1,
+  "test": "000000024",
+  "probe": "https://proconsortium.org/app/entry/PR:000000024",
+  "pattern": "^PR\\:P?\\d+$",
+  "state": "77:Down",
+  "more": "https://proconsortium.org/",
+  "revision": 0
+}

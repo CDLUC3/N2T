@@ -1,0 +1,27 @@
+{
+  "id": "wikipedia.en",
+  "target": {
+    "DEFAULT": "http://dbpedia.org/page/{content}"
+  },
+  "type": "scheme",
+  "name": "Wikipedia structured content through DBpedia",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100496",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://dbpedia.org/page/${ac}",
+  "redirect": "http://dbpedia.org/page/{content}",
+  "description": "Wikipedia is a multilingual, web-based, free-content encyclopedia project based on an openly editable model. It is written collaboratively by largely anonymous Internet volunteers who write without pay.",
+  "subject": "encyclopedia",
+  "location": "USA",
+  "synonym": "IUPAC International Chemical Identifier",
+  "institution": "OpenLink Software, Burlington, Massachusetts",
+  "prefixed": 0,
+  "test": "SM_UB-81",
+  "probe": "http://dbpedia.org/page/SM_UB-81",
+  "pattern": "^[A-Za-z-0-9_]+$",
+  "state": "96:Up",
+  "more": "http://wiki.dbpedia.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cath",
+  "target": {
+    "DEFAULT": "http://www.cathdb.info/cathnode/{content}"
+  },
+  "type": "scheme",
+  "name": "CATH Node through UCL",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100816",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.cathdb.info/cathnode/${ac}",
+  "redirect": "http://www.cathdb.info/cathnode/{content}",
+  "description": "CATH is a classification of protein structural domains. We group protein domains into superfamilies when there is sufficient evidence they have diverged from a common ancestor. CATH can be used to predict structural and functional information directly from protein sequence.",
+  "subject": "schema.org",
+  "location": "UK",
+  "synonym": "MetaCyc Metabolic Pathway Database",
+  "institution": "University College London",
+  "prefixed": 0,
+  "test": "1.10.8.10",
+  "probe": "http://www.cathdb.info/cathnode/1.10.8.10",
+  "pattern": "^[1-4]\\.[0-9]+\\.[0-9]+\\.[0-9]+$",
+  "state": "99:Up",
+  "more": "http://www.cathdb.info",
+  "revision": 0
+}

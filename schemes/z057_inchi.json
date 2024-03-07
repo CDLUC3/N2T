@@ -1,0 +1,27 @@
+{
+  "id": "z057/inchi",
+  "target": {
+    "DEFAULT": "http://rdf.openmolecules.net/?{content}"
+  },
+  "type": "scheme",
+  "name": "InChI through RDF Open Molecules",
+  "alias": null,
+  "provider": "z057",
+  "provider_id": "MIR:00100491",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://rdf.openmolecules.net/?${ac}",
+  "redirect": "http://rdf.openmolecules.net/?{content}",
+  "description": "The IUPAC International Chemical Identifier (InChI) is a non-proprietary identifier for chemical substances that can be used in printed and electronic data sources. It is derived solely from a structural representation of that substance, such that a single compound always yields the same identifier.",
+  "subject": "chemical; structure",
+  "location": "Netherlands",
+  "synonym": "IUPAC International Chemical Identifier",
+  "institution": "BiGCaT, Department of Bioinformatics, Maastricht",
+  "prefixed": 0,
+  "test": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+  "probe": "http://rdf.openmolecules.net/?InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+  "pattern": "^InChI\\=1S?\\/[A-Za-z0-9\\.]+(\\+[0-9]+)?(\\/[cnpqbtmsih][A-Za-z0-9\\-\\+\\(\\)\\,\\/\\?\\;\\.]+)*$",
+  "state": "90:Up",
+  "more": "http://rdf.openmolecules.net/",
+  "revision": 0
+}

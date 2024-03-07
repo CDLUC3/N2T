@@ -1,0 +1,27 @@
+{
+  "id": "kegg.metagenome",
+  "target": {
+    "DEFAULT": "http://www.kegg.jp/entry/{content}"
+  },
+  "type": "scheme",
+  "name": "KEGG Metagenome Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100304",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.kegg.jp/entry/${ac}",
+  "redirect": "http://www.kegg.jp/entry/{content}",
+  "description": "The KEGG Metagenome Database collection information on environmental samples (ecosystems) of genome sequences for multiple species.",
+  "subject": "genome",
+  "location": "Japan",
+  "synonym": "KEGG",
+  "institution": "Kyoto University Bioinformatics Center, Kyoto",
+  "prefixed": 0,
+  "test": "T30002",
+  "probe": "http://www.kegg.jp/entry/T30002",
+  "pattern": "^T3\\d+$",
+  "state": "100:Up",
+  "more": "http://www.genome.jp/kegg/catalog/org_list3.html",
+  "revision": 0
+}

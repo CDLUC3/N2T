@@ -1,0 +1,27 @@
+{
+  "id": "fplx",
+  "target": {
+    "DEFAULT": "http://bioportal.bioontology.org/ontologies/FPLX/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFPLX%23_{content}"
+  },
+  "type": "scheme",
+  "name": "FPLX through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100869",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://bioportal.bioontology.org/ontologies/FPLX/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFPLX%23_${ac}",
+  "redirect": "http://bioportal.bioontology.org/ontologies/FPLX/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFPLX%23_{content}",
+  "description": "FamPlex is a collection of resources for grounding biological entities from text and describing their hierarchical relationships.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 0,
+  "test": "RAS",
+  "probe": "http://bioportal.bioontology.org/ontologies/FPLX/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFPLX%23_RAS",
+  "pattern": "^[a-zA-Z0-9][A-Za-z0-9_]+$",
+  "state": "0:Unknown",
+  "more": "http://bioportal.bioontology.org/ontologies/FPLX/",
+  "revision": 0
+}

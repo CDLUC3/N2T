@@ -1,0 +1,27 @@
+{
+  "id": "molbase",
+  "target": {
+    "DEFAULT": "http://www.molbase.com/en/index.php?app=search&search_keyword={content}"
+  },
+  "type": "scheme",
+  "name": "Molbase at Chinese Academy of Sciences",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100593",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.molbase.com/en/index.php?app=search&search_keyword=${ac}",
+  "redirect": "http://www.molbase.com/en/index.php?app=search&search_keyword={content}",
+  "description": "Molbase provides compound data information for researchers as well as listing suppliers and price information. It can be searched by keyword or CAS indetifier.",
+  "subject": null,
+  "location": "China",
+  "synonym": "Database of Arabidopsis transcription factors",
+  "institution": "Chinese Academy of Sciences, Xuhui District  Shanghai",
+  "prefixed": 0,
+  "test": "128796-39-4",
+  "probe": "http://www.molbase.com/en/index.php?app=search&search_keyword=128796-39-4",
+  "pattern": "^(\\d{1,7}\\-\\d{2}\\-\\d)|([A-Za-z0-9\\+\\-\\_]+)$",
+  "state": "79:Up",
+  "more": "http://www.molbase.com/",
+  "revision": 0
+}

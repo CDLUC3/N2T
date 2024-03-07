@@ -1,0 +1,27 @@
+{
+  "id": "insdc.gca",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/assembly/{content}"
+  },
+  "type": "scheme",
+  "name": "Genome assembly database NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100811",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/assembly/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/assembly/{content}",
+  "description": "The genome assembly database contains detailed information about genome assemblies for eukaryota, bacteria and archaea. The scope of the genome collections database does not extend to viruses, viroids and bacteriophage.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Ontology for miRNA Target",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "GCA_000155495.1",
+  "probe": "https://www.ncbi.nlm.nih.gov/assembly/GCA_000155495.1",
+  "pattern": "^GCA_[0-9]{9}\\.[0-9]$",
+  "state": "99:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/assembly/",
+  "revision": 0
+}

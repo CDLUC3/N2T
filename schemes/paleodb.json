@@ -1,0 +1,27 @@
+{
+  "id": "paleodb",
+  "target": {
+    "DEFAULT": "http://fossilworks.org/?a=taxonInfo&taxon_no={content}"
+  },
+  "type": "scheme",
+  "name": "PaleoDB at Macquarie University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100254",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://fossilworks.org/?a=taxonInfo&taxon_no=${ac}",
+  "redirect": "http://fossilworks.org/?a=taxonInfo&taxon_no={content}",
+  "description": "The Paleobiology Database seeks to provide researchers and the public with information about the entire fossil record. It stores global, collection-based occurrence and taxonomic data for marine and terrestrial animals and plants of any geological age, as well as web-based software for statistical analysis of the data.",
+  "subject": "taxonomy",
+  "location": "Australia",
+  "synonym": "Paleobiology database",
+  "institution": "Macquarie University, Sydney",
+  "prefixed": 0,
+  "test": "83088",
+  "probe": "http://fossilworks.org/?a=taxonInfo&taxon_no=83088",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://paleodb.org/",
+  "revision": 0
+}

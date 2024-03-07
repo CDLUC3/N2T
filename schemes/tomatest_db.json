@@ -1,0 +1,9 @@
+{
+  "id": "tomatest_db",
+  "target": {
+    "DEFAULT": "http://biosrv.cab.unina.it/solestdb/clusterview.php?clid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://biosrv.cab.unina.it/solestdb/clusterview.php?clid={content}",
+  "revision": 0
+}

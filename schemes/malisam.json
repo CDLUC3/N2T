@@ -1,0 +1,9 @@
+{
+  "id": "malisam",
+  "target": {
+    "DEFAULT": "http://prodata.swmed.edu/malisam/[{content}1][{content}2]/[{content}1][{content}2].html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://prodata.swmed.edu/malisam/[{content}1][{content}2]/[{content}1][{content}2].html",
+  "revision": 0
+}

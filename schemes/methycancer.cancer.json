@@ -1,0 +1,9 @@
+{
+  "id": "methycancer.cancer",
+  "target": {
+    "DEFAULT": "http://methycancer.psych.ac.cn/cancerDetail.do?cancerid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://methycancer.psych.ac.cn/cancerDetail.do?cancerid={content}",
+  "revision": 0
+}

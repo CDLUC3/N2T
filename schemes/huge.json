@@ -1,0 +1,27 @@
+{
+  "id": "huge",
+  "target": {
+    "DEFAULT": "http://www.kazusa.or.jp/huge/gfpage/{content}/"
+  },
+  "type": "scheme",
+  "name": "HUGE at Kazusa DNA Research Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100339",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.kazusa.or.jp/huge/gfpage/${ac}/",
+  "redirect": "http://www.kazusa.or.jp/huge/gfpage/{content}/",
+  "description": "The Human Unidentified Gene-Encoded (HUGE) protein database contains  results from sequence analysis of human novel large (>4 kb) cDNAs identified in the Kazusa cDNA sequencing project.",
+  "subject": "DNA; protein",
+  "location": "Japan",
+  "synonym": "The Cell: An Image Library-CCDB; The Cell: An Image Library-Cell Centered Database; CIL",
+  "institution": "Kazusa DNA Research Institute,  Chiba",
+  "prefixed": 0,
+  "test": "KIAA0001",
+  "probe": "http://www.kazusa.or.jp/huge/gfpage/KIAA0001/",
+  "pattern": "^KIAA\\d{4}$",
+  "state": "99:Up",
+  "more": "http://www.kazusa.or.jp/huge/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "go.ref",
+  "target": {
+    "DEFAULT": "http://www.geneontology.org/cgi-bin/references.cgi#{content}"
+  },
+  "type": "scheme",
+  "name": "Gene Ontology Reference at The Gene Ontology Consortium",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100584",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.geneontology.org/cgi-bin/references.cgi#${ac}",
+  "redirect": "http://www.geneontology.org/cgi-bin/references.cgi#{content}",
+  "description": "The GO reference collection is a set of abstracts that can be cited in the GO ontologies (e.g. as dbxrefs for term definitions) and annotation files (in the Reference column). It provides two types of reference; It can be used to provide details of why specific Evidence codes (see http://identifiers.org/eco/) are assigned, or to present abstract-style descriptions of \"GO content\" meetings at which substantial changes in the ontologies are discussed and made.",
+  "subject": "controlled vocabulary",
+  "location": "USA",
+  "synonym": "GO reference collection",
+  "institution": "The Gene Ontology Consortium",
+  "prefixed": 0,
+  "test": "GO_REF:0000041",
+  "probe": "http://www.geneontology.org/cgi-bin/references.cgi#GO_REF:0000041",
+  "pattern": "^GO_REF:\\d{7}$",
+  "state": "89:Down",
+  "more": "http://www.geneontology.org/cgi-bin/references.cgi",
+  "revision": 0
+}

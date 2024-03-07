@@ -1,0 +1,27 @@
+{
+  "id": "ddbj/insdc.sra",
+  "target": {
+    "DEFAULT": "http://trace.ddbj.nig.ac.jp/DRASearch/experiment?acc={content}"
+  },
+  "type": "scheme",
+  "name": "DDBJ Sequence Read Archive (DRA)",
+  "alias": null,
+  "provider": "ddbj",
+  "provider_id": "MIR:00100314",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://trace.ddbj.nig.ac.jp/DRASearch/experiment?acc=${ac}",
+  "redirect": "http://trace.ddbj.nig.ac.jp/DRASearch/experiment?acc={content}",
+  "description": "The Sequence Read Archive (SRA) stores raw sequencing data from the next generation of sequencing platforms Data submitted to SRA. It is organized using a metadata model consisting of six objects: study, sample, experiment, run, analysis and submission. The SRA study contains high-level information including goals of the study and literature references, and may be linked to the INSDC BioProject database.",
+  "subject": "sequence",
+  "location": "Japan",
+  "synonym": "National Academic Research and Collaborations Information System",
+  "institution": "DNA Data Bank of Japan, Mishima, Shizuoka",
+  "prefixed": 0,
+  "test": "SRX000007",
+  "probe": "http://trace.ddbj.nig.ac.jp/DRASearch/experiment?acc=SRX000007",
+  "pattern": "^[SED]R[APRSXZ]\\d+$",
+  "state": "95:Up",
+  "more": "http://trace.ddbj.nig.ac.jp/dra/",
+  "revision": 0
+}

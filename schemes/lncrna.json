@@ -1,0 +1,9 @@
+{
+  "id": "lncrna",
+  "target": {
+    "DEFAULT": "http://lncrnadb.com/Detail.aspx?TKeyID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://lncrnadb.com/Detail.aspx?TKeyID={content}",
+  "revision": 0
+}

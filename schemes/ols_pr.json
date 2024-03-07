@@ -1,0 +1,27 @@
+{
+  "id": "ols/pr",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/pr/terms?obo_id=PR:{content}"
+  },
+  "type": "scheme",
+  "name": "Protein Ontology through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100755",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/pr/terms?obo_id=PR:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/pr/terms?obo_id=PR:{content}",
+  "description": "The PRotein Ontology (PRO) has been designed to describe the relationships of proteins and protein evolutionary classes, to delineate the multiple protein forms of a gene locus (ontology for protein forms), and to interconnect existing ontologies.",
+  "subject": "protein; ontology",
+  "location": "UK",
+  "synonym": "National Cancer Institute Thesaurus; NCI thesaurus",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "000000024",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/pr/terms?obo_id=PR:000000024",
+  "pattern": "^PR\\:P?\\d+$",
+  "state": "79:Down",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/pr",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "emglib",
+  "target": {
+    "DEFAULT": "http://pbil.univ-lyon1.fr/cgi-bin/acnuc-search-id?query={content}&db=GenBank"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pbil.univ-lyon1.fr/cgi-bin/acnuc-search-id?query={content}&db=GenBank",
+  "revision": 0
+}

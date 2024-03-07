@@ -1,0 +1,27 @@
+{
+  "id": "pdbe/pdb",
+  "target": {
+    "DEFAULT": "http://www.pdbe.org/{content}"
+  },
+  "type": "scheme",
+  "name": "Protein Databank in Europe (PDBe)",
+  "alias": null,
+  "provider": "pdbe",
+  "provider_id": "MIR:00100037",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.pdbe.org/${ac}",
+  "redirect": "http://www.pdbe.org/{content}",
+  "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules.",
+  "subject": "protein; structure",
+  "location": "UK",
+  "synonym": "PDB",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "2gc4",
+  "probe": "http://www.pdbe.org/2gc4",
+  "pattern": "^[0-9][A-Za-z0-9]{3}$",
+  "state": "100:Up",
+  "more": "http://www.pdbe.org/",
+  "revision": 0
+}

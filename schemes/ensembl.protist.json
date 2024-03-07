@@ -1,0 +1,27 @@
+{
+  "id": "ensembl.protist",
+  "target": {
+    "DEFAULT": "https://protists.ensembl.org/id/{content}"
+  },
+  "type": "scheme",
+  "name": "Ensembl Protists at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100262",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://protists.ensembl.org/id/${ac}",
+  "redirect": "https://protists.ensembl.org/id/{content}",
+  "description": "Ensembl Genomes consists of five sub-portals (for bacteria, protists, fungi, plants and invertebrate metazoa) designed to complement the availability of vertebrate genomes in Ensembl. This collection is concerned with protist genomes.",
+  "subject": "genome; nucleotide; sequence",
+  "location": "UK",
+  "synonym": "Ensembl Genomes Protists",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "PF3D7_1328700",
+  "probe": "https://protists.ensembl.org/id/PF3D7_1328700",
+  "pattern": "^\\w+$",
+  "state": "67:Up",
+  "more": "https://protists.ensembl.org",
+  "revision": 0
+}

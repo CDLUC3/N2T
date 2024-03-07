@@ -1,0 +1,27 @@
+{
+  "id": "omicsdi/mex",
+  "target": {
+    "DEFAULT": "https://www.omicsdi.org/dataset/metabolome_express/MEX{content}"
+  },
+  "type": "scheme",
+  "name": "Metabolome Express through OmicsDI",
+  "alias": null,
+  "provider": "omicsdi",
+  "provider_id": "MIR:00100863",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.omicsdi.org/dataset/metabolome_express/MEX${ac}",
+  "redirect": "https://www.omicsdi.org/dataset/metabolome_express/MEX{content}",
+  "description": "A public place to process, interpret and share GC/MS metabolomics datasets.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "nmrCV",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "36",
+  "probe": "https://www.omicsdi.org/dataset/metabolome_express/MEX36",
+  "pattern": "^\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.omicsdi.org/",
+  "revision": 0
+}

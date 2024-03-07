@@ -1,0 +1,27 @@
+{
+  "id": "bioentitylink/zfin",
+  "target": {
+    "DEFAULT": "https://bioentity.link/#/lexicon/public/{content}"
+  },
+  "type": "scheme",
+  "name": "ZFIN through BioEntity Link",
+  "alias": null,
+  "provider": "bioentitylink",
+  "provider_id": "MIR:00100891",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://bioentity.link/#/lexicon/public/${ac}",
+  "redirect": "https://bioentity.link/#/lexicon/public/{content}",
+  "description": "ZFIN serves as the zebrafish model organism database. This collection references all zebrafish biological entities in ZFIN.",
+  "subject": "gene",
+  "location": "USA",
+  "synonym": "MMMP Biomaps",
+  "institution": "InSilico Inc, in Eugene, Oregon",
+  "prefixed": 0,
+  "test": "ZDB-GENE-041118-11",
+  "probe": "https://bioentity.link/#/lexicon/public/ZDB-GENE-041118-11",
+  "pattern": "^ZDB\\-\\w+\\-\\d+\\-\\d+$",
+  "state": "0:Unknown",
+  "more": "https://bioentity.link/",
+  "revision": 0
+}

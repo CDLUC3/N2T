@@ -1,0 +1,27 @@
+{
+  "id": "hgnc",
+  "target": {
+    "DEFAULT": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/{content}"
+  },
+  "type": "scheme",
+  "name": "HUGO Genome Nomenclature Committee",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100111",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/${ac}",
+  "redirect": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/{content}",
+  "description": "The HGNC (HUGO Gene Nomenclature Committee) provides an approved gene name and symbol (short-form abbreviation) for each known human gene.  All approved symbols are stored in the HGNC database, and each symbol is unique. HGNC identifiers refer to records in the HGNC symbol database.",
+  "subject": "schema.org; human; gene",
+  "location": "UK",
+  "synonym": "HUGO Gene Nomenclature Committee",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "2674",
+  "probe": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/2674",
+  "pattern": "^((HGNC|hgnc):)?\\d{1,5}$",
+  "state": "94:Up",
+  "more": "https://www.genenames.org",
+  "revision": 0
+}

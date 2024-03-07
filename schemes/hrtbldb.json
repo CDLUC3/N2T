@@ -1,0 +1,9 @@
+{
+  "id": "hrtbldb",
+  "target": {
+    "DEFAULT": "http://motif.bmi.ohio-state.edu/hrtbldb/loci/browse/[?species]/chr[#]%3E[?gene_loci]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://motif.bmi.ohio-state.edu/hrtbldb/loci/browse/[?species]/chr[#]%3E[?gene_loci]",
+  "revision": 0
+}

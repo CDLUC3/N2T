@@ -1,0 +1,27 @@
+{
+  "id": "multicellds.cell_line",
+  "target": {
+    "DEFAULT": "http://multicellds.org/MultiCellDB/{content}"
+  },
+  "type": "scheme",
+  "name": "MultiCellDS Digital Cell Line at Keck School of Medicine",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100781",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://multicellds.org/MultiCellDB/${ac}",
+  "redirect": "http://multicellds.org/MultiCellDB/{content}",
+  "description": "MultiCellDS is data standard for multicellular simulation, experimental, and clinical data. A digital cell line is a hierarchical organization of quantitative phenotype data for a single biological cell line, including the microenvironmental context of the measurements and essential metadata.",
+  "subject": "model",
+  "location": "USA",
+  "synonym": "WoRMS",
+  "institution": "Center for Applied Molecular Medicine, Keck School of Medicine, University of Southern California, California",
+  "prefixed": 0,
+  "test": "MCDS_L_0000000001",
+  "probe": "http://multicellds.org/MultiCellDB/MCDS_L_0000000001",
+  "pattern": "^MCDS_L_[a-zA-Z0-9]{1,10}$",
+  "state": "63:Down",
+  "more": "http://multicellds.org/MultiCellDB.php",
+  "revision": 0
+}

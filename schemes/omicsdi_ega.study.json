@@ -1,0 +1,27 @@
+{
+  "id": "omicsdi/ega.study",
+  "target": {
+    "DEFAULT": "https://www.omicsdi.org/dataset/ega/{content}"
+  },
+  "type": "scheme",
+  "name": "EGA Study through OmicsDI",
+  "alias": null,
+  "provider": "omicsdi",
+  "provider_id": "MIR:00100851",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.omicsdi.org/dataset/ega/${ac}",
+  "redirect": "https://www.omicsdi.org/dataset/ega/{content}",
+  "description": "The EGA is a service for permanent archiving and sharing of all types of personally identifiable genetic and phenotypic data resulting from biomedical research projects. The EGA contains exclusive data collected from individuals whose consent agreements authorize data release only for specific research use or to bona fide researchers. Strict protocols govern how information is managed, stored and distributed by the EGA project. This collection references 'Studies' which are experimental investigations of a particular phenomenon, often drawn from different datasets.",
+  "subject": "phenotype; human; gene",
+  "location": "UK",
+  "synonym": "EGA Study",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "EGAS00000000001",
+  "probe": "https://www.omicsdi.org/dataset/ega/EGAS00000000001",
+  "pattern": "^EGAS\\d{11}$",
+  "state": "0:Unknown",
+  "more": "https://www.omicsdi.org/",
+  "revision": 0
+}

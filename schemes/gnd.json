@@ -1,0 +1,9 @@
+{
+  "id": "gnd",
+  "target": {
+    "DEFAULT": "http://nava.liacs.nl/cgi-bin/nava.py?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://nava.liacs.nl/cgi-bin/nava.py?id={content}",
+  "revision": 0
+}

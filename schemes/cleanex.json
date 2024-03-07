@@ -1,0 +1,9 @@
+{
+  "id": "cleanex",
+  "target": {
+    "DEFAULT": "http://www.cleanex.isb-sib.ch/cgi-bin/get_doc?db=cleanex&format=nice&entry={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.cleanex.isb-sib.ch/cgi-bin/get_doc?db=cleanex&format=nice&entry={content}",
+  "revision": 0
+}

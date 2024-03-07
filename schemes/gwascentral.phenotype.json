@@ -1,0 +1,27 @@
+{
+  "id": "gwascentral.phenotype",
+  "target": {
+    "DEFAULT": "https://www.gwascentral.org/phenotype/{content}"
+  },
+  "type": "scheme",
+  "name": "GWAS Central Phenotype at University of Leicester",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100720",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.gwascentral.org/phenotype/${ac}",
+  "redirect": "https://www.gwascentral.org/phenotype/{content}",
+  "description": "GWAS Central (previously the Human Genome Variation database of Genotype-to-Phenotype information) is a database of summary level findings from genetic association studies, both large and small. It gathers datasets from public domain projects, and accepts direct data submission. It is based upon Marker information encompassing SNP and variant information from public databases, to which allele and genotype frequency data, and genetic association findings are additionally added. A Study (most generic level) contains one or more Experiments, one or more Sample Panels of test subjects, and one or more Phenotypes. This collection references a GWAS Central Phenotype.",
+  "subject": "human; genome; phenotype",
+  "location": "UK",
+  "synonym": "CPC",
+  "institution": "Department of Genetics, University of Leicester, Leicester",
+  "prefixed": 0,
+  "test": "HGVPM623",
+  "probe": "https://www.gwascentral.org/phenotype/HGVPM623",
+  "pattern": "^HGVP\\d+$",
+  "state": "91:Unknown",
+  "more": "https://www.gwascentral.org/phenotypes",
+  "revision": 0
+}

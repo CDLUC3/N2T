@@ -1,0 +1,9 @@
+{
+  "id": "reproduction2dpage",
+  "target": {
+    "DEFAULT": "http://reprod.njmu.edu.cn/cgi-bin/2d/2d.cgi?ac={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://reprod.njmu.edu.cn/cgi-bin/2d/2d.cgi?ac={content}",
+  "revision": 0
+}

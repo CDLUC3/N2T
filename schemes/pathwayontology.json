@@ -1,0 +1,9 @@
+{
+  "id": "pathwayontology",
+  "target": {
+    "DEFAULT": "http://rgd.mcw.edu/tools/ontology/ont_annot.cgi?term_key={content}&ontology=go"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rgd.mcw.edu/tools/ontology/ont_annot.cgi?term_key={content}&ontology=go",
+  "revision": 0
+}

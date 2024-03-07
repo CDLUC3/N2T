@@ -1,0 +1,9 @@
+{
+  "id": "consurfdb",
+  "target": {
+    "DEFAULT": "http://consurfdb.tau.ac.il/consurf_db/{content}/[?chain_id]/"
+  },
+  "type": "commonspfx",
+  "redirect": "http://consurfdb.tau.ac.il/consurf_db/{content}/[?chain_id]/",
+  "revision": 0
+}

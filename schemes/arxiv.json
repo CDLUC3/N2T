@@ -1,0 +1,27 @@
+{
+  "id": "arxiv",
+  "target": {
+    "DEFAULT": "https://arxiv.org/abs/{content}"
+  },
+  "type": "scheme",
+  "name": "Cornell University arXiv",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100060",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://arxiv.org/abs/${ac}",
+  "redirect": "https://arxiv.org/abs/{content}",
+  "description": "arXiv is an e-print service in the fields of physics, mathematics, non-linear science, computer science, and quantitative biology.",
+  "subject": "bibliography",
+  "location": "USA",
+  "synonym": "PubChem CID; PubChem Compound",
+  "institution": "Cornell University",
+  "prefixed": 0,
+  "test": "0807.4956v1",
+  "probe": "https://arxiv.org/abs/0807.4956v1",
+  "pattern": "^(\\w+(\\-\\w+)?(\\.\\w+)?)?\\d{4,7}(\\.\\d+(v\\d+)?)?$",
+  "state": "96:Unknown",
+  "more": "https://arxiv.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pato",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/PATO/PATO:{content}"
+  },
+  "type": "scheme",
+  "name": "PATO through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100238",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/PATO/PATO:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/PATO/PATO:{content}",
+  "description": "PATO is an ontology of phenotypic qualities, intended for use in a number of applications, primarily defining composite phenotypes and phenotype  annotation.",
+  "subject": "phenotype; ontology",
+  "location": "USA",
+  "synonym": "BTO",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 1,
+  "test": "0001998",
+  "probe": "http://purl.bioontology.org/ontology/PATO/PATO:0001998",
+  "pattern": "^PATO:\\d{7}$",
+  "state": "96:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/PATO",
+  "revision": 0
+}

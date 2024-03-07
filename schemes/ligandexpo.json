@@ -1,0 +1,27 @@
+{
+  "id": "ligandexpo",
+  "target": {
+    "DEFAULT": "http://ligand-expo.rcsb.org/pyapps/ldHandler.py?formid=cc-index-search&target={content}&operation=ccid"
+  },
+  "type": "scheme",
+  "name": "Ligand Expo at Rutgers",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100615",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://ligand-expo.rcsb.org/pyapps/ldHandler.py?formid=cc-index-search&target=${ac}&operation=ccid",
+  "redirect": "http://ligand-expo.rcsb.org/pyapps/ldHandler.py?formid=cc-index-search&target={content}&operation=ccid",
+  "description": "Ligand Expo is a data resource for finding information about small molecules bound to proteins and nucleic acids.",
+  "subject": "interaction; structure",
+  "location": "USA",
+  "synonym": "Ligand Depot",
+  "institution": "Rutgers, The State University of New Jersey",
+  "prefixed": 0,
+  "test": "ABC",
+  "probe": "http://ligand-expo.rcsb.org/pyapps/ldHandler.py?formid=cc-index-search&target=ABC&operation=ccid",
+  "pattern": "^(\\w){3}$",
+  "state": "98:Up",
+  "more": "http://ligand-expo.rcsb.org/",
+  "revision": 0
+}

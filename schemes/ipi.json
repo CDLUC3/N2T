@@ -1,0 +1,9 @@
+{
+  "id": "ipi",
+  "target": {
+    "DEFAULT": "http://www.ebi.ac.uk/cgi-bin/dbfetch?db=IPI&id={content}&format=default"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ebi.ac.uk/cgi-bin/dbfetch?db=IPI&id={content}&format=default",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cubedb",
+  "target": {
+    "DEFAULT": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/{content}/"
+  },
+  "type": "scheme",
+  "name": "Cube db at Bioinformatics Institute (Singapore)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100517",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/${ac}/",
+  "redirect": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/{content}/",
+  "description": "Cube-DB is a database of pre-evaluated results for detection of functional divergence in human/vertebrate protein families. It analyzes comparable taxonomical samples for all paralogues under consideration, storing functional specialisation at the level of residues. The data are presented as a table of per-residue scores, and mapped onto related structures where available.",
+  "subject": "protein; domain; human",
+  "location": "China",
+  "synonym": "Human Gene Mutation Database",
+  "institution": "Bioinformatics Institute, Singapore",
+  "prefixed": 0,
+  "test": "AKR",
+  "probe": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/AKR/",
+  "pattern": "^[A-Za-z_0-9]+$",
+  "state": "0:Unknown",
+  "more": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/html/home.html",
+  "revision": 0
+}

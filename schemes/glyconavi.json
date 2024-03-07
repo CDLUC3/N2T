@@ -1,0 +1,9 @@
+{
+  "id": "glyconavi",
+  "target": {
+    "DEFAULT": "http://ws.glyconavi.org/DbDetail/moldetail.aspx?moleculeID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ws.glyconavi.org/DbDetail/moldetail.aspx?moleculeID={content}",
+  "revision": 0
+}

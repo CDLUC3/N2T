@@ -1,0 +1,27 @@
+{
+  "id": "omicsdi/arrayexpress",
+  "target": {
+    "DEFAULT": "https://www.omicsdi.org/dataset/arrayexpress-repository/{content}"
+  },
+  "type": "scheme",
+  "name": "ArrayExpress through OmicsDI",
+  "alias": null,
+  "provider": "omicsdi",
+  "provider_id": "MIR:00100854",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.omicsdi.org/dataset/arrayexpress-repository/${ac}",
+  "redirect": "https://www.omicsdi.org/dataset/arrayexpress-repository/{content}",
+  "description": "ArrayExpress is a public repository for microarray data, which is aimed at storing MIAME-compliant data in accordance with Microarray Gene Expression Data (MGED) recommendations.",
+  "subject": "nucleotide; microarray; expression",
+  "location": "UK",
+  "synonym": "PubChem CID; PubChem Compound",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "E-MEXP-1712",
+  "probe": "https://www.omicsdi.org/dataset/arrayexpress-repository/E-MEXP-1712",
+  "pattern": "^[AEP]-\\w{4}-\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.omicsdi.org/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "viperdb",
+  "target": {
+    "DEFAULT": "http://viperdb.scripps.edu/info_page.php?VDB={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://viperdb.scripps.edu/info_page.php?VDB={content}",
+  "revision": 0
+}

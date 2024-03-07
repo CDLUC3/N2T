@@ -1,0 +1,9 @@
+{
+  "id": "hembase",
+  "target": {
+    "DEFAULT": "http://fmp-8.cit.nih.gov/hembase/detail.php?chrb={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://fmp-8.cit.nih.gov/hembase/detail.php?chrb={content}",
+  "revision": 0
+}

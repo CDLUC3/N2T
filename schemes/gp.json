@@ -1,0 +1,9 @@
+{
+  "id": "gp",
+  "target": {
+    "DEFAULT": "http://www.ncbi.nlm.nih.gov/sites/entrez?Db=genomeprj&cmd=ShowDetailView&TermToSearch={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ncbi.nlm.nih.gov/sites/entrez?Db=genomeprj&cmd=ShowDetailView&TermToSearch={content}",
+  "revision": 0
+}

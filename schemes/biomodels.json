@@ -1,0 +1,9 @@
+{
+  "id": "biomodels",
+  "target": {
+    "DEFAULT": "http://www.ebi.ac.uk/biomodels-main/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ebi.ac.uk/biomodels-main/{content}",
+  "revision": 0
+}

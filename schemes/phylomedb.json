@@ -1,0 +1,27 @@
+{
+  "id": "phylomedb",
+  "target": {
+    "DEFAULT": "http://phylomedb.org/?seqid={content}"
+  },
+  "type": "scheme",
+  "name": "PhylomeDB at Centro de Investigaci&#xF3;n Pr&#xED;ncipe Felipe",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100282",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://phylomedb.org/?seqid=${ac}",
+  "redirect": "http://phylomedb.org/?seqid={content}",
+  "description": "PhylomeDB is a database of complete phylomes derived for different genomes within a specific taxonomic range. It provides alignments, phylogentic trees and tree-based orthology predictions for all encoded proteins.",
+  "subject": "taxonomy; protein; genome",
+  "location": "Spain",
+  "synonym": "Orpha",
+  "institution": "Bioinformatics Department,Centro de Investigaci&#xF3;n Pr&#xED;ncipe Felipe, Valencia",
+  "prefixed": 0,
+  "test": "Phy000CLXM_RAT",
+  "probe": "http://phylomedb.org/?seqid=Phy000CLXM_RAT",
+  "pattern": "^\\w+$",
+  "state": "97:Probably up",
+  "more": "http://phylomedb.org/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "comparative_genometrics",
+  "target": {
+    "DEFAULT": "http://www2.unil.ch/comparativegenometrics/{content}.htm"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www2.unil.ch/comparativegenometrics/{content}.htm",
+  "revision": 0
+}

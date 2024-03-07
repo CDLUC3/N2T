@@ -1,0 +1,27 @@
+{
+  "id": "hpm.protein",
+  "target": {
+    "DEFAULT": "http://www.humanproteomemap.org/protein.php?hpm_id={content}"
+  },
+  "type": "scheme",
+  "name": "Human Proteome Map Protein at Institute of Bioinformatics (Bangalore)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100682",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.humanproteomemap.org/protein.php?hpm_id=${ac}",
+  "redirect": "http://www.humanproteomemap.org/protein.php?hpm_id={content}",
+  "description": "The Human Proteome Map (HPM) portal integrates the peptide sequencing result from the draft map of the human proteome project. The project was based on LC-MS/MS by utilizing of high resolution and high accuracy Fourier transform mass spectrometry. The HPM contains direct evidence of translation of a number of protein products derived from human genes, based on peptide identifications of multiple organs/tissues and cell types from individuals with clinically defined healthy tissues. The HPM portal provides data on individual proteins, as well as on individual peptide spectra. This collection references proteins.",
+  "subject": "human; protein",
+  "location": "India",
+  "synonym": "HPM",
+  "institution": "Institute of Bioinformatics, International Tech Park, Bangalore",
+  "prefixed": 0,
+  "test": "1968",
+  "probe": "http://www.humanproteomemap.org/protein.php?hpm_id=1968",
+  "pattern": "^\\d+$",
+  "state": "96:Up",
+  "more": "http://www.humanproteomemap.org/index.php",
+  "revision": 0
+}

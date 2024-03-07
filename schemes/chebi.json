@@ -1,0 +1,27 @@
+{
+  "id": "chebi",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:{content}"
+  },
+  "type": "scheme",
+  "name": "ChEBI (Chemical Entities of Biological Interest)",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100009",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:${ac}",
+  "redirect": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:{content}",
+  "description": "Chemical Entities of Biological Interest (ChEBI) is a freely available dictionary of molecular entities focused on 'small' chemical compounds.",
+  "subject": "metabolite; ontology; chemical",
+  "location": "UK",
+  "synonym": null,
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "36927",
+  "probe": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:36927",
+  "pattern": "^CHEBI:\\d+$",
+  "state": "98:Up",
+  "more": "https://www.ebi.ac.uk/chebi/",
+  "revision": 0
+}

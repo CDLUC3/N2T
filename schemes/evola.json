@@ -1,0 +1,9 @@
+{
+  "id": "evola",
+  "target": {
+    "DEFAULT": "http://www.h-invitational.jp/evola_main/annotation.cgi?hit={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.h-invitational.jp/evola_main/annotation.cgi?hit={content}",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "nprd",
+  "target": {
+    "DEFAULT": "http://srs6.bionet.nsc.ru/srs6bin/cgi-bin/wgetz?-page+LibInfo+-id+1JCHQ1bgqkg+-lib+{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://srs6.bionet.nsc.ru/srs6bin/cgi-bin/wgetz?-page+LibInfo+-id+1JCHQ1bgqkg+-lib+{content}",
+  "revision": 0
+}

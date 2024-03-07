@@ -1,0 +1,9 @@
+{
+  "id": "biomagresbank",
+  "target": {
+    "DEFAULT": "http://www.bmrb.wisc.edu/data_library/generate_summary.php?bmrbId={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.bmrb.wisc.edu/data_library/generate_summary.php?bmrbId={content}",
+  "revision": 0
+}

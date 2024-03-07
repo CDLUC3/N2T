@@ -1,0 +1,9 @@
+{
+  "id": "bionemo",
+  "target": {
+    "DEFAULT": "http://bionemo.bioinfo.cnio.es/Run.cgi?rm=mode4&result={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bionemo.bioinfo.cnio.es/Run.cgi?rm=mode4&result={content}",
+  "revision": 0
+}

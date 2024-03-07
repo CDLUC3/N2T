@@ -1,0 +1,9 @@
+{
+  "id": "swiss2dpage",
+  "target": {
+    "DEFAULT": "http://ca.expasy.org/swiss-2dpage/ac={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ca.expasy.org/swiss-2dpage/ac={content}",
+  "revision": 0
+}

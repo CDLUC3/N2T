@@ -1,0 +1,27 @@
+{
+  "id": "arrayexpress.platform",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/arrayexpress/arrays/{content}"
+  },
+  "type": "scheme",
+  "name": "ArrayExpress Platform at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100376",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/arrayexpress/arrays/${ac}",
+  "redirect": "https://www.ebi.ac.uk/arrayexpress/arrays/{content}",
+  "description": "ArrayExpress is a public repository for microarray data, which is aimed at storing MIAME-compliant data in accordance with Microarray Gene Expression Data (MGED) recommendations.This collection references the specific platforms used in the generation of experimental results.",
+  "subject": "microarray",
+  "location": "UK",
+  "synonym": "Rodent Unidentified Gene-Encoded Large Proteins",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "A-GEOD-50",
+  "probe": "https://www.ebi.ac.uk/arrayexpress/arrays/A-GEOD-50",
+  "pattern": "^[AEP]-\\w{4}-\\d+$",
+  "state": "100:Up",
+  "more": "https://www.ebi.ac.uk/arrayexpress/",
+  "revision": 0
+}

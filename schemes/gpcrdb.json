@@ -1,0 +1,27 @@
+{
+  "id": "gpcrdb",
+  "target": {
+    "DEFAULT": "http://www.gpcrdb.org/protein/{content}/"
+  },
+  "type": "scheme",
+  "name": "GPCRDB at Radboud University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100271",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.gpcrdb.org/protein/${ac}/",
+  "redirect": "http://www.gpcrdb.org/protein/{content}/",
+  "description": "The G protein-coupled receptor database (GPCRDB) collects, large amounts of heterogeneous data on GPCRs. It contains experimental data on sequences, ligand-binding constants, mutations and oligomers, and derived data such as multiple sequence alignments and homology models.",
+  "subject": "protein",
+  "location": "Holland",
+  "synonym": "G protein-coupled receptor database",
+  "institution": "Radboud University Nijmegen Medical Centre, Nijmegen,",
+  "prefixed": 0,
+  "test": "RL3R1_HUMAN",
+  "probe": "http://www.gpcrdb.org/protein/RL3R1_HUMAN/",
+  "pattern": "^\\w+$",
+  "state": "90:Up",
+  "more": "http://www.gpcrdb.org/",
+  "revision": 0
+}

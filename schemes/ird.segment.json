@@ -1,0 +1,27 @@
+{
+  "id": "ird.segment",
+  "target": {
+    "DEFAULT": "http://www.fludb.org/brc/fluSegmentDetails.do?ncbiGenomicAccession={content}"
+  },
+  "type": "scheme",
+  "name": "IRD at BioHealthBase",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100218",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.fludb.org/brc/fluSegmentDetails.do?ncbiGenomicAccession=${ac}",
+  "redirect": "http://www.fludb.org/brc/fluSegmentDetails.do?ncbiGenomicAccession={content}",
+  "description": "Influenza Research Database (IRD) contains information related to influenza virus, including genomic sequence, strain, protein, epitope  and bibliographic information. The Segment Details page contains descriptive information and annotation data about a particular genomic segment and its encoded product(s).",
+  "subject": "protein; gene",
+  "location": "USA",
+  "synonym": "Influenza Research Database Segment",
+  "institution": "Southwestern Medical Center, University of Texas, Dallas",
+  "prefixed": 0,
+  "test": "CY077097",
+  "probe": "http://www.fludb.org/brc/fluSegmentDetails.do?ncbiGenomicAccession=CY077097",
+  "pattern": "^\\w+(\\_)?\\d+(\\.\\d+)?$",
+  "state": "97:Up",
+  "more": "http://www.fludb.org/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "cmgsdb.protein",
+  "target": {
+    "DEFAULT": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewProtein.php?wpid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewProtein.php?wpid={content}",
+  "revision": 0
+}

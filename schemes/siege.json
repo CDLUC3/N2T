@@ -1,0 +1,9 @@
+{
+  "id": "siege",
+  "target": {
+    "DEFAULT": "http://pulm.bumc.bu.edu/cgi-bin/siegeDB/siege_html/compsearchgraph.cgi?{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pulm.bumc.bu.edu/cgi-bin/siegeDB/siege_html/compsearchgraph.cgi?{content}",
+  "revision": 0
+}

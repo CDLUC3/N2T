@@ -1,0 +1,27 @@
+{
+  "id": "ols/biomodels.kisao",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/kisao/terms?short_form={content}"
+  },
+  "type": "scheme",
+  "name": "KiSAO through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100757",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/kisao/terms?short_form=${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/kisao/terms?short_form={content}",
+  "description": "The Kinetic Simulation Algorithm Ontology (KiSAO) is an ontology that describes simulation algorithms and methods used for biological kinetic models, and the relationships between them. This provides a means to unambiguously refer to simulation algorithms when describing a simulation experiment.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Kinetic Simulation Algorithm Ontology",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "KISAO_0000057",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/kisao/terms?short_form=KISAO_0000057",
+  "pattern": "^KISAO_\\d+$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/kisao",
+  "revision": 0
+}

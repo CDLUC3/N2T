@@ -1,0 +1,9 @@
+{
+  "id": "nursa",
+  "target": {
+    "DEFAULT": "http://www.nursa.org/molecule.cfm?molType=[?molecule_type]&molId={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.nursa.org/molecule.cfm?molType=[?molecule_type]&molId={content}",
+  "revision": 0
+}

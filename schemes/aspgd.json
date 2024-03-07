@@ -1,0 +1,9 @@
+{
+  "id": "aspgd",
+  "target": {
+    "DEFAULT": "http://www.aspergillusgenome.org/cgi-bin/locus.pl?locus=[?id]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.aspergillusgenome.org/cgi-bin/locus.pl?locus=[?id]",
+  "revision": 0
+}

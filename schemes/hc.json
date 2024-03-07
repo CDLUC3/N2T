@@ -1,0 +1,9 @@
+{
+  "id": "hc",
+  "target": {
+    "DEFAULT": "http://www.mesquiteproject.org/ontology/Habronattus/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.mesquiteproject.org/ontology/Habronattus/{content}.html",
+  "revision": 0
+}

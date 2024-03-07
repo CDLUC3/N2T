@@ -1,0 +1,27 @@
+{
+  "id": "vario",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/VARIO/VariO:{content}"
+  },
+  "type": "scheme",
+  "name": "VariO through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100566",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/VARIO/VariO:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/VARIO/VariO:{content}",
+  "description": "The Variation Ontology (VariO) is an ontology for the standardized, systematic description of effects, consequences and mechanisms of variations. It describes the effects of variations at the DNA, RNA and/or protein level.",
+  "subject": "ontology; DNA; protein",
+  "location": "USA",
+  "synonym": "Variation Ontology",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 1,
+  "test": "0294",
+  "probe": "http://purl.bioontology.org/ontology/VARIO/VariO:0294",
+  "pattern": "^VariO:\\d+$",
+  "state": "97:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/VARIO",
+  "revision": 0
+}

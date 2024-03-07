@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/pubmed",
+  "target": {},
+  "type": "synonym",
+  "for": "pubmed",
+  "revision": 0
+}

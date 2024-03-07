@@ -1,0 +1,9 @@
+{
+  "id": "cancergenes",
+  "target": {
+    "DEFAULT": "http://cbio.mskcc.org/Public/products/human_mapped/Mapback_html/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://cbio.mskcc.org/Public/products/human_mapped/Mapback_html/{content}.html",
+  "revision": 0
+}

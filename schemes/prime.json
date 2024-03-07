@@ -1,0 +1,9 @@
+{
+  "id": "prime",
+  "target": {
+    "DEFAULT": "http://prime.ontology.ims.u-tokyo.ac.jp:8081/php/DbDispProtein.php?proteinID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://prime.ontology.ims.u-tokyo.ac.jp:8081/php/DbDispProtein.php?proteinID={content}",
+  "revision": 0
+}

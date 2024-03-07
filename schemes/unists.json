@@ -1,0 +1,27 @@
+{
+  "id": "unists",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/genome/sts/sts.cgi?uid={content}"
+  },
+  "type": "scheme",
+  "name": "UniSTS at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100207",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/genome/sts/sts.cgi?uid=${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/genome/sts/sts.cgi?uid={content}",
+  "description": "UniSTS is a comprehensive database of sequence tagged sites (STSs) derived from STS-based maps and other experiments. STSs are defined by PCR primer pairs and are associated with additional information such as genomic position, genes, and sequences.",
+  "subject": "sequence; gene",
+  "location": "USA",
+  "synonym": "dbSTS",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "456789",
+  "probe": "https://www.ncbi.nlm.nih.gov/genome/sts/sts.cgi?uid=456789",
+  "pattern": "^\\d+$",
+  "state": "96:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/sites/entrez?db=unists",
+  "revision": 0
+}

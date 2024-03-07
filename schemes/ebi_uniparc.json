@@ -1,0 +1,27 @@
+{
+  "id": "ebi/uniparc",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/cgi-bin/dbfetch?db=uniparc&id={content}"
+  },
+  "type": "scheme",
+  "name": "UniProt Archive (UniParc)",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100069",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/cgi-bin/dbfetch?db=uniparc&id=${ac}",
+  "redirect": "https://www.ebi.ac.uk/cgi-bin/dbfetch?db=uniparc&id={content}",
+  "description": "The UniProt Archive (UniParc) is a  database containing non-redundant protein sequence information from many sources. Each unique sequence is given a stable and unique identifier (UPI) making it possible to identify the same protein from different source databases.",
+  "subject": "protein",
+  "location": "UK",
+  "synonym": "TCDB",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "UPI000000000A",
+  "probe": "https://www.ebi.ac.uk/cgi-bin/dbfetch?db=uniparc&id=UPI000000000A",
+  "pattern": "^UPI[A-F0-9]{10}$",
+  "state": "70:Down",
+  "more": "https://www.ebi.ac.uk/uniparc/",
+  "revision": 0
+}

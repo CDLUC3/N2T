@@ -1,0 +1,27 @@
+{
+  "id": "z019/pubmed",
+  "target": {
+    "DEFAULT": "http://linkedlifedata.com/resource/pubmed/id/{content}"
+  },
+  "type": "scheme",
+  "name": "PubMed through Linkedlife data",
+  "alias": "pmid",
+  "provider": "z019",
+  "provider_id": "MIR:00100745",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://linkedlifedata.com/resource/pubmed/id/${ac}",
+  "redirect": "http://linkedlifedata.com/resource/pubmed/id/{content}",
+  "description": "PubMed is a service of the U.S. National Library of Medicine that includes citations from MEDLINE and other life science journals for biomedical articles back to the 1950s.",
+  "subject": "schema.org; bibliography",
+  "location": "Bulgaria",
+  "synonym": "KEGG",
+  "institution": "Linkedlifedata, Ontotext, Sofia",
+  "prefixed": 0,
+  "test": "23735196",
+  "probe": "http://linkedlifedata.com/resource/pubmed/id/23735196",
+  "pattern": "^\\d+$",
+  "state": "86:Up",
+  "more": "http://linkedlifedata.com/",
+  "revision": 0
+}

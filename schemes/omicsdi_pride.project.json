@@ -1,0 +1,27 @@
+{
+  "id": "omicsdi/pride.project",
+  "target": {
+    "DEFAULT": "https://www.omicsdi.org/dataset/pride/{content}"
+  },
+  "type": "scheme",
+  "name": "PRIDE Project through OmicsDI",
+  "alias": null,
+  "provider": "omicsdi",
+  "provider_id": "MIR:00100858",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.omicsdi.org/dataset/pride/${ac}",
+  "redirect": "https://www.omicsdi.org/dataset/pride/{content}",
+  "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository that provides protein and peptide identifications together with supporting evidence. This collection references projects.",
+  "subject": "protein",
+  "location": "UK",
+  "synonym": "EGA Dataset",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "PXD000440",
+  "probe": "https://www.omicsdi.org/dataset/pride/PXD000440",
+  "pattern": "^P(X|R)D\\d{6}$",
+  "state": "0:Unknown",
+  "more": "https://www.omicsdi.org/",
+  "revision": 0
+}

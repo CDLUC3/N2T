@@ -1,0 +1,9 @@
+{
+  "id": "gxd",
+  "target": {
+    "DEFAULT": "http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current/?name={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current/?name={content}",
+  "revision": 0
+}

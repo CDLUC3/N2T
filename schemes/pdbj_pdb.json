@@ -1,0 +1,27 @@
+{
+  "id": "pdbj/pdb",
+  "target": {
+    "DEFAULT": "https://pdbj.org/mine/summary/{content}"
+  },
+  "type": "scheme",
+  "name": "Protein Data Bank Japan (PDBj)",
+  "alias": null,
+  "provider": "pdbj",
+  "provider_id": "MIR:00100165",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://pdbj.org/mine/summary/${ac}",
+  "redirect": "https://pdbj.org/mine/summary/{content}",
+  "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules.",
+  "subject": "protein; structure",
+  "location": "Japan",
+  "synonym": "PDB",
+  "institution": "Institute for Protein Research, Osaka University",
+  "prefixed": 0,
+  "test": "2gc4",
+  "probe": "https://pdbj.org/mine/summary/2gc4",
+  "pattern": "^[0-9][A-Za-z0-9]{3}$",
+  "state": "93:Unknown",
+  "more": "http://www.pdbj.org/",
+  "revision": 0
+}

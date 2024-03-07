@@ -1,0 +1,27 @@
+{
+  "id": "cldb",
+  "target": {
+    "DEFAULT": "http://bioinformatics.hsanmartino.it/hypercldb/{content}.html"
+  },
+  "type": "scheme",
+  "name": "CLDB at Genova",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100508",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://bioinformatics.hsanmartino.it/hypercldb/${ac}.html",
+  "redirect": "http://bioinformatics.hsanmartino.it/hypercldb/{content}.html",
+  "description": "The Cell Line Data Base (CLDB) is a reference information source for human and animal cell lines. It provides the characteristics of the cell lines and their availability through  distributors, allowing cell line requests to be made from collections and laboratories.",
+  "subject": "mammalian; strain; catalogue",
+  "location": "Italy",
+  "synonym": "Cell Line Data Base",
+  "institution": "Bioinformatics, Cell Bank, National Cancer Research Institute, Genova",
+  "prefixed": 0,
+  "test": "cl3603",
+  "probe": "http://bioinformatics.hsanmartino.it/hypercldb/cl3603.html",
+  "pattern": "^(cl|tum)\\d+$",
+  "state": "89:Up",
+  "more": "http://bioinformatics.hsanmartino.it/hypercldb/indexes.html",
+  "revision": 0
+}

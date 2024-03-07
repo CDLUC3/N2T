@@ -1,0 +1,7 @@
+{
+  "id": "rcsb/pdb",
+  "target": {},
+  "type": "synonym",
+  "for": "pdb",
+  "revision": 0
+}

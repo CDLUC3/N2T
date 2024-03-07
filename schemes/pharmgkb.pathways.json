@@ -1,0 +1,27 @@
+{
+  "id": "pharmgkb.pathways",
+  "target": {
+    "DEFAULT": "http://www.pharmgkb.org/pathway/{content}"
+  },
+  "type": "scheme",
+  "name": "PharmGKB at Stanford",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100120",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.pharmgkb.org/pathway/${ac}",
+  "redirect": "http://www.pharmgkb.org/pathway/{content}",
+  "description": "The PharmGKB database is a central repository for genetic, genomic, molecular and cellular phenotype data and clinical information about people who have participated in pharmacogenomics research studies. The data includes, but is not limited to, clinical and basic pharmacokinetic and pharmacogenomic research in the cardiovascular, pulmonary, cancer, pathways, metabolic and transporter domains.  PharmGKB Pathways are drug centric, gene based, interactive pathways which focus on candidate genes and gene groups and associated genotype and phenotype data of relevance for pharmacogenetic and pharmacogenomic studies.",
+  "subject": "pathway; pharmacogenomics",
+  "location": "USA",
+  "synonym": "ATC",
+  "institution": "Department of Genetics, School of Medicine, Stanford University, Stanford, California",
+  "prefixed": 0,
+  "test": "PA146123006",
+  "probe": "http://www.pharmgkb.org/pathway/PA146123006",
+  "pattern": "^PA\\d+$",
+  "state": "68:Down",
+  "more": "http://www.pharmgkb.org/",
+  "revision": 0
+}

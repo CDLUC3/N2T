@@ -1,0 +1,27 @@
+{
+  "id": "z041/orphanet",
+  "target": {
+    "DEFAULT": "http://orphanet.bio2rdf.org/describe/?url=http://bio2rdf.org/orphanet:{content}"
+  },
+  "type": "scheme",
+  "name": "Bio2RDF",
+  "alias": null,
+  "provider": "z041",
+  "provider_id": "MIR:00100701",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://orphanet.bio2rdf.org/describe/?url=http://bio2rdf.org/orphanet:${ac}",
+  "redirect": "http://orphanet.bio2rdf.org/describe/?url=http://bio2rdf.org/orphanet:{content}",
+  "description": "Orphanet is a reference portal for information on rare diseases and orphan drugs. It&#x2019;s aim is to help improve the diagnosis, care and treatment of patients with rare diseases.",
+  "subject": "human; disease; drug",
+  "location": null,
+  "synonym": "Orpha",
+  "institution": "Bio2RDF.org",
+  "prefixed": 0,
+  "test": "85163",
+  "probe": "http://orphanet.bio2rdf.org/describe/?url=http://bio2rdf.org/orphanet:85163",
+  "pattern": "^\\d+$",
+  "state": "52:Down",
+  "more": "http://orphanet.bio2rdf.org/fct",
+  "revision": 0
+}

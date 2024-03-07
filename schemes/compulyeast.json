@@ -1,0 +1,27 @@
+{
+  "id": "compulyeast",
+  "target": {
+    "DEFAULT": "http://compluyeast2dpage.dacya.ucm.es/cgi-bin/2d/2d.cgi?ac={content}"
+  },
+  "type": "scheme",
+  "name": "Compluyeast database at Universidad Complutense Madrid",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100257",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://compluyeast2dpage.dacya.ucm.es/cgi-bin/2d/2d.cgi?ac=${ac}",
+  "redirect": "http://compluyeast2dpage.dacya.ucm.es/cgi-bin/2d/2d.cgi?ac={content}",
+  "description": "Compluyeast-2D-DB is a two-dimensional polyacrylamide gel electrophoresis federated database. This collection references a subset of Uniprot, and contains general information about the protein record.",
+  "subject": "protein",
+  "location": "Spain",
+  "synonym": "Compluyeast-2D-DB",
+  "institution": "Department Microbiology II, Universidad Complutense Madrid, Madrid",
+  "prefixed": 0,
+  "test": "O08709",
+  "probe": "http://compluyeast2dpage.dacya.ucm.es/cgi-bin/2d/2d.cgi?ac=O08709",
+  "pattern": "^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])$",
+  "state": "60:Down",
+  "more": "http://compluyeast2dpage.dacya.ucm.es/",
+  "revision": 0
+}

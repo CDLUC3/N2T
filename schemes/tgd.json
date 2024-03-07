@@ -1,0 +1,27 @@
+{
+  "id": "tgd",
+  "target": {
+    "DEFAULT": "http://ciliate.org/index.php/feature/details/{content}"
+  },
+  "type": "scheme",
+  "name": "TGD at Stanford University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100396",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://ciliate.org/index.php/feature/details/${ac}",
+  "redirect": "http://ciliate.org/index.php/feature/details/{content}",
+  "description": "The Tetrahymena Genome Database (TGD) Wiki is a database of information about the Tetrahymena thermophila genome sequence. It provides information curated from the literature about each published gene, including a standardized gene name, a link to the genomic locus, gene product annotations utilizing the Gene Ontology, and links to published literature.",
+  "subject": "sequence; gene; genome",
+  "location": "USA",
+  "synonym": "TGD",
+  "institution": "Department of Genetics, School of Medicine, Stanford University, Stanford, California",
+  "prefixed": 0,
+  "test": "TTHERM_00648910",
+  "probe": "http://ciliate.org/index.php/feature/details/TTHERM_00648910",
+  "pattern": "^TTHERM\\_\\d+$",
+  "state": "72:Down",
+  "more": "http://ciliate.org/index.php/",
+  "revision": 0
+}

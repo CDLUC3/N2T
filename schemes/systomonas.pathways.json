@@ -1,0 +1,9 @@
+{
+  "id": "systomonas.pathways",
+  "target": {
+    "DEFAULT": "http://www.systomonas.de/pathway.php?pa_acc={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.systomonas.de/pathway.php?pa_acc={content}",
+  "revision": 0
+}

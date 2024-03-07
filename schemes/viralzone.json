@@ -1,0 +1,27 @@
+{
+  "id": "viralzone",
+  "target": {
+    "DEFAULT": "http://viralzone.expasy.org/all_by_protein/{content}.html"
+  },
+  "type": "scheme",
+  "name": "ViralZone at SIB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100583",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://viralzone.expasy.org/all_by_protein/${ac}.html",
+  "redirect": "http://viralzone.expasy.org/all_by_protein/{content}.html",
+  "description": "ViralZone is a resource bridging textbook knowledge with genomic and proteomic sequences. It provides fact sheets on all known virus families/genera with easy access to sequence data. A selection of reference strains (RefStrain) provides annotated standards to circumvent the exponential increase of virus sequences. Moreover ViralZone offers a complete set of detailed and accurate virion pictures.",
+  "subject": "image library; viral",
+  "location": "Switzerland",
+  "synonym": "Viral Bioinformatics Resource Center",
+  "institution": "Swiss Institute of Bioinformatics, Centre M&#xE9;dical Universitaire, Geneva",
+  "prefixed": 0,
+  "test": "992",
+  "probe": "http://viralzone.expasy.org/all_by_protein/992.html",
+  "pattern": "^\\d+$",
+  "state": "61:Down",
+  "more": "http://www.expasy.org/viralzone/",
+  "revision": 0
+}

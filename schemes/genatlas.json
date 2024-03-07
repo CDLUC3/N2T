@@ -1,0 +1,27 @@
+{
+  "id": "genatlas",
+  "target": {
+    "DEFAULT": "http://genatlas.medecine.univ-paris5.fr/fiche.php?symbol={content}"
+  },
+  "type": "scheme",
+  "name": "Genatlas at Paris Descartes University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100267",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://genatlas.medecine.univ-paris5.fr/fiche.php?symbol=${ac}",
+  "redirect": "http://genatlas.medecine.univ-paris5.fr/fiche.php?symbol={content}",
+  "description": "GenAtlas is a database containing information on human genes, markers and phenotypes.",
+  "subject": "gene; disorder; human",
+  "location": "France",
+  "synonym": "euHCVDB",
+  "institution": "Paris Descartes University, Paris",
+  "prefixed": 0,
+  "test": "HBB",
+  "probe": "http://genatlas.medecine.univ-paris5.fr/fiche.php?symbol=HBB",
+  "pattern": "^\\w+$",
+  "state": "100:Up",
+  "more": "http://genatlas.medecine.univ-paris5.fr/",
+  "revision": 0
+}

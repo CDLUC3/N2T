@@ -1,0 +1,27 @@
+{
+  "id": "refseq",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/{content}"
+  },
+  "type": "scheme",
+  "name": "The NCBI Reference Sequence database",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100067",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/protein/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/protein/{content}",
+  "description": "The Reference Sequence (RefSeq) collection aims to provide a comprehensive, integrated, non-redundant set of sequences, including genomic DNA, transcript (RNA), and protein products.",
+  "subject": "mammalian; protein; annotation; sequence",
+  "location": "USA",
+  "synonym": "MGI; MGD; Mouse Genome Informatics",
+  "institution": "NCBI, NIH, Bethesda, Maryland",
+  "prefixed": 0,
+  "test": "NP_012345",
+  "probe": "https://www.ncbi.nlm.nih.gov/protein/NP_012345",
+  "pattern": "^((AC|AP|NC|NG|NM|NP|NR|NT|NW|XM|XP|XR|YP|ZP)_\\d+|(NZ\\_[A-Z]{4}\\d+))(\\.\\d+)?$",
+  "state": "76:Down",
+  "more": "https://www.ncbi.nlm.nih.gov/projects/RefSeq/",
+  "revision": 0
+}

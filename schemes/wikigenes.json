@@ -1,0 +1,27 @@
+{
+  "id": "wikigenes",
+  "target": {
+    "DEFAULT": "http://www.wikigenes.org/e/gene/e/{content}.html"
+  },
+  "type": "scheme",
+  "name": "WikiGenes at Massachusetts Institute of Technology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100567",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.wikigenes.org/e/gene/e/${ac}.html",
+  "redirect": "http://www.wikigenes.org/e/gene/e/{content}.html",
+  "description": "WikiGenes is a collaborative knowledge resource for the life sciences, which is based on the general wiki idea but employs specifically developed technology to serve as a rigorous scientific tool. The rationale behind WikiGenes is to provide a platform for the scientific community to collect, communicate and evaluate knowledge about genes, chemicals, diseases and other biomedical concepts in a bottom-up process.",
+  "subject": "interaction; disease; gene",
+  "location": "USA",
+  "synonym": "Side Effect Resource",
+  "institution": "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology, Cambridge, Massachusetts",
+  "prefixed": 0,
+  "test": "3771877",
+  "probe": "http://www.wikigenes.org/e/gene/e/3771877.html",
+  "pattern": "^\\d+$",
+  "state": "81:Down",
+  "more": "http://www.wikigenes.org/",
+  "revision": 0
+}

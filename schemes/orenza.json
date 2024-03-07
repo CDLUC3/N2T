@@ -1,0 +1,9 @@
+{
+  "id": "orenza",
+  "target": {
+    "DEFAULT": "http://www.orenza.u-psud.fr/query_by_ec.php?EC_number=EC%20{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.orenza.u-psud.fr/query_by_ec.php?EC_number=EC%20{content}",
+  "revision": 0
+}

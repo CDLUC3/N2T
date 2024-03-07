@@ -1,0 +1,27 @@
+{
+  "id": "omicsdi/metabolights",
+  "target": {
+    "DEFAULT": "https://www.omicsdi.org/dataset/metabolights_dataset/{content}"
+  },
+  "type": "scheme",
+  "name": "MataboLights through OmicsDI",
+  "alias": null,
+  "provider": "omicsdi",
+  "provider_id": "MIR:00100853",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.omicsdi.org/dataset/metabolights_dataset/${ac}",
+  "redirect": "https://www.omicsdi.org/dataset/metabolights_dataset/{content}",
+  "description": "MetaboLights is a database for Metabolomics experiments and derived information. The database is cross-species, cross-technique and covers metabolite structures and their reference spectra as well as their biological roles, locations and concentrations, and experimental data from metabolic experiments. This collection references individual metabolomics studies.",
+  "subject": "metabolite",
+  "location": "UK",
+  "synonym": "Gene Expression Atlas Experiment",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "MTBLS1",
+  "probe": "https://www.omicsdi.org/dataset/metabolights_dataset/MTBLS1",
+  "pattern": "^MTBLS\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.omicsdi.org/",
+  "revision": 0
+}

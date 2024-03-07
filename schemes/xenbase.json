@@ -1,0 +1,27 @@
+{
+  "id": "xenbase",
+  "target": {
+    "DEFAULT": "http://www.xenbase.org/gene/showgene.do?method=displayGeneSummary&geneId={content}"
+  },
+  "type": "scheme",
+  "name": "Xenbase at University of Calgary",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100232",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.xenbase.org/gene/showgene.do?method=displayGeneSummary&geneId=${ac}",
+  "redirect": "http://www.xenbase.org/gene/showgene.do?method=displayGeneSummary&geneId={content}",
+  "description": "Xenbase is the model organism database for Xenopus laevis and X. (Silurana) tropicalis. It contains genomic, development data and community information for Xenopus research. it includes gene expression patterns that incorporates image data from the literature, large scale screens and community submissions.",
+  "subject": "genome; expression",
+  "location": "Canada",
+  "synonym": "SGN",
+  "institution": "Department of Biological Sciences, University of Calgary, Alberta",
+  "prefixed": 0,
+  "test": "922462",
+  "probe": "http://www.xenbase.org/gene/showgene.do?method=displayGeneSummary&geneId=922462",
+  "pattern": "^(XB-GENE-)?\\d+$",
+  "state": "98:Up",
+  "more": "http://www.xenbase.org/",
+  "revision": 0
+}

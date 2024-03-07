@@ -1,0 +1,27 @@
+{
+  "id": "ubio.namebank",
+  "target": {
+    "DEFAULT": "http://www.ubio.org/browser/details.php?namebankID={content}"
+  },
+  "type": "scheme",
+  "name": "uBio NameBank at The Marine Biological Laboratory",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100433",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.ubio.org/browser/details.php?namebankID=${ac}",
+  "redirect": "http://www.ubio.org/browser/details.php?namebankID={content}",
+  "description": "NameBank is a \"biological name server\" focused on storing names and objectively-derived nomenclatural attributes. NameBank is a repository for all recorded names including scientific names, vernacular (or common names), misspelled names, as well as ad-hoc nomenclatural labels that may have limited context.",
+  "subject": "taxonomy; controlled vocabulary",
+  "location": "USA",
+  "synonym": "Universal Biological Indexer and Organizer (NameBank)",
+  "institution": "Marine Biological Laboratory, Woods Hole, Massachusetts",
+  "prefixed": 0,
+  "test": "2555646",
+  "probe": "http://www.ubio.org/browser/details.php?namebankID=2555646",
+  "pattern": "^\\d+$",
+  "state": "87:Up",
+  "more": "http://www.ubio.org",
+  "revision": 0
+}

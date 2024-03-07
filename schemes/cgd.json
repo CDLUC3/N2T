@@ -1,0 +1,27 @@
+{
+  "id": "cgd",
+  "target": {
+    "DEFAULT": "http://www.candidagenome.org/cgi-bin/locus.pl?dbid={content}"
+  },
+  "type": "scheme",
+  "name": "Candida Genome Database at Stanford University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100189",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.candidagenome.org/cgi-bin/locus.pl?dbid=${ac}",
+  "redirect": "http://www.candidagenome.org/cgi-bin/locus.pl?dbid={content}",
+  "description": "The Candida Genome Database (CGD) provides access to genomic sequence data and manually curated functional information about genes and proteins of the human pathogen Candida albicans. It collects gene names and aliases, and assigns gene ontology terms to describe the molecular function, biological process, and subcellular localization of gene products.",
+  "subject": "nucleotide; eukaryotic; genome",
+  "location": "USA",
+  "synonym": "CGD",
+  "institution": "Stanford University,",
+  "prefixed": 0,
+  "test": "CAL0003079",
+  "probe": "http://www.candidagenome.org/cgi-bin/locus.pl?dbid=CAL0003079",
+  "pattern": "^CAL\\d{7}$",
+  "state": "100:Up",
+  "more": "http://www.candidagenome.org/",
+  "revision": 0
+}

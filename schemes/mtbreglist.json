@@ -1,0 +1,9 @@
+{
+  "id": "mtbreglist",
+  "target": {
+    "DEFAULT": "http://pages.usherbrooke.ca/gaudreau/MtbRegList/www/genome_ir_manip.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pages.usherbrooke.ca/gaudreau/MtbRegList/www/genome_ir_manip.php?id={content}",
+  "revision": 0
+}

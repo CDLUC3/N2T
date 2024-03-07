@@ -1,0 +1,27 @@
+{
+  "id": "z068/insdc.cds",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/{content}"
+  },
+  "type": "scheme",
+  "name": "INSDC CDS through ENA",
+  "alias": null,
+  "provider": "z068",
+  "provider_id": "MIR:00100807",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ena/data/view/${ac}",
+  "redirect": "https://www.ebi.ac.uk/ena/data/view/{content}",
+  "description": "The coding sequence or protein identifiers as maintained in INSDC.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Ontology for miRNA Target",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "AAA35559",
+  "probe": "https://www.ebi.ac.uk/ena/data/view/AAA35559",
+  "pattern": "^([A-Z]\\d{5}|[A-Z]{2}\\d{6}|[A-Z]{4}\\d{8}|[A-J][A-Z]{2}\\d{5})(\\.\\d+)?$",
+  "state": "100:Probably up",
+  "more": "https://www.ebi.ac.uk/ena",
+  "revision": 0
+}

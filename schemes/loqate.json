@@ -1,0 +1,9 @@
+{
+  "id": "loqate",
+  "target": {
+    "DEFAULT": "http://www.weizmann.ac.il/molgen/loqate/gene/view/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.weizmann.ac.il/molgen/loqate/gene/view/{content}",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "dali",
+  "target": {
+    "DEFAULT": "http://ekhidna.biocenter.helsinki.fi/dali_server/results/{content}/index.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ekhidna.biocenter.helsinki.fi/dali_server/results/{content}/index.html",
+  "revision": 0
+}

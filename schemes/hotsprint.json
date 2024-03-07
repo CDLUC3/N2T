@@ -1,0 +1,9 @@
+{
+  "id": "hotsprint",
+  "target": {
+    "DEFAULT": "http://prism.ccbb.ku.edu.tr/hotsprint/result.php?queryId={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://prism.ccbb.ku.edu.tr/hotsprint/result.php?queryId={content}",
+  "revision": 0
+}

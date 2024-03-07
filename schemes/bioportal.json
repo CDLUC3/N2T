@@ -1,0 +1,27 @@
+{
+  "id": "bioportal",
+  "target": {
+    "DEFAULT": "http://bioportal.bioontology.org/ontologies/{content}"
+  },
+  "type": "scheme",
+  "name": "BioPortal at National Center for Biomedical Ontology",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100244",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://bioportal.bioontology.org/ontologies/${ac}",
+  "redirect": "http://bioportal.bioontology.org/ontologies/{content}",
+  "description": "BioPortal is an open repository of biomedical ontologies that provides access via Web services and Web browsers to ontologies developed in OWL, RDF, OBO format and Prot&#xE9;g&#xE9; frames. BioPortal functionality includes the ability to browse, search and visualize ontologies.",
+  "subject": "ontology; registry",
+  "location": "USA",
+  "synonym": "SGN",
+  "institution": "National Center for Biomedical Ontology, Stanford University",
+  "prefixed": 0,
+  "test": "1046",
+  "probe": "http://bioportal.bioontology.org/ontologies/1046",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://bioportal.bioontology.org/",
+  "revision": 0
+}

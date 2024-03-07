@@ -1,0 +1,27 @@
+{
+  "id": "bioentitylink/mgi",
+  "target": {
+    "DEFAULT": "https://bioentity.link/#/lexicon/public/MGI:{content}"
+  },
+  "type": "scheme",
+  "name": "MGD through BioEntity Link",
+  "alias": null,
+  "provider": "bioentitylink",
+  "provider_id": "MIR:00100894",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://bioentity.link/#/lexicon/public/MGI:${ac}",
+  "redirect": "https://bioentity.link/#/lexicon/public/MGI:{content}",
+  "description": "The Mouse Genome Database (MGD) project includes data on gene characterization, nomenclature, mapping, gene homologies among mammals, sequence links, phenotypes, allelic variants and mutants, and strain data.",
+  "subject": "expression; sequence; phenotype",
+  "location": "USA",
+  "synonym": "MGI; MGD; Mouse Genome Informatics",
+  "institution": "InSilico Inc, in Eugene, Oregon",
+  "prefixed": 1,
+  "test": "2442292",
+  "probe": "https://bioentity.link/#/lexicon/public/MGI:2442292",
+  "pattern": "^MGI:\\d+$",
+  "state": "0:Unknown",
+  "more": "https://bioentity.link/",
+  "revision": 0
+}

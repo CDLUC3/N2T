@@ -1,0 +1,27 @@
+{
+  "id": "bdgp.est",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/nucest/{content}"
+  },
+  "type": "scheme",
+  "name": "BDGP EST at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100366",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/nucest/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/nucest/{content}",
+  "description": "The BDGP EST database collects the expressed sequence tags (ESTs) derived from a variety of tissues and developmental stages for Drosophila melanogaster. All BDGP ESTs are available at dbEST (NCBI).",
+  "subject": "expression; eukaryotic",
+  "location": "USA",
+  "synonym": "Berkeley Drosophila Genome Project EST",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "EY223054.1",
+  "probe": "https://www.ncbi.nlm.nih.gov/nucest/EY223054.1",
+  "pattern": "^\\w+(\\.)?(\\d+)?$",
+  "state": "100:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/dbEST/index.html",
+  "revision": 0
+}

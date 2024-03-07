@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/medgen",
+  "target": {},
+  "type": "synonym",
+  "for": "medgen",
+  "revision": 0
+}

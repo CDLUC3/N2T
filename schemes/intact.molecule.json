@@ -1,0 +1,27 @@
+{
+  "id": "intact.molecule",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/intact/molecule/{content}"
+  },
+  "type": "scheme",
+  "name": "IntAct Molecule at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100550",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/intact/molecule/${ac}",
+  "redirect": "https://www.ebi.ac.uk/intact/molecule/{content}",
+  "description": "IntAct provides a freely available, open source database system and analysis tools for protein interaction data. This collection references interactor molecules.",
+  "subject": "interaction; protein",
+  "location": "UK",
+  "synonym": "Autism Database",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "EBI-366083",
+  "probe": "https://www.ebi.ac.uk/intact/molecule/EBI-366083",
+  "pattern": "^EBI\\-[0-9]+$",
+  "state": "39:Down",
+  "more": "https://www.ebi.ac.uk/intact/",
+  "revision": 0
+}

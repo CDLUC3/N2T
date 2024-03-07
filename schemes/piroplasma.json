@@ -1,0 +1,27 @@
+{
+  "id": "piroplasma",
+  "target": {
+    "DEFAULT": "http://piroplasmadb.org/piro/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id={content}"
+  },
+  "type": "scheme",
+  "name": "PiroplasmaBD at EuPathDB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100448",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://piroplasmadb.org/piro/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id=${ac}",
+  "redirect": "http://piroplasmadb.org/piro/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id={content}",
+  "description": "PiroplasmaDB is one of the databases that can be accessed through the EuPathDB (http://EuPathDB.org; formerly ApiDB) portal, covering eukaryotic pathogens of the genera Cryptosporidium, Giardia, Leishmania, Neospora, Plasmodium, Toxoplasma, Trichomonas and Trypanosoma. While each of these groups is supported by a taxon-specific database built upon the same infrastructure, the EuPathDB portal offers an entry point to all these resources, and the opportunity to leverage orthology for searches across genera.",
+  "subject": "genome; eukaryotic",
+  "location": "USA",
+  "synonym": "BioSDe; BioSdn",
+  "institution": "Center for Tropical &amp; Emerging Global Diseases, University of Georgia, Georgia",
+  "prefixed": 0,
+  "test": "TA14985",
+  "probe": "http://piroplasmadb.org/piro/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id=TA14985",
+  "pattern": "^TA\\d+$",
+  "state": "59:Down",
+  "more": "http://piroplasmadb.org/",
+  "revision": 0
+}

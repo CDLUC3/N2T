@@ -1,0 +1,9 @@
+{
+  "id": "utrome",
+  "target": {
+    "DEFAULT": "http://128.122.61.5/cgi-bin/UTRome/utrome.cgi?action=gene&geneid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://128.122.61.5/cgi-bin/UTRome/utrome.cgi?action=gene&geneid={content}",
+  "revision": 0
+}

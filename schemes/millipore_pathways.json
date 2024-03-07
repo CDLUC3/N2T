@@ -1,0 +1,9 @@
+{
+  "id": "millipore_pathways",
+  "target": {
+    "DEFAULT": "http://www.millipore.com/pathways/pathviewer.do?searchTerms=&diseaseAreaIds=&pathwayId={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.millipore.com/pathways/pathviewer.do?searchTerms=&diseaseAreaIds=&pathwayId={content}",
+  "revision": 0
+}

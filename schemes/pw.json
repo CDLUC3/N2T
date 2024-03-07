@@ -1,0 +1,27 @@
+{
+  "id": "pw",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/PW/PW:{content}"
+  },
+  "type": "scheme",
+  "name": "Pathway Ontology through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100311",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/PW/PW:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/PW/PW:{content}",
+  "description": "The Pathway Ontology captures information on biological networks, the relationships between netweorks and the alterations or malfunctioning of such networks within a hierarchical structure. The five main branches of the ontology are: classic metabolic pathways, regulatory, signaling, drug, and disease pathwaysfor complex human conditions.",
+  "subject": "pathway; mammalian; ontology; human",
+  "location": "USA",
+  "synonym": "National Academic Research and Collaborations Information System",
+  "institution": "National Center for Biomedical Ontology, Stanford, California",
+  "prefixed": 1,
+  "test": "0000208",
+  "probe": "http://purl.bioontology.org/ontology/PW/PW:0000208",
+  "pattern": "^PW:\\d{7}$",
+  "state": "97:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/PW",
+  "revision": 0
+}

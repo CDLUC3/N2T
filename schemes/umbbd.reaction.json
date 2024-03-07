@@ -1,0 +1,27 @@
+{
+  "id": "umbbd.reaction",
+  "target": {
+    "DEFAULT": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=r&reacID={content}"
+  },
+  "type": "scheme",
+  "name": "Biocatalysis/Biodegradation Database Mirror (Reaction) at ETH Zurich",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100416",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=r&reacID=${ac}",
+  "redirect": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=r&reacID={content}",
+  "description": "The University of Minnesota Biocatalysis/Biodegradation Database (UM-BBD) contains information on microbial biocatalytic reactions and biodegradation pathways for primarily xenobiotic, chemical compounds. The goal of the UM-BBD is to provide information on microbial enzyme-catalyzed reactions that are important for biotechnology. This collection refers to reaction information.",
+  "subject": "reaction; microbial",
+  "location": "Switzerland",
+  "synonym": "University of Minnesota Biocatalysis/Biodegradation Database (Reaction)",
+  "institution": "ETH, Zurich",
+  "prefixed": 0,
+  "test": "r0001",
+  "probe": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=r&reacID=r0001",
+  "pattern": "^r\\d+$",
+  "state": "100:Up",
+  "more": "http://umbbd.ethz.ch/",
+  "revision": 0
+}

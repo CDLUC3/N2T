@@ -1,0 +1,9 @@
+{
+  "id": "geneloc",
+  "target": {
+    "DEFAULT": "http://genecards.weizmann.ac.il/geneloc-bin/marker_cards.pl?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://genecards.weizmann.ac.il/geneloc-bin/marker_cards.pl?id={content}",
+  "revision": 0
+}

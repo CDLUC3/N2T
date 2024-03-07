@@ -1,0 +1,27 @@
+{
+  "id": "z021/pdb",
+  "target": {
+    "DEFAULT": "http://proteopedia.org/wiki/index.php/{content}"
+  },
+  "type": "scheme",
+  "name": "Proteopedia",
+  "alias": null,
+  "provider": "z021",
+  "provider_id": "MIR:00100096",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://proteopedia.org/wiki/index.php/${ac}",
+  "redirect": "http://proteopedia.org/wiki/index.php/{content}",
+  "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules.",
+  "subject": "protein; structure",
+  "location": "Israel",
+  "synonym": "PDB",
+  "institution": "Weizmann Institute of Science",
+  "prefixed": 0,
+  "test": "2gc4",
+  "probe": "http://proteopedia.org/wiki/index.php/2gc4",
+  "pattern": "^[0-9][A-Za-z0-9]{3}$",
+  "state": "100:Up",
+  "more": "http://www.proteopedia.org/",
+  "revision": 0
+}

@@ -1,0 +1,7 @@
+{
+  "id": "dsm",
+  "target": {},
+  "type": "commonspfx",
+  "redirect": "login needed",
+  "revision": 0
+}

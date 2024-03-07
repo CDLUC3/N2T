@@ -1,0 +1,27 @@
+{
+  "id": "orphanet.ordo",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/ordo/terms?short_form={content}"
+  },
+  "type": "scheme",
+  "name": "ORDO via OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100705",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/ordo/terms?short_form=${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/ordo/terms?short_form={content}",
+  "description": "The Orphanet Rare Disease ontology (ORDO) is a structured vocabulary for rare diseases, capturing relationships between diseases, genes and other relevant features which will form a useful resource for the computational analysis of rare diseases. It integrates a nosology (classification of rare diseases), relationships (gene-disease relations, epiemological data) and connections with other terminologies (MeSH, UMLS, MedDRA), databases (OMIM, UniProtKB, HGNC, ensembl, Reactome, IUPHAR, Geantlas) and classifications (ICD10).",
+  "subject": "ontology; disease",
+  "location": "UK",
+  "synonym": "ORDO",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "Orphanet_C023",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/ordo/terms?short_form=Orphanet_C023",
+  "pattern": "^Orphanet(_|:)C?\\d+$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/ordo",
+  "revision": 0
+}

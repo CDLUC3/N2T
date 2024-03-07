@@ -1,0 +1,27 @@
+{
+  "id": "z014/ec-code",
+  "target": {
+    "DEFAULT": "https://www.genome.jp/dbget-bin/www_bget?ec:{content}"
+  },
+  "type": "scheme",
+  "name": "KEGG Ligand Database for Enzyme Nomenclature",
+  "alias": "ec",
+  "provider": "z014",
+  "provider_id": "MIR:00100002",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://www.genome.jp/dbget-bin/www_bget?ec:${ac}",
+  "redirect": "https://www.genome.jp/dbget-bin/www_bget?ec:{content}",
+  "description": "The Enzyme Classification contains the recommendations of the Nomenclature Committee of the International Union of Biochemistry and Molecular Biology on the nomenclature and classification of enzyme-catalysed reactions.",
+  "subject": "enzyme; classification; protein; taxonomy",
+  "location": "Japan",
+  "synonym": "EC; Enzyme Classification; EC code",
+  "institution": "Kyoto University Bioinformatics Center",
+  "prefixed": 0,
+  "test": "1.1.1.1",
+  "probe": "https://www.genome.jp/dbget-bin/www_bget?ec:1.1.1.1",
+  "pattern": "^\\d+\\.-\\.-\\.-|\\d+\\.\\d+\\.-\\.-|\\d+\\.\\d+\\.\\d+\\.-|\\d+\\.\\d+\\.\\d+\\.(n)?\\d+$",
+  "state": "100:Up",
+  "more": "https://www.genome.jp/dbget-bin/www_bfind?enzyme",
+  "revision": 0
+}

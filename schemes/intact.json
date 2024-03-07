@@ -1,0 +1,27 @@
+{
+  "id": "intact",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/intact/interaction/{content}"
+  },
+  "type": "scheme",
+  "name": "IntAct at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100017",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/intact/interaction/${ac}",
+  "redirect": "https://www.ebi.ac.uk/intact/interaction/{content}",
+  "description": "IntAct provides a freely available, open source database system and analysis tools for protein interaction data.",
+  "subject": "protein; interaction",
+  "location": "UK",
+  "synonym": "MIRIAM Resources; MIRIAM",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "EBI-2307691",
+  "probe": "https://www.ebi.ac.uk/intact/interaction/EBI-2307691",
+  "pattern": "^EBI\\-[0-9]+$",
+  "state": "98:Up",
+  "more": "https://www.ebi.ac.uk/intact/",
+  "revision": 0
+}

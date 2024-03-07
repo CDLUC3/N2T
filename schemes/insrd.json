@@ -1,0 +1,9 @@
+{
+  "id": "insrd",
+  "target": {
+    "DEFAULT": "http://anobase.vectorbase.org/ir/assay.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://anobase.vectorbase.org/ir/assay.php?id={content}",
+  "revision": 0
+}

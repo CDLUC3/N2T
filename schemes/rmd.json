@@ -1,0 +1,9 @@
+{
+  "id": "rmd",
+  "target": {
+    "DEFAULT": "http://ribosome.fandm.edu/node/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ribosome.fandm.edu/node/{content}",
+  "revision": 0
+}

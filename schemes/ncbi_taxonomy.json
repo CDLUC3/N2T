@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/taxonomy",
+  "target": {},
+  "type": "synonym",
+  "for": "taxonomy",
+  "revision": 0
+}

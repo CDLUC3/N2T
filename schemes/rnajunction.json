@@ -1,0 +1,9 @@
+{
+  "id": "rnajunction",
+  "target": {
+    "DEFAULT": "http://rnajunction.abcc.ncifcrf.gov/JunctionPage.php?jid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rnajunction.abcc.ncifcrf.gov/JunctionPage.php?jid={content}",
+  "revision": 0
+}

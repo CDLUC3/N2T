@@ -1,0 +1,27 @@
+{
+  "id": "beetlebase",
+  "target": {
+    "DEFAULT": "http://beetlebase.org/cgi-bin/gbrowse/BeetleBase3.gff3/?name={content}"
+  },
+  "type": "scheme",
+  "name": "BeetleBase at Kansas State University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100202",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://beetlebase.org/cgi-bin/gbrowse/BeetleBase3.gff3/?name=${ac}",
+  "redirect": "http://beetlebase.org/cgi-bin/gbrowse/BeetleBase3.gff3/?name={content}",
+  "description": "BeetleBase is a comprehensive sequence database and community resource for Tribolium genetics, genomics and developmental biology. It incorporates information about genes, mutants, genetic markers, expressed sequence tags and publications.",
+  "subject": "classification",
+  "location": "USA",
+  "synonym": "BDGP gene disruption",
+  "institution": "Bioinformatics Center, Kansas State University",
+  "prefixed": 0,
+  "test": "TC010103",
+  "probe": "http://beetlebase.org/cgi-bin/gbrowse/BeetleBase3.gff3/?name=TC010103",
+  "pattern": "^TC\\d+$",
+  "state": "89:Up",
+  "more": "http://beetlebase.org/",
+  "revision": 0
+}

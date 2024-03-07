@@ -1,0 +1,27 @@
+{
+  "id": "bptl/doid",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/DOID/DOID:{content}"
+  },
+  "type": "scheme",
+  "name": "Human Disease Ontology through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100292",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/DOID/DOID:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/DOID/DOID:{content}",
+  "description": "The Disease Ontology has been developed as a standardized ontology for human disease with the purpose of providing the biomedical community with consistent, reusable and sustainable descriptions of human disease terms, phenotype characteristics and related medical vocabulary disease concepts.",
+  "subject": "disease; human; ontology",
+  "location": "USA",
+  "synonym": "DO",
+  "institution": "National Center for Biomedical Ontology, Stanford University",
+  "prefixed": 1,
+  "test": "11337",
+  "probe": "http://purl.bioontology.org/ontology/DOID/DOID:11337",
+  "pattern": "^DOID\\:\\d+$",
+  "state": "97:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/DOID",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "ugmicrosatdb",
+  "target": {
+    "DEFAULT": "http://www.veenuash.info/veenu/chromo.asp?ns={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.veenuash.info/veenu/chromo.asp?ns={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ols/eo",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/eo/terms?obo_id=EO:{content}"
+  },
+  "type": "scheme",
+  "name": "Plant Environment Ontology through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100669",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/eo/terms?obo_id=EO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/eo/terms?obo_id=EO:{content}",
+  "description": "The Plant Environment Ontology is a set of standardized controlled vocabularies to describe various types of treatments given to an individual plant / a population or a cultured tissue and/or cell type sample to evaluate the response on its exposure. It also includes the study types, where the terms can be used to identify the growth study facility. Each growth facility such as field study, growth chamber, green house etc is a environment on its own it may also involve instances of biotic and abiotic environments as supplemental treatments used in these studies.",
+  "subject": "plant; controlled vocabulary",
+  "location": "UK",
+  "synonym": "Plant Environment Conditions",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "0007404",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/eo/terms?obo_id=EO:0007404",
+  "pattern": "^(P)?EO\\:\\d{7}$",
+  "state": "100:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/eo",
+  "revision": 0
+}

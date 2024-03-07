@@ -1,0 +1,27 @@
+{
+  "id": "gpmdb",
+  "target": {
+    "DEFAULT": "http://gpmdb.thegpm.org/~/dblist_gpmnum/gpmnum={content}"
+  },
+  "type": "scheme",
+  "name": "GPMDB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100864",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://gpmdb.thegpm.org/~/dblist_gpmnum/gpmnum=${ac}",
+  "redirect": "http://gpmdb.thegpm.org/~/dblist_gpmnum/gpmnum={content}",
+  "description": "The Global Proteome Machine Database was constructed to utilize the information obtained by GPM servers to aid in the difficult process of validating peptide MS/MS spectra as well as protein coverage patterns.",
+  "subject": null,
+  "location": "Canada",
+  "synonym": "nmrCV",
+  "institution": "The Global Proteome Machine Organization",
+  "prefixed": 0,
+  "test": "GPM32310002988",
+  "probe": "http://gpmdb.thegpm.org/~/dblist_gpmnum/gpmnum=GPM32310002988",
+  "pattern": "^GPM\\d+$",
+  "state": "0:Unknown",
+  "more": "http://gpmdb.thegpm.org/",
+  "revision": 0
+}

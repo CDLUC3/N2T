@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/ncbigene",
+  "target": {},
+  "type": "synonym",
+  "for": "ncbigene",
+  "revision": 0
+}

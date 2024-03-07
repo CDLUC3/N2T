@@ -1,0 +1,9 @@
+{
+  "id": "dc.terms",
+  "target": {
+    "DEFAULT": "http://purl.org/dc/terms/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://purl.org/dc/terms/{content}",
+  "revision": 0
+}

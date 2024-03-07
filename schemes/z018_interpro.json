@@ -1,0 +1,27 @@
+{
+  "id": "z018/interpro",
+  "target": {
+    "DEFAULT": "http://interpro.bio2rdf.org/describe/?url=http://bio2rdf.org/interpro:{content}"
+  },
+  "type": "scheme",
+  "name": "Bio2RDF",
+  "alias": null,
+  "provider": "z018",
+  "provider_id": "MIR:00100697",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://interpro.bio2rdf.org/describe/?url=http://bio2rdf.org/interpro:${ac}",
+  "redirect": "http://interpro.bio2rdf.org/describe/?url=http://bio2rdf.org/interpro:{content}",
+  "description": "InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.",
+  "subject": "protein; domain",
+  "location": null,
+  "synonym": "MIRIAM Resources; MIRIAM",
+  "institution": "Bio2RDF.org",
+  "prefixed": 0,
+  "test": "IPR000100",
+  "probe": "http://interpro.bio2rdf.org/describe/?url=http://bio2rdf.org/interpro:IPR000100",
+  "pattern": "^IPR\\d{6}$",
+  "state": "17:Down",
+  "more": "http://interpro.bio2rdf.org/fct/",
+  "revision": 0
+}

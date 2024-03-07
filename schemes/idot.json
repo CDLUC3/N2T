@@ -1,0 +1,27 @@
+{
+  "id": "idot",
+  "target": {
+    "DEFAULT": "https://biomodels.net/vocab/idot.rdf#{content}"
+  },
+  "type": "scheme",
+  "name": "IdoT via biomodels.net",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100670",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://biomodels.net/vocab/idot.rdf#${ac}",
+  "redirect": "https://biomodels.net/vocab/idot.rdf#{content}",
+  "description": "Identifiers.org Terms (idot) is an RDF vocabulary providing useful terms for describing datasets.",
+  "subject": "schema.org",
+  "location": "UK",
+  "synonym": "IdoT",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "identifierPattern",
+  "probe": "https://biomodels.net/vocab/idot.rdf#identifierPattern",
+  "pattern": "^[A-Za-z]+$",
+  "state": "79:Down",
+  "more": "https://identifiers.org/",
+  "revision": 0
+}

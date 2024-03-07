@@ -1,0 +1,9 @@
+{
+  "id": "tuberculist",
+  "target": {
+    "DEFAULT": "http://tuberculist.epfl.ch/quicksearch.php?gene+name={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://tuberculist.epfl.ch/quicksearch.php?gene+name={content}",
+  "revision": 0
+}

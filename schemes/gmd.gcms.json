@@ -1,0 +1,27 @@
+{
+  "id": "gmd.gcms",
+  "target": {
+    "DEFAULT": "http://gmd.mpimp-golm.mpg.de/Spectrums/{content}"
+  },
+  "type": "scheme",
+  "name": "Golm Metabolome Database (GC-MS Spectra) at Max Planck Institute of Molecular Plant Physiology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100547",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://gmd.mpimp-golm.mpg.de/Spectrums/${ac}",
+  "redirect": "http://gmd.mpimp-golm.mpg.de/Spectrums/{content}",
+  "description": "Golm Metabolome Database (GMD) provides public access to custom mass spectral libraries, metabolite profiling experiments as well as additional information and tools. Analytes are subjected to a gas chromatograph coupled to a mass spectrometer, which records the mass spectrum and the retention time linked to an analyte. This collection references GC-MS spectra.",
+  "subject": "metabolite; mass spectrometry",
+  "location": "Germany",
+  "synonym": "Autism Database",
+  "institution": "Max Planck Institute of Molecular Plant Physiology, Potsdam",
+  "prefixed": 0,
+  "test": "53d583d8-40c6-40e1-9296-23f821cd77a5",
+  "probe": "http://gmd.mpimp-golm.mpg.de/Spectrums/53d583d8-40c6-40e1-9296-23f821cd77a5",
+  "pattern": "^([0-9a-fA-F]){8}(-([0-9a-fA-F]){4}){3}-([0-9a-fA-F]){12}$",
+  "state": "100:Up",
+  "more": "http://gmd.mpimp-golm.mpg.de/",
+  "revision": 0
+}

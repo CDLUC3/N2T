@@ -1,0 +1,27 @@
+{
+  "id": "homologene",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/homologene/{content}"
+  },
+  "type": "scheme",
+  "name": "Homologene at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100355",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ncbi.nlm.nih.gov/homologene/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/homologene/{content}",
+  "description": "HomoloGene is a system for automated detection of homologs among the annotated genes of several completely sequenced eukaryotic genomes.",
+  "subject": "eukaryotic; gene; clustering",
+  "location": "USA",
+  "synonym": "GMD",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "1000",
+  "probe": "https://www.ncbi.nlm.nih.gov/homologene/1000",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/homologene/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "cleanest",
+  "target": {
+    "DEFAULT": "http://verdi.kobic.re.kr/cleanEST/library_view.jsp?libid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://verdi.kobic.re.kr/cleanEST/library_view.jsp?libid={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "maizegdb.locus",
+  "target": {
+    "DEFAULT": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id={content}"
+  },
+  "type": "scheme",
+  "name": "MaizeGDB at Missouri",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100223",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id=${ac}",
+  "redirect": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id={content}",
+  "description": "MaizeGDB is the maize research community's central repository for genetics and genomics information.",
+  "subject": "plant; genome",
+  "location": "USA",
+  "synonym": "IMG Taxon",
+  "institution": "Division of Plant Sciences, Missouri",
+  "prefixed": 0,
+  "test": "25011",
+  "probe": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id=25011",
+  "pattern": "^\\d+$",
+  "state": "88:Probably up",
+  "more": "http://www.maizegdb.org/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "iresite",
+  "target": {
+    "DEFAULT": "http://www.iresite.org/IRESite_web.php?page=view&entry_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.iresite.org/IRESite_web.php?page=view&entry_id={content}",
+  "revision": 0
+}

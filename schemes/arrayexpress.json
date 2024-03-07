@@ -1,0 +1,27 @@
+{
+  "id": "arrayexpress",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/arrayexpress/experiments/{content}"
+  },
+  "type": "scheme",
+  "name": "ArrayExpress",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100061",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/arrayexpress/experiments/${ac}",
+  "redirect": "https://www.ebi.ac.uk/arrayexpress/experiments/{content}",
+  "description": "ArrayExpress is a public repository for microarray data, which is aimed at storing MIAME-compliant data in accordance with Microarray Gene Expression Data (MGED) recommendations.",
+  "subject": "nucleotide; microarray; expression",
+  "location": "UK",
+  "synonym": "PubChem CID; PubChem Compound",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "E-MEXP-1712",
+  "probe": "https://www.ebi.ac.uk/arrayexpress/experiments/E-MEXP-1712",
+  "pattern": "^[AEP]-\\w{4}-\\d+$",
+  "state": "100:Probably up",
+  "more": "https://www.ebi.ac.uk/arrayexpress/",
+  "revision": 0
+}

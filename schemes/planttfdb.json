@@ -1,0 +1,27 @@
+{
+  "id": "planttfdb",
+  "target": {
+    "DEFAULT": "http://planttfdb.cbi.pku.edu.cn/tf.php?uid={content}"
+  },
+  "type": "scheme",
+  "name": "PlantTFDB at Peking University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100772",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://planttfdb.cbi.pku.edu.cn/tf.php?uid=${ac}",
+  "redirect": "http://planttfdb.cbi.pku.edu.cn/tf.php?uid={content}",
+  "description": "The Plant TF database (PlantTFDB) systematically identifies transcription factors for plant species. It includes annotation for identified TFs, including information on expression, regulation, interaction, conserved elements, phenotype information. It also provides curated descriptions and cross-references to other life science databases, as well as identifying evolutionary relationship among identified factors.",
+  "subject": "interaction; protein; DNA",
+  "location": "Peoples Republic of China",
+  "synonym": "PlantTFDB",
+  "institution": "Center for Bioinformatics, Peking University, Beijing",
+  "prefixed": 0,
+  "test": "Ath_AT1G01030.1",
+  "probe": "http://planttfdb.cbi.pku.edu.cn/tf.php?uid=Ath_AT1G01030.1",
+  "pattern": "^[A-Z][a-z]{2}_([A-Za-z]{3}[0-9]{6})|([A-Za-z0-9\\._\\-#]*)$",
+  "state": "90:Up",
+  "more": "http://planttfdb.cbi.pku.edu.cn",
+  "revision": 0
+}

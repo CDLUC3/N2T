@@ -1,0 +1,7 @@
+{
+  "id": "ebi/ensembl.metazoa",
+  "target": {},
+  "type": "synonym",
+  "for": "ensembl.metazoa",
+  "revision": 0
+}

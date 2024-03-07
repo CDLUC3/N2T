@@ -1,0 +1,9 @@
+{
+  "id": "bps",
+  "target": {
+    "DEFAULT": "http://bps.rutgers.edu/atlas/bp_record/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bps.rutgers.edu/atlas/bp_record/{content}",
+  "revision": 0
+}

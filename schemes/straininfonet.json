@@ -1,0 +1,9 @@
+{
+  "id": "straininfonet",
+  "target": {
+    "DEFAULT": "http://www.straininfo.net/taxa/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.straininfo.net/taxa/{content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "sgd",
+  "target": {
+    "DEFAULT": "https://www.yeastgenome.org/locus/{content}"
+  },
+  "type": "scheme",
+  "name": "SGD",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100033",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.yeastgenome.org/locus/${ac}",
+  "redirect": "https://www.yeastgenome.org/locus/{content}",
+  "description": "The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.",
+  "subject": "genome; eukaryotic; nucleotide",
+  "location": "USA",
+  "synonym": "Saccharomyces Genome Database",
+  "institution": "Stanford University",
+  "prefixed": 0,
+  "test": "S000003909",
+  "probe": "https://www.yeastgenome.org/locus/S000003909",
+  "pattern": "^((S\\d+$)|(Y[A-Z]{2}\\d{3}[a-zA-Z](\\-[A-Z])?))$",
+  "state": "94:Up",
+  "more": "https://www.yeastgenome.org/",
+  "revision": 0
+}

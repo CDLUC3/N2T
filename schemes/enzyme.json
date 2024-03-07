@@ -1,0 +1,9 @@
+{
+  "id": "enzyme",
+  "target": {
+    "DEFAULT": "http://ca.expasy.org/enzyme/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ca.expasy.org/enzyme/{content}",
+  "revision": 0
+}

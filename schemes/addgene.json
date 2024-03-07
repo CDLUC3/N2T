@@ -1,0 +1,27 @@
+{
+  "id": "addgene",
+  "target": {
+    "DEFAULT": "http://addgene.org/{content}"
+  },
+  "type": "scheme",
+  "name": "Addgene Plasmid Repository",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100899",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://addgene.org/${ac}",
+  "redirect": "http://addgene.org/{content}",
+  "description": "Addgene is a non-profit plasmid repository. Addgene facilitates the exchange of genetic material between laboratories by offering plasmids and their associated cloning data to not-for-profit laboratories around the world.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Open Citation Identifier",
+  "institution": "Addgene",
+  "prefixed": 0,
+  "test": "50943",
+  "probe": "http://addgene.org/50943",
+  "pattern": "^[0-9]{5}(-[a-zA-Z0-9-]{0,7})?$|^[0-9]{10}$",
+  "state": "0:Unknown",
+  "more": "http://addgene.org/",
+  "revision": 0
+}

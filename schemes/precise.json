@@ -1,0 +1,9 @@
+{
+  "id": "precise",
+  "target": {
+    "DEFAULT": "http://precise.bu.edu/Output.aspx?UniqueID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://precise.bu.edu/Output.aspx?UniqueID={content}",
+  "revision": 0
+}

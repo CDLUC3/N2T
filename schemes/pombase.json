@@ -1,0 +1,27 @@
+{
+  "id": "pombase",
+  "target": {
+    "DEFAULT": "http://www.pombase.org/spombe/result/{content}"
+  },
+  "type": "scheme",
+  "name": "PomBase at University of Cambridge",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100430",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.pombase.org/spombe/result/${ac}",
+  "redirect": "http://www.pombase.org/spombe/result/{content}",
+  "description": "PomBase is a model organism database established to provide access to molecular data and biological information for the fission yeast Schizosaccharomyces pombe. It encompasses annotation of genomic sequence and features, comprehensive manual literature curation and genome-wide data sets.",
+  "subject": "genome; nucleotide; eukaryotic",
+  "location": "UK",
+  "synonym": "Orientations of Proteins in Membranes",
+  "institution": "Cambridge Systems Biology Centre, Department of Biochemistry, University of Cambridge",
+  "prefixed": 0,
+  "test": "SPCC13B11.01",
+  "probe": "http://www.pombase.org/spombe/result/SPCC13B11.01",
+  "pattern": "^S\\w+(\\.)?\\w+(\\.)?$",
+  "state": "73:Down",
+  "more": "http://www.pombase.org/",
+  "revision": 0
+}

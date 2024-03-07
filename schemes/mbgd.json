@@ -1,0 +1,9 @@
+{
+  "id": "mbgd",
+  "target": {
+    "DEFAULT": "http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=[?species_symbol]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=[?species_symbol]",
+  "revision": 0
+}

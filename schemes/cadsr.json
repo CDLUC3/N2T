@@ -1,0 +1,27 @@
+{
+  "id": "cadsr",
+  "target": {
+    "DEFAULT": "https://cadsrapi.nci.nih.gov/cadsrapi4/GetXML?query=DataElement[@publicId={content}]"
+  },
+  "type": "scheme",
+  "name": "Cancer Data Standards Registry and Repository",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100928",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://cadsrapi.nci.nih.gov/cadsrapi4/GetXML?query=DataElement[@publicId=${ac}]",
+  "redirect": "https://cadsrapi.nci.nih.gov/cadsrapi4/GetXML?query=DataElement[@publicId={content}]",
+  "description": "The US National Cancer Institute (NCI) maintains and administers data elements, forms, models, and components of these items in a metadata registry referred to as the Cancer Data Standards Registry and Repository, or caDSR.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Open Citation Identifier",
+  "institution": "National Cancer Institute, National Institutes of Health, Bethesda, MD",
+  "prefixed": 0,
+  "test": "3771992",
+  "probe": "https://cadsrapi.nci.nih.gov/cadsrapi4/GetXML?query=DataElement[@publicId=3771992]",
+  "pattern": "^[0-9]*$",
+  "state": "0:Unknown",
+  "more": "https://wiki.nci.nih.gov/display/caDSR/caDSR+Wiki",
+  "revision": 0
+}

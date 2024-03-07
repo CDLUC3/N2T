@@ -1,0 +1,27 @@
+{
+  "id": "ms",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/MS/MS:{content}"
+  },
+  "type": "scheme",
+  "name": "Mass Spectrometry Controlled Vocabulary through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100787",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/MS/MS:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/MS/MS:{content}",
+  "description": "The PSI-Mass Spectrometry (MS) CV contains all the terms used in the PSI MS-related data standards. The CV contains a logical hierarchical structure to ensure ease of maintenance and the development of software that makes use of complex semantics. The CV contains terms required for a complete description of an MS analysis pipeline used in proteomics, including sample labeling, digestion enzymes, instrumentation parts and parameters, software used for identification and quantification of peptides/proteins and the parameters and scores used to determine their significance.",
+  "subject": "mass spectrometry; controlled vocabulary",
+  "location": "USA",
+  "synonym": "Agricultural Online Access",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 1,
+  "test": "1000001",
+  "probe": "http://purl.bioontology.org/ontology/MS/MS:1000001",
+  "pattern": "^MS:\\d{7}$",
+  "state": "0:Unknown",
+  "more": "https://bioportal.bioontology.org/ontologies/MS",
+  "revision": 0
+}

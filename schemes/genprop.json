@@ -1,0 +1,27 @@
+{
+  "id": "genprop",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/interpro/genomeproperties/#{content}"
+  },
+  "type": "scheme",
+  "name": "Genome Properties",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100910",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/interpro/genomeproperties/#${ac}",
+  "redirect": "https://www.ebi.ac.uk/interpro/genomeproperties/#{content}",
+  "description": "Genome properties is an annotation system whereby functional attributes can be assigned to a genome, based on the presence of a defined set of protein signatures within that genome.",
+  "subject": "controlled vocabulary; microbial",
+  "location": "UK",
+  "synonym": "Magnaporthe comparative genomics database",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "GenProp0699",
+  "probe": "https://www.ebi.ac.uk/interpro/genomeproperties/#GenProp0699",
+  "pattern": "^GenProp\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.ebi.ac.uk/interpro/genomeproperties/",
+  "revision": 0
+}

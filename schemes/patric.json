@@ -1,0 +1,9 @@
+{
+  "id": "patric",
+  "target": {
+    "DEFAULT": "http://patricbrc.vbi.vt.edu/portal/portal/patric/Taxon?cType=taxon&cId={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://patricbrc.vbi.vt.edu/portal/portal/patric/Taxon?cType=taxon&cId={content}",
+  "revision": 0
+}

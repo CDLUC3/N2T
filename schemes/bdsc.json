@@ -1,0 +1,27 @@
+{
+  "id": "bdsc",
+  "target": {
+    "DEFAULT": "https://bdsc.indiana.edu/stocks/{content}"
+  },
+  "type": "scheme",
+  "name": "BDSC at Indiana University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100426",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://bdsc.indiana.edu/stocks/${ac}",
+  "redirect": "https://bdsc.indiana.edu/stocks/{content}",
+  "description": "The Bloomington Drosophila Stock Center collects, maintains and distributes Drosophila melanogaster strains for research.",
+  "subject": "eukaryotic; strain",
+  "location": "USA",
+  "synonym": "Bloomington Drosophila Stock Center at Indiana University",
+  "institution": "Department of Biology, Indiana University, Bloomington",
+  "prefixed": 0,
+  "test": "33607",
+  "probe": "https://bdsc.indiana.edu/stocks/33607",
+  "pattern": "^\\d+$",
+  "state": "84:Up",
+  "more": "https://bdsc.indiana.edu/about/mission.html",
+  "revision": 0
+}

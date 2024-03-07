@@ -1,0 +1,27 @@
+{
+  "id": "z035/chembl.target",
+  "target": {
+    "DEFAULT": "http://linkedchemistry.info/chembl/chemblid/{content}"
+  },
+  "type": "scheme",
+  "name": "ChEMBL target RDF",
+  "alias": null,
+  "provider": "z035",
+  "provider_id": "MIR:00100485",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://linkedchemistry.info/chembl/chemblid/${ac}",
+  "redirect": "http://linkedchemistry.info/chembl/chemblid/{content}",
+  "description": "ChEMBL is a database of bioactive compounds, their quantitative properties and bioactivities (binding constants, pharmacology and ADMET, etc). The data is abstracted and curated from the primary scientific literature.",
+  "subject": "protein",
+  "location": "The Netherlands",
+  "synonym": "SO; Sequence Types and Features",
+  "institution": "Maastricht University",
+  "prefixed": 0,
+  "test": "CHEMBL3467",
+  "probe": "http://linkedchemistry.info/chembl/chemblid/CHEMBL3467",
+  "pattern": "^CHEMBL\\d+$",
+  "state": "100:Up",
+  "more": "https://github.com/egonw/chembl.rdf",
+  "revision": 0
+}

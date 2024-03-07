@@ -1,0 +1,27 @@
+{
+  "id": "mamo",
+  "target": {
+    "DEFAULT": "http://bioportal.bioontology.org/ontologies/MAMO/?p=classes&conceptid=http://identifiers.org/mamo/{content}"
+  },
+  "type": "scheme",
+  "name": "MAMO through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100665",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://bioportal.bioontology.org/ontologies/MAMO/?p=classes&conceptid=http://identifiers.org/mamo/${ac}",
+  "redirect": "http://bioportal.bioontology.org/ontologies/MAMO/?p=classes&conceptid=http://identifiers.org/mamo/{content}",
+  "description": "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "MAMO",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 0,
+  "test": "MAMO_0000026",
+  "probe": "http://bioportal.bioontology.org/ontologies/MAMO/?p=classes&conceptid=http://identifiers.org/mamo/MAMO_0000026",
+  "pattern": "^MAMO_\\d{7}$",
+  "state": "97:Probably up",
+  "more": "http://bioportal.bioontology.org/ontologies/MAMO",
+  "revision": 0
+}

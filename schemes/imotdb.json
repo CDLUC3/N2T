@@ -1,0 +1,9 @@
+{
+  "id": "imotdb",
+  "target": {
+    "DEFAULT": "http://caps.ncbs.res.in/cgi-bin/mini/databases/imotdb/imotdb.cgi?sfcode={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://caps.ncbs.res.in/cgi-bin/mini/databases/imotdb/imotdb.cgi?sfcode={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "metanetx.compartment",
+  "target": {
+    "DEFAULT": "http://www.metanetx.org/comp_info/{content}"
+  },
+  "type": "scheme",
+  "name": "MetaNetX compartment at SIB Swiss Institute of Bioinformatics",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100750",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.metanetx.org/comp_info/${ac}",
+  "redirect": "http://www.metanetx.org/comp_info/{content}",
+  "description": "MetaNetX/MNXref integrates various information from genome-scale metabolic network reconstructions such as information on reactions, metabolites and compartments. This information undergoes a reconciliation process to minimise for discrepancies between different data sources, and makes the data accessible under a common namespace. This collection references cellular compartments.",
+  "subject": "model",
+  "location": "Switzerland",
+  "synonym": "Database of small human noncoding RNAs",
+  "institution": "Vital-IT group, SIB Swiss Institute of Bioinformatics, Lausanne",
+  "prefixed": 0,
+  "test": "MNXC15",
+  "probe": "http://www.metanetx.org/comp_info/MNXC15",
+  "pattern": "^(MNX[CD]\\d+|BOUNDARY)$",
+  "state": "55:Unknown",
+  "more": "http://www.metanetx.org/",
+  "revision": 0
+}

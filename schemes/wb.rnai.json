@@ -1,0 +1,27 @@
+{
+  "id": "wb.rnai",
+  "target": {
+    "DEFAULT": "https://www.wormbase.org/species/c_elegans/rnai/{content}"
+  },
+  "type": "scheme",
+  "name": "WormBase RNAi",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100601",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.wormbase.org/species/c_elegans/rnai/${ac}",
+  "redirect": "https://www.wormbase.org/species/c_elegans/rnai/{content}",
+  "description": "WormBase is an online bioinformatics database of the biology and genome of the model organism Caenorhabditis elegans and related nematodes. It is used by the C. elegans research community both as an information resource and as a mode to publish and distribute their results. This collection references RNAi experiments, detailing target and phenotypes.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Yeast Deletion Project and Proteomics of Mitochondria Database",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "WBRNAi00086878",
+  "probe": "https://www.wormbase.org/species/c_elegans/rnai/WBRNAi00086878",
+  "pattern": "^WBRNAi\\d{8}$",
+  "state": "100:Up",
+  "more": "https://www.wormbase.org/",
+  "revision": 0
+}

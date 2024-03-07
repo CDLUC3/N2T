@@ -1,0 +1,9 @@
+{
+  "id": "klotho",
+  "target": {
+    "DEFAULT": "http://www.biocheminfo.org/klotho/html/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.biocheminfo.org/klotho/html/{content}.html",
+  "revision": 0
+}

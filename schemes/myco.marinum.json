@@ -1,0 +1,27 @@
+{
+  "id": "myco.marinum",
+  "target": {
+    "DEFAULT": "http://mycobrowser.epfl.ch/marinosearch.php?gene+name={content}"
+  },
+  "type": "scheme",
+  "name": "MycoBrowser marinum at Global Health Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100277",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://mycobrowser.epfl.ch/marinosearch.php?gene+name=${ac}",
+  "redirect": "http://mycobrowser.epfl.ch/marinosearch.php?gene+name={content}",
+  "description": "Mycobrowser is a resource that provides both in silico generated and manually reviewed information within databases dedicated to the complete genomes of Mycobacterium tuberculosis, Mycobacterium leprae, Mycobacterium marinum and Mycobacterium smegmatis. This collection references Mycobacteria marinum information.",
+  "subject": "genome; sequence",
+  "location": "Switzerland",
+  "synonym": "marinolist",
+  "institution": "Global Health Institute,  Lausanne",
+  "prefixed": 0,
+  "test": "MMAR_2462",
+  "probe": "http://mycobrowser.epfl.ch/marinosearch.php?gene+name=MMAR_2462",
+  "pattern": "^MMAR\\_\\d+$",
+  "state": "76:Down",
+  "more": "http://mycobrowser.epfl.ch/marinolist.html",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "flymine",
+  "target": {
+    "DEFAULT": "http://www.flymine.org/release-25.0/objectDetails.do?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.flymine.org/release-25.0/objectDetails.do?id={content}",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "balibase",
+  "target": {
+    "DEFAULT": "http://bips.u-strasbg.fr/fr/Products/Databases/BAliBASE2/ref[$ref]/test/{content}_ref[$ref].html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bips.u-strasbg.fr/fr/Products/Databases/BAliBASE2/ref[$ref]/test/{content}_ref[$ref].html",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ebi/mo",
+  "target": {
+    "DEFAULT": "https://mged.sourceforge.net/ontologies/MGEDontology.php#{content}"
+  },
+  "type": "scheme",
+  "name": "MGED Ontology at SourceForge",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100568",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://mged.sourceforge.net/ontologies/MGEDontology.php#${ac}",
+  "redirect": "https://mged.sourceforge.net/ontologies/MGEDontology.php#{content}",
+  "description": "The MGED Ontology (MO) provides terms for annotating all aspects of a microarray experiment from the design of the experiment and array layout, through to the preparation of the biological sample and the protocols used to hybridize the RNA and analyze the data.",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "MO",
+  "institution": "(Ontology Working Group), European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "ArrayGroup",
+  "probe": "https://mged.sourceforge.net/ontologies/MGEDontology.php#ArrayGroup",
+  "pattern": "^\\w+$",
+  "state": "81:Down",
+  "more": "https://mged.sourceforge.net/ontologies/MGEDontology.php",
+  "revision": 0
+}

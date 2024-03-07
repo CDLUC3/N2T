@@ -1,0 +1,7 @@
+{
+  "id": "ebi/biosample",
+  "target": {},
+  "type": "synonym",
+  "for": "biosample",
+  "revision": 0
+}

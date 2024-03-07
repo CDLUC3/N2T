@@ -1,0 +1,9 @@
+{
+  "id": "geisha",
+  "target": {
+    "DEFAULT": "http://geisha.arizona.edu/geisha/search.jsp?gene={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://geisha.arizona.edu/geisha/search.jsp?gene={content}",
+  "revision": 0
+}

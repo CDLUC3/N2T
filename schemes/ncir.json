@@ -1,0 +1,9 @@
+{
+  "id": "ncir",
+  "target": {
+    "DEFAULT": "http://prion.bchs.uh.edu/bp_type/individual_record_page{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://prion.bchs.uh.edu/bp_type/individual_record_page{content}.html",
+  "revision": 0
+}

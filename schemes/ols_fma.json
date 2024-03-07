@@ -1,0 +1,27 @@
+{
+  "id": "ols/fma",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/fma/terms?obo_id=FMA:{content}"
+  },
+  "type": "scheme",
+  "name": "Foundational Model of Anatomy via Ontology Lookup Service (OLS)",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100097",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/fma/terms?obo_id=FMA:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/fma/terms?obo_id=FMA:{content}",
+  "description": "The Foundational Model of Anatomy Ontology (FMA) is a biomedical informatics ontology. It is concerned with the representation of classes or types and relationships necessary for the symbolic representation of the phenotypic structure of the human body.  Specifically, the FMA is a domain ontology that represents a coherent body of explicit declarative knowledge about human anatomy.",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "Foundational Model of Anatomy Ontology",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "67112",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/fma/terms?obo_id=FMA:67112",
+  "pattern": "^FMA:\\d+$",
+  "state": "98:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/fma/",
+  "revision": 0
+}

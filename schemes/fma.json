@@ -1,0 +1,27 @@
+{
+  "id": "fma",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/FMA_subset/FMA:{content}"
+  },
+  "type": "scheme",
+  "name": "Foundational Model of Anatomy through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100236",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/FMA_subset/FMA:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/FMA_subset/FMA:{content}",
+  "description": "The Foundational Model of Anatomy Ontology (FMA) is a biomedical informatics ontology. It is concerned with the representation of classes or types and relationships necessary for the symbolic representation of the phenotypic structure of the human body.  Specifically, the FMA is a domain ontology that represents a coherent body of explicit declarative knowledge about human anatomy.",
+  "subject": "ontology",
+  "location": "USA",
+  "synonym": "Foundational Model of Anatomy Ontology",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 1,
+  "test": "67112",
+  "probe": "http://purl.bioontology.org/ontology/FMA_subset/FMA:67112",
+  "pattern": "^FMA:\\d+$",
+  "state": "91:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/FMA",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "miriam.resource",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/miriam/main/resources/{content}"
+  },
+  "type": "scheme",
+  "name": "MIRIAM Registry (resources)",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100245",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/miriam/main/resources/${ac}",
+  "redirect": "https://www.ebi.ac.uk/miriam/main/resources/{content}",
+  "description": "MIRIAM Registry is an online resource created to catalogue data types (Gene Ontology, Taxonomy or PubMed are some examples), their URIs and the corresponding resources (or physical locations), whether these are controlled vocabularies or databases.",
+  "subject": "schema.org",
+  "location": "UK",
+  "synonym": "SGN",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "MIR:00100005",
+  "probe": "https://www.ebi.ac.uk/miriam/main/resources/MIR:00100005",
+  "pattern": "^MIR:001\\d{5}$",
+  "state": "100:Up",
+  "more": "https://www.ebi.ac.uk/miriam/",
+  "revision": 0
+}

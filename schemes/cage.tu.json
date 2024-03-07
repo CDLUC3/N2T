@@ -1,0 +1,9 @@
+{
+  "id": "cage.tu",
+  "target": {
+    "DEFAULT": "http://fantom31p.gsc.riken.jp/cage/mm5/SummaryTu.php?tu_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://fantom31p.gsc.riken.jp/cage/mm5/SummaryTu.php?tu_id={content}",
+  "revision": 0
+}

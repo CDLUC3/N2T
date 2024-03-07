@@ -1,0 +1,9 @@
+{
+  "id": "dbpedia",
+  "target": {
+    "DEFAULT": "http://dbpedia.org/page/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://dbpedia.org/page/{content}",
+  "revision": 0
+}

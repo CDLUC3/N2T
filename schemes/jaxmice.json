@@ -1,0 +1,27 @@
+{
+  "id": "jaxmice",
+  "target": {
+    "DEFAULT": "http://jaxmice.jax.org/strain/{content}.html"
+  },
+  "type": "scheme",
+  "name": "JAX Mice at Jackson Laboratory",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100432",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://jaxmice.jax.org/strain/${ac}.html",
+  "redirect": "http://jaxmice.jax.org/strain/{content}.html",
+  "description": "JAX Mice is a catalogue of mouse strains supplied by the Jackson Laboratory.",
+  "subject": "strain; mammalian; schema.org",
+  "location": "USA",
+  "synonym": "Human Protein Atlas",
+  "institution": "The Jackson Laboratory, Sacremento, California",
+  "prefixed": 0,
+  "test": "005012",
+  "probe": "http://jaxmice.jax.org/strain/005012.html",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "http://jaxmice.jax.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "omicsdi/biomodels.db",
+  "target": {
+    "DEFAULT": "https://www.omicsdi.org/dataset/biomodels/{content}"
+  },
+  "type": "scheme",
+  "name": "BioModels through OmicsDI",
+  "alias": null,
+  "provider": "omicsdi",
+  "provider_id": "MIR:00100855",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.omicsdi.org/dataset/biomodels/${ac}",
+  "redirect": "https://www.omicsdi.org/dataset/biomodels/{content}",
+  "description": "BioModels Database is a data resource that allows biologists to store, search and retrieve published mathematical models of biological interests.",
+  "subject": "model",
+  "location": "UK",
+  "synonym": "BioModels",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "BIOMD0000000048",
+  "probe": "https://www.omicsdi.org/dataset/biomodels/BIOMD0000000048",
+  "pattern": "^((BIOMD|MODEL)\\d{10})|(BMID\\d{12})$",
+  "state": "0:Unknown",
+  "more": "https://www.omicsdi.org/",
+  "revision": 0
+}

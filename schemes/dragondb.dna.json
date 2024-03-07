@@ -1,0 +1,27 @@
+{
+  "id": "dragondb.dna",
+  "target": {
+    "DEFAULT": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name={content};class=DNA"
+  },
+  "type": "scheme",
+  "name": "DragonDB DNA at University of British Columbia",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100379",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name=${ac};class=DNA",
+  "redirect": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name={content};class=DNA",
+  "description": "DragonDB is a genetic and genomic database for Antirrhinum majus (Snapdragon). This collection refers to DNA sequence information.",
+  "subject": "plant; DNA",
+  "location": "Canada",
+  "synonym": "Coli Genetic Stock Center",
+  "institution": "University of British Columbia, Vancouver",
+  "prefixed": 0,
+  "test": "3hB06",
+  "probe": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name=3hB06;class=DNA",
+  "pattern": "^\\d\\w+$",
+  "state": "53:Down",
+  "more": "http://www.antirrhinum.net/",
+  "revision": 0
+}

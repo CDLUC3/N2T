@@ -1,0 +1,27 @@
+{
+  "id": "omit",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/omit/terms?short_form=OMIT_{content}"
+  },
+  "type": "scheme",
+  "name": "Ontology for miRNA Target (OMIT) through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100806",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/omit/terms?short_form=OMIT_${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/omit/terms?short_form=OMIT_{content}",
+  "description": "The purpose of the OMIT ontology is to establish data exchange standards and common data elements in the microRNA (miR) domain. Biologists (cell biologists in particular) and bioinformaticians can make use of OMIT to leverage emerging semantic technologies in knowledge acquisition and discovery for more effective identification of important roles performed by miRs in humans' various diseases and biological processes (usually through miRs' respective target genes).",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Ontology for miRNA Target",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "0005506",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/omit/terms?short_form=OMIT_0005506",
+  "pattern": "^\\d{7}$",
+  "state": "100:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/omit/",
+  "revision": 0
+}

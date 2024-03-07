@@ -1,0 +1,9 @@
+{
+  "id": "archdb",
+  "target": {
+    "DEFAULT": "http://sbi.imim.es/cgi-bin/archdb//loops.pl?loop={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://sbi.imim.es/cgi-bin/archdb//loops.pl?loop={content}",
+  "revision": 0
+}

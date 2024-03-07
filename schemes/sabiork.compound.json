@@ -1,0 +1,27 @@
+{
+  "id": "sabiork.compound",
+  "target": {
+    "DEFAULT": "http://sabiork.h-its.org/newSearch?q={content}"
+  },
+  "type": "scheme",
+  "name": "SABIO-RK Compound",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100919",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://sabiork.h-its.org/newSearch?q=${ac}",
+  "redirect": "http://sabiork.h-its.org/newSearch?q={content}",
+  "description": "SABIO-RK is a relational database system that contains information about biochemical reactions, their kinetic equations with their parameters, and the experimental conditions under which these parameters were measured. The compound data set provides information regarding the reactions in which a compound participates as substrate, product or modifier (e.g. inhibitor, cofactor), and links to further information.",
+  "subject": null,
+  "location": "Germany",
+  "synonym": "Open Citation Identifier",
+  "institution": "Heidelberg Institute for Theoretical Studies (HITS gGmbH)",
+  "prefixed": 0,
+  "test": "75",
+  "probe": "http://sabiork.h-its.org/newSearch?q=75",
+  "pattern": "^\\d+$",
+  "state": "0:Unknown",
+  "more": "http://sabiork.h-its.org/",
+  "revision": 0
+}

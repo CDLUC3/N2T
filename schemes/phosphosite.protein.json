@@ -1,0 +1,27 @@
+{
+  "id": "phosphosite.protein",
+  "target": {
+    "DEFAULT": "http://www.phosphosite.org/proteinAction.do?id={content}"
+  },
+  "type": "scheme",
+  "name": "PhosphoSite",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100138",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.phosphosite.org/proteinAction.do?id=${ac}",
+  "redirect": "http://www.phosphosite.org/proteinAction.do?id={content}",
+  "description": "PhosphoSite is a mammalian protein database that provides information about in vivo phosphorylation sites. This datatype refers to protein-level information, providing a list of phosphorylation sites for each protein in the database.",
+  "subject": "mammalian; protein",
+  "location": "USA",
+  "synonym": "PhosphoSitePlus",
+  "institution": "Cell Signaling Technology, Inc.",
+  "prefixed": 0,
+  "test": "12300",
+  "probe": "http://www.phosphosite.org/proteinAction.do?id=12300",
+  "pattern": "^\\d{5}$",
+  "state": "82:Down",
+  "more": "http://www.phosphosite.org/homeAction.do",
+  "revision": 0
+}

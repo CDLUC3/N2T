@@ -1,0 +1,9 @@
+{
+  "id": "plasmid",
+  "target": {
+    "DEFAULT": "http://plasmid.med.harvard.edu/PLASMID/GetCollection.do?collectionName={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://plasmid.med.harvard.edu/PLASMID/GetCollection.do?collectionName={content}",
+  "revision": 0
+}

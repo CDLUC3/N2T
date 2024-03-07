@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/ccds",
+  "target": {},
+  "type": "synonym",
+  "for": "ccds",
+  "revision": 0
+}

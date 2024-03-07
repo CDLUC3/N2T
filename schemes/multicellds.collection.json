@@ -1,0 +1,27 @@
+{
+  "id": "multicellds.collection",
+  "target": {
+    "DEFAULT": "http://multicellds.org/MultiCellDB/{content}"
+  },
+  "type": "scheme",
+  "name": "MultiCellDScollection at Keck School of Medicine",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100779",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://multicellds.org/MultiCellDB/${ac}",
+  "redirect": "http://multicellds.org/MultiCellDB/{content}",
+  "description": "MultiCellDS is data standard for multicellular simulation, experimental, and clinical data. A collection groups one or more individual uniquely identified cell lines, snapshots, or collections. Primary uses are times series (collections of snapshots), patient cohorts (collections of cell lines), and studies (collections of time series collections).",
+  "subject": "model",
+  "location": "USA",
+  "synonym": "WoRMS",
+  "institution": "Center for Applied Molecular Medicine, Keck School of Medicine, University of Southern California, California",
+  "prefixed": 0,
+  "test": "MCDS_C_0000000001",
+  "probe": "http://multicellds.org/MultiCellDB/MCDS_C_0000000001",
+  "pattern": "^MCDS_C_[a-zA-Z0-9]{1,10}$",
+  "state": "63:Down",
+  "more": "http://multicellds.org/MultiCellDB.php",
+  "revision": 0
+}

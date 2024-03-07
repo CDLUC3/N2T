@@ -1,0 +1,9 @@
+{
+  "id": "prodoric.gene",
+  "target": {
+    "DEFAULT": "http://prodoric.tu-bs.de/gene.php?gene_acc={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://prodoric.tu-bs.de/gene.php?gene_acc={content}",
+  "revision": 0
+}

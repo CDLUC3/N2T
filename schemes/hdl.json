@@ -1,0 +1,15 @@
+{
+  "id": "hdl",
+  "target": {
+    "DEFAULT": "http://hdl.handle.net/{content}"
+  },
+  "type": "scheme",
+  "name": "Handle System Identifier",
+  "alias": "handle",
+  "primary": 1,
+  "redirect": "http://hdl.handle.net/{content}",
+  "test": "4263537/4000",
+  "probe": "http://hdl.handle.net/4263537/4000",
+  "more": "http://www.handle.net",
+  "revision": 0
+}

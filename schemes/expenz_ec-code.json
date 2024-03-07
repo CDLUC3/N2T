@@ -1,0 +1,27 @@
+{
+  "id": "expenz/ec-code",
+  "target": {
+    "DEFAULT": "http://www.enzyme-database.org/query.php?ec={content}"
+  },
+  "type": "scheme",
+  "name": "ExploreEnz at Trinity College",
+  "alias": "ec",
+  "provider": "expenz",
+  "provider_id": "MIR:00100308",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.enzyme-database.org/query.php?ec=${ac}",
+  "redirect": "http://www.enzyme-database.org/query.php?ec={content}",
+  "description": "The Enzyme Classification contains the recommendations of the Nomenclature Committee of the International Union of Biochemistry and Molecular Biology on the nomenclature and classification of enzyme-catalysed reactions.",
+  "subject": "enzyme; classification; protein; taxonomy",
+  "location": "Ireland",
+  "synonym": "EC; Enzyme Classification; EC code",
+  "institution": "Trinity College, Dublin",
+  "prefixed": 0,
+  "test": "1.1.1.1",
+  "probe": "http://www.enzyme-database.org/query.php?ec=1.1.1.1",
+  "pattern": "^\\d+\\.-\\.-\\.-|\\d+\\.\\d+\\.-\\.-|\\d+\\.\\d+\\.\\d+\\.-|\\d+\\.\\d+\\.\\d+\\.(n)?\\d+$",
+  "state": "100:Up",
+  "more": "http://www.enzyme-database.org/",
+  "revision": 0
+}

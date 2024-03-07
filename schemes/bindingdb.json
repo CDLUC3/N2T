@@ -1,0 +1,27 @@
+{
+  "id": "bindingdb",
+  "target": {
+    "DEFAULT": "http://www.bindingdb.org/compact/{content}"
+  },
+  "type": "scheme",
+  "name": "BindingDB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100340",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.bindingdb.org/compact/${ac}",
+  "redirect": "http://www.bindingdb.org/compact/{content}",
+  "description": "BindingDB is the first public database of protein-small molecule affinity data.",
+  "subject": "interaction; protein; drug",
+  "location": "USA",
+  "synonym": "The Cell: An Image Library-CCDB; The Cell: An Image Library-Cell Centered Database; CIL",
+  "institution": "University of California San Diego, La Jolla, California",
+  "prefixed": 0,
+  "test": "e999",
+  "probe": "http://www.bindingdb.org/compact/e999",
+  "pattern": "^\\w\\d+$",
+  "state": "94:Unknown",
+  "more": "https://www.bindingdb.org",
+  "revision": 0
+}

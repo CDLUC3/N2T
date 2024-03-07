@@ -1,0 +1,9 @@
+{
+  "id": "nuccore",
+  "target": {
+    "DEFAULT": "http://www.ncbi.nlm.nih.gov/nuccore/[?id]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ncbi.nlm.nih.gov/nuccore/[?id]",
+  "revision": 0
+}

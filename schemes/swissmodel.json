@@ -1,0 +1,9 @@
+{
+  "id": "swissmodel",
+  "target": {
+    "DEFAULT": "http://swissmodel.expasy.org/repository/smr.php?sptr_ac={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://swissmodel.expasy.org/repository/smr.php?sptr_ac={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "conoserver",
+  "target": {
+    "DEFAULT": "http://www.conoserver.org/?page=card&table=protein&id={content}"
+  },
+  "type": "scheme",
+  "name": "ConoServer at University of Queensland",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100325",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.conoserver.org/?page=card&table=protein&id=${ac}",
+  "redirect": "http://www.conoserver.org/?page=card&table=protein&id={content}",
+  "description": "ConoServer is a database specialized in the sequence and structures of conopeptides, which are peptides expressed by carnivorous marine cone snails.",
+  "subject": "drug; protein",
+  "location": "Australia",
+  "synonym": "Bacterial protein tYrosine Kinase database",
+  "institution": "Institute for Molecular Bioscience, The University of Queensland, Brisbane",
+  "prefixed": 0,
+  "test": "2639",
+  "probe": "http://www.conoserver.org/?page=card&table=protein&id=2639",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://www.conoserver.org/",
+  "revision": 0
+}

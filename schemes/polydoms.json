@@ -1,0 +1,9 @@
+{
+  "id": "polydoms",
+  "target": {
+    "DEFAULT": "http://polydoms.cchmc.org/polydoms/GD?DISP_OPTION=[?NonSynonymous/Synonymous]&field1={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://polydoms.cchmc.org/polydoms/GD?DISP_OPTION=[?NonSynonymous/Synonymous]&field1={content}",
+  "revision": 0
+}

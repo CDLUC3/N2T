@@ -1,0 +1,27 @@
+{
+  "id": "pmdb",
+  "target": {
+    "DEFAULT": "https://bioinformatics.cineca.it/PMDB/user//search.php?idsearch={content}"
+  },
+  "type": "scheme",
+  "name": "Protein Model Database at University of Rome",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100247",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://bioinformatics.cineca.it/PMDB/user//search.php?idsearch=${ac}",
+  "redirect": "https://bioinformatics.cineca.it/PMDB/user//search.php?idsearch={content}",
+  "description": "The Protein Model DataBase (PMDB), is a database that collects manually built three dimensional protein models, obtained by different structure prediction techniques.",
+  "subject": "protein; structure",
+  "location": "Italy",
+  "synonym": "PMDB",
+  "institution": "CASPUR and Biocomputing group, Department of Biochemical Sciences, University of Rome, Rome",
+  "prefixed": 0,
+  "test": "PM0012345",
+  "probe": "https://bioinformatics.cineca.it/PMDB/user//search.php?idsearch=PM0012345",
+  "pattern": "^PM\\d{7}",
+  "state": "75:Down",
+  "more": "https://bioinformatics.cineca.it/PMDB/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "dev.ga4ghdos",
+  "target": {
+    "DEFAULT": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/{content}"
+  },
+  "type": "scheme",
+  "name": "Data Object Service",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100874",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/${ac}",
+  "redirect": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/{content}",
+  "description": "Assists in resolving data across cloud resources.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "University of California",
+  "prefixed": 0,
+  "test": "23fa7b4b-9d68-429b-aece-658b11124bb3#2017-03-24T18:43:16.886826-05:00",
+  "probe": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/23fa7b4b-9d68-429b-aece-658b11124bb3#2017-03-24T18:43:16.886826-05:00",
+  "pattern": "^[a-zA-Z0-9\\-:#\\.]+$",
+  "state": "0:Unknown",
+  "more": "http://github.com/ga4gh/data-object-service-schemas",
+  "revision": 0
+}

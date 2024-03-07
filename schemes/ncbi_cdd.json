@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/cdd",
+  "target": {},
+  "type": "synonym",
+  "for": "cdd",
+  "revision": 0
+}

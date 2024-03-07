@@ -1,0 +1,27 @@
+{
+  "id": "cazy",
+  "target": {
+    "DEFAULT": "http://www.cazy.org/{content}.html"
+  },
+  "type": "scheme",
+  "name": "CAZy at CNRS",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100252",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.cazy.org/${ac}.html",
+  "redirect": "http://www.cazy.org/{content}.html",
+  "description": "The Carbohydrate-Active Enzyme (CAZy) database is a resource specialized in enzymes that build and breakdown complex carbohydrates and glycoconjugates. These enzymes are classified into families based on structural features.",
+  "subject": "polysaccharide; classification",
+  "location": "France",
+  "synonym": "Carbohydrate-Active enzYmes",
+  "institution": "Architecture et Fonction des Macromol&#xE9;cules Biologiques, CNRS, Marseille",
+  "prefixed": 0,
+  "test": "GT10",
+  "probe": "http://www.cazy.org/GT10.html",
+  "pattern": "^(GT|GH|PL|CE|CBM)\\d+(\\_\\d+)?$",
+  "state": "100:Up",
+  "more": "http://www.cazy.org/",
+  "revision": 0
+}

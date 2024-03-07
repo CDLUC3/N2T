@@ -1,0 +1,27 @@
+{
+  "id": "umbbd.rule",
+  "target": {
+    "DEFAULT": "http://www.umbbd.ethz.ch/servlets/rule.jsp?rule={content}"
+  },
+  "type": "scheme",
+  "name": "Biocatalysis/Biodegradation Database Mirror (Biotransformation Rule) at ETH Zurich",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100421",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.umbbd.ethz.ch/servlets/rule.jsp?rule=${ac}",
+  "redirect": "http://www.umbbd.ethz.ch/servlets/rule.jsp?rule={content}",
+  "description": "The University of Minnesota Biocatalysis/Biodegradation Database (UM-BBD) contains information on microbial biocatalytic reactions and biodegradation pathways for primarily xenobiotic, chemical compounds. The UM-BBD Pathway Prediction System (PPS) predicts microbial catabolic reactions using substructure searching, a rule-base, and atom-to-atom mapping. The PPS recognizes organic functional groups found in a compound and predicts transformations based on biotransformation rules. These rules are based on reactions found in the UM-BBD database. This collection references those rules.",
+  "subject": "reaction; microbial",
+  "location": "Switzerland",
+  "synonym": "University of Minnesota Biocatalysis/Biodegradation Database (Pathway)",
+  "institution": "ETH, Zurich",
+  "prefixed": 0,
+  "test": "bt0001",
+  "probe": "http://www.umbbd.ethz.ch/servlets/rule.jsp?rule=bt0001",
+  "pattern": "^bt\\d+$",
+  "state": "100:Up",
+  "more": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=allrules",
+  "revision": 0
+}

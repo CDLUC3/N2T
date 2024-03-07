@@ -1,0 +1,27 @@
+{
+  "id": "mycobank",
+  "target": {
+    "DEFAULT": "http://www.mycobank.org/Biolomics.aspx?Table=Mycobank&MycoBankNr_={content}"
+  },
+  "type": "scheme",
+  "name": "MycoBank at Fungal Biodiversity Centre",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100224",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.mycobank.org/Biolomics.aspx?Table=Mycobank&MycoBankNr_=${ac}",
+  "redirect": "http://www.mycobank.org/Biolomics.aspx?Table=Mycobank&MycoBankNr_={content}",
+  "description": "MycoBank is an online database, documenting new mycological names and combinations, eventually combined with descriptions and illustrations.",
+  "subject": "classification",
+  "location": "Netherlands",
+  "synonym": "IMG Taxon",
+  "institution": "CBS-KNAW  Fungal Biodiversity Centre, Utrecht",
+  "prefixed": 0,
+  "test": "349124",
+  "probe": "http://www.mycobank.org/Biolomics.aspx?Table=Mycobank&MycoBankNr_=349124",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://www.mycobank.org/",
+  "revision": 0
+}

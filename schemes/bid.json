@@ -1,0 +1,9 @@
+{
+  "id": "bid",
+  "target": {
+    "DEFAULT": "http://tsailab.org/wikiBID/index.php/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://tsailab.org/wikiBID/index.php/{content}",
+  "revision": 0
+}

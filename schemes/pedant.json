@@ -1,0 +1,9 @@
+{
+  "id": "pedant",
+  "target": {
+    "DEFAULT": "http://pedant.gsf.de/pedant3htmlview/pedant3view?Method=analysis&Db={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pedant.gsf.de/pedant3htmlview/pedant3view?Method=analysis&Db={content}",
+  "revision": 0
+}

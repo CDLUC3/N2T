@@ -1,0 +1,9 @@
+{
+  "id": "metnetdb",
+  "target": {
+    "DEFAULT": "http://metnetonline.org/browse_pathway2.php?pthID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://metnetonline.org/browse_pathway2.php?pthID={content}",
+  "revision": 0
+}

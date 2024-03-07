@@ -1,0 +1,9 @@
+{
+  "id": "unprot.keywords",
+  "target": {
+    "DEFAULT": "http://www.uniprot.org/keywords/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.uniprot.org/keywords/{content}",
+  "revision": 0
+}

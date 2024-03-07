@@ -1,0 +1,27 @@
+{
+  "id": "bptl/neurolex",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/BIRNLEX/{content}"
+  },
+  "type": "scheme",
+  "name": "NeuroLex through NCBO's BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100183",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/BIRNLEX/${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/BIRNLEX/{content}",
+  "description": "The NeuroLex project is a dynamic lexicon of terms used in neuroscience.  It is supported by the Neuroscience Information Framework project and incorporates information from the NIF standardised ontology (NIFSTD), and its predecessor, the Biomedical Informatics Research Network Lexicon (BIRNLex).",
+  "subject": "neuroscience; ontology; controlled vocabulary",
+  "location": "USA",
+  "synonym": "BIRNLex; NIFSTD",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 0,
+  "test": "birnlex_1672",
+  "probe": "http://purl.bioontology.org/ontology/BIRNLEX/birnlex_1672",
+  "pattern": "^([Bb]irnlex_|Sao|nlx_|GO_|CogPO|HDO|nifext_)\\d+$",
+  "state": "97:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/BIRNLEX",
+  "revision": 0
+}

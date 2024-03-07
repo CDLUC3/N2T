@@ -1,0 +1,27 @@
+{
+  "id": "ols/eco",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/eco/terms?obo_id=ECO:{content}"
+  },
+  "type": "scheme",
+  "name": "Evidence Codes via the Ontology Lookup Service (OLS)",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100083",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/eco/terms?obo_id=ECO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/eco/terms?obo_id=ECO:{content}",
+  "description": "Evidence codes can be used to specify the type of supporting evidence for a piece of knowledge. This allows inference of a 'level of support' between an entity and an annotation made to an entity.",
+  "subject": "classification",
+  "location": "UK",
+  "synonym": "ECO",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "0000006",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/eco/terms?obo_id=ECO:0000006",
+  "pattern": "ECO:\\d{7}$",
+  "state": "76:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/eco",
+  "revision": 0
+}

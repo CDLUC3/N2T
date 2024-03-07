@@ -1,0 +1,27 @@
+{
+  "id": "arraymap",
+  "target": {
+    "DEFAULT": "https://www.arraymap.org/pgx:{content}"
+  },
+  "type": "scheme",
+  "name": "ArrayMap",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100825",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://www.arraymap.org/pgx:${ac}",
+  "redirect": "https://www.arraymap.org/pgx:{content}",
+  "description": "arrayMap is a collection of pre-processed oncogenomic array data sets and CNA (somatic copy number aberrations) profiles. CNA are a type of mutation commonly found in cancer genomes. arrayMap data is assembled from public repositories and supplemented with additional sources, using custom curation pipelines. This information has been mapped to multiple editions of the reference human genome.",
+  "subject": "genome; human",
+  "location": "Switzerland",
+  "synonym": "Marine Metagenomics Portal",
+  "institution": "Institute of Molecular Life Sciences, University of Zurich, Zurich",
+  "prefixed": 0,
+  "test": "icdom:8500_3",
+  "probe": "https://www.arraymap.org/pgx:icdom:8500_3",
+  "pattern": "^[\\w\\-:,]{3,64}$",
+  "state": "0:Unknown",
+  "more": "https://www.arraymap.org",
+  "revision": 0
+}

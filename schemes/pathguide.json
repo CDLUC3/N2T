@@ -1,0 +1,9 @@
+{
+  "id": "pathguide",
+  "target": {
+    "DEFAULT": "http://www.pathguide.org/fullrecord.php?organisms=all&availability=all&standards=all&order=alphabetic&DBID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.pathguide.org/fullrecord.php?organisms=all&availability=all&standards=all&order=alphabetic&DBID={content}",
+  "revision": 0
+}

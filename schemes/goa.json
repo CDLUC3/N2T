@@ -1,0 +1,27 @@
+{
+  "id": "goa",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/QuickGO/GProtein?ac={content}"
+  },
+  "type": "scheme",
+  "name": "GOA through QuickGO",
+  "alias": null,
+  "provider": "quickgo",
+  "provider_id": "MIR:00100253",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/QuickGO/GProtein?ac=${ac}",
+  "redirect": "https://www.ebi.ac.uk/QuickGO/GProtein?ac={content}",
+  "description": "The GOA (Gene Ontology Annotation) project provides high-quality Gene Ontology (GO) annotations to proteins in the UniProt Knowledgebase (UniProtKB) and International Protein Index (IPI). This involves electronic annotation and the integration of high-quality manual GO annotation from all GO Consortium model organism groups and specialist groups.",
+  "subject": "protein; ontology; annotation",
+  "location": "UK",
+  "synonym": "UniProtKB-GOA; Gene Ontology Annotation",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "P12345",
+  "probe": "https://www.ebi.ac.uk/QuickGO/GProtein?ac=P12345",
+  "pattern": "^(([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9]))|(URS[0-9A-F]{10}(_[0-9]+){0,1})|(EBI-[0-9]+)$",
+  "state": "79:Up",
+  "more": "https://www.ebi.ac.uk/GOA/",
+  "revision": 0
+}

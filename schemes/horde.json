@@ -1,0 +1,9 @@
+{
+  "id": "horde",
+  "target": {
+    "DEFAULT": "http://genome.weizmann.ac.il/cgi-bin/horde/showGene.pl?symbol={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://genome.weizmann.ac.il/cgi-bin/horde/showGene.pl?symbol={content}",
+  "revision": 0
+}

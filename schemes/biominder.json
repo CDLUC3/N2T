@@ -1,0 +1,27 @@
+{
+  "id": "biominder",
+  "target": {
+    "DEFAULT": "https://datalab.rwth-aachen.de/MINDER/resource/{content}"
+  },
+  "type": "scheme",
+  "name": "Bio-MINDER Tissue Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100839",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://datalab.rwth-aachen.de/MINDER/resource/${ac}",
+  "redirect": "https://datalab.rwth-aachen.de/MINDER/resource/{content}",
+  "description": "Database of the dielectric properties of biological tissues.",
+  "subject": null,
+  "location": "Ireland",
+  "synonym": "Microbial Genome Annotation & Analysis Platform",
+  "institution": "RWTH Aachen University / NUIG Galway",
+  "prefixed": 0,
+  "test": "aef4c195-9cf9-46db-a12a-7cfd1ff3eec3",
+  "probe": "https://datalab.rwth-aachen.de/MINDER/resource/aef4c195-9cf9-46db-a12a-7cfd1ff3eec3",
+  "pattern": "^[a-z0-9\\-]+$",
+  "state": "0:Unknown",
+  "more": "https://datalab.rwth-aachen.de/MINDER",
+  "revision": 0
+}

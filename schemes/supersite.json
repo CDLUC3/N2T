@@ -1,0 +1,9 @@
+{
+  "id": "supersite",
+  "target": {
+    "DEFAULT": "http://bioinf-tomcat.charite.de/supersite/resultPDB.faces?pdbid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioinf-tomcat.charite.de/supersite/resultPDB.faces?pdbid={content}",
+  "revision": 0
+}

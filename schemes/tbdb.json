@@ -1,0 +1,9 @@
+{
+  "id": "tbdb",
+  "target": {
+    "DEFAULT": "http://genome.tbdb.org/annotation/genome/tbdb/GeneDetails.html?sp={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://genome.tbdb.org/annotation/genome/tbdb/GeneDetails.html?sp={content}",
+  "revision": 0
+}

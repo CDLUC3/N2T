@@ -1,0 +1,27 @@
+{
+  "id": "mex",
+  "target": {
+    "DEFAULT": "https://www.metabolome-express.org/datasetview.php?datasetid={content}"
+  },
+  "type": "scheme",
+  "name": "Metabolome Express",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100862",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.metabolome-express.org/datasetview.php?datasetid=${ac}",
+  "redirect": "https://www.metabolome-express.org/datasetview.php?datasetid={content}",
+  "description": "A public place to process, interpret and share GC/MS metabolomics datasets.",
+  "subject": null,
+  "location": "Australia",
+  "synonym": "nmrCV",
+  "institution": "Australian Research Council Centre of Excellence in Plant Energy Biology",
+  "prefixed": 0,
+  "test": "36",
+  "probe": "https://www.metabolome-express.org/datasetview.php?datasetid=36",
+  "pattern": "^\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.metabolome-express.org/",
+  "revision": 0
+}

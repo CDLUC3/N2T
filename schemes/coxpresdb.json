@@ -1,0 +1,9 @@
+{
+  "id": "coxpresdb",
+  "target": {
+    "DEFAULT": "http://coxpresdb.jp/tis_map/{content}/"
+  },
+  "type": "commonspfx",
+  "redirect": "http://coxpresdb.jp/tis_map/{content}/",
+  "revision": 0
+}

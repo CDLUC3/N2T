@@ -1,0 +1,9 @@
+{
+  "id": "cygd",
+  "target": {
+    "DEFAULT": "http://mips.helmholtz-muenchen.de/genre/proj/yeast/singleGeneReport.html?entry={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://mips.helmholtz-muenchen.de/genre/proj/yeast/singleGeneReport.html?entry={content}",
+  "revision": 0
+}

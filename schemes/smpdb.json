@@ -1,0 +1,27 @@
+{
+  "id": "smpdb",
+  "target": {
+    "DEFAULT": "http://smpdb.ca/view/{content}"
+  },
+  "type": "scheme",
+  "name": "Small Molecule Pathway Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100137",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://smpdb.ca/view/${ac}",
+  "redirect": "http://smpdb.ca/view/{content}",
+  "description": "The Small Molecule Pathway Database (SMPDB) contains small molecule pathways found in humans, which are presented visually. All SMPDB pathways include information on the relevant organs, subcellular compartments, protein cofactors, protein locations, metabolite locations, chemical structures and protein quaternary structures. Accompanying data includes detailed descriptions and references, providing an overview of the pathway, condition or processes depicted in each diagram.",
+  "subject": "metabolite; pathway; human; chemical",
+  "location": "Canada",
+  "synonym": "SMPDB",
+  "institution": "University of Alberta, Edmonton, AB",
+  "prefixed": 0,
+  "test": "SMP00001",
+  "probe": "http://smpdb.ca/view/SMP00001",
+  "pattern": "^SMP\\d+$",
+  "state": "92:Up",
+  "more": "http://www.smpdb.ca/pathways",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ebi/pdb",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/pdbsum/{content}"
+  },
+  "type": "scheme",
+  "name": "Protein Databank through PDBsum",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100166",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/pdbsum/${ac}",
+  "redirect": "https://www.ebi.ac.uk/pdbsum/{content}",
+  "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules.",
+  "subject": "protein; structure",
+  "location": "UK",
+  "synonym": "PDB",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "2gc4",
+  "probe": "https://www.ebi.ac.uk/pdbsum/2gc4",
+  "pattern": "^[0-9][A-Za-z0-9]{3}$",
+  "state": "100:Up",
+  "more": "https://www.ebi.ac.uk/pdbsum/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "aclame",
+  "target": {
+    "DEFAULT": "http://aclame.ulb.ac.be/perl/Aclame/Genomes/mge_view.cgi?view=info&id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://aclame.ulb.ac.be/perl/Aclame/Genomes/mge_view.cgi?view=info&id={content}",
+  "revision": 0
+}

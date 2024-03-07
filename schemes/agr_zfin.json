@@ -1,0 +1,27 @@
+{
+  "id": "agr/zfin",
+  "target": {
+    "DEFAULT": "https://test.alliancegenome.org/gene/ZFIN:{content}"
+  },
+  "type": "scheme",
+  "name": "ZFIN through the Alliance of Genome Resources",
+  "alias": null,
+  "provider": "agr",
+  "provider_id": "MIR:00100902",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://test.alliancegenome.org/gene/ZFIN:${ac}",
+  "redirect": "https://test.alliancegenome.org/gene/ZFIN:{content}",
+  "description": "ZFIN serves as the zebrafish model organism database. This collection references all zebrafish biological entities in ZFIN.",
+  "subject": "gene",
+  "location": "USA",
+  "synonym": "MMMP Biomaps",
+  "institution": "Alliance of Genome Resources",
+  "prefixed": 0,
+  "test": "ZDB-GENE-041118-11",
+  "probe": "https://test.alliancegenome.org/gene/ZFIN:ZDB-GENE-041118-11",
+  "pattern": "^ZDB\\-\\w+\\-\\d+\\-\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.alliancegenome.org",
+  "revision": 0
+}

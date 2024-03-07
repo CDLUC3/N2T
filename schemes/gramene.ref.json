@@ -1,0 +1,9 @@
+{
+  "id": "gramene.ref",
+  "target": {
+    "DEFAULT": "http://www.gramene.org/db/literature/pub_search?ref_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.gramene.org/db/literature/pub_search?ref_id={content}",
+  "revision": 0
+}

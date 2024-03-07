@@ -1,0 +1,27 @@
+{
+  "id": "pmap.cutdb",
+  "target": {
+    "DEFAULT": "http://cutdb.burnham.org/relation/show/{content}"
+  },
+  "type": "scheme",
+  "name": "CutDB at The Burnham Institute for Medical Research",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100284",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://cutdb.burnham.org/relation/show/${ac}",
+  "redirect": "http://cutdb.burnham.org/relation/show/{content}",
+  "description": "The Proteolysis MAP is a resource for proteolytic networks and pathways. PMAP is comprised of five databases, linked together in one environment. CutDB is a database of individual proteolytic events (cleavage sites).",
+  "subject": "reaction; protein; domain",
+  "location": "USA",
+  "synonym": "PMAP cutDB",
+  "institution": "The Center on Proteolytic Pathways, The Cancer Research Center and The Inflammatory and Infectious Disease Center, The Burnham Institute for Medical Research, California",
+  "prefixed": 0,
+  "test": "25782",
+  "probe": "http://cutdb.burnham.org/relation/show/25782",
+  "pattern": "^\\d+$",
+  "state": "83:Down",
+  "more": "http://cutdb.burnham.org",
+  "revision": 0
+}

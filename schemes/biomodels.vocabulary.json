@@ -1,0 +1,27 @@
+{
+  "id": "biomodels.vocabulary",
+  "target": {
+    "DEFAULT": "http://biomodels.net/rdf/vocabulary.rdf#{content}"
+  },
+  "type": "scheme",
+  "name": "Vocabulary via BioModels.net",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100661",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://biomodels.net/rdf/vocabulary.rdf#${ac}",
+  "redirect": "http://biomodels.net/rdf/vocabulary.rdf#{content}",
+  "description": "Vocabulary used in the RDF representation of SBML models.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "EGA Dataset",
+  "institution": "BioModels.net",
+  "prefixed": 0,
+  "test": "rateRule",
+  "probe": "http://biomodels.net/rdf/vocabulary.rdf#rateRule",
+  "pattern": "^[A-Za-z]+$",
+  "state": "100:Up",
+  "more": "http://biomodels.net/rdf/vocabulary.rdf",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "systomonas.interaction",
+  "target": {
+    "DEFAULT": "http://www.systomonas.de/interaction.php?ia_acc={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.systomonas.de/interaction.php?ia_acc={content}",
+  "revision": 0
+}

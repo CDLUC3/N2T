@@ -1,0 +1,27 @@
+{
+  "id": "google.patent",
+  "target": {
+    "DEFAULT": "https://www.google.com/patents/{content}"
+  },
+  "type": "scheme",
+  "name": "Google Patents at Google",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100714",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://www.google.com/patents/${ac}",
+  "redirect": "https://www.google.com/patents/{content}",
+  "description": "Google Patents covers the entire collection of granted patents and published patent applications from the USPTO, EPO, and WIPO. US patent documents date back to 1790, EPO and WIPO to 1978. Google Patents can be searched using patent number, inventor, classification, and filing date.",
+  "subject": "registry",
+  "location": null,
+  "synonym": "EU Clinical Trials Register",
+  "institution": "Google Incorporated",
+  "prefixed": 0,
+  "test": "US4145692",
+  "probe": "https://www.google.com/patents/US4145692",
+  "pattern": "^[A-Z]{2}\\d+([A-Z])?$",
+  "state": "100:Up",
+  "more": "https://www.google.com/patents/",
+  "revision": 0
+}

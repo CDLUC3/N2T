@@ -1,0 +1,27 @@
+{
+  "id": "ma",
+  "target": {
+    "DEFAULT": "http://www.informatics.jax.org/searches/AMA.cgi?id=MA:{content}"
+  },
+  "type": "scheme",
+  "name": "Mouse Adult Gross Anatomy at The Jackson Laboratory",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100578",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.informatics.jax.org/searches/AMA.cgi?id=MA:${ac}",
+  "redirect": "http://www.informatics.jax.org/searches/AMA.cgi?id=MA:{content}",
+  "description": "A structured controlled vocabulary of the adult anatomy of the mouse (Mus)",
+  "subject": "ontology",
+  "location": "USA",
+  "synonym": "Journal Storage",
+  "institution": "The Jackson Laboratory, Bar Harbor, Maine",
+  "prefixed": 1,
+  "test": "0002502",
+  "probe": "http://www.informatics.jax.org/searches/AMA.cgi?id=MA:0002502",
+  "pattern": "^MA:\\d+$",
+  "state": "100:Up",
+  "more": "http://www.informatics.jax.org/",
+  "revision": 0
+}

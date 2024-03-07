@@ -1,0 +1,27 @@
+{
+  "id": "ebi/insdc",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/{content}"
+  },
+  "type": "scheme",
+  "name": "INSDC through European Nucleotide Archive (ENA)",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100487",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ena/data/view/${ac}",
+  "redirect": "https://www.ebi.ac.uk/ena/data/view/{content}",
+  "description": "The International Nucleotide Sequence Database Collaboration (INSDC) consists of a joint effort to collect and disseminate databases containing DNA and RNA sequences.",
+  "subject": "nucleotide; sequence",
+  "location": "UK",
+  "synonym": "GenBank; INSDC; International Nucleotide Sequence Database Collaboration; NCBI nucleotide",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "X58356",
+  "probe": "https://www.ebi.ac.uk/ena/data/view/X58356",
+  "pattern": "^([A-Z]\\d{5}|[A-Z]{2}\\d{6}|[A-Z]{4}\\d{8}|[A-J][A-Z]{2}\\d{5})(\\.\\d+)?$",
+  "state": "100:Probably up",
+  "more": "https://www.ebi.ac.uk/ena/",
+  "revision": 0
+}

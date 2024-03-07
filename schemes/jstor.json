@@ -1,0 +1,27 @@
+{
+  "id": "jstor",
+  "target": {
+    "DEFAULT": "http://www.jstor.org/stable/{content}"
+  },
+  "type": "scheme",
+  "name": "JSTOR Online",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100575",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.jstor.org/stable/${ac}",
+  "redirect": "http://www.jstor.org/stable/{content}",
+  "description": "JSTOR (Journal Storage) is a digital library containing digital versions of historical academic journals, as well as books, pamphlets and current issues of journals. Some public domain content is free to access, while other articles require registration.",
+  "subject": "bibliography",
+  "location": "USA",
+  "synonym": "Journal Storage",
+  "institution": "Ithaka Harbors, Inc., New York",
+  "prefixed": 0,
+  "test": "3075966",
+  "probe": "http://www.jstor.org/stable/3075966",
+  "pattern": "^\\d+$",
+  "state": "84:Up",
+  "more": "http://www.jstor.org/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "neumore",
+  "target": {
+    "DEFAULT": "http://neumore.cis.usouthal.edu/ontologies/NeuMORE-v0.1.owl#{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://neumore.cis.usouthal.edu/ontologies/NeuMORE-v0.1.owl#{content}",
+  "revision": 0
+}

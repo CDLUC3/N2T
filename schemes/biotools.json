@@ -1,0 +1,27 @@
+{
+  "id": "biotools",
+  "target": {
+    "DEFAULT": "https://bio.tools/{content}"
+  },
+  "type": "scheme",
+  "name": "BioTools",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100820",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://bio.tools/${ac}",
+  "redirect": "https://bio.tools/{content}",
+  "description": "Tool and data services registry.",
+  "subject": null,
+  "location": "Denmark",
+  "synonym": "Marine Metagenomics Portal",
+  "institution": "Elixir-DK",
+  "prefixed": 0,
+  "test": "uniprotkb",
+  "probe": "https://bio.tools/uniprotkb",
+  "pattern": "^[A-Za-z0-9\\_]*$",
+  "state": "0:Unknown",
+  "more": "https://bio.tools/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "ipath",
+  "target": {
+    "DEFAULT": "http://escience.invitrogen.com/ipath/iPath.jsp?cn=unknown&mapid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://escience.invitrogen.com/ipath/iPath.jsp?cn=unknown&mapid={content}",
+  "revision": 0
+}

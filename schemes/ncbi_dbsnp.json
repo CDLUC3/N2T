@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/dbsnp",
+  "target": {},
+  "type": "synonym",
+  "for": "dbsnp",
+  "revision": 0
+}

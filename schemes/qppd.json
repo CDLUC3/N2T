@@ -1,0 +1,9 @@
+{
+  "id": "qppd",
+  "target": {
+    "DEFAULT": "http://lpgws.nci.nih.gov/cgi-bin/PrimerViewer?acc={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://lpgws.nci.nih.gov/cgi-bin/PrimerViewer?acc={content}",
+  "revision": 0
+}

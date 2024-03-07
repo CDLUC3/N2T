@@ -1,0 +1,9 @@
+{
+  "id": "cmr",
+  "target": {
+    "DEFAULT": "http://cmr.jcvi.org/tigr-scripts/CMR/shared/GenePage.cgi?locus={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://cmr.jcvi.org/tigr-scripts/CMR/shared/GenePage.cgi?locus={content}",
+  "revision": 0
+}

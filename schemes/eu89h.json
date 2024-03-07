@@ -1,0 +1,27 @@
+{
+  "id": "eu89h",
+  "target": {
+    "DEFAULT": "http://data.europa.eu/89h/{content}"
+  },
+  "type": "scheme",
+  "name": "JRC Data Catalogue",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100849",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://data.europa.eu/89h/${ac}",
+  "redirect": "http://data.europa.eu/89h/{content}",
+  "description": "The JRC Data Catalogue gives access to the multidisciplinary data produced and maintained by the Joint Research Centre, the European Commission's in-house science service providing independent scientific advice and support to policies of the European Union.",
+  "subject": null,
+  "location": "EU",
+  "synonym": "nmrCV",
+  "institution": "European Commission, Joint Research Centre (JRC)",
+  "prefixed": 0,
+  "test": "jrc-eurl-ecvam-chemagora",
+  "probe": "http://data.europa.eu/89h/jrc-eurl-ecvam-chemagora",
+  "pattern": "^[a-z0-9\\-_]+$",
+  "state": "99:Up",
+  "more": "http://data.jrc.ec.europa.eu/",
+  "revision": 0
+}

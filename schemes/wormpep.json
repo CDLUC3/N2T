@@ -1,0 +1,27 @@
+{
+  "id": "wormpep",
+  "target": {
+    "DEFAULT": "https://www.wormbase.org/db/seq/protein?name=WP:{content}"
+  },
+  "type": "scheme",
+  "name": "Wormpep (Master)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100051",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.wormbase.org/db/seq/protein?name=WP:${ac}",
+  "redirect": "https://www.wormbase.org/db/seq/protein?name=WP:{content}",
+  "description": "Wormpep contains the predicted proteins from the Caenorhabditis elegans genome sequencing project.",
+  "subject": "genome; protein",
+  "location": "USA",
+  "synonym": "GenBank; INSDC; International Nucleotide Sequence Database Collaboration; NCBI nucleotide",
+  "institution": "Cold Spring Harbor Laboratory",
+  "prefixed": 0,
+  "test": "CE28239",
+  "probe": "https://www.wormbase.org/db/seq/protein?name=WP:CE28239",
+  "pattern": "^CE\\d{5}$",
+  "state": "88:Down",
+  "more": "https://www.wormbase.org/db/seq/protein",
+  "revision": 0
+}

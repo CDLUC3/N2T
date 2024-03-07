@@ -1,0 +1,9 @@
+{
+  "id": "fugoid",
+  "target": {
+    "DEFAULT": "http://fugoid.webhost.utexas.edu/introndata/full_display.cfm?intronID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://fugoid.webhost.utexas.edu/introndata/full_display.cfm?intronID={content}",
+  "revision": 0
+}

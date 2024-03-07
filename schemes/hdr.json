@@ -1,0 +1,27 @@
+{
+  "id": "hdr",
+  "target": {
+    "DEFAULT": "http://research.nhgri.nih.gov/apps/homeodomain/web/index.cgi?mode=view&amp;view=proteins&amp;id={content}"
+  },
+  "type": "scheme",
+  "name": "Homeodomain Research at National Human Genome Research Institute (NIH)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100638",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://research.nhgri.nih.gov/apps/homeodomain/web/index.cgi?mode=view&amp;view=proteins&amp;id=${ac}",
+  "redirect": "http://research.nhgri.nih.gov/apps/homeodomain/web/index.cgi?mode=view&amp;view=proteins&amp;id={content}",
+  "description": "The Homeodomain Resource is a curated collection of sequence, structure, interaction, genomic and functional information on the homeodomain family. It contains sets of curated homeodomain sequences from fully sequenced genomes, including experimentally derived homeodomain structures, homeodomain protein-protein interactions, homeodomain DNA-binding sites and homeodomain proteins implicated in human genetic disorders.",
+  "subject": "protein; interaction; domain",
+  "location": "USA",
+  "synonym": "Functional Single Nucleotide Polymorphism",
+  "institution": "Genome Technology Branch, National Human Genome Research Institute, National Institutes of Health, Bethesda, Maryland",
+  "prefixed": 0,
+  "test": "63",
+  "probe": "http://research.nhgri.nih.gov/apps/homeodomain/web/index.cgi?mode=view&amp;view=proteins&amp;id=63",
+  "pattern": "^\\d+$",
+  "state": "67:Down",
+  "more": "http://research.nhgri.nih.gov/apps/homeodomain/web/",
+  "revision": 0
+}

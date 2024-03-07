@@ -1,0 +1,9 @@
+{
+  "id": "il2rgbase",
+  "target": {
+    "DEFAULT": "http://research.nhgri.nih.gov/apps/scid/scid_reference.html#{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://research.nhgri.nih.gov/apps/scid/scid_reference.html#{content}",
+  "revision": 0
+}

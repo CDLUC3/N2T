@@ -1,0 +1,27 @@
+{
+  "id": "pubchem.compound",
+  "target": {
+    "DEFAULT": "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid={content}"
+  },
+  "type": "scheme",
+  "name": "NCBI PubChem Compound",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100059",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=${ac}",
+  "redirect": "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid={content}",
+  "description": "PubChem provides information on the biological activities of small molecules. It is a component of NIH's Molecular Libraries Roadmap Initiative. PubChem Compound archives chemical structures and records.",
+  "subject": "metabolite; chemical; structure",
+  "location": "USA",
+  "synonym": "PubChem CID; PubChem Compound",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "100101",
+  "probe": "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=100101",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "https://pubchem.ncbi.nlm.nih.gov/",
+  "revision": 0
+}

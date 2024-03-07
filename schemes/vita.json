@@ -1,0 +1,9 @@
+{
+  "id": "vita",
+  "target": {
+    "DEFAULT": "http://vita.mbc.nctu.edu.tw/search.php?acc={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://vita.mbc.nctu.edu.tw/search.php?acc={content}",
+  "revision": 0
+}

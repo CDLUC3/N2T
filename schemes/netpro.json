@@ -1,0 +1,9 @@
+{
+  "id": "netpro",
+  "target": {
+    "DEFAULT": "http://www.interactions.net.in/index_molreport.jsp?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.interactions.net.in/index_molreport.jsp?id={content}",
+  "revision": 0
+}

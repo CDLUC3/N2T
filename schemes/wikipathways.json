@@ -1,0 +1,27 @@
+{
+  "id": "wikipathways",
+  "target": {
+    "DEFAULT": "http://www.wikipathways.org/instance/{content}"
+  },
+  "type": "scheme",
+  "name": "Wikipathways",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100106",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.wikipathways.org/instance/${ac}",
+  "redirect": "http://www.wikipathways.org/instance/{content}",
+  "description": "WikiPathways is a resource providing an open and public collection of  pathway maps created and curated by the community in a Wiki like style. All content is under the Creative Commons Attribution 3.0 Unported license.",
+  "subject": "pathway",
+  "location": "Holland and USA",
+  "synonym": "MMMP Biomaps",
+  "institution": "BiGCaT Bioinformatics (University of Maastricht) and Conklin Lab (UCSF).",
+  "prefixed": 0,
+  "test": "WP100",
+  "probe": "http://www.wikipathways.org/instance/WP100",
+  "pattern": "WP\\d{1,5}(\\_r\\d+)?$",
+  "state": "94:Up",
+  "more": "http://www.wikipathways.org/",
+  "revision": 0
+}

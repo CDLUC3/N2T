@@ -1,0 +1,9 @@
+{
+  "id": "fcp",
+  "target": {
+    "DEFAULT": "http://cgl.imim.es/fcp/fcp.php?struct=1&compactId=EC.{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://cgl.imim.es/fcp/fcp.php?struct=1&compactId=EC.{content}",
+  "revision": 0
+}

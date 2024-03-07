@@ -1,0 +1,27 @@
+{
+  "id": "prodom",
+  "target": {
+    "DEFAULT": "http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query={content}"
+  },
+  "type": "scheme",
+  "name": "ProDom Protein Domain Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100150",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query=${ac}",
+  "redirect": "http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query={content}",
+  "description": "ProDom is a database of protein domain families generated from the global comparison of all available protein sequences.",
+  "subject": "domain; protein",
+  "location": "France",
+  "synonym": "KEGG",
+  "institution": "Laboratoire des Interactions Plantes-Microorganismes, INRA/CNRS",
+  "prefixed": 0,
+  "test": "PD10000",
+  "probe": "http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query=PD10000",
+  "pattern": "^PD\\d+$",
+  "state": "94:Up",
+  "more": "http://prodom.prabi.fr/prodom/current/html/home.php",
+  "revision": 0
+}

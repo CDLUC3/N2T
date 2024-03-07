@@ -1,0 +1,7 @@
+{
+  "id": "ebi/macie",
+  "target": {},
+  "type": "synonym",
+  "for": "macie",
+  "revision": 0
+}

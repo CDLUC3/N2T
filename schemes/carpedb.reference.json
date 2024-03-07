@@ -1,0 +1,9 @@
+{
+  "id": "carpedb.reference",
+  "target": {
+    "DEFAULT": "http://www.carpedb.ua.edu/public.cfm?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.carpedb.ua.edu/public.cfm?id={content}",
+  "revision": 0
+}

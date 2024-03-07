@@ -1,0 +1,27 @@
+{
+  "id": "minid",
+  "target": {
+    "DEFAULT": "http://n2t.net/ark:/57799/{content}"
+  },
+  "type": "scheme",
+  "name": "Minimal Identifiers for Transient Data",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100850",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://n2t.net/ark:/57799/${ac}",
+  "redirect": "http://n2t.net/ark:/57799/{content}",
+  "description": "Minid are identifiers used to provide robust reference to intermediate data generated during the course of a research investigation.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "Big Data for Discovery Science Consortium",
+  "prefixed": 0,
+  "test": "b97957",
+  "probe": "http://n2t.net/ark:/57799/b97957",
+  "pattern": "^[A-Za-z0-9]+$",
+  "state": "100:Up",
+  "more": "http://minid.bd2k.org",
+  "revision": 0
+}

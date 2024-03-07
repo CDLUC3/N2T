@@ -1,0 +1,27 @@
+{
+  "id": "gmd",
+  "target": {
+    "DEFAULT": "http://gmd.mpimp-golm.mpg.de/Metabolites/{content}.aspx"
+  },
+  "type": "scheme",
+  "name": "Golm Metabolome Database at Max Planck Institute of Molecular Plant Physiology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100354",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://gmd.mpimp-golm.mpg.de/Metabolites/${ac}.aspx",
+  "redirect": "http://gmd.mpimp-golm.mpg.de/Metabolites/{content}.aspx",
+  "description": "Golm Metabolome Database (GMD) provides public access to custom mass spectral libraries, metabolite profiling experiments as well as additional information and tools. This collection references metabolite information, relating the biologically active substance to metabolic pathways or signalling phenomena.",
+  "subject": "metabolite",
+  "location": "Germany",
+  "synonym": "GMD",
+  "institution": "Max Planck Institute of Molecular Plant Physiology, Potsdam",
+  "prefixed": 0,
+  "test": "68513255-fc44-4041-bc4b-4fd2fae7541d",
+  "probe": "http://gmd.mpimp-golm.mpg.de/Metabolites/68513255-fc44-4041-bc4b-4fd2fae7541d.aspx",
+  "pattern": "^([0-9a-fA-F]){8}(-([0-9a-fA-F]){4}){3}-([0-9a-fA-F]){12}$",
+  "state": "99:Up",
+  "more": "http://gmd.mpimp-golm.mpg.de/",
+  "revision": 0
+}

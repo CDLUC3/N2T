@@ -1,0 +1,9 @@
+{
+  "id": "mgg",
+  "target": {
+    "DEFAULT": "http://www.broadinstitute.org/annotation/genome/magnaporthe_grisea/GeneDetails.html?sp={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.broadinstitute.org/annotation/genome/magnaporthe_grisea/GeneDetails.html?sp={content}",
+  "revision": 0
+}

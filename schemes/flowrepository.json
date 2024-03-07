@@ -1,0 +1,27 @@
+{
+  "id": "flowrepository",
+  "target": {
+    "DEFAULT": "https://flowrepository.org/id/{content}"
+  },
+  "type": "scheme",
+  "name": "FlowRepository",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100896",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://flowrepository.org/id/${ac}",
+  "redirect": "https://flowrepository.org/id/{content}",
+  "description": "FlowRepository is a database of flow cytometry experiments where you can query and download data collected and annotated according to the MIFlowCyt standard. It is primarily used as a data deposition place for experimental findings published in peer-reviewed journals in the flow cytometry field.",
+  "subject": null,
+  "location": "Canada",
+  "synonym": "Open Citation Identifier",
+  "institution": "Terry Fox Laboratory",
+  "prefixed": 0,
+  "test": "FR-FCM-ZYGW",
+  "probe": "https://flowrepository.org/id/FR-FCM-ZYGW",
+  "pattern": "^FR\\-FCM\\-\\w{4}$",
+  "state": "0:Unknown",
+  "more": "https://flowrepository.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "door",
+  "target": {
+    "DEFAULT": "http://csbl.bmb.uga.edu/DOOR/operon.php?id={content}"
+  },
+  "type": "scheme",
+  "name": "DOOR v1 at University of Georgia",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100588",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://csbl.bmb.uga.edu/DOOR/operon.php?id=${ac}",
+  "redirect": "http://csbl.bmb.uga.edu/DOOR/operon.php?id={content}",
+  "description": "DOOR (Database for prOkaryotic OpeRons) contains computationally predicted operons of all the sequenced prokaryotic genomes. It includes operons for RNA genes.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Database for prOkaryotic OpeRons",
+  "institution": "Computational Systems Biology Laboratory, Department of Biochemistry and Molecular Biology, University of Georgia, Athens, Georgia",
+  "prefixed": 0,
+  "test": "1398574",
+  "probe": "http://csbl.bmb.uga.edu/DOOR/operon.php?id=1398574",
+  "pattern": "^\\d+$",
+  "state": "22:Up",
+  "more": "http://csbl.bmb.uga.edu/DOOR/operon.php",
+  "revision": 0
+}

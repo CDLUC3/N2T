@@ -1,0 +1,9 @@
+{
+  "id": "ccd",
+  "target": {
+    "DEFAULT": "http://www.ebi.ac.uk/msd-srv/msdchem/cgi-bin/cgi.pl?FUNCTION=record&ENTITY=CHEM_COMP&PRIMARYKEY={content}&APPLICATION=1"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ebi.ac.uk/msd-srv/msdchem/cgi-bin/cgi.pl?FUNCTION=record&ENTITY=CHEM_COMP&PRIMARYKEY={content}&APPLICATION=1",
+  "revision": 0
+}

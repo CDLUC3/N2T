@@ -1,0 +1,9 @@
+{
+  "id": "nascarrays",
+  "target": {
+    "DEFAULT": "http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid={content}",
+  "revision": 0
+}

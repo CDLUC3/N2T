@@ -1,0 +1,27 @@
+{
+  "id": "antibodyregistry",
+  "target": {
+    "DEFAULT": "http://antibodyregistry.org/AB_{content}"
+  },
+  "type": "scheme",
+  "name": "Antibody Registry at University of California",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100664",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://antibodyregistry.org/AB_${ac}",
+  "redirect": "http://antibodyregistry.org/AB_{content}",
+  "description": "The Antibody Registry provides identifiers for antibodies used in publications. It lists commercial antibodies from numerous vendors, each assigned with a unique identifier. Unlisted antibodies can be submitted by providing the catalog number and vendor information.",
+  "subject": "registry; immunogenetics",
+  "location": "USA",
+  "synonym": "EGA Dataset",
+  "institution": "Neuroscience Information Framework, University of California, San Diego,  California",
+  "prefixed": 0,
+  "test": "493771",
+  "probe": "http://antibodyregistry.org/AB_493771",
+  "pattern": "^\\d{6}$",
+  "state": "98:Up",
+  "more": "http://antibodyregistry.org/",
+  "revision": 0
+}

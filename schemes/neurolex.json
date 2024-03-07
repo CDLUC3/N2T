@@ -1,0 +1,27 @@
+{
+  "id": "neurolex",
+  "target": {
+    "DEFAULT": "http://www.neurolex.org/wiki/{content}"
+  },
+  "type": "scheme",
+  "name": "NeuroLex Neuroscience Lexicon",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100160",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.neurolex.org/wiki/${ac}",
+  "redirect": "http://www.neurolex.org/wiki/{content}",
+  "description": "The NeuroLex project is a dynamic lexicon of terms used in neuroscience.  It is supported by the Neuroscience Information Framework project and incorporates information from the NIF standardised ontology (NIFSTD), and its predecessor, the Biomedical Informatics Research Network Lexicon (BIRNLex).",
+  "subject": "neuroscience; ontology; controlled vocabulary",
+  "location": "USA",
+  "synonym": "BIRNLex; NIFSTD",
+  "institution": "Department of Neuroscience, University of California, San Diego",
+  "prefixed": 0,
+  "test": "Birnlex_721",
+  "probe": "http://www.neurolex.org/wiki/Birnlex_721",
+  "pattern": "^([Bb]irnlex_|Sao|nlx_|GO_|CogPO|HDO|nifext_)\\d+$",
+  "state": "92:Up",
+  "more": "http://www.neurolex.org/wiki/Main_Page",
+  "revision": 0
+}

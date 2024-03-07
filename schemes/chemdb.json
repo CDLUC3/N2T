@@ -1,0 +1,27 @@
+{
+  "id": "chemdb",
+  "target": {
+    "DEFAULT": "http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id={content}"
+  },
+  "type": "scheme",
+  "name": "ChemDB at UC Irvine",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100360",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id=${ac}",
+  "redirect": "http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id={content}",
+  "description": "ChemDB is a chemical database containing commercially available small molecules, important for use as synthetic building blocks, probes in systems biology and as leads for the discovery of drugs and other useful compounds.",
+  "subject": "chemical",
+  "location": "USA",
+  "synonym": "Antimicrobial Peptide Database",
+  "institution": "University of California, Irvine",
+  "prefixed": 0,
+  "test": "3966782",
+  "probe": "http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id=3966782",
+  "pattern": "^\\d+$",
+  "state": "95:Up",
+  "more": "http://cdb.ics.uci.edu/",
+  "revision": 0
+}

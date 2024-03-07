@@ -1,0 +1,9 @@
+{
+  "id": "pid",
+  "target": {
+    "DEFAULT": "http://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "foodon",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/foodon/terms?obo_id=FOODON:{content}"
+  },
+  "type": "scheme",
+  "name": "FoodOn Food Ontology through OLS",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100879",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/foodon/terms?obo_id=FOODON:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/foodon/terms?obo_id=FOODON:{content}",
+  "description": "FoodOn is a comprehensive and easily accessible global farm-to-fork ontology about food that accurately and consistently describes foods commonly known in cultures from around the world. It is a consortium-driven project built to interoperate with the The Open Biological and Biomedical Ontology Foundry library of ontologies.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Open Citation Identifier",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "03307879",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/foodon/terms?obo_id=FOODON:03307879",
+  "pattern": "^FOODON:[0-9]{8}$",
+  "state": "0:Unknown",
+  "more": "https://foodon.org",
+  "revision": 0
+}

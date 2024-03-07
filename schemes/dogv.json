@@ -1,0 +1,9 @@
+{
+  "id": "dogv",
+  "target": {
+    "DEFAULT": "http://projects.tcag.ca/cgi-bin/variation/xview?source=hg18&view=locus&id=[?locus_id]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://projects.tcag.ca/cgi-bin/variation/xview?source=hg18&view=locus&id=[?locus_id]",
+  "revision": 0
+}

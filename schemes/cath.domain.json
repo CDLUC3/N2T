@@ -1,0 +1,27 @@
+{
+  "id": "cath.domain",
+  "target": {
+    "DEFAULT": "http://www.cathdb.info/domain/{content}"
+  },
+  "type": "scheme",
+  "name": "CATH domain at UCL",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100269",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.cathdb.info/domain/${ac}",
+  "redirect": "http://www.cathdb.info/domain/{content}",
+  "description": "The CATH database is a hierarchical domain classification of protein structures in the Protein Data Bank. Protein structures are classified using a combination of automated and manual procedures. There are four major levels in this hierarchy; Class (secondary structure classification, e.g. mostly alpha), Architecture (classification based on overall shape), Topology (fold family) and Homologous superfamily (protein domains which are thought to share a common ancestor). This colelction is concerned with CATH domains.",
+  "subject": "structure; schema.org; protein; classification",
+  "location": "UK",
+  "synonym": "euHCVDB",
+  "institution": "Institute of Structural and Molecular Biology, University College London",
+  "prefixed": 0,
+  "test": "1cukA01",
+  "probe": "http://www.cathdb.info/domain/1cukA01",
+  "pattern": "^\\w+$",
+  "state": "98:Up",
+  "more": "http://www.cathdb.info/",
+  "revision": 0
+}

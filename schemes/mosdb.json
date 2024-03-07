@@ -1,0 +1,9 @@
+{
+  "id": "mosdb",
+  "target": {
+    "DEFAULT": "http://mips.helmholtz-muenchen.de/plant/rice/reportsjsp/contigReport.jsp?contig_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://mips.helmholtz-muenchen.de/plant/rice/reportsjsp/contigReport.jsp?contig_id={content}",
+  "revision": 0
+}

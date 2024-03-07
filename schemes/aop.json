@@ -1,0 +1,27 @@
+{
+  "id": "aop",
+  "target": {
+    "DEFAULT": "https://aopwiki.org/aops/{content}"
+  },
+  "type": "scheme",
+  "name": "AOPWiki",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100821",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://aopwiki.org/aops/${ac}",
+  "redirect": "https://aopwiki.org/aops/{content}",
+  "description": "International repository of Adverse Outcome Pathways.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Marine Metagenomics Portal",
+  "institution": "European Commision - DG Joint Research Centre and U.S Environmental Protection Agency",
+  "prefixed": 0,
+  "test": "98",
+  "probe": "https://aopwiki.org/aops/98",
+  "pattern": "^\\d+$",
+  "state": "0:Unknown",
+  "more": "https://aopwiki.org/",
+  "revision": 0
+}

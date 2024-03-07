@@ -1,0 +1,27 @@
+{
+  "id": "funcbase.human",
+  "target": {
+    "DEFAULT": "http://func.mshri.on.ca/human/genes/list_functional_scores/{content}"
+  },
+  "type": "scheme",
+  "name": "FuncBase Human at Harvard Medical School",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100597",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://func.mshri.on.ca/human/genes/list_functional_scores/${ac}",
+  "redirect": "http://func.mshri.on.ca/human/genes/list_functional_scores/{content}",
+  "description": "Computational gene function prediction can serve to focus experimental resources on high-priority experimental tasks. FuncBase is a web resource for viewing quantitative machine learning-based gene function annotations. Quantitative annotations of genes, including fungal and mammalian genes, with Gene Ontology terms are accompanied by a community feedback system. Evidence underlying function annotations is shown. FuncBase provides links to external resources, and may be accessed directly or via links from species-specific databases. This collection references human data.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Yeast Resource Center Public Data Repository",
+  "institution": "Harvard Medical School, Boston, Massachusetts",
+  "prefixed": 0,
+  "test": "119514",
+  "probe": "http://func.mshri.on.ca/human/genes/list_functional_scores/119514",
+  "pattern": "^\\d+$",
+  "state": "88:Probably up",
+  "more": "http://func.mshri.on.ca/human/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "mgi",
+  "target": {
+    "DEFAULT": "http://www.informatics.jax.org/accession/MGI:{content}"
+  },
+  "type": "scheme",
+  "name": "Mouse Genome Informatics Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100062",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.informatics.jax.org/accession/MGI:${ac}",
+  "redirect": "http://www.informatics.jax.org/accession/MGI:{content}",
+  "description": "The Mouse Genome Database (MGD) project includes data on gene characterization, nomenclature, mapping, gene homologies among mammals, sequence links, phenotypes, allelic variants and mutants, and strain data.",
+  "subject": "expression; sequence; phenotype",
+  "location": "USA",
+  "synonym": "MGI; MGD; Mouse Genome Informatics",
+  "institution": "The Jackson Laboratory",
+  "prefixed": 1,
+  "test": "2442292",
+  "probe": "http://www.informatics.jax.org/accession/MGI:2442292",
+  "pattern": "^MGI:\\d+$",
+  "state": "99:Up",
+  "more": "http://www.informatics.jax.org/",
+  "revision": 0
+}

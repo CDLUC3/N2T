@@ -1,0 +1,9 @@
+{
+  "id": "wikipedia",
+  "target": {
+    "DEFAULT": "http://en.wikipedia.org/wiki/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://en.wikipedia.org/wiki/{content}",
+  "revision": 0
+}

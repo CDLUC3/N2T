@@ -1,0 +1,9 @@
+{
+  "id": "scadb",
+  "target": {
+    "DEFAULT": "http://ymbc.ym.edu.tw/cgi-bin/SCAdb_ensembl/aroundSTR.cgi?sca_type=SCA1&type=CAG&repeats_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ymbc.ym.edu.tw/cgi-bin/SCAdb_ensembl/aroundSTR.cgi?sca_type=SCA1&type=CAG&repeats_id={content}",
+  "revision": 0
+}

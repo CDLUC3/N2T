@@ -1,0 +1,9 @@
+{
+  "id": "orthomcl",
+  "target": {
+    "DEFAULT": "http://orthomcl.org/cgi-bin/OrthoMclWeb.cgi?rm=sequenceList&groupac={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://orthomcl.org/cgi-bin/OrthoMclWeb.cgi?rm=sequenceList&groupac={content}",
+  "revision": 0
+}

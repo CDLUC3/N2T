@@ -1,0 +1,9 @@
+{
+  "id": "piggis",
+  "target": {
+    "DEFAULT": "http://pig.genomics.org.cn/transview.jsp?transcript={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pig.genomics.org.cn/transview.jsp?transcript={content}",
+  "revision": 0
+}

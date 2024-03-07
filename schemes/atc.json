@@ -1,0 +1,27 @@
+{
+  "id": "atc",
+  "target": {
+    "DEFAULT": "http://www.whocc.no/atc_ddd_index/?code={content}"
+  },
+  "type": "scheme",
+  "name": "Anatomical Therapeutic Chemical Index at WHO",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100119",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.whocc.no/atc_ddd_index/?code=${ac}",
+  "redirect": "http://www.whocc.no/atc_ddd_index/?code={content}",
+  "description": "The Anatomical Therapeutic Chemical (ATC) classification system, divides active substances into different groups according to the organ or system on which they act and their therapeutic, pharmacological and chemical properties. Drugs are classified in groups at five different levels;  Drugs are divided into fourteen main groups (1st level), with pharmacological/therapeutic subgroups (2nd level).  The 3rd and 4th levels are chemical/pharmacological/therapeutic subgroups and the 5th level is the chemical substance. The Anatomical Therapeutic Chemical (ATC) classification system and the Defined Daily Dose (DDD) is a tool for exchanging and comparing data on drug use at international, national or local levels.",
+  "subject": "drug; classification",
+  "location": "Switzerland",
+  "synonym": "ATC",
+  "institution": "World Health Organisation",
+  "prefixed": 0,
+  "test": "A10BA02",
+  "probe": "http://www.whocc.no/atc_ddd_index/?code=A10BA02",
+  "pattern": "^[A-Z](\\d+([A-Z]{1,2}(\\d+)?)?)?$",
+  "state": "85:Up",
+  "more": "http://www.whocc.no/atc_ddd_index/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "netpath",
+  "target": {
+    "DEFAULT": "http://www.netpath.org/molecule?molecule_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.netpath.org/molecule?molecule_id={content}",
+  "revision": 0
+}

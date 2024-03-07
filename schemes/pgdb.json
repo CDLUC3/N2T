@@ -1,0 +1,9 @@
+{
+  "id": "pgdb",
+  "target": {
+    "DEFAULT": "http://www.urogene.org/pgdb/gene/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.urogene.org/pgdb/gene/{content}.html",
+  "revision": 0
+}

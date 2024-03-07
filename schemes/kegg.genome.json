@@ -1,0 +1,27 @@
+{
+  "id": "kegg.genome",
+  "target": {
+    "DEFAULT": "http://www.kegg.jp/entry/{content}"
+  },
+  "type": "scheme",
+  "name": "KEGG Genome Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100303",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.kegg.jp/entry/${ac}",
+  "redirect": "http://www.kegg.jp/entry/{content}",
+  "description": "KEGG Genome is a collection of organisms whose genomes have been completely sequenced.",
+  "subject": "genome",
+  "location": "Japan",
+  "synonym": "KEGG Organism; KEGG",
+  "institution": "Kyoto University Bioinformatics Center, Kyoto",
+  "prefixed": 0,
+  "test": "eco",
+  "probe": "http://www.kegg.jp/entry/eco",
+  "pattern": "^(T0\\d+|\\w{3,5})$",
+  "state": "100:Up",
+  "more": "http://www.genome.jp/kegg/catalog/org_list.html",
+  "revision": 0
+}

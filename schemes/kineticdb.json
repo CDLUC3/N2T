@@ -1,0 +1,9 @@
+{
+  "id": "kineticdb",
+  "target": {
+    "DEFAULT": "http://kineticdb.protres.ru/db/ind.pl?ind={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://kineticdb.protres.ru/db/ind.pl?ind={content}",
+  "revision": 0
+}

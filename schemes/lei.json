@@ -1,0 +1,27 @@
+{
+  "id": "lei",
+  "target": {
+    "DEFAULT": "https://www.gleif.org/lei/{content}"
+  },
+  "type": "scheme",
+  "name": "Global LEI Index",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100917",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.gleif.org/lei/${ac}",
+  "redirect": "https://www.gleif.org/lei/{content}",
+  "description": "Established by the Financial Stability Board in June 2014, the Global Legal Entity Identifier Foundation (GLEIF) is tasked to support the implementation and use of the Legal Entity Identifier (LEI). The foundation is backed and overseen by the LEI Regulatory Oversight Committee, representing public authorities from around the globe that have come together to jointly drive forward transparency within the global financial markets. GLEIF is a supra-national not-for-profit organization headquartered in Basel, Switzerland.",
+  "subject": null,
+  "location": "Switzerland",
+  "synonym": "Open Citation Identifier",
+  "institution": "Global Legal Entity Identifier Foundation, St. Alban-Vorstadt 5, 4052 Basel",
+  "prefixed": 0,
+  "test": "HWUPKR0MPOU8FGXBT394",
+  "probe": "https://www.gleif.org/lei/HWUPKR0MPOU8FGXBT394",
+  "pattern": "^[0-9A-Z]{4}[0-9A-Z]{14}[0-9A-Z]{2}$",
+  "state": "0:Unknown",
+  "more": "https://www.gleif.org/",
+  "revision": 0
+}

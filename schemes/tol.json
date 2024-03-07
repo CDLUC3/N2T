@@ -1,0 +1,27 @@
+{
+  "id": "tol",
+  "target": {
+    "DEFAULT": "http://tolweb.org/{content}"
+  },
+  "type": "scheme",
+  "name": "Tree of Life Web",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100525",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://tolweb.org/${ac}",
+  "redirect": "http://tolweb.org/{content}",
+  "description": "The Tree of Life Web Project (ToL) is a collaborative effort of biologists and nature enthusiasts from around the world. On more than 10,000 World Wide Web pages, the project provides information about biodiversity, the characteristics of different groups of organisms, and their evolutionary history (phylogeny).   Each page contains information about a particular group, with pages linked one to another hierarchically, in the form of the evolutionary tree of life. Starting with the root of all Life on Earth and moving out along diverging branches to individual species, the structure of the ToL project thus illustrates the genetic connections between all living things.",
+  "subject": "classification",
+  "location": "USA",
+  "synonym": "Statistical Torsional Angles Potentials of NMR",
+  "institution": "University of Arizona",
+  "prefixed": 0,
+  "test": "98034",
+  "probe": "http://tolweb.org/98034",
+  "pattern": "^\\d+$",
+  "state": "98:Up",
+  "more": "http://tolweb.org/tree/",
+  "revision": 0
+}

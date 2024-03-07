@@ -1,0 +1,9 @@
+{
+  "id": "magest",
+  "target": {
+    "DEFAULT": "http://magest.hgc.jp/db/show_contig_by_entry_id/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://magest.hgc.jp/db/show_contig_by_entry_id/{content}",
+  "revision": 0
+}

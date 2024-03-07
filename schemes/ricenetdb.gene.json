@@ -1,0 +1,27 @@
+{
+  "id": "ricenetdb.gene",
+  "target": {
+    "DEFAULT": "http://bis.zju.edu.cn/ricenetdb/genedetails.php?ID={content}"
+  },
+  "type": "scheme",
+  "name": "RiceNetDB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100882",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://bis.zju.edu.cn/ricenetdb/genedetails.php?ID=${ac}",
+  "redirect": "http://bis.zju.edu.cn/ricenetdb/genedetails.php?ID={content}",
+  "description": "RiceNetDB is currently the most comprehensive regulatory database on Oryza Sativa based on genome annotation. It was displayed in three levels: GEM, PPIs and GRNs to facilitate biomolecular regulatory analysis and gene-metabolite mapping.",
+  "subject": null,
+  "location": "China",
+  "synonym": "Open Citation Identifier",
+  "institution": "College of Life Sciences, Zhejiang University",
+  "prefixed": 0,
+  "test": "LOC_Os01g49190.1",
+  "probe": "http://bis.zju.edu.cn/ricenetdb/genedetails.php?ID=LOC_Os01g49190.1",
+  "pattern": "^LOC\\_Os\\d{1,2}g\\d{5}\\.\\d$",
+  "state": "0:Unknown",
+  "more": "http://bis.zju.edu.cn/ricenetdb/",
+  "revision": 0
+}

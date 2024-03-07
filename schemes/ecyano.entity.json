@@ -1,0 +1,27 @@
+{
+  "id": "ecyano.entity",
+  "target": {
+    "DEFAULT": "http://e-cyanobacterium.org/bcs/entity/{content}/"
+  },
+  "type": "scheme",
+  "name": "e-cyanobacterium entity at Masaryk University Brno",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100782",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://e-cyanobacterium.org/bcs/entity/${ac}/",
+  "redirect": "http://e-cyanobacterium.org/bcs/entity/{content}/",
+  "description": "E-cyanobacterium.org is a web-based platform for public sharing, annotation, analysis, and visualisation of dynamical models and wet-lab experiments related to cyanobacteria. It allows models to be represented at different levels of abstraction &#x2014; as biochemical reaction networks or ordinary differential equations.It provides concise mappings of mathematical models to a formalised consortium-agreed biochemical description, with the aim of connecting the world of biological knowledge with benefits of mathematical description of dynamic processes. This collection references entities.",
+  "subject": "model; metabolite",
+  "location": "Czech Republic",
+  "synonym": "WoRMS",
+  "institution": "Systems Biology Laboratory, Faculty of Informatics, Masaryk University Brno",
+  "prefixed": 0,
+  "test": "23",
+  "probe": "http://e-cyanobacterium.org/bcs/entity/23/",
+  "pattern": "^\\d+$",
+  "state": "64:Up",
+  "more": "http://www.e-cyanobacterium.org/bcs/entity/",
+  "revision": 0
+}

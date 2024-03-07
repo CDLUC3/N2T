@@ -1,0 +1,27 @@
+{
+  "id": "zfin",
+  "target": {
+    "DEFAULT": "http://zfin.org/{content}"
+  },
+  "type": "scheme",
+  "name": "ZFIN at University of Oregon",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100110",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://zfin.org/${ac}",
+  "redirect": "http://zfin.org/{content}",
+  "description": "ZFIN serves as the zebrafish model organism database. This collection references all zebrafish biological entities in ZFIN.",
+  "subject": "gene",
+  "location": "USA",
+  "synonym": "MMMP Biomaps",
+  "institution": "Zebrafish Information Network, University of Oregon",
+  "prefixed": 0,
+  "test": "ZDB-GENE-041118-11",
+  "probe": "http://zfin.org/ZDB-GENE-041118-11",
+  "pattern": "^ZDB\\-\\w+\\-\\d+\\-\\d+$",
+  "state": "98:Up",
+  "more": "http://zfin.org",
+  "revision": 0
+}

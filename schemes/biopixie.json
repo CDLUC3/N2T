@@ -1,0 +1,9 @@
+{
+  "id": "biopixie",
+  "target": {
+    "DEFAULT": "http://avis.princeton.edu/pixie/viewgraph.php?graphID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://avis.princeton.edu/pixie/viewgraph.php?graphID={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "hovergen",
+  "target": {
+    "DEFAULT": "http://pbil.univ-lyon1.fr/cgi-bin/view-tree.pl?query={content}&db=HOVERGEN"
+  },
+  "type": "scheme",
+  "name": "Hovergen",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100104",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://pbil.univ-lyon1.fr/cgi-bin/view-tree.pl?query=${ac}&db=HOVERGEN",
+  "redirect": "http://pbil.univ-lyon1.fr/cgi-bin/view-tree.pl?query={content}&db=HOVERGEN",
+  "description": "HOVERGEN is a database of homologous vertebrate genes that allows one to select sets of homologous genes among vertebrate species, and to visualize multiple alignments and phylogenetic trees.",
+  "subject": "gene",
+  "location": "France",
+  "synonym": "KEGG",
+  "institution": "Laboratoire de Biom&#xE9;trie, G&#xE9;n&#xE9;tique et Biologie des Populations",
+  "prefixed": 0,
+  "test": "HBG004341",
+  "probe": "http://pbil.univ-lyon1.fr/cgi-bin/view-tree.pl?query=HBG004341&db=HOVERGEN",
+  "pattern": "^HBG\\d+$",
+  "state": "97:Up",
+  "more": "http://pbil.univ-lyon1.fr/databases/hovergen.php",
+  "revision": 0
+}

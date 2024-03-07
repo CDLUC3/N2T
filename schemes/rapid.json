@@ -1,0 +1,9 @@
+{
+  "id": "rapid",
+  "target": {
+    "DEFAULT": "http://rapid.rcai.riken.jp/RAPID/diseasePhenotype?pid_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rapid.rcai.riken.jp/RAPID/diseasePhenotype?pid_id={content}",
+  "revision": 0
+}

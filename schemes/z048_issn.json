@@ -1,0 +1,27 @@
+{
+  "id": "z048/issn",
+  "target": {
+    "DEFAULT": "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg={content}&searchType=1&recCount=25"
+  },
+  "type": "scheme",
+  "name": "ISSN at Library of Congress",
+  "alias": null,
+  "provider": "z048",
+  "provider_id": "MIR:00100383",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg=${ac}&searchType=1&recCount=25",
+  "redirect": "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg={content}&searchType=1&recCount=25",
+  "description": "The International Standard Serial Number (ISSN) is a unique eight-digit number used to identify a print or electronic periodical publication, rather than individual articles or books.",
+  "subject": "bibliography",
+  "location": "USA",
+  "synonym": "Coli Genetic Stock Center",
+  "institution": "Library of Congress Online Catalogue, Washington DC",
+  "prefixed": 0,
+  "test": "0745-4570",
+  "probe": "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg=0745-4570&searchType=1&recCount=25",
+  "pattern": "^\\d{4}-\\d{3}[\\dX]$",
+  "state": "0:Unknown",
+  "more": "http://catalog.loc.gov/webvoy.htm",
+  "revision": 0
+}

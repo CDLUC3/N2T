@@ -1,0 +1,27 @@
+{
+  "id": "biostudies",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/biostudies/studies/{content}"
+  },
+  "type": "scheme",
+  "name": "BioStudies database",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100926",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/biostudies/studies/${ac}",
+  "redirect": "https://www.ebi.ac.uk/biostudies/studies/{content}",
+  "description": "The BioStudies database holds descriptions of biological studies, links to data from these studies in other databases at EMBL-EBI or outside, as well as data that do not fit in the structured archives at EMBL-EBI. The database can accept a wide range of types of studies described via a simple format. It also enables manuscript authors to submit supplementary information and link to it from the publication.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Open Citation Identifier",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "S-EPMC6266652",
+  "probe": "https://www.ebi.ac.uk/biostudies/studies/S-EPMC6266652",
+  "pattern": "^S-[A-Z]{4}[A-Z\\d\\-]+$",
+  "state": "0:Unknown",
+  "more": "https://www.ebi.ac.uk/biostudies/",
+  "revision": 0
+}

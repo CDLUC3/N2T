@@ -1,0 +1,27 @@
+{
+  "id": "ricegap",
+  "target": {
+    "DEFAULT": "http://rice.plantbiology.msu.edu/cgi-bin/ORF_infopage.cgi?&orf={content}"
+  },
+  "type": "scheme",
+  "name": "Rice Genome Annotation Project at TIGR",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100455",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://rice.plantbiology.msu.edu/cgi-bin/ORF_infopage.cgi?&orf=${ac}",
+  "redirect": "http://rice.plantbiology.msu.edu/cgi-bin/ORF_infopage.cgi?&orf={content}",
+  "description": "The objective of this project is to provide high quality annotation for the rice genome Oryza sativa spp japonica cv Nipponbare. All genes are annotated with functional annotation including expression data, gene ontologies, and tagged lines.",
+  "subject": "sequence; genome",
+  "location": "USA",
+  "synonym": "SUPERFAMILY",
+  "institution": "The Institute for Genomic Research, Rockville, Maryland",
+  "prefixed": 0,
+  "test": "LOC_Os02g13300",
+  "probe": "http://rice.plantbiology.msu.edu/cgi-bin/ORF_infopage.cgi?&orf=LOC_Os02g13300",
+  "pattern": "^LOC\\_Os\\d{1,2}g\\d{5}$",
+  "state": "100:Up",
+  "more": "http://rice.plantbiology.msu.edu/annotation_pseudo_current.shtml",
+  "revision": 0
+}

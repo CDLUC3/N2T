@@ -1,0 +1,9 @@
+{
+  "id": "supernatural",
+  "target": {
+    "DEFAULT": "http://bioinformatics.charite.de/supernatural/marvin/fullinfo_roempp_marvin.php?cas={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioinformatics.charite.de/supernatural/marvin/fullinfo_roempp_marvin.php?cas={content}",
+  "revision": 0
+}

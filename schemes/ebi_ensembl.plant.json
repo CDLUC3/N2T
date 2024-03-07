@@ -1,0 +1,7 @@
+{
+  "id": "ebi/ensembl.plant",
+  "target": {},
+  "type": "synonym",
+  "for": "ensembl.plant",
+  "revision": 0
+}

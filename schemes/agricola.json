@@ -1,0 +1,27 @@
+{
+  "id": "agricola",
+  "target": {
+    "DEFAULT": "http://ddr.nal.usda.gov/dspace/handle/10113/{content}"
+  },
+  "type": "scheme",
+  "name": "AGRICOLA at National Agricultural Library",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100789",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://ddr.nal.usda.gov/dspace/handle/10113/${ac}",
+  "redirect": "http://ddr.nal.usda.gov/dspace/handle/10113/{content}",
+  "description": "AGRICOLA (AGRICultural OnLine Access) serves as the catalog and index to the collections of the National Agricultural Library, as well as a primary public source for world-wide access to agricultural information. The database covers materials in all formats and periods, including printed works from as far back as the 15th century.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Agricultural Online Access",
+  "institution": "National Agricultural Library, United States Department of Agriculture",
+  "prefixed": 0,
+  "test": "50018",
+  "probe": "http://ddr.nal.usda.gov/dspace/handle/10113/50018",
+  "pattern": "^\\d+$",
+  "state": "31:Down",
+  "more": "http://agricola.nal.usda.gov/",
+  "revision": 0
+}

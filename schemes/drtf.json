@@ -1,0 +1,9 @@
+{
+  "id": "drtf",
+  "target": {
+    "DEFAULT": "http://drtf.cbi.pku.edu.cn/gene_info.php?gn={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://drtf.cbi.pku.edu.cn/gene_info.php?gn={content}",
+  "revision": 0
+}

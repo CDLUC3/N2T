@@ -1,0 +1,9 @@
+{
+  "id": "gib",
+  "target": {
+    "DEFAULT": "http://gib.genes.nig.ac.jp/single/index.php?spid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://gib.genes.nig.ac.jp/single/index.php?spid={content}",
+  "revision": 0
+}

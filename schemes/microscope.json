@@ -1,0 +1,27 @@
+{
+  "id": "microscope",
+  "target": {
+    "DEFAULT": "http://www.genoscope.cns.fr/agc/microscope/mage/info.php?id={content}"
+  },
+  "type": "scheme",
+  "name": "MicroScope",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100836",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.genoscope.cns.fr/agc/microscope/mage/info.php?id=${ac}",
+  "redirect": "http://www.genoscope.cns.fr/agc/microscope/mage/info.php?id={content}",
+  "description": "MicroScope is an integrative resource that supports systematic and efficient revision of microbial genome annotation, data management and comparative analysis.",
+  "subject": "genome; microbial",
+  "location": "France",
+  "synonym": "Microbial Genome Annotation & Analysis Platform",
+  "institution": "Universit&#xE9; &#xC9;vry-Val-d'Essonne, CEA, Institut de G&#xE9;nomique - Genoscope, Laboratoire d'Analyses Bioinformatiques pour la G&#xE9;nomique et le M&#xE9;tabolisme, Evry",
+  "prefixed": 0,
+  "test": "5601141",
+  "probe": "http://www.genoscope.cns.fr/agc/microscope/mage/info.php?id=5601141",
+  "pattern": "^\\d+$",
+  "state": "0:Down",
+  "more": "http://www.genoscope.cns.fr/agc/microscope",
+  "revision": 0
+}

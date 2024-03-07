@@ -1,0 +1,27 @@
+{
+  "id": "ttd.target",
+  "target": {
+    "DEFAULT": "http://bidd.nus.edu.sg/group/TTD/ZFTTDDetail.asp?ID={content}"
+  },
+  "type": "scheme",
+  "name": "Therapeutic Target Database Target",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100124",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://bidd.nus.edu.sg/group/TTD/ZFTTDDetail.asp?ID=${ac}",
+  "redirect": "http://bidd.nus.edu.sg/group/TTD/ZFTTDDetail.asp?ID={content}",
+  "description": "The Therapeutic Target Database (TTD) is designed to provide information about the known therapeutic protein and nucleic acid targets described in the literature, the targeted disease conditions, the pathway information and the corresponding drugs/ligands directed at each of these targets. Cross-links to other databases are also introduced to facilitate the access of information about the sequence, 3D structure, function, nomenclature, drug/ligand binding properties, drug usage and effects, and related literature for each target.",
+  "subject": "pathway; drug",
+  "location": "Singapore",
+  "synonym": "Therapeutic Target Database",
+  "institution": "Computational Science Department, National University of Singapore",
+  "prefixed": 0,
+  "test": "TTDS00056",
+  "probe": "http://bidd.nus.edu.sg/group/TTD/ZFTTDDetail.asp?ID=TTDS00056",
+  "pattern": "^TTDS\\d+$",
+  "state": "92:Up",
+  "more": "http://bidd.nus.edu.sg/group/ttd/ttd.asp",
+  "revision": 0
+}

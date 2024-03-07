@@ -1,0 +1,27 @@
+{
+  "id": "ols/uo",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=UO:{content}"
+  },
+  "type": "scheme",
+  "name": "Unit Ontology via Ontology Lookup Service",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100178",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=UO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=UO:{content}",
+  "description": "Ontology of standardized units",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "UO",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "0000080",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=UO:0000080",
+  "pattern": "^UO:\\d{7}?",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/uo",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "isfinder",
+  "target": {
+    "DEFAULT": "https://www-is.biotoul.fr/scripts/ficheIS.php?name={content}"
+  },
+  "type": "scheme",
+  "name": "IS Finder at CNRS",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100219",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://www-is.biotoul.fr/scripts/ficheIS.php?name=${ac}",
+  "redirect": "https://www-is.biotoul.fr/scripts/ficheIS.php?name={content}",
+  "description": "ISfinder is a database of bacterial insertion sequences (IS). It assigns IS nomenclature and acts as a repository for ISs. Each IS is annotated with information such as the open reading frame DNA sequence, the sequence of the ends of the element and target sites, its origin and distribution together with a bibliography, where available.",
+  "subject": "gene; sequence",
+  "location": "France",
+  "synonym": "Insertion Sequence Finder",
+  "institution": "Laboratoire de Microbiologie et G&#xE9;n&#xE9;tique Mol&#xE9;culaires, CNRS, Toulouse",
+  "prefixed": 0,
+  "test": "ISA1083-2",
+  "probe": "https://www-is.biotoul.fr/scripts/ficheIS.php?name=ISA1083-2",
+  "pattern": "^IS\\w+(\\-\\d)?$",
+  "state": "62:Down",
+  "more": "http://www-is.biotoul.fr/i",
+  "revision": 0
+}

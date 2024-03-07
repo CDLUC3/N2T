@@ -1,0 +1,27 @@
+{
+  "id": "biomodels.teddy",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/TEDDY/{content}"
+  },
+  "type": "scheme",
+  "name": "TEDDY through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100140",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/TEDDY/${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/TEDDY/{content}",
+  "description": "The Terminology for Description of Dynamics (TEDDY) is an ontology for dynamical behaviours, observable dynamical phenomena, and control elements of bio-models and biological systems in Systems Biology and Synthetic Biology.",
+  "subject": "ontology",
+  "location": "USA",
+  "synonym": "PhosphoSitePlus",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 0,
+  "test": "TEDDY_0000066",
+  "probe": "http://purl.bioontology.org/ontology/TEDDY/TEDDY_0000066",
+  "pattern": "^TEDDY_\\d{7}$",
+  "state": "95:Up",
+  "more": "http://teddyontology.sourceforge.net/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "nembase",
+  "target": {
+    "DEFAULT": "http://www.nematodes.org/nembase4/cluster.php?cluster={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.nematodes.org/nembase4/cluster.php?cluster={content}",
+  "revision": 0
+}

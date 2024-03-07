@@ -1,0 +1,27 @@
+{
+  "id": "opm",
+  "target": {
+    "DEFAULT": "http://opm.phar.umich.edu/protein.php?pdbid={content}"
+  },
+  "type": "scheme",
+  "name": "OPM at University of Michigan",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100427",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://opm.phar.umich.edu/protein.php?pdbid=${ac}",
+  "redirect": "http://opm.phar.umich.edu/protein.php?pdbid={content}",
+  "description": "The Orientations of Proteins in Membranes (OPM) database provides spatial positions of membrane-bound peptides and proteins of known three-dimensional structure in the lipid bilayer, together with their structural classification, topology and intracellular localization.",
+  "subject": "protein; structure",
+  "location": "USA",
+  "synonym": "Orientations of Proteins in Membranes",
+  "institution": "Department of Medicinal Chemistry, College of Pharmacy, University of Michigan",
+  "prefixed": 0,
+  "test": "1h68",
+  "probe": "http://opm.phar.umich.edu/protein.php?pdbid=1h68",
+  "pattern": "^[0-9][A-Za-z0-9]{3}$",
+  "state": "84:Down",
+  "more": "http://opm.phar.umich.edu/",
+  "revision": 0
+}

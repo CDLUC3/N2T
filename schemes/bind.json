@@ -1,0 +1,9 @@
+{
+  "id": "bind",
+  "target": {
+    "DEFAULT": "http://www.bind.ca/Action?identifier=bindid&idsearch={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.bind.ca/Action?identifier=bindid&idsearch={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "exac.transcript",
+  "target": {
+    "DEFAULT": "http://exac.broadinstitute.org/transcript/{content}"
+  },
+  "type": "scheme",
+  "name": "ExAC Transcript at Exome Aggregation Consortium",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100724",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://exac.broadinstitute.org/transcript/${ac}",
+  "redirect": "http://exac.broadinstitute.org/transcript/{content}",
+  "description": "The Exome Aggregation Consortium (ExAC) is a coalition of investigators seeking to aggregate and harmonize exome sequencing data from a variety of large-scale sequencing projects, and to make summary data available for the wider scientific community. The data pertains to unrelated individuals sequenced as part of various disease-specific and population genetic studies and serves as a reference set of allele frequencies for severe disease studies. This collection references transcript information.",
+  "subject": "phenotype; genome; human",
+  "location": "USA",
+  "synonym": "CPC",
+  "institution": "Exome Aggregation Consortium (ExAC), Cambridge, Massachusetts",
+  "prefixed": 0,
+  "test": "ENST00000407236",
+  "probe": "http://exac.broadinstitute.org/transcript/ENST00000407236",
+  "pattern": "^ENST\\d{11}$",
+  "state": "100:Up",
+  "more": "http://exac.broadinstitute.org/",
+  "revision": 0
+}

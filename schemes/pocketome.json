@@ -1,0 +1,27 @@
+{
+  "id": "pocketome",
+  "target": {
+    "DEFAULT": "http://www.pocketome.org/files/{content}.html"
+  },
+  "type": "scheme",
+  "name": "Pocketome at UCSD Skaggs School",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100520",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.pocketome.org/files/${ac}.html",
+  "redirect": "http://www.pocketome.org/files/{content}.html",
+  "description": "Pocketome is an encyclopedia of conformational ensembles of all druggable binding sites that can be identified experimentally from co-crystal structures in the Protein Data Bank. Each Pocketome entry corresponds to a small molecule binding site in a protein which has been co-crystallized in complex with at least one drug-like small molecule, and is represented in at least two PDB entries.",
+  "subject": "interaction; protein; structure",
+  "location": "USA",
+  "synonym": "Statistical Torsional Angles Potentials of NMR",
+  "institution": "UCSD Skaggs School of Pharmacy and Pharmaceutical Sciences, La Jolla, California",
+  "prefixed": 0,
+  "test": "1433C_TOBAC_1_252",
+  "probe": "http://www.pocketome.org/files/1433C_TOBAC_1_252.html",
+  "pattern": "^[A-Za-z_0-9]+",
+  "state": "68:Down",
+  "more": "http://www.pocketome.org/sfSearch.cgi?act=browseall",
+  "revision": 0
+}

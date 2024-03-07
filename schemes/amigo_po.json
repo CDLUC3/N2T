@@ -1,0 +1,27 @@
+{
+  "id": "amigo/po",
+  "target": {
+    "DEFAULT": "http://www.plantontology.org/amigo/go.cgi?view=details&query=PO:{content}"
+  },
+  "type": "scheme",
+  "name": "Plant Ontology through Amigo",
+  "alias": null,
+  "provider": "amigo",
+  "provider_id": "MIR:00100389",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.plantontology.org/amigo/go.cgi?view=details&query=PO:${ac}",
+  "redirect": "http://www.plantontology.org/amigo/go.cgi?view=details&query=PO:{content}",
+  "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
+  "subject": "ontology; plant",
+  "location": "USA",
+  "synonym": "PO",
+  "institution": "Cold Spring Harbor Laboratory, Cold Spring Harbor, New York",
+  "prefixed": 1,
+  "test": "0009089",
+  "probe": "http://www.plantontology.org/amigo/go.cgi?view=details&query=PO:0009089",
+  "pattern": "^PO:\\d+$",
+  "state": "100:Up",
+  "more": "http://www.plantontology.org/",
+  "revision": 0
+}

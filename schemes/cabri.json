@@ -1,0 +1,27 @@
+{
+  "id": "cabri",
+  "target": {
+    "DEFAULT": "http://www.cabri.org/CABRI/srs-bin/wgetz?-e+-page+EntryPage+[{content}]"
+  },
+  "type": "scheme",
+  "name": "CABRI Cell Lines catalogue in Genova (SRS)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100334",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.cabri.org/CABRI/srs-bin/wgetz?-e+-page+EntryPage+[${ac}]",
+  "redirect": "http://www.cabri.org/CABRI/srs-bin/wgetz?-e+-page+EntryPage+[{content}]",
+  "description": "CABRI (Common Access to Biotechnological Resources and Information) is an online service where users can search a number of European Biological Resource Centre catalogues. It lists the availability of a particular organism or genetic resource and defines the set of technical specifications and procedures which should be used to handle it.",
+  "subject": "eukaryotic; microbial; catalogue",
+  "location": "Italy",
+  "synonym": "The Cell: An Image Library-CCDB; The Cell: An Image Library-Cell Centered Database; CIL",
+  "institution": "National Cancer Research Institute of Genova, Genova",
+  "prefixed": 0,
+  "test": "dsmz_mutz-id:ACC 291",
+  "probe": "http://www.cabri.org/CABRI/srs-bin/wgetz?-e+-page+EntryPage+[dsmz_mutz-id:ACC 291]",
+  "pattern": "^([A-Za-z]+)?(\\_)?([A-Za-z-]+)\\:([A-Za-z0-9 ]+)$",
+  "state": "96:Up",
+  "more": "http://www.cabri.org/",
+  "revision": 0
+}

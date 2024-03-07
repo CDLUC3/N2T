@@ -1,0 +1,9 @@
+{
+  "id": "bbid",
+  "target": {
+    "DEFAULT": "http://bbid.grc.nia.nih.gov/geneimages/{content}.jpeg"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bbid.grc.nia.nih.gov/geneimages/{content}.jpeg",
+  "revision": 0
+}

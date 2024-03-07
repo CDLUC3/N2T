@@ -1,0 +1,27 @@
+{
+  "id": "nuclearbd",
+  "target": {
+    "DEFAULT": "http://www.receptors.org/nucleardb/proteins/{content}"
+  },
+  "type": "scheme",
+  "name": "NucleaRDB at Radboud University Nijmegen Medical Centre",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100453",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.receptors.org/nucleardb/proteins/${ac}",
+  "redirect": "http://www.receptors.org/nucleardb/proteins/{content}",
+  "description": "NucleaRDB is an information system that stores heterogenous data on Nuclear Hormone Receptors (NHRs). It contains data on sequences, ligand binding constants and mutations for NHRs.",
+  "subject": "interaction; sequence; protein",
+  "location": "Holland",
+  "synonym": "NCI metathesaurus; National Cancer Institute Metathesaurus",
+  "institution": "CMBI, Radboud University Nijmegen Medical Centre,  Dreijenplein, Wageningen",
+  "prefixed": 0,
+  "test": "prgr_human",
+  "probe": "http://www.receptors.org/nucleardb/proteins/prgr_human",
+  "pattern": "^\\w+\\_\\w+$",
+  "state": "49:Down",
+  "more": "http://www.receptors.org/nucleardb/",
+  "revision": 0
+}

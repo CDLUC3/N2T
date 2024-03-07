@@ -1,0 +1,27 @@
+{
+  "id": "ols/taxonomy",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/ncbitaxon/terms?short_form=NCBITaxon_{content}"
+  },
+  "type": "scheme",
+  "name": "NCBI Taxonomy through OLS",
+  "alias": "taxon",
+  "provider": "ols",
+  "provider_id": "MIR:00100770",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/ncbitaxon/terms?short_form=NCBITaxon_${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/ncbitaxon/terms?short_form=NCBITaxon_{content}",
+  "description": "The taxonomy contains the relationships between all living forms for which nucleic acid or protein sequence have been determined.",
+  "subject": "taxonomy",
+  "location": "UK",
+  "synonym": "NEWT; NCBI taxonomy; NCBITAXON",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "9606",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/ncbitaxon/terms?short_form=NCBITaxon_9606",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/ncbitaxon/",
+  "revision": 0
+}

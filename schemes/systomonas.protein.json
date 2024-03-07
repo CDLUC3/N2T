@@ -1,0 +1,9 @@
+{
+  "id": "systomonas.protein",
+  "target": {
+    "DEFAULT": "http://www.systomonas.de/protein.php?pr_acc={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.systomonas.de/protein.php?pr_acc={content}",
+  "revision": 0
+}

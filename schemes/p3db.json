@@ -1,0 +1,9 @@
+{
+  "id": "p3db",
+  "target": {
+    "DEFAULT": "http://digbio.missouri.edu/p3db/data/protein.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://digbio.missouri.edu/p3db/data/protein.php?id={content}",
+  "revision": 0
+}

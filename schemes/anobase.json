@@ -1,0 +1,9 @@
+{
+  "id": "anobase",
+  "target": {
+    "DEFAULT": "http://www.anobase.org/genetool/v42/gene.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.anobase.org/genetool/v42/gene.php?id={content}",
+  "revision": 0
+}

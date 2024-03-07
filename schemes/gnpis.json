@@ -1,0 +1,27 @@
+{
+  "id": "gnpis",
+  "target": {
+    "DEFAULT": "https://urgi.versailles.inra.fr/gnpis/#result/term={content}"
+  },
+  "type": "scheme",
+  "name": "GnpIS",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100831",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://urgi.versailles.inra.fr/gnpis/#result/term=${ac}",
+  "redirect": "https://urgi.versailles.inra.fr/gnpis/#result/term={content}",
+  "description": "GnpIS is an integrative information system focused on plants and fungal pests. It provides both genetic (e.g. genetic maps, quantitative trait loci, markers, single nucleotide polymorphisms, germplasms and genotypes) and genomic data (e.g. genomic sequences, physical maps, genome annotation and expression data) for species of agronomical interest.",
+  "subject": "genome; fungal; plant",
+  "location": "France",
+  "synonym": "Sequence Initiative Suomi",
+  "institution": "URGI (Research Unit in Genomics-Info), INRA de Versailles, Route de Saint-Cyr, Versailles",
+  "prefixed": 0,
+  "test": "AY109603",
+  "probe": "https://urgi.versailles.inra.fr/gnpis/#result/term=AY109603",
+  "pattern": "^[A-Za-z0-9]+$",
+  "state": "0:Unknown",
+  "more": "https://urgi.versailles.inra.fr/gnpis/",
+  "revision": 0
+}

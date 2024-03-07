@@ -1,0 +1,9 @@
+{
+  "id": "gissd",
+  "target": {
+    "DEFAULT": "http://www.rna.whu.edu.cn/perl/gissd/get_seq_exon.cgi?intron_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.rna.whu.edu.cn/perl/gissd/get_seq_exon.cgi?intron_id={content}",
+  "revision": 0
+}

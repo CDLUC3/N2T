@@ -1,0 +1,9 @@
+{
+  "id": "rtprimerdb",
+  "target": {
+    "DEFAULT": "http://medgen.ugent.be/rtprimerdb/assay_report.php?assay_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://medgen.ugent.be/rtprimerdb/assay_report.php?assay_id={content}",
+  "revision": 0
+}

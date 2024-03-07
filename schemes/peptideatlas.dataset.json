@@ -1,0 +1,27 @@
+{
+  "id": "peptideatlas.dataset",
+  "target": {
+    "DEFAULT": "http://www.peptideatlas.org/PASS/{content}"
+  },
+  "type": "scheme",
+  "name": "PeptideAtlas Dataset",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100921",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.peptideatlas.org/PASS/${ac}",
+  "redirect": "http://www.peptideatlas.org/PASS/{content}",
+  "description": "Experiment details about PeptideAtlas entries. Each PASS entry provides direct access to the data files submitted to PeptideAtlas.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Open Citation Identifier",
+  "institution": "Institute for Systems Biology, Seattle",
+  "prefixed": 0,
+  "test": "PASS01237",
+  "probe": "http://www.peptideatlas.org/PASS/PASS01237",
+  "pattern": "^PASS\\d{5}$",
+  "state": "0:Unknown",
+  "more": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/PASS_Summary",
+  "revision": 0
+}

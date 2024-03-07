@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/dbgap",
+  "target": {},
+  "type": "synonym",
+  "for": "dbgap",
+  "revision": 0
+}

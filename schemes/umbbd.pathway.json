@@ -1,0 +1,27 @@
+{
+  "id": "umbbd.pathway",
+  "target": {
+    "DEFAULT": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=p&pathway_abbr={content}"
+  },
+  "type": "scheme",
+  "name": "Biocatalysis/Biodegradation Database Mirror (Pathway) at ETH Zurich",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100420",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=p&pathway_abbr=${ac}",
+  "redirect": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=p&pathway_abbr={content}",
+  "description": "The University of Minnesota Biocatalysis/Biodegradation Database (UM-BBD) contains information on microbial biocatalytic reactions and biodegradation pathways for primarily xenobiotic, chemical compounds. The goal of the UM-BBD is to provide information on microbial enzyme-catalyzed reactions that are important for biotechnology. This collection refers to pathway information.",
+  "subject": "microbial; pathway",
+  "location": "Switzerland",
+  "synonym": "University of Minnesota Biocatalysis/Biodegradation Database (Pathway)",
+  "institution": "ETH, Zurich",
+  "prefixed": 0,
+  "test": "ala",
+  "probe": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=p&pathway_abbr=ala",
+  "pattern": "^\\w+$",
+  "state": "100:Up",
+  "more": "http://umbbd.ethz.ch/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "virsirna",
+  "target": {
+    "DEFAULT": "http://crdd.osdd.net/servers/virsirnadb/record.php?details={content}"
+  },
+  "type": "scheme",
+  "name": "VIRsiRNA at Institute of Microbial Technology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100320",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://crdd.osdd.net/servers/virsirnadb/record.php?details=${ac}",
+  "redirect": "http://crdd.osdd.net/servers/virsirnadb/record.php?details={content}",
+  "description": "The VIRsiRNA database contains details of siRNA/shRNA which target viral genome regions. It provides efficacy information where available, as well as the siRNA sequence, viral target and subtype, as well as the target genomic region.",
+  "subject": "nucleotide; mammalian",
+  "location": "India",
+  "synonym": "VIRsiRNAdb; Virus siRNA database",
+  "institution": "Institute of Microbial Technology, Council of Scientific and Industrial Research (CSIR),  Chandigarh, India",
+  "prefixed": 0,
+  "test": "virsi1909",
+  "probe": "http://crdd.osdd.net/servers/virsirnadb/record.php?details=virsi1909",
+  "pattern": "^virsi\\d+$",
+  "state": "98:Up",
+  "more": "http://crdd.osdd.net/servers/virsirnadb",
+  "revision": 0
+}

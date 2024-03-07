@@ -1,0 +1,27 @@
+{
+  "id": "rgd",
+  "target": {
+    "DEFAULT": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id={content}"
+  },
+  "type": "scheme",
+  "name": "Rat Genome Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100075",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=${ac}",
+  "redirect": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id={content}",
+  "description": "Rat Genome Database seeks to collect, consolidate, and integrate rat genomic and genetic data with curated functional and physiological data and make these data widely available to the scientific community. This collection references genes.",
+  "subject": "annotation; phenotype; disease; eukaryotic; gene; sequence; nucleotide; genome; pathway; mammalian",
+  "location": "USA",
+  "synonym": "RGD",
+  "institution": "Medical College of Wisconsin",
+  "prefixed": 0,
+  "test": "2018",
+  "probe": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=2018",
+  "pattern": "^\\d{4,}$",
+  "state": "100:Up",
+  "more": "http://rgd.mcw.edu/",
+  "revision": 0
+}

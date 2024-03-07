@@ -1,0 +1,15 @@
+{
+  "id": "rfc",
+  "target": {
+    "DEFAULT": "https://tools.ietf.org/rfc/rfc{content}"
+  },
+  "type": "scheme",
+  "name": "Internet Standard -- IETF Request for Comments",
+  "alias": null,
+  "primary": 1,
+  "redirect": "https://tools.ietf.org/rfc/rfc{content}",
+  "test": "5013",
+  "probe": "https://tools.ietf.org/rfc/rfc5013",
+  "more": "https://www.ietf.org/",
+  "revision": 0
+}

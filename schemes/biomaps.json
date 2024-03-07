@@ -1,0 +1,27 @@
+{
+  "id": "biomaps",
+  "target": {
+    "DEFAULT": "http://www.mmmp.org/MMMP/public/biomap/viewBiomap.mmmp?id={content}"
+  },
+  "type": "scheme",
+  "name": "main webpage",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100105",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.mmmp.org/MMMP/public/biomap/viewBiomap.mmmp?id=${ac}",
+  "redirect": "http://www.mmmp.org/MMMP/public/biomap/viewBiomap.mmmp?id={content}",
+  "description": "A collection of molecular interaction maps and pathways involved in cancer development and progression with a focus on melanoma.",
+  "subject": "pathway",
+  "location": null,
+  "synonym": "MMMP Biomaps",
+  "institution": "Melanoma Molecular Map Project",
+  "prefixed": 0,
+  "test": "37",
+  "probe": "http://www.mmmp.org/MMMP/public/biomap/viewBiomap.mmmp?id=37",
+  "pattern": "^\\d+$",
+  "state": "96:Up",
+  "more": "http://www.mmmp.org/MMMP/public/biomap/listBiomap.mmmp",
+  "revision": 0
+}

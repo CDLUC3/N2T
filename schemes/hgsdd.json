@@ -1,0 +1,9 @@
+{
+  "id": "hgsdd",
+  "target": {
+    "DEFAULT": "http://projects.tcag.ca/cgi-bin/seg_dup/dupbrowse/human_b35/?name={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://projects.tcag.ca/cgi-bin/seg_dup/dupbrowse/human_b35/?name={content}",
+  "revision": 0
+}

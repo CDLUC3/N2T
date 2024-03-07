@@ -1,0 +1,27 @@
+{
+  "id": "gxa.gene",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/gxa/genes/{content}"
+  },
+  "type": "scheme",
+  "name": "GXA Gene at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100482",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/gxa/genes/${ac}",
+  "redirect": "https://www.ebi.ac.uk/gxa/genes/{content}",
+  "description": "The Gene Expression Atlas (GXA) is a semantically enriched database of meta-analysis based summary statistics over a curated subset of ArrayExpress Archive, servicing queries for condition-specific gene expression patterns as well as broader exploratory searches for biologically interesting genes/samples. This collection references genes.",
+  "subject": "microarray; expression; gene",
+  "location": "UK",
+  "synonym": "Gene Expression Atlas Gene",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "AT4G01080",
+  "probe": "https://www.ebi.ac.uk/gxa/genes/AT4G01080",
+  "pattern": "^\\w+$",
+  "state": "75:Down",
+  "more": "https://www.ebi.ac.uk/gxa/",
+  "revision": 0
+}

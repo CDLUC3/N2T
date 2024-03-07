@@ -1,0 +1,9 @@
+{
+  "id": "leproma",
+  "target": {
+    "DEFAULT": "http://mycobrowser.epfl.ch/leprosysearch.php?gene+name={content}&submit=Search"
+  },
+  "type": "commonspfx",
+  "redirect": "http://mycobrowser.epfl.ch/leprosysearch.php?gene+name={content}&submit=Search",
+  "revision": 0
+}

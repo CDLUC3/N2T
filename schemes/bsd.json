@@ -1,0 +1,9 @@
+{
+  "id": "bsd",
+  "target": {
+    "DEFAULT": "http://bsd.cme.msu.edu/jsp/InfoController.jsp?object=Strain&id=S_{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bsd.cme.msu.edu/jsp/InfoController.jsp?object=Strain&id=S_{content}",
+  "revision": 0
+}

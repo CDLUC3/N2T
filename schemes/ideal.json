@@ -1,0 +1,27 @@
+{
+  "id": "ideal",
+  "target": {
+    "DEFAULT": "http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/idealItem.php?id={content}"
+  },
+  "type": "scheme",
+  "name": "IDEAL at Maebashi Institute of Technology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100518",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/idealItem.php?id=${ac}",
+  "redirect": "http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/idealItem.php?id={content}",
+  "description": "IDEAL provides a collection of knowledge on experimentally verified intrinsically disordered proteins. It contains manual annotations by curators on intrinsically disordered regions, interaction regions to other molecules, post-translational modification sites, references and structural domain assignments.",
+  "subject": "protein",
+  "location": "Japan",
+  "synonym": "Intrinsically Disordered proteins with Extensive Annotations and Literature",
+  "institution": "Faculty of Engineering, Maebashi Institute of Technology, Maebashi",
+  "prefixed": 0,
+  "test": "IID00001",
+  "probe": "http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/idealItem.php?id=IID00001",
+  "pattern": "^IID\\d+$",
+  "state": "99:Up",
+  "more": "http://www.ideal.force.cs.is.nagoya-u.ac.jp/IDEAL/",
+  "revision": 0
+}

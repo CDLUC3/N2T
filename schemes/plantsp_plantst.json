@@ -1,0 +1,9 @@
+{
+  "id": "plantsp_plantst",
+  "target": {
+    "DEFAULT": "http://plantst.genomics.purdue.edu/cgi-bin/detail.cgi?db=plants[?t/?p]&id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://plantst.genomics.purdue.edu/cgi-bin/detail.cgi?db=plants[?t/?p]&id={content}",
+  "revision": 0
+}

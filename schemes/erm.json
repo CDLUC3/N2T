@@ -1,0 +1,27 @@
+{
+  "id": "erm",
+  "target": {
+    "DEFAULT": "https://nanocommons.github.io/identifiers/registry#{content}"
+  },
+  "type": "scheme",
+  "name": "European Registry of Materials",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00000711",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://nanocommons.github.io/identifiers/registry#${ac}",
+  "redirect": "https://nanocommons.github.io/identifiers/registry#{content}",
+  "description": "The European Registry of Materials is a simple registry with the sole purpose to mint material identifiers to be used by research projects throughout the life cycle of their project.",
+  "subject": null,
+  "location": "US",
+  "synonym": "Open Citation Identifier",
+  "institution": "NanoCommons",
+  "prefixed": 0,
+  "test": "ERM00000044",
+  "probe": "https://nanocommons.github.io/identifiers/registry#ERM00000044",
+  "pattern": "^ERM[0-9]{8}$",
+  "state": "0:Unknown",
+  "more": "https://nanocommons.github.io/identifiers/",
+  "revision": 0
+}

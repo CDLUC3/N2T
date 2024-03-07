@@ -1,0 +1,27 @@
+{
+  "id": "glycoepitope",
+  "target": {
+    "DEFAULT": "https://www.glycoepitope.jp/epitopes/{content}"
+  },
+  "type": "scheme",
+  "name": "GlycoEpitope at Ritsumeikan University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100613",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://www.glycoepitope.jp/epitopes/${ac}",
+  "redirect": "https://www.glycoepitope.jp/epitopes/{content}",
+  "description": "GlycoEpitope is a database containing useful information about carbohydrate antigens (glyco-epitopes) and the antibodies (polyclonal or monoclonal) that can be used to analyze their expression. This collection references Glycoepitopes.",
+  "subject": "immunogenetics; interaction",
+  "location": "Japan",
+  "synonym": "KEGG",
+  "institution": "Kawasaki laboratory, Research Center for Glycobiotechnology, Ritsumeikan University",
+  "prefixed": 0,
+  "test": "EP0311",
+  "probe": "https://www.glycoepitope.jp/epitopes/EP0311",
+  "pattern": "^EP\\d{4}$",
+  "state": "84:Unknown",
+  "more": "https://www.glycoepitope.jp/epitopes/",
+  "revision": 0
+}

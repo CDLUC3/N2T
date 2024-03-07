@@ -1,0 +1,9 @@
+{
+  "id": "yeastfunc",
+  "target": {
+    "DEFAULT": "http://func.med.harvard.edu/yeast/genes/list_functional_scores/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://func.med.harvard.edu/yeast/genes/list_functional_scores/{content}",
+  "revision": 0
+}

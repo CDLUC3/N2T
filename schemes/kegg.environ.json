@@ -1,0 +1,27 @@
+{
+  "id": "kegg.environ",
+  "target": {
+    "DEFAULT": "http://www.kegg.jp/entry/{content}"
+  },
+  "type": "scheme",
+  "name": "KEGG ENVIRON Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100506",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.kegg.jp/entry/${ac}",
+  "redirect": "http://www.kegg.jp/entry/{content}",
+  "description": "KEGG ENVIRON (renamed from EDRUG) is a collection of crude drugs, essential oils, and other health-promoting substances, which are mostly natural products of plants. It will contain environmental substances and other health-damagine substances as well. Each KEGG ENVIRON entry is identified by the E number and is associated with the chemical component, efficacy information, and source species information whenever applicable.",
+  "subject": "drug; chemical",
+  "location": "Japan",
+  "synonym": "KEGG",
+  "institution": "Kyoto University Bioinformatics Center",
+  "prefixed": 0,
+  "test": "ev:E00032",
+  "probe": "http://www.kegg.jp/entry/ev:E00032",
+  "pattern": "^(ev\\:)?E\\d+$",
+  "state": "100:Up",
+  "more": "http://www.genome.jp/kegg/drug/environ.html",
+  "revision": 0
+}

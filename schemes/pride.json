@@ -1,0 +1,27 @@
+{
+  "id": "pride",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/pride/archive/assays/{content}"
+  },
+  "type": "scheme",
+  "name": "PRIDE at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100094",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/pride/archive/assays/${ac}",
+  "redirect": "https://www.ebi.ac.uk/pride/archive/assays/{content}",
+  "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository that provides protein and peptide identifications together with supporting evidence. This collection references experiments and assays.",
+  "subject": "protein",
+  "location": "UK",
+  "synonym": "Ligand Depot",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "1",
+  "probe": "https://www.ebi.ac.uk/pride/archive/assays/1",
+  "pattern": "^\\d+$",
+  "state": "98:Up",
+  "more": "https://www.ebi.ac.uk/pride/",
+  "revision": 0
+}

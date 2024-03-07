@@ -1,0 +1,9 @@
+{
+  "id": "cnidbase",
+  "target": {
+    "DEFAULT": "http://cnidbase.com/index.cgi?cn_accession={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://cnidbase.com/index.cgi?cn_accession={content}",
+  "revision": 0
+}

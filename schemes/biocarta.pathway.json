@@ -1,0 +1,27 @@
+{
+  "id": "biocarta.pathway",
+  "target": {
+    "DEFAULT": "https://cgap.nci.nih.gov/Pathways/BioCarta/{content}"
+  },
+  "type": "scheme",
+  "name": "BioCarta Pathway at NCI",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100544",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://cgap.nci.nih.gov/Pathways/BioCarta/${ac}",
+  "redirect": "https://cgap.nci.nih.gov/Pathways/BioCarta/{content}",
+  "description": "BioCarta is a supplier and distributor of characterized reagents and assays for biopharmaceutical and academic research. It catalogs community produced online maps depicting molecular relationships from areas of active research, generating classical pathways as well as suggestions for new pathways. This collections references pathway maps.",
+  "subject": "pathway; image library",
+  "location": "USA",
+  "synonym": "Autism Database",
+  "institution": "National Cancer Institute, Center for Bioinformatics, Maryland",
+  "prefixed": 0,
+  "test": "h_aktPathway",
+  "probe": "https://cgap.nci.nih.gov/Pathways/BioCarta/h_aktPathway",
+  "pattern": "^([hm]\\_)?\\w+Pathway$",
+  "state": "87:Unknown",
+  "more": "https://www.biocarta.com/",
+  "revision": 0
+}

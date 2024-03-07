@@ -1,0 +1,27 @@
+{
+  "id": "drsc",
+  "target": {
+    "DEFAULT": "http://www.flyrnai.org/cgi-bin/RNAi_gene_lookup_public.pl?gname={content}"
+  },
+  "type": "scheme",
+  "name": "DRSC at Harvard Medical School",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100466",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.flyrnai.org/cgi-bin/RNAi_gene_lookup_public.pl?gname=${ac}",
+  "redirect": "http://www.flyrnai.org/cgi-bin/RNAi_gene_lookup_public.pl?gname={content}",
+  "description": "The DRSC (Drosophila RNAi Screening Cente) tracks both production of reagents for RNA interference (RNAi) screening in Drosophila cells and RNAi screen results. It maintains a list of Drosophila gene names, identifiers, symbols and synonyms and provides  information for cell-based or in vivo RNAi reagents, other types of reagents, screen results, etc. corresponding for a given gene.",
+  "subject": "eukaryotic; expression; gene",
+  "location": "USA",
+  "synonym": "Drosophila RNAi Screening Cente; FlyRNAi",
+  "institution": "Department of Genetics, Harvard Medical School, Boston, Massachusetts",
+  "prefixed": 0,
+  "test": "DRSC05221",
+  "probe": "http://www.flyrnai.org/cgi-bin/RNAi_gene_lookup_public.pl?gname=DRSC05221",
+  "pattern": "^DRSC\\d+$",
+  "state": "80:Up",
+  "more": "http://flyrnai.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "swh",
+  "target": {
+    "DEFAULT": "https://archive.softwareheritage.org/browse/swh:{content}"
+  },
+  "type": "scheme",
+  "name": "Software Heritage",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100873",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://archive.softwareheritage.org/browse/swh:${ac}",
+  "redirect": "https://archive.softwareheritage.org/browse/swh:{content}",
+  "description": "Software Heritage is the universal archive of software source code.",
+  "subject": null,
+  "location": "France",
+  "synonym": "nmrCV",
+  "institution": "INRIA",
+  "prefixed": 1,
+  "test": "1:rev:309cf2674ee7a0749978cf8265ab91a60aea0f7d",
+  "probe": "https://archive.softwareheritage.org/browse/swh:1:rev:309cf2674ee7a0749978cf8265ab91a60aea0f7d",
+  "pattern": "^swh:[1-9]:[a-z][a-z][a-z]:[a-f0-9]+$",
+  "state": "0:Unknown",
+  "more": "https://archive.softwareheritage.org",
+  "revision": 0
+}

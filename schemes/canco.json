@@ -1,0 +1,9 @@
+{
+  "id": "canco",
+  "target": {
+    "DEFAULT": "http://bioontology.org/ontologies/ResearchArea.owl#COGPO_00021"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioontology.org/ontologies/ResearchArea.owl#COGPO_00021",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gmd.analyte",
+  "target": {
+    "DEFAULT": "http://gmd.mpimp-golm.mpg.de/Analytes/{content}"
+  },
+  "type": "scheme",
+  "name": "Golm Metabolome Database (Analyte) at Max Planck Institute of Molecular Plant Physiology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100549",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://gmd.mpimp-golm.mpg.de/Analytes/${ac}",
+  "redirect": "http://gmd.mpimp-golm.mpg.de/Analytes/{content}",
+  "description": "Golm Metabolome Database (GMD) provides public access to custom mass spectral libraries, metabolite profiling experiments as well as additional information and tools. For GC-MS profiling analyses, polar metabolite extracts are chemically converted, i.e. derivatised into less polar and volatile compounds, so called analytes.  This collection references analytes.",
+  "subject": "structure; mass spectrometry; metabolite",
+  "location": "Germany",
+  "synonym": "Autism Database",
+  "institution": "Max Planck Institute of Molecular Plant Physiology, Potsdam",
+  "prefixed": 0,
+  "test": "4f0fa9b6-514f-4ff4-98cc-0009bc08eb80",
+  "probe": "http://gmd.mpimp-golm.mpg.de/Analytes/4f0fa9b6-514f-4ff4-98cc-0009bc08eb80",
+  "pattern": "^([0-9a-fA-F]){8}(-([0-9a-fA-F]){4}){3}-([0-9a-fA-F]){12}$",
+  "state": "100:Up",
+  "more": "http://gmd.mpimp-golm.mpg.de/",
+  "revision": 0
+}

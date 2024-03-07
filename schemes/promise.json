@@ -1,0 +1,9 @@
+{
+  "id": "promise",
+  "target": {
+    "DEFAULT": "http://metallo.scripps.edu/PROMISE/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://metallo.scripps.edu/PROMISE/{content}.html",
+  "revision": 0
+}

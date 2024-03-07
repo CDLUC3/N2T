@@ -1,0 +1,27 @@
+{
+  "id": "pharmgkb.gene",
+  "target": {
+    "DEFAULT": "http://www.pharmgkb.org/gene/{content}"
+  },
+  "type": "scheme",
+  "name": "PharmGKB Gene at Stanford",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100316",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.pharmgkb.org/gene/${ac}",
+  "redirect": "http://www.pharmgkb.org/gene/{content}",
+  "description": "The PharmGKB database is a central repository for genetic, genomic, molecular and cellular phenotype data and clinical information about people who have participated in pharmacogenomics research studies. The data includes, but is not limited to, clinical and basic pharmacokinetic and pharmacogenomic research in the cardiovascular, pulmonary, cancer, pathways, metabolic and transporter domains.",
+  "subject": "pharmacogenomics; gene",
+  "location": "USA",
+  "synonym": "National Academic Research and Collaborations Information System",
+  "institution": "Department of Genetics, School of Medicine, Stanford University, Stanford, California",
+  "prefixed": 0,
+  "test": "PA131",
+  "probe": "http://www.pharmgkb.org/gene/PA131",
+  "pattern": "^PA\\w+$",
+  "state": "59:Down",
+  "more": "http://www.pharmgkb.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "bold.taxonomy",
+  "target": {
+    "DEFAULT": "http://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid={content}"
+  },
+  "type": "scheme",
+  "name": "BOLD taxonomy browser",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100203",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=${ac}",
+  "redirect": "http://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid={content}",
+  "description": "The Barcode of Life Data System (BOLD) is an informatics workbench aiding the acquisition, storage, analysis and publication of DNA barcode records. The associated taxonomy browser shows the progress of DNA barcoding and provides sample collection site distribution, and taxon occurence information.",
+  "subject": "classification",
+  "location": "Canada",
+  "synonym": "BDGP gene disruption",
+  "institution": "Canadian Centre for DNA Barcoding, Biodiversity Institute of Ontario",
+  "prefixed": 0,
+  "test": "27267",
+  "probe": "http://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=27267",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://www.boldsystems.org/",
+  "revision": 0
+}

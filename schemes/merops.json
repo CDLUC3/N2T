@@ -1,0 +1,27 @@
+{
+  "id": "merops",
+  "target": {
+    "DEFAULT": "http://merops.sanger.ac.uk/cgi-bin/pepsum?mid={content}"
+  },
+  "type": "scheme",
+  "name": "MEROPS database at Sanger Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100087",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://merops.sanger.ac.uk/cgi-bin/pepsum?mid=${ac}",
+  "redirect": "http://merops.sanger.ac.uk/cgi-bin/pepsum?mid={content}",
+  "description": "The MEROPS database is an information resource for peptidases (also termed proteases, proteinases and proteolytic enzymes) and the proteins that inhibit them.",
+  "subject": "protein; enzyme",
+  "location": "United Kingdom",
+  "synonym": "MOD; PSI-MOD",
+  "institution": "Wellcome Trust Sanger Institute",
+  "prefixed": 0,
+  "test": "S01.001",
+  "probe": "http://merops.sanger.ac.uk/cgi-bin/pepsum?mid=S01.001",
+  "pattern": "^[SCTAGMNU]\\d{2}\\.([AB]\\d{2}|\\d{3})$",
+  "state": "77:Down",
+  "more": "http://merops.sanger.ac.uk/index.htm",
+  "revision": 0
+}

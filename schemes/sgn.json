@@ -1,0 +1,27 @@
+{
+  "id": "sgn",
+  "target": {
+    "DEFAULT": "http://solgenomics.net/phenome/locus_display.pl?locus_id={content}"
+  },
+  "type": "scheme",
+  "name": "Sol Genomics Network at Boyce Thompson Institute for Plant Research",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100231",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://solgenomics.net/phenome/locus_display.pl?locus_id=${ac}",
+  "redirect": "http://solgenomics.net/phenome/locus_display.pl?locus_id={content}",
+  "description": "The Sol Genomics Network (SGN) is a database and website dedicated to the genomic information of the nightshade family, which includes species such as tomato, potato, pepper, petunia and eggplant.",
+  "subject": "genome; plant",
+  "location": "USA",
+  "synonym": "SGN",
+  "institution": "Boyce Thompson Institute for Plant Research, New York",
+  "prefixed": 0,
+  "test": "0001",
+  "probe": "http://solgenomics.net/phenome/locus_display.pl?locus_id=0001",
+  "pattern": "^\\d+$",
+  "state": "50:Down",
+  "more": "http://solgenomics.net/",
+  "revision": 0
+}

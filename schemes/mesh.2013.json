@@ -1,0 +1,27 @@
+{
+  "id": "mesh.2013",
+  "target": {
+    "DEFAULT": "http://www.nlm.nih.gov/cgi/mesh/2013/MB_cgi?mode=&index={content}&view=expanded"
+  },
+  "type": "scheme",
+  "name": "MeSH 2013 at National Library of Medicine",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100608",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.nlm.nih.gov/cgi/mesh/2013/MB_cgi?mode=&index=${ac}&view=expanded",
+  "redirect": "http://www.nlm.nih.gov/cgi/mesh/2013/MB_cgi?mode=&index={content}&view=expanded",
+  "description": "MeSH (Medical Subject Headings) is the National Library of Medicine's controlled vocabulary thesaurus. It consists of sets of terms naming descriptors in a hierarchical structure that permits searching at various levels of specificity. This thesaurus is used by NLM for indexing articles from biomedical journals, cataloging of books, documents, etc. This collection references MeSH terms published in 2013.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Virulence Factor Database genus",
+  "institution": "U.S. National Library of Medicine, National Institute of Health, Maryland",
+  "prefixed": 0,
+  "test": "17165",
+  "probe": "http://www.nlm.nih.gov/cgi/mesh/2013/MB_cgi?mode=&index=17165&view=expanded",
+  "pattern": "^[A-Za-z0-9]+$",
+  "state": "56:Down",
+  "more": "http://www.nlm.nih.gov/mesh/",
+  "revision": 0
+}

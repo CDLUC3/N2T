@@ -1,0 +1,27 @@
+{
+  "id": "pass2",
+  "target": {
+    "DEFAULT": "http://caps.ncbs.res.in/cgi-bin/pass2//show_sf.py?sf_id={content}"
+  },
+  "type": "scheme",
+  "name": "PASS2 at National centre for Biological Sciences (India)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100603",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://caps.ncbs.res.in/cgi-bin/pass2//show_sf.py?sf_id=${ac}",
+  "redirect": "http://caps.ncbs.res.in/cgi-bin/pass2//show_sf.py?sf_id={content}",
+  "description": "The PASS2 database provides alignments of proteins related at the superfamily level and are characterized by low sequence identity.",
+  "subject": null,
+  "location": "India",
+  "synonym": "Protein Alignments organised as Structural Superfamilies",
+  "institution": "National centre for Biological Sciences, TIFR, GKVK campus, Bangalore, Karnataka",
+  "prefixed": 0,
+  "test": "46977",
+  "probe": "http://caps.ncbs.res.in/cgi-bin/pass2//show_sf.py?sf_id=46977",
+  "pattern": "^\\d+$",
+  "state": "91:Up",
+  "more": "http://caps.ncbs.res.in/pass2/",
+  "revision": 0
+}

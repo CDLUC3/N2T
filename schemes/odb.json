@@ -1,0 +1,9 @@
+{
+  "id": "odb",
+  "target": {
+    "DEFAULT": "http://www.genome.sk.ritsumei.ac.jp/odb/odb2.rb?org=[?species]&genome_id=[?genome_id]&genes={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.genome.sk.ritsumei.ac.jp/odb/odb2.rb?org=[?species]&genome_id=[?genome_id]&genes={content}",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "unipathway",
+  "target": {
+    "DEFAULT": "http://www.grenoble.prabi.fr/obiwarehouse/unipathway/upa?upid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.grenoble.prabi.fr/obiwarehouse/unipathway/upa?upid={content}",
+  "revision": 0
+}

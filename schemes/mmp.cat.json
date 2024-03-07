@@ -1,0 +1,27 @@
+{
+  "id": "mmp.cat",
+  "target": {
+    "DEFAULT": "https://mmp.sfb.uit.no/databases/marcat/#/records/{content}"
+  },
+  "type": "scheme",
+  "name": "MarCat through SfB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100819",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://mmp.sfb.uit.no/databases/marcat/#/records/${ac}",
+  "redirect": "https://mmp.sfb.uit.no/databases/marcat/#/records/{content}",
+  "description": "MarCat is a gene (protein) catalogue of uncultivable and cultivable marine genes and proteins derived from metagenomics samples.",
+  "subject": null,
+  "location": "Norway",
+  "synonym": "Marine Metagenomics Portal",
+  "institution": "Center for Bioinformatics (SfB), UiT The Arctic university of Norway",
+  "prefixed": 0,
+  "test": "MMP743597.11",
+  "probe": "https://mmp.sfb.uit.no/databases/marcat/#/records/MMP743597.11",
+  "pattern": "^MMP\\d+.\\d+$",
+  "state": "0:Unknown",
+  "more": "https://mmp.sfb.uit.no/databases/marcat/",
+  "revision": 0
+}

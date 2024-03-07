@@ -1,0 +1,27 @@
+{
+  "id": "bao",
+  "target": {
+    "DEFAULT": "http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_{content}"
+  },
+  "type": "scheme",
+  "name": "BioAssay Ontology through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100797",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_${ac}",
+  "redirect": "http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_{content}",
+  "description": "The BioAssay Ontology (BAO) describes chemical biology screening assays and their results including high-throughput screening (HTS) data for the purpose of categorizing assays and data analysis.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Global Research Identifier Database",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 0,
+  "test": "0002989",
+  "probe": "http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_0002989",
+  "pattern": "^\\d{7}$",
+  "state": "99:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/BAO/",
+  "revision": 0
+}

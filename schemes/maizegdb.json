@@ -1,0 +1,9 @@
+{
+  "id": "maizegdb",
+  "target": {
+    "DEFAULT": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id={content}",
+  "revision": 0
+}

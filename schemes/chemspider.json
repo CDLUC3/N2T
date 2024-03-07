@@ -1,0 +1,27 @@
+{
+  "id": "chemspider",
+  "target": {
+    "DEFAULT": "http://www.chemspider.com/Chemical-Structure.{content}.html"
+  },
+  "type": "scheme",
+  "name": "ChemSpider at RSC",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100180",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.chemspider.com/Chemical-Structure.${ac}.html",
+  "redirect": "http://www.chemspider.com/Chemical-Structure.{content}.html",
+  "description": "ChemSpider is a collection of compound data from across the web, which aggregates chemical structures and their associated information into a single searchable repository entry. These entries are supplemented with additional properties, related information and links back to original data sources.",
+  "subject": "structure; chemical",
+  "location": "UK",
+  "synonym": "NCT",
+  "institution": "Royal Society of Chemistry, Cambridge",
+  "prefixed": 0,
+  "test": "56586",
+  "probe": "http://www.chemspider.com/Chemical-Structure.56586.html",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "http://www.chemspider.com/",
+  "revision": 0
+}

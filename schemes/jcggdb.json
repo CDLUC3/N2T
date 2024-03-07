@@ -1,0 +1,27 @@
+{
+  "id": "jcggdb",
+  "target": {
+    "DEFAULT": "http://jcggdb.jp/idb/jcggdb/{content}"
+  },
+  "type": "scheme",
+  "name": "JCGGDB at Advanced Science Institute (Japan)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100614",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://jcggdb.jp/idb/jcggdb/${ac}",
+  "redirect": "http://jcggdb.jp/idb/jcggdb/{content}",
+  "description": "JCGGDB (Japan Consortium for Glycobiology and Glycotechnology DataBase) is a database that aims to integrate all glycan-related data held in various repositories in Japan. This includes databases for large-quantity synthesis of glycogenes and glycans, analysis and detection of glycan structure and glycoprotein, glycan-related differentiation markers, glycan functions, glycan-related diseases and transgenic and knockout animals, etc.",
+  "subject": "polysaccharide; structure; lipid; protein",
+  "location": "Japan",
+  "synonym": "Japan Consortium for Glycobiology and Glycotechnology DataBase",
+  "institution": "Advanced Science Institute(ASI), Chemical Biology Department Systems Glycobiology research Group, Saitama",
+  "prefixed": 0,
+  "test": "JCGG-STR008690",
+  "probe": "http://jcggdb.jp/idb/jcggdb/JCGG-STR008690",
+  "pattern": "^JCGG-STR\\d{6}$",
+  "state": "68:Down",
+  "more": "http://jcggdb.jp/index_en.html",
+  "revision": 0
+}

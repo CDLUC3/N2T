@@ -1,0 +1,27 @@
+{
+  "id": "narcis",
+  "target": {
+    "DEFAULT": "http://www.narcis.nl/publication/RecordID/{content}"
+  },
+  "type": "scheme",
+  "name": "NARCIS at The Hague",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100306",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.narcis.nl/publication/RecordID/${ac}",
+  "redirect": "http://www.narcis.nl/publication/RecordID/{content}",
+  "description": "NARCIS provides access to scientific information, including (open access) publications from the repositories of all the Dutch universities, KNAW, NWO and a number of research institutes, which is not referenced in other citation databases.",
+  "subject": "bibliography",
+  "location": "Holland",
+  "synonym": "National Academic Research and Collaborations Information System",
+  "institution": "NARCIS, Royal Netherlands Academy of Science and Arts",
+  "prefixed": 0,
+  "test": "oai:cwi.nl:4725",
+  "probe": "http://www.narcis.nl/publication/RecordID/oai:cwi.nl:4725",
+  "pattern": "^oai\\:cwi\\.nl\\:\\d+$",
+  "state": "98:Up",
+  "more": "http://www.narcis.nl/?Language=en",
+  "revision": 0
+}

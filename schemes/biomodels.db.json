@@ -1,0 +1,27 @@
+{
+  "id": "biomodels.db",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/biomodels/{content}"
+  },
+  "type": "scheme",
+  "name": "BioModels Database",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100006",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/biomodels/${ac}",
+  "redirect": "https://www.ebi.ac.uk/biomodels/{content}",
+  "description": "BioModels Database is a data resource that allows biologists to store, search and retrieve published mathematical models of biological interests.",
+  "subject": "model",
+  "location": "UK",
+  "synonym": "BioModels",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "BIOMD0000000048",
+  "probe": "https://www.ebi.ac.uk/biomodels/BIOMD0000000048",
+  "pattern": "^((BIOMD|MODEL)\\d{10})|(BMID\\d{12})$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/biomodels/",
+  "revision": 0
+}

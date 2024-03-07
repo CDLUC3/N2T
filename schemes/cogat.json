@@ -1,0 +1,9 @@
+{
+  "id": "cogat",
+  "target": {
+    "DEFAULT": "http://www.cognitiveatlas.org/ontology/cogat.owl#{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.cognitiveatlas.org/ontology/cogat.owl#{content}",
+  "revision": 0
+}

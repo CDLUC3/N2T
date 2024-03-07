@@ -1,0 +1,27 @@
+{
+  "id": "pdb-ccd",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/{content}"
+  },
+  "type": "scheme",
+  "name": "Protein Data Bank Chemical Component Dictionary at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100146",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/${ac}",
+  "redirect": "https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/{content}",
+  "description": "The Chemical Component Dictionary is as an external reference file describing all residue and small molecule components found in Protein Data Bank entries. It contains detailed chemical descriptions for standard and modified amino acids/nucleotides, small molecule ligands, and solvent molecules. Each chemical definition includes descriptions of chemical properties such as stereochemical assignments, aromatic bond assignments, idealized coordinates, chemical descriptors (SMILES & InChI), and systematic chemical names.",
+  "subject": "chemical; classification",
+  "location": "UK",
+  "synonym": "PDB-CCD; PDBeChem",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "AB0",
+  "probe": "https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/AB0",
+  "pattern": "^\\w{3}$",
+  "state": "100:Up",
+  "more": "https://www.ebi.ac.uk/pdbe-srv/pdbechem/",
+  "revision": 0
+}

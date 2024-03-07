@@ -1,0 +1,27 @@
+{
+  "id": "clinicaltrials",
+  "target": {
+    "DEFAULT": "https://clinicaltrials.gov/ct2/show/{content}"
+  },
+  "type": "scheme",
+  "name": "ClinicalTrials.gov at NIH",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100179",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://clinicaltrials.gov/ct2/show/${ac}",
+  "redirect": "https://clinicaltrials.gov/ct2/show/{content}",
+  "description": "ClinicalTrials.gov provides free access to information on clinical studies for a wide range of diseases and conditions. Studies listed in the database are conducted in 175 countries",
+  "subject": "disorder; disease; pharmacogenomics; human",
+  "location": "USA",
+  "synonym": "NCT",
+  "institution": "National Library of Medicine and ClinicalTrials.gov, Maryland",
+  "prefixed": 0,
+  "test": "NCT00222573",
+  "probe": "https://clinicaltrials.gov/ct2/show/NCT00222573",
+  "pattern": "^NCT\\d{8}$",
+  "state": "87:Unknown",
+  "more": "https://clinicaltrials.gov/",
+  "revision": 0
+}

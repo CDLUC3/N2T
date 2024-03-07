@@ -1,0 +1,27 @@
+{
+  "id": "ensembl.bacteria",
+  "target": {
+    "DEFAULT": "https://bacteria.ensembl.org/id/{content}"
+  },
+  "type": "scheme",
+  "name": "Ensembl Bacteria at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100261",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://bacteria.ensembl.org/id/${ac}",
+  "redirect": "https://bacteria.ensembl.org/id/{content}",
+  "description": "Ensembl Genomes consists of five sub-portals (for bacteria, protists, fungi, plants and invertebrate metazoa) designed to complement the availability of vertebrate genomes in Ensembl. This collection is concerned with bacterial genomes.",
+  "subject": "genome; nucleotide; sequence",
+  "location": "UK",
+  "synonym": "Ensembl Genomes Bacteria",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "MU9_3181",
+  "probe": "https://bacteria.ensembl.org/id/MU9_3181",
+  "pattern": "^((EB\\w+)|([A-Z0-9]+\\_[A-Z0-9]+))$",
+  "state": "96:Up",
+  "more": "https://bacteria.ensembl.org/",
+  "revision": 0
+}

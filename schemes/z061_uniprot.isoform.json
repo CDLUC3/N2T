@@ -1,0 +1,27 @@
+{
+  "id": "z061/uniprot.isoform",
+  "target": {
+    "DEFAULT": "http://purl.uniprot.org/uniprot/{content}"
+  },
+  "type": "scheme",
+  "name": "UniProt Isoform through Universal Protein Resource using Persistent URL system",
+  "alias": null,
+  "provider": "z061",
+  "provider_id": "MIR:00100503",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.uniprot.org/uniprot/${ac}",
+  "redirect": "http://purl.uniprot.org/uniprot/{content}",
+  "description": "The UniProt Knowledgebase (UniProtKB) is a comprehensive resource for protein sequence and functional information with extensive cross-references to more than 120 external databases. This collection is a subset of UniProtKB, and provides a means to reference isoform information.",
+  "subject": "sequence; protein",
+  "location": "USA, UK and Switzerland",
+  "synonym": "UniProtKB Isoform",
+  "institution": "UniProt Consortium",
+  "prefixed": 0,
+  "test": "Q5BJF6-3",
+  "probe": "http://purl.uniprot.org/uniprot/Q5BJF6-3",
+  "pattern": "^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\-\\d+)$",
+  "state": "97:Up",
+  "more": "http://purl.uniprot.org/",
+  "revision": 0
+}

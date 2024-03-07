@@ -1,0 +1,27 @@
+{
+  "id": "ncbi/biosample",
+  "target": {
+    "DEFAULT": "http://www.ncbi.nlm.nih.gov/biosample?term={content}"
+  },
+  "type": "scheme",
+  "name": "BioSample at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100706",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "http://www.ncbi.nlm.nih.gov/biosample?term=${ac}",
+  "redirect": "http://www.ncbi.nlm.nih.gov/biosample?term={content}",
+  "description": "The BioSample Database stores information about biological samples used in molecular experiments, such as sequencing, gene expression or proteomics. It includes reference samples, such as cell lines, which are repeatedly used in experiments. Accession numbers for the reference samples will be exchanged with a similar database at NCBI, and DDBJ (Japan). Record access may be affected due to different release cycles and inter-institutional synchronisation.",
+  "subject": "annotation",
+  "location": "USA",
+  "synonym": "BioSDe; BioSdn",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "SAMN00000002",
+  "probe": "http://www.ncbi.nlm.nih.gov/biosample?term=SAMN00000002",
+  "pattern": "^SAM[NED](\\w)?\\d+$",
+  "state": "100:Up",
+  "more": "http://www.ncbi.nlm.nih.gov/biosample",
+  "revision": 0
+}

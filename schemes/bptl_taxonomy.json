@@ -1,0 +1,27 @@
+{
+  "id": "bptl/taxonomy",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/NCBITAXON/{content}"
+  },
+  "type": "scheme",
+  "name": "BioPortal",
+  "alias": "taxon",
+  "provider": "bptl",
+  "provider_id": "MIR:00100507",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/NCBITAXON/${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/NCBITAXON/{content}",
+  "description": "The taxonomy contains the relationships between all living forms for which nucleic acid or protein sequence have been determined.",
+  "subject": "taxonomy",
+  "location": "USA",
+  "synonym": "NEWT; NCBI taxonomy; NCBITAXON",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 0,
+  "test": "9606",
+  "probe": "http://purl.bioontology.org/ontology/NCBITAXON/9606",
+  "pattern": "^\\d+$",
+  "state": "88:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/NCBITAXON",
+  "revision": 0
+}

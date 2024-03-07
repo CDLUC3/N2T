@@ -1,0 +1,27 @@
+{
+  "id": "dbsnp",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/snp/{content}"
+  },
+  "type": "scheme",
+  "name": "dbSNP at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100206",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/snp/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/snp/{content}",
+  "description": "The dbSNP database is a repository for both single base nucleotide subsitutions and short deletion and insertion polymorphisms.",
+  "subject": "gene; nucleotide",
+  "location": "USA",
+  "synonym": "Database of Expressed Sequence Tags; NCBI EST",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "rs121909098",
+  "probe": "https://www.ncbi.nlm.nih.gov/snp/rs121909098",
+  "pattern": "^rs\\d+$",
+  "state": "99:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/snp/",
+  "revision": 0
+}

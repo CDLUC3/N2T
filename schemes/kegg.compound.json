@@ -1,0 +1,27 @@
+{
+  "id": "kegg.compound",
+  "target": {
+    "DEFAULT": "https://www.kegg.jp/entry/{content}"
+  },
+  "type": "scheme",
+  "name": "KEGG LIGAND Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100021",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.kegg.jp/entry/${ac}",
+  "redirect": "https://www.kegg.jp/entry/{content}",
+  "description": "KEGG compound contains our knowledge on the universe of chemical substances that are relevant to life.",
+  "subject": "metabolite; structure; chemical",
+  "location": "Japan",
+  "synonym": "KEGG",
+  "institution": "Kyoto University Bioinformatics Center",
+  "prefixed": 0,
+  "test": "C12345",
+  "probe": "https://www.kegg.jp/entry/C12345",
+  "pattern": "^C\\d+$",
+  "state": "100:Up",
+  "more": "https://www.genome.jp/kegg/ligand.html",
+  "revision": 0
+}

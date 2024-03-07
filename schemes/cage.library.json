@@ -1,0 +1,9 @@
+{
+  "id": "cage.library",
+  "target": {
+    "DEFAULT": "http://fantom31p.gsc.riken.jp/cage/mm5/SummaryLibrary.php?libid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://fantom31p.gsc.riken.jp/cage/mm5/SummaryLibrary.php?libid={content}",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "spliceinfo",
+  "target": {
+    "DEFAULT": "http://spliceinfo.mbc.nctu.edu.tw/info_show.php?gs_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://spliceinfo.mbc.nctu.edu.tw/info_show.php?gs_id={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "omicsdi/massive",
+  "target": {
+    "DEFAULT": "https://www.omicsdi.org/dataset/massive/{content}"
+  },
+  "type": "scheme",
+  "name": "MassIVE through OmicsDI",
+  "alias": null,
+  "provider": "omicsdi",
+  "provider_id": "MIR:00100867",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.omicsdi.org/dataset/massive/${ac}",
+  "redirect": "https://www.omicsdi.org/dataset/massive/{content}",
+  "description": "MassIVE is a community resource developed by the NIH-funded Center for Computational Mass Spectrometry to promote the global, free exchange of mass spectrometry data.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "nmrCV",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "MSV000082131",
+  "probe": "https://www.omicsdi.org/dataset/massive/MSV000082131",
+  "pattern": "^MSV\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.omicsdi.org/",
+  "revision": 0
+}

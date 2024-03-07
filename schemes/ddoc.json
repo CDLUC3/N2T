@@ -1,0 +1,9 @@
+{
+  "id": "ddoc",
+  "target": {
+    "DEFAULT": "http://apps.sanbi.ac.za/ddoc/details_general.php?geneID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://apps.sanbi.ac.za/ddoc/details_general.php?geneID={content}",
+  "revision": 0
+}

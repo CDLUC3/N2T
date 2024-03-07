@@ -1,0 +1,9 @@
+{
+  "id": "tbestdb",
+  "target": {
+    "DEFAULT": "http://tbestdb.bcm.umontreal.ca/searches/contig.php?conDeID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://tbestdb.bcm.umontreal.ca/searches/contig.php?conDeID={content}",
+  "revision": 0
+}

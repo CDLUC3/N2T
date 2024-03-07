@@ -1,0 +1,9 @@
+{
+  "id": "humancyc.genes",
+  "target": {
+    "DEFAULT": "http://biocyc.org/[?species]/search-query?type=GENE&gname={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://biocyc.org/[?species]/search-query?type=GENE&gname={content}",
+  "revision": 0
+}

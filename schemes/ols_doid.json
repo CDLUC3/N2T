@@ -1,0 +1,27 @@
+{
+  "id": "ols/doid",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/doid/terms?obo_id=DOID:{content}"
+  },
+  "type": "scheme",
+  "name": "Human Disease Ontology through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100293",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/doid/terms?obo_id=DOID:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/doid/terms?obo_id=DOID:{content}",
+  "description": "The Disease Ontology has been developed as a standardized ontology for human disease with the purpose of providing the biomedical community with consistent, reusable and sustainable descriptions of human disease terms, phenotype characteristics and related medical vocabulary disease concepts.",
+  "subject": "disease; human; ontology",
+  "location": "UK",
+  "synonym": "DO",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "11337",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/doid/terms?obo_id=DOID:11337",
+  "pattern": "^DOID\\:\\d+$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/doid",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "broad",
+  "target": {
+    "DEFAULT": "https://www.broadinstitute.org/annotation/genome/magnaporthe_grisea/GeneDetails.html?sp={content}"
+  },
+  "type": "scheme",
+  "name": "Broad Fungal Genome Initiative at Broad Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100569",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.broadinstitute.org/annotation/genome/magnaporthe_grisea/GeneDetails.html?sp=${ac}",
+  "redirect": "https://www.broadinstitute.org/annotation/genome/magnaporthe_grisea/GeneDetails.html?sp={content}",
+  "description": "Magnaporthe grisea, the causal agent of rice blast disease, is one of the most devasting threats to food security worldwide and is a model organism for studying fungal phytopathogenicity and host-parasite interactions. The Magnaporthe comparative genomics database provides accesses to multiple fungal genomes from the Magnaporthaceae family to facilitate the comparative analysis. As part of the Broad Fungal Genome Initiative, the Magnaporthe comparative project includes the finished M. oryzae (formerly M. grisea) genome, as well as the draft assemblies of Gaeumannomyces graminis var. tritici and M. poae.",
+  "subject": "disease; fungal; genome",
+  "location": "USA",
+  "synonym": "Magnaporthe comparative genomics database",
+  "institution": "Broad Institute of MIT and Harvard, Cambridge, Massachuchetts",
+  "prefixed": 0,
+  "test": "S7000002168151102",
+  "probe": "https://www.broadinstitute.org/annotation/genome/magnaporthe_grisea/GeneDetails.html?sp=S7000002168151102",
+  "pattern": "^S\\d+$",
+  "state": "55:Unknown",
+  "more": "https://www.broadinstitute.org/annotation/genome/magnaporthe_grisea/",
+  "revision": 0
+}

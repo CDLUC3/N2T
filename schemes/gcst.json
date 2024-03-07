@@ -1,0 +1,27 @@
+{
+  "id": "gcst",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/gwas/studies/{content}"
+  },
+  "type": "scheme",
+  "name": "GWAS Catalog",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00000775",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/gwas/studies/${ac}",
+  "redirect": "https://www.ebi.ac.uk/gwas/studies/{content}",
+  "description": "The GWAS Catalog provides a consistent, searchable, visualisable and freely available database of published SNP-trait associations, which can be easily integrated with other resources, and is accessed by scientists, clinicians and other users worldwide.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Open Citation Identifier",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 0,
+  "test": "GCST000035",
+  "probe": "https://www.ebi.ac.uk/gwas/studies/GCST000035",
+  "pattern": "^GCST\\d{6}$",
+  "state": "0:Unknown",
+  "more": "https://www.ebi.ac.uk/gwas/studies",
+  "revision": 0
+}

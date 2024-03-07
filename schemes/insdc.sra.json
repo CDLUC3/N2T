@@ -1,0 +1,27 @@
+{
+  "id": "insdc.sra",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/sra/{content}"
+  },
+  "type": "scheme",
+  "name": "Sequence Read Archive at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100312",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/sra/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/sra/{content}",
+  "description": "The Sequence Read Archive (SRA) stores raw sequencing data from the next generation of sequencing platforms Data submitted to SRA. It is organized using a metadata model consisting of six objects: study, sample, experiment, run, analysis and submission. The SRA study contains high-level information including goals of the study and literature references, and may be linked to the INSDC BioProject database.",
+  "subject": "sequence",
+  "location": "USA",
+  "synonym": "National Academic Research and Collaborations Information System",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "SRX000007",
+  "probe": "https://www.ncbi.nlm.nih.gov/sra/SRX000007",
+  "pattern": "^[SED]R[APRSXZ]\\d+$",
+  "state": "100:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/sra",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "chickenqtldb",
+  "target": {
+    "DEFAULT": "http://www.animalgenome.org/cgi-bin/QTLdb/GG/qdetails?QTL_ID={content}"
+  },
+  "type": "scheme",
+  "name": "Animal QTL Chicken at Iowa State University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100646",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.animalgenome.org/cgi-bin/QTLdb/GG/qdetails?QTL_ID=${ac}",
+  "redirect": "http://www.animalgenome.org/cgi-bin/QTLdb/GG/qdetails?QTL_ID={content}",
+  "description": "The Animal Quantitative Trait Loci (QTL) database (Animal QTLdb) is designed to house publicly all available QTL and single-nucleotide polymorphism/gene association data on livestock animal species. This collection references chicken QTLs.",
+  "subject": "phenotype; gene",
+  "location": "USA",
+  "synonym": "OdorDB",
+  "institution": "Department of Animal Science and Center for Integrated Animal Genomics, Iowa State University, Iowa",
+  "prefixed": 0,
+  "test": "14362",
+  "probe": "http://www.animalgenome.org/cgi-bin/QTLdb/GG/qdetails?QTL_ID=14362",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://www.animalgenome.org/cgi-bin/QTLdb/GG/index",
+  "revision": 0
+}

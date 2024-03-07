@@ -1,0 +1,9 @@
+{
+  "id": "pdba",
+  "target": {
+    "DEFAULT": "http://www.rcsb.org/pdb/explore/explore.do?structureId={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.rcsb.org/pdb/explore/explore.do?structureId={content}",
+  "revision": 0
+}

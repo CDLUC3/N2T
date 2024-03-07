@@ -1,0 +1,27 @@
+{
+  "id": "ro",
+  "target": {
+    "DEFAULT": "http://purl.obolibrary.org/obo/{content}"
+  },
+  "type": "scheme",
+  "name": "OBO Relation Ontology through OntoBee",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100764",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.obolibrary.org/obo/${ac}",
+  "redirect": "http://purl.obolibrary.org/obo/{content}",
+  "description": "The OBO Relation Ontology provides consistent and unambiguous formal definitions of the relational expressions used in biomedical ontologies.",
+  "subject": "ontology",
+  "location": "USA",
+  "synonym": "CDD",
+  "institution": "University of Michigan Medical School (MI), Lawrence Berkeley National Laboratory (CA) and Science Commons (MA)",
+  "prefixed": 0,
+  "test": "RO_0002533",
+  "probe": "http://purl.obolibrary.org/obo/RO_0002533",
+  "pattern": "^RO_\\d{7}$",
+  "state": "98:Up",
+  "more": "http://obofoundry.org/ontology/ro.html",
+  "revision": 0
+}

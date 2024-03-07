@@ -1,0 +1,9 @@
+{
+  "id": "snp500cancer",
+  "target": {
+    "DEFAULT": "http://snp500cancer.nci.nih.gov/snp.cfm?both_snp_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://snp500cancer.nci.nih.gov/snp.cfm?both_snp_id={content}",
+  "revision": 0
+}

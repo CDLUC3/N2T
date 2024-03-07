@@ -1,0 +1,9 @@
+{
+  "id": "orfdb",
+  "target": {
+    "DEFAULT": "http://orf.invitrogen.com/cgi-bin/ORFCard?&ORF={content}&set=UltimateORFs&hboxPath=keyword"
+  },
+  "type": "commonspfx",
+  "redirect": "http://orf.invitrogen.com/cgi-bin/ORFCard?&ORF={content}&set=UltimateORFs&hboxPath=keyword",
+  "revision": 0
+}

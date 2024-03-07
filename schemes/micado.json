@@ -1,0 +1,9 @@
+{
+  "id": "micado",
+  "target": {
+    "DEFAULT": "http://genome.jouy.inra.fr/cgi-bin/micado/access.cgi?accessnumber={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://genome.jouy.inra.fr/cgi-bin/micado/access.cgi?accessnumber={content}",
+  "revision": 0
+}

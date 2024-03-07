@@ -1,0 +1,27 @@
+{
+  "id": "phosphopoint.protein",
+  "target": {
+    "DEFAULT": "http://kinase.bioinformatics.tw/showall.jsp?type=PhosphoProtein&info=Gene&name={content}&drawing=0&sorting=0&kinome=0"
+  },
+  "type": "scheme",
+  "name": "PhosphoPoint Phosphoprotein at National Taiwan University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100500",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://kinase.bioinformatics.tw/showall.jsp?type=PhosphoProtein&info=Gene&name=${ac}&drawing=0&sorting=0&kinome=0",
+  "redirect": "http://kinase.bioinformatics.tw/showall.jsp?type=PhosphoProtein&info=Gene&name={content}&drawing=0&sorting=0&kinome=0",
+  "description": "PhosphoPOINT is a database of the human kinase and phospho-protein interactome. It describes the interactions among kinases, their potential substrates and their interacting (phospho)-proteins. It also incorporates gene expression and uses gene ontology (GO) terms to annotate interactions. This collection references phosphoprotein information.",
+  "subject": "human; protein; interaction",
+  "location": "Republic of China",
+  "synonym": "IUPAC International Chemical Identifier",
+  "institution": "Department of Computer Science and Information Engineering, National Taiwan University",
+  "prefixed": 0,
+  "test": "AURKA",
+  "probe": "http://kinase.bioinformatics.tw/showall.jsp?type=PhosphoProtein&info=Gene&name=AURKA&drawing=0&sorting=0&kinome=0",
+  "pattern": "^\\w+$",
+  "state": "25:Down",
+  "more": "http://kinase.bioinformatics.tw/",
+  "revision": 0
+}

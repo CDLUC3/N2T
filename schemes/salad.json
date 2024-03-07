@@ -1,0 +1,9 @@
+{
+  "id": "salad",
+  "target": {
+    "DEFAULT": "http://salad.dna.affrc.go.jp/CGViewer/en/v3.0/cgv_clust_view.jsp?pfamid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://salad.dna.affrc.go.jp/CGViewer/en/v3.0/cgv_clust_view.jsp?pfamid={content}",
+  "revision": 0
+}

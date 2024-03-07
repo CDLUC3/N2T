@@ -1,0 +1,9 @@
+{
+  "id": "sstoss",
+  "target": {
+    "DEFAULT": "http://caps.ncbs.res.in/cgi-bin/mini/databases/SSTOSS/sstoss.cgi?code={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://caps.ncbs.res.in/cgi-bin/mini/databases/SSTOSS/sstoss.cgi?code={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "plasmodb",
+  "target": {
+    "DEFAULT": "http://plasmodb.org/plasmo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id={content}"
+  },
+  "type": "scheme",
+  "name": "PlasmoDB at EuPathDB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100195",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://plasmodb.org/plasmo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id=${ac}",
+  "redirect": "http://plasmodb.org/plasmo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id={content}",
+  "description": "AmoebaDB is one of the databases that can be accessed through the EuPathDB (http://EuPathDB.org; formerly ApiDB) portal, covering eukaryotic pathogens of the genera Cryptosporidium, Giardia, Leishmania, Neospora, Plasmodium, Toxoplasma, Trichomonas and Trypanosoma. While each of these groups is supported by a taxon-specific database built upon the same infrastructure, the EuPathDB portal offers an entry point to all these resources, and the opportunity to leverage orthology for searches across genera.",
+  "subject": "genome; eukaryotic",
+  "location": "USA",
+  "synonym": "PubMed Central; PMCI",
+  "institution": "Center for Tropical & Emerging Global Diseases, University of Georgia",
+  "prefixed": 0,
+  "test": "PF11_0344",
+  "probe": "http://plasmodb.org/plasmo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id=PF11_0344",
+  "pattern": "^\\w+$",
+  "state": "63:Down",
+  "more": "http://plasmodb.org/plasmo/",
+  "revision": 0
+}

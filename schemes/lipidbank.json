@@ -1,0 +1,27 @@
+{
+  "id": "lipidbank",
+  "target": {
+    "DEFAULT": "http://lipidbank.jp/cgi-bin/detail.cgi?id={content}"
+  },
+  "type": "scheme",
+  "name": "LipidBank the Lipid database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100148",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://lipidbank.jp/cgi-bin/detail.cgi?id=${ac}",
+  "redirect": "http://lipidbank.jp/cgi-bin/detail.cgi?id={content}",
+  "description": "LipidBank is an open, publicly free database of natural lipids including fatty acids, glycerolipids, sphingolipids, steroids, and various vitamins.",
+  "subject": "lipid; structure",
+  "location": "Japan",
+  "synonym": "PDB-CCD; PDBeChem",
+  "institution": "Department of Computational Biology, University of Tokyo, Tokyo",
+  "prefixed": 0,
+  "test": "BBA0001",
+  "probe": "http://lipidbank.jp/cgi-bin/detail.cgi?id=BBA0001",
+  "pattern": "^\\w+\\d+$",
+  "state": "100:Up",
+  "more": "http://lipidbank.jp/index.html",
+  "revision": 0
+}

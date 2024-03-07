@@ -1,0 +1,7 @@
+{
+  "id": "ebi/ensembl.protist",
+  "target": {},
+  "type": "synonym",
+  "for": "ensembl.protist",
+  "revision": 0
+}

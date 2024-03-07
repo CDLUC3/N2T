@@ -1,0 +1,9 @@
+{
+  "id": "lsmd",
+  "target": {
+    "DEFAULT": "http://research.nhgri.nih.gov/lowe/db_retrieval.cgi?site_name=lowe&exon_intron_num={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://research.nhgri.nih.gov/lowe/db_retrieval.cgi?site_name=lowe&exon_intron_num={content}",
+  "revision": 0
+}

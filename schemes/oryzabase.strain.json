@@ -1,0 +1,27 @@
+{
+  "id": "oryzabase.strain",
+  "target": {
+    "DEFAULT": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/strain/wildCore/detail/{content}"
+  },
+  "type": "scheme",
+  "name": "Oryzabase v4 Strain at National Institute of Genetics (Japan)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100620",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/strain/wildCore/detail/${ac}",
+  "redirect": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/strain/wildCore/detail/{content}",
+  "description": "Oryzabase provides a view of rice (Oryza sativa) as a model monocot plant by integrating biological data with molecular genomic information. It contains information about rice development and anatomy, rice mutants, and genetic resources, especially for wild varieties of rice. Developmental and anatomical descriptions include in situ gene expression data serving as stage and tissue markers. This collection references wild strain information.",
+  "subject": "plant; strain",
+  "location": "Japan",
+  "synonym": "Japan Consortium for Glycobiology and Glycotechnology DataBase",
+  "institution": "Genetic Strains Research Center, National Institute of Genetics, Mishima, Shizuoka",
+  "prefixed": 0,
+  "test": "1",
+  "probe": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/strain/wildCore/detail/1",
+  "pattern": "^\\d+$",
+  "state": "98:Up",
+  "more": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/",
+  "revision": 0
+}

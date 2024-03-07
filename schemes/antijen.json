@@ -1,0 +1,9 @@
+{
+  "id": "antijen",
+  "target": {
+    "DEFAULT": "http://www.darrenflower.info/scripts/aj_scripts/aj_mhccalc2.pl?epitope={content}&AL=%25&ST=%25&CAT=MHC&detailinfo=no&detailmin=&detailmax="
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.darrenflower.info/scripts/aj_scripts/aj_mhccalc2.pl?epitope={content}&AL=%25&ST=%25&CAT=MHC&detailinfo=no&detailmin=&detailmax=",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "hollywood",
+  "target": {
+    "DEFAULT": "https://need a login"
+  },
+  "type": "commonspfx",
+  "redirect": "https://need a login",
+  "revision": 0
+}

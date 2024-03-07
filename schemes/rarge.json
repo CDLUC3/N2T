@@ -1,0 +1,9 @@
+{
+  "id": "rarge",
+  "target": {
+    "DEFAULT": "http://rarge.psc.riken.jp/dsmutant/detail.pl?keyword={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rarge.psc.riken.jp/dsmutant/detail.pl?keyword={content}",
+  "revision": 0
+}

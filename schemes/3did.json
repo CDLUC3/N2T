@@ -1,0 +1,9 @@
+{
+  "id": "3did",
+  "target": {
+    "DEFAULT": "http://3did.irbbarcelona.org/cgi-bin/query_domain_cgi.pl?domain={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://3did.irbbarcelona.org/cgi-bin/query_domain_cgi.pl?domain={content}",
+  "revision": 0
+}

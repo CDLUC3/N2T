@@ -1,0 +1,27 @@
+{
+  "id": "proteomicsdb.peptide",
+  "target": {
+    "DEFAULT": "https://www.proteomicsdb.org/#human/proteinDetails/{content}/peptides/"
+  },
+  "type": "scheme",
+  "name": "Proteomics DB Peptide at Center for Integrated Protein Science",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100681",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://www.proteomicsdb.org/#human/proteinDetails/${ac}/peptides/",
+  "redirect": "https://www.proteomicsdb.org/#human/proteinDetails/{content}/peptides/",
+  "description": "ProteomicsDB is an effort dedicated to expedite the identification of the human proteome and its use across the scientific community. This human proteome data is assembled primarily using information from liquid chromatography tandem-mass-spectrometry (LC-MS/MS) experiments involving human tissues, cell lines and body fluids. Information is accessible for individual proteins, or on the basis of protein coverage on the encoding chromosome, and for peptide components of a protein. This collection provides access to the peptides identified for a given protein.",
+  "subject": "human; protein",
+  "location": "Germany",
+  "synonym": "ARDB",
+  "institution": "Center for Integrated Protein Science, Munich",
+  "prefixed": 0,
+  "test": "53504",
+  "probe": "https://www.proteomicsdb.org/#human/proteinDetails/53504/peptides/",
+  "pattern": "^\\d+$",
+  "state": "98:Probably up",
+  "more": "https://www.proteomicsdb.org/#peptideSearch",
+  "revision": 0
+}

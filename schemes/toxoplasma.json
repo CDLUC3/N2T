@@ -1,0 +1,27 @@
+{
+  "id": "toxoplasma",
+  "target": {
+    "DEFAULT": "http://toxodb.org/toxo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id={content}"
+  },
+  "type": "scheme",
+  "name": "ToxoDB at EuPathDB",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100198",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://toxodb.org/toxo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id=${ac}",
+  "redirect": "http://toxodb.org/toxo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id={content}",
+  "description": "ToxoDB is one of the databases that can be accessed through the EuPathDB (http://EuPathDB.org; formerly ApiDB) portal, covering eukaryotic pathogens of the genera Cryptosporidium, Giardia, Leishmania, Neospora, Plasmodium, Toxoplasma, Trichomonas and Trypanosoma. While each of these groups is supported by a taxon-specific database built upon the same infrastructure, the EuPathDB portal offers an entry point to all these resources, and the opportunity to leverage orthology for searches across genera.",
+  "subject": "genome; eukaryotic",
+  "location": "USA",
+  "synonym": "PubMed Central; PMCI",
+  "institution": "Center for Tropical & Emerging Global Diseases, University of Georgia",
+  "prefixed": 0,
+  "test": "TGME49_053730",
+  "probe": "http://toxodb.org/toxo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id=TGME49_053730",
+  "pattern": "^\\w+$",
+  "state": "63:Down",
+  "more": "http://toxodb.org/toxo/",
+  "revision": 0
+}

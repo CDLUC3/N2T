@@ -1,0 +1,27 @@
+{
+  "id": "ordb",
+  "target": {
+    "DEFAULT": "http://senselab.med.yale.edu/ORDB/Data/{content}"
+  },
+  "type": "scheme",
+  "name": "Olfactory Receptor Database at Yale University School of Medicine",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100640",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://senselab.med.yale.edu/ORDB/Data/${ac}",
+  "redirect": "http://senselab.med.yale.edu/ORDB/Data/{content}",
+  "description": "The Olfactory Receptor Database (ORDB) is a repository of genomics and proteomics information of olfactory receptors (ORs). It includes a broad range of chemosensory genes and proteins, that includes in addition to ORs the taste papilla receptors (TPRs), vomeronasal organ receptors (VNRs), insect olfactory receptors (IORs), Caenorhabditis elegans chemosensory receptors (CeCRs), fungal pheromone receptors (FPRs).",
+  "subject": "nucleotide; sequence",
+  "location": "USA",
+  "synonym": "OrDB",
+  "institution": "Center for Medical Informatics, Yale University School of Medicine, New Haven, Connecticut",
+  "prefixed": 0,
+  "test": "8497",
+  "probe": "http://senselab.med.yale.edu/ORDB/Data/8497",
+  "pattern": "^\\d+$",
+  "state": "92:Up",
+  "more": "http://senselab.med.yale.edu/OrDB/",
+  "revision": 0
+}

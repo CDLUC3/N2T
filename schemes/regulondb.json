@@ -1,0 +1,9 @@
+{
+  "id": "regulondb",
+  "target": {
+    "DEFAULT": "http://regulondb.ccg.unam.mx/GeneController?key_id_org=ECK12&gene_id={content}&type=jsp"
+  },
+  "type": "commonspfx",
+  "redirect": "http://regulondb.ccg.unam.mx/GeneController?key_id_org=ECK12&gene_id={content}&type=jsp",
+  "revision": 0
+}

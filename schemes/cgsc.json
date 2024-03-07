@@ -1,0 +1,27 @@
+{
+  "id": "cgsc",
+  "target": {
+    "DEFAULT": "http://cgsc.biology.yale.edu/Site.php?ID={content}"
+  },
+  "type": "scheme",
+  "name": "CGSC at Yale university",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100377",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://cgsc.biology.yale.edu/Site.php?ID=${ac}",
+  "redirect": "http://cgsc.biology.yale.edu/Site.php?ID={content}",
+  "description": "The CGSC Database of E. coli genetic information includes genotypes and reference information for the strains in the CGSC collection, the names, synonyms, properties, and map position for genes, gene product information, and information on specific mutations and references to primary literature.",
+  "subject": "strain; microbial",
+  "location": "USA",
+  "synonym": "Coli Genetic Stock Center",
+  "institution": "Dept. of Molecular, Cellular, and Developmental Biology, Yale University, Conneticut",
+  "prefixed": 0,
+  "test": "74",
+  "probe": "http://cgsc.biology.yale.edu/Site.php?ID=74",
+  "pattern": "^\\d+$",
+  "state": "98:Up",
+  "more": "http://cgsc.biology.yale.edu/index.php",
+  "revision": 0
+}

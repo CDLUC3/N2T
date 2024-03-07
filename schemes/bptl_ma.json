@@ -1,0 +1,27 @@
+{
+  "id": "bptl/ma",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/MA/MA:{content}"
+  },
+  "type": "scheme",
+  "name": "Mouse Adult Gross Anatomy through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100576",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/MA/MA:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/MA/MA:{content}",
+  "description": "A structured controlled vocabulary of the adult anatomy of the mouse (Mus)",
+  "subject": "ontology",
+  "location": "USA",
+  "synonym": "Journal Storage",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 1,
+  "test": "0002502",
+  "probe": "http://purl.bioontology.org/ontology/MA/MA:0002502",
+  "pattern": "^MA:\\d+$",
+  "state": "86:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/MA",
+  "revision": 0
+}

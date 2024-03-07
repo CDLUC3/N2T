@@ -1,0 +1,9 @@
+{
+  "id": "nif.investigation",
+  "target": {
+    "DEFAULT": "http://www.neurolex.org/wiki/Category:{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.neurolex.org/wiki/Category:{content}",
+  "revision": 0
+}

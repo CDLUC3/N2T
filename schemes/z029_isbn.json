@@ -1,0 +1,27 @@
+{
+  "id": "z029/isbn",
+  "target": {
+    "DEFAULT": "http://www.worldcat.org/isbn/{content}"
+  },
+  "type": "scheme",
+  "name": "ISBN database at WorldCat",
+  "alias": null,
+  "provider": "z029",
+  "provider_id": "MIR:00100093",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.worldcat.org/isbn/${ac}",
+  "redirect": "http://www.worldcat.org/isbn/{content}",
+  "description": "The International Standard Book Number (ISBN) is for identifying printed books.",
+  "subject": "bibliography",
+  "location": "USA",
+  "synonym": "Ligand Depot",
+  "institution": "OCLC Online Computer Library Center, Inc. Ohio",
+  "prefixed": 0,
+  "test": "9781584885658",
+  "probe": "http://www.worldcat.org/isbn/9781584885658",
+  "pattern": "^(ISBN)?(-13|-10)?[:]?[ ]?(\\d{2,3}[ -]?)?\\d{1,5}[ -]?\\d{1,7}[ -]?\\d{1,6}[ -]?(\\d|X)$",
+  "state": "79:Down",
+  "more": "http://www.worldcat.org/",
+  "revision": 0
+}

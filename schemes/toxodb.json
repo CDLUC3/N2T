@@ -1,0 +1,9 @@
+{
+  "id": "toxodb",
+  "target": {
+    "DEFAULT": "http://toxodb.org/toxo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://toxodb.org/toxo/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id={content}",
+  "revision": 0
+}

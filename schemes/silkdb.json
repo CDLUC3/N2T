@@ -1,0 +1,9 @@
+{
+  "id": "silkdb",
+  "target": {
+    "DEFAULT": "http://www.silkdb.org/cgi-bin/gbrowse/silkdb/?name={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.silkdb.org/cgi-bin/gbrowse/silkdb/?name={content}",
+  "revision": 0
+}

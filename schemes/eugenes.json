@@ -1,0 +1,9 @@
+{
+  "id": "eugenes",
+  "target": {
+    "DEFAULT": "http://eugenes.org:7072/.bin/fbidq.html?{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://eugenes.org:7072/.bin/fbidq.html?{content}",
+  "revision": 0
+}

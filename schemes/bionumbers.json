@@ -1,0 +1,27 @@
+{
+  "id": "bionumbers",
+  "target": {
+    "DEFAULT": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id={content}"
+  },
+  "type": "scheme",
+  "name": "BioNumbers database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100132",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id=${ac}",
+  "redirect": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id={content}",
+  "description": "BioNumbers is a database of key numberical information that may be used in molecular biology. Along with the numbers, it contains references to the original literature, useful comments, and related numeric data.",
+  "subject": "registry",
+  "location": "Israel",
+  "synonym": "Therapeutic Target Database",
+  "institution": "Weizmann Institute",
+  "prefixed": 0,
+  "test": "104674",
+  "probe": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id=104674",
+  "pattern": "^\\d+$",
+  "state": "96:Up",
+  "more": "https://bionumbers.hms.harvard.edu",
+  "revision": 0
+}

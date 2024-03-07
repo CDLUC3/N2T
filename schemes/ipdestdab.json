@@ -1,0 +1,9 @@
+{
+  "id": "ipdestdab",
+  "target": {
+    "DEFAULT": "http://www.ebi.ac.uk/cgi-bin/ipd/estdab/print_cell.cgi?{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ebi.ac.uk/cgi-bin/ipd/estdab/print_cell.cgi?{content}",
+  "revision": 0
+}

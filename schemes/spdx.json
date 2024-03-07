@@ -1,0 +1,27 @@
+{
+  "id": "spdx",
+  "target": {
+    "DEFAULT": "https://spdx.org/licenses/{content}"
+  },
+  "type": "scheme",
+  "name": "SPDX License List",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100918",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://spdx.org/licenses/${ac}",
+  "redirect": "https://spdx.org/licenses/{content}",
+  "description": "The SPDX License List is a list of commonly found licenses and exceptions used in free and open source and other collaborative software or documentation. The purpose of the SPDX License List is to enable easy and efficient identification of such licenses and exceptions in an SPDX document, in source files or elsewhere. The SPDX License List includes a standardized short identifier, full name, vetted license text including matching guidelines markup as appropriate, and a canonical permanent URL for each license and exception.",
+  "subject": null,
+  "location": "US",
+  "synonym": "Open Citation Identifier",
+  "institution": "SPDX Workgroup a Linux Foundation Project",
+  "prefixed": 0,
+  "test": "CC-BY-1.0",
+  "probe": "https://spdx.org/licenses/CC-BY-1.0",
+  "pattern": "^[0-9A-Za-z\\-.]+$",
+  "state": "0:Unknown",
+  "more": "https://spdx.org",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "resid",
+  "target": {
+    "DEFAULT": "http://pir0.georgetown.edu/cgi-bin/resid?id={content}"
+  },
+  "type": "scheme",
+  "name": "RESID at Georgetown University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100653",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://pir0.georgetown.edu/cgi-bin/resid?id=${ac}",
+  "redirect": "http://pir0.georgetown.edu/cgi-bin/resid?id={content}",
+  "description": "The RESID Database of Protein Modifications is a comprehensive collection of annotations and structures for protein modifications including amino-terminal, carboxyl-terminal and peptide chain cross-link post-translational modifications.",
+  "subject": "protein; structure",
+  "location": "USA",
+  "synonym": "SGMP; Signaling Gateway Molecule Pages; UCSD - Molecule Pages; AfCS; UCSD Signaling Gateway Molecule Pages",
+  "institution": "Georgetown University Medical Center, Washington",
+  "prefixed": 0,
+  "test": "AA0001",
+  "probe": "http://pir0.georgetown.edu/cgi-bin/resid?id=AA0001",
+  "pattern": "^AA\\d{4}$",
+  "state": "100:Up",
+  "more": "http://pir0.georgetown.edu/resid/",
+  "revision": 0
+}

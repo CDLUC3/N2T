@@ -1,0 +1,27 @@
+{
+  "id": "hprd",
+  "target": {
+    "DEFAULT": "http://www.hprd.org/protein/{content}"
+  },
+  "type": "scheme",
+  "name": "Human Protein Reference Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100479",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.hprd.org/protein/${ac}",
+  "redirect": "http://www.hprd.org/protein/{content}",
+  "description": "The Human Protein Reference Database (HPRD) represents a centralized platform to visually depict and integrate information pertaining to domain architecture, post-translational modifications, interaction networks and disease association for each protein in the human proteome.",
+  "subject": "protein; human",
+  "location": "India",
+  "synonym": "Human Protein Reference Database",
+  "institution": "Institute of Bioinformatics, International Tech Park, Bangalore",
+  "prefixed": 0,
+  "test": "00001",
+  "probe": "http://www.hprd.org/protein/00001",
+  "pattern": "^\\d+$",
+  "state": "94:Up",
+  "more": "http://www.hprd.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "orthodb",
+  "target": {
+    "DEFAULT": "http://cegg.unige.ch/orthodb/results?searchtext={content}"
+  },
+  "type": "scheme",
+  "name": "OrthoDB at Swiss Institute of Bioinformatics",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100280",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://cegg.unige.ch/orthodb/results?searchtext=${ac}",
+  "redirect": "http://cegg.unige.ch/orthodb/results?searchtext={content}",
+  "description": "OrthoDB presents a catalog of eukaryotic orthologous protein-coding genes across vertebrates, arthropods, and fungi. Orthology refers to the last common ancestor of the species under consideration, and thus OrthoDB explicitly delineates orthologs at each radiation along the species phylogeny. The database of orthologs presents available protein descriptors, together with Gene Ontology and InterPro attributes, which serve to provide general descriptive annotations of the orthologous groups",
+  "subject": "eukaryotic; protein; sequence",
+  "location": "Switzerland",
+  "synonym": "Orpha",
+  "institution": "Department of Genetic Medicine and Development, Swiss Institute of Bioinformatics, Geneva",
+  "prefixed": 0,
+  "test": "Q9P0K8",
+  "probe": "http://cegg.unige.ch/orthodb/results?searchtext=Q9P0K8",
+  "pattern": "^\\w+$",
+  "state": "100:Up",
+  "more": "http://cegg.unige.ch/orthodb4",
+  "revision": 0
+}

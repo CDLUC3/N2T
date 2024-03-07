@@ -1,0 +1,27 @@
+{
+  "id": "gramene.protein",
+  "target": {
+    "DEFAULT": "http://www.gramene.org/db/protein/protein_search?protein_id={content}"
+  },
+  "type": "scheme",
+  "name": "Gramene Protein at Cold Spring Harbor",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100227",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.gramene.org/db/protein/protein_search?protein_id=${ac}",
+  "redirect": "http://www.gramene.org/db/protein/protein_search?protein_id={content}",
+  "description": "Gramene is a comparative genome mapping database for grasses and crop plants. It combines a semi-automatically generated database of cereal genomic and expressed sequence tag sequences, genetic maps, map relations, quantitative trait loci (QTL), and publications, with a curated database of mutants (genes and alleles), molecular markers, and proteins. This datatype refers to proteins in Gramene.",
+  "subject": "expression; sequence; genome; plant",
+  "location": "USA",
+  "synonym": "PGD; Pseudocap",
+  "institution": "Cold Spring Harbor Laboratory, New York",
+  "prefixed": 0,
+  "test": "78073",
+  "probe": "http://www.gramene.org/db/protein/protein_search?protein_id=78073",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://www.gramene.org/",
+  "revision": 0
+}

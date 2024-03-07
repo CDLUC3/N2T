@@ -1,0 +1,27 @@
+{
+  "id": "ardb",
+  "target": {
+    "DEFAULT": "http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term={content}"
+  },
+  "type": "scheme",
+  "name": "ARDB at University of Maryland",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100678",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term=${ac}",
+  "redirect": "http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term={content}",
+  "description": "The Antibiotic Resistance Genes Database (ARDB) is a manually curated database which characterises genes involved in antibiotic resistance. Each gene and resistance type is annotated with information, including resistance profile, mechanism of action, ontology, COG and CDD annotations, as well as external links to sequence and protein databases. This collection references resistance genes.",
+  "subject": "drug; gene",
+  "location": "USA",
+  "synonym": "ARDB",
+  "institution": "Center for Bioinformatics and Computational Biology, University of Maryland, Maryland",
+  "prefixed": 0,
+  "test": "CAE46076",
+  "probe": "http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term=CAE46076",
+  "pattern": "^[A-Z_]{3}[0-9]{4,}$",
+  "state": "91:Down",
+  "more": "http://ardb.cbcb.umd.edu/",
+  "revision": 0
+}

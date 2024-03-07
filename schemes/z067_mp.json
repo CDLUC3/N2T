@@ -1,0 +1,27 @@
+{
+  "id": "z067/mp",
+  "target": {
+    "DEFAULT": "http://www.informatics.jax.org/searches/Phat.cgi?id=MP:{content}"
+  },
+  "type": "scheme",
+  "name": "Mammalian Phenotype Ontology at The Jackson Lab",
+  "alias": null,
+  "provider": "z067",
+  "provider_id": "MIR:00100774",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.informatics.jax.org/searches/Phat.cgi?id=MP:${ac}",
+  "redirect": "http://www.informatics.jax.org/searches/Phat.cgi?id=MP:{content}",
+  "description": "The Mammalian Phenotype Ontology (MP) classifies and organises phenotypic information related to the mouse and other mammalian species. This ontology has been applied to mouse phenotype descriptions in various databases allowing comparisons of data from diverse mammalian sources. It can facilitate in the identification of appropriate experimental disease models, and aid in the discovery of candidate disease genes and molecular signaling pathways.",
+  "subject": "ontology; phenotype; mammalian",
+  "location": "USA",
+  "synonym": "PlantTFDB",
+  "institution": "The Jackson Laboratory, Bar Harbor, Maine",
+  "prefixed": 1,
+  "test": "0005452",
+  "probe": "http://www.informatics.jax.org/searches/Phat.cgi?id=MP:0005452",
+  "pattern": "^MP:\\d{7}$",
+  "state": "18:Down",
+  "more": "http://www.informatics.jax.org/",
+  "revision": 0
+}

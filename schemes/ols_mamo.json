@@ -1,0 +1,27 @@
+{
+  "id": "ols/mamo",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/mamo/terms?short_form={content}"
+  },
+  "type": "scheme",
+  "name": "MaMO through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100758",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/mamo/terms?short_form=${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/mamo/terms?short_form={content}",
+  "description": "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "MAMO",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "MAMO_0000026",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/mamo/terms?short_form=MAMO_0000026",
+  "pattern": "^MAMO_\\d{7}$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/mamo",
+  "revision": 0
+}

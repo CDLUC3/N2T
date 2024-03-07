@@ -1,0 +1,27 @@
+{
+  "id": "z046/homologene",
+  "target": {
+    "DEFAULT": "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:{content}"
+  },
+  "type": "scheme",
+  "name": "Bio2RDF",
+  "alias": null,
+  "provider": "z046",
+  "provider_id": "MIR:00100699",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:${ac}",
+  "redirect": "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:{content}",
+  "description": "HomoloGene is a system for automated detection of homologs among the annotated genes of several completely sequenced eukaryotic genomes.",
+  "subject": "eukaryotic; gene; clustering",
+  "location": null,
+  "synonym": "GMD",
+  "institution": "Bio2RDF.org",
+  "prefixed": 0,
+  "test": "1000",
+  "probe": "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:1000",
+  "pattern": "^\\d+$",
+  "state": "58:Down",
+  "more": "http://homologene.bio2rdf.org/fct",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "begdb",
+  "target": {
+    "DEFAULT": "http://www.begdb.com/index.php?action=oneMolecule&state=show&id={content}"
+  },
+  "type": "scheme",
+  "name": "Benchmark Energy & Geometry Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100826",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.begdb.com/index.php?action=oneMolecule&state=show&id=${ac}",
+  "redirect": "http://www.begdb.com/index.php?action=oneMolecule&state=show&id={content}",
+  "description": "The Benchmark Energy & Geometry Database (BEGDB) collects results of highly accurate quantum mechanics (QM) calculations of molecular structures, energies and properties. These data can serve as benchmarks for testing and parameterization of other computational methods.",
+  "subject": "structure",
+  "location": "Czech Republic",
+  "synonym": "BEGDB",
+  "institution": "Institute of Organic Chemistry and Biochemistry, Academy of Sciences of the Czech Republic, Prague",
+  "prefixed": 0,
+  "test": "4214",
+  "probe": "http://www.begdb.com/index.php?action=oneMolecule&state=show&id=4214",
+  "pattern": "^[0-9]+$",
+  "state": "0:Unknown",
+  "more": "http://www.begdb.com",
+  "revision": 0
+}

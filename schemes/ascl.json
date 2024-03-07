@@ -1,0 +1,27 @@
+{
+  "id": "ascl",
+  "target": {
+    "DEFAULT": "http://ascl.net/{content}"
+  },
+  "type": "scheme",
+  "name": "Astrophysics Source Code Library",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100846",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://ascl.net/${ac}",
+  "redirect": "http://ascl.net/{content}",
+  "description": "The Astrophysics Source Code Library (ASCL) is a free online registry for software that have been used in research that has appeared in, or been submitted to, peer-reviewed publications. The ASCL is indexed by the SAO/NASA Astrophysics Data System (ADS) and Web of Science's Data Citation Index (WoS DCI), and is citable by using the unique ascl ID assigned to each code. The ascl ID can be used to link to the code entry by prefacing the number with ascl.net (i.e., ascl.net/1201.001).",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "Astrophysics Source Code Library, Houghton, MI",
+  "prefixed": 0,
+  "test": "1801.012",
+  "probe": "http://ascl.net/1801.012",
+  "pattern": "^[0-9\\.]+$",
+  "state": "100:Up",
+  "more": "http://ascl.net/",
+  "revision": 0
+}

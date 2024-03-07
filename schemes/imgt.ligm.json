@@ -1,0 +1,27 @@
+{
+  "id": "imgt.ligm",
+  "target": {
+    "DEFAULT": "http://www.imgt.org/ligmdb/view?id={content}"
+  },
+  "type": "scheme",
+  "name": "IMGT LIGM at CNRS",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100428",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.imgt.org/ligmdb/view?id=${ac}",
+  "redirect": "http://www.imgt.org/ligmdb/view?id={content}",
+  "description": "IMGT, the international ImMunoGeneTics project, is a collection of high-quality integrated databases specialising in Immunoglobulins, T cell receptors and the Major Histocompatibility Complex (MHC) of all vertebrate species. IMGT/LIGM is a comprehensive database of fully annotated sequences of Immunoglobulins and T cell receptors from human and other vertebrates.",
+  "subject": "mammalian; immunogenetics",
+  "location": "France",
+  "synonym": "IMGT/LIGM-DB",
+  "institution": "CNRS, Montpellier University, Montpellier",
+  "prefixed": 0,
+  "test": "M94112",
+  "probe": "http://www.imgt.org/ligmdb/view?id=M94112",
+  "pattern": "^M\\d+$",
+  "state": "98:Up",
+  "more": "http://www.imgt.org/",
+  "revision": 0
+}

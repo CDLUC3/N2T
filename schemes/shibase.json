@@ -1,0 +1,9 @@
+{
+  "id": "shibase",
+  "target": {
+    "DEFAULT": "http://www.mgc.ac.cn/cgi-bin/ShiBASE/ShiBASE_query.cgi?synonym={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.mgc.ac.cn/cgi-bin/ShiBASE/ShiBASE_query.cgi?synonym={content}",
+  "revision": 0
+}

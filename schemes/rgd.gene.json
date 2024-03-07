@@ -1,0 +1,9 @@
+{
+  "id": "rgd.gene",
+  "target": {
+    "DEFAULT": "http://rgd.mcw.edu/tools/genes/genes_view.cgi?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rgd.mcw.edu/tools/genes/genes_view.cgi?id={content}",
+  "revision": 0
+}

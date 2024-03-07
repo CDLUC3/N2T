@@ -1,0 +1,27 @@
+{
+  "id": "reactome",
+  "target": {
+    "DEFAULT": "https://reactome.org/content/detail/{content}"
+  },
+  "type": "scheme",
+  "name": "Reactome, a curated knowledgebase of biological pathways",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100026",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://reactome.org/content/detail/${ac}",
+  "redirect": "https://reactome.org/content/detail/{content}",
+  "description": "The Reactome project is a collaboration to develop a curated resource of core pathways and reactions in human biology.",
+  "subject": "pathway; human; reaction; schema.org",
+  "location": "Canada / USA / UK",
+  "synonym": "Reactome Stable ID",
+  "institution": "Ontario Institute for Cancer Research, NYU Medical School, Cold Spring Harbor Laboratory and European Bioinformatics Institute",
+  "prefixed": 0,
+  "test": "R-HSA-201451",
+  "probe": "https://reactome.org/content/detail/R-HSA-201451",
+  "pattern": "(^R-[A-Z]{3}-\\d+(-\\d+)?(\\.\\d+)?$)|(^REACT_\\d+(\\.\\d+)?$)",
+  "state": "97:Probably up",
+  "more": "https://www.reactome.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ols/go",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/go/terms?obo_id=GO:{content}"
+  },
+  "type": "scheme",
+  "name": "GO through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100675",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/go/terms?obo_id=GO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/go/terms?obo_id=GO:{content}",
+  "description": "The Gene Ontology project provides a controlled vocabulary to describe gene and gene product attributes in any organism.",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "GO",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "0006915",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/go/terms?obo_id=GO:0006915",
+  "pattern": "^GO:\\d{7}$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/go",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cpc",
+  "target": {
+    "DEFAULT": "https://worldwide.espacenet.com/classification?locale=en_EP#!/CPC={content}"
+  },
+  "type": "scheme",
+  "name": "Cooperative Patent Classification at Espace",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100716",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://worldwide.espacenet.com/classification?locale=en_EP#!/CPC=${ac}",
+  "redirect": "https://worldwide.espacenet.com/classification?locale=en_EP#!/CPC={content}",
+  "description": "The Cooperative Patent Classification (CPC) is a patent classification system, developed jointly by the European Patent Office (EPO) and the United States Patent and Trademark Office (USPTO). It is based on the previous European classification system (ECLA), which itself was a version of the International Patent Classification (IPC) system. The CPC patent classification system has been used by EPO and USPTO since 1st January, 2013.",
+  "subject": "classification",
+  "location": null,
+  "synonym": "CPC",
+  "institution": "Espace, European Patent Office",
+  "prefixed": 0,
+  "test": "A01M1/026",
+  "probe": "https://worldwide.espacenet.com/classification?locale=en_EP#!/CPC=A01M1/026",
+  "pattern": "^([A-H,Y]|[A-H, Y]\\d{2}|[A-H, Y]\\d{2}[A-Z]|[A-H, Y]\\d{2}[A-Z]\\d{1,3}|[A-H, Y]\\d{2}[A-Z]\\d{1,3}(\\/)?\\d{2,})$",
+  "state": "84:Unknown",
+  "more": "https://worldwide.espacenet.com/classification",
+  "revision": 0
+}

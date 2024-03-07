@@ -1,0 +1,27 @@
+{
+  "id": "sisu",
+  "target": {
+    "DEFAULT": "http://search.sisuproject.fi/#/variant/{content}"
+  },
+  "type": "scheme",
+  "name": "SISu",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100828",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://search.sisuproject.fi/#/variant/${ac}",
+  "redirect": "http://search.sisuproject.fi/#/variant/{content}",
+  "description": "The Sequencing Initiative Suomi (SISu) project is an international collaboration to harmonize and aggregate whole genome and exome sequence data from Finnish samples, providing data for researchers and clinicians. The SISu project allows for the search of variants to determine their attributes and occurrence in Finnish cohorts, and provides summary data on single nucleotide variants and indels from exomes, sequenced in disease-specific and population genetic studies.",
+  "subject": "human; sequence",
+  "location": "Finland",
+  "synonym": "Sequence Initiative Suomi",
+  "institution": "Sequencing Initiative Suomi project (SISu), Institute for Molecular Medicine Finland (FIMM), University of Helsinki, Helsinki",
+  "prefixed": 0,
+  "test": "17:41223048",
+  "probe": "http://search.sisuproject.fi/#/variant/17:41223048",
+  "pattern": "^[0-9]+:[0-9]+$",
+  "state": "0:Unknown",
+  "more": "http://www.sisuproject.fi/",
+  "revision": 0
+}

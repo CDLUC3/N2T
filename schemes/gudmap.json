@@ -1,0 +1,27 @@
+{
+  "id": "gudmap",
+  "target": {
+    "DEFAULT": "https://gudmap.org/id/{content}"
+  },
+  "type": "scheme",
+  "name": "GUDMAP",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100848",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://gudmap.org/id/${ac}",
+  "redirect": "https://gudmap.org/id/{content}",
+  "description": "The GenitoUrinary Development Molecular Anatomy Project (GUDMAP) is a consortium of laboratories working to provide the scientific and medical community with tools to facilitate research on the GenitoUrinary (GU) tract.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "GenitoUrinary Development Molecular Anatomy Project (GUDMAP) Consortium",
+  "prefixed": 0,
+  "test": "Q-2958",
+  "probe": "https://gudmap.org/id/Q-2958",
+  "pattern": "^[-0-9a-zA-Z]+(@[-0-9a-zA-Z]+)?$",
+  "state": "39:Up",
+  "more": "http://www.gudmap.org/",
+  "revision": 0
+}

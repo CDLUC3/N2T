@@ -1,0 +1,27 @@
+{
+  "id": "z062/affy.probeset",
+  "target": {
+    "DEFAULT": "http://cu.affymetrix.bio2rdf.org/describe/?url=http://bio2rdf.org/affymetrix:{content}"
+  },
+  "type": "scheme",
+  "name": "Bio2RDF",
+  "alias": null,
+  "provider": "z062",
+  "provider_id": "MIR:00100672",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://cu.affymetrix.bio2rdf.org/describe/?url=http://bio2rdf.org/affymetrix:${ac}",
+  "redirect": "http://cu.affymetrix.bio2rdf.org/describe/?url=http://bio2rdf.org/affymetrix:{content}",
+  "description": "An Affymetrix ProbeSet is a collection of up to 11 short (~22 nucleotide) microarray probes designed to measure a single gene or a family of genes as a unit. Multiple probe sets may be available for each gene under consideration.",
+  "subject": "genome; nucleotide",
+  "location": null,
+  "synonym": "Human Gene Mutation Database",
+  "institution": "Bio2RDF.org",
+  "prefixed": 0,
+  "test": "243002_at",
+  "probe": "http://cu.affymetrix.bio2rdf.org/describe/?url=http://bio2rdf.org/affymetrix:243002_at",
+  "pattern": "\\d{4,}((_[asx])?_at)?",
+  "state": "0:Unknown",
+  "more": "http://cu.affymetrix.bio2rdf.org/fct/",
+  "revision": 0
+}

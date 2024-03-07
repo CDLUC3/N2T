@@ -1,0 +1,9 @@
+{
+  "id": "pseudocap",
+  "target": {
+    "DEFAULT": "http://www.pseudomonas.com/getAnnotation.do?locusID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.pseudomonas.com/getAnnotation.do?locusID={content}",
+  "revision": 0
+}

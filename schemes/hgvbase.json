@@ -1,0 +1,9 @@
+{
+  "id": "hgvbase",
+  "target": {
+    "DEFAULT": "http://www.hgvbaseg2p.org/study/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.hgvbaseg2p.org/study/{content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "imgt.hla",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/cgi-bin/imgt/hla/get_allele.cgi?{content}"
+  },
+  "type": "scheme",
+  "name": "IMGT HLA at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100425",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/cgi-bin/imgt/hla/get_allele.cgi?${ac}",
+  "redirect": "https://www.ebi.ac.uk/cgi-bin/imgt/hla/get_allele.cgi?{content}",
+  "description": "IMGT, the international ImMunoGeneTics project, is a collection of high-quality integrated databases specialising in Immunoglobulins, T cell receptors and the Major Histocompatibility Complex (MHC) of all vertebrate species. IMGT/HLA is a database for sequences of the human MHC, referred to as HLA. It includes all the official sequences for the WHO Nomenclature Committee For Factors of the HLA System. This collection references allele information through the WHO nomenclature.",
+  "subject": "human; immunogenetics",
+  "location": "UK",
+  "synonym": "IPD IMGT/HLA",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "A*01:01:01:01",
+  "probe": "https://www.ebi.ac.uk/cgi-bin/imgt/hla/get_allele.cgi?A*01:01:01:01",
+  "pattern": "^[A-Z0-9*:]+$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/imgt/hla/allele.html",
+  "revision": 0
+}

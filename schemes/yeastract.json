@@ -1,0 +1,9 @@
+{
+  "id": "yeastract",
+  "target": {
+    "DEFAULT": "http://www.yeastract.com/view.php?existing=locus&orfname={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.yeastract.com/view.php?existing=locus&orfname={content}",
+  "revision": 0
+}

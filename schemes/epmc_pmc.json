@@ -1,0 +1,7 @@
+{
+  "id": "epmc/pmc",
+  "target": {},
+  "type": "synonym",
+  "for": "pmc",
+  "revision": 0
+}

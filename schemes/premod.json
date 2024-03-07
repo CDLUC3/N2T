@@ -1,0 +1,9 @@
+{
+  "id": "premod",
+  "target": {
+    "DEFAULT": "http://genomequebec.mcgill.ca/PReMod/show/module.do?method=showModule&moduleId={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://genomequebec.mcgill.ca/PReMod/show/module.do?method=showModule&moduleId={content}",
+  "revision": 0
+}

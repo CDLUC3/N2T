@@ -1,0 +1,27 @@
+{
+  "id": "omicsdi/gpmdb",
+  "target": {
+    "DEFAULT": "https://www.omicsdi.org/dataset/gpmdb/{content}"
+  },
+  "type": "scheme",
+  "name": "GPMDB through OmicsDI",
+  "alias": null,
+  "provider": "omicsdi",
+  "provider_id": "MIR:00100865",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.omicsdi.org/dataset/gpmdb/${ac}",
+  "redirect": "https://www.omicsdi.org/dataset/gpmdb/{content}",
+  "description": "The Global Proteome Machine Database was constructed to utilize the information obtained by GPM servers to aid in the difficult process of validating peptide MS/MS spectra as well as protein coverage patterns.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "nmrCV",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "GPM32310002988",
+  "probe": "https://www.omicsdi.org/dataset/gpmdb/GPM32310002988",
+  "pattern": "^GPM\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.omicsdi.org/",
+  "revision": 0
+}

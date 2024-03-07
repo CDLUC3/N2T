@@ -1,0 +1,9 @@
+{
+  "id": "viroligo",
+  "target": {
+    "DEFAULT": "http://viroligo.okstate.edu/main.php?vid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://viroligo.okstate.edu/main.php?vid={content}",
+  "revision": 0
+}

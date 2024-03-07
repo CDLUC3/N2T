@@ -1,0 +1,27 @@
+{
+  "id": "ydpm",
+  "target": {
+    "DEFAULT": "http://www-deletion.stanford.edu/cgi-bin/YDPM/YDPM_search.cgi?thelist={content}"
+  },
+  "type": "scheme",
+  "name": "YDPM at Stanford University School of Medicine",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100600",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www-deletion.stanford.edu/cgi-bin/YDPM/YDPM_search.cgi?thelist=${ac}",
+  "redirect": "http://www-deletion.stanford.edu/cgi-bin/YDPM/YDPM_search.cgi?thelist={content}",
+  "description": "The YDPM database serves to support the Yeast Deletion and the Mitochondrial Proteomics Project. The project aims to increase the understanding of mitochondrial function and biogenesis in the context of the cell. In the Deletion Project, strains from the deletion collection were monitored under 9 different media conditions selected for the study of mitochondrial function. The YDPM database contains both the raw data and growth rates calculated for each strain in each media condition.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Yeast Deletion Project and Proteomics of Mitochondria Database",
+  "institution": "Stanford University School of Medicine, Stanford, California",
+  "prefixed": 0,
+  "test": "YAL001C",
+  "probe": "http://www-deletion.stanford.edu/cgi-bin/YDPM/YDPM_search.cgi?thelist=YAL001C",
+  "pattern": "^Y[A-Z]{2}\\d+[CW]$",
+  "state": "99:Up",
+  "more": "http://www-deletion.stanford.edu/YDPM/",
+  "revision": 0
+}

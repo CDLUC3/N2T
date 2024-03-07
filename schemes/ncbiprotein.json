@@ -1,0 +1,27 @@
+{
+  "id": "ncbiprotein",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/{content}"
+  },
+  "type": "scheme",
+  "name": "NCBI Protein at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100439",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/protein/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/protein/{content}",
+  "description": "The Protein database is a collection of sequences from several sources, including translations from annotated coding regions in GenBank, RefSeq and TPA, as well as records from SwissProt, PIR, PRF, and PDB.",
+  "subject": "protein; sequence",
+  "location": "USA",
+  "synonym": "Orthologous MAtrix",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "CAA71118.1",
+  "probe": "https://www.ncbi.nlm.nih.gov/protein/CAA71118.1",
+  "pattern": "^(\\w+\\d+(\\.\\d+)?)|(NP_\\d+)$",
+  "state": "100:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/protein",
+  "revision": 0
+}

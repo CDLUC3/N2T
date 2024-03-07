@@ -1,0 +1,27 @@
+{
+  "id": "ega.dataset",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ega/datasets/{content}"
+  },
+  "type": "scheme",
+  "name": "EGA Dataset at European Bioinformatics Institute",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100658",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/ega/datasets/${ac}",
+  "redirect": "https://www.ebi.ac.uk/ega/datasets/{content}",
+  "description": "The EGA is a service for permanent archiving and sharing of all types of personally identifiable genetic and phenotypic data resulting from biomedical research projects. The EGA contains exclusive data collected from individuals whose consent agreements authorize data release only for specific research use or to bona fide researchers. Strict protocols govern how information is managed, stored and distributed by the EGA project. This collection references 'Datasets'.",
+  "subject": "phenotype; gene; human",
+  "location": "UK",
+  "synonym": "EGA Dataset",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "EGAD00000000001",
+  "probe": "https://www.ebi.ac.uk/ega/datasets/EGAD00000000001",
+  "pattern": "^EGAD\\d{11}$",
+  "state": "100:Up",
+  "more": "https://www.ebi.ac.uk/ega/dataset",
+  "revision": 0
+}

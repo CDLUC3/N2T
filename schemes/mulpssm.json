@@ -1,0 +1,9 @@
+{
+  "id": "mulpssm",
+  "target": {
+    "DEFAULT": "http://crick.mbu.iisc.ernet.in/mulpssm/cgi/disp_fam.cgi?dbase=[?pali/pfam]&name={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://crick.mbu.iisc.ernet.in/mulpssm/cgi/disp_fam.cgi?dbase=[?pali/pfam]&name={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ols/ro",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/ro/terms?short_form={content}"
+  },
+  "type": "scheme",
+  "name": "OBO Relation Ontology through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100767",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/ro/terms?short_form=${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/ro/terms?short_form={content}",
+  "description": "The OBO Relation Ontology provides consistent and unambiguous formal definitions of the relational expressions used in biomedical ontologies.",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "CDD",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "RO_0002533",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/ro/terms?short_form=RO_0002533",
+  "pattern": "^RO_\\d{7}$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/ro",
+  "revision": 0
+}

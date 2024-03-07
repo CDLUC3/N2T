@@ -1,0 +1,27 @@
+{
+  "id": "arachnoserver",
+  "target": {
+    "DEFAULT": "http://www.arachnoserver.org/toxincard.html?id={content}"
+  },
+  "type": "scheme",
+  "name": "ArachnoServer at Brisbane",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100250",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.arachnoserver.org/toxincard.html?id=${ac}",
+  "redirect": "http://www.arachnoserver.org/toxincard.html?id={content}",
+  "description": "ArachnoServer (www.arachnoserver.org) is a manually curated database providing information on the sequence, structure and biological activity of protein toxins from spider venoms. It include a molecular target ontology designed specifically for venom toxins, as well as current and historic taxonomic information.",
+  "subject": "sequence; structure; drug",
+  "location": "Australia",
+  "synonym": "PMDB",
+  "institution": "Institute for Molecular Bioscience, The University of Queensland, Brisbane",
+  "prefixed": 0,
+  "test": "AS000060",
+  "probe": "http://www.arachnoserver.org/toxincard.html?id=AS000060",
+  "pattern": "^AS\\d{6}$",
+  "state": "98:Up",
+  "more": "http://www.arachnoserver.org/",
+  "revision": 0
+}

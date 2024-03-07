@@ -1,0 +1,9 @@
+{
+  "id": "asalps",
+  "target": {
+    "DEFAULT": "http://as-alps.nagahama-i-bio.ac.jp/search.php?sp=hs&switch=cluster&id_type=transcript&id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://as-alps.nagahama-i-bio.ac.jp/search.php?sp=hs&switch=cluster&id_type=transcript&id={content}",
+  "revision": 0
+}

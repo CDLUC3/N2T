@@ -1,0 +1,9 @@
+{
+  "id": "mitodat",
+  "target": {
+    "DEFAULT": "http://www-lecb.ncifcrf.gov/mitoDat/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www-lecb.ncifcrf.gov/mitoDat/{content}.html",
+  "revision": 0
+}

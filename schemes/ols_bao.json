@@ -1,0 +1,27 @@
+{
+  "id": "ols/bao",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/bao/terms?obo_id=BAO:{content}"
+  },
+  "type": "scheme",
+  "name": "BioAssay Ontology through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100798",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/bao/terms?obo_id=BAO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/bao/terms?obo_id=BAO:{content}",
+  "description": "The BioAssay Ontology (BAO) describes chemical biology screening assays and their results including high-throughput screening (HTS) data for the purpose of categorizing assays and data analysis.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Global Research Identifier Database",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "0002989",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/bao/terms?obo_id=BAO:0002989",
+  "pattern": "^\\d{7}$",
+  "state": "100:Up",
+  "more": "https://bioportal.bioontology.org/ontologies/BAO/",
+  "revision": 0
+}

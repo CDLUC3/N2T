@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/insdc",
+  "target": {},
+  "type": "synonym",
+  "for": "insdc",
+  "revision": 0
+}

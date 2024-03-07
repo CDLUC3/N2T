@@ -1,0 +1,9 @@
+{
+  "id": "ghr",
+  "target": {
+    "DEFAULT": "http://ghr.nlm.nih.gov/gene/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ghr.nlm.nih.gov/gene/{content}",
+  "revision": 0
+}

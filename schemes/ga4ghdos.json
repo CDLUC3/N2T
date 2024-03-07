@@ -1,0 +1,27 @@
+{
+  "id": "ga4ghdos",
+  "target": {
+    "DEFAULT": "https://dataguids.org/ga4gh/dos/v1/dataobjects/{content}"
+  },
+  "type": "scheme",
+  "name": "Data Object Service",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100895",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://dataguids.org/ga4gh/dos/v1/dataobjects/${ac}",
+  "redirect": "https://dataguids.org/ga4gh/dos/v1/dataobjects/{content}",
+  "description": "Assists in resolving data across cloud resources.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Open Citation Identifier",
+  "institution": "University of California",
+  "prefixed": 0,
+  "test": "dg.4503/01b048d0-e128-4cb0-94e9-b2d2cab7563d",
+  "probe": "https://dataguids.org/ga4gh/dos/v1/dataobjects/dg.4503/01b048d0-e128-4cb0-94e9-b2d2cab7563d",
+  "pattern": "^[a-zA-Z0-9\\-:#/\\.]+$",
+  "state": "0:Unknown",
+  "more": "http://github.com/ga4gh/data-object-service-schemas",
+  "revision": 0
+}

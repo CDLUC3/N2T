@@ -1,0 +1,27 @@
+{
+  "id": "cosmic",
+  "target": {
+    "DEFAULT": "http://cancer.sanger.ac.uk/cosmic/gene/overview?ln={content}"
+  },
+  "type": "scheme",
+  "name": "COSMIC Gene at Sanger",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100802",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://cancer.sanger.ac.uk/cosmic/gene/overview?ln=${ac}",
+  "redirect": "http://cancer.sanger.ac.uk/cosmic/gene/overview?ln={content}",
+  "description": "COSMIC is a comprehensive global resource for information on somatic mutations in human cancer, combining curation of the scientific literature with tumor resequencing data from the Cancer Genome Project at the Sanger Institute, U.K. This collection references genes.",
+  "subject": "schema.org",
+  "location": "UK",
+  "synonym": "Catalogue of Somatic Mutations in Cancer Gene",
+  "institution": "Wellcome Trust Sanger Institute, Wellcome Trust Genome Campus, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "BRAF",
+  "probe": "http://cancer.sanger.ac.uk/cosmic/gene/overview?ln=BRAF",
+  "pattern": "^[A-Z0-9]+$",
+  "state": "86:Down",
+  "more": "http://cancer.sanger.ac.uk/cosmic/",
+  "revision": 0
+}

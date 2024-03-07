@@ -1,0 +1,9 @@
+{
+  "id": "t1dbase",
+  "target": {
+    "DEFAULT": "http://t1dbase.org/page/Overview/display/gene_id/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://t1dbase.org/page/Overview/display/gene_id/{content}",
+  "revision": 0
+}

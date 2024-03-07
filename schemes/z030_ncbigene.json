@@ -1,0 +1,27 @@
+{
+  "id": "z030/ncbigene",
+  "target": {
+    "DEFAULT": "http://ncbigene.bio2rdf.org/describe/?url=http://bio2rdf.org/ncbigene:{content}"
+  },
+  "type": "scheme",
+  "name": "Bio2RDF",
+  "alias": null,
+  "provider": "z030",
+  "provider_id": "MIR:00100693",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://ncbigene.bio2rdf.org/describe/?url=http://bio2rdf.org/ncbigene:${ac}",
+  "redirect": "http://ncbigene.bio2rdf.org/describe/?url=http://bio2rdf.org/ncbigene:{content}",
+  "description": "Entrez Gene is the NCBI's database for gene-specific information, focusing on completely sequenced genomes, those with an active research community to contribute gene-specific information, or those that are scheduled for intense sequence analysis.",
+  "subject": "sequence; genome; gene",
+  "location": null,
+  "synonym": "Entrez Gene",
+  "institution": "Bio2RDF.org",
+  "prefixed": 0,
+  "test": "100010",
+  "probe": "http://ncbigene.bio2rdf.org/describe/?url=http://bio2rdf.org/ncbigene:100010",
+  "pattern": "^\\d+$",
+  "state": "60:Down",
+  "more": "http://ncbigene.bio2rdf.org/fct",
+  "revision": 0
+}

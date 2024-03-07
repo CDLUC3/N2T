@@ -1,0 +1,27 @@
+{
+  "id": "tigrfam",
+  "target": {
+    "DEFAULT": "http://www.jcvi.org/cgi-bin/tigrfams/HmmReportPage.cgi?acc={content}"
+  },
+  "type": "scheme",
+  "name": "TIGRFAM at JCVI",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100398",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.jcvi.org/cgi-bin/tigrfams/HmmReportPage.cgi?acc=${ac}",
+  "redirect": "http://www.jcvi.org/cgi-bin/tigrfams/HmmReportPage.cgi?acc={content}",
+  "description": "TIGRFAMs is a resource consisting of curated multiple sequence alignments, Hidden Markov Models (HMMs) for protein sequence classification, and associated information designed to support automated annotation of (mostly prokaryotic) proteins.",
+  "subject": "protein; clustering",
+  "location": "USA",
+  "synonym": "TGD",
+  "institution": "The Institute for Genomic Research, Rockville, Maryland",
+  "prefixed": 0,
+  "test": "TIGR00010",
+  "probe": "http://www.jcvi.org/cgi-bin/tigrfams/HmmReportPage.cgi?acc=TIGR00010",
+  "pattern": "^TIGR\\d+$",
+  "state": "98:Up",
+  "more": "http://www.jcvi.org/cgi-bin/tigrfams/Listing.cgi",
+  "revision": 0
+}

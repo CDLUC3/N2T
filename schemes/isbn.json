@@ -1,0 +1,27 @@
+{
+  "id": "isbn",
+  "target": {
+    "DEFAULT": "http://isbndb.com/search-all.html?kw={content}"
+  },
+  "type": "scheme",
+  "name": "ISBNDB - ISBN Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100092",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://isbndb.com/search-all.html?kw=${ac}",
+  "redirect": "http://isbndb.com/search-all.html?kw={content}",
+  "description": "The International Standard Book Number (ISBN) is for identifying printed books.",
+  "subject": "bibliography",
+  "location": "USA",
+  "synonym": "Ligand Depot",
+  "institution": "ISNBdb project, San Gabriel, California",
+  "prefixed": 0,
+  "test": "9781584885658",
+  "probe": "http://isbndb.com/search-all.html?kw=9781584885658",
+  "pattern": "^(ISBN)?(-13|-10)?[:]?[ ]?(\\d{2,3}[ -]?)?\\d{1,5}[ -]?\\d{1,7}[ -]?\\d{1,6}[ -]?(\\d|X)$",
+  "state": "80:Down",
+  "more": "http://isbndb.com/",
+  "revision": 0
+}

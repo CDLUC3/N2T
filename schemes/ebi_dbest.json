@@ -1,0 +1,27 @@
+{
+  "id": "ebi/dbest",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/{content}"
+  },
+  "type": "scheme",
+  "name": "dbEST through European Nucleotide Archive (ENA)",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100331",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ena/data/view/${ac}",
+  "redirect": "https://www.ebi.ac.uk/ena/data/view/{content}",
+  "description": "The dbEST contains sequence data and other information on \"single-pass\" cDNA sequences, or \"Expressed Sequence Tags\", from a number of organisms.",
+  "subject": "gene; expression",
+  "location": "UK",
+  "synonym": "Database of Expressed Sequence Tags; NCBI EST",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "BP100000.1",
+  "probe": "https://www.ebi.ac.uk/ena/data/view/BP100000.1",
+  "pattern": "^([A-Z]+)?\\d+(\\.\\d+)?$",
+  "state": "100:Probably up",
+  "more": "https://www.ebi.ac.uk/ena",
+  "revision": 0
+}

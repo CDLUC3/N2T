@@ -1,0 +1,7 @@
+{
+  "id": "ebi/ega.dataset",
+  "target": {},
+  "type": "synonym",
+  "for": "ega.dataset",
+  "revision": 0
+}

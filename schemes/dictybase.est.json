@@ -1,0 +1,27 @@
+{
+  "id": "dictybase.est",
+  "target": {
+    "DEFAULT": "http://dictybase.org/db/cgi-bin/feature_page.pl?primary_id={content}"
+  },
+  "type": "scheme",
+  "name": "Dictybase Gene at Northwestern University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100424",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://dictybase.org/db/cgi-bin/feature_page.pl?primary_id=${ac}",
+  "redirect": "http://dictybase.org/db/cgi-bin/feature_page.pl?primary_id={content}",
+  "description": "The dictyBase database provides data on the model organism Dictyostelium discoideum and related species. It contains the complete genome sequence, ESTs, gene models and functional annotations. This collection references expressed sequence tag (EST) information.",
+  "subject": "sequence; DNA; plant",
+  "location": "USA",
+  "synonym": "University of Minnesota Biocatalysis/Biodegradation Database (Pathway)",
+  "institution": "Northwestern University Biomedical Informatics Center and Center for Genetic Medicine, Chicago, Illinois",
+  "prefixed": 0,
+  "test": "DDB0016567",
+  "probe": "http://dictybase.org/db/cgi-bin/feature_page.pl?primary_id=DDB0016567",
+  "pattern": "^DDB\\d+$",
+  "state": "100:Up",
+  "more": "http://dictybase.org/",
+  "revision": 0
+}

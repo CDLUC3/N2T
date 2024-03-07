@@ -1,0 +1,27 @@
+{
+  "id": "apid.interactions",
+  "target": {
+    "DEFAULT": "http://cicblade.dep.usal.es:8080/APID/Interactions.action?protein={content}"
+  },
+  "type": "scheme",
+  "name": "APID at Salamanca",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100769",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://cicblade.dep.usal.es:8080/APID/Interactions.action?protein=${ac}",
+  "redirect": "http://cicblade.dep.usal.es:8080/APID/Interactions.action?protein={content}",
+  "description": "APID (Agile Protein Interactomes DataServer) provides information on the protein interactomes of numerous  organisms, based on the integration of known experimentally validated protein-protein physical interactions (PPIs). Interactome data includes a report on  quality levels and coverage over the proteomes for each organism included. APID integrates PPIs from primary databases of molecular interactions (BIND, BioGRID, DIP, HPRD, IntAct, MINT) and also from experimentally resolved 3D structures (PDB) where more than two distinct proteins have been identified. This collection references protein interactors, through a UniProt identifier.",
+  "subject": "protein; interaction",
+  "location": "Spain",
+  "synonym": "Agile Protein Interactomes DataServer",
+  "institution": "Cancer Research Center (CiC-IBMCC), Consejo Superior de Investigaciones Cient&#xED;ficas (CSIC) and Universidad de Salamanca (USAL), Salamanca",
+  "prefixed": 0,
+  "test": "P01116",
+  "probe": "http://cicblade.dep.usal.es:8080/APID/Interactions.action?protein=P01116",
+  "pattern": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+  "state": "97:Up",
+  "more": "http://cicblade.dep.usal.es:8080/APID/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "px",
+  "target": {
+    "DEFAULT": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID={content}"
+  },
+  "type": "scheme",
+  "name": "ProteomeXchange at Seattle",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100660",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=${ac}",
+  "redirect": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID={content}",
+  "description": "The ProteomeXchange provides a single point of submission of Mass Spectrometry (MS) proteomics data for the main existing proteomics repositories, and encourages the data exchange between them for optimal data dissemination.",
+  "subject": "mass spectrometry; protein",
+  "location": "USA",
+  "synonym": "EGA Dataset",
+  "institution": "Institute for Systems Biology, Seattle, WA, USA",
+  "prefixed": 0,
+  "test": "PXD000500",
+  "probe": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD000500",
+  "pattern": "^(R)?PXD\\d{6}$",
+  "state": "100:Up",
+  "more": "http://www.proteomexchange.org/",
+  "revision": 0
+}

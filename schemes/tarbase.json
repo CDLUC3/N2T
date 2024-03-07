@@ -1,0 +1,27 @@
+{
+  "id": "tarbase",
+  "target": {
+    "DEFAULT": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index&mirnas={content}"
+  },
+  "type": "scheme",
+  "name": "TarBase v7 at University of Thessaly",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100713",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index&mirnas=${ac}",
+  "redirect": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index&mirnas={content}",
+  "description": "TarBase stores microRNA (miRNA) information for miRNA&#x2013;gene interactions, as well as miRNA- and gene-related facts to information specific to the interaction and the experimental validation methodologies used.",
+  "subject": "gene; nucleotide; interaction",
+  "location": "Greece",
+  "synonym": "Yeast Transcription Factor Specificity Compendium",
+  "institution": "DIANA-Lab, Department of Electrical & Computer Engineering, University of Thessaly",
+  "prefixed": 0,
+  "test": "hsa-let-7a-2-3p",
+  "probe": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index&mirnas=hsa-let-7a-2-3p",
+  "pattern": "^[a-z]{3}\\-(mir|let|lin)\\-\\w+(\\-\\w+\\-\\w+)?",
+  "state": "100:Up",
+  "more": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index",
+  "revision": 0
+}

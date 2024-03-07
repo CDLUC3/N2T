@@ -1,0 +1,9 @@
+{
+  "id": "do",
+  "target": {
+    "DEFAULT": "http://disease-ontology.org/term/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://disease-ontology.org/term/{content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "homd.seq",
+  "target": {
+    "DEFAULT": "http://www.homd.org/modules.php?op=modload&name=GenomeList&file=index&link=detailinfo&seqid={content}"
+  },
+  "type": "scheme",
+  "name": "HOMD sequence metainformation at The Forsyth Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100216",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.homd.org/modules.php?op=modload&name=GenomeList&file=index&link=detailinfo&seqid=${ac}",
+  "redirect": "http://www.homd.org/modules.php?op=modload&name=GenomeList&file=index&link=detailinfo&seqid={content}",
+  "description": "The Human Oral Microbiome Database (HOMD) provides a site-specific comprehensive database for the more than 600 prokaryote species that are present in the human oral cavity. It contains genomic information based on a curated 16S rRNA gene-based provisional naming scheme, and taxonomic information. This datatype contains genomic sequence information.",
+  "subject": "genome; microbial",
+  "location": "USA",
+  "synonym": "Human Oral Microbiome Database",
+  "institution": "The Forsyth Institute, Boston",
+  "prefixed": 0,
+  "test": "SEQF1003",
+  "probe": "http://www.homd.org/modules.php?op=modload&name=GenomeList&file=index&link=detailinfo&seqid=SEQF1003",
+  "pattern": "^SEQF\\d+$",
+  "state": "100:Up",
+  "more": "http://www.homd.org/index.php",
+  "revision": 0
+}

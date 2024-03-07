@@ -1,0 +1,27 @@
+{
+  "id": "cellosaurus",
+  "target": {
+    "DEFAULT": "https://web.expasy.org/cellosaurus/{content}"
+  },
+  "type": "scheme",
+  "name": "Cellosaurus through SIB",
+  "alias": null,
+  "provider": "sib",
+  "provider_id": "MIR:00100799",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://web.expasy.org/cellosaurus/${ac}",
+  "redirect": "https://web.expasy.org/cellosaurus/{content}",
+  "description": "The Cellosaurus is a knowledge resource on cell lines. It attempts to describe all cell lines used in biomedical research. Its scope includes: Immortalized cell lines; naturally immortal cell lines (example: stem cell lines); finite life cell lines when those are distributed and used widely; vertebrate cell line with an emphasis on human, mouse and rat cell lines; and invertebrate (insects and ticks) cell lines. Its scope does not include primary cell lines (with the exception of the finite life cell lines described above) and plant cell lines.",
+  "subject": null,
+  "location": "Swizerland",
+  "synonym": "Global Research Identifier Database",
+  "institution": "Swiss Institute of Bioinformatics",
+  "prefixed": 0,
+  "test": "CVCL_0030",
+  "probe": "https://web.expasy.org/cellosaurus/CVCL_0030",
+  "pattern": "CVCL_[A-Z0-9]{4}",
+  "state": "38:Unknown",
+  "more": "https://web.expasy.org/cellosaurus/",
+  "revision": 0
+}

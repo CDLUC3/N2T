@@ -1,0 +1,9 @@
+{
+  "id": "smr",
+  "target": {
+    "DEFAULT": "http://swissmodel.expasy.org/repository/?pid={content}&uid=&token=&zid=async"
+  },
+  "type": "commonspfx",
+  "redirect": "http://swissmodel.expasy.org/repository/?pid={content}&uid=&token=&zid=async",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "kegg.reaction",
+  "target": {
+    "DEFAULT": "https://www.kegg.jp/entry/{content}"
+  },
+  "type": "scheme",
+  "name": "KEGG Reaction Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100022",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.kegg.jp/entry/${ac}",
+  "redirect": "https://www.kegg.jp/entry/{content}",
+  "description": "KEGG reaction contains our knowledge on the universe of reactions that are relevant to life.",
+  "subject": "reaction",
+  "location": "Japan",
+  "synonym": "KEGG",
+  "institution": "Kyoto University Bioinformatics Center",
+  "prefixed": 0,
+  "test": "R00100",
+  "probe": "https://www.kegg.jp/entry/R00100",
+  "pattern": "^R\\d+$",
+  "state": "100:Up",
+  "more": "https://www.genome.jp/kegg/reaction/",
+  "revision": 0
+}

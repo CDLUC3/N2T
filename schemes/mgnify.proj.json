@@ -1,0 +1,27 @@
+{
+  "id": "mgnify.proj",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/metagenomics/projects/{content}"
+  },
+  "type": "scheme",
+  "name": "MGnify Project",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100711",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/metagenomics/projects/${ac}",
+  "redirect": "https://www.ebi.ac.uk/metagenomics/projects/{content}",
+  "description": "MGnify is a resource for the analysis and archiving of microbiome data to help determine the taxonomic diversity and functional & metabolic potential of environmental samples. Users can submit their own data for analysis or freely browse all of the analysed public datasets held within the repository. In addition, users can request analysis of any appropriate dataset within the European Nucleotide Archive (ENA). User-submitted or ENA-derived datasets can also be assembled on request, prior to analysis.",
+  "subject": "genome",
+  "location": "UK",
+  "synonym": "PSI-PAR",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "ERP004492",
+  "probe": "https://www.ebi.ac.uk/metagenomics/projects/ERP004492",
+  "pattern": "^[A-Z]+[0-9]+$",
+  "state": "96:Up",
+  "more": "https://www.ebi.ac.uk/metagenomics",
+  "revision": 0
+}

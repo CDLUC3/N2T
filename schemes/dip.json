@@ -1,0 +1,27 @@
+{
+  "id": "dip",
+  "target": {
+    "DEFAULT": "https://dip.doe-mbi.ucla.edu/dip/DIPview.cgi?ID={content}"
+  },
+  "type": "scheme",
+  "name": "Database of interacting proteins",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100072",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://dip.doe-mbi.ucla.edu/dip/DIPview.cgi?ID=${ac}",
+  "redirect": "https://dip.doe-mbi.ucla.edu/dip/DIPview.cgi?ID={content}",
+  "description": "The database of interacting protein (DIP) database stores experimentally determined interactions between proteins. It combines information from a variety of sources to create a single, consistent set of protein-protein interactions",
+  "subject": "protein; interaction",
+  "location": "USA",
+  "synonym": "DIP",
+  "institution": "UCLA",
+  "prefixed": 0,
+  "test": "DIP-743N",
+  "probe": "https://dip.doe-mbi.ucla.edu/dip/DIPview.cgi?ID=DIP-743N",
+  "pattern": "^DIP(\\:)?\\-\\d{1,}[ENXS]$",
+  "state": "94:Unknown",
+  "more": "https://dip.doe-mbi.ucla.edu/",
+  "revision": 0
+}

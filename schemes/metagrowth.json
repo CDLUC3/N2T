@@ -1,0 +1,9 @@
+{
+  "id": "metagrowth",
+  "target": {
+    "DEFAULT": "http://igs-server.cnrs-mrs.fr/axenic-cgi/www_get_evdb?evdb+{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://igs-server.cnrs-mrs.fr/axenic-cgi/www_get_evdb?evdb+{content}",
+  "revision": 0
+}

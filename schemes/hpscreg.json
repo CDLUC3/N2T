@@ -1,0 +1,27 @@
+{
+  "id": "hpscreg",
+  "target": {
+    "DEFAULT": "https://hpscreg.eu/cell-line/{content}"
+  },
+  "type": "scheme",
+  "name": "Human Pluripotent Stem Cell Registry",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100898",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://hpscreg.eu/cell-line/${ac}",
+  "redirect": "https://hpscreg.eu/cell-line/{content}",
+  "description": "hPSCreg is a freely accessible global registry for human pluripotent stem cell lines (hPSC-lines).",
+  "subject": null,
+  "location": "Germany",
+  "synonym": "Open Citation Identifier",
+  "institution": "Charit&#xE9; Berlin",
+  "prefixed": 0,
+  "test": "BCRTi001-A",
+  "probe": "https://hpscreg.eu/cell-line/BCRTi001-A",
+  "pattern": "^[A-Z]{2,6}(e|i)[A-Za-z0-9]{3}-[A-Z]{1,2}(-[A-Za-z0-9]{1,2})?$",
+  "state": "0:Unknown",
+  "more": "https://hpscreg.eu/",
+  "revision": 0
+}

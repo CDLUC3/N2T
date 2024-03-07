@@ -1,0 +1,27 @@
+{
+  "id": "uniprot",
+  "target": {
+    "DEFAULT": "https://purl.uniprot.org/uniprot/{content}"
+  },
+  "type": "scheme",
+  "name": "Universal Protein Resource using Persistent URL system",
+  "alias": "uniprotkb",
+  "provider": null,
+  "provider_id": "MIR:00100164",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://purl.uniprot.org/uniprot/${ac}",
+  "redirect": "https://purl.uniprot.org/uniprot/{content}",
+  "description": "The UniProt Knowledgebase (UniProtKB) is a comprehensive resource for protein sequence and functional information with extensive cross-references to more than 120 external databases. Besides amino acid sequence and a description, it also provides taxonomic data and citation information.",
+  "subject": "protein; sequence",
+  "location": null,
+  "synonym": "UniProtKB/Swiss-Prot; UniProtKB; UniProt-TrEMBL; UniProt; Protein Knowledgebase; UniProt/TrEMBL",
+  "institution": "UniProt Consortium",
+  "prefixed": 0,
+  "test": "P0DP23",
+  "probe": "https://purl.uniprot.org/uniprot/P0DP23",
+  "pattern": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+  "state": "99:Unknown",
+  "more": "https://www.uniprot.org/",
+  "revision": 0
+}

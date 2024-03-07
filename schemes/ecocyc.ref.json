@@ -1,0 +1,9 @@
+{
+  "id": "ecocyc.ref",
+  "target": {
+    "DEFAULT": "http://biocyc.org/ECOLI/reference.html?type=CITATION-FRAME&object={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://biocyc.org/ECOLI/reference.html?type=CITATION-FRAME&object={content}",
+  "revision": 0
+}

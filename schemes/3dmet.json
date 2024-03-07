@@ -1,0 +1,27 @@
+{
+  "id": "3dmet",
+  "target": {
+    "DEFAULT": "http://www.3dmet.dna.affrc.go.jp/cgi/show_data.php?acc={content}"
+  },
+  "type": "scheme",
+  "name": "3DMET database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100095",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.3dmet.dna.affrc.go.jp/cgi/show_data.php?acc=${ac}",
+  "redirect": "http://www.3dmet.dna.affrc.go.jp/cgi/show_data.php?acc={content}",
+  "description": "3DMET is a database collecting three-dimensional structures of natural metabolites.",
+  "subject": "structure; metabolite; chemical",
+  "location": "Japan",
+  "synonym": "Ligand Depot",
+  "institution": "Bioinformatics Research Unit, National Institute of Agrobiological Sciences",
+  "prefixed": 0,
+  "test": "B00162",
+  "probe": "http://www.3dmet.dna.affrc.go.jp/cgi/show_data.php?acc=B00162",
+  "pattern": "^B\\d{5}$",
+  "state": "89:Up",
+  "more": "http://www.3dmet.dna.affrc.go.jp/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "biocatalogue.service",
+  "target": {
+    "DEFAULT": "https://www.biocatalogue.org/services/{content}"
+  },
+  "type": "scheme",
+  "name": "BioCatalogue at EMBL-EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100182",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.biocatalogue.org/services/${ac}",
+  "redirect": "https://www.biocatalogue.org/services/{content}",
+  "description": "The BioCatalogue provides a common interface for registering, browsing and annotating Web Services to the Life Science community. Registered services are monitored, allowing the identification of service problems and changes and the filtering-out of unavailable or unreliable resources. BioCatalogue is free to use, for all.",
+  "subject": "registry",
+  "location": "UK",
+  "synonym": "National Cancer Institute Thesaurus; NCI thesaurus",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "614",
+  "probe": "https://www.biocatalogue.org/services/614",
+  "pattern": "^\\d+$",
+  "state": "95:Up",
+  "more": "https://www.biocatalogue.org/",
+  "revision": 0
+}

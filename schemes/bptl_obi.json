@@ -1,0 +1,27 @@
+{
+  "id": "bptl/obi",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/OBI/{content}"
+  },
+  "type": "scheme",
+  "name": "Ontology for Biomedical Investigations through Bioportal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100177",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/OBI/${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/OBI/{content}",
+  "description": "The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of biological and clinical investigations. The ontology will represent the design of an investigation, the protocols and instrumentation used, the material used, the data generated and the type analysis performed on it. Currently OBI is being built under the Basic Formal Ontology (BFO).",
+  "subject": null,
+  "location": "USA",
+  "synonym": "OBI",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 0,
+  "test": "OBI:0000070",
+  "probe": "http://purl.bioontology.org/ontology/OBI/OBI:0000070",
+  "pattern": "(^OBI:\\d{7}$)|(^OBI_\\d{7}$)",
+  "state": "74:Probably up",
+  "more": "http://bioportal.bioontology.org/ontologies/OBI",
+  "revision": 0
+}

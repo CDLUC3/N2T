@@ -1,0 +1,27 @@
+{
+  "id": "ecogene",
+  "target": {
+    "DEFAULT": "http://www.ecogene.org/gene/{content}"
+  },
+  "type": "scheme",
+  "name": "EcoGene at University of Miami",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100208",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.ecogene.org/gene/${ac}",
+  "redirect": "http://www.ecogene.org/gene/{content}",
+  "description": "The EcoGene database contains updated information about the E. coli K-12 genome and proteome sequences, including extensive gene bibliographies. A major EcoGene focus has been the re-evaluation of translation start sites.",
+  "subject": "genome; microbial",
+  "location": "USA",
+  "synonym": "dbSTS",
+  "institution": "Miller School of Medicine, University of Miami",
+  "prefixed": 0,
+  "test": "EG10173",
+  "probe": "http://www.ecogene.org/gene/EG10173",
+  "pattern": "^EG\\d+$",
+  "state": "76:Down",
+  "more": "http://ecogene.org/",
+  "revision": 0
+}

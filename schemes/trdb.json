@@ -1,0 +1,7 @@
+{
+  "id": "trdb",
+  "target": {},
+  "type": "commonspfx",
+  "redirect": "need login",
+  "revision": 0
+}

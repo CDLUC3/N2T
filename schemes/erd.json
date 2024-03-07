@@ -1,0 +1,9 @@
+{
+  "id": "erd",
+  "target": {
+    "DEFAULT": "http://bioinformatics.psb.ugent.be/webtools/rRNA/[lsu/[ssu]/data/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioinformatics.psb.ugent.be/webtools/rRNA/[lsu/[ssu]/data/{content}",
+  "revision": 0
+}

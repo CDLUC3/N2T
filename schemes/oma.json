@@ -1,0 +1,9 @@
+{
+  "id": "oma",
+  "target": {
+    "DEFAULT": "http://www.omabrowser.org/cgi-bin/gateway.pl?f=DisplayEntry&p1={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.omabrowser.org/cgi-bin/gateway.pl?f=DisplayEntry&p1={content}",
+  "revision": 0
+}

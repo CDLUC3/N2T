@@ -1,0 +1,9 @@
+{
+  "id": "mpi",
+  "target": {
+    "DEFAULT": "http://www.jcvi.org/mpidb/interaction.php?pname={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.jcvi.org/mpidb/interaction.php?pname={content}",
+  "revision": 0
+}

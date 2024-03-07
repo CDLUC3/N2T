@@ -1,0 +1,27 @@
+{
+  "id": "bdgp.insertion",
+  "target": {
+    "DEFAULT": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line={content}"
+  },
+  "type": "scheme",
+  "name": "BDGP Gene Disruption Project",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100201",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line=${ac}",
+  "redirect": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line={content}",
+  "description": "BDGP gene disruption collection provides a public resource of gene disruptions of Drosophila genes using a single transposable element.",
+  "subject": "gene; sequence",
+  "location": "USA",
+  "synonym": "BDGP gene disruption",
+  "institution": "Baylor College of Medicine, Texas",
+  "prefixed": 0,
+  "test": "KG09531",
+  "probe": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line=KG09531",
+  "pattern": "^\\w+$",
+  "state": "95:Up",
+  "more": "http://flypush.imgen.bcm.tmc.edu/pscreen/",
+  "revision": 0
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ebi/chembl.target",
+  "target": {},
+  "type": "synonym",
+  "for": "chembl.target",
+  "revision": 0
+}

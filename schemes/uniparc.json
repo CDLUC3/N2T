@@ -1,0 +1,27 @@
+{
+  "id": "uniparc",
+  "target": {
+    "DEFAULT": "http://www.uniprot.org/uniparc/{content}"
+  },
+  "type": "scheme",
+  "name": "UniParc through UniProt",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100476",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.uniprot.org/uniparc/${ac}",
+  "redirect": "http://www.uniprot.org/uniparc/{content}",
+  "description": "The UniProt Archive (UniParc) is a  database containing non-redundant protein sequence information from many sources. Each unique sequence is given a stable and unique identifier (UPI) making it possible to identify the same protein from different source databases.",
+  "subject": "protein",
+  "location": "USA, UK and Switzerland",
+  "synonym": "TCDB",
+  "institution": "UniProt Consortium",
+  "prefixed": 0,
+  "test": "UPI000000000A",
+  "probe": "http://www.uniprot.org/uniparc/UPI000000000A",
+  "pattern": "^UPI[A-F0-9]{10}$",
+  "state": "98:Up",
+  "more": "http://www.uniprot.org/uniparc/",
+  "revision": 0
+}

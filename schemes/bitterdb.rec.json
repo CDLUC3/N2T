@@ -1,0 +1,27 @@
+{
+  "id": "bitterdb.rec",
+  "target": {
+    "DEFAULT": "http://bitterdb.agri.huji.ac.il/Receptor.php?id={content}"
+  },
+  "type": "scheme",
+  "name": "BitterDB Receptor at The Hebrew University of Jerusalem",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100442",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://bitterdb.agri.huji.ac.il/Receptor.php?id=${ac}",
+  "redirect": "http://bitterdb.agri.huji.ac.il/Receptor.php?id={content}",
+  "description": "BitterDB is a database of compounds reported to taste bitter to humans. The compounds can be searched by name, chemical structure, similarity to other bitter compounds, association with a particular human bitter taste receptor, and so on. The database also contains information on mutations in bitter taste receptors that were shown to influence receptor activation by bitter compounds. The aim of BitterDB is to facilitate studying the chemical features associated with bitterness. This collection references receptors.",
+  "subject": "human; chemical; protein",
+  "location": "Israel",
+  "synonym": "protein genbank identifier",
+  "institution": "The Robert H Smith Faculty of Agriculture, Food and Environment, The Institute of Biochemistry, Food Science and Nutrition, The Hebrew University of Jerusalem, Rehovot",
+  "prefixed": 0,
+  "test": "1",
+  "probe": "http://bitterdb.agri.huji.ac.il/Receptor.php?id=1",
+  "pattern": "^\\d+$",
+  "state": "91:Up",
+  "more": "http://bitterdb.agri.huji.ac.il/dbbitter.php",
+  "revision": 0
+}

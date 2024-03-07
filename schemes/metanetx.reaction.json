@@ -1,0 +1,27 @@
+{
+  "id": "metanetx.reaction",
+  "target": {
+    "DEFAULT": "http://www.metanetx.org/equa_info/{content}"
+  },
+  "type": "scheme",
+  "name": "MetaNetX reaction at SIB Swiss Institute of Bioinformatics",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100749",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.metanetx.org/equa_info/${ac}",
+  "redirect": "http://www.metanetx.org/equa_info/{content}",
+  "description": "MetaNetX/MNXref integrates various information from genome-scale metabolic network reconstructions such as information on reactions, metabolites and compartments. This information undergoes a reconciliation process to minimise for discrepancies between different data sources, and makes the data accessible under a common namespace. This collection references reactions.",
+  "subject": "reaction; model",
+  "location": "Switzerland",
+  "synonym": "Database of small human noncoding RNAs",
+  "institution": "Vital-IT group, SIB Swiss Institute of Bioinformatics, Lausanne",
+  "prefixed": 0,
+  "test": "MNXR101574",
+  "probe": "http://www.metanetx.org/equa_info/MNXR101574",
+  "pattern": "^MNXR\\d+$",
+  "state": "55:Unknown",
+  "more": "http://www.metanetx.org/",
+  "revision": 0
+}

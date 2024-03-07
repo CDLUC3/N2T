@@ -1,0 +1,9 @@
+{
+  "id": "polya_db",
+  "target": {
+    "DEFAULT": "http://polya.umdnj.edu/polya_db2/gene.php?llid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://polya.umdnj.edu/polya_db2/gene.php?llid={content}",
+  "revision": 0
+}

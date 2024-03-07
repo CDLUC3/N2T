@@ -1,0 +1,27 @@
+{
+  "id": "z027/fb",
+  "target": {
+    "DEFAULT": "http://flybase.org/reports/{content}.html"
+  },
+  "type": "scheme",
+  "name": "The FlyBase Database",
+  "alias": null,
+  "provider": "z027",
+  "provider_id": "MIR:00100050",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://flybase.org/reports/${ac}.html",
+  "redirect": "http://flybase.org/reports/{content}.html",
+  "description": "FlyBase is the database of the Drosophila Genome Projects and of associated literature.",
+  "subject": "eukaryotic; genome; nucleotide",
+  "location": "USA / United Kingdom",
+  "synonym": "GenBank; INSDC; International Nucleotide Sequence Database Collaboration; NCBI nucleotide",
+  "institution": "The FlyBase Consortium",
+  "prefixed": 0,
+  "test": "FBgn0011293",
+  "probe": "http://flybase.org/reports/FBgn0011293.html",
+  "pattern": "^FB\\w{2}\\d{7}$",
+  "state": "100:Up",
+  "more": "http://flybase.org/",
+  "revision": 0
+}

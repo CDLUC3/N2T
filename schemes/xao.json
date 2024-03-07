@@ -1,0 +1,9 @@
+{
+  "id": "xao",
+  "target": {
+    "DEFAULT": "http://www.xenbase.org/anatomy/static/organs/{content}.jsp"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.xenbase.org/anatomy/static/organs/{content}.jsp",
+  "revision": 0
+}

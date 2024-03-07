@@ -1,0 +1,27 @@
+{
+  "id": "orphanet",
+  "target": {
+    "DEFAULT": "http://www.orpha.net/consor/cgi-bin/OC_Exp.php?Lng=EN&Expert={content}"
+  },
+  "type": "scheme",
+  "name": "Orphanet at Inserm",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100279",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.orpha.net/consor/cgi-bin/OC_Exp.php?Lng=EN&Expert=${ac}",
+  "redirect": "http://www.orpha.net/consor/cgi-bin/OC_Exp.php?Lng=EN&Expert={content}",
+  "description": "Orphanet is a reference portal for information on rare diseases and orphan drugs. It&#x2019;s aim is to help improve the diagnosis, care and treatment of patients with rare diseases.",
+  "subject": "human; disease; drug",
+  "location": "France",
+  "synonym": "Orpha",
+  "institution": "Inserm, H&#xF4;pital Broussais, Paris",
+  "prefixed": 0,
+  "test": "85163",
+  "probe": "http://www.orpha.net/consor/cgi-bin/OC_Exp.php?Lng=EN&Expert=85163",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://www.orpha.net/consor/",
+  "revision": 0
+}

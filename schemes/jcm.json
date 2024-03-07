@@ -1,0 +1,27 @@
+{
+  "id": "jcm",
+  "target": {
+    "DEFAULT": "http://www.jcm.riken.go.jp/cgi-bin/jcm/jcm_number?JCM={content}"
+  },
+  "type": "scheme",
+  "name": "JCM at RIKEN BioResource Center",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100220",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.jcm.riken.go.jp/cgi-bin/jcm/jcm_number?JCM=${ac}",
+  "redirect": "http://www.jcm.riken.go.jp/cgi-bin/jcm/jcm_number?JCM={content}",
+  "description": "The Japan Collection of Microorganisms (JCM) collects, catalogues, and distributes cultured microbial strains, restricted to those classified in Risk Group 1 or 2.",
+  "subject": "microbial; strain",
+  "location": "Japan",
+  "synonym": "JCM",
+  "institution": "RIKEN BioResource Center, Ibaraki",
+  "prefixed": 0,
+  "test": "17254",
+  "probe": "http://www.jcm.riken.go.jp/cgi-bin/jcm/jcm_number?JCM=17254",
+  "pattern": "^\\d+$",
+  "state": "71:Down",
+  "more": "http://www.jcm.riken.go.jp/",
+  "revision": 0
+}

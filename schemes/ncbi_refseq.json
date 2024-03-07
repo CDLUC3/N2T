@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/refseq",
+  "target": {},
+  "type": "synonym",
+  "for": "refseq",
+  "revision": 0
+}

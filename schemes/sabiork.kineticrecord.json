@@ -1,0 +1,27 @@
+{
+  "id": "sabiork.kineticrecord",
+  "target": {
+    "DEFAULT": "http://sabiork.h-its.org/kineticLawEntry.jsp?viewData=true&kinlawid={content}"
+  },
+  "type": "scheme",
+  "name": "SABIO-RK Reaction Kinetics Database - Kinetic Dataset",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100117",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://sabiork.h-its.org/kineticLawEntry.jsp?viewData=true&kinlawid=${ac}",
+  "redirect": "http://sabiork.h-its.org/kineticLawEntry.jsp?viewData=true&kinlawid={content}",
+  "description": "SABIO-RK is a relational database system that contains information about biochemical reactions, their kinetic equations with their parameters, and the experimental conditions under which these parameters were measured. The kinetic record data set provides information regarding the kinetic law, measurement conditions, parameter details and other reference information.",
+  "subject": "reaction; kinetics",
+  "location": "Germany",
+  "synonym": "SO; Sequence Types and Features",
+  "institution": "Heidelberg Institute for Theoretical Studies  (HITS gGmbH)",
+  "prefixed": 0,
+  "test": "5046",
+  "probe": "http://sabiork.h-its.org/kineticLawEntry.jsp?viewData=true&kinlawid=5046",
+  "pattern": "^\\d+$",
+  "state": "99:Probably up",
+  "more": "http://sabiork.h-its.org/",
+  "revision": 0
+}

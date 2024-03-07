@@ -1,0 +1,27 @@
+{
+  "id": "agr/wb",
+  "target": {
+    "DEFAULT": "https://www.alliancegenome.org/gene/WB:{content}"
+  },
+  "type": "scheme",
+  "name": "WormBase through the Alliance of Genome Resources",
+  "alias": null,
+  "provider": "agr",
+  "provider_id": "MIR:00100901",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://www.alliancegenome.org/gene/WB:${ac}",
+  "redirect": "https://www.alliancegenome.org/gene/WB:{content}",
+  "description": "WormBase is an online bioinformatics database of the biology and genome of the model organism Caenorhabditis elegans and other nematodes. It is used by the C. elegans research community both as an information resource and as a mode to publish and distribute their results. This collection references WormBase-accessioned entities.",
+  "subject": "expression; genome; protein; nucleotide",
+  "location": "USA",
+  "synonym": "KEGG",
+  "institution": "Alliance of Genome Resources",
+  "prefixed": 0,
+  "test": "WBGene00000001",
+  "probe": "https://www.alliancegenome.org/gene/WB:WBGene00000001",
+  "pattern": "^WB[A-Z][a-z]+\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.alliancegenome.org",
+  "revision": 0
+}

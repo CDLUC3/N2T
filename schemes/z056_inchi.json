@@ -1,0 +1,27 @@
+{
+  "id": "z056/inchi",
+  "target": {
+    "DEFAULT": "http://www.chemspider.com/{content}"
+  },
+  "type": "scheme",
+  "name": "InChI through Chemspider",
+  "alias": null,
+  "provider": "z056",
+  "provider_id": "MIR:00100492",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.chemspider.com/${ac}",
+  "redirect": "http://www.chemspider.com/{content}",
+  "description": "The IUPAC International Chemical Identifier (InChI) is a non-proprietary identifier for chemical substances that can be used in printed and electronic data sources. It is derived solely from a structural representation of that substance, such that a single compound always yields the same identifier.",
+  "subject": "chemical; structure",
+  "location": "UK",
+  "synonym": "IUPAC International Chemical Identifier",
+  "institution": "Royal Society of Chemistry, Cambridge",
+  "prefixed": 0,
+  "test": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+  "probe": "http://www.chemspider.com/InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+  "pattern": "^InChI\\=1S?\\/[A-Za-z0-9\\.]+(\\+[0-9]+)?(\\/[cnpqbtmsih][A-Za-z0-9\\-\\+\\(\\)\\,\\/\\?\\;\\.]+)*$",
+  "state": "100:Up",
+  "more": "http://www.chemspider.com/",
+  "revision": 0
+}

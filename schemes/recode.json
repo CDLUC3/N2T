@@ -1,0 +1,9 @@
+{
+  "id": "recode",
+  "target": {
+    "DEFAULT": "http://recode.ucc.ie/recode/{content}/"
+  },
+  "type": "commonspfx",
+  "redirect": "http://recode.ucc.ie/recode/{content}/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "greenphyldb",
+  "target": {
+    "DEFAULT": "http://greenphyl.cirad.fr/v2/cgi-bin/family.cgi?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://greenphyl.cirad.fr/v2/cgi-bin/family.cgi?id={content}",
+  "revision": 0
+}

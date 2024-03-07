@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/bioproject",
+  "target": {},
+  "type": "synonym",
+  "for": "bioproject",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "obi",
+  "target": {
+    "DEFAULT": "http://purl.obolibrary.org/obo/{content}"
+  },
+  "type": "scheme",
+  "name": "OBI through Ontobee",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100162",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://purl.obolibrary.org/obo/${ac}",
+  "redirect": "http://purl.obolibrary.org/obo/{content}",
+  "description": "The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of biological and clinical investigations. The ontology will represent the design of an investigation, the protocols and instrumentation used, the material used, the data generated and the type analysis performed on it. Currently OBI is being built under the Basic Formal Ontology (BFO).",
+  "subject": null,
+  "location": "USA",
+  "synonym": "OBI",
+  "institution": "University of Michigan Medical School (MI), awrence Berkeley National Laboratory (CA) and Science Commons (MA)",
+  "prefixed": 0,
+  "test": "OBI_0000070",
+  "probe": "http://purl.obolibrary.org/obo/OBI_0000070",
+  "pattern": "(^OBI:\\d{7}$)|(^OBI_\\d{7}$)",
+  "state": "93:Up",
+  "more": "http://www.ontobee.org/",
+  "revision": 0
+}

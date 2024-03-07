@@ -1,0 +1,27 @@
+{
+  "id": "ols/bto",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/bto/terms?obo_id=BTO:{content}"
+  },
+  "type": "scheme",
+  "name": "Brenda Tissue Ontology through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100144",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/bto/terms?obo_id=BTO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/bto/terms?obo_id=BTO:{content}",
+  "description": "The Brenda tissue ontology is a structured controlled vocabulary eastablished to identify the source of an enzyme cited in the Brenda enzyme database. It comprises terms of tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "BTO",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "0000146",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/bto/terms?obo_id=BTO:0000146",
+  "pattern": "^BTO:\\d{7}$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/bto",
+  "revision": 0
+}

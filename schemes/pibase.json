@@ -1,0 +1,9 @@
+{
+  "id": "pibase",
+  "target": {
+    "DEFAULT": "http://modbase.compbio.ucsf.edu/pibase-cgi/get_details.pl?object_type=complexes&bdp_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://modbase.compbio.ucsf.edu/pibase-cgi/get_details.pl?object_type=complexes&bdp_id={content}",
+  "revision": 0
+}

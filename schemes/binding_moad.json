@@ -1,0 +1,9 @@
+{
+  "id": "binding_moad",
+  "target": {
+    "DEFAULT": "http://www.bindingmoad.org/moad/getMoadlet.do?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.bindingmoad.org/moad/getMoadlet.do?id={content}",
+  "revision": 0
+}

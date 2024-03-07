@@ -1,0 +1,9 @@
+{
+  "id": "okcam",
+  "target": {
+    "DEFAULT": "http://okcam.cbi.pku.edu.cn/entry-info.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://okcam.cbi.pku.edu.cn/entry-info.php?id={content}",
+  "revision": 0
+}

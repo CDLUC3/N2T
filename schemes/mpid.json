@@ -1,0 +1,27 @@
+{
+  "id": "mpid",
+  "target": {
+    "DEFAULT": "http://www.jcvi.org/mpidb/experiment.php?interaction_id={content}"
+  },
+  "type": "scheme",
+  "name": "Microbial Protein Interaction Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100157",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.jcvi.org/mpidb/experiment.php?interaction_id=${ac}",
+  "redirect": "http://www.jcvi.org/mpidb/experiment.php?interaction_id={content}",
+  "description": "The microbial protein interaction database (MPIDB) provides physical microbial interaction data. The interactions are manually curated from the literature or imported from other databases, and are linked to supporting experimental evidence, as well as evidences based on interaction conservation, protein complex membership, and 3D domain contacts.",
+  "subject": "microbial; protein; interaction",
+  "location": "USA",
+  "synonym": "MPID",
+  "institution": "J. Craig Venter Institute, Maryland",
+  "prefixed": 0,
+  "test": "172",
+  "probe": "http://www.jcvi.org/mpidb/experiment.php?interaction_id=172",
+  "pattern": "^\\d+$",
+  "state": "72:Down",
+  "more": "http://www.jcvi.org/mpidb/about.php",
+  "revision": 0
+}

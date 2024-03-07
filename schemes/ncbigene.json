@@ -1,0 +1,27 @@
+{
+  "id": "ncbigene",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/gene/{content}"
+  },
+  "type": "scheme",
+  "name": "Entrez Gene (NCBI)",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100099",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ncbi.nlm.nih.gov/gene/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/gene/{content}",
+  "description": "Entrez Gene is the NCBI's database for gene-specific information, focusing on completely sequenced genomes, those with an active research community to contribute gene-specific information, or those that are scheduled for intense sequence analysis.",
+  "subject": "sequence; genome; gene",
+  "location": "USA",
+  "synonym": "Entrez Gene",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "100010",
+  "probe": "https://www.ncbi.nlm.nih.gov/gene/100010",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/gene",
+  "revision": 0
+}

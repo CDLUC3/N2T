@@ -1,0 +1,27 @@
+{
+  "id": "panther.node",
+  "target": {
+    "DEFAULT": "http://www.pantree.org/node/annotationNode.jsp?id={content}"
+  },
+  "type": "scheme",
+  "name": "PANTHER Node at USC (Los Angeles)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100475",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.pantree.org/node/annotationNode.jsp?id=${ac}",
+  "redirect": "http://www.pantree.org/node/annotationNode.jsp?id={content}",
+  "description": "The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System is a resource that classifies genes by their functions, using published scientific experimental evidence and evolutionary relationships to predict function even in the absence of direct experimental evidence. PANTHER tree is a key element of the PANTHER System to represent &#x2018;all&#x2019; of the evolutionary events in the gene family. PANTHER nodes represent the evolutionary events, either speciation or duplication, within the tree. PANTHER is maintaining stable identifier for these nodes.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Database of Macromolecular Interactions",
+  "institution": "Keck School of Medicine, University of Southern California",
+  "prefixed": 0,
+  "test": "PTN000000026",
+  "probe": "http://www.pantree.org/node/annotationNode.jsp?id=PTN000000026",
+  "pattern": "^PTN\\d{9}$",
+  "state": "95:Probably up",
+  "more": "http://pantree.org/",
+  "revision": 0
+}

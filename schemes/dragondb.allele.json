@@ -1,0 +1,27 @@
+{
+  "id": "dragondb.allele",
+  "target": {
+    "DEFAULT": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name={content}&amp;class=Allele"
+  },
+  "type": "scheme",
+  "name": "DragonDB Allele at University of British Columbia",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100382",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name=${ac}&amp;class=Allele",
+  "redirect": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name={content}&amp;class=Allele",
+  "description": "DragonDB is a genetic and genomic database for Antirrhinum majus (Snapdragon). This collection refers to allele information.",
+  "subject": "plant; gene",
+  "location": "Canada",
+  "synonym": "Coli Genetic Stock Center",
+  "institution": "University of British Columbia, Vancouver",
+  "prefixed": 0,
+  "test": "cho",
+  "probe": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name=cho&amp;class=Allele",
+  "pattern": "^\\w+$",
+  "state": "53:Down",
+  "more": "http://www.antirrhinum.net/",
+  "revision": 0
+}

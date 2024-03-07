@@ -1,0 +1,27 @@
+{
+  "id": "doqcs.model",
+  "target": {
+    "DEFAULT": "http://doqcs.ncbs.res.in/template.php?&y=accessiondetails&an={content}"
+  },
+  "type": "scheme",
+  "name": "Database of Quantitative Cellular Signaling (DOQCS) - Model Access",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100174",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://doqcs.ncbs.res.in/template.php?&y=accessiondetails&an=${ac}",
+  "redirect": "http://doqcs.ncbs.res.in/template.php?&y=accessiondetails&an={content}",
+  "description": "The Database of Quantitative Cellular Signaling is a repository of models of signaling pathways. It includes reaction schemes, concentrations, rate constants, as well as annotations on the models. The database provides a range of search, navigation, and comparison functions. This datatype provides access to specific models.",
+  "subject": "model",
+  "location": "India",
+  "synonym": "DOQCS Model",
+  "institution": "National Centre for Biological Sciences, Bangalore",
+  "prefixed": 0,
+  "test": "57",
+  "probe": "http://doqcs.ncbs.res.in/template.php?&y=accessiondetails&an=57",
+  "pattern": "^\\d+$",
+  "state": "94:Down",
+  "more": "http://doqcs.ncbs.res.in/",
+  "revision": 0
+}

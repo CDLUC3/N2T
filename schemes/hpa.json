@@ -1,0 +1,27 @@
+{
+  "id": "hpa",
+  "target": {
+    "DEFAULT": "http://www.proteinatlas.org/{content}"
+  },
+  "type": "scheme",
+  "name": "Human Protein Atlas at AlbaNova University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100431",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.proteinatlas.org/${ac}",
+  "redirect": "http://www.proteinatlas.org/{content}",
+  "description": "The Human Protein Atlas (HPA) is a publicly available database with high-resolution images showing the spatial distribution of proteins in different normal and cancer human cell lines. Primary access to this collection is through Ensembl Gene identifiers.",
+  "subject": "image library; protein; schema.org; disease",
+  "location": "Sweden",
+  "synonym": "Human Protein Atlas",
+  "institution": "Department of Proteomics, School of Biotechnology, AlbaNova University Center, Stockholm",
+  "prefixed": 0,
+  "test": "ENSG00000026508",
+  "probe": "http://www.proteinatlas.org/ENSG00000026508",
+  "pattern": "^ENSG\\d{11}$",
+  "state": "100:Up",
+  "more": "http://www.proteinatlas.org/",
+  "revision": 0
+}

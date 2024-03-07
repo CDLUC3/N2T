@@ -1,0 +1,27 @@
+{
+  "id": "csa",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/thornton-srv/databases/CSA/SearchResults.php?PDBID={content}"
+  },
+  "type": "scheme",
+  "name": "CSA at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100188",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/thornton-srv/databases/CSA/SearchResults.php?PDBID=${ac}",
+  "redirect": "https://www.ebi.ac.uk/thornton-srv/databases/CSA/SearchResults.php?PDBID={content}",
+  "description": "The Catalytic Site Atlas (CSA) is a database documenting enzyme active sites and catalytic residues in enzymes of 3D structure. It uses a defined classification for catalytic residues which includes only those residues thought to be directly involved in some aspect of the reaction catalysed by an enzyme.",
+  "subject": "structure; protein",
+  "location": "UK",
+  "synonym": "Catalytic Site Atlas",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "1a05",
+  "probe": "https://www.ebi.ac.uk/thornton-srv/databases/CSA/SearchResults.php?PDBID=1a05",
+  "pattern": "^[0-9][A-Za-z0-9]{3}$",
+  "state": "98:Up",
+  "more": "https://www.ebi.ac.uk/thornton-srv/databases/CSA/",
+  "revision": 0
+}

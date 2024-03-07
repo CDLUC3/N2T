@@ -1,0 +1,27 @@
+{
+  "id": "niaest",
+  "target": {
+    "DEFAULT": "http://lgsun.grc.nia.nih.gov/cgi-bin/pro3?sname1={content}"
+  },
+  "type": "scheme",
+  "name": "NIAEST at National Institute on Aging",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100387",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://lgsun.grc.nia.nih.gov/cgi-bin/pro3?sname1=${ac}",
+  "redirect": "http://lgsun.grc.nia.nih.gov/cgi-bin/pro3?sname1={content}",
+  "description": "A catalog of mouse genes expressed in early embryos, embryonic and adult stem cells, including 250000 ESTs, was assembled by the NIA (National Institute on Aging) assembled.This collection represents the name and sequence from individual cDNA clones.",
+  "subject": "expression; gene; human",
+  "location": "USA",
+  "synonym": "The Nottingham Arabidopsis Stock Centre",
+  "institution": "National Institute on Aging, NIH",
+  "prefixed": 0,
+  "test": "J0705A10",
+  "probe": "http://lgsun.grc.nia.nih.gov/cgi-bin/pro3?sname1=J0705A10",
+  "pattern": "^\\w\\d{4}\\w\\d{2}(\\-[35])?$",
+  "state": "40:Down",
+  "more": "http://lgsun.grc.nia.nih.gov/cDNA/",
+  "revision": 0
+}

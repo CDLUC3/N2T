@@ -1,0 +1,9 @@
+{
+  "id": "syfpeithi",
+  "target": {
+    "DEFAULT": "http://www.ebi.ac.uk/cgi-bin/emblfetch?{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ebi.ac.uk/cgi-bin/emblfetch?{content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "sider.drug",
+  "target": {
+    "DEFAULT": "http://sideeffects.embl.de/drugs/{content}/"
+  },
+  "type": "scheme",
+  "name": "SIDER Drug v2 at EMBL (Heidelberg)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100559",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://sideeffects.embl.de/drugs/${ac}/",
+  "redirect": "http://sideeffects.embl.de/drugs/{content}/",
+  "description": "SIDER (Side Effect Resource) is a public, computer-readable side effect resource that connects drugs to side effect terms. It aggregates dispersed public information on side effects. This collection references drugs in SIDER.",
+  "subject": "drug; phenotype",
+  "location": "Germany",
+  "synonym": "Side Effect Resource",
+  "institution": "Structural and Computational Biology Unit, European Molecular Biology Laboratory, Heidelberg",
+  "prefixed": 0,
+  "test": "2244",
+  "probe": "http://sideeffects.embl.de/drugs/2244/",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "http://sideeffects.embl.de/",
+  "revision": 0
+}

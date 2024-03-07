@@ -1,0 +1,27 @@
+{
+  "id": "genetree",
+  "target": {
+    "DEFAULT": "http://www.ensembl.org/Multi/GeneTree/Image?db=core;gt={content}"
+  },
+  "type": "scheme",
+  "name": "GeneTree at Ensembl",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100273",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.ensembl.org/Multi/GeneTree/Image?db=core;gt=${ac}",
+  "redirect": "http://www.ensembl.org/Multi/GeneTree/Image?db=core;gt={content}",
+  "description": "Genetree displays the maximum likelihood phylogenetic (protein) trees representing the evolutionary history of the genes. These are constructed using the canonical protein for every gene in Ensembl.",
+  "subject": "classification; gene; protein; schema.org",
+  "location": "UK",
+  "synonym": "Ensembl GeneTree",
+  "institution": "Sanger Institute and European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "ENSGT00550000074763",
+  "probe": "http://www.ensembl.org/Multi/GeneTree/Image?db=core;gt=ENSGT00550000074763",
+  "pattern": "^ENSGT\\d+$",
+  "state": "99:Probably up",
+  "more": "http://www.ensembl.org/",
+  "revision": 0
+}

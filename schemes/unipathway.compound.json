@@ -1,0 +1,27 @@
+{
+  "id": "unipathway.compound",
+  "target": {
+    "DEFAULT": "http://www.grenoble.prabi.fr/obiwarehouse/unipathway/upc?upid={content}"
+  },
+  "type": "scheme",
+  "name": "UniPathway Compound at Swiss Institute of Bioinformatics (SIB)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100728",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.grenoble.prabi.fr/obiwarehouse/unipathway/upc?upid=${ac}",
+  "redirect": "http://www.grenoble.prabi.fr/obiwarehouse/unipathway/upc?upid={content}",
+  "description": "UniPathway is a manually curated resource of enzyme-catalyzed and spontaneous chemical reactions. It provides a hierarchical representation of metabolic pathways and a controlled vocabulary for pathway annotation in UniProtKB. UniPathway data are cross-linked to existing metabolic resources such as ChEBI/Rhea, KEGG and MetaCyc. This collection references compounds.",
+  "subject": "metabolite; structure; chemical",
+  "location": "Switzerland",
+  "synonym": "CPC",
+  "institution": "Swiss Institute of Bioinformatics (SIB) and French National Institute for Research in Computer Science and Control",
+  "prefixed": 0,
+  "test": "UPC04349",
+  "probe": "http://www.grenoble.prabi.fr/obiwarehouse/unipathway/upc?upid=UPC04349",
+  "pattern": "^UPC\\d{5}$",
+  "state": "20:Down",
+  "more": "http://www.grenoble.prabi.fr/obiwarehouse/unipathway",
+  "revision": 0
+}

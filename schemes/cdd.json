@@ -1,0 +1,27 @@
+{
+  "id": "cdd",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/Structure/cdd/cddsrv.cgi?uid={content}"
+  },
+  "type": "scheme",
+  "name": "Conserved Domain Database at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100152",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/Structure/cdd/cddsrv.cgi?uid=${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/Structure/cdd/cddsrv.cgi?uid={content}",
+  "description": "The Conserved Domain Database (CDD) is a collection of multiple sequence alignments and derived database search models, which represent protein domains conserved in molecular evolution.",
+  "subject": "protein; domain",
+  "location": "USA",
+  "synonym": "CDD",
+  "institution": "National Library of Medicine, National Institutes of Health, Maryland",
+  "prefixed": 0,
+  "test": "cd00400",
+  "probe": "https://www.ncbi.nlm.nih.gov/Structure/cdd/cddsrv.cgi?uid=cd00400",
+  "pattern": "^(cd)?\\d{5}$",
+  "state": "100:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/sites/entrez?db=cdd",
+  "revision": 0
+}

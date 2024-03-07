@@ -1,0 +1,27 @@
+{
+  "id": "bugbase.protocol",
+  "target": {
+    "DEFAULT": "http://bugs.sgul.ac.uk/bugsbase/tabs/protocol.php?protocol_id={content}&amp;action=view"
+  },
+  "type": "scheme",
+  "name": "BugBase Protocol at University of London",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100523",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://bugs.sgul.ac.uk/bugsbase/tabs/protocol.php?protocol_id=${ac}&amp;action=view",
+  "redirect": "http://bugs.sgul.ac.uk/bugsbase/tabs/protocol.php?protocol_id={content}&amp;action=view",
+  "description": "BugBase is a MIAME-compliant microbial gene expression and comparative genomic database. It stores experimental annotation and multiple raw and analysed data formats, as well as protocols for bacterial microarray designs. This collection references design protocols.",
+  "subject": "expression; microarray; microbial",
+  "location": "UK",
+  "synonym": "Statistical Torsional Angles Potentials of NMR",
+  "institution": "Bacterial Microarray Group, St George's, University of London",
+  "prefixed": 0,
+  "test": "67",
+  "probe": "http://bugs.sgul.ac.uk/bugsbase/tabs/protocol.php?protocol_id=67&amp;action=view",
+  "pattern": "^\\d+$",
+  "state": "0:Unknown",
+  "more": "http://bugs.sgul.ac.uk/E-BUGS",
+  "revision": 0
+}

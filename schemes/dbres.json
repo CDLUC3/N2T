@@ -1,0 +1,9 @@
+{
+  "id": "dbres",
+  "target": {
+    "DEFAULT": "http://bioinfo.au.tsinghua.edu.cn/dbRES/show_record.php?resid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioinfo.au.tsinghua.edu.cn/dbRES/show_record.php?resid={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "biogrid",
+  "target": {
+    "DEFAULT": "http://thebiogrid.org/{content}"
+  },
+  "type": "scheme",
+  "name": "BioGRID database of physical and genetic interactions",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100086",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://thebiogrid.org/${ac}",
+  "redirect": "http://thebiogrid.org/{content}",
+  "description": "BioGRID is a database of physical and genetic interactions in Saccharomyces cerevisiae, Caenorhabditis elegans, Drosophila melanogaster, Homo sapiens, and Schizosaccharomyces pombe.",
+  "subject": "interaction; protein; gene",
+  "location": "Canada",
+  "synonym": "MOD; PSI-MOD",
+  "institution": "Ontario Cancer Institute",
+  "prefixed": 0,
+  "test": "31623",
+  "probe": "http://thebiogrid.org/31623",
+  "pattern": "^\\d+$",
+  "state": "85:Up",
+  "more": "http://thebiogrid.org/",
+  "revision": 0
+}

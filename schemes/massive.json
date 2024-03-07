@@ -1,0 +1,27 @@
+{
+  "id": "massive",
+  "target": {
+    "DEFAULT": "https://massive.ucsd.edu/ProteoSAFe/QueryMSV?id={content}"
+  },
+  "type": "scheme",
+  "name": "MassIVE",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100866",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://massive.ucsd.edu/ProteoSAFe/QueryMSV?id=${ac}",
+  "redirect": "https://massive.ucsd.edu/ProteoSAFe/QueryMSV?id={content}",
+  "description": "MassIVE is a community resource developed by the NIH-funded Center for Computational Mass Spectrometry to promote the global, free exchange of mass spectrometry data.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "University of California, San Diego",
+  "prefixed": 0,
+  "test": "MSV000082131",
+  "probe": "https://massive.ucsd.edu/ProteoSAFe/QueryMSV?id=MSV000082131",
+  "pattern": "^MSV\\d+$",
+  "state": "0:Unknown",
+  "more": "https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp",
+  "revision": 0
+}

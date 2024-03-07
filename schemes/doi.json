@@ -1,0 +1,27 @@
+{
+  "id": "doi",
+  "target": {
+    "DEFAULT": "https://doi.org/{content}"
+  },
+  "type": "scheme",
+  "name": "Digital Object Identifier",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100010",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://doi.org/${ac}",
+  "redirect": "https://doi.org/{content}",
+  "description": "The Digital Object Identifier System is for identifying content objects in the digital environment.",
+  "subject": "bibliography",
+  "location": "United Kingdom",
+  "synonym": "Digital Object Identifier",
+  "institution": "International DOI Foundation",
+  "prefixed": 0,
+  "test": "10.1038/nbt1156",
+  "probe": "https://doi.org/10.1038/nbt1156",
+  "pattern": "^(doi\\:)?\\d{2}\\.\\d{4}.*$",
+  "state": "86:Unknown",
+  "more": "https://www.doi.org/",
+  "revision": 0
+}

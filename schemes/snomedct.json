@@ -1,0 +1,27 @@
+{
+  "id": "snomedct",
+  "target": {
+    "DEFAULT": "http://www.snomedbrowser.com/Codes/Details/{content}"
+  },
+  "type": "scheme",
+  "name": "SNOMED-CT at The National Pathology Exchange",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100405",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.snomedbrowser.com/Codes/Details/${ac}",
+  "redirect": "http://www.snomedbrowser.com/Codes/Details/{content}",
+  "description": "SNOMED CT (Systematized Nomenclature of Medicine -- Clinical Terms), is a systematically organized computer processable collection of medical terminology covering most areas of clinical information such as diseases, findings, procedures, microorganisms, pharmaceuticals, etc.",
+  "subject": "controlled vocabulary",
+  "location": "UK",
+  "synonym": "Search Tool for Retrieval of Interacting Genes/Proteins",
+  "institution": "The Health Informatics Service, NHS, West Yorkshire",
+  "prefixed": 0,
+  "test": "284196006",
+  "probe": "http://www.snomedbrowser.com/Codes/Details/284196006",
+  "pattern": "^(\\w+)?\\d+$",
+  "state": "87:Up",
+  "more": "http://www.snomedbrowser.com/",
+  "revision": 0
+}

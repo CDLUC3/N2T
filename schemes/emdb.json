@@ -1,0 +1,27 @@
+{
+  "id": "emdb",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/pdbe/entry/emdb/{content}"
+  },
+  "type": "scheme",
+  "name": "EMDB at Protein Data Bank in Europe",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100738",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/pdbe/entry/emdb/${ac}",
+  "redirect": "https://www.ebi.ac.uk/pdbe/entry/emdb/{content}",
+  "description": "The Electron Microscopy Data Bank (EMDB) is a public repository for electron microscopy density maps of macromolecular complexes and subcellular structures. It covers a variety of techniques, including single-particle analysis, electron tomography, and electron (2D) crystallography. The EMDB map distribution format follows the CCP4 definition, which is widely recognized by software packages used by the structural biology community.",
+  "subject": "mass spectrometry",
+  "location": "UK",
+  "synonym": "EMDB",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "EMD-1001",
+  "probe": "https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-1001",
+  "pattern": "^EMD-\\d{4}$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/pdbe/emdb/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "bodymap",
+  "target": {
+    "DEFAULT": "http://bodymap.ims.u-tokyo.ac.jp/[?human/mouse]/gs_card.php?gs={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bodymap.ims.u-tokyo.ac.jp/[?human/mouse]/gs_card.php?gs={content}",
+  "revision": 0
+}

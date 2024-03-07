@@ -1,0 +1,27 @@
+{
+  "id": "eggnog",
+  "target": {
+    "DEFAULT": "http://eggnog.embl.de/version_3.0/cgi/search.py?search_term_0={content}"
+  },
+  "type": "scheme",
+  "name": "eggNOG Version 3 at European Molecular Biology Laboratory",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100260",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://eggnog.embl.de/version_3.0/cgi/search.py?search_term_0=${ac}",
+  "redirect": "http://eggnog.embl.de/version_3.0/cgi/search.py?search_term_0={content}",
+  "description": "eggNOG (evolutionary genealogy of genes: Non-supervised Orthologous Groups) is a database of orthologous groups of genes. The orthologous groups are annotated with functional description lines (derived by identifying a common denominator for the genes based on their various annotations), with functional categories (i.e derived from the original COG/KOG categories).",
+  "subject": "clustering; gene",
+  "location": "Germany",
+  "synonym": "Compluyeast-2D-DB",
+  "institution": "European Molecular Biology Laboratory, Heidelberg",
+  "prefixed": 0,
+  "test": "veNOG12876",
+  "probe": "http://eggnog.embl.de/version_3.0/cgi/search.py?search_term_0=veNOG12876",
+  "pattern": "^\\w+$",
+  "state": "98:Up",
+  "more": "http://eggnog.embl.de/version_3.0/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "yeastintron",
+  "target": {
+    "DEFAULT": "http://intron.ucsc.edu/cgi-bin/yeast4.3/intronreports.pl?outputformat=full&amp;orfName={content}"
+  },
+  "type": "scheme",
+  "name": "Yeast Intron Database version 4.3 at Baskin School of Engineering",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100673",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://intron.ucsc.edu/cgi-bin/yeast4.3/intronreports.pl?outputformat=full&amp;orfName=${ac}",
+  "redirect": "http://intron.ucsc.edu/cgi-bin/yeast4.3/intronreports.pl?outputformat=full&amp;orfName={content}",
+  "description": "The YEast Intron Database (version 4.3) contains information on the spliceosomal introns of the yeast Saccharomyces cerevisiae. It includes expression data that relates to the efficiency of splicing relative to other processes in strains of yeast lacking nonessential splicing factors. The data are displayed on each intron page. This is an updated version of the previous dataset, which can be accessed through [MIR:00000460].",
+  "subject": "eukaryotic; DNA; sequence",
+  "location": "USA",
+  "synonym": "IdoT",
+  "institution": "Baskin School of Engineering, Center for Molecular Biology of RNA, University of California, Santa Cruz, California",
+  "prefixed": 0,
+  "test": "SNR17A",
+  "probe": "http://intron.ucsc.edu/cgi-bin/yeast4.3/intronreports.pl?outputformat=full&amp;orfName=SNR17A",
+  "pattern": "^[A-Z0-9]+$",
+  "state": "99:Up",
+  "more": "http://intron.ucsc.edu/yeast4.3/",
+  "revision": 0
+}

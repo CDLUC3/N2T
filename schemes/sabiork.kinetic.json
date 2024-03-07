@@ -1,0 +1,9 @@
+{
+  "id": "sabiork.kinetic",
+  "target": {
+    "DEFAULT": "http://sabiork.h-its.org/kineticLawEntry.jsp?kinlawid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://sabiork.h-its.org/kineticLawEntry.jsp?kinlawid={content}",
+  "revision": 0
+}

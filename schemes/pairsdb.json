@@ -1,0 +1,9 @@
+{
+  "id": "pairsdb",
+  "target": {
+    "DEFAULT": "http://pairsdb.csc.fi/?query=seqinfo&accnum={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pairsdb.csc.fi/?query=seqinfo&accnum={content}",
+  "revision": 0
+}

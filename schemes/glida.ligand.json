@@ -1,0 +1,27 @@
+{
+  "id": "glida.ligand",
+  "target": {
+    "DEFAULT": "http://pharminfo.pharm.kyoto-u.ac.jp/services/glida/ligand_information.php?id={content}"
+  },
+  "type": "scheme",
+  "name": "GLIDA Ligand at Kyoto University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100635",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://pharminfo.pharm.kyoto-u.ac.jp/services/glida/ligand_information.php?id=${ac}",
+  "redirect": "http://pharminfo.pharm.kyoto-u.ac.jp/services/glida/ligand_information.php?id={content}",
+  "description": "The GPCR-LIgand DAtabase (GLIDA) is a GPCR-related chemical genomic database that is primarily focused on the correlation of information between GPCRs and their ligands. It provides correlation data between GPCRs and their ligands, along with chemical information on the ligands. This collection references ligands.",
+  "subject": "chemical; interaction",
+  "location": "Japan",
+  "synonym": "GPCR-LIgand DAtabase Ligand",
+  "institution": "Department of Genomic Drug Discovery Science, Graduate School of Pharmaceutical Sciences, Kyoto University, Sakyo-ku, Kyoto",
+  "prefixed": 0,
+  "test": "L000001",
+  "probe": "http://pharminfo.pharm.kyoto-u.ac.jp/services/glida/ligand_information.php?id=L000001",
+  "pattern": "^L\\d+$",
+  "state": "79:Down",
+  "more": "http://pharminfo.pharm.kyoto-u.ac.jp/services/glida/",
+  "revision": 0
+}

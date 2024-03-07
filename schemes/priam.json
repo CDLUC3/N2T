@@ -1,0 +1,9 @@
+{
+  "id": "priam",
+  "target": {
+    "DEFAULT": "http://prodomweb.univ-lyon1.fr/priam/cgi-bin/ReqPRIAM_png.pl?priam_release=OCT11&priam_ac={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://prodomweb.univ-lyon1.fr/priam/cgi-bin/ReqPRIAM_png.pl?priam_release=OCT11&priam_ac={content}",
+  "revision": 0
+}

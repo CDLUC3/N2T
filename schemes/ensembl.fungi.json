@@ -1,0 +1,27 @@
+{
+  "id": "ensembl.fungi",
+  "target": {
+    "DEFAULT": "https://fungi.ensembl.org/id/{content}"
+  },
+  "type": "scheme",
+  "name": "Enzembl Fungi at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100265",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://fungi.ensembl.org/id/${ac}",
+  "redirect": "https://fungi.ensembl.org/id/{content}",
+  "description": "Ensembl Genomes consists of five sub-portals (for bacteria, protists, fungi, plants and invertebrate metazoa) designed to complement the availability of vertebrate genomes in Ensembl. This collection is concerned with fungal genomes.",
+  "subject": "nucleotide; sequence; genome",
+  "location": "UK",
+  "synonym": "Ensembl Genomes Fungi",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "CADAFLAT00006211",
+  "probe": "https://fungi.ensembl.org/id/CADAFLAT00006211",
+  "pattern": "^[A-Z-a-z0-9]+$",
+  "state": "60:Down",
+  "more": "https://fungi.ensembl.org/",
+  "revision": 0
+}

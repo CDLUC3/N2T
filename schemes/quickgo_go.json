@@ -1,0 +1,27 @@
+{
+  "id": "quickgo/go",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/QuickGO/GTerm?id=GO:{content}"
+  },
+  "type": "scheme",
+  "name": "QuickGO (Gene Ontology browser)",
+  "alias": null,
+  "provider": "quickgo",
+  "provider_id": "MIR:00100012",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/QuickGO/GTerm?id=GO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/QuickGO/GTerm?id=GO:{content}",
+  "description": "The Gene Ontology project provides a controlled vocabulary to describe gene and gene product attributes in any organism.",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "GO",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "0006915",
+  "probe": "https://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0006915",
+  "pattern": "^GO:\\d{7}$",
+  "state": "85:Up",
+  "more": "https://www.ebi.ac.uk/QuickGO/",
+  "revision": 0
+}

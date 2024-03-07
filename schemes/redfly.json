@@ -1,0 +1,9 @@
+{
+  "id": "redfly",
+  "target": {
+    "DEFAULT": "http://redfly.ccr.buffalo.edu/?content=/view_detail.php&crm_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://redfly.ccr.buffalo.edu/?content=/view_detail.php&crm_id={content}",
+  "revision": 0
+}

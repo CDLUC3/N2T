@@ -1,0 +1,27 @@
+{
+  "id": "interpro",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/interpro/entry/{content}"
+  },
+  "type": "scheme",
+  "name": "InterPro",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100018",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/interpro/entry/${ac}",
+  "redirect": "https://www.ebi.ac.uk/interpro/entry/{content}",
+  "description": "InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.",
+  "subject": "protein; domain",
+  "location": "UK",
+  "synonym": "MIRIAM Resources; MIRIAM",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "IPR000100",
+  "probe": "https://www.ebi.ac.uk/interpro/entry/IPR000100",
+  "pattern": "^IPR\\d{6}$",
+  "state": "98:Down",
+  "more": "https://www.ebi.ac.uk/interpro/",
+  "revision": 0
+}

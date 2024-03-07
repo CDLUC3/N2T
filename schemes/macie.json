@@ -1,0 +1,27 @@
+{
+  "id": "macie",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/MACiE/entry/getPage.pl?id={content}"
+  },
+  "type": "scheme",
+  "name": "MACiE database of mechanisms, annotation and classification in enzymes",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100108",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/MACiE/entry/getPage.pl?id=${ac}",
+  "redirect": "https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/MACiE/entry/getPage.pl?id={content}",
+  "description": "MACiE (Mechanism, Annotation and Classification in Enzymes) is a database of enzyme reaction mechanisms. Each entry in MACiE consists of an overall reaction describing the chemical compounds involved, as well as the species name in which the reaction occurs. The individual reaction stages for each overall reaction are listed with mechanisms, alternative mechanisms, and amino acids involved.",
+  "subject": "classification; enzyme",
+  "location": "UK",
+  "synonym": "MMMP Biomaps",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "M0001",
+  "probe": "https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/MACiE/entry/getPage.pl?id=M0001",
+  "pattern": "^M\\d{4}$",
+  "state": "99:Up",
+  "more": "https://www.ebi.ac.uk/thornton-srv/databases/MACiE/index.html",
+  "revision": 0
+}

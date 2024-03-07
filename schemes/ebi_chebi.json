@@ -1,0 +1,7 @@
+{
+  "id": "ebi/chebi",
+  "target": {},
+  "type": "synonym",
+  "for": "chebi",
+  "revision": 0
+}

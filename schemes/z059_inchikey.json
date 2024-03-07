@@ -1,0 +1,27 @@
+{
+  "id": "z059/inchikey",
+  "target": {
+    "DEFAULT": "http://www.chemspider.com/inchikey={content}"
+  },
+  "type": "scheme",
+  "name": "InChIKey through ChemSpider",
+  "alias": null,
+  "provider": "z059",
+  "provider_id": "MIR:00100501",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.chemspider.com/inchikey=${ac}",
+  "redirect": "http://www.chemspider.com/inchikey={content}",
+  "description": "The IUPAC International Chemical Identifier (InChI, see MIR:00000383) is an identifier for chemical substances, and is derived solely from a structural representation of that substance. Since these can be quite unwieldly, particularly for web use, the InChIKey was developed. These are of a fixed length (25 character) and were created as a condensed, more web friendly, digital representation of the InChI.",
+  "subject": "structure; chemical",
+  "location": "UK",
+  "synonym": "hashed InChI",
+  "institution": "Royal Society of Chemistry, Cambridge",
+  "prefixed": 0,
+  "test": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+  "probe": "http://www.chemspider.com/inchikey=RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+  "pattern": "^[A-Z]{14}\\-[A-Z]{10}(\\-[A-Z])?",
+  "state": "89:Up",
+  "more": "http://www.chemspider.com/",
+  "revision": 0
+}

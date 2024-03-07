@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/pubchem.compound",
+  "target": {},
+  "type": "synonym",
+  "for": "pubchem.compound",
+  "revision": 0
+}

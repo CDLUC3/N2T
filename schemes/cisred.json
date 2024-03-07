@@ -1,0 +1,9 @@
+{
+  "id": "cisred",
+  "target": {
+    "DEFAULT": "http://www.cisred.org/[?species]/gene_view?ensembl_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.cisred.org/[?species]/gene_view?ensembl_id={content}",
+  "revision": 0
+}

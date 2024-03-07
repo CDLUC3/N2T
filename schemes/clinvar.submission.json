@@ -1,0 +1,27 @@
+{
+  "id": "clinvar.submission",
+  "target": {
+    "DEFAULT": "http://www.ncbi.nlm.nih.gov/clinvar?term={content}"
+  },
+  "type": "scheme",
+  "name": "ClinVar Submission at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100795",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "http://www.ncbi.nlm.nih.gov/clinvar?term=${ac}",
+  "redirect": "http://www.ncbi.nlm.nih.gov/clinvar?term={content}",
+  "description": "ClinVar archives reports of relationships among medically important variants and phenotypes. It records human variation, interpretations of the relationship specific variations to human health, and supporting evidence for each interpretation. Each ClinVar record (RCV identifier) represents an aggregated view of interpretations of the same variation and condition from one or more submitters. Submissions for individual variation/phenotype combinations (SCV identifier) are also collected and made available separately. This collection references submissions, and is based on SCV accession.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Global Research Identifier Database",
+  "institution": "National Center for Biotechnology Information (NCBI), NIH, Maryland",
+  "prefixed": 0,
+  "test": "SCV000151292",
+  "probe": "http://www.ncbi.nlm.nih.gov/clinvar?term=SCV000151292",
+  "pattern": "^SCV\\d+(\\.\\d+)?$",
+  "state": "99:Up",
+  "more": "http://www.ncbi.nlm.nih.gov/clinvar/",
+  "revision": 0
+}

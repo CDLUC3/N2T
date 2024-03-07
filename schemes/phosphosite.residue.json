@@ -1,0 +1,27 @@
+{
+  "id": "phosphosite.residue",
+  "target": {
+    "DEFAULT": "http://www.phosphosite.org/siteAction.do?id={content}"
+  },
+  "type": "scheme",
+  "name": "PhosphoSite Residue",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100159",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.phosphosite.org/siteAction.do?id=${ac}",
+  "redirect": "http://www.phosphosite.org/siteAction.do?id={content}",
+  "description": "PhosphoSite is a mammalian protein database that provides information about in vivo phosphorylation sites. This datatype refers to residue-level information, providing a information about a single modification position in a specific protein sequence.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "MPID",
+  "institution": "Cell Signaling Technology, Inc.",
+  "prefixed": 0,
+  "test": "2842",
+  "probe": "http://www.phosphosite.org/siteAction.do?id=2842",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "http://www.phosphosite.org/homeAction.do",
+  "revision": 0
+}

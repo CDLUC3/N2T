@@ -1,0 +1,27 @@
+{
+  "id": "tissuelist",
+  "target": {
+    "DEFAULT": "https://www.uniprot.org/tissues/{content}"
+  },
+  "type": "scheme",
+  "name": "Tissue List at Swiss Institute of Bioinformatics",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100457",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://www.uniprot.org/tissues/${ac}",
+  "redirect": "https://www.uniprot.org/tissues/{content}",
+  "description": "The UniProt Tissue List is a controlled vocabulary of terms used to annotate biological tissues. It also contains cross-references to other ontologies where tissue types are specified.",
+  "subject": "controlled vocabulary",
+  "location": "Switzerland",
+  "synonym": "Protein Interaction Network Analysis",
+  "institution": "Swiss Institute of Bioinformatics (SIB), Geneva",
+  "prefixed": 0,
+  "test": "TS-0285",
+  "probe": "https://www.uniprot.org/tissues/TS-0285",
+  "pattern": "^TS-\\d{4}$",
+  "state": "98:Up",
+  "more": "https://www.uniprot.org/docs/tisslist.txt",
+  "revision": 0
+}

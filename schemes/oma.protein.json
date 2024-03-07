@@ -1,0 +1,27 @@
+{
+  "id": "oma.protein",
+  "target": {
+    "DEFAULT": "https://omabrowser.org/cgi-bin/gateway.pl?f=DisplayEntry&p1={content}"
+  },
+  "type": "scheme",
+  "name": "OMA Protein through OMA browser at ETH Zurich",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100437",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://omabrowser.org/cgi-bin/gateway.pl?f=DisplayEntry&p1=${ac}",
+  "redirect": "https://omabrowser.org/cgi-bin/gateway.pl?f=DisplayEntry&p1={content}",
+  "description": "OMA (Orthologous MAtrix) is a database that identifies orthologs among publicly available, complete genome sequences. It identifies orthologous relationships which can be accessed either group-wise, where all group members are orthologous to all other group members, or on a sequence-centric basis, where for a given protein all its orthologs in all other species are displayed. This collection references individual protein records.",
+  "subject": "protein; clustering",
+  "location": "Switzerland",
+  "synonym": "Orthologous MAtrix",
+  "institution": "ETH Zurich, Computer Science, Zurich",
+  "prefixed": 0,
+  "test": "HUMAN16963",
+  "probe": "https://omabrowser.org/cgi-bin/gateway.pl?f=DisplayEntry&p1=HUMAN16963",
+  "pattern": "^[A-Z0-9]{5}\\d+$",
+  "state": "65:Unknown",
+  "more": "https://omabrowser.org/cgi-bin/gateway.pl",
+  "revision": 0
+}

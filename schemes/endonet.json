@@ -1,0 +1,9 @@
+{
+  "id": "endonet",
+  "target": {
+    "DEFAULT": "http://endonet.bioinf.med.uni-goettingen.de/hormonedetail?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://endonet.bioinf.med.uni-goettingen.de/hormonedetail?id={content}",
+  "revision": 0
+}

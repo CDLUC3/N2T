@@ -1,0 +1,27 @@
+{
+  "id": "bgee.stage",
+  "target": {
+    "DEFAULT": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organs&stage_id={content}&stage_children=on"
+  },
+  "type": "scheme",
+  "name": "Bgee at Lausanne",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100542",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organs&stage_id=${ac}&stage_children=on",
+  "redirect": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organs&stage_id={content}&stage_children=on",
+  "description": "Bgee is a database of gene expression patterns within particular anatomical structures within a species, and between different animal species. This collection refers to developmental stages.",
+  "subject": "expression; gene",
+  "location": "Switzerland",
+  "synonym": "Autism Database",
+  "institution": "Swiss Institute of Bioinformatics, Lausanne",
+  "prefixed": 0,
+  "test": "HsapDO:0000004",
+  "probe": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organs&stage_id=HsapDO:0000004&stage_children=on",
+  "pattern": "^(FBvd|XtroDO|HsapDO|MmusDO)\\:\\d+$",
+  "state": "79:Unknown",
+  "more": "http://bgee.unil.ch/bgee/bgee",
+  "revision": 0
+}

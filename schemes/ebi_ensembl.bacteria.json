@@ -1,0 +1,7 @@
+{
+  "id": "ebi/ensembl.bacteria",
+  "target": {},
+  "type": "synonym",
+  "for": "ensembl.bacteria",
+  "revision": 0
+}

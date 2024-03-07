@@ -1,0 +1,27 @@
+{
+  "id": "z069/insdc.cds",
+  "target": {
+    "DEFAULT": "http://getentry.ddbj.nig.ac.jp/getentry/dad/{content}"
+  },
+  "type": "scheme",
+  "name": "INSDC CDS through DDBJ",
+  "alias": null,
+  "provider": "z069",
+  "provider_id": "MIR:00100809",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://getentry.ddbj.nig.ac.jp/getentry/dad/${ac}",
+  "redirect": "http://getentry.ddbj.nig.ac.jp/getentry/dad/{content}",
+  "description": "The coding sequence or protein identifiers as maintained in INSDC.",
+  "subject": null,
+  "location": "Japan",
+  "synonym": "Ontology for miRNA Target",
+  "institution": "DNA Data Bank of Japan, Mishima, Shizuoka",
+  "prefixed": 0,
+  "test": "AAA35559",
+  "probe": "http://getentry.ddbj.nig.ac.jp/getentry/dad/AAA35559",
+  "pattern": "^([A-Z]\\d{5}|[A-Z]{2}\\d{6}|[A-Z]{4}\\d{8}|[A-J][A-Z]{2}\\d{5})(\\.\\d+)?$",
+  "state": "83:Up",
+  "more": "http://getentry.ddbj.nig.ac.jp",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "genecards",
+  "target": {
+    "DEFAULT": "https://www.genecards.org/cgi-bin/carddisp.pl?gene={content}"
+  },
+  "type": "scheme",
+  "name": "GeneCards at Weizmann Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100407",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.genecards.org/cgi-bin/carddisp.pl?gene=${ac}",
+  "redirect": "https://www.genecards.org/cgi-bin/carddisp.pl?gene={content}",
+  "description": "The GeneCards human gene database stores gene related transcriptomic, genetic, proteomic, functional and disease information. It uses standard nomenclature and approved gene symbols. GeneCards presents a complete summary for each human gene.",
+  "subject": "human; gene",
+  "location": "Israel",
+  "synonym": "Metabolite and Tandem Mass Spectrometry Database",
+  "institution": "Department of Molecular Genetics, Weizmann Institute of Science, Rehovot",
+  "prefixed": 0,
+  "test": "ABL1",
+  "probe": "https://www.genecards.org/cgi-bin/carddisp.pl?gene=ABL1",
+  "pattern": "^[A-Za-z-0-9_]+(\\@)?$",
+  "state": "71:Unknown",
+  "more": "http://www.genecards.org/",
+  "revision": 0
+}

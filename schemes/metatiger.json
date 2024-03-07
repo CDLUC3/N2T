@@ -1,0 +1,9 @@
+{
+  "id": "metatiger",
+  "target": {
+    "DEFAULT": "http://www.bioinformatics.leeds.ac.uk/metatiger/cgi_bin/pathway.cgi?organism=[{content}1]&network=[{content}2]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.bioinformatics.leeds.ac.uk/metatiger/cgi_bin/pathway.cgi?organism=[{content}1]&network=[{content}2]",
+  "revision": 0
+}

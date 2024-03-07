@@ -1,0 +1,27 @@
+{
+  "id": "hgmd",
+  "target": {
+    "DEFAULT": "http://www.hgmd.cf.ac.uk/ac/gene.php?gene={content}"
+  },
+  "type": "scheme",
+  "name": "HGMD at Cardiff University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100512",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.hgmd.cf.ac.uk/ac/gene.php?gene=${ac}",
+  "redirect": "http://www.hgmd.cf.ac.uk/ac/gene.php?gene={content}",
+  "description": "The Human Gene Mutation Database (HGMD) collates data on germ-line mutations in nuclear genes associated with human inherited disease. It includes information on single base-pair substitutions in coding, regulatory and splicing-relevant regions; micro-deletions and micro-insertions; indels; triplet repeat expansions as well as gross deletions; insertions; duplications; and complex rearrangements. Each mutation entry is unique, and includes cDNA reference sequences for most genes, splice junction sequences, disease-associated and functional polymorphisms, as well as links to data present in publicly available online locus-specific mutation databases.",
+  "subject": "disease; human; gene",
+  "location": "Wales",
+  "synonym": "Human Gene Mutation Database",
+  "institution": "Cardiff University, Cardiff",
+  "prefixed": 0,
+  "test": "CALM1",
+  "probe": "http://www.hgmd.cf.ac.uk/ac/gene.php?gene=CALM1",
+  "pattern": "^[A-Z_0-9]+$",
+  "state": "0:Unknown",
+  "more": "http://www.hgmd.cf.ac.uk/ac/index.php",
+  "revision": 0
+}

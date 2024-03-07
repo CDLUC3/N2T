@@ -1,0 +1,7 @@
+{
+  "id": "ebi/pfam",
+  "target": {},
+  "type": "synonym",
+  "for": "pfam",
+  "revision": 0
+}

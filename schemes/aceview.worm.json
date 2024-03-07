@@ -1,0 +1,27 @@
+{
+  "id": "aceview.worm",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/IEB/Research/Acembly/av.cgi?db=worm&c=Gene&l={content}"
+  },
+  "type": "scheme",
+  "name": "AceView Worm at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100363",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/IEB/Research/Acembly/av.cgi?db=worm&c=Gene&l=${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/IEB/Research/Acembly/av.cgi?db=worm&c=Gene&l={content}",
+  "description": "AceView provides a curated sequence representation of all public mRNA sequences (mRNAs from GenBank or RefSeq, and single pass cDNA sequences from dbEST and Trace). These are aligned on the genome and clustered into a minimal number of alternative transcript variants and grouped into genes. In addition, alternative features such as promoters, and expression in tissues is recorded. This collection references C. elegans genes and expression.",
+  "subject": "eukaryotic; gene",
+  "location": "USA",
+  "synonym": "AceView WormGenes",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "aap-1",
+  "probe": "https://www.ncbi.nlm.nih.gov/IEB/Research/Acembly/av.cgi?db=worm&c=Gene&l=aap-1",
+  "pattern": "^[a-z0-9-]+$",
+  "state": "98:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/IEB/Research/Acembly/index.html?worm",
+  "revision": 0
+}

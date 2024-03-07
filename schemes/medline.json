@@ -1,0 +1,9 @@
+{
+  "id": "medline",
+  "target": {
+    "DEFAULT": "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-view+MedlineFull+[medline-PMID:{content}]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-view+MedlineFull+[medline-PMID:{content}]",
+  "revision": 0
+}

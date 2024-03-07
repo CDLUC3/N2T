@@ -1,0 +1,9 @@
+{
+  "id": "esther",
+  "target": {
+    "DEFAULT": "http://bioweb.ensam.inra.fr/ESTHER/family?name={content}&class=Family"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioweb.ensam.inra.fr/ESTHER/family?name={content}&class=Family",
+  "revision": 0
+}

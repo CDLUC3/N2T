@@ -1,0 +1,27 @@
+{
+  "id": "oridb.schizo",
+  "target": {
+    "DEFAULT": "http://pombe.oridb.org/details.php?id={content}"
+  },
+  "type": "scheme",
+  "name": "OriDB Schizosaccharomyces at University of Nottingham",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100467",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://pombe.oridb.org/details.php?id=${ac}",
+  "redirect": "http://pombe.oridb.org/details.php?id={content}",
+  "description": "OriDB is a database of collated genome-wide mapping studies of confirmed and predicted replication origin sites in Saccharomyces cerevisiae and the fission yeast Schizosaccharomyces pombe. This collection references Schizosaccharomyces pombe.",
+  "subject": "eukaryotic; genome",
+  "location": "UK",
+  "synonym": "Drosophila RNAi Screening Cente; FlyRNAi",
+  "institution": "Centre for Genetics and Genomics, The University of Nottingham, Queen's Medical Centre, Nottingham",
+  "prefixed": 0,
+  "test": "1",
+  "probe": "http://pombe.oridb.org/details.php?id=1",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "http://pombe.oridb.org/index.php",
+  "revision": 0
+}

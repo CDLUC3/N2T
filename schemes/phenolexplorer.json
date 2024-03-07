@@ -1,0 +1,27 @@
+{
+  "id": "phenolexplorer",
+  "target": {
+    "DEFAULT": "http://phenol-explorer.eu/foods/{content}"
+  },
+  "type": "scheme",
+  "name": "Phenol-Explorer Database on Phenol content of foods",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100345",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://phenol-explorer.eu/foods/${ac}",
+  "redirect": "http://phenol-explorer.eu/foods/{content}",
+  "description": "Phenol-Explorer is an electronic database on polyphenol content in foods. Polyphenols form a wide group of natural antioxidants present in a large number of foods and beverages. They contribute to food characteristics such as taste, colour or shelf-life. They also participate in the prevention of several major chronic diseases such as cardiovascular diseases, diabetes, cancers, neurodegenerative diseases or osteoporosis.",
+  "subject": "chemical",
+  "location": "France and Canada",
+  "synonym": "Search Tool for Retrieval of Interacting Genes/Proteins",
+  "institution": "INRA and University of Alberta",
+  "prefixed": 0,
+  "test": "75",
+  "probe": "http://phenol-explorer.eu/foods/75",
+  "pattern": "^\\d+$",
+  "state": "98:Up",
+  "more": "http://www.phenol-explorer.eu/foods/",
+  "revision": 0
+}

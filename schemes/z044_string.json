@@ -1,0 +1,27 @@
+{
+  "id": "z044/string",
+  "target": {
+    "DEFAULT": "http://string.embl.de/interactions/{content}"
+  },
+  "type": "scheme",
+  "name": "STRING at Heidelberg",
+  "alias": null,
+  "provider": "z044",
+  "provider_id": "MIR:00100341",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://string.embl.de/interactions/${ac}",
+  "redirect": "http://string.embl.de/interactions/{content}",
+  "description": "STRING (Search Tool for Retrieval of Interacting Genes/Proteins) is a database of known and predicted protein interactions. The interactions include direct (physical) and indirect (functional) associations; they are derived from four sources:Genomic Context, High-throughput Experiments,(Conserved) Coexpression, Previous Knowledge. STRING quantitatively integrates interaction data from these sources for a large number of organisms, and transfers information between these organisms where applicable.",
+  "subject": "protein; interaction",
+  "location": "Germany",
+  "synonym": "Search Tool for Retrieval of Interacting Genes/Proteins",
+  "institution": "European Molecular Biology Laboratory, Heidelberg",
+  "prefixed": 0,
+  "test": "P53350",
+  "probe": "http://string.embl.de/interactions/P53350",
+  "pattern": "^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])|([0-9][A-Za-z0-9]{3})$",
+  "state": "67:Down",
+  "more": "http://string.embl.de/",
+  "revision": 0
+}

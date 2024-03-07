@@ -1,0 +1,27 @@
+{
+  "id": "ebi/taxonomy",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/Taxon:{content}"
+  },
+  "type": "scheme",
+  "name": "European Nucleotide Archive (ENA)",
+  "alias": "taxon",
+  "provider": "ebi",
+  "provider_id": "MIR:00100299",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ena/data/view/Taxon:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ena/data/view/Taxon:{content}",
+  "description": "The taxonomy contains the relationships between all living forms for which nucleic acid or protein sequence have been determined.",
+  "subject": "taxonomy",
+  "location": "UK",
+  "synonym": "NEWT; NCBI taxonomy; NCBITAXON",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "9606",
+  "probe": "https://www.ebi.ac.uk/ena/data/view/Taxon:9606",
+  "pattern": "^\\d+$",
+  "state": "100:Probably up",
+  "more": "https://www.ebi.ac.uk/ena/",
+  "revision": 0
+}

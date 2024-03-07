@@ -1,0 +1,27 @@
+{
+  "id": "signaling-gateway",
+  "target": {
+    "DEFAULT": "http://www.signaling-gateway.org/molecule/query?afcsid={content}"
+  },
+  "type": "scheme",
+  "name": "Signaling Gateway Molecule Pages",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100073",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.signaling-gateway.org/molecule/query?afcsid=${ac}",
+  "redirect": "http://www.signaling-gateway.org/molecule/query?afcsid={content}",
+  "description": "The Signaling Gateway provides  information on  mammalian proteins involved in cellular signaling.",
+  "subject": "mammalian; protein",
+  "location": "USA",
+  "synonym": "SGMP; Signaling Gateway Molecule Pages; UCSD - Molecule Pages; AfCS; UCSD Signaling Gateway Molecule Pages",
+  "institution": "UC San Diego",
+  "prefixed": 0,
+  "test": "A001094",
+  "probe": "http://www.signaling-gateway.org/molecule/query?afcsid=A001094",
+  "pattern": "A\\d{6}$",
+  "state": "96:Up",
+  "more": "http://www.signaling-gateway.org/molecule",
+  "revision": 0
+}

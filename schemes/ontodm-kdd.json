@@ -1,0 +1,9 @@
+{
+  "id": "ontodm-kdd",
+  "target": {
+    "DEFAULT": "https://The ontology was first developed under the OntoDM (Ontology of Data Mining is available at http://kt.ijs.si/panovp/OntoDM) ontology, but for generality and reuse purpose it was decided to export it as a separate ontology. Additionaly, the OntoDT ontology is based on and ISO/IEC 11404 (http://www.iso.org/iso/catalogue_detail.htm?csnumber=39479) standard and can be reused used independently by any domain ontology that requires representation and reasoning about general purpose datatypes."
+  },
+  "type": "commonspfx",
+  "redirect": "https://The ontology was first developed under the OntoDM (Ontology of Data Mining is available at http://kt.ijs.si/panovp/OntoDM) ontology, but for generality and reuse purpose it was decided to export it as a separate ontology. Additionaly, the OntoDT ontology is based on and ISO/IEC 11404 (http://www.iso.org/iso/catalogue_detail.htm?csnumber=39479) standard and can be reused used independently by any domain ontology that requires representation and reasoning about general purpose datatypes.",
+  "revision": 0
+}

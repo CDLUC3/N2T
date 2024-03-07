@@ -1,0 +1,27 @@
+{
+  "id": "pseudomonas",
+  "target": {
+    "DEFAULT": "http://www.pseudomonas.com/feature/show/?locus_tag={content}"
+  },
+  "type": "scheme",
+  "name": "Pseudomonas Genome Database at Simon Fraser University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100226",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.pseudomonas.com/feature/show/?locus_tag=${ac}",
+  "redirect": "http://www.pseudomonas.com/feature/show/?locus_tag={content}",
+  "description": "The Pseudomonas Genome Database is a resource for peer-reviewed, continually updated annotation for all Pseudomonas species. It includes gene and protein sequence information, as well as regulation and predicted function and annotation.",
+  "subject": "protein; microbial; gene",
+  "location": "Canada",
+  "synonym": "PGD; Pseudocap",
+  "institution": "Simon Fraser University, British Columbia",
+  "prefixed": 0,
+  "test": "PSEEN0001",
+  "probe": "http://www.pseudomonas.com/feature/show/?locus_tag=PSEEN0001",
+  "pattern": "^P\\w+$",
+  "state": "75:Up",
+  "more": "http://www.pseudomonas.com/",
+  "revision": 0
+}

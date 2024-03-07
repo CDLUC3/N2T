@@ -1,0 +1,9 @@
+{
+  "id": "howdy",
+  "target": {
+    "DEFAULT": "http://howdy.jst.go.jp/HOWDYCL/HOWDY.pl?Cls=GenBank&Key=UKEY&Val={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://howdy.jst.go.jp/HOWDYCL/HOWDY.pl?Cls=GenBank&Key=UKEY&Val={content}",
+  "revision": 0
+}

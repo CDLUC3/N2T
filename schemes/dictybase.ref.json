@@ -1,0 +1,9 @@
+{
+  "id": "dictybase.ref",
+  "target": {
+    "DEFAULT": "http://dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo={content}",
+  "revision": 0
+}

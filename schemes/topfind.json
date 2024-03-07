@@ -1,0 +1,27 @@
+{
+  "id": "topfind",
+  "target": {
+    "DEFAULT": "http://clipserve.clip.ubc.ca/topfind/proteins/{content}"
+  },
+  "type": "scheme",
+  "name": "TopFind at University of British Columbia",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100326",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://clipserve.clip.ubc.ca/topfind/proteins/${ac}",
+  "redirect": "http://clipserve.clip.ubc.ca/topfind/proteins/{content}",
+  "description": "TopFIND is a database of protein termini, terminus modifications and their proteolytic processing in the species: Homo sapiens, Mus musculus, Arabidopsis thaliana, Saccharomyces cerevisiae and Escherichia coli.",
+  "subject": "protein; domain",
+  "location": "Canada",
+  "synonym": "Bacterial protein tYrosine Kinase database",
+  "institution": "Department of Oral Biological and Medical Sciences, University of British Columbia, Vancouver",
+  "prefixed": 0,
+  "test": "Q9UKQ2",
+  "probe": "http://clipserve.clip.ubc.ca/topfind/proteins/Q9UKQ2",
+  "pattern": "^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])$",
+  "state": "94:Up",
+  "more": "http://clipserve.clip.ubc.ca/topfind",
+  "revision": 0
+}

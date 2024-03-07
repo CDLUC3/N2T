@@ -1,0 +1,27 @@
+{
+  "id": "asap",
+  "target": {
+    "DEFAULT": "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID={content}"
+  },
+  "type": "scheme",
+  "name": "ASAP at University of Wisconsin",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100364",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID=${ac}",
+  "redirect": "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID={content}",
+  "description": "ASAP (a systematic annotation package for community analysis of genomes) stores bacterial genome sequence and functional characterization data. It includes multiple genome sequences at various stages of analysis, corresponding experimental data and access to collections of related genome resources.",
+  "subject": "microbial; genome; gene",
+  "location": "USA",
+  "synonym": "AceView WormGenes",
+  "institution": "Animal Health and Biomedical Sciences, University of Wisconsin, Madison",
+  "prefixed": 0,
+  "test": "ABE-0009634",
+  "probe": "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID=ABE-0009634",
+  "pattern": "^[A-Za-z0-9-]+$",
+  "state": "100:Unknown",
+  "more": "http://asap.ahabs.wisc.edu/asap/home.php",
+  "revision": 0
+}

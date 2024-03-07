@@ -1,0 +1,27 @@
+{
+  "id": "hp",
+  "target": {
+    "DEFAULT": "http://compbio.charite.de/hpoweb/showterm?id=HP:{content}"
+  },
+  "type": "scheme",
+  "name": "Human Phenotype Ontology at Institute for Medical Genetics and Human Genetics",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100753",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://compbio.charite.de/hpoweb/showterm?id=HP:${ac}",
+  "redirect": "http://compbio.charite.de/hpoweb/showterm?id=HP:{content}",
+  "description": "The Human Phenotype Ontology (HPO) aims to provide a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM.",
+  "subject": "human; phenotype; ontology",
+  "location": "Germany",
+  "synonym": "HPO",
+  "institution": "Institute for Medical Genetics and Human Genetics, Charit&#xE9;-Universit&#xE4;tsmedizin, Berlin",
+  "prefixed": 1,
+  "test": "0000118",
+  "probe": "http://compbio.charite.de/hpoweb/showterm?id=HP:0000118",
+  "pattern": "^HP:\\d{7}$",
+  "state": "97:Probably up",
+  "more": "http://human-phenotype-ontology.github.io/",
+  "revision": 0
+}

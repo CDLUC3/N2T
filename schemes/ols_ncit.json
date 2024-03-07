@@ -1,0 +1,27 @@
+{
+  "id": "ols/ncit",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?short_form=NCIT_{content}"
+  },
+  "type": "scheme",
+  "name": "NCIt through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100868",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?short_form=NCIT_${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?short_form=NCIT_{content}",
+  "description": "NCI Thesaurus (NCIt) provides reference terminology covering vocabulary for clinical care, translational and basic research, and public information and administrative activities, providing a stable and unique identification code.",
+  "subject": "controlled vocabulary; ontology",
+  "location": "UK",
+  "synonym": "National Cancer Institute Thesaurus; NCI thesaurus",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "C16353",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?short_form=NCIT_C16353",
+  "pattern": "^C\\d+$",
+  "state": "0:Unknown",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/ncit",
+  "revision": 0
+}

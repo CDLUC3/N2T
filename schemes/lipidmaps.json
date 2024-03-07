@@ -1,0 +1,27 @@
+{
+  "id": "lipidmaps",
+  "target": {
+    "DEFAULT": "http://www.lipidmaps.org/data/LMSDRecord.php?LMID={content}"
+  },
+  "type": "scheme",
+  "name": "Department of Bioengineering and the San Diego Supercomputer Center",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100080",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.lipidmaps.org/data/LMSDRecord.php?LMID=${ac}",
+  "redirect": "http://www.lipidmaps.org/data/LMSDRecord.php?LMID={content}",
+  "description": "The LIPID MAPS Lipid Classification System is comprised of eight lipid categories, each with its own subclassification hierarchy. All lipids in the LIPID MAPS Structure Database (LMSD) have been classified using this system and have been assigned LIPID MAPS ID's which reflects their position in the classification hierarchy.",
+  "subject": "structure; taxonomy; lipid",
+  "location": "USA",
+  "synonym": "LMSD",
+  "institution": "University of California, San Diego",
+  "prefixed": 0,
+  "test": "LMPR0102010012",
+  "probe": "http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMPR0102010012",
+  "pattern": "^LM(FA|GL|GP|SP|ST|PR|SL|PK)[0-9]{4}([0-9a-zA-Z]{4,6})?$",
+  "state": "100:Up",
+  "more": "http://www.lipidmaps.org",
+  "revision": 0
+}

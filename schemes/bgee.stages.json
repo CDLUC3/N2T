@@ -1,0 +1,9 @@
+{
+  "id": "bgee.stages",
+  "target": {
+    "DEFAULT": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organs&stage_id="
+  },
+  "type": "commonspfx",
+  "redirect": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organs&stage_id=",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "selenodb",
+  "target": {
+    "DEFAULT": "http://www.selenodb.org/cgi-perl/feature_report.pl?feature={content}_1.0"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.selenodb.org/cgi-perl/feature_report.pl?feature={content}_1.0",
+  "revision": 0
+}

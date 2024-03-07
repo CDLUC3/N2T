@@ -1,0 +1,27 @@
+{
+  "id": "uo",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/UO/UO:{content}"
+  },
+  "type": "scheme",
+  "name": "Unit Ontology through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100243",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/UO/UO:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/UO/UO:{content}",
+  "description": "Ontology of standardized units",
+  "subject": "ontology",
+  "location": "USA",
+  "synonym": "UO",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 1,
+  "test": "0000080",
+  "probe": "http://purl.bioontology.org/ontology/UO/UO:0000080",
+  "pattern": "^UO:\\d{7}?",
+  "state": "97:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/UO",
+  "revision": 0
+}

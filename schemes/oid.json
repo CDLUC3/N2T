@@ -1,0 +1,27 @@
+{
+  "id": "oid",
+  "target": {
+    "DEFAULT": "http://www.oid-info.com/cgi-bin/display?oid={content}&submit=Display&action=display"
+  },
+  "type": "scheme",
+  "name": "OID Repository",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100897",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.oid-info.com/cgi-bin/display?oid=${ac}&submit=Display&action=display",
+  "redirect": "http://www.oid-info.com/cgi-bin/display?oid={content}&submit=Display&action=display",
+  "description": "OIDs provide a persistent identification of objects based on a hierarchical structure of Registration Authorities (RA), where each parent has an object identifier and allocates object identifiers to child nodes.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Open Citation Identifier",
+  "institution": "Orange SA",
+  "prefixed": 0,
+  "test": "2.16.840",
+  "probe": "http://www.oid-info.com/cgi-bin/display?oid=2.16.840&submit=Display&action=display",
+  "pattern": "^[\\d.]+$",
+  "state": "0:Unknown",
+  "more": "http://www.oid-info.com/introduction.htm",
+  "revision": 0
+}

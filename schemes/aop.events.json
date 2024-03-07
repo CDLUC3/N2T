@@ -1,0 +1,27 @@
+{
+  "id": "aop.events",
+  "target": {
+    "DEFAULT": "https://aopwiki.org/events/{content}"
+  },
+  "type": "scheme",
+  "name": "AOPWiki (Key Event)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100870",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://aopwiki.org/events/${ac}",
+  "redirect": "https://aopwiki.org/events/{content}",
+  "description": "International repository of Adverse Outcome Pathways.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "nmrCV",
+  "institution": "European Commision - DG Joint Research Centre and U.S Environmental Protection Agency",
+  "prefixed": 0,
+  "test": "3",
+  "probe": "https://aopwiki.org/events/3",
+  "pattern": "^\\d+$",
+  "state": "0:Unknown",
+  "more": "https://aopwiki.org/",
+  "revision": 0
+}

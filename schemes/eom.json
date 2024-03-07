@@ -1,0 +1,9 @@
+{
+  "id": "eom",
+  "target": {
+    "DEFAULT": "http://elementsofmorphology.nih.gov/index.cgi?tid="
+  },
+  "type": "commonspfx",
+  "redirect": "http://elementsofmorphology.nih.gov/index.cgi?tid=",
+  "revision": 0
+}

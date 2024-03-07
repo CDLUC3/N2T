@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/protclustdb",
+  "target": {},
+  "type": "synonym",
+  "for": "protclustdb",
+  "revision": 0
+}

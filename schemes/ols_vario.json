@@ -1,0 +1,27 @@
+{
+  "id": "ols/vario",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/vario/terms?obo_id=VariO:{content}"
+  },
+  "type": "scheme",
+  "name": "VariO through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100677",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/vario/terms?obo_id=VariO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/vario/terms?obo_id=VariO:{content}",
+  "description": "The Variation Ontology (VariO) is an ontology for the standardized, systematic description of effects, consequences and mechanisms of variations. It describes the effects of variations at the DNA, RNA and/or protein level.",
+  "subject": "ontology; DNA; protein",
+  "location": "UK",
+  "synonym": "Variation Ontology",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "0294",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/vario/terms?obo_id=VariO:0294",
+  "pattern": "^VariO:\\d+$",
+  "state": "100:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/vario",
+  "revision": 0
+}

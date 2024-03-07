@@ -1,0 +1,27 @@
+{
+  "id": "prosite",
+  "target": {
+    "DEFAULT": "https://prosite.expasy.org/{content}"
+  },
+  "type": "scheme",
+  "name": "ExPASy PROSITE",
+  "alias": null,
+  "provider": "expasy",
+  "provider_id": "MIR:00100056",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://prosite.expasy.org/${ac}",
+  "redirect": "https://prosite.expasy.org/{content}",
+  "description": "PROSITE consists of documentation entries describing protein domains, families and functional sites as well as associated patterns and profiles to identify them.",
+  "subject": "domain; protein",
+  "location": "Switzerland",
+  "synonym": "GenBank; INSDC; International Nucleotide Sequence Database Collaboration; NCBI nucleotide",
+  "institution": "Swiss Institute of Bioinformatics (SIB)",
+  "prefixed": 0,
+  "test": "PS00001",
+  "probe": "https://prosite.expasy.org/PS00001",
+  "pattern": "^PS\\d{5}$",
+  "state": "96:Unknown",
+  "more": "https://www.expasy.org/prosite/",
+  "revision": 0
+}

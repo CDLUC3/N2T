@@ -1,0 +1,27 @@
+{
+  "id": "z015/taxonomy",
+  "target": {
+    "DEFAULT": "https://purl.uniprot.org/taxonomy/{content}"
+  },
+  "type": "scheme",
+  "name": "Taxonomy through UniProt PURL",
+  "alias": "taxon",
+  "provider": "z015",
+  "provider_id": "MIR:00100019",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://purl.uniprot.org/taxonomy/${ac}",
+  "redirect": "https://purl.uniprot.org/taxonomy/{content}",
+  "description": "The taxonomy contains the relationships between all living forms for which nucleic acid or protein sequence have been determined.",
+  "subject": "taxonomy",
+  "location": "USA, UK and Switzerland",
+  "synonym": "NEWT; NCBI taxonomy; NCBITAXON",
+  "institution": "UniProt Consortium",
+  "prefixed": 0,
+  "test": "9606",
+  "probe": "https://purl.uniprot.org/taxonomy/9606",
+  "pattern": "^\\d+$",
+  "state": "99:Unknown",
+  "more": "https://www.uniprot.org/taxonomy/",
+  "revision": 0
+}

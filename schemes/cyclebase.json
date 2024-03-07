@@ -1,0 +1,9 @@
+{
+  "id": "cyclebase",
+  "target": {
+    "DEFAULT": "http://www.cyclebase.org/displaygene.action?geneName={content}&taxId=[$taxid]"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.cyclebase.org/displaygene.action?geneName={content}&taxId=[$taxid]",
+  "revision": 0
+}

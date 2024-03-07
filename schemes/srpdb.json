@@ -1,0 +1,9 @@
+{
+  "id": "srpdb",
+  "target": {
+    "DEFAULT": "http://rnp.uthct.edu/rnp/SRPDB/rna/sequences/fasta/{content}.fasta"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rnp.uthct.edu/rnp/SRPDB/rna/sequences/fasta/{content}.fasta",
+  "revision": 0
+}

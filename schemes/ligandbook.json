@@ -1,0 +1,27 @@
+{
+  "id": "ligandbook",
+  "target": {
+    "DEFAULT": "https://ligandbook.org/package/{content}"
+  },
+  "type": "scheme",
+  "name": "LigandBook",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100912",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://ligandbook.org/package/${ac}",
+  "redirect": "https://ligandbook.org/package/{content}",
+  "description": "Ligandbook is a public repository for force field parameters with a special emphasis on small molecules and known ligands of proteins. It acts as a warehouse for parameter files that are supplied by the community.",
+  "subject": null,
+  "location": "France",
+  "synonym": "Open Citation Identifier",
+  "institution": "Institut de Chimie des Substances Naturelles",
+  "prefixed": 0,
+  "test": "785",
+  "probe": "https://ligandbook.org/package/785",
+  "pattern": "^[0-9]+$",
+  "state": "0:Unknown",
+  "more": "https://ligandbook.org/",
+  "revision": 0
+}

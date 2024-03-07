@@ -1,0 +1,9 @@
+{
+  "id": "seedgenes",
+  "target": {
+    "DEFAULT": "http://www.seedgenes.org/SeedGeneProfile?geneSymbol={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.seedgenes.org/SeedGeneProfile?geneSymbol={content}",
+  "revision": 0
+}

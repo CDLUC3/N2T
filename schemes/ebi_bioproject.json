@@ -1,0 +1,27 @@
+{
+  "id": "ebi/bioproject",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/{content}"
+  },
+  "type": "scheme",
+  "name": "BioProject at European Nucleotide Archive (ENA)",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100446",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ena/data/view/${ac}",
+  "redirect": "https://www.ebi.ac.uk/ena/data/view/{content}",
+  "description": "BioProject provides an organizational framework to access metadata about research projects and the data from the projects that are deposited into different databases. It provides information about a project&#x2019;s scope, material, objectives, funding source and general relevance categories.",
+  "subject": "annotation",
+  "location": "UK",
+  "synonym": "protein genbank identifier",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "PRJDB3",
+  "probe": "https://www.ebi.ac.uk/ena/data/view/PRJDB3",
+  "pattern": "^PRJ[DEN][A-Z]\\d+$",
+  "state": "100:Probably up",
+  "more": "https://www.ebi.ac.uk/ena/",
+  "revision": 0
+}

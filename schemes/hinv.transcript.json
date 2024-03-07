@@ -1,0 +1,27 @@
+{
+  "id": "hinv.transcript",
+  "target": {
+    "DEFAULT": "http://h-invitational.jp/hinv/spsoup/transcript_view?hit_id={content}"
+  },
+  "type": "scheme",
+  "name": "H-Invitational Transcript View at BIRC",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100214",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://h-invitational.jp/hinv/spsoup/transcript_view?hit_id=${ac}",
+  "redirect": "http://h-invitational.jp/hinv/spsoup/transcript_view?hit_id={content}",
+  "description": "H-Invitational Database (H-InvDB) is an integrated database of human genes and transcripts. It provides curated annotations of human genes and transcripts including gene structures, alternative splicing isoforms, non-coding functional RNAs, protein functions, functional domains, sub-cellular localizations, metabolic pathways, protein 3D structure, genetic polymorphisms (SNPs, indels and microsatellite repeats), relation with diseases, gene expression profiling, molecular evolutionary features, protein-protein interactions (PPIs) and gene families/groups. This datatype provides access to the 'Transcript' view.",
+  "subject": "human; expression",
+  "location": "Japan",
+  "synonym": "GRIN Taxonomy for Plants; Germplasm Resources Information Network Plant Taxonomy",
+  "institution": "BIRC, Tokyo",
+  "prefixed": 0,
+  "test": "HIT000195363",
+  "probe": "http://h-invitational.jp/hinv/spsoup/transcript_view?hit_id=HIT000195363",
+  "pattern": "^HIT\\d{9}(\\.\\d+)?$",
+  "state": "99:Up",
+  "more": "http://h-invitational.jp/hinv/ahg-db/index.jsp",
+  "revision": 0
+}

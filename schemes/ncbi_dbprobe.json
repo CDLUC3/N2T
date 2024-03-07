@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/dbprobe",
+  "target": {},
+  "type": "synonym",
+  "for": "dbprobe",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "microkit",
+  "target": {
+    "DEFAULT": "http://microkit.biocuckoo.org/html/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://microkit.biocuckoo.org/html/{content}.html",
+  "revision": 0
+}

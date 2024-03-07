@@ -1,0 +1,9 @@
+{
+  "id": "scmd",
+  "target": {
+    "DEFAULT": "http://yeast.gi.k.u-tokyo.ac.jp/datamine/ViewStats.do?orf={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://yeast.gi.k.u-tokyo.ac.jp/datamine/ViewStats.do?orf={content}",
+  "revision": 0
+}

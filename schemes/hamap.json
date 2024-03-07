@@ -1,0 +1,27 @@
+{
+  "id": "hamap",
+  "target": {
+    "DEFAULT": "https://hamap.expasy.org/unirule/{content}"
+  },
+  "type": "scheme",
+  "name": "HAPMAP at Swiss Institute of Bioinformatics",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100374",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://hamap.expasy.org/unirule/${ac}",
+  "redirect": "https://hamap.expasy.org/unirule/{content}",
+  "description": "HAMAP is a system that identifies and semi-automatically annotates proteins that are part of well-conserved and orthologous microbial families or subfamilies. These are used to build rules which are used to propagate annotations to member bacterial, archaeal and plastid-encoded protein entries.",
+  "subject": "annotation; microbial",
+  "location": "Switzerland",
+  "synonym": "High-quality Automated and Manual Annotation of microbial Proteomes",
+  "institution": "Swiss Institute of Bioinformatics, Geneva",
+  "prefixed": 0,
+  "test": "MF_01400",
+  "probe": "https://hamap.expasy.org/unirule/MF_01400",
+  "pattern": "^MF_\\d+$",
+  "state": "77:Down",
+  "more": "https://hamap.expasy.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "bptl/chebi",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/CHEBI/CHEBI:{content}"
+  },
+  "type": "scheme",
+  "name": "ChEBI through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100565",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/CHEBI/CHEBI:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/CHEBI/CHEBI:{content}",
+  "description": "Chemical Entities of Biological Interest (ChEBI) is a freely available dictionary of molecular entities focused on 'small' chemical compounds.",
+  "subject": "metabolite; ontology; chemical",
+  "location": "USA",
+  "synonym": null,
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 1,
+  "test": "36927",
+  "probe": "http://purl.bioontology.org/ontology/CHEBI/CHEBI:36927",
+  "pattern": "^CHEBI:\\d+$",
+  "state": "95:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/CHEBI",
+  "revision": 0
+}

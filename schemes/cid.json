@@ -1,0 +1,9 @@
+{
+  "id": "cid",
+  "target": {
+    "DEFAULT": "http://oxytricha.princeton.edu/cgi-bin/get_MDS_IES_Info.cgi?num={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://oxytricha.princeton.edu/cgi-bin/get_MDS_IES_Info.cgi?num={content}",
+  "revision": 0
+}

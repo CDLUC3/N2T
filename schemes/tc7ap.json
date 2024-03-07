@@ -1,0 +1,9 @@
+{
+  "id": "tc7ap",
+  "target": {
+    "DEFAULT": "http://www.chr7.org/cgi-bin/geneview?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.chr7.org/cgi-bin/geneview?id={content}",
+  "revision": 0
+}

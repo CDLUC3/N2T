@@ -1,0 +1,27 @@
+{
+  "id": "mint",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/intact/query/interaction_id:{content}"
+  },
+  "type": "scheme",
+  "name": "MINT subset through IntAct",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100654",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/intact/query/interaction_id:${ac}",
+  "redirect": "https://www.ebi.ac.uk/intact/query/interaction_id:{content}",
+  "description": "The Molecular INTeraction database (MINT) stores, in a structured format, information about molecular interactions by extracting experimental details from work published in peer-reviewed journals.",
+  "subject": "protein; interaction",
+  "location": "UK",
+  "synonym": "TCDB",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "MINT-7905142",
+  "probe": "https://www.ebi.ac.uk/intact/query/interaction_id:MINT-7905142",
+  "pattern": "^MINT\\-\\d{1,7}$",
+  "state": "94:Up",
+  "more": "https://www.ebi.ac.uk/intact/",
+  "revision": 0
+}

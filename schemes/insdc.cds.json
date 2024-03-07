@@ -1,0 +1,27 @@
+{
+  "id": "insdc.cds",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/{content}"
+  },
+  "type": "scheme",
+  "name": "INSDC CDS through NCBI",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100808",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/protein/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/protein/{content}",
+  "description": "The coding sequence or protein identifiers as maintained in INSDC.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Ontology for miRNA Target",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "AAA35559",
+  "probe": "https://www.ncbi.nlm.nih.gov/protein/AAA35559",
+  "pattern": "^([A-Z]\\d{5}|[A-Z]{2}\\d{6}|[A-Z]{4}\\d{8}|[A-J][A-Z]{2}\\d{5})(\\.\\d+)?$",
+  "state": "99:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/protein/",
+  "revision": 0
+}

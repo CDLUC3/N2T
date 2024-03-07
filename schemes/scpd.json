@@ -1,0 +1,9 @@
+{
+  "id": "scpd",
+  "target": {
+    "DEFAULT": "http://rulai.cshl.edu/cgi-bin/SCPD/getgene2?{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rulai.cshl.edu/cgi-bin/SCPD/getgene2?{content}",
+  "revision": 0
+}

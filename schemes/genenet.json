@@ -1,0 +1,9 @@
+{
+  "id": "genenet",
+  "target": {
+    "DEFAULT": "http://wwwmgs.bionet.nsc.ru/mgs/gnw/genenet/viewer/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://wwwmgs.bionet.nsc.ru/mgs/gnw/genenet/viewer/{content}.html",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "gtop",
+  "target": {
+    "DEFAULT": "http://spock.genes.nig.ac.jp/~genome/cgi-bin/mas.pl.cgi?org=[?species]&gene={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://spock.genes.nig.ac.jp/~genome/cgi-bin/mas.pl.cgi?org=[?species]&gene={content}",
+  "revision": 0
+}

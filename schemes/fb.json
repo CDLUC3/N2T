@@ -1,0 +1,27 @@
+{
+  "id": "fb",
+  "target": {
+    "DEFAULT": "https://www.alliancegenome.org/gene/FB:{content}"
+  },
+  "type": "scheme",
+  "name": "FlyBase through the Alliance of Genome Resources",
+  "alias": null,
+  "provider": "agr",
+  "provider_id": "MIR:00100904",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://www.alliancegenome.org/gene/FB:${ac}",
+  "redirect": "https://www.alliancegenome.org/gene/FB:{content}",
+  "description": "FlyBase is the database of the Drosophila Genome Projects and of associated literature.",
+  "subject": "eukaryotic; genome; nucleotide",
+  "location": "USA",
+  "synonym": "GenBank; INSDC; International Nucleotide Sequence Database Collaboration; NCBI nucleotide",
+  "institution": "Alliance of Genome Resources",
+  "prefixed": 0,
+  "test": "FBgn0011293",
+  "probe": "https://www.alliancegenome.org/gene/FB:FBgn0011293",
+  "pattern": "^FB\\w{2}\\d{7}$",
+  "state": "0:Unknown",
+  "more": "https://www.alliancegenome.org",
+  "revision": 0
+}

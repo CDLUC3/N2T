@@ -1,0 +1,27 @@
+{
+  "id": "nbn",
+  "target": {
+    "DEFAULT": "http://nbn-resolving.org/resolver?identifier=urn:nbn:{content}&verb=redirect"
+  },
+  "type": "scheme",
+  "name": "NBN through URN Resolver at German National Library",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100488",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://nbn-resolving.org/resolver?identifier=urn:nbn:${ac}&verb=redirect",
+  "redirect": "http://nbn-resolving.org/resolver?identifier=urn:nbn:{content}&verb=redirect",
+  "description": "The National Bibliography Number (NBN), is a URN-based publication identifier system employed by a variety of national libraries such as those of Germany, the Netherlands and Switzerland.  They are used to identify documents archived in national libraries, in their native format or language, and are typically used for documents which do not have a publisher-assigned identifier.",
+  "subject": "bibliography",
+  "location": "Germany",
+  "synonym": "NBN",
+  "institution": "Deutsche Nationalbibliothek, Frankfurt",
+  "prefixed": 0,
+  "test": "urn:nbn:fi:tkk-004781",
+  "probe": "http://nbn-resolving.org/resolver?identifier=urn:nbn:fi:tkk-004781&verb=redirect",
+  "pattern": "^urn\\:nbn\\:[A-Za-z_0-9]+\\:([A-Za-z_0-9]+)-[A-Za-z_0-9]+$",
+  "state": "99:Unknown",
+  "more": "http://nbn-resolving.org/resolve_urn.htm",
+  "revision": 0
+}

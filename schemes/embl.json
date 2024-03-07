@@ -1,0 +1,9 @@
+{
+  "id": "embl",
+  "target": {
+    "DEFAULT": "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-page+EntryPage+-e+[EMBL:{content}]+-view+EmblEntry"
+  },
+  "type": "commonspfx",
+  "redirect": "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-page+EntryPage+-e+[EMBL:{content}]+-view+EmblEntry",
+  "revision": 0
+}

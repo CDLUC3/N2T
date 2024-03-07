@@ -1,0 +1,9 @@
+{
+  "id": "ezcatdb",
+  "target": {
+    "DEFAULT": "http://mbs.cbrc.jp/EzCatDB/search/get.do?dbcode={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://mbs.cbrc.jp/EzCatDB/search/get.do?dbcode={content}",
+  "revision": 0
+}

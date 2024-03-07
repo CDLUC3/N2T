@@ -1,0 +1,9 @@
+{
+  "id": "pharmgkb",
+  "target": {
+    "DEFAULT": "http://www.pharmgkb.org/do/serve?objId={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.pharmgkb.org/do/serve?objId={content}",
+  "revision": 0
+}

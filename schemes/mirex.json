@@ -1,0 +1,27 @@
+{
+  "id": "mirex",
+  "target": {
+    "DEFAULT": "http://comgen.pl/mirex1/?page=results/record&name={content}&exref=pp2a&limit=yes"
+  },
+  "type": "scheme",
+  "name": "mirEX at Adam Mickiewicz University",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100423",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://comgen.pl/mirex1/?page=results/record&name=${ac}&exref=pp2a&limit=yes",
+  "redirect": "http://comgen.pl/mirex1/?page=results/record&name={content}&exref=pp2a&limit=yes",
+  "description": "mirEX is a comprehensive platform for comparative analysis of primary microRNA expression data, storing RT&#x2013;qPCR-based gene expression profile over seven development stages of Arabidopsis. It also provides RNA structural models, publicly available deep sequencing results and experimental procedure details. This collection provides profile information for a single microRNA over all development stages.",
+  "subject": "gene; plant; expression",
+  "location": "Poland",
+  "synonym": "University of Minnesota Biocatalysis/Biodegradation Database (Pathway)",
+  "institution": "Institute of Molecular Biology, Adam Mickiewicz University, Poznan",
+  "prefixed": 0,
+  "test": "165a",
+  "probe": "http://comgen.pl/mirex1/?page=results/record&name=165a&exref=pp2a&limit=yes",
+  "pattern": "^\\d+(\\w+)?$",
+  "state": "79:Up",
+  "more": "http://comgen.pl/mirex/?page=home",
+  "revision": 0
+}

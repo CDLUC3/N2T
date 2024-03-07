@@ -1,0 +1,9 @@
+{
+  "id": "ndb",
+  "target": {
+    "DEFAULT": "http://ndbserver.rutgers.edu/atlas/nmr/structures/id/{content}/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ndbserver.rutgers.edu/atlas/nmr/structures/id/{content}/{content}.html",
+  "revision": 0
+}

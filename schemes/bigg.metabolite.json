@@ -1,0 +1,27 @@
+{
+  "id": "bigg.metabolite",
+  "target": {
+    "DEFAULT": "http://bigg.ucsd.edu/models/universal/metabolites/{content}"
+  },
+  "type": "scheme",
+  "name": "BiGG Metabolite at University of Cakifornia",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100733",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://bigg.ucsd.edu/models/universal/metabolites/${ac}",
+  "redirect": "http://bigg.ucsd.edu/models/universal/metabolites/{content}",
+  "description": "BiGG is a knowledgebase of Biochemically, Genetically and Genomically structured genome-scale metabolic network reconstructions. It more published genome-scale metabolic networks into a single database with a set of stardized identifiers called BiGG IDs. Genes in the BiGG models are mapped to NCBI genome annotations, and metabolites are linked to many external databases (KEGG, PubChem, and many more). This collection references individual metabolotes.",
+  "subject": "model",
+  "location": "USA",
+  "synonym": "CPC",
+  "institution": "Systems Biology Research Group at the University of California, San Diego",
+  "prefixed": 0,
+  "test": "12dgr161",
+  "probe": "http://bigg.ucsd.edu/models/universal/metabolites/12dgr161",
+  "pattern": "^[a-z_A-Z0-9]+$",
+  "state": "100:Up",
+  "more": "http://bigg.ucsd.edu/universal/metabolites",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "matrixdb",
+  "target": {
+    "DEFAULT": "http://matrixdb.ibcp.fr/cgi-bin/model/report/default?name={content}&class=Association"
+  },
+  "type": "commonspfx",
+  "redirect": "http://matrixdb.ibcp.fr/cgi-bin/model/report/default?name={content}&class=Association",
+  "revision": 0
+}

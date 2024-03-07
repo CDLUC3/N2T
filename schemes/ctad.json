@@ -1,0 +1,9 @@
+{
+  "id": "ctad",
+  "target": {
+    "DEFAULT": "http://www.cta.lncc.br/modelo.php?idgene={content}&idmeta=11"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.cta.lncc.br/modelo.php?idgene={content}&idmeta=11",
+  "revision": 0
+}

@@ -1,0 +1,7 @@
+{
+  "id": "rcsb/pdb.ligand",
+  "target": {},
+  "type": "synonym",
+  "for": "pdb.ligand",
+  "revision": 0
+}

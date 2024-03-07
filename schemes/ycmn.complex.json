@@ -1,0 +1,9 @@
+{
+  "id": "ycmn.complex",
+  "target": {
+    "DEFAULT": "http://www.comp-sys-bio.org/yeastnet/v4/showComplexes.php?complex_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.comp-sys-bio.org/yeastnet/v4/showComplexes.php?complex_id={content}",
+  "revision": 0
+}

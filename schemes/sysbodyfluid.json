@@ -1,0 +1,9 @@
+{
+  "id": "sysbodyfluid",
+  "target": {
+    "DEFAULT": "http://www.biosino.org/bodyfluid/protein.jsp?proteinID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.biosino.org/bodyfluid/protein.jsp?proteinID={content}",
+  "revision": 0
+}

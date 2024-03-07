@@ -1,0 +1,27 @@
+{
+  "id": "imex",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/intact/imex/main.xhtml?query={content}"
+  },
+  "type": "scheme",
+  "name": "IMEx Consortium running at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100155",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/intact/imex/main.xhtml?query=${ac}",
+  "redirect": "https://www.ebi.ac.uk/intact/imex/main.xhtml?query={content}",
+  "description": "The International Molecular Exchange (IMEx) is a consortium of molecular interaction databases which collaborate to share manual curation efforts and provide accessibility to multiple information sources.",
+  "subject": "protein; interaction",
+  "location": "UK",
+  "synonym": "Entrez Structure; MMDB",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "IM-19210-3",
+  "probe": "https://www.ebi.ac.uk/intact/imex/main.xhtml?query=IM-19210-3",
+  "pattern": "^IM-\\d+(-?)(\\d+?)$",
+  "state": "96:Up",
+  "more": "https://www.imexconsortium.org/",
+  "revision": 0
+}

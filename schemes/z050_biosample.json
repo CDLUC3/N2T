@@ -1,0 +1,27 @@
+{
+  "id": "z050/biosample",
+  "target": {
+    "DEFAULT": "http://trace.ddbj.nig.ac.jp/BSSearch/biosample?acc={content}"
+  },
+  "type": "scheme",
+  "name": "BioSample at DNA Data Bank of Japan",
+  "alias": null,
+  "provider": "z050",
+  "provider_id": "MIR:00100707",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://trace.ddbj.nig.ac.jp/BSSearch/biosample?acc=${ac}",
+  "redirect": "http://trace.ddbj.nig.ac.jp/BSSearch/biosample?acc={content}",
+  "description": "The BioSample Database stores information about biological samples used in molecular experiments, such as sequencing, gene expression or proteomics. It includes reference samples, such as cell lines, which are repeatedly used in experiments. Accession numbers for the reference samples will be exchanged with a similar database at NCBI, and DDBJ (Japan). Record access may be affected due to different release cycles and inter-institutional synchronisation.",
+  "subject": "annotation",
+  "location": "Japan",
+  "synonym": "BioSDe; BioSdn",
+  "institution": "Institution DNA Data Bank of Japan, Shizuoka",
+  "prefixed": 0,
+  "test": "SAMD00005257",
+  "probe": "http://trace.ddbj.nig.ac.jp/BSSearch/biosample?acc=SAMD00005257",
+  "pattern": "^SAM[NED](\\w)?\\d+$",
+  "state": "94:Up",
+  "more": "http://trace.ddbj.nig.ac.jp/biosample/",
+  "revision": 0
+}

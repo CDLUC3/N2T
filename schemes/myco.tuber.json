@@ -1,0 +1,27 @@
+{
+  "id": "myco.tuber",
+  "target": {
+    "DEFAULT": "http://tuberculist.epfl.ch/quicksearch.php?gene+name={content}"
+  },
+  "type": "scheme",
+  "name": "MycoBrowser tuberculosis at Global Health Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100275",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://tuberculist.epfl.ch/quicksearch.php?gene+name=${ac}",
+  "redirect": "http://tuberculist.epfl.ch/quicksearch.php?gene+name={content}",
+  "description": "Mycobrowser is a resource that provides both in silico generated and manually reviewed information within databases dedicated to the complete genomes of Mycobacterium tuberculosis, Mycobacterium leprae, Mycobacterium marinum and Mycobacterium smegmatis. This collection references Mycobacteria tuberculosis information.",
+  "subject": "sequence; genome",
+  "location": "Switzerland",
+  "synonym": "TubercuList",
+  "institution": "Global Health Institute,  Lausanne",
+  "prefixed": 0,
+  "test": "Rv1908c",
+  "probe": "http://tuberculist.epfl.ch/quicksearch.php?gene+name=Rv1908c",
+  "pattern": "^Rv\\d{4}(A|B|c)?$",
+  "state": "96:Up",
+  "more": "http://tuberculist.epfl.ch/",
+  "revision": 0
+}

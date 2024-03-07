@@ -1,0 +1,27 @@
+{
+  "id": "iuphar.ligand",
+  "target": {
+    "DEFAULT": "http://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId={content}"
+  },
+  "type": "scheme",
+  "name": "IUPHAR ligand at University of Edinburgh",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100592",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=${ac}",
+  "redirect": "http://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId={content}",
+  "description": "The IUPHAR Compendium details the molecular, biophysical and pharmacological properties of identified mammalian sodium, calcium and potassium channels, as well as the related cyclic nucleotide-modulated ion channels and the recently described transient receptor potential channels. It includes information on nomenclature systems, and on inter and intra-species molecular structure variation. This collection references ligands.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Database of Arabidopsis transcription factors",
+  "institution": "Centre for Cardiovascular Science, University of Edinburgh, Edinburgh",
+  "prefixed": 0,
+  "test": "1755",
+  "probe": "http://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=1755",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://www.guidetopharmacology.org/GRAC/LigandListForward?database=all",
+  "revision": 0
+}

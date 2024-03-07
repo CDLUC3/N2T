@@ -1,0 +1,27 @@
+{
+  "id": "rouge",
+  "target": {
+    "DEFAULT": "http://www.kazusa.or.jp/rouge/gfpage/{content}/"
+  },
+  "type": "scheme",
+  "name": "Rouge at Kazusa DNA Research Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100375",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.kazusa.or.jp/rouge/gfpage/${ac}/",
+  "redirect": "http://www.kazusa.or.jp/rouge/gfpage/{content}/",
+  "description": "The Rouge protein database contains results from sequence analysis of novel large (>4 kb) cDNAs identified in the Kazusa cDNA sequencing project.",
+  "subject": "protein; gene; mammalian",
+  "location": "Japan",
+  "synonym": "Rodent Unidentified Gene-Encoded Large Proteins",
+  "institution": "Kazusa DNA Research Institute, Chiba",
+  "prefixed": 0,
+  "test": "mKIAA4200",
+  "probe": "http://www.kazusa.or.jp/rouge/gfpage/mKIAA4200/",
+  "pattern": "^m\\w+$",
+  "state": "99:Up",
+  "more": "http://www.kazusa.or.jp/rouge/",
+  "revision": 0
+}

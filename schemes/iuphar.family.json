@@ -1,0 +1,27 @@
+{
+  "id": "iuphar.family",
+  "target": {
+    "DEFAULT": "http://www.guidetopharmacology.org/GRAC/FamilyDisplayForward?familyId={content}"
+  },
+  "type": "scheme",
+  "name": "The IUPHAR/BPS Guide to PHARMACOLOGY",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100708",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "http://www.guidetopharmacology.org/GRAC/FamilyDisplayForward?familyId=${ac}",
+  "redirect": "http://www.guidetopharmacology.org/GRAC/FamilyDisplayForward?familyId={content}",
+  "description": "The IUPHAR Compendium details the molecular, biophysical and pharmacological properties of identified mammalian sodium, calcium and potassium channels, as well as the related cyclic nucleotide-modulated ion channels and the recently described transient receptor potential channels. It includes information on nomenclature systems, and on inter and intra-species molecular structure variation. This collection references families of receptors or subunits.",
+  "subject": "schema.org; mammalian",
+  "location": "UK",
+  "synonym": "Animal Transcription Factor Database",
+  "institution": "International Union of Pharmacology, Edinburgh",
+  "prefixed": 0,
+  "test": "78",
+  "probe": "http://www.guidetopharmacology.org/GRAC/FamilyDisplayForward?familyId=78",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "http://www.guidetopharmacology.org/",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "genpept",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/{content}?report=genpept"
+  },
+  "type": "scheme",
+  "name": "GenPept at NCBI",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00100440",
+  "sort_score": "5",
+  "primary": 0,
+  "forward": "https://www.ncbi.nlm.nih.gov/protein/${ac}?report=genpept",
+  "redirect": "https://www.ncbi.nlm.nih.gov/protein/{content}?report=genpept",
+  "description": "The GenPept database is a collection of sequences based on translations from annotated coding regions in GenBank.",
+  "subject": "genome; sequence; protein",
+  "location": "USA",
+  "synonym": "protein genbank identifier",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "CAA71118.1",
+  "probe": "https://www.ncbi.nlm.nih.gov/protein/CAA71118.1?report=genpept",
+  "pattern": "^\\w{3}\\d{5}(\\.\\d+)?$",
+  "state": "100:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/protein",
+  "revision": 0
+}

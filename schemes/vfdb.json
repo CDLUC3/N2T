@@ -1,0 +1,9 @@
+{
+  "id": "vfdb",
+  "target": {
+    "DEFAULT": "http://www.mgc.ac.cn/cgi-bin/VFs/genus.cgi?Genus={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.mgc.ac.cn/cgi-bin/VFs/genus.cgi?Genus={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "so",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/SO/SO:{content}"
+  },
+  "type": "scheme",
+  "name": "Sequence Ontology through BioPortal",
+  "alias": null,
+  "provider": "bptl",
+  "provider_id": "MIR:00100241",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/SO/SO:${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/SO/SO:{content}",
+  "description": "The Sequence Ontology (SO) is a structured controlled vocabulary for the parts of a genomic annotation. It provides a common set of terms and definitions to facilitate the exchange, analysis and management of genomic data.",
+  "subject": "DNA; ontology",
+  "location": "USA",
+  "synonym": "SO; Sequence Types and Features",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 1,
+  "test": "0000704",
+  "probe": "http://purl.bioontology.org/ontology/SO/SO:0000704",
+  "pattern": "^SO:\\d{7}$",
+  "state": "94:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/SO",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "vmd",
+  "target": {
+    "DEFAULT": "http://vmd.vbi.vt.edu/cgi-bin/browse/browserDetail_new.cgi?ID={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://vmd.vbi.vt.edu/cgi-bin/browse/browserDetail_new.cgi?ID={content}",
+  "revision": 0
+}

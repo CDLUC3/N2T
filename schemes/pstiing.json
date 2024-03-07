@@ -1,0 +1,9 @@
+{
+  "id": "pstiing",
+  "target": {
+    "DEFAULT": "http://pstiing.licr.org/search/c_proteininfo.jsp?uniprot_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pstiing.licr.org/search/c_proteininfo.jsp?uniprot_id={content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "z031/so",
+  "target": {
+    "DEFAULT": "http://www.sequenceontology.org/miso/current_release/term/SO:{content}"
+  },
+  "type": "scheme",
+  "name": "Sequence Ontology",
+  "alias": null,
+  "provider": "z031",
+  "provider_id": "MIR:00100112",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.sequenceontology.org/miso/current_release/term/SO:${ac}",
+  "redirect": "http://www.sequenceontology.org/miso/current_release/term/SO:{content}",
+  "description": "The Sequence Ontology (SO) is a structured controlled vocabulary for the parts of a genomic annotation. It provides a common set of terms and definitions to facilitate the exchange, analysis and management of genomic data.",
+  "subject": "DNA; ontology",
+  "location": "USA",
+  "synonym": "SO; Sequence Types and Features",
+  "institution": "Department of Molecular and Cellular Biology, University of California, Berkeley",
+  "prefixed": 1,
+  "test": "0000704",
+  "probe": "http://www.sequenceontology.org/miso/current_release/term/SO:0000704",
+  "pattern": "^SO:\\d{7}$",
+  "state": "97:Up",
+  "more": "http://www.sequenceontology.org/",
+  "revision": 0
+}

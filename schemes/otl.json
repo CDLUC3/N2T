@@ -1,0 +1,27 @@
+{
+  "id": "otl",
+  "target": {
+    "DEFAULT": "http://oryzatagline.cirad.fr/cgi-bin/general_mutant.pl?line={content}"
+  },
+  "type": "scheme",
+  "name": "Oryza Tag Line at CIRAD-INRA-SUPAGRO-UMI",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100622",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://oryzatagline.cirad.fr/cgi-bin/general_mutant.pl?line=${ac}",
+  "redirect": "http://oryzatagline.cirad.fr/cgi-bin/general_mutant.pl?line={content}",
+  "description": "Oryza Tag Line is a database that was developed to collect information generated from the characterization of rice (Oryza sativa L cv. Nipponbare) insertion lines resulting in potential gene disruptions. It collates morpho-physiological alterations observed during field evaluation, with each insertion line documented through a generic passport data including production records, seed stocks and FST information.",
+  "subject": "phenotype; plant",
+  "location": "France",
+  "synonym": "OTL",
+  "institution": "CIRAD-INRA-SUPAGRO-UMII, Biological Systems Department, Montpellier",
+  "prefixed": 0,
+  "test": "AADB12",
+  "probe": "http://oryzatagline.cirad.fr/cgi-bin/general_mutant.pl?line=AADB12",
+  "pattern": "^A[A-Z]+\\d+$",
+  "state": "95:Up",
+  "more": "http://oryzatagline.cirad.fr/",
+  "revision": 0
+}

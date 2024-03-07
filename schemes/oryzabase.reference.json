@@ -1,0 +1,27 @@
+{
+  "id": "oryzabase.reference",
+  "target": {
+    "DEFAULT": "https://shigen.nig.ac.jp/rice/oryzabase/reference/detail/{content}"
+  },
+  "type": "scheme",
+  "name": "Oryzabase",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100920",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://shigen.nig.ac.jp/rice/oryzabase/reference/detail/${ac}",
+  "redirect": "https://shigen.nig.ac.jp/rice/oryzabase/reference/detail/{content}",
+  "description": "The Oryzabase is a comprehensive rice science database established in 2000 by rice researcher's committee in Japan.",
+  "subject": null,
+  "location": "Japan",
+  "synonym": "Open Citation Identifier",
+  "institution": "Genetic Strains Research Center, National Institute of Genetics, Mishima, Shizuoka",
+  "prefixed": 0,
+  "test": "42840",
+  "probe": "https://shigen.nig.ac.jp/rice/oryzabase/reference/detail/42840",
+  "pattern": "^\\d+$",
+  "state": "0:Unknown",
+  "more": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/",
+  "revision": 0
+}

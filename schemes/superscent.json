@@ -1,0 +1,9 @@
+{
+  "id": "superscent",
+  "target": {
+    "DEFAULT": "http://bioinformatics.charite.de/superscent/src/fullinfo.php?cas={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioinformatics.charite.de/superscent/src/fullinfo.php?cas={content}",
+  "revision": 0
+}

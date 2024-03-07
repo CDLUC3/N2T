@@ -1,0 +1,27 @@
+{
+  "id": "storedb",
+  "target": {
+    "DEFAULT": "https://www.storedb.org/?{content}"
+  },
+  "type": "scheme",
+  "name": "STOREDB at University of Cambridge",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100771",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.storedb.org/?${ac}",
+  "redirect": "https://www.storedb.org/?{content}",
+  "description": "STOREDB database is a repository for data used by the international radiobiology community, archiving and sharing primary data outputs from research on low dose radiation. It also provides a directory of bioresources and databases for radiobiology projects containing information and materials that investigators are willing to share. STORE supports the creation of a low dose radiation research commons.",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Agile Protein Interactomes DataServer",
+  "institution": "University of Cambridge, Department of Physiology, Downing Street, Cambridge",
+  "prefixed": 0,
+  "test": "STOREDB:STUDY1040",
+  "probe": "https://www.storedb.org/?STOREDB:STUDY1040",
+  "pattern": "^STOREDB:(STUDY|FILE|DATASET)\\d+$",
+  "state": "94:Up",
+  "more": "https://www.storedb.org/",
+  "revision": 0
+}

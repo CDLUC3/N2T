@@ -1,0 +1,9 @@
+{
+  "id": "pubmeth",
+  "target": {
+    "DEFAULT": "http://matrix.ugent.be/temp/static/{content}.html"
+  },
+  "type": "commonspfx",
+  "redirect": "http://matrix.ugent.be/temp/static/{content}.html",
+  "revision": 0
+}

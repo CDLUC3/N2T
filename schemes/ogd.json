@@ -1,0 +1,9 @@
+{
+  "id": "ogd",
+  "target": {
+    "DEFAULT": "http://www.oomycete.org/ogd/sequence.html?sequence_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.oomycete.org/ogd/sequence.html?sequence_id={content}",
+  "revision": 0
+}

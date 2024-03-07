@@ -1,0 +1,9 @@
+{
+  "id": "atpid",
+  "target": {
+    "DEFAULT": "http://atpid.biosino.org/simple_detail.php?pro={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://atpid.biosino.org/simple_detail.php?pro={content}",
+  "revision": 0
+}

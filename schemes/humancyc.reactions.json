@@ -1,0 +1,9 @@
+{
+  "id": "humancyc.reactions",
+  "target": {
+    "DEFAULT": "http://biocyc.org/[?species]/new-image?type=REACTION&object={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://biocyc.org/[?species]/new-image?type=REACTION&object={content}",
+  "revision": 0
+}

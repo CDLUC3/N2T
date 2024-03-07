@@ -1,0 +1,9 @@
+{
+  "id": "ipfam.proteome",
+  "target": {
+    "DEFAULT": "http://pfam.sanger.ac.uk/proteome?taxId={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pfam.sanger.ac.uk/proteome?taxId={content}",
+  "revision": 0
+}

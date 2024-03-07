@@ -1,0 +1,27 @@
+{
+  "id": "stitch",
+  "target": {
+    "DEFAULT": "http://stitch.embl.de/interactions/{content}"
+  },
+  "type": "scheme",
+  "name": "STITCH",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100343",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://stitch.embl.de/interactions/${ac}",
+  "redirect": "http://stitch.embl.de/interactions/{content}",
+  "description": "STITCH is a resource to explore known and predicted interactions of chemicals and proteins. Chemicals are linked to other chemicals and proteins by evidence derived from experiments, databases and the literature.",
+  "subject": "protein; chemical; interaction",
+  "location": "Germany",
+  "synonym": "Search Tool for Retrieval of Interacting Genes/Proteins",
+  "institution": "European Molecular Biology Laboratory, Heidelberg",
+  "prefixed": 0,
+  "test": "BQJCRHHNABKAKU",
+  "probe": "http://stitch.embl.de/interactions/BQJCRHHNABKAKU",
+  "pattern": "^\\w{14}$",
+  "state": "98:Up",
+  "more": "http://stitch.embl.de/",
+  "revision": 0
+}

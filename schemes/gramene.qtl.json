@@ -1,0 +1,27 @@
+{
+  "id": "gramene.qtl",
+  "target": {
+    "DEFAULT": "http://www.gramene.org/db/qtl/qtl_display?qtl_accession_id={content}"
+  },
+  "type": "scheme",
+  "name": "Gramene Quantitative Trait Loci at Cold Spring Harbor",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100230",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.gramene.org/db/qtl/qtl_display?qtl_accession_id=${ac}",
+  "redirect": "http://www.gramene.org/db/qtl/qtl_display?qtl_accession_id={content}",
+  "description": "Gramene is a comparative genome mapping database for grasses and crop plants. It combines a semi-automatically generated database of cereal genomic and expressed sequence tag sequences, genetic maps, map relations, quantitative trait loci (QTL), and publications, with a curated database of mutants (genes and alleles), molecular markers, and proteins. This datatype refers to quantitative trait loci identified in Gramene.",
+  "subject": "genome; phenotype; gene; plant",
+  "location": "USA",
+  "synonym": "PGD; Pseudocap",
+  "institution": "Cold Spring Harbor Laboratory, New York",
+  "prefixed": 0,
+  "test": "CQG5",
+  "probe": "http://www.gramene.org/db/qtl/qtl_display?qtl_accession_id=CQG5",
+  "pattern": "^\\w+$",
+  "state": "99:Up",
+  "more": "http://www.gramene.org/",
+  "revision": 0
+}

@@ -1,0 +1,15 @@
+{
+  "id": "purl",
+  "target": {
+    "DEFAULT": "http://purl.org/{content}"
+  },
+  "type": "scheme",
+  "name": "Persistent URL",
+  "alias": null,
+  "primary": 1,
+  "redirect": "http://purl.org/{content}",
+  "test": "dc/terms/creator",
+  "probe": "http://purl.org/dc/terms/creator",
+  "more": "http://purl.org/",
+  "revision": 0
+}

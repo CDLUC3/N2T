@@ -1,0 +1,27 @@
+{
+  "id": "pdb",
+  "target": {
+    "DEFAULT": "https://www.rcsb.org/pdb/explore/explore.do?structureId={content}"
+  },
+  "type": "scheme",
+  "name": "RCSB PDB",
+  "alias": null,
+  "provider": "rcsb",
+  "provider_id": "MIR:00100029",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://www.rcsb.org/pdb/explore/explore.do?structureId=${ac}",
+  "redirect": "https://www.rcsb.org/pdb/explore/explore.do?structureId={content}",
+  "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules.",
+  "subject": "protein; structure",
+  "location": "USA",
+  "synonym": "PDB",
+  "institution": "Rutgers, The State University of New Jersey",
+  "prefixed": 0,
+  "test": "2gc4",
+  "probe": "https://www.rcsb.org/pdb/explore/explore.do?structureId=2gc4",
+  "pattern": "^[0-9][A-Za-z0-9]{3}$",
+  "state": "100:Up",
+  "more": "https://www.pdb.org/",
+  "revision": 0
+}

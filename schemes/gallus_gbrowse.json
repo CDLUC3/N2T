@@ -1,0 +1,9 @@
+{
+  "id": "gallus_gbrowse",
+  "target": {
+    "DEFAULT": "http://birdbase.net/cgi-bin/gbrowse/gallus08/?name={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://birdbase.net/cgi-bin/gbrowse/gallus08/?name={content}",
+  "revision": 0
+}

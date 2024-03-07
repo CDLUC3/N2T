@@ -1,0 +1,27 @@
+{
+  "id": "issn",
+  "target": {
+    "DEFAULT": "https://portal.issn.org/resource/ISSN/{content}"
+  },
+  "type": "scheme",
+  "name": "ISSN Portal",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100924",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://portal.issn.org/resource/ISSN/${ac}",
+  "redirect": "https://portal.issn.org/resource/ISSN/{content}",
+  "description": "The International Standard Serial Number (ISSN) is a unique eight-digit number used to identify a print or electronic periodical publication, rather than individual articles or books.",
+  "subject": "bibliography",
+  "location": "France",
+  "synonym": "Coli Genetic Stock Center",
+  "institution": "ISSN International Centre, Paris",
+  "prefixed": 0,
+  "test": "1776-3045",
+  "probe": "https://portal.issn.org/resource/ISSN/1776-3045",
+  "pattern": "^\\d{4}-\\d{3}[\\dX]$",
+  "state": "0:Unknown",
+  "more": "https://portal.issn.org",
+  "revision": 0
+}

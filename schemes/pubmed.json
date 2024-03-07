@@ -1,0 +1,27 @@
+{
+  "id": "pubmed",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/pubmed/{content}"
+  },
+  "type": "scheme",
+  "name": "NCBI PubMed",
+  "alias": "pmid",
+  "provider": "ncbi",
+  "provider_id": "MIR:00100023",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ncbi.nlm.nih.gov/pubmed/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/pubmed/{content}",
+  "description": "PubMed is a service of the U.S. National Library of Medicine that includes citations from MEDLINE and other life science journals for biomedical articles back to the 1950s.",
+  "subject": "schema.org; bibliography",
+  "location": "USA",
+  "synonym": "KEGG",
+  "institution": "National Center for Biotechnology Information (NCBI)",
+  "prefixed": 0,
+  "test": "16333295",
+  "probe": "https://www.ncbi.nlm.nih.gov/pubmed/16333295",
+  "pattern": "^\\d+$",
+  "state": "100:Up",
+  "more": "https://www.ncbi.nlm.nih.gov/PubMed/",
+  "revision": 0
+}

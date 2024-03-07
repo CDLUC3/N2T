@@ -1,0 +1,27 @@
+{
+  "id": "ols/uberon",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/uberon/terms?obo_id=UBERON:{content}"
+  },
+  "type": "scheme",
+  "name": "UBERON through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100580",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols/ontologies/uberon/terms?obo_id=UBERON:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/uberon/terms?obo_id=UBERON:{content}",
+  "description": "Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.",
+  "subject": "ontology",
+  "location": "UK",
+  "synonym": "Uber Anatomy Ontology",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 1,
+  "test": "0008203",
+  "probe": "https://www.ebi.ac.uk/ols/ontologies/uberon/terms?obo_id=UBERON:0008203",
+  "pattern": "^UBERON\\:\\d+$",
+  "state": "98:Up",
+  "more": "https://www.ebi.ac.uk/ols/ontologies/uberon",
+  "revision": 0
+}

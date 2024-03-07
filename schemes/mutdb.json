@@ -1,0 +1,9 @@
+{
+  "id": "mutdb",
+  "target": {
+    "DEFAULT": "http://mutdb.org/cgi-bin/mutdb.pl?id=[?gene_symbol]&geneid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://mutdb.org/cgi-bin/mutdb.pl?id=[?gene_symbol]&geneid={content}",
+  "revision": 0
+}

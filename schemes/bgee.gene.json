@@ -1,0 +1,27 @@
+{
+  "id": "bgee.gene",
+  "target": {
+    "DEFAULT": "https://bgee.org/?page=gene&gene_id={content}"
+  },
+  "type": "scheme",
+  "name": "Bgee gene",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100541",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://bgee.org/?page=gene&gene_id=${ac}",
+  "redirect": "https://bgee.org/?page=gene&gene_id={content}",
+  "description": "Bgee is a database to retrieve and compare gene expression patterns in multiple species, produced from multiple data types (RNA-Seq, Affymetrix, in situ hybridization, and EST data). This collection references genes in Bgee.",
+  "subject": "expression; gene",
+  "location": "Switzerland",
+  "synonym": "Autism Database",
+  "institution": "SIB Swiss Institute of Bioinformatics and University of Lausanne",
+  "prefixed": 0,
+  "test": "FBgn0000015",
+  "probe": "https://bgee.org/?page=gene&gene_id=FBgn0000015",
+  "pattern": "^[A-Za-z]+\\d+$",
+  "state": "83:Unknown",
+  "more": "https://bgee.org/",
+  "revision": 0
+}

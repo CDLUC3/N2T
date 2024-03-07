@@ -1,0 +1,27 @@
+{
+  "id": "peroxibase",
+  "target": {
+    "DEFAULT": "http://peroxibase.toulouse.inra.fr/browse/process/view_perox.php?id={content}"
+  },
+  "type": "scheme",
+  "name": "Peroxibase at University of Geneva",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100281",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://peroxibase.toulouse.inra.fr/browse/process/view_perox.php?id=${ac}",
+  "redirect": "http://peroxibase.toulouse.inra.fr/browse/process/view_perox.php?id={content}",
+  "description": "Peroxibase provides access to peroxidase sequences from all kingdoms of life, and provides a series of bioinformatics tools and facilities suitable for analysing these sequences.",
+  "subject": "enzyme; sequence",
+  "location": "Switzerland",
+  "synonym": "Orpha",
+  "institution": "Department of Plant Biology, University of Geneva, Geneva",
+  "prefixed": 0,
+  "test": "5282",
+  "probe": "http://peroxibase.toulouse.inra.fr/browse/process/view_perox.php?id=5282",
+  "pattern": "^\\d+$",
+  "state": "97:Up",
+  "more": "http://peroxibase.toulouse.inra.fr/",
+  "revision": 0
+}

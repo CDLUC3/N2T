@@ -1,0 +1,27 @@
+{
+  "id": "ncit",
+  "target": {
+    "DEFAULT": "http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code={content}"
+  },
+  "type": "scheme",
+  "name": "NCIt at National Cancer Institute",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100181",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=${ac}",
+  "redirect": "http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code={content}",
+  "description": "NCI Thesaurus (NCIt) provides reference terminology covering vocabulary for clinical care, translational and basic research, and public information and administrative activities, providing a stable and unique identification code.",
+  "subject": "controlled vocabulary; ontology",
+  "location": "USA",
+  "synonym": "National Cancer Institute Thesaurus; NCI thesaurus",
+  "institution": "National Cancer Institute, Center for Bioinformatics, Maryland",
+  "prefixed": 0,
+  "test": "C80519",
+  "probe": "http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C80519",
+  "pattern": "^C\\d+$",
+  "state": "52:Down",
+  "more": "http://ncit.nci.nih.gov/",
+  "revision": 0
+}

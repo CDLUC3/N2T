@@ -1,0 +1,9 @@
+{
+  "id": "come",
+  "target": {
+    "DEFAULT": "http://www.flymine.org/come/entry?gn={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.flymine.org/come/entry?gn={content}",
+  "revision": 0
+}

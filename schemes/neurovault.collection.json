@@ -1,0 +1,27 @@
+{
+  "id": "neurovault.collection",
+  "target": {
+    "DEFAULT": "https://neurovault.org/collections/{content}"
+  },
+  "type": "scheme",
+  "name": "NeuroVault Collection",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100840",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://neurovault.org/collections/${ac}",
+  "redirect": "https://neurovault.org/collections/{content}",
+  "description": "Neurovault is an online repository for statistical maps, parcellations and atlases of the brain. This collection references sets (collections) of images.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Microbial Genome Annotation & Analysis Platform",
+  "institution": "Stanford University",
+  "prefixed": 0,
+  "test": "3304",
+  "probe": "https://neurovault.org/collections/3304",
+  "pattern": "^[1-9][0-9]*$",
+  "state": "0:Unknown",
+  "more": "http://neurovault.org",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "pmd",
+  "target": {
+    "DEFAULT": "http://spock.genes.nig.ac.jp/~pmd/cgi-bin/PMD/PMDentry.pl.cgi?{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://spock.genes.nig.ac.jp/~pmd/cgi-bin/PMD/PMDentry.pl.cgi?{content}",
+  "revision": 0
+}

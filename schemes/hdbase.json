@@ -1,0 +1,9 @@
+{
+  "id": "hdbase",
+  "target": {
+    "DEFAULT": "http://hdbase.org/cgi-bin/jdrf_gene.cgi?ll_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://hdbase.org/cgi-bin/jdrf_gene.cgi?ll_id={content}",
+  "revision": 0
+}

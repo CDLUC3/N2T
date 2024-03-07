@@ -1,0 +1,9 @@
+{
+  "id": "ipfam",
+  "target": {
+    "DEFAULT": "http://pfam.sanger.ac.uk/[family/clan]?acc={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pfam.sanger.ac.uk/[family/clan]?acc={content}",
+  "revision": 0
+}

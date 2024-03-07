@@ -1,0 +1,27 @@
+{
+  "id": "sugarbind",
+  "target": {
+    "DEFAULT": "http://sugarbind.expasy.org/{content}"
+  },
+  "type": "scheme",
+  "name": "SugarBind",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100833",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://sugarbind.expasy.org/${ac}",
+  "redirect": "http://sugarbind.expasy.org/{content}",
+  "description": "The SugarBind Database captures knowledge of glycan binding of human pathogen lectins and adhesins, where each glycan-protein binding pair is associated with at least one published reference. It provides information on the pathogen agent, the lectin/adhesin involved, and the human glycan ligand. This collection provides information on ligands.",
+  "subject": "interaction; human; disease",
+  "location": "Switzerland",
+  "synonym": "Sequence Initiative Suomi",
+  "institution": "Proteome Informatics Group, SIB Swiss Institute of Bioinformatics, Geneva",
+  "prefixed": 0,
+  "test": "lectins/172",
+  "probe": "http://sugarbind.expasy.org/lectins/172",
+  "pattern": "^[A-Za-z]+\\/[0-9]+$",
+  "state": "0:Unknown",
+  "more": "http://sugarbind.expasy.org/",
+  "revision": 0
+}

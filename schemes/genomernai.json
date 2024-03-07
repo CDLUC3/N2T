@@ -1,0 +1,9 @@
+{
+  "id": "genomernai",
+  "target": {
+    "DEFAULT": "http://rnai.dkfz.de/GenomeRNAi/genedetails/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://rnai.dkfz.de/GenomeRNAi/genedetails/{content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "hubmed/pubmed",
+  "target": {
+    "DEFAULT": "http://www.hubmed.org/display.cgi?uids={content}"
+  },
+  "type": "scheme",
+  "name": "HubMed",
+  "alias": "pmid",
+  "provider": "hubmed",
+  "provider_id": "MIR:00100064",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.hubmed.org/display.cgi?uids=${ac}",
+  "redirect": "http://www.hubmed.org/display.cgi?uids={content}",
+  "description": "PubMed is a service of the U.S. National Library of Medicine that includes citations from MEDLINE and other life science journals for biomedical articles back to the 1950s.",
+  "subject": "schema.org; bibliography",
+  "location": "United Kingdom",
+  "synonym": "KEGG",
+  "institution": "Alfred D. Eaton",
+  "prefixed": 0,
+  "test": "16333295",
+  "probe": "http://www.hubmed.org/display.cgi?uids=16333295",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://www.hubmed.org/",
+  "revision": 0
+}

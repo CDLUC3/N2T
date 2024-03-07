@@ -1,0 +1,27 @@
+{
+  "id": "medlineplus",
+  "target": {
+    "DEFAULT": "http://www.nlm.nih.gov/medlineplus/ency/article/{content}.htm"
+  },
+  "type": "scheme",
+  "name": "MedlinePlus at NCBI",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100611",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.nlm.nih.gov/medlineplus/ency/article/${ac}.htm",
+  "redirect": "http://www.nlm.nih.gov/medlineplus/ency/article/{content}.htm",
+  "description": "MedlinePlus is the National Institutes of Health's Web site for patients and their families and friends. Produced by the National Library of Medicine, it provides information about diseases, conditions, and wellness issues using non-technical terms and language.",
+  "subject": "schema.org; human; encyclopedia",
+  "location": "USA",
+  "synonym": "KEGG",
+  "institution": "NCBI, NIH, Bethesda, Maryland",
+  "prefixed": 0,
+  "test": "002804",
+  "probe": "http://www.nlm.nih.gov/medlineplus/ency/article/002804.htm",
+  "pattern": "^\\d+$",
+  "state": "82:Down",
+  "more": "http://www.nlm.nih.gov/medlineplus/",
+  "revision": 0
+}

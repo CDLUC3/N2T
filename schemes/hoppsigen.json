@@ -1,0 +1,9 @@
+{
+  "id": "hoppsigen",
+  "target": {
+    "DEFAULT": "http://pbil.univ-lyon1.fr/cgi-bin/acnuc-search-id?query={content}&db=Hoppsigen&ident=1989108068"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pbil.univ-lyon1.fr/cgi-bin/acnuc-search-id?query={content}&db=Hoppsigen&ident=1989108068",
+  "revision": 0
+}

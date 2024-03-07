@@ -1,0 +1,27 @@
+{
+  "id": "d1id",
+  "target": {
+    "DEFAULT": "https://cn.dataone.org/cn/v2/resolve/{{content}}"
+  },
+  "type": "scheme",
+  "name": "DataONE",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100815",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://cn.dataone.org/cn/v2/resolve/{${ac}}",
+  "redirect": "https://cn.dataone.org/cn/v2/resolve/{{content}}",
+  "description": "DataONE provides infrastructure facilitating long-term access to scientific research data of relevance to the earth sciences.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "MetaCyc Metabolic Pathway Database",
+  "institution": "DataONE, Albuquerque, NM",
+  "prefixed": 0,
+  "test": "00030692-0FE1-4A1B-955E-A2E55D659267",
+  "probe": "https://cn.dataone.org/cn/v2/resolve/{00030692-0FE1-4A1B-955E-A2E55D659267}",
+  "pattern": "\\S+",
+  "state": "100:Up",
+  "more": "https://www.dataone.org",
+  "revision": 0
+}

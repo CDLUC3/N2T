@@ -1,0 +1,9 @@
+{
+  "id": "oridb",
+  "target": {
+    "DEFAULT": "http://www.oridb.org/details1.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.oridb.org/details1.php?id={content}",
+  "revision": 0
+}

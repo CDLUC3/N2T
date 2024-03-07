@@ -1,0 +1,9 @@
+{
+  "id": "gtrdb",
+  "target": {
+    "DEFAULT": "http://gtrnadb.ucsc.edu/{content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://gtrnadb.ucsc.edu/{content}",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "asin",
+  "target": {
+    "DEFAULT": "https://amzn.com/{content}"
+  },
+  "type": "scheme",
+  "name": "Amazon Standard Identification Number (ASIN)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100888",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://amzn.com/${ac}",
+  "redirect": "https://amzn.com/{content}",
+  "description": "Almost every product on our site has its own ASIN, a unique code we use to identify it. For books, the ASIN is the same as the ISBN number, but for all other products a new ASIN is created when the item is uploaded to our catalogue.",
+  "subject": null,
+  "location": "USA",
+  "synonym": "Open Citation Identifier",
+  "institution": "Amazon",
+  "prefixed": 0,
+  "test": "0471491039",
+  "probe": "https://amzn.com/0471491039",
+  "pattern": "^[0-9]{10}$",
+  "state": "0:Unknown",
+  "more": "https://www.amazon.co.uk/gp/help/customer/display.html/277-3416785-8259466?ie=UTF8&nodeId=898182",
+  "revision": 0
+}

@@ -1,0 +1,27 @@
+{
+  "id": "idoo",
+  "target": {
+    "DEFAULT": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology#{content}"
+  },
+  "type": "scheme",
+  "name": "Identifiers.org Ontology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100914",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology#${ac}",
+  "redirect": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology#{content}",
+  "description": "Identifiers.org Ontology",
+  "subject": null,
+  "location": "UK",
+  "synonym": "Open Citation Identifier",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "DataCollection",
+  "probe": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology#DataCollection",
+  "pattern": "^[0-9a-zA-Z]+$",
+  "state": "0:Unknown",
+  "more": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology",
+  "revision": 0
+}

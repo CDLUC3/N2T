@@ -1,0 +1,27 @@
+{
+  "id": "hgnc.family",
+  "target": {
+    "DEFAULT": "https://www.genenames.org/genefamilies/{content}"
+  },
+  "type": "scheme",
+  "name": "HGNC Family at HUGO Genome Nomenclature Committee",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100671",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.genenames.org/genefamilies/${ac}",
+  "redirect": "https://www.genenames.org/genefamilies/{content}",
+  "description": "The HGNC (HUGO Gene Nomenclature Committee) provides an approved gene name and symbol (short-form abbreviation) for each known human gene. All approved symbols are stored in the HGNC database, and each symbol is unique. In addition, HGNC also provides symbols for both structural and functional gene families. This collection refers to records using the HGNC family symbol.",
+  "subject": "schema.org; human; classification; gene",
+  "location": "UK",
+  "synonym": "IdoT",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "PADI",
+  "probe": "https://www.genenames.org/genefamilies/PADI",
+  "pattern": "^[A-Z0-9-]+(#[A-Z0-9-]+)?$",
+  "state": "84:Down",
+  "more": "https://www.genenames.org/",
+  "revision": 0
+}

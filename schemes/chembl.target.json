@@ -1,0 +1,27 @@
+{
+  "id": "chembl.target",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/chembl/target/inspect/{content}"
+  },
+  "type": "scheme",
+  "name": "ChEMBL targets database at EBI",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00100116",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/chembl/target/inspect/${ac}",
+  "redirect": "https://www.ebi.ac.uk/chembl/target/inspect/{content}",
+  "description": "ChEMBL is a database of bioactive compounds, their quantitative properties and bioactivities (binding constants, pharmacology and ADMET, etc). The data is abstracted and curated from the primary scientific literature.",
+  "subject": "protein",
+  "location": "UK",
+  "synonym": "SO; Sequence Types and Features",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "CHEMBL3467",
+  "probe": "https://www.ebi.ac.uk/chembl/target/inspect/CHEMBL3467",
+  "pattern": "^CHEMBL\\d+$",
+  "state": "94:Down",
+  "more": "https://www.ebi.ac.uk/chembldb/",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "ratmap",
+  "target": {
+    "DEFAULT": "http://ratmap.org/Showgene.php?gene_stable_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://ratmap.org/Showgene.php?gene_stable_id={content}",
+  "revision": 0
+}

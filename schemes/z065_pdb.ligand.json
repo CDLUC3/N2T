@@ -1,0 +1,27 @@
+{
+  "id": "z065/pdb.ligand",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/{content}"
+  },
+  "type": "scheme",
+  "name": "PDB Ligand at Protein Databank in Europe (PDBe)",
+  "alias": null,
+  "provider": "z065",
+  "provider_id": "MIR:00100650",
+  "sort_score": "2",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/${ac}",
+  "redirect": "https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/{content}",
+  "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules. This collection references ligands.",
+  "subject": "protein; structure",
+  "location": "UK",
+  "synonym": "OTL",
+  "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
+  "prefixed": 0,
+  "test": "TRQ",
+  "probe": "https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/TRQ",
+  "pattern": "^[A-Za-z0-9]+$",
+  "state": "100:Up",
+  "more": "https://www.pdbe.org/",
+  "revision": 0
+}

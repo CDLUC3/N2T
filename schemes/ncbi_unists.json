@@ -1,0 +1,7 @@
+{
+  "id": "ncbi/unists",
+  "target": {},
+  "type": "synonym",
+  "for": "unists",
+  "revision": 0
+}

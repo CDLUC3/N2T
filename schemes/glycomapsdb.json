@@ -1,0 +1,9 @@
+{
+  "id": "glycomapsdb",
+  "target": {
+    "DEFAULT": "http://www.glycosciences.de/modeling/glycomapsdb/showdetails.php?mapid={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.glycosciences.de/modeling/glycomapsdb/showdetails.php?mapid={content}",
+  "revision": 0
+}

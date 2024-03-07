@@ -1,0 +1,9 @@
+{
+  "id": "frnadb",
+  "target": {
+    "DEFAULT": "http://www.ncrna.org/frnadb/detail.html?i_name={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.ncrna.org/frnadb/detail.html?i_name={content}",
+  "revision": 0
+}

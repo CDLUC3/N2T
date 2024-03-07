@@ -1,0 +1,27 @@
+{
+  "id": "matrixdb.association",
+  "target": {
+    "DEFAULT": "http://matrixdb.univ-lyon1.fr//cgi-bin/current/newPort?type=association&value={content}&class=Association"
+  },
+  "type": "scheme",
+  "name": "MatrixDB Association",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100098",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "http://matrixdb.univ-lyon1.fr//cgi-bin/current/newPort?type=association&value=${ac}&class=Association",
+  "redirect": "http://matrixdb.univ-lyon1.fr//cgi-bin/current/newPort?type=association&value={content}&class=Association",
+  "description": "MatrixDB stores experimentally determined interactions involving at least one extracellular biomolecule. It includes mostly protein-protein and protein-glycosaminoglycan interactions, as well as interactions with lipids and cations.",
+  "subject": "polysaccharide; interaction; lipid; protein",
+  "location": "France",
+  "synonym": "Foundational Model of Anatomy Ontology",
+  "institution": "Institut de Biologie et Chimie des Prot&#xE9;ines, Lyon University",
+  "prefixed": 0,
+  "test": "P00747__P07355",
+  "probe": "http://matrixdb.univ-lyon1.fr//cgi-bin/current/newPort?type=association&value=P00747__P07355&class=Association",
+  "pattern": "^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])_.*|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9]_.*)|(GAG_.*)|(MULT_.*)|(PFRAG_.*)|(LIP_.*)|(CAT_.*)$",
+  "state": "74:Down",
+  "more": "http://matrixdb.univ-lyon1.fr/",
+  "revision": 0
+}

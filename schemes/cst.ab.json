@@ -1,0 +1,27 @@
+{
+  "id": "cst.ab",
+  "target": {
+    "DEFAULT": "http://www.cellsignal.com/products/{content}.html"
+  },
+  "type": "scheme",
+  "name": "CST Antibody at Cell Signaling Technology",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100553",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://www.cellsignal.com/products/${ac}.html",
+  "redirect": "http://www.cellsignal.com/products/{content}.html",
+  "description": "Cell Signaling Technology is a commercial organisation which provides a pathway portal to showcase their phospho-antibody products. This collection references antibody products.",
+  "subject": "catalogue; interaction; immunogenetics",
+  "location": "USA",
+  "synonym": "human DEPhOsphorylation Database",
+  "institution": "Cell Signaling Technology, Inc., Danvers, Massachusetts",
+  "prefixed": 0,
+  "test": "3305",
+  "probe": "http://www.cellsignal.com/products/3305.html",
+  "pattern": "^\\d+$",
+  "state": "99:Up",
+  "more": "http://www.cellsignal.com/catalog/index.html",
+  "revision": 0
+}

@@ -1,0 +1,9 @@
+{
+  "id": "neibank",
+  "target": {
+    "DEFAULT": "http://neibank.nei.nih.gov/cgi-bin/showDataTable.cgi?lib={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://neibank.nei.nih.gov/cgi-bin/showDataTable.cgi?lib={content}",
+  "revision": 0
+}

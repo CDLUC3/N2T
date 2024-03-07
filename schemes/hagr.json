@@ -1,0 +1,9 @@
+{
+  "id": "hagr",
+  "target": {
+    "DEFAULT": "http://genomics.senescence.info/genes/entry.php?hgnc={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://genomics.senescence.info/genes/entry.php?hgnc={content}",
+  "revision": 0
+}

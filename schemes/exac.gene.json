@@ -1,0 +1,27 @@
+{
+  "id": "exac.gene",
+  "target": {
+    "DEFAULT": "http://exac.broadinstitute.org/gene/{content}"
+  },
+  "type": "scheme",
+  "name": "ExAC Gene at Exome Aggregation Consortium",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100725",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://exac.broadinstitute.org/gene/${ac}",
+  "redirect": "http://exac.broadinstitute.org/gene/{content}",
+  "description": "The Exome Aggregation Consortium (ExAC) is a coalition of investigators seeking to aggregate and harmonize exome sequencing data from a variety of large-scale sequencing projects, and to make summary data available for the wider scientific community. The data pertains to unrelated individuals sequenced as part of various disease-specific and population genetic studies and serves as a reference set of allele frequencies for severe disease studies. This collection references gene information.",
+  "subject": "phenotype; human; genome",
+  "location": "USA",
+  "synonym": "CPC",
+  "institution": "Exome Aggregation Consortium (ExAC), Cambridge, Massachusetts",
+  "prefixed": 0,
+  "test": "ENSG00000169174",
+  "probe": "http://exac.broadinstitute.org/gene/ENSG00000169174",
+  "pattern": "^ENSG\\d{11}$",
+  "state": "100:Up",
+  "more": "http://exac.broadinstitute.org/",
+  "revision": 0
+}

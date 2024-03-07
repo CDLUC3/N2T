@@ -1,0 +1,27 @@
+{
+  "id": "bacdive",
+  "target": {
+    "DEFAULT": "https://bacdive.dsmz.de/strain/{content}"
+  },
+  "type": "scheme",
+  "name": "Bacterial Diversity Metadatabase",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100900",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "https://bacdive.dsmz.de/strain/${ac}",
+  "redirect": "https://bacdive.dsmz.de/strain/{content}",
+  "description": "BacDive&#x2014;the Bacterial Diversity Metadatabase merges detailed strain-linked information on the different aspects of bacterial and archaeal biodiversity.",
+  "subject": null,
+  "location": "Germany",
+  "synonym": "Open Citation Identifier",
+  "institution": "Leibniz-Institut DSMZ-Deutsche Sammlung von Mikroorganismen und Zellkulturen",
+  "prefixed": 0,
+  "test": "131392",
+  "probe": "https://bacdive.dsmz.de/strain/131392",
+  "pattern": "^[0-9]+$",
+  "state": "0:Unknown",
+  "more": "https://bacdive.dsmz.de/",
+  "revision": 0
+}

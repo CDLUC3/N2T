@@ -1,0 +1,27 @@
+{
+  "id": "irefweb",
+  "target": {
+    "DEFAULT": "http://wodaklab.org/iRefWeb/interaction/show/{content}"
+  },
+  "type": "scheme",
+  "name": "iRefWeb Protein Interaction Reference Index",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100156",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://wodaklab.org/iRefWeb/interaction/show/${ac}",
+  "redirect": "http://wodaklab.org/iRefWeb/interaction/show/{content}",
+  "description": "iRefWeb is an interface to a relational database containing the latest build of the interaction Reference Index (iRefIndex) which integrates protein interaction data from ten different interaction databases: BioGRID, BIND, CORUM, DIP, HPRD, INTACT, MINT, MPPI, MPACT and OPHID. In addition, iRefWeb associates interactions with the PubMed record from which they are derived.",
+  "subject": "protein; interaction",
+  "location": "Canada",
+  "synonym": "Entrez Structure; MMDB",
+  "institution": "Wodak Lab, Hospital for Sick Children, Toronto",
+  "prefixed": 0,
+  "test": "617102",
+  "probe": "http://wodaklab.org/iRefWeb/interaction/show/617102",
+  "pattern": "^\\d+$",
+  "state": "96:Up",
+  "more": "http://wodaklab.org/iRefWeb/",
+  "revision": 0
+}

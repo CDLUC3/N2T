@@ -1,0 +1,7 @@
+{
+  "id": "ebi/biocatalogue.service",
+  "target": {},
+  "type": "synonym",
+  "for": "biocatalogue.service",
+  "revision": 0
+}

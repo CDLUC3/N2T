@@ -1,0 +1,27 @@
+{
+  "id": "meddra",
+  "target": {
+    "DEFAULT": "http://purl.bioontology.org/ontology/MEDDRA/{content}"
+  },
+  "type": "scheme",
+  "name": "MedDRA through BioPortal",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100740",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "http://purl.bioontology.org/ontology/MEDDRA/${ac}",
+  "redirect": "http://purl.bioontology.org/ontology/MEDDRA/{content}",
+  "description": "The Medical Dictionary for Regulatory Activities (MedDRA) was developed by the International Council for Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH)to provide a standardised medical terminology to facilitate sharing of regulatory information internationally for medical products used by humans. It is used within regulatory processes, safety monitoring, as well as for marketing activities. Products covered by the scope of MedDRA include pharmaceuticals, biologics, vaccines and drug-device combination products. The MedDRA dictionary is organized by System Organ Class (SOC), divided into High-Level Group Terms (HLGT), High-Level Terms (HLT), Preferred Terms (PT) and finally into Lowest Level Terms (LLT).",
+  "subject": "ontology; controlled vocabulary",
+  "location": "USA",
+  "synonym": "Medical Dictionary for Regulatory Activities",
+  "institution": "National Center for Biomedical Ontology, Stanford",
+  "prefixed": 0,
+  "test": "10015919",
+  "probe": "http://purl.bioontology.org/ontology/MEDDRA/10015919",
+  "pattern": "^\\d+$",
+  "state": "97:Up",
+  "more": "http://bioportal.bioontology.org/ontologies/MEDDRA",
+  "revision": 0
+}

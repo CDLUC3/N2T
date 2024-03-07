@@ -1,0 +1,27 @@
+{
+  "id": "kegg.pathway",
+  "target": {
+    "DEFAULT": "https://www.kegg.jp/entry/{content}"
+  },
+  "type": "scheme",
+  "name": "KEGG PATHWAY Database",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100020",
+  "sort_score": "6",
+  "primary": 1,
+  "forward": "https://www.kegg.jp/entry/${ac}",
+  "redirect": "https://www.kegg.jp/entry/{content}",
+  "description": "KEGG PATHWAY is a collection of manually drawn pathway maps representing our knowledge on the molecular interaction and reaction networks.",
+  "subject": "pathway",
+  "location": "Japan",
+  "synonym": "KEGG",
+  "institution": "Kyoto University Bioinformatics Center",
+  "prefixed": 0,
+  "test": "hsa00620",
+  "probe": "https://www.kegg.jp/entry/hsa00620",
+  "pattern": "^\\w{2,4}\\d{5}$",
+  "state": "100:Up",
+  "more": "https://www.genome.jp/kegg/pathway.html",
+  "revision": 0
+}

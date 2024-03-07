@@ -1,0 +1,9 @@
+{
+  "id": "prorule",
+  "target": {
+    "DEFAULT": "http://www.expasy.org/cgi-bin/prosite/ScanView.cgi?scanfile={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://www.expasy.org/cgi-bin/prosite/ScanView.cgi?scanfile={content}",
+  "revision": 0
+}

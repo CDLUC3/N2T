@@ -1,0 +1,27 @@
+{
+  "id": "pazar",
+  "target": {
+    "DEFAULT": "http://www.pazar.info/cgi-bin/tf_search.cgi?geneID={content}"
+  },
+  "type": "scheme",
+  "name": "Pazar Transcription Factor at University of British Columbia",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100388",
+  "sort_score": "1",
+  "primary": 0,
+  "forward": "http://www.pazar.info/cgi-bin/tf_search.cgi?geneID=${ac}",
+  "redirect": "http://www.pazar.info/cgi-bin/tf_search.cgi?geneID={content}",
+  "description": "The PAZAR database unites independently created and maintained data collections of transcription factor and regulatory sequence annotation. It provides information on the sequence and target of individual transcription factors.",
+  "subject": "DNA; interaction; protein",
+  "location": "Canada",
+  "synonym": "Pazar Database",
+  "institution": "Centre for Molecular Medicine and Therapeutics, University of British Columbia, Vancouver",
+  "prefixed": 0,
+  "test": "TF0001053",
+  "probe": "http://www.pazar.info/cgi-bin/tf_search.cgi?geneID=TF0001053",
+  "pattern": "^TF\\w+$",
+  "state": "82:Down",
+  "more": "http://www.pazar.info/",
+  "revision": 0
+}

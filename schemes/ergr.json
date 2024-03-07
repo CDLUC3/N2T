@@ -1,0 +1,9 @@
+{
+  "id": "ergr",
+  "target": {
+    "DEFAULT": "http://bioinfo.vipbg.vcu.edu/ERGR/geneinfo.php?id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://bioinfo.vipbg.vcu.edu/ERGR/geneinfo.php?id={content}",
+  "revision": 0
+}

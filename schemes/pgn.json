@@ -1,0 +1,9 @@
+{
+  "id": "pgn",
+  "target": {
+    "DEFAULT": "http://pgn.cornell.edu/search/unigene_search_result.pl?unigene_id={content}"
+  },
+  "type": "commonspfx",
+  "redirect": "http://pgn.cornell.edu/search/unigene_search_result.pl?unigene_id={content}",
+  "revision": 0
+}
