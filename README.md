@@ -74,68 +74,116 @@ $ curl -X GET --unix-socket /var/run/unit/control.sock http://localhost/config/
 ```
 
 
-
-
-Setup python and application:
+Setup python and application. Installing the application is done by cloning from 
+the GitHub repository. From the application home (i.e. `/ezid` on UC3 systems):
 
 ```
-mkdir n2t
+git clone https://github.com/CDLUC3/n2t.git
 cd n2t
 python3.11 -m venv venv
 source venv/bin/.activate
 python --version
   Python 3.11.6
 python -m pip install -U pip
+python -m pip install -e .
 ```
 
-
-
-## Developer Setup
+Run the `n2t` cli to verify the application is installed:
 
 ```
-git clone https://github.com/CDLUC3/N2T.git
-cd N2T
-mkvirtualenv n2t
-poetry install
+$  n2t
+Usage: n2t [OPTIONS] COMMAND [ARGS]...
+
+  Management commands for N2T.
+
+  This script is used for initializing the JSON representation of scheme
+  records from the original YAML and creating or updating the sqlite store
+  used by the resolver application.
+
+Options:
+  -c, --config FILE
+  --help             Show this message and exit.
+
+Commands:
+  info       Print application version and basic status.
+  loaddb     Load or update the scheme database.
+  yaml2json  Generate or update JSON record from YAML source.
 ```
 
-Running micron2t:
+Before operation, the N2T application scheme database must be initialized. This 
+process creates an sqlite database containing the scheme records to support 
+resolution. The scheme records are loaded from the JSON sources, and the 
+database will need to be updated when the JSON sources are modified.
 
-First gather the prefixes and generate the JSON master file:
+The N2T application is configured using a `.env` file. The available properties
+include:
+
+| Key                          | Default                          | Description                                                               |
+|------------------------------|----------------------------------|---------------------------------------------------------------------------|
+| `N2T_HOST`                   | `localhost`                      | Address to listen when running in dev mode.                               |
+| `N2T_PORT`                   | `8000`                           | Port to listen on when running in dev mode.                               |
+| `N2T_PROTOCOL`               | `http`                           | Protocol to listen on (`http` or `https`).                                |
+| `N2T_DB_CONNECTION_STRING`* | `sqlite:///BASE/data/n2t/sqlite` | SQLAlchemy connection string (sqlite preferred).                          | 
+| `N2T_JSON_DIR`*             | `BASE/schemes`                   | Folder where the scheme definitions are located.                          |
+| `N2T_STATIC_DIR`*           | `BASE/static`                    | Folder from where static content is served (styles, images, scripts).     | 
+| `N2T_TEMPLATE_DIR`*         | `BASE/templates`                 | Folder from which templated content is served.                            |
+| `N2T_ENVIRONMENT`            | `development`                     | A human readable label for the service (development, staging, production) | 
+
+*: Default folder locations are relative to the `n2t` folder in the cloned repository. 
+
+A typical configuration file for a staging environment will be:
 ```
-wget -O data/prefixes.yaml https://n2t.net/e/n2t_full_prefixes.yaml 
-n2t data/prefixes.yaml tojson -d micron2t/data/prefixes.json
+N2T_DB_CONNECTION_STRING="sqlite:///data/n2t.sqlite"
+N2T_JSON_DIR="schemes"
+N2T_ENVIRONMENT="staging"
 ```
 
-Then fire up the N2T web service:
+Those settings indicate the name of the environment "staging", that the JSON
+scheme definitions are in the folder `schemes` and the application
+database is `data/n2t.sqlite`. The folders are relative to the location where
+the `n2t` command is run. These properties may also use absolute paths, for
+example:
+
 ```
-cd micron2t
-uvicorn --reload main:app
+N2T_DB_CONNECTION_STRING="sqlite:////ezid/n2t/data/n2t.sqlite"
+N2T_JSON_DIR="/ezid/n2t/schemes"
 ```
 
-Deployment to Deta is through a GH Action. Available as a Deta micro at https://rslv.deta.dev
+Any of the settings are overridden by an equivalent named environment variable
+if set.
 
-## `micron2t`
+If the `schemes` folder is not present it needs to be created from the 
+legacy N2T prefixes file:
 
-Provides API documentation at `/docs`
+```
+wget "https://n2t.net/e/n2t_full_prefixes.yaml"
+n2t yaml2json
+```
 
-`/` Returns a list of supported prefixes
+The application database may be created and populated when the JSON scheme
+records are available:
 
-`/{identifier}` Returns information about the identifier and other behavior.
+```
+cd /ezid/n2t
+mkdir -p data
+n2t loaddb
+```
 
-If the `identifier` has no colon, then it is treated as a prefix and prefix metadata is returned in JSON.
+To verify setup, use the `info` command. The output should be something like:
 
-If the `identifier` has a colon and the pattern matches, then a redirect response is returned unless a request is made
-with `Accept: application/json;profile=https://rslv.xyz/info`, in which case information about the intended action 
-is returned.
-
-
-[^1]: As of 2021-12-07
-
-
-## Resolution
-
-The process of resolution returns either a resource or a location from which the resource can be retrieved. N2T does not hold identified resources, and so will only provide the registered location of the resource.
-
+```
+$ n2t info
+{
+  "version": "0.5.0",
+  "environment": "development",
+  "status": "initialized",
+  "description": "n2t_full_prefixes",
+  "created": "2024-03-06T16:01:43.245204",
+  "schemes": {
+    "total": 2774,
+    "valid": 1596
+  }
+}
+```
 
 
