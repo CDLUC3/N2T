@@ -126,6 +126,12 @@ async def human_pages(request: fastapi.Request, page: str):
     )
 
 
+if app.state.settings.allow_appinfo:
+    @app.get("/.appinfo")
+    async def app_info(request: fastapi.Request):
+        return app.state.settings
+
+
 app.include_router(
     rslv.routers.resolver.router,
 )

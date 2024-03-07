@@ -24,7 +24,7 @@ class Settings(pydantic_settings.BaseSettings):
     template_dir: str = os.path.join(BASE_FOLDER, "templates")
     log_filename: typing.Optional[str] = None
     environment: str = "development"
-
+    allow_appinfo: bool = True
 
 @functools.lru_cache
 def get_settings(env_file=None):
