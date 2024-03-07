@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Not Found{% endblock %}
+{%  block main %}
+    <h1>N2T - Identifier Resolution Service</h1>
+    <div>
+        <p>The requested resource was not found on this server.</p>
+        <dl>
+            <dt>Resource:</dt>
+            <dd><code>{{ request.path }}</code></dd>
+        </dl>
+    </div>
+{%  endblock %}

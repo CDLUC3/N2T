@@ -1,5 +1,6 @@
 import contextlib
 import functools
+import logging
 import typing
 
 import fastapi
@@ -95,13 +96,26 @@ def create_application()->fastapi.FastAPI:
 
     @app.get("/_{page:path}", include_in_schema=False)
     async def human_pages(request: fastapi.Request, page:str):
+        L = logging.getLogger("n2t")
+        try:
+            return templates.TemplateResponse(
+                page,
+                {
+                    "request": request,
+                    "environment": app.state.settings.environment,
+                    "version": __version__
+                }
+            )
+        except Exception as e:
+            L.exception(e)
         return templates.TemplateResponse(
-            page,
+            "404.html",
             {
                 "request": request,
                 "environment": app.state.settings.environment,
                 "version": __version__
-            }
+            },
+            status_code=404,
         )
 
     app.include_router(
