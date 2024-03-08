@@ -26,6 +26,7 @@
       virtualenv: "{{deploy_dir}}/venv"
       virtualenv_command: "python3.11 -m venv"
       name: .
+      editable: true
 
   - name: Print unit.json contents
     ansible.builtin.debug:
