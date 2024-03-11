@@ -36,7 +36,10 @@ Previous HEAD position was 8abdc90 ansible: debugging playbook
 HEAD is now at 951ddc2 Adjust sqlite db to use var folder
 ```
 
-Review ansible usage in `ansible/README.md`:
+
+
+#### Review ansible usage in `ansible/README.md`:
+
 ```
 ezid@uc3-ezidn2t-prd02:15:29:23:~/install/n2t$ cd ansible/
 ezid@uc3-ezidn2t-prd02:15:32:49:~/install/n2t/ansible$ grep -A 20 Usage README.md 
@@ -59,7 +62,9 @@ variable `n2t_version`:
    ansible-playbook -i hosts deploy_n2t_site.yaml -e n2t_version=0.0.2
 ```
 
-Dryrun `ansible-playbook` with appropreate `n2t_version`:
+
+
+#### Dryrun with appropreate **n2t_version**:
 ```
 ezid@uc3-ezidn2t-prd02:15:46:48:~/install/n2t/ansible$ ansible-playbook -i hosts deploy_n2t.yaml -e n2t_version=0.7.0rc2 -CD
 
@@ -130,7 +135,10 @@ PLAY RECAP *********************************************************************
 localhost                  : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
 ```
 
-Now deploy for reals:
+
+
+#### Now deploy for reals:
+```
 ezid@uc3-ezidn2t-prd02:15:47:08:~/install/n2t/ansible$ ansible-playbook -i hosts deploy_n2t.yaml -e n2t_version=0.7.0rc2
 
 PLAY [all] *********************************************************************************************
@@ -201,7 +209,7 @@ localhost                  : ok=5    changed=1    unreachable=0    failed=0    s
 ```
 
 
-Validate the deployment:
+#### Validate the deployment:
 ```
 ezid@uc3-ezidn2t-prd02:15:48:38:~/install/n2t/ansible$ curl -v http://localhost:18880/
 * Host localhost:18880 was resolved.
