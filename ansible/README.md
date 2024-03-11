@@ -1,5 +1,5 @@
-Ansible Playbook `deploy_n2t_site`
-==================================
+Ansible Playbook `deploy_n2t`
+=============================
 
 The `deploy_n2t.yaml` ansible playbook works in consort with the UC3 puppet module
 [`uc3_ezid_n2t`](https://github.com/CDLUC3/uc3-ops-puppet-modules/tree/main/modules/uc3_ezid_n2t)
@@ -29,7 +29,7 @@ repository into the deployment directory.  To Deploy a specific version of the
 n2t application, supply the version number (git tag) on the command line as
 variable `n2t_version`:
 ```
-ansible-playbook -i hosts deploy_n2t_site.yaml -e n2t_version=0.0.2
+ansible-playbook -i hosts deploy_n2t.yaml -e n2t_version=0.7.0
 ```
 
 

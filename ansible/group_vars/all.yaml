@@ -5,5 +5,4 @@ deploy_dir: "{{ app_dir }}/n2t"
 python_home: "{{ deploy_dir }}/venv/"
  
 n2t_repo: 'https://github.com/CDLUC3/n2t.git'
-#n2t_version: 'main'
-n2t_version: 'ansible'
+n2t_version: 'main'
