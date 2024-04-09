@@ -14,6 +14,7 @@ fastapi = "^0"
 pydantic-settings = "^2"
 rslv = {git = "https://github.com/CDLUC3/resolver.git", branch="develop"}
 click = "^8.1.7"
+httpx = "^0.27.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7"
@@ -24,6 +25,7 @@ n2t = 'n2t.__main__:main'
 
 [tool.poetry.group.dev.dependencies]
 uvicorn = "^0.27.1"
+geoip2 = "^4.8.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -22,6 +22,15 @@
   "routes": {
     "n2t": [
       {
+          "match": {
+              "uri": "/e/*"
+          },
+          "action": {
+              "return": 301,
+              "location": "https://legacy-n2t.n2t.net${request_uri}"
+          }
+      },
+      {
         "match": {
           "uri": [
             "/*"
