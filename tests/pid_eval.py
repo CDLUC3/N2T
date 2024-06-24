@@ -34,7 +34,8 @@ class Settings(pydantic_settings.BaseSettings):
     model_config = pydantic_settings.SettingsConfigDict(env_prefix=ENV_PREFIX, env_file=".env")
     host_a: str = "https://n2t.net/"
     #host_b: str = "https://uc3-ezid-n2t-prd.cdlib.org/"
-    host_b: str = "http://localhost:8000/"
+    host_b: str = "https://uc3-ezid-n2t-stg.cdlib.org/"
+    #host_b: str = "http://localhost:8000/"
     white_hosts: typing.Set[str] = set(["n2t.net","uc3-ezid-n2t-prd.cdlib.org", "arks.org", "ezid.cdlib.org", "doi.org", "legacy-n2t.n2t.net"])
     accept_header: str = "*/*"
     user_agent: str = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
