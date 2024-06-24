@@ -9,6 +9,14 @@ continue interaction with the client for identifier resolution.
 
 ## Manual Deploy on Amazon Linux 2023
 
+The steps to deployment are broadly:
+
+1. Setup Nginx Unit as the web server
+2. Install the n2t python application
+3. Configure the n2t application with identifier schem information
+
+### Setup Nginx Unit as the web server
+
 On server instance:
 
 Given the YUM repository description file `unit.repo`:
@@ -31,7 +39,7 @@ sudo yum install unit-devel unit-jsc17 unit-python311 unit-wasm
 sudo cdlsysctl start unit
 ```
 
-Note: The service is installed as disabled and it needs to be enabled unit, but 
+Note: The service is installed as disabled and needs to be enabled, but 
 `cdlsysctl` doesn't allow that so needs to be done by an administrator, e.g.:
 ```
 sudo systemctl enable unit
@@ -73,6 +81,7 @@ $ curl -X GET --unix-socket /var/run/unit/control.sock http://localhost/config/
 }
 ```
 
+### Install the n2t python application
 
 Setup python and application. Installing the application is done by cloning from 
 the GitHub repository. From the application home (i.e. `/ezid` on UC3 systems):
@@ -109,6 +118,8 @@ Commands:
   loaddb     Load or update the scheme database.
   yaml2json  Generate or update JSON record from YAML source.
 ```
+
+### Configure the n2t application with identifier schem information
 
 Before operation, the N2T application scheme database must be initialized. This 
 process creates an sqlite database containing the scheme records to support 
@@ -156,7 +167,7 @@ If the `schemes` folder is not present it needs to be created from the
 legacy N2T prefixes file:
 
 ```
-wget "https://n2t.net/e/n2t_full_prefixes.yaml"
+wget "https://legacy-n2t.n2t.net/e/n2t_full_prefixes.yaml"
 n2t yaml2json
 ```
 
@@ -186,4 +197,5 @@ $ n2t info
 }
 ```
 
+## Managing Scheme Records
 

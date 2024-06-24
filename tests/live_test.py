@@ -17,16 +17,28 @@ Download from https://www.maxmind.com/en/accounts/995868/geoip/downloads
 """
 
 import asyncio
+import collections
+import dataclasses
 import json
 import logging
 import logging.config
+import os.path
 import re
 import sys
 import time
+import typing
 
 import geoip2.database
 import geoip2.errors
 import httpx
+import rslv.lib_rslv
+import sqlalchemy
+import sqlalchemy.orm
+import sqlalchemy.exc
+import sqlalchemy.ext.asyncio
+import sqlalchemy.ext.declarative
+
+mapper_registry = sqlalchemy.orm.registry()
 
 # RE for the n2t apache access file
 ACCESS_LINE_RE = re.compile(r'([(\d\.)]+) - - \[(.*?)\] "(?P<METHOD>[A-Z]*) (?P<URI>.*?) (.*)" (?P<STATUS>\d+) [-\d]* "(?P<TARGET>.*?)" "(?P<UA>.*?)"')
@@ -129,6 +141,145 @@ class IpAddressList:
         return res
 
 
+@mapper_registry.mapped
+@dataclasses.dataclass
+class PID:
+    __tablename__ = "pid"
+    __sa_dataclass_metadata_key__ = "sa"
+
+    original:str = dataclasses.field(metadata={"sa":sqlalchemy.Column(sqlalchemy.String, primary_key=True)})
+    scheme:str = dataclasses.field(metadata={"sa":sqlalchemy.Column(sqlalchemy.String, index=True)})
+    content:typing.Optional[str] = dataclasses.field(metadata={"sa":sqlalchemy.Column(sqlalchemy.String, default=None)})
+    prefix:typing.Optional[str]  = dataclasses.field(metadata={"sa":sqlalchemy.Column(sqlalchemy.String, index=True, default=None)})
+    value:typing.Optional[str]  = dataclasses.field(metadata={"sa":sqlalchemy.Column(sqlalchemy.String, default=None)})
+
+    def __str__(self):
+        return self.original
+
+    @classmethod
+    def from_str(cls, pid_str:str):
+        parts = rslv.lib_rslv.split_identifier_string(pid_str)
+        return cls(
+            original = pid_str,
+            scheme = parts["scheme"],
+            content = parts["content"],
+            prefix = parts["prefix"],
+            value = parts["value"]
+        )
+
+@mapper_registry.mapped
+@dataclasses.dataclass
+class Resolution:
+    __tablename__ = "rslv"
+    __table_args__ = (sqlalchemy.UniqueConstraint("pid", "resolver", name="rslv_pid_uc"),
+                      )
+    __sa_dataclass_metadata_key__ = "sa"
+
+    pid:str = dataclasses.field(metadata={"sa":sqlalchemy.Column(sqlalchemy.String, sqlalchemy.ForeignKey("pid.original"), primary_key=True)})
+    resolver:str = dataclasses.field(metadata={"sa":sqlalchemy.Column(sqlalchemy.String, primary_key=True)})
+    target:typing.Optional[str] = dataclasses.field(metadata={"sa":sqlalchemy.Column(sqlalchemy.String, default=None)})
+    status:typing.Optional[str] = dataclasses.field(metadata={"sa":sqlalchemy.Column(sqlalchemy.String, default=None)})
+
+
+async def count_pids(session: sqlalchemy.ext.asyncio.AsyncSession, scheme: str, prefix: str) -> int:
+    """Return number of existing records that match the given scheme and prefix
+    """
+    result = await session.execute(sqlalchemy.select(sqlalchemy.func.count()).where(
+        sqlalchemy.and_(PID.scheme == scheme, PID.prefix == prefix)
+    ))
+    return result.scalars().one()
+
+
+async def add_pid(session:sqlalchemy.ext.asyncio.AsyncSession, pid: PID) -> None:
+    try:
+        session.add(pid)
+        await session.commit()
+    except sqlalchemy.exc.SQLAlchemyError as e:
+        await session.rollback()
+        L.debug("PID already exists: %s", pid.original)
+
+
+async def add_resolution(session:sqlalchemy.ext.asyncio.AsyncSession, pid:str, resolver:str, target:typing.Optional[str], status:typing.Optional[str]) -> None:
+    _pid = await session.get(PID, pid)
+    await session.refresh(_pid, ["original", ])
+    resolution = Resolution(
+        pid=_pid.original,
+        resolver=resolver,
+        target=target,
+        status=status
+    )
+    try:
+        session.add(resolution)
+        await session.commit()
+    except sqlalchemy.exc.SQLAlchemyError as e:
+        await session.rollback()
+        #L.error(e)
+        L.debug("Resolution already exists: %s %s", resolver, pid)
+
+
+async def get_pidstore_engine(dburl:str) -> sqlalchemy.ext.asyncio.AsyncEngine:
+    engine = sqlalchemy.ext.asyncio.create_async_engine(dburl)
+    async with engine.begin() as conn:
+        await conn.run_sync(mapper_registry.metadata.create_all)
+    return engine
+
+
+@dataclasses.dataclass
+class URL:
+    target: str
+
+    def __eq__(self, other:'URL') -> bool:
+        if self.target == other.target:
+            return True
+        return False
+
+    def __str__(self) -> str:
+        return self.target
+
+
+@dataclasses.dataclass
+class HttpResponse:
+    start_url: URL
+    final_url: typing.Optional[URL] = None
+    status_code: typing.Optional[int] = 0
+    msecs: typing.Optional[int] = 0
+
+
+@dataclasses.dataclass
+class ResolveResponse:
+    client: str
+    host: str
+    action: str
+    pid: PID
+    ipaddr: str
+    user_agent: str
+    outcome: typing.Optional[str] = None
+    status: typing.Optional[str] = None
+    target: typing.Optional[URL] = None
+
+    def __eq__(self, other:'ResolveResponse') -> bool:
+        if self.status is None:
+            raise ValueError(f"Status can not be NULL for comparison ({self.pid})")
+        if self.target != other.target:
+            return False
+        if self.status != other.status:
+            return False
+        return True
+
+    def clone(self) -> 'ResolveResponse':
+        return ResolveResponse(
+            self.client,
+            self.host,
+            self.action,
+            self.pid,
+            self.ipaddr,
+            self.user_agent,
+            outcome=None,
+            status=None,
+            target=None
+        )
+
+
 # Global cache of entries
 IP_DICT = IpAddressList("../data/GeoLite2-City.mmdb")
 
@@ -148,7 +299,7 @@ def parse_access_log_line(txt: str) -> dict:
     return params
 
 
-async def parse_trace_log(inf)->dict:
+async def parse_trace_log(inf, async_session:sqlalchemy.ext.asyncio.async_sessionmaker)->collections.abc.AsyncIterable[ResolveResponse]:
     """
     Reads the trace log line by line and emits records.
 
@@ -183,29 +334,36 @@ async def parse_trace_log(inf)->dict:
                 record["outcome"] = match.group("outcome")
                 record["status"] = match.group("status")
                 record["target"] = match.group("target")
-                yield record
+                _pid = PID.from_str(record["pid"])
+                rr = ResolveResponse(
+                    client = record["client"],
+                    host = record["host"],
+                    action = record["action"],
+                    pid = _pid,
+                    ipaddr = record["ip"],
+                    user_agent=record["ua"],
+                    outcome = record["outcome"],
+                    status = record["status"],
+                    target = URL(target = record["target"])
+                )
+                yield rr
                 del buffer[key]
         except asyncio.IncompleteReadError as e:
             #L.info(e)
             await asyncio.sleep(0.5)
 
-async def send_request(id, record: dict, client):
-    """
-    Given a record of a resolve request from legacy n2t,
-    replay the request on the new n2t and trace the redirects
-    through known hosts. The final target address should match the
-    target resolved by the legacy n2t service.
-    """
-    local_prefixes = [
-        "https://uc3-ezid-n2t-prd.cdlib.org/",
-        "https://arks.org/",
-        "https://ezid.cdlib.org/",
-    ]
-    url = f"https://uc3-ezid-n2t-prd.cdlib.org/{record['pid']}"
-    headers = {"User-Agent": record['ua']}
+async def follow_redirects_until(
+        client:httpx.AsyncClient,
+        url: str,
+        headers: dict[str, str],
+        stop_hosts:typing.Optional[list[str]]=None
+    ) -> HttpResponse:
+    if stop_hosts is None:
+        stop_hosts = []
     visited = []
+    result = HttpResponse(start_url=URL(url))
     try:
-        visited.append(str(url))
+        visited.append(url)
         req = client.build_request("GET", url, headers=headers)
         last_response = None
         target_url = None
@@ -220,7 +378,7 @@ async def send_request(id, record: dict, client):
             if req is not None:
                 _url = str(req.url)
                 _is_local = False
-                for prefix in local_prefixes:
+                for prefix in stop_hosts:
                     if _url.startswith(prefix):
                         _is_local = True
                 last_response = response
@@ -234,17 +392,39 @@ async def send_request(id, record: dict, client):
                 if not _is_local:
                     req = None
         L.debug("Finished last response %s", last_response.url)
-        result = {
-            "status": last_response.status_code,
-            "target": target_url
-        }
+        result.status = last_response.status_code,
+        result.final_url = URL(target_url)
+        result.msecs = int(last_response.elapsed.total_seconds()/1000.0)
         return result
     except Exception as e:
         L.error("Client id %s : %s", id, e)
+    return result
+
+
+async def send_request(id:str, record: ResolveResponse, client:httpx.AsyncClient) -> typing.Optional[ResolveResponse]:
+    """
+    Given a record of a resolve request from legacy n2t,
+    replay the request on the new n2t and trace the redirects
+    through known hosts. The final target address should match the
+    target resolved by the legacy n2t service.
+    """
+    local_prefixes = [
+        "https://uc3-ezid-n2t-prd.cdlib.org/",
+        "https://arks.org/",
+        "https://ezid.cdlib.org/",
+    ]
+    url = f"https://uc3-ezid-n2t-prd.cdlib.org/{str(record.pid)}"
+    headers = {"User-Agent": record.user_agent}
+    response = await follow_redirects_until(client, url, headers, stop_hosts=local_prefixes)
+    if response.final_url is not None:
+        result = record.clone()
+        result.status = response.status_code
+        result.target = response.final_url
+        return result
     return None
 
 
-async def resolve_task(id, q: asyncio.Queue):
+async def resolve_task(id, q: asyncio.Queue, async_session):
     """Worker that pulls tasks from queue and executes.
     """
     n = 0
@@ -256,9 +436,11 @@ async def resolve_task(id, q: asyncio.Queue):
                     result = await send_request(id, record, client)
                     n += 1
                     if result is not None:
-                        print(f"{id} {n} {record['pid']} {record['target']} {result['target']} {result['status']}")
+                        print(f"{id} {n} {record.pid} {record.target} {result.target} {result.status}")
+                        async with async_session() as session:
+                            await add_resolution(session, record.pid.original, "new", result.target.target, str(result.status[-1]))
                 except Exception as e:
-                    L.error(e)
+                    L.error("resolve_task error: %s", e)
                 q.task_done()
     finally:
         await client.aclose()
@@ -275,18 +457,53 @@ async def connect_stdin():
     return reader
 
 
+async def test_count() -> None:
+    engine = await get_pidstore_engine("sqlite+aiosqlite:///pidstore.sqlite")
+    async_session = sqlalchemy.ext.asyncio.async_sessionmaker(engine, expire_on_commit=False)
+    scheme = "ark"
+    prefix = "85142"
+    async with async_session() as session:
+        res = await count_pids(session, scheme, prefix)
+        print(res)
+
+
+async def load_transaction_log(pidstore_url:str) -> None:
+    engine = await get_pidstore_engine(pidstore_url)
+    async_session = sqlalchemy.ext.asyncio.async_sessionmaker(engine, expire_on_commit=False)
+    reader = await connect_stdin()
+    n = 0
+    try:
+        async for record in parse_trace_log(reader, async_session):
+            if record.outcome == "SUCCESS":
+                async with async_session() as session:
+                    await add_pid(session, record.pid)
+                    await add_resolution(session, record.pid.original, "legacy", record.target.target, record.status)
+                    n += 1
+            if n % 1000 == 0:
+                print(f"{n} records")
+    except KeyboardInterrupt:
+        sys.stdout.flush()
+    finally:
+        await engine.dispose()
+
+
 async def main():
+    engine = await get_pidstore_engine("sqlite+aiosqlite:///pidstore.sqlite")
+    async_session = sqlalchemy.ext.asyncio.async_sessionmaker(engine, expire_on_commit=False)
     n_workers = 10
     reader = await connect_stdin()
     task_queue = asyncio.Queue(maxsize=n_workers*10)
-    pool = [asyncio.create_task(resolve_task(n, task_queue)) for n in range(0,n_workers)]
+    pool = [asyncio.create_task(resolve_task(n, task_queue, async_session)) for n in range(0,n_workers)]
     total = 0
     t0 = time.time()
     try:
-        async for record in parse_trace_log(reader):
-            if record['outcome'] == "SUCCESS":
+        async for record in parse_trace_log(reader, async_session):
+            if record.outcome == "SUCCESS":
                 total += 1
                 L.debug(f"put {task_queue.qsize()}")
+                async with async_session() as session:
+                    await add_pid(session, record.pid)
+                    await add_resolution(session, record.pid.original, "legacy", record.target.target, record.status)
                 await task_queue.put(record)
                 if total % 100 == 0:
                     t1 = time.time()
@@ -298,8 +515,11 @@ async def main():
         for task in pool:
             task.cancel()
         sys.stdout.flush()
+    finally:
+        await engine.dispose()
 
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    pidstore_url = "sqlite+aiosqlite:///pidstore.sqlite"
+    asyncio.run(load_transaction_log(pidstore_url))

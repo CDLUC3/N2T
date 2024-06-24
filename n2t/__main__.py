@@ -5,6 +5,8 @@ This script is used for initializing the scheme records from the original YAML
 source and populating a resolver database with the records.
 """
 
+import dataclasses
+import datetime
 import json
 import logging
 import os
@@ -14,14 +16,23 @@ import typing
 import click
 import sqlalchemy
 
-import rslv.lib_rslv.n2tutils
 import rslv.lib_rslv.piddefine
 
 from n2t import __version__
 from n2t import config as appconfig
+from n2t import n2tutils
 
 APP_NAME = "n2t"
 
+class EnhancedJSONEncoder(json.JSONEncoder):
+    """JSON encoder that handles dataclasses and datetime instances."""
+
+    def default(self, o):
+        if dataclasses.is_dataclass(o):
+            return dataclasses.asdict(o)
+        if isinstance(o, datetime.datetime):
+            return o.isoformat(timespec="seconds")
+        return super().default(o)
 
 def load_yaml_to_dict(
     source: str, ignore_types: typing.Optional[typing.List] = None
@@ -38,7 +49,7 @@ def load_yaml_to_dict(
         dict of prefixes
     """
     with open(source, "r") as inf:
-        records = rslv.lib_rslv.n2tutils.n2t_prefixes_from_yaml(
+        records = n2tutils.n2t_prefixes_from_yaml(
             inf, ignore_types=ignore_types, ignore_bad_targets=False
         )
     return records
@@ -109,7 +120,9 @@ def json_to_records(src_folder: str) -> typing.Dict[str, typing.Any]:
             records[key] = record
     return records
 
-def _add_or_update_record(repository, key, value) -> typing.Tuple[int, int, int]:
+def _add_or_update_record(repository, key:str, value:dict[str, typing.Any]) -> typing.Tuple[int, int, int]:
+    """Add or update the record identified by key with the properties of value.
+    """
     L = logging.getLogger(APP_NAME)
     _parsed = rslv.lib_rslv.split_identifier_string(key)
     _scheme = _parsed.get("scheme", None)
@@ -295,7 +308,7 @@ def get_info(config: appconfig.Settings) -> int:
         pass
     if res["schemes"]["total"] == 0:
         L.warning("No schemes have been loaded!")
-    print(json.dumps(res, indent=2))
+    print(json.dumps(res, indent=2, cls=EnhancedJSONEncoder))
     return 0
 
 
