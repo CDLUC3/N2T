@@ -1,9 +1,9 @@
 {
   "id": "panther.ontology",
   "target": {
-    "DEFAULT": "http://www.pantherdb.org/panther/category.do?categoryAcc={content}"
+    "DEFAULT": "http://www.pantherdb.org/panther/category.do?categoryAcc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.pantherdb.org/panther/category.do?categoryAcc={content}",
+  "redirect": "http://www.pantherdb.org/panther/category.do?categoryAcc=${content}",
   "revision": 0
 }

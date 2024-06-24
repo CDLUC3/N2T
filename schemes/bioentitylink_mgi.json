@@ -1,7 +1,7 @@
 {
   "id": "bioentitylink/mgi",
   "target": {
-    "DEFAULT": "https://bioentity.link/#/lexicon/public/MGI:{content}"
+    "DEFAULT": "https://bioentity.link/#/lexicon/public/MGI:${content}"
   },
   "type": "scheme",
   "name": "MGD through BioEntity Link",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://bioentity.link/#/lexicon/public/MGI:${ac}",
-  "redirect": "https://bioentity.link/#/lexicon/public/MGI:{content}",
+  "redirect": "https://bioentity.link/#/lexicon/public/MGI:${content}",
   "description": "The Mouse Genome Database (MGD) project includes data on gene characterization, nomenclature, mapping, gene homologies among mammals, sequence links, phenotypes, allelic variants and mutants, and strain data.",
   "subject": "expression; sequence; phenotype",
   "location": "USA",

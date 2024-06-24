@@ -1,9 +1,9 @@
 {
   "id": "pdbe",
   "target": {
-    "DEFAULT": "http://www.pdbe.org/{content}"
+    "DEFAULT": "http://www.pdbe.org/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.pdbe.org/{content}",
+  "redirect": "http://www.pdbe.org/${content}",
   "revision": 0
 }

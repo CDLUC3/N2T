@@ -1,7 +1,7 @@
 {
   "id": "omicsdi/gpmdb",
   "target": {
-    "DEFAULT": "https://www.omicsdi.org/dataset/gpmdb/{content}"
+    "DEFAULT": "https://www.omicsdi.org/dataset/gpmdb/${content}"
   },
   "type": "scheme",
   "name": "GPMDB through OmicsDI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.omicsdi.org/dataset/gpmdb/${ac}",
-  "redirect": "https://www.omicsdi.org/dataset/gpmdb/{content}",
+  "redirect": "https://www.omicsdi.org/dataset/gpmdb/${content}",
   "description": "The Global Proteome Machine Database was constructed to utilize the information obtained by GPM servers to aid in the difficult process of validating peptide MS/MS spectra as well as protein coverage patterns.",
   "subject": null,
   "location": "UK",

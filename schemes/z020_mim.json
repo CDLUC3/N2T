@@ -1,7 +1,7 @@
 {
   "id": "z020/mim",
   "target": {
-    "DEFAULT": "http://mirror.omim.org/entry/{content}"
+    "DEFAULT": "http://mirror.omim.org/entry/${content}"
   },
   "type": "scheme",
   "name": "OMIM mirror at John Hopkins",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://mirror.omim.org/entry/${ac}",
-  "redirect": "http://mirror.omim.org/entry/{content}",
+  "redirect": "http://mirror.omim.org/entry/${content}",
   "description": "Online Mendelian Inheritance in Man is a catalog of human genes and genetic disorders.",
   "subject": "phenotype; disorder; human",
   "location": "USA",

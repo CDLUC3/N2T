@@ -1,7 +1,7 @@
 {
   "id": "yetfasco",
   "target": {
-    "DEFAULT": "http://yetfasco.ccbr.utoronto.ca/showPFM.php?mot={content}"
+    "DEFAULT": "http://yetfasco.ccbr.utoronto.ca/showPFM.php?mot=${content}"
   },
   "type": "scheme",
   "name": "YeTFasCo at University of Toronto",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://yetfasco.ccbr.utoronto.ca/showPFM.php?mot=${ac}",
-  "redirect": "http://yetfasco.ccbr.utoronto.ca/showPFM.php?mot={content}",
+  "redirect": "http://yetfasco.ccbr.utoronto.ca/showPFM.php?mot=${content}",
   "description": "The Yeast Transcription Factor Specificity Compendium (YeTFasCO) is a database of transcription factor specificities for the yeast Saccharomyces cerevisiae in Position Frequency Matrix (PFM) or Position Weight Matrix (PWM) formats.",
   "subject": "interaction; eukaryotic; gene",
   "location": "Canada",

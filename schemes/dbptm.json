@@ -1,9 +1,9 @@
 {
   "id": "dbptm",
   "target": {
-    "DEFAULT": "http://dbptm.mbc.nctu.edu.tw/search_result.php?search_type=seq&swiss_id={content}"
+    "DEFAULT": "http://dbptm.mbc.nctu.edu.tw/search_result.php?search_type=seq&swiss_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://dbptm.mbc.nctu.edu.tw/search_result.php?search_type=seq&swiss_id={content}",
+  "redirect": "http://dbptm.mbc.nctu.edu.tw/search_result.php?search_type=seq&swiss_id=${content}",
   "revision": 0
 }

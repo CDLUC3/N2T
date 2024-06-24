@@ -1,7 +1,7 @@
 {
   "id": "cbioportal",
   "target": {
-    "DEFAULT": "http://www.cbioportal.org/study?id={content}#summary"
+    "DEFAULT": "http://www.cbioportal.org/study?id=${content}#summary"
   },
   "type": "scheme",
   "name": "The cBioPortal for Cancer Genomics",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.cbioportal.org/study?id=${ac}#summary",
-  "redirect": "http://www.cbioportal.org/study?id={content}#summary",
+  "redirect": "http://www.cbioportal.org/study?id=${content}#summary",
   "description": "The cBioPortal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets.",
   "subject": null,
   "location": "USA",

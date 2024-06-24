@@ -1,7 +1,7 @@
 {
   "id": "yid",
   "target": {
-    "DEFAULT": "http://metarray.ucsc.edu/cgi-bin/intron/yirIntrondb?orfName={content}"
+    "DEFAULT": "http://metarray.ucsc.edu/cgi-bin/intron/yirIntrondb?orfName=${content}"
   },
   "type": "scheme",
   "name": "Yeast Intron Database version 3 at Baskin School of Engineering",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://metarray.ucsc.edu/cgi-bin/intron/yirIntrondb?orfName=${ac}",
-  "redirect": "http://metarray.ucsc.edu/cgi-bin/intron/yirIntrondb?orfName={content}",
+  "redirect": "http://metarray.ucsc.edu/cgi-bin/intron/yirIntrondb?orfName=${content}",
   "description": "The YEast Intron Database (version 3) contains information on the spliceosomal introns of the yeast Saccharomyces cerevisiae. It includes expression data that relates to the efficiency of splicing relative to other processes in strains of yeast lacking nonessential splicing factors.  The data are displayed on each intron page. An updated version of the database is available through [MIR:00000521].",
   "subject": "DNA; sequence; eukaryotic",
   "location": "USA",

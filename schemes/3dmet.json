@@ -1,7 +1,7 @@
 {
   "id": "3dmet",
   "target": {
-    "DEFAULT": "http://www.3dmet.dna.affrc.go.jp/cgi/show_data.php?acc={content}"
+    "DEFAULT": "http://www.3dmet.dna.affrc.go.jp/cgi/show_data.php?acc=${content}"
   },
   "type": "scheme",
   "name": "3DMET database",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.3dmet.dna.affrc.go.jp/cgi/show_data.php?acc=${ac}",
-  "redirect": "http://www.3dmet.dna.affrc.go.jp/cgi/show_data.php?acc={content}",
+  "redirect": "http://www.3dmet.dna.affrc.go.jp/cgi/show_data.php?acc=${content}",
   "description": "3DMET is a database collecting three-dimensional structures of natural metabolites.",
   "subject": "structure; metabolite; chemical",
   "location": "Japan",

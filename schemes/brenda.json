@@ -1,7 +1,7 @@
 {
   "id": "brenda",
   "target": {
-    "DEFAULT": "https://www.brenda-enzymes.org/php/result_flat.php4?ecno={content}"
+    "DEFAULT": "https://www.brenda-enzymes.org/php/result_flat.php4?ecno=${content}"
   },
   "type": "scheme",
   "name": "Brenda enzyme database",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://www.brenda-enzymes.org/php/result_flat.php4?ecno=${ac}",
-  "redirect": "https://www.brenda-enzymes.org/php/result_flat.php4?ecno={content}",
+  "redirect": "https://www.brenda-enzymes.org/php/result_flat.php4?ecno=${content}",
   "description": "BRENDA is a collection of enzyme functional data available to the scientific community. Data on enzyme function are extracted directly from the primary literature The database covers information on classification and nomenclature, reaction and specificity, functional parameters, occurrence, enzyme structure and stability, mutants and enzyme engineering, preparation and isolation, the application of enzymes, and ligand-related data.",
   "subject": "enzyme",
   "location": "Germany",

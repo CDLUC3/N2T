@@ -1,7 +1,7 @@
 {
   "id": "isni",
   "target": {
-    "DEFAULT": "http://www.isni.org/isni/{content}"
+    "DEFAULT": "http://www.isni.org/isni/${content}"
   },
   "type": "scheme",
   "name": "International Standard Name Identifier",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.isni.org/isni/${ac}",
-  "redirect": "http://www.isni.org/isni/{content}",
+  "redirect": "http://www.isni.org/isni/${content}",
   "description": "ISNI is the ISO certified global standard number for identifying the millions of contributors to creative works and those active in their distribution, including researchers, inventors, writers, artists, visual creators, performers, producers, publishers, aggregators, and more. It is part of a family of international standard identifiers that includes identifiers of works, recordings, products and right holders in all repertoires, e.g. DOI, ISAN, ISBN, ISRC, ISSN, ISTC, and ISWC.  The mission of the ISNI International Authority (ISNI-IA) is to assign to the public name(s) of a researcher, inventor, writer, artist, performer, publisher, etc. a persistent unique identifying number in order to resolve the problem of name ambiguity in search and discovery; and diffuse each assigned ISNI across all repertoires in the global supply chain so that every published work can be unambiguously attributed to its creator wherever that work is described.",
   "subject": null,
   "location": "UK",

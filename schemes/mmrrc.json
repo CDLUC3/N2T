@@ -1,7 +1,7 @@
 {
   "id": "mmrrc",
   "target": {
-    "DEFAULT": "http://www.mmrrc.org/catalog/getSDS.php?mmrrc_id={content}"
+    "DEFAULT": "http://www.mmrrc.org/catalog/getSDS.php?mmrrc_id=${content}"
   },
   "type": "scheme",
   "name": "MMRRC  at University of North Carolina",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.mmrrc.org/catalog/getSDS.php?mmrrc_id=${ac}",
-  "redirect": "http://www.mmrrc.org/catalog/getSDS.php?mmrrc_id={content}",
+  "redirect": "http://www.mmrrc.org/catalog/getSDS.php?mmrrc_id=${content}",
   "description": "The MMRRC database is a repository of available mouse stocks and embryonic stem cell line collections.",
   "subject": "catalogue; strain; mammalian",
   "location": "USA",

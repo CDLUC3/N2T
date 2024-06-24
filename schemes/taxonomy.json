@@ -1,7 +1,7 @@
 {
   "id": "taxonomy",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id={content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=${content}"
   },
   "type": "scheme",
   "name": "NCBI Taxonomy",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id={content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=${content}",
   "description": "The taxonomy contains the relationships between all living forms for which nucleic acid or protein sequence have been determined.",
   "subject": "taxonomy",
   "location": "USA",

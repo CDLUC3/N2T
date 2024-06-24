@@ -1,9 +1,9 @@
 {
   "id": "dpd",
   "target": {
-    "DEFAULT": "http://dpdb.uab.es/cgi-bin/DPDB_s2.pl?Accession={content}"
+    "DEFAULT": "http://dpdb.uab.es/cgi-bin/DPDB_s2.pl?Accession=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://dpdb.uab.es/cgi-bin/DPDB_s2.pl?Accession={content}",
+  "redirect": "http://dpdb.uab.es/cgi-bin/DPDB_s2.pl?Accession=${content}",
   "revision": 0
 }

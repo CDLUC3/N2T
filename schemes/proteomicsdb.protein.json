@@ -1,7 +1,7 @@
 {
   "id": "proteomicsdb.protein",
   "target": {
-    "DEFAULT": "https://www.proteomicsdb.org/#human/proteinDetails/{content}/summary"
+    "DEFAULT": "https://www.proteomicsdb.org/#human/proteinDetails/${content}/summary"
   },
   "type": "scheme",
   "name": "Proteomics DB Protein at Center for Integrated Protein Science",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://www.proteomicsdb.org/#human/proteinDetails/${ac}/summary",
-  "redirect": "https://www.proteomicsdb.org/#human/proteinDetails/{content}/summary",
+  "redirect": "https://www.proteomicsdb.org/#human/proteinDetails/${content}/summary",
   "description": "ProteomicsDB is an effort dedicated to expedite the identification of the human proteome and its use across the scientific community. This human proteome data is assembled primarily using information  from liquid chromatography tandem-mass-spectrometry (LC-MS/MS) experiments involving human tissues, cell lines and body fluids. Information is accessible for individual proteins, or on the basis of protein coverage on the encoding chromosome, and for peptide components of a protein. This collection provides access to individual proteins.",
   "subject": "human; protein",
   "location": "Germany",

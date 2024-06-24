@@ -1,7 +1,7 @@
 {
   "id": "soybase",
   "target": {
-    "DEFAULT": "http://www.soybase.org/sbt/search/search_results.php?category=SNP&search_term={content}"
+    "DEFAULT": "http://www.soybase.org/sbt/search/search_results.php?category=SNP&search_term=${content}"
   },
   "type": "scheme",
   "name": "SoyBase at Iowa State University",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.soybase.org/sbt/search/search_results.php?category=SNP&search_term=${ac}",
-  "redirect": "http://www.soybase.org/sbt/search/search_results.php?category=SNP&search_term={content}",
+  "redirect": "http://www.soybase.org/sbt/search/search_results.php?category=SNP&search_term=${content}",
   "description": "SoyBase is a repository for curated genetics, genomics and related data resources for soybean.",
   "subject": "plant; gene",
   "location": "USA",

@@ -1,9 +1,9 @@
 {
   "id": "hits",
   "target": {
-    "DEFAULT": "http://hits.isb-sib.ch/cgi-bin/view_mot_entry?name={content}"
+    "DEFAULT": "http://hits.isb-sib.ch/cgi-bin/view_mot_entry?name=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://hits.isb-sib.ch/cgi-bin/view_mot_entry?name={content}",
+  "redirect": "http://hits.isb-sib.ch/cgi-bin/view_mot_entry?name=${content}",
   "revision": 0
 }

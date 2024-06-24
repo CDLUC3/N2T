@@ -1,9 +1,9 @@
 {
   "id": "schistodb",
   "target": {
-    "DEFAULT": "http://schistocyc.schistodb.net/ptools/SM/NEW-IMAGE?type=GENE&object={content}"
+    "DEFAULT": "http://schistocyc.schistodb.net/ptools/SM/NEW-IMAGE?type=GENE&object=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://schistocyc.schistodb.net/ptools/SM/NEW-IMAGE?type=GENE&object={content}",
+  "redirect": "http://schistocyc.schistodb.net/ptools/SM/NEW-IMAGE?type=GENE&object=${content}",
   "revision": 0
 }

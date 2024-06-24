@@ -1,7 +1,7 @@
 {
   "id": "atcc",
   "target": {
-    "DEFAULT": "http://www.lgcstandards-atcc.org/Products/All/{content}.aspx"
+    "DEFAULT": "http://www.lgcstandards-atcc.org/Products/All/${content}.aspx"
   },
   "type": "scheme",
   "name": "ATCC in Virginia",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.lgcstandards-atcc.org/Products/All/${ac}.aspx",
-  "redirect": "http://www.lgcstandards-atcc.org/Products/All/{content}.aspx",
+  "redirect": "http://www.lgcstandards-atcc.org/Products/All/${content}.aspx",
   "description": "The American Type Culture Collection (ATCC) is a private, nonprofit biological resource center whose mission focuses on the acquisition, authentication, production, preservation, development and distribution of standard reference microorganisms, cell lines and other materials for research in the life sciences.",
   "subject": "microbial; eukaryotic; catalogue",
   "location": "USA",

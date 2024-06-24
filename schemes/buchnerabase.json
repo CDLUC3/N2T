@@ -1,9 +1,9 @@
 {
   "id": "buchnerabase",
   "target": {
-    "DEFAULT": "http://www.york.ac.uk/res/thomas/Buchnerabase/resources/gene_page_aps.cfm?BBnum={content}"
+    "DEFAULT": "http://www.york.ac.uk/res/thomas/Buchnerabase/resources/gene_page_aps.cfm?BBnum=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.york.ac.uk/res/thomas/Buchnerabase/resources/gene_page_aps.cfm?BBnum={content}",
+  "redirect": "http://www.york.ac.uk/res/thomas/Buchnerabase/resources/gene_page_aps.cfm?BBnum=${content}",
   "revision": 0
 }

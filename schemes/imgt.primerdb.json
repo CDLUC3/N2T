@@ -1,9 +1,9 @@
 {
   "id": "imgt.primerdb",
   "target": {
-    "DEFAULT": "http://imgt.org/IMGTPrimerDB/Check_PrDB.pl?numacc0={content}&origin=view&source=PrList"
+    "DEFAULT": "http://imgt.org/IMGTPrimerDB/Check_PrDB.pl?numacc0=${content}&origin=view&source=PrList"
   },
   "type": "commonspfx",
-  "redirect": "http://imgt.org/IMGTPrimerDB/Check_PrDB.pl?numacc0={content}&origin=view&source=PrList",
+  "redirect": "http://imgt.org/IMGTPrimerDB/Check_PrDB.pl?numacc0=${content}&origin=view&source=PrList",
   "revision": 0
 }

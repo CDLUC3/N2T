@@ -1,7 +1,7 @@
 {
   "id": "pubchem.bioassay",
   "target": {
-    "DEFAULT": "https://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid={content}"
+    "DEFAULT": "https://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid=${content}"
   },
   "type": "scheme",
   "name": "PubChem Bioassay at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid=${ac}",
-  "redirect": "https://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid={content}",
+  "redirect": "https://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid=${content}",
   "description": "PubChem provides information on the biological activities of small molecules. It is a component of NIH's Molecular Libraries Roadmap Initiative. PubChem bioassay archives active compounds and bioassay results.",
   "subject": "chemical",
   "location": "USA",

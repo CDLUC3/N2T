@@ -1,7 +1,7 @@
 {
   "id": "iuphar.receptor",
   "target": {
-    "DEFAULT": "http://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId={content}"
+    "DEFAULT": "http://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId=${content}"
   },
   "type": "scheme",
   "name": "IUPHAR Receptor at University of Edinburgh",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId=${ac}",
-  "redirect": "http://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId={content}",
+  "redirect": "http://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId=${content}",
   "description": "The IUPHAR Compendium details the molecular, biophysical and pharmacological properties of identified mammalian sodium, calcium and potassium channels, as well as the related cyclic nucleotide-modulated ion channels and transient receptor potential channels. It includes information on nomenclature systems, and on inter and intra-species molecular structure variation. This collection references individual receptors or subunits.",
   "subject": "mammalian",
   "location": "UK",

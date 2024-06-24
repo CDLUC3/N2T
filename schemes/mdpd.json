@@ -1,9 +1,9 @@
 {
   "id": "mdpd",
   "target": {
-    "DEFAULT": "http://datam.i2r.a-star.edu.sg/mdpd/detail.php?symbol={content}"
+    "DEFAULT": "http://datam.i2r.a-star.edu.sg/mdpd/detail.php?symbol=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://datam.i2r.a-star.edu.sg/mdpd/detail.php?symbol={content}",
+  "redirect": "http://datam.i2r.a-star.edu.sg/mdpd/detail.php?symbol=${content}",
   "revision": 0
 }

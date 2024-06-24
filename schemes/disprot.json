@@ -1,7 +1,7 @@
 {
   "id": "disprot",
   "target": {
-    "DEFAULT": "http://www.disprot.org/{content}"
+    "DEFAULT": "http://www.disprot.org/${content}"
   },
   "type": "scheme",
   "name": "DisProt at Indiana University",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.disprot.org/${ac}",
-  "redirect": "http://www.disprot.org/{content}",
+  "redirect": "http://www.disprot.org/${content}",
   "description": "The Database of Protein Disorder (DisProt) is a curated database that provides information about proteins that lack fixed 3D structure in their putatively native states, either in their entirety or in part.",
   "subject": "protein; structure",
   "location": "USA",

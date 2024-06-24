@@ -1,9 +1,9 @@
 {
   "id": "gi",
   "target": {
-    "DEFAULT": "http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val={content}"
+    "DEFAULT": "http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val={content}",
+  "redirect": "http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=${content}",
   "revision": 0
 }

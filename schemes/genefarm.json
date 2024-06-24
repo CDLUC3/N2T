@@ -1,7 +1,7 @@
 {
   "id": "genefarm",
   "target": {
-    "DEFAULT": "https://urgi.versailles.inra.fr/Genefarm/Gene/display_gene.htpl?GENE_ID={content}"
+    "DEFAULT": "https://urgi.versailles.inra.fr/Genefarm/Gene/display_gene.htpl?GENE_ID=${content}"
   },
   "type": "scheme",
   "name": "GeneFarm at Unit&#xE9; de Recherche en G&#xE9;nomique V&#xE9;g&#xE9;tale",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://urgi.versailles.inra.fr/Genefarm/Gene/display_gene.htpl?GENE_ID=${ac}",
-  "redirect": "https://urgi.versailles.inra.fr/Genefarm/Gene/display_gene.htpl?GENE_ID={content}",
+  "redirect": "https://urgi.versailles.inra.fr/Genefarm/Gene/display_gene.htpl?GENE_ID=${content}",
   "description": "GeneFarm is a database whose purpose is to store traceable annotations for Arabidopsis nuclear genes and gene products.",
   "subject": "nucleotide; sequence; expression; genome",
   "location": "France",

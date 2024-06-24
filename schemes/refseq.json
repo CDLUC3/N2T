@@ -1,7 +1,7 @@
 {
   "id": "refseq",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/${content}"
   },
   "type": "scheme",
   "name": "The NCBI Reference Sequence database",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/protein/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/protein/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/protein/${content}",
   "description": "The Reference Sequence (RefSeq) collection aims to provide a comprehensive, integrated, non-redundant set of sequences, including genomic DNA, transcript (RNA), and protein products.",
   "subject": "mammalian; protein; annotation; sequence",
   "location": "USA",

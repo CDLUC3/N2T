@@ -1,7 +1,7 @@
 {
   "id": "z017/biomodels.db",
   "target": {
-    "DEFAULT": "http://biomodels.caltech.edu/{content}"
+    "DEFAULT": "http://biomodels.caltech.edu/${content}"
   },
   "type": "scheme",
   "name": "Caltech mirror",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://biomodels.caltech.edu/${ac}",
-  "redirect": "http://biomodels.caltech.edu/{content}",
+  "redirect": "http://biomodels.caltech.edu/${content}",
   "description": "BioModels Database is a data resource that allows biologists to store, search and retrieve published mathematical models of biological interests.",
   "subject": "model",
   "location": "USA",

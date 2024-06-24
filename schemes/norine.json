@@ -1,7 +1,7 @@
 {
   "id": "norine",
   "target": {
-    "DEFAULT": "http://bioinfo.lifl.fr/norine/result.jsp?ID={content}"
+    "DEFAULT": "http://bioinfo.lifl.fr/norine/result.jsp?ID=${content}"
   },
   "type": "scheme",
   "name": "NORINE at Computer Science Laboratory of Lille",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://bioinfo.lifl.fr/norine/result.jsp?ID=${ac}",
-  "redirect": "http://bioinfo.lifl.fr/norine/result.jsp?ID={content}",
+  "redirect": "http://bioinfo.lifl.fr/norine/result.jsp?ID=${content}",
   "description": "Norine is a database dedicated to nonribosomal peptides (NRPs). In bacteria and fungi, in addition to the traditional ribosomal proteic biosynthesis, an alternative ribosome-independent pathway called NRP synthesis allows peptide production. The molecules synthesized by NRPS contain a high proportion of nonproteogenic amino acids whose primary structure is not always linear, often being more complex and containing cycles and branchings.",
   "subject": "protein; microbial; fungal",
   "location": "France",

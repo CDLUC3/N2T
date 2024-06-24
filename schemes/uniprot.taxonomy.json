@@ -1,9 +1,9 @@
 {
   "id": "uniprot.taxonomy",
   "target": {
-    "DEFAULT": "http://www.uniprot.org/taxonomy/{content}"
+    "DEFAULT": "http://www.uniprot.org/taxonomy/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.uniprot.org/taxonomy/{content}",
+  "redirect": "http://www.uniprot.org/taxonomy/${content}",
   "revision": 0
 }

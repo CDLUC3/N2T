@@ -1,7 +1,7 @@
 {
   "id": "mycobank",
   "target": {
-    "DEFAULT": "http://www.mycobank.org/Biolomics.aspx?Table=Mycobank&MycoBankNr_={content}"
+    "DEFAULT": "http://www.mycobank.org/Biolomics.aspx?Table=Mycobank&MycoBankNr_=${content}"
   },
   "type": "scheme",
   "name": "MycoBank at Fungal Biodiversity Centre",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.mycobank.org/Biolomics.aspx?Table=Mycobank&MycoBankNr_=${ac}",
-  "redirect": "http://www.mycobank.org/Biolomics.aspx?Table=Mycobank&MycoBankNr_={content}",
+  "redirect": "http://www.mycobank.org/Biolomics.aspx?Table=Mycobank&MycoBankNr_=${content}",
   "description": "MycoBank is an online database, documenting new mycological names and combinations, eventually combined with descriptions and illustrations.",
   "subject": "classification",
   "location": "Netherlands",

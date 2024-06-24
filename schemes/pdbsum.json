@@ -1,9 +1,9 @@
 {
   "id": "pdbsum",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/pdbsum/{content}"
+    "DEFAULT": "http://www.ebi.ac.uk/pdbsum/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/pdbsum/{content}",
+  "redirect": "http://www.ebi.ac.uk/pdbsum/${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "cst",
   "target": {
-    "DEFAULT": "http://www.cellsignal.com/reference/pathway/{content}.html"
+    "DEFAULT": "http://www.cellsignal.com/reference/pathway/${content}.html"
   },
   "type": "scheme",
   "name": "CST Pathways at Cell Signaling Technology",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.cellsignal.com/reference/pathway/${ac}.html",
-  "redirect": "http://www.cellsignal.com/reference/pathway/{content}.html",
+  "redirect": "http://www.cellsignal.com/reference/pathway/${content}.html",
   "description": "Cell Signaling Technology is a commercial organisation which provides a pathway portal to showcase their phospho-antibody products. This collection references pathways.",
   "subject": "immunogenetics; catalogue; pathway",
   "location": "USA",

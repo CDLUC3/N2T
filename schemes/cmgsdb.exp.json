@@ -1,9 +1,9 @@
 {
   "id": "cmgsdb.exp",
   "target": {
-    "DEFAULT": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/rnaiexpt.php?expt={content}"
+    "DEFAULT": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/rnaiexpt.php?expt=${content}"
   },
   "type": "commonspfx",
-  "redirect": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/rnaiexpt.php?expt={content}",
+  "redirect": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/rnaiexpt.php?expt=${content}",
   "revision": 0
 }

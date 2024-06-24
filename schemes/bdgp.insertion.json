@@ -1,7 +1,7 @@
 {
   "id": "bdgp.insertion",
   "target": {
-    "DEFAULT": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line={content}"
+    "DEFAULT": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line=${content}"
   },
   "type": "scheme",
   "name": "BDGP Gene Disruption Project",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line=${ac}",
-  "redirect": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line={content}",
+  "redirect": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line=${content}",
   "description": "BDGP gene disruption collection provides a public resource of gene disruptions of Drosophila genes using a single transposable element.",
   "subject": "gene; sequence",
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "z053/lrg",
   "target": {
-    "DEFAULT": "ftp://ftp.ebi.ac.uk/pub/databases/lrgex/{content}.xml"
+    "DEFAULT": "ftp://ftp.ebi.ac.uk/pub/databases/lrgex/${content}.xml"
   },
   "type": "scheme",
   "name": "Locus Reference Genomic at University of Leicester",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "ftp://ftp.ebi.ac.uk/pub/databases/lrgex/${ac}.xml",
-  "redirect": "ftp://ftp.ebi.ac.uk/pub/databases/lrgex/{content}.xml",
+  "redirect": "ftp://ftp.ebi.ac.uk/pub/databases/lrgex/${content}.xml",
   "description": "Locus Reference Genomic (LRG) provides identifiers to stable genomic DNA sequences for regions of the human genome, providing a recognized reference-sequence standard for reporting sequence variants. LRG is maintained by the NCBI and the European Bioinformatics Institute (EBI).",
   "subject": "sequence; genome; DNA; schema.org; human",
   "location": "UK",

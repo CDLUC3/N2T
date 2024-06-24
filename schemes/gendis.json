@@ -1,9 +1,9 @@
 {
   "id": "gendis",
   "target": {
-    "DEFAULT": "http://caps.ncbs.res.in/cgi-bin/mini/databases/gendis/sf.cgi?code={content}"
+    "DEFAULT": "http://caps.ncbs.res.in/cgi-bin/mini/databases/gendis/sf.cgi?code=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://caps.ncbs.res.in/cgi-bin/mini/databases/gendis/sf.cgi?code={content}",
+  "redirect": "http://caps.ncbs.res.in/cgi-bin/mini/databases/gendis/sf.cgi?code=${content}",
   "revision": 0
 }

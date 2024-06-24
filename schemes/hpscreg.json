@@ -1,7 +1,7 @@
 {
   "id": "hpscreg",
   "target": {
-    "DEFAULT": "https://hpscreg.eu/cell-line/{content}"
+    "DEFAULT": "https://hpscreg.eu/cell-line/${content}"
   },
   "type": "scheme",
   "name": "Human Pluripotent Stem Cell Registry",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://hpscreg.eu/cell-line/${ac}",
-  "redirect": "https://hpscreg.eu/cell-line/{content}",
+  "redirect": "https://hpscreg.eu/cell-line/${content}",
   "description": "hPSCreg is a freely accessible global registry for human pluripotent stem cell lines (hPSC-lines).",
   "subject": null,
   "location": "Germany",

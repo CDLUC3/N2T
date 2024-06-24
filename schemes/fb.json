@@ -1,7 +1,7 @@
 {
   "id": "fb",
   "target": {
-    "DEFAULT": "https://www.alliancegenome.org/gene/FB:{content}"
+    "DEFAULT": "https://www.alliancegenome.org/gene/FB:${content}"
   },
   "type": "scheme",
   "name": "FlyBase through the Alliance of Genome Resources",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.alliancegenome.org/gene/FB:${ac}",
-  "redirect": "https://www.alliancegenome.org/gene/FB:{content}",
+  "redirect": "https://www.alliancegenome.org/gene/FB:${content}",
   "description": "FlyBase is the database of the Drosophila Genome Projects and of associated literature.",
   "subject": "eukaryotic; genome; nucleotide",
   "location": "USA",

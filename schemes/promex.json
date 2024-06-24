@@ -1,9 +1,9 @@
 {
   "id": "promex",
   "target": {
-    "DEFAULT": "http://promex.pph.univie.ac.at/promex/?spec={content}"
+    "DEFAULT": "http://promex.pph.univie.ac.at/promex/?spec=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://promex.pph.univie.ac.at/promex/?spec={content}",
+  "redirect": "http://promex.pph.univie.ac.at/promex/?spec=${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "noncodev3",
   "target": {
-    "DEFAULT": "http://www.noncode.org/NONCODERv3/ncrna.php?ncid={content}"
+    "DEFAULT": "http://www.noncode.org/NONCODERv3/ncrna.php?ncid=${content}"
   },
   "type": "scheme",
   "name": "NONCODE at Chinese Academy of Sciences",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.noncode.org/NONCODERv3/ncrna.php?ncid=${ac}",
-  "redirect": "http://www.noncode.org/NONCODERv3/ncrna.php?ncid={content}",
+  "redirect": "http://www.noncode.org/NONCODERv3/ncrna.php?ncid=${content}",
   "description": "NONCODE is a database of expression and functional lncRNA (long noncoding RNA) data obtained from microarray studies. LncRNAs have been shown to play key roles in various biological processes such as imprinting control, circuitry controlling pluripotency and differentiation, immune responses and chromosome dynamics. The collection references NONCODE version 3. This was replaced in 2013 by version 4.",
   "subject": "expression; nucleotide",
   "location": "China",

@@ -1,9 +1,9 @@
 {
   "id": "l1base",
   "target": {
-    "DEFAULT": "http://line1.bioapps.biozentrum.uni-wuerzburg.de/details.php?DBN=[?family_name]&UID={content}"
+    "DEFAULT": "http://line1.bioapps.biozentrum.uni-wuerzburg.de/details.php?DBN=[?family_name]&UID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://line1.bioapps.biozentrum.uni-wuerzburg.de/details.php?DBN=[?family_name]&UID={content}",
+  "redirect": "http://line1.bioapps.biozentrum.uni-wuerzburg.de/details.php?DBN=[?family_name]&UID=${content}",
   "revision": 0
 }

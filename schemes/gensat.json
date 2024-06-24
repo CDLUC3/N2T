@@ -1,9 +1,9 @@
 {
   "id": "gensat",
   "target": {
-    "DEFAULT": "http://www.ncbi.nlm.nih.gov/sites/entrez?db=gensat&cmd=retrieve&list_uids={content}"
+    "DEFAULT": "http://www.ncbi.nlm.nih.gov/sites/entrez?db=gensat&cmd=retrieve&list_uids=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ncbi.nlm.nih.gov/sites/entrez?db=gensat&cmd=retrieve&list_uids={content}",
+  "redirect": "http://www.ncbi.nlm.nih.gov/sites/entrez?db=gensat&cmd=retrieve&list_uids=${content}",
   "revision": 0
 }

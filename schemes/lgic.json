@@ -1,7 +1,7 @@
 {
   "id": "lgic",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/compneur-srv/LGICdb/HTML/{content}.php"
+    "DEFAULT": "https://www.ebi.ac.uk/compneur-srv/LGICdb/HTML/${content}.php"
   },
   "type": "scheme",
   "name": "Ligand-Gated Ion Channel database at EBI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/compneur-srv/LGICdb/HTML/${ac}.php",
-  "redirect": "https://www.ebi.ac.uk/compneur-srv/LGICdb/HTML/{content}.php",
+  "redirect": "https://www.ebi.ac.uk/compneur-srv/LGICdb/HTML/${content}.php",
   "description": "The Ligand-Gated Ion Channel database provides nucleic and proteic sequences of the subunits of ligand-gated ion channels. These transmembrane proteins can exist under different conformations, at least one of which forms a pore through the membrane connecting two neighbouring compartments. The database can be used to generate multiple sequence alignments from selected subunits, and gives the atomic coordinates of subunits, or portion of subunits, where available.",
   "subject": "protein; sequence; gene",
   "location": "UK",

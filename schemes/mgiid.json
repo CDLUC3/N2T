@@ -1,9 +1,9 @@
 {
   "id": "mgiid",
   "target": {
-    "DEFAULT": "http://www.fp.ucalgary.ca/group2introns/{content}.htm"
+    "DEFAULT": "http://www.fp.ucalgary.ca/group2introns/${content}.htm"
   },
   "type": "commonspfx",
-  "redirect": "http://www.fp.ucalgary.ca/group2introns/{content}.htm",
+  "redirect": "http://www.fp.ucalgary.ca/group2introns/${content}.htm",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "grid",
   "target": {
-    "DEFAULT": "https://www.grid.ac/institutes/{content}"
+    "DEFAULT": "https://www.grid.ac/institutes/${content}"
   },
   "type": "scheme",
   "name": "GRID at Digital Science & Research Ltd.",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.grid.ac/institutes/${ac}",
-  "redirect": "https://www.grid.ac/institutes/{content}",
+  "redirect": "https://www.grid.ac/institutes/${content}",
   "description": "International coverage of the world's leading research organisations, indexing 92% of funding allocated globally.",
   "subject": "schema.org",
   "location": "UK",

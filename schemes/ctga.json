@@ -1,9 +1,9 @@
 {
   "id": "ctga",
   "target": {
-    "DEFAULT": "http://www.cags.org.ae/FMPro?-db=ctga.fp5&-format=/ctga/ctga_detail.html&-lay=main&Record_Category=Gene%20locus&-max=30&-recid={content}&-find="
+    "DEFAULT": "http://www.cags.org.ae/FMPro?-db=ctga.fp5&-format=/ctga/ctga_detail.html&-lay=main&Record_Category=Gene%20locus&-max=30&-recid=${content}&-find="
   },
   "type": "commonspfx",
-  "redirect": "http://www.cags.org.ae/FMPro?-db=ctga.fp5&-format=/ctga/ctga_detail.html&-lay=main&Record_Category=Gene%20locus&-max=30&-recid={content}&-find=",
+  "redirect": "http://www.cags.org.ae/FMPro?-db=ctga.fp5&-format=/ctga/ctga_detail.html&-lay=main&Record_Category=Gene%20locus&-max=30&-recid=${content}&-find=",
   "revision": 0
 }

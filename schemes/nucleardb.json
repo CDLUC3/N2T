@@ -1,9 +1,9 @@
 {
   "id": "nucleardb",
   "target": {
-    "DEFAULT": "http://www.receptors.org/NR/seq/DR/{content}.html"
+    "DEFAULT": "http://www.receptors.org/NR/seq/DR/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://www.receptors.org/NR/seq/DR/{content}.html",
+  "redirect": "http://www.receptors.org/NR/seq/DR/${content}.html",
   "revision": 0
 }

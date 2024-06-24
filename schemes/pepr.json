@@ -1,9 +1,9 @@
 {
   "id": "pepr",
   "target": {
-    "DEFAULT": "http://pepr.cnmcresearch.org/browse.do?action=list_[?exp/?prj_exp]&[?exp/?project]Id={content}"
+    "DEFAULT": "http://pepr.cnmcresearch.org/browse.do?action=list_[?exp/?prj_exp]&[?exp/?project]Id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://pepr.cnmcresearch.org/browse.do?action=list_[?exp/?prj_exp]&[?exp/?project]Id={content}",
+  "redirect": "http://pepr.cnmcresearch.org/browse.do?action=list_[?exp/?prj_exp]&[?exp/?project]Id=${content}",
   "revision": 0
 }

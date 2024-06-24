@@ -1,7 +1,7 @@
 {
   "id": "tair.gene",
   "target": {
-    "DEFAULT": "http://arabidopsis.org/servlets/TairObject?accession={content}"
+    "DEFAULT": "http://arabidopsis.org/servlets/TairObject?accession=${content}"
   },
   "type": "scheme",
   "name": "The Arabidopsis Information Resource (TAIR) Gene",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://arabidopsis.org/servlets/TairObject?accession=${ac}",
-  "redirect": "http://arabidopsis.org/servlets/TairObject?accession={content}",
+  "redirect": "http://arabidopsis.org/servlets/TairObject?accession=${content}",
   "description": "The Arabidopsis Information Resource (TAIR) maintains a database of genetic and molecular biology data for the model higher plant Arabidopsis thaliana. This is the reference gene model for a given locus.",
   "subject": "nucleotide; plant; gene; eukaryotic; genome",
   "location": "USA",

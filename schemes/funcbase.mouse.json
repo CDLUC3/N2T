@@ -1,7 +1,7 @@
 {
   "id": "funcbase.mouse",
   "target": {
-    "DEFAULT": "http://func.mshri.on.ca/mouse/genes/list_functional_scores/{content}"
+    "DEFAULT": "http://func.mshri.on.ca/mouse/genes/list_functional_scores/${content}"
   },
   "type": "scheme",
   "name": "FuncBase Mouse at Harvard Medical School",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://func.mshri.on.ca/mouse/genes/list_functional_scores/${ac}",
-  "redirect": "http://func.mshri.on.ca/mouse/genes/list_functional_scores/{content}",
+  "redirect": "http://func.mshri.on.ca/mouse/genes/list_functional_scores/${content}",
   "description": "Computational gene function prediction can serve to focus experimental resources on high-priority experimental tasks. FuncBase is a web resource for viewing quantitative machine learning-based gene function annotations. Quantitative annotations of genes, including fungal and mammalian genes, with Gene Ontology terms are accompanied by a community feedback system. Evidence underlying function annotations is shown. FuncBase provides links to external resources, and may be accessed directly or via links from species-specific databases. This collection references mouse.",
   "subject": null,
   "location": "USA",

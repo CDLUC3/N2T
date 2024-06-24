@@ -1,7 +1,7 @@
 {
   "id": "ols/envo",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/envo/terms?obo_id=ENVO:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/envo/terms?obo_id=ENVO:${content}"
   },
   "type": "scheme",
   "name": "The Environment Ontology through OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/envo/terms?obo_id=ENVO:${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/envo/terms?obo_id=ENVO:{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/envo/terms?obo_id=ENVO:${content}",
   "description": "The Environment Ontology is a resource and research target for the semantically controlled description of environmental entities. The ontology's initial aim was the representation of the biomes, environmental features, and environmental materials pertinent to genomic and microbiome-related investigations.",
   "subject": "ontology",
   "location": "UK",

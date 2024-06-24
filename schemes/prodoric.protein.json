@@ -1,9 +1,9 @@
 {
   "id": "prodoric.protein",
   "target": {
-    "DEFAULT": "http://prodoric.tu-bs.de/protein.php?protein_acc={content}"
+    "DEFAULT": "http://prodoric.tu-bs.de/protein.php?protein_acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://prodoric.tu-bs.de/protein.php?protein_acc={content}",
+  "redirect": "http://prodoric.tu-bs.de/protein.php?protein_acc=${content}",
   "revision": 0
 }

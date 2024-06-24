@@ -1,9 +1,9 @@
 {
   "id": "modomics",
   "target": {
-    "DEFAULT": "http://modomics.genesilico.pl/modification?modification_id={content}"
+    "DEFAULT": "http://modomics.genesilico.pl/modification?modification_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://modomics.genesilico.pl/modification?modification_id={content}",
+  "redirect": "http://modomics.genesilico.pl/modification?modification_id=${content}",
   "revision": 0
 }

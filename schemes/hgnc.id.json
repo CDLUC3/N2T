@@ -1,9 +1,9 @@
 {
   "id": "hgnc.id",
   "target": {
-    "DEFAULT": "http://www.genenames.org/data/hgnc_data.php?hgnc_id={content}"
+    "DEFAULT": "http://www.genenames.org/data/hgnc_data.php?hgnc_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.genenames.org/data/hgnc_data.php?hgnc_id={content}",
+  "redirect": "http://www.genenames.org/data/hgnc_data.php?hgnc_id=${content}",
   "revision": 0
 }

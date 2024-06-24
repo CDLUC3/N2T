@@ -1,9 +1,9 @@
 {
   "id": "cgnc",
   "target": {
-    "DEFAULT": "http://www.agnc.msstate.edu/GeneReport.aspx?a={content}"
+    "DEFAULT": "http://www.agnc.msstate.edu/GeneReport.aspx?a=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.agnc.msstate.edu/GeneReport.aspx?a={content}",
+  "redirect": "http://www.agnc.msstate.edu/GeneReport.aspx?a=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "nextbio",
   "target": {
-    "DEFAULT": "http://www.nextbio.com/b/search/ov/{content}"
+    "DEFAULT": "http://www.nextbio.com/b/search/ov/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.nextbio.com/b/search/ov/{content}",
+  "redirect": "http://www.nextbio.com/b/search/ov/${content}",
   "revision": 0
 }

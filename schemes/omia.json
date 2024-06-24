@@ -1,7 +1,7 @@
 {
   "id": "omia",
   "target": {
-    "DEFAULT": "http://omia.angis.org.au/{content}/"
+    "DEFAULT": "http://omia.angis.org.au/${content}/"
   },
   "type": "scheme",
   "name": "OMIA at University of Sydney",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://omia.angis.org.au/${ac}/",
-  "redirect": "http://omia.angis.org.au/{content}/",
+  "redirect": "http://omia.angis.org.au/${content}/",
   "description": "Online Mendelian Inheritance in Animals is a a database of genes, inherited disorders and traits in animal species (other than human and mouse).",
   "subject": "phenotype; disorder",
   "location": "Australia",

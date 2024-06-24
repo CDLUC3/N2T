@@ -1,9 +1,9 @@
 {
   "id": "rna_sstrand",
   "target": {
-    "DEFAULT": "http://www.rnasoft.ca/sstrand/show_results.php?molecule_ID={content}"
+    "DEFAULT": "http://www.rnasoft.ca/sstrand/show_results.php?molecule_ID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.rnasoft.ca/sstrand/show_results.php?molecule_ID={content}",
+  "redirect": "http://www.rnasoft.ca/sstrand/show_results.php?molecule_ID=${content}",
   "revision": 0
 }

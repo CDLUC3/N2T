@@ -1,7 +1,7 @@
 {
   "id": "aspgd.locus",
   "target": {
-    "DEFAULT": "http://www.aspergillusgenome.org/cgi-bin/locus.pl?dbid={content}"
+    "DEFAULT": "http://www.aspergillusgenome.org/cgi-bin/locus.pl?dbid=${content}"
   },
   "type": "scheme",
   "name": "AspGD at Stanford Medical School",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.aspergillusgenome.org/cgi-bin/locus.pl?dbid=${ac}",
-  "redirect": "http://www.aspergillusgenome.org/cgi-bin/locus.pl?dbid={content}",
+  "redirect": "http://www.aspergillusgenome.org/cgi-bin/locus.pl?dbid=${content}",
   "description": "The Aspergillus Genome Database (AspGD) is a repository for information relating to fungi of the genus Aspergillus, which includes organisms of clinical, agricultural and industrial importance. AspGD facilitates comparative genomics by providing a full-featured genomics viewer, as well as matched and standardized sets of genomic information for the sequenced aspergilli. This collection references gene information.",
   "subject": null,
   "location": "USA",

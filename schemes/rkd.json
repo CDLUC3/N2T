@@ -1,9 +1,9 @@
 {
   "id": "rkd",
   "target": {
-    "DEFAULT": "http://phylomics.ucdavis.edu/kinase/tree.php?fam={content}"
+    "DEFAULT": "http://phylomics.ucdavis.edu/kinase/tree.php?fam=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://phylomics.ucdavis.edu/kinase/tree.php?fam={content}",
+  "redirect": "http://phylomics.ucdavis.edu/kinase/tree.php?fam=${content}",
   "revision": 0
 }

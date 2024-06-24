@@ -1,9 +1,9 @@
 {
   "id": "gdfr.est",
   "target": {
-    "DEFAULT": "http://www.rosaceae.org/bio/content/?title=&url=http://www.rosaceae.org/cgi-bin/gdr/gdr_ESTGB.cgi?clone_name={content}"
+    "DEFAULT": "http://www.rosaceae.org/bio/content/?title=&url=http://www.rosaceae.org/cgi-bin/gdr/gdr_ESTGB.cgi?clone_name=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.rosaceae.org/bio/content/?title=&url=http://www.rosaceae.org/cgi-bin/gdr/gdr_ESTGB.cgi?clone_name={content}",
+  "redirect": "http://www.rosaceae.org/bio/content/?title=&url=http://www.rosaceae.org/cgi-bin/gdr/gdr_ESTGB.cgi?clone_name=${content}",
   "revision": 0
 }

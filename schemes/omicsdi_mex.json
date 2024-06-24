@@ -1,7 +1,7 @@
 {
   "id": "omicsdi/mex",
   "target": {
-    "DEFAULT": "https://www.omicsdi.org/dataset/metabolome_express/MEX{content}"
+    "DEFAULT": "https://www.omicsdi.org/dataset/metabolome_express/MEX${content}"
   },
   "type": "scheme",
   "name": "Metabolome Express through OmicsDI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.omicsdi.org/dataset/metabolome_express/MEX${ac}",
-  "redirect": "https://www.omicsdi.org/dataset/metabolome_express/MEX{content}",
+  "redirect": "https://www.omicsdi.org/dataset/metabolome_express/MEX${content}",
   "description": "A public place to process, interpret and share GC/MS metabolomics datasets.",
   "subject": null,
   "location": "UK",

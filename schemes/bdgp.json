@@ -1,9 +1,9 @@
 {
   "id": "bdgp",
   "target": {
-    "DEFAULT": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line={content}"
+    "DEFAULT": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line={content}",
+  "redirect": "http://flypush.imgen.bcm.tmc.edu/pscreen/details.php?line=${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "kegg.module",
   "target": {
-    "DEFAULT": "http://www.kegg.jp/entry/{content}"
+    "DEFAULT": "http://www.kegg.jp/entry/${content}"
   },
   "type": "scheme",
   "name": "KEGG Module at Kyoto University Bioinformatics Center",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.kegg.jp/entry/${ac}",
-  "redirect": "http://www.kegg.jp/entry/{content}",
+  "redirect": "http://www.kegg.jp/entry/${content}",
   "description": "KEGG Modules are manually defined functional units used in the annotation and biological interpretation of sequenced genomes. Each module corresponds to a set of 'KEGG Orthology' (MIR:00000116) entries. KEGG Modules can represent pathway, structural, functional or signature modules.",
   "subject": "clustering",
   "location": "Japan",

@@ -1,7 +1,7 @@
 {
   "id": "aphidbase.transcript",
   "target": {
-    "DEFAULT": "http://bipaa.genouest.org/apps/grs-2.3/grs?reportID=aphidbase_transcript_report&objectID={content}"
+    "DEFAULT": "http://bipaa.genouest.org/apps/grs-2.3/grs?reportID=aphidbase_transcript_report&objectID=${content}"
   },
   "type": "scheme",
   "name": "AphidBase at INRA",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://bipaa.genouest.org/apps/grs-2.3/grs?reportID=aphidbase_transcript_report&objectID=${ac}",
-  "redirect": "http://bipaa.genouest.org/apps/grs-2.3/grs?reportID=aphidbase_transcript_report&objectID={content}",
+  "redirect": "http://bipaa.genouest.org/apps/grs-2.3/grs?reportID=aphidbase_transcript_report&objectID=${content}",
   "description": "AphidBase is a centralized bioinformatic resource that was developed to facilitate community annotation of the pea aphid genome by the International Aphid Genomics Consortium (IAGC). The AphidBase Information System was designed to organize and distribute genomic data and annotations for a large international community. This collection references the transcript report, which describes genomic location, sequence and exon information.",
   "subject": "genome; sequence",
   "location": "France",

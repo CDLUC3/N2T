@@ -1,9 +1,9 @@
 {
   "id": "ogre",
   "target": {
-    "DEFAULT": "http://drake.mcmaster.ca/cgi-bin/ogre/featurelist.pl?genome={content}"
+    "DEFAULT": "http://drake.mcmaster.ca/cgi-bin/ogre/featurelist.pl?genome=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://drake.mcmaster.ca/cgi-bin/ogre/featurelist.pl?genome={content}",
+  "redirect": "http://drake.mcmaster.ca/cgi-bin/ogre/featurelist.pl?genome=${content}",
   "revision": 0
 }

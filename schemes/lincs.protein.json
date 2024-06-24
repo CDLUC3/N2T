@@ -1,7 +1,7 @@
 {
   "id": "lincs.protein",
   "target": {
-    "DEFAULT": "http://lincs.hms.harvard.edu/db/proteins/{content}/"
+    "DEFAULT": "http://lincs.hms.harvard.edu/db/proteins/${content}/"
   },
   "type": "scheme",
   "name": "LINCS Protein at Harvard Medical School",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://lincs.hms.harvard.edu/db/proteins/${ac}/",
-  "redirect": "http://lincs.hms.harvard.edu/db/proteins/{content}/",
+  "redirect": "http://lincs.hms.harvard.edu/db/proteins/${content}/",
   "description": "The HMS LINCS Database currently contains information on experimental reagents (small molecule perturbagens, cells, and proteins). It aims to collect and disseminate information relating to the fundamental principles of cellular response in humans to perturbation. This collection references proteins.",
   "subject": "human",
   "location": "USA",

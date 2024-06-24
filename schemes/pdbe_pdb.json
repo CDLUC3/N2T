@@ -1,7 +1,7 @@
 {
   "id": "pdbe/pdb",
   "target": {
-    "DEFAULT": "http://www.pdbe.org/{content}"
+    "DEFAULT": "http://www.pdbe.org/${content}"
   },
   "type": "scheme",
   "name": "Protein Databank in Europe (PDBe)",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.pdbe.org/${ac}",
-  "redirect": "http://www.pdbe.org/{content}",
+  "redirect": "http://www.pdbe.org/${content}",
   "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules.",
   "subject": "protein; structure",
   "location": "UK",

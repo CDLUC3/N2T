@@ -1,7 +1,7 @@
 {
   "id": "gpmdb",
   "target": {
-    "DEFAULT": "http://gpmdb.thegpm.org/~/dblist_gpmnum/gpmnum={content}"
+    "DEFAULT": "http://gpmdb.thegpm.org/~/dblist_gpmnum/gpmnum=${content}"
   },
   "type": "scheme",
   "name": "GPMDB",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://gpmdb.thegpm.org/~/dblist_gpmnum/gpmnum=${ac}",
-  "redirect": "http://gpmdb.thegpm.org/~/dblist_gpmnum/gpmnum={content}",
+  "redirect": "http://gpmdb.thegpm.org/~/dblist_gpmnum/gpmnum=${content}",
   "description": "The Global Proteome Machine Database was constructed to utilize the information obtained by GPM servers to aid in the difficult process of validating peptide MS/MS spectra as well as protein coverage patterns.",
   "subject": null,
   "location": "Canada",

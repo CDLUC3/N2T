@@ -1,7 +1,7 @@
 {
   "id": "nextprot",
   "target": {
-    "DEFAULT": "https://www.nextprot.org/db/entry/{content}"
+    "DEFAULT": "https://www.nextprot.org/db/entry/${content}"
   },
   "type": "scheme",
   "name": "nextProt at Swiss Institute of Bioinformatics",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://www.nextprot.org/db/entry/${ac}",
-  "redirect": "https://www.nextprot.org/db/entry/{content}",
+  "redirect": "https://www.nextprot.org/db/entry/${content}",
   "description": "neXtProt is a resource on human proteins, and includes information such as proteins&#x2019; function, subcellular location, expression, interactions and role in diseases.",
   "subject": "protein; human",
   "location": "Switzerland",

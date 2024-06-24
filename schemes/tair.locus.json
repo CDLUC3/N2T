@@ -1,7 +1,7 @@
 {
   "id": "tair.locus",
   "target": {
-    "DEFAULT": "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:{content}"
+    "DEFAULT": "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:${content}"
   },
   "type": "scheme",
   "name": "The Arabidopsis Information Resource (TAIR) Locus",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:${ac}",
-  "redirect": "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:{content}",
+  "redirect": "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:${content}",
   "description": "The Arabidopsis Information Resource (TAIR) maintains a database of genetic and molecular biology data for the model higher plant Arabidopsis thaliana. The name of a Locus is unique and used by TAIR, TIGR, and MIPS.",
   "subject": "plant; genome; eukaryotic",
   "location": "USA",

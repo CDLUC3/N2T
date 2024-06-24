@@ -1,9 +1,9 @@
 {
   "id": "gpxmacrophage",
   "target": {
-    "DEFAULT": "http://gpxmea.gti.ed.ac.uk/GPX/cgi-bin/Scripts/showexperiment.cgi?HID={content}"
+    "DEFAULT": "http://gpxmea.gti.ed.ac.uk/GPX/cgi-bin/Scripts/showexperiment.cgi?HID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://gpxmea.gti.ed.ac.uk/GPX/cgi-bin/Scripts/showexperiment.cgi?HID={content}",
+  "redirect": "http://gpxmea.gti.ed.ac.uk/GPX/cgi-bin/Scripts/showexperiment.cgi?HID=${content}",
   "revision": 0
 }

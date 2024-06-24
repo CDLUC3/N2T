@@ -1,13 +1,13 @@
 {
   "id": "igsn",
   "target": {
-    "DEFAULT": "https://hdl.handle.net/10273/{content}"
+    "DEFAULT": "https://hdl.handle.net/10273/${content}"
   },
   "type": "scheme",
   "name": "International Geo Sample Number",
   "alias": null,
   "primary": 1,
-  "redirect": "https://hdl.handle.net/10273/{content}",
+  "redirect": "https://hdl.handle.net/10273/${content}",
   "test": "SSH000SUA",
   "probe": "http://hdl.handle.net/10273/SSH000SUA",
   "more": "http://www.geosamples.org/",

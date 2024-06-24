@@ -1,9 +1,9 @@
 {
   "id": "pede",
   "target": {
-    "DEFAULT": "http://pede.dna.affrc.go.jp/seq_search/assembly_info.php?release={content}&name={content}"
+    "DEFAULT": "http://pede.dna.affrc.go.jp/seq_search/assembly_info.php?release=${content}&name=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://pede.dna.affrc.go.jp/seq_search/assembly_info.php?release={content}&name={content}",
+  "redirect": "http://pede.dna.affrc.go.jp/seq_search/assembly_info.php?release=${content}&name=${content}",
   "revision": 0
 }

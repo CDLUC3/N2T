@@ -1,7 +1,7 @@
 {
   "id": "idot",
   "target": {
-    "DEFAULT": "https://biomodels.net/vocab/idot.rdf#{content}"
+    "DEFAULT": "https://biomodels.net/vocab/idot.rdf#${content}"
   },
   "type": "scheme",
   "name": "IdoT via biomodels.net",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://biomodels.net/vocab/idot.rdf#${ac}",
-  "redirect": "https://biomodels.net/vocab/idot.rdf#{content}",
+  "redirect": "https://biomodels.net/vocab/idot.rdf#${content}",
   "description": "Identifiers.org Terms (idot) is an RDF vocabulary providing useful terms for describing datasets.",
   "subject": "schema.org",
   "location": "UK",

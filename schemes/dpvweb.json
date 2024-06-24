@@ -1,9 +1,9 @@
 {
   "id": "dpvweb",
   "target": {
-    "DEFAULT": "http://www.dpvweb.net/dpv/showdpv.php?dpvno={content}"
+    "DEFAULT": "http://www.dpvweb.net/dpv/showdpv.php?dpvno=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.dpvweb.net/dpv/showdpv.php?dpvno={content}",
+  "redirect": "http://www.dpvweb.net/dpv/showdpv.php?dpvno=${content}",
   "revision": 0
 }

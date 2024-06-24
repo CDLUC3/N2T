@@ -1,9 +1,9 @@
 {
   "id": "aphidbase",
   "target": {
-    "DEFAULT": "http://helico.genouest.org:8080/grs-1.8/grs?reportID=chado_[transcript/genome/protein]_report&objectID={content}"
+    "DEFAULT": "http://helico.genouest.org:8080/grs-1.8/grs?reportID=chado_[transcript/genome/protein]_report&objectID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://helico.genouest.org:8080/grs-1.8/grs?reportID=chado_[transcript/genome/protein]_report&objectID={content}",
+  "redirect": "http://helico.genouest.org:8080/grs-1.8/grs?reportID=chado_[transcript/genome/protein]_report&objectID=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "ecocyc.gene",
   "target": {
-    "DEFAULT": "http://biocyc.org/ECOLI/NEW-IMAGE?type=GENE&object={content}"
+    "DEFAULT": "http://biocyc.org/ECOLI/NEW-IMAGE?type=GENE&object=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://biocyc.org/ECOLI/NEW-IMAGE?type=GENE&object={content}",
+  "redirect": "http://biocyc.org/ECOLI/NEW-IMAGE?type=GENE&object=${content}",
   "revision": 0
 }

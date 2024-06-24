@@ -1,9 +1,9 @@
 {
   "id": "noncode",
   "target": {
-    "DEFAULT": "http://www.noncode.org/NONCODERv3/ncrna.php?ncid={content}"
+    "DEFAULT": "http://www.noncode.org/NONCODERv3/ncrna.php?ncid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.noncode.org/NONCODERv3/ncrna.php?ncid={content}",
+  "redirect": "http://www.noncode.org/NONCODERv3/ncrna.php?ncid=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "rice_pipeline",
   "target": {
-    "DEFAULT": "http://cdna01.dna.affrc.go.jp/cDNA/report/{content}.html"
+    "DEFAULT": "http://cdna01.dna.affrc.go.jp/cDNA/report/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://cdna01.dna.affrc.go.jp/cDNA/report/{content}.html",
+  "redirect": "http://cdna01.dna.affrc.go.jp/cDNA/report/${content}.html",
   "revision": 0
 }

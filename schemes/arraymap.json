@@ -1,7 +1,7 @@
 {
   "id": "arraymap",
   "target": {
-    "DEFAULT": "https://www.arraymap.org/pgx:{content}"
+    "DEFAULT": "https://www.arraymap.org/pgx:${content}"
   },
   "type": "scheme",
   "name": "ArrayMap",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://www.arraymap.org/pgx:${ac}",
-  "redirect": "https://www.arraymap.org/pgx:{content}",
+  "redirect": "https://www.arraymap.org/pgx:${content}",
   "description": "arrayMap is a collection of pre-processed oncogenomic array data sets and CNA (somatic copy number aberrations) profiles. CNA are a type of mutation commonly found in cancer genomes. arrayMap data is assembled from public repositories and supplemented with additional sources, using custom curation pipelines. This information has been mapped to multiple editions of the reference human genome.",
   "subject": "genome; human",
   "location": "Switzerland",

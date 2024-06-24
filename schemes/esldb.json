@@ -1,9 +1,9 @@
 {
   "id": "esldb",
   "target": {
-    "DEFAULT": "http://gpcr.biocomp.unibo.it/cgi-bin/predictors/esldb/dettagli.cgi?codice={content}"
+    "DEFAULT": "http://gpcr.biocomp.unibo.it/cgi-bin/predictors/esldb/dettagli.cgi?codice=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://gpcr.biocomp.unibo.it/cgi-bin/predictors/esldb/dettagli.cgi?codice={content}",
+  "redirect": "http://gpcr.biocomp.unibo.it/cgi-bin/predictors/esldb/dettagli.cgi?codice=${content}",
   "revision": 0
 }

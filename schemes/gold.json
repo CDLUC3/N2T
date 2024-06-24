@@ -1,9 +1,9 @@
 {
   "id": "gold",
   "target": {
-    "DEFAULT": "http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp={content}"
+    "DEFAULT": "http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp={content}",
+  "redirect": "http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp=${content}",
   "revision": 0
 }

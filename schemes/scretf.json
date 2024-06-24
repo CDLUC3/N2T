@@ -1,7 +1,7 @@
 {
   "id": "scretf",
   "target": {
-    "DEFAULT": "http://stormo.wustl.edu/ScerTF/details/{content}/"
+    "DEFAULT": "http://stormo.wustl.edu/ScerTF/details/${content}/"
   },
   "type": "scheme",
   "name": "ScerTF at Washington University",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://stormo.wustl.edu/ScerTF/details/${ac}/",
-  "redirect": "http://stormo.wustl.edu/ScerTF/details/{content}/",
+  "redirect": "http://stormo.wustl.edu/ScerTF/details/${content}/",
   "description": "ScerTF is a database of position weight matrices (PWMs) for transcription factors in Saccharomyces species. It identifies a single matrix for each TF that best predicts in vivo data, providing metrics related to the performance of that matrix in accurately representing the DNA binding specificity of the annotated transcription factor.",
   "subject": "sequence; nucleotide; domain",
   "location": "USA",

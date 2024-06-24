@@ -1,9 +1,9 @@
 {
   "id": "wormbase.rnai",
   "target": {
-    "DEFAULT": "http://www.wormbase.org/species/c_elegans/rnai/{content}"
+    "DEFAULT": "http://www.wormbase.org/species/c_elegans/rnai/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.wormbase.org/species/c_elegans/rnai/{content}",
+  "redirect": "http://www.wormbase.org/species/c_elegans/rnai/${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "omicsdi/arrayexpress",
   "target": {
-    "DEFAULT": "https://www.omicsdi.org/dataset/arrayexpress-repository/{content}"
+    "DEFAULT": "https://www.omicsdi.org/dataset/arrayexpress-repository/${content}"
   },
   "type": "scheme",
   "name": "ArrayExpress through OmicsDI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.omicsdi.org/dataset/arrayexpress-repository/${ac}",
-  "redirect": "https://www.omicsdi.org/dataset/arrayexpress-repository/{content}",
+  "redirect": "https://www.omicsdi.org/dataset/arrayexpress-repository/${content}",
   "description": "ArrayExpress is a public repository for microarray data, which is aimed at storing MIAME-compliant data in accordance with Microarray Gene Expression Data (MGED) recommendations.",
   "subject": "nucleotide; microarray; expression",
   "location": "UK",

@@ -1,7 +1,7 @@
 {
   "id": "neurondb",
   "target": {
-    "DEFAULT": "http://senselab.med.yale.edu/NeuronDB/NeuronProp.aspx?id={content}"
+    "DEFAULT": "http://senselab.med.yale.edu/NeuronDB/NeuronProp.aspx?id=${content}"
   },
   "type": "scheme",
   "name": "NeuronDB at SenseLab",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://senselab.med.yale.edu/NeuronDB/NeuronProp.aspx?id=${ac}",
-  "redirect": "http://senselab.med.yale.edu/NeuronDB/NeuronProp.aspx?id={content}",
+  "redirect": "http://senselab.med.yale.edu/NeuronDB/NeuronProp.aspx?id=${content}",
   "description": "NeuronDB provides a dynamically searchable database of three types of neuronal properties: voltage gated conductances, neurotransmitter receptors, and neurotransmitter substances. It contains tools that provide for integration of these properties in a given type of neuron and compartment, and for comparison of properties across different types of neurons and compartments.",
   "subject": "neuroscience",
   "location": "USA",

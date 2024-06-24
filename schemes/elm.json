@@ -1,7 +1,7 @@
 {
   "id": "elm",
   "target": {
-    "DEFAULT": "http://elm.eu.org/elms/elmPages/{content}.html"
+    "DEFAULT": "http://elm.eu.org/elms/elmPages/${content}.html"
   },
   "type": "scheme",
   "name": "ELM at EMBL (Germany)",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://elm.eu.org/elms/elmPages/${ac}.html",
-  "redirect": "http://elm.eu.org/elms/elmPages/{content}.html",
+  "redirect": "http://elm.eu.org/elms/elmPages/${content}.html",
   "description": "Linear motifs are short, evolutionarily plastic components of regulatory proteins. Mainly focused on the eukaryotic sequences,the Eukaryotic Linear Motif resource (ELM) is a database of curated motif classes and instances.",
   "subject": "eukaryotic; domain; protein",
   "location": "Germany",

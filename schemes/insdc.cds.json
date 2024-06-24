@@ -1,7 +1,7 @@
 {
   "id": "insdc.cds",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/${content}"
   },
   "type": "scheme",
   "name": "INSDC CDS through NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/protein/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/protein/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/protein/${content}",
   "description": "The coding sequence or protein identifiers as maintained in INSDC.",
   "subject": null,
   "location": "USA",

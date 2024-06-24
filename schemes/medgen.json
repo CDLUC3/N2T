@@ -1,7 +1,7 @@
 {
   "id": "medgen",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/medgen/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/medgen/${content}"
   },
   "type": "scheme",
   "name": "MedGen at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/medgen/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/medgen/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/medgen/${content}",
   "description": "MedGen is a portal for information about conditions and phenotypes related to Medical Genetics. Terms from multiple sources are aggregated into concepts, each of which is assigned a unique identifier and a preferred name and symbol. The core content of the record may include names, identifiers used by other databases, mode of inheritance, clinical features, and map location of the loci affecting the disorder.",
   "subject": "gene; human; phenotype",
   "location": "USA",

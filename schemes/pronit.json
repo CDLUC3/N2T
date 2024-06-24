@@ -1,9 +1,9 @@
 {
   "id": "pronit",
   "target": {
-    "DEFAULT": "http://gibk26.bse.kyutech.ac.jp/cgi-bin/jouhou/pronit/new/bind_entry.pl?ENTRY={content}"
+    "DEFAULT": "http://gibk26.bse.kyutech.ac.jp/cgi-bin/jouhou/pronit/new/bind_entry.pl?ENTRY=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://gibk26.bse.kyutech.ac.jp/cgi-bin/jouhou/pronit/new/bind_entry.pl?ENTRY={content}",
+  "redirect": "http://gibk26.bse.kyutech.ac.jp/cgi-bin/jouhou/pronit/new/bind_entry.pl?ENTRY=${content}",
   "revision": 0
 }

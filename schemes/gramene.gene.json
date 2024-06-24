@@ -1,7 +1,7 @@
 {
   "id": "gramene.gene",
   "target": {
-    "DEFAULT": "http://www.gramene.org/db/genes/search_gene?acc={content}"
+    "DEFAULT": "http://www.gramene.org/db/genes/search_gene?acc=${content}"
   },
   "type": "scheme",
   "name": "Gramene Genes at Cold Spring Harbor",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.gramene.org/db/genes/search_gene?acc=${ac}",
-  "redirect": "http://www.gramene.org/db/genes/search_gene?acc={content}",
+  "redirect": "http://www.gramene.org/db/genes/search_gene?acc=${content}",
   "description": "Gramene is a comparative genome mapping database for grasses and crop plants. It combines a semi-automatically generated database of cereal genomic and expressed sequence tag sequences, genetic maps, map relations, quantitative trait loci (QTL), and publications, with a curated database of mutants (genes and alleles), molecular markers, and proteins. This datatype refers to genes in Gramene.",
   "subject": "genome; gene; plant",
   "location": "USA",

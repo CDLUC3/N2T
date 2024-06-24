@@ -1,7 +1,7 @@
 {
   "id": "ols/uo",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=UO:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=UO:${content}"
   },
   "type": "scheme",
   "name": "Unit Ontology via Ontology Lookup Service",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=UO:${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=UO:{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=UO:${content}",
   "description": "Ontology of standardized units",
   "subject": "ontology",
   "location": "UK",

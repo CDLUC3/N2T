@@ -1,9 +1,9 @@
 {
   "id": "s_mart_db",
   "target": {
-    "DEFAULT": "http://smartdb.bioinf.med.uni-goettingen.de/cgi-bin/SMARtDB/getSMAR.cgi?{content}"
+    "DEFAULT": "http://smartdb.bioinf.med.uni-goettingen.de/cgi-bin/SMARtDB/getSMAR.cgi?${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://smartdb.bioinf.med.uni-goettingen.de/cgi-bin/SMARtDB/getSMAR.cgi?{content}",
+  "redirect": "http://smartdb.bioinf.med.uni-goettingen.de/cgi-bin/SMARtDB/getSMAR.cgi?${content}",
   "revision": 0
 }

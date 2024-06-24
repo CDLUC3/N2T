@@ -1,7 +1,7 @@
 {
   "id": "gdc",
   "target": {
-    "DEFAULT": "https://portal.gdc.cancer.gov/cases/{content}"
+    "DEFAULT": "https://portal.gdc.cancer.gov/cases/${content}"
   },
   "type": "scheme",
   "name": "Genomic Data Commons",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://portal.gdc.cancer.gov/cases/${ac}",
-  "redirect": "https://portal.gdc.cancer.gov/cases/{content}",
+  "redirect": "https://portal.gdc.cancer.gov/cases/${content}",
   "description": "The GDC Data Portal is a robust data-driven platform that allows cancer researchers and bioinformaticians to search and download cancer data for analysis.",
   "subject": null,
   "location": "USA",

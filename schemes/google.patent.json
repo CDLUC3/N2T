@@ -1,7 +1,7 @@
 {
   "id": "google.patent",
   "target": {
-    "DEFAULT": "https://www.google.com/patents/{content}"
+    "DEFAULT": "https://www.google.com/patents/${content}"
   },
   "type": "scheme",
   "name": "Google Patents at Google",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://www.google.com/patents/${ac}",
-  "redirect": "https://www.google.com/patents/{content}",
+  "redirect": "https://www.google.com/patents/${content}",
   "description": "Google Patents covers the entire collection of granted patents and published patent applications from the USPTO, EPO, and WIPO. US patent documents date back to 1790, EPO and WIPO to 1978. Google Patents can be searched using patent number, inventor, classification, and filing date.",
   "subject": "registry",
   "location": null,

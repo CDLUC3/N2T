@@ -1,7 +1,7 @@
 {
   "id": "gold.meta",
   "target": {
-    "DEFAULT": "http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp={content}"
+    "DEFAULT": "http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp=${content}"
   },
   "type": "scheme",
   "name": "GOLD metadata at Department of Energy Joint Genome Institute",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp=${ac}",
-  "redirect": "http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp={content}",
+  "redirect": "http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp=${content}",
   "description": "The GOLD (Genomes OnLine Database)is a resource for centralized monitoring of genome and metagenome projects worldwide. It stores information on complete and ongoing projects, along with their associated metadata. This collection references metadata associated with samples.",
   "subject": "genome; annotation",
   "location": "USA",

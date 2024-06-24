@@ -1,9 +1,9 @@
 {
   "id": "redidb",
   "target": {
-    "DEFAULT": "http://biologia.unical.it/py_script/cgi-bin/retrieve.py?query={content}"
+    "DEFAULT": "http://biologia.unical.it/py_script/cgi-bin/retrieve.py?query=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://biologia.unical.it/py_script/cgi-bin/retrieve.py?query={content}",
+  "redirect": "http://biologia.unical.it/py_script/cgi-bin/retrieve.py?query=${content}",
   "revision": 0
 }

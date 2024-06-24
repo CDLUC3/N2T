@@ -1,7 +1,7 @@
 {
   "id": "intact",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/intact/interaction/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/intact/interaction/${content}"
   },
   "type": "scheme",
   "name": "IntAct at EBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ebi.ac.uk/intact/interaction/${ac}",
-  "redirect": "https://www.ebi.ac.uk/intact/interaction/{content}",
+  "redirect": "https://www.ebi.ac.uk/intact/interaction/${content}",
   "description": "IntAct provides a freely available, open source database system and analysis tools for protein interaction data.",
   "subject": "protein; interaction",
   "location": "UK",

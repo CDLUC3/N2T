@@ -1,9 +1,9 @@
 {
   "id": "aaindex",
   "target": {
-    "DEFAULT": "http://www.genome.jp/dbget-bin/www_bget?aaindex:{content}"
+    "DEFAULT": "http://www.genome.jp/dbget-bin/www_bget?aaindex:${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.genome.jp/dbget-bin/www_bget?aaindex:{content}",
+  "redirect": "http://www.genome.jp/dbget-bin/www_bget?aaindex:${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "ndc",
   "target": {
-    "DEFAULT": "http://www.hipaaspace.com/Medical_Billing/Coding/National.Drug.Codes/{content}"
+    "DEFAULT": "http://www.hipaaspace.com/Medical_Billing/Coding/National.Drug.Codes/${content}"
   },
   "type": "scheme",
   "name": "National Drug Code at Food and Drug Administration",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.hipaaspace.com/Medical_Billing/Coding/National.Drug.Codes/${ac}",
-  "redirect": "http://www.hipaaspace.com/Medical_Billing/Coding/National.Drug.Codes/{content}",
+  "redirect": "http://www.hipaaspace.com/Medical_Billing/Coding/National.Drug.Codes/${content}",
   "description": "The National Drug Code (NDC) is a unique, three-segment number used by the Food and Drug Administration (FDA) to identify drug products for commercial use. This is required by the Drug Listing Act of 1972. The FDA publishes and updates the listed NDC numbers daily.",
   "subject": "drug; catalogue",
   "location": "USA",

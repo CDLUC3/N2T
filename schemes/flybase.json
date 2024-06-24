@@ -1,9 +1,9 @@
 {
   "id": "flybase",
   "target": {
-    "DEFAULT": "http://flybase.org/reports/{content}.html"
+    "DEFAULT": "http://flybase.org/reports/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://flybase.org/reports/{content}.html",
+  "redirect": "http://flybase.org/reports/${content}.html",
   "revision": 0
 }

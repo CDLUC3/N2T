@@ -1,9 +1,9 @@
 {
   "id": "mousecyc",
   "target": {
-    "DEFAULT": "http://mousecyc.jax.org/MOUSE/NEW-IMAGE?type=NIL&object={content}"
+    "DEFAULT": "http://mousecyc.jax.org/MOUSE/NEW-IMAGE?type=NIL&object=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://mousecyc.jax.org/MOUSE/NEW-IMAGE?type=NIL&object={content}",
+  "redirect": "http://mousecyc.jax.org/MOUSE/NEW-IMAGE?type=NIL&object=${content}",
   "revision": 0
 }

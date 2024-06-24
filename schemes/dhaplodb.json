@@ -1,9 +1,9 @@
 {
   "id": "dhaplodb",
   "target": {
-    "DEFAULT": "http://orca.gen.kyushu-u.ac.jp/cgi-bin/gbrowse/humanBuild35/?name={content}"
+    "DEFAULT": "http://orca.gen.kyushu-u.ac.jp/cgi-bin/gbrowse/humanBuild35/?name=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://orca.gen.kyushu-u.ac.jp/cgi-bin/gbrowse/humanBuild35/?name={content}",
+  "redirect": "http://orca.gen.kyushu-u.ac.jp/cgi-bin/gbrowse/humanBuild35/?name=${content}",
   "revision": 0
 }

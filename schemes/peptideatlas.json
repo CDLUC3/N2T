@@ -1,7 +1,7 @@
 {
   "id": "peptideatlas",
   "target": {
-    "DEFAULT": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/Summarize_Peptide?query=QUERY&searchForThis={content}"
+    "DEFAULT": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/Summarize_Peptide?query=QUERY&searchForThis=${content}"
   },
   "type": "scheme",
   "name": "PeptideAtlas at ISB",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/Summarize_Peptide?query=QUERY&searchForThis=${ac}",
-  "redirect": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/Summarize_Peptide?query=QUERY&searchForThis={content}",
+  "redirect": "https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/Summarize_Peptide?query=QUERY&searchForThis=${content}",
   "description": "The PeptideAtlas Project provides a publicly accessible database of peptides identified in tandem mass spectrometry proteomics studies and software tools.",
   "subject": "mass spectrometry",
   "location": "USA",

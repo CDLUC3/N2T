@@ -1,9 +1,9 @@
 {
   "id": "eyesite",
   "target": {
-    "DEFAULT": "http://eyesite.cryst.bbk.ac.uk/cgi-bin/get_family_page.cgi?FAMILY={content}"
+    "DEFAULT": "http://eyesite.cryst.bbk.ac.uk/cgi-bin/get_family_page.cgi?FAMILY=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://eyesite.cryst.bbk.ac.uk/cgi-bin/get_family_page.cgi?FAMILY={content}",
+  "redirect": "http://eyesite.cryst.bbk.ac.uk/cgi-bin/get_family_page.cgi?FAMILY=${content}",
   "revision": 0
 }

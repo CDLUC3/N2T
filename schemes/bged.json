@@ -1,9 +1,9 @@
 {
   "id": "bged",
   "target": {
-    "DEFAULT": "http://genome.mc.pref.osaka.jp/cgi-bin/BGED/Gene_info.pl?num={content}"
+    "DEFAULT": "http://genome.mc.pref.osaka.jp/cgi-bin/BGED/Gene_info.pl?num=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://genome.mc.pref.osaka.jp/cgi-bin/BGED/Gene_info.pl?num={content}",
+  "redirect": "http://genome.mc.pref.osaka.jp/cgi-bin/BGED/Gene_info.pl?num=${content}",
   "revision": 0
 }

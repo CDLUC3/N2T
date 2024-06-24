@@ -1,9 +1,9 @@
 {
   "id": "dosaccobs2dpage",
   "target": {
-    "DEFAULT": "http://www.dosac.unipa.it/cgi-bin/2d/2d.cgi?ac={content}"
+    "DEFAULT": "http://www.dosac.unipa.it/cgi-bin/2d/2d.cgi?ac=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.dosac.unipa.it/cgi-bin/2d/2d.cgi?ac={content}",
+  "redirect": "http://www.dosac.unipa.it/cgi-bin/2d/2d.cgi?ac=${content}",
   "revision": 0
 }

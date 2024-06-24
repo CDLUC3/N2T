@@ -1,7 +1,7 @@
 {
   "id": "prodom",
   "target": {
-    "DEFAULT": "http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query={content}"
+    "DEFAULT": "http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query=${content}"
   },
   "type": "scheme",
   "name": "ProDom Protein Domain Database",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query=${ac}",
-  "redirect": "http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query={content}",
+  "redirect": "http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query=${content}",
   "description": "ProDom is a database of protein domain families generated from the global comparison of all available protein sequences.",
   "subject": "domain; protein",
   "location": "France",

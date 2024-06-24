@@ -1,9 +1,9 @@
 {
   "id": "trmp",
   "target": {
-    "DEFAULT": "http://bidd.nus.edu.sg/group/pathway/{content}"
+    "DEFAULT": "http://bidd.nus.edu.sg/group/pathway/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://bidd.nus.edu.sg/group/pathway/{content}",
+  "redirect": "http://bidd.nus.edu.sg/group/pathway/${content}",
   "revision": 0
 }

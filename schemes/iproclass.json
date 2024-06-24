@@ -1,9 +1,9 @@
 {
   "id": "iproclass",
   "target": {
-    "DEFAULT": "http://pir.georgetown.edu/cgi-bin/ipcEntry?id={content}"
+    "DEFAULT": "http://pir.georgetown.edu/cgi-bin/ipcEntry?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://pir.georgetown.edu/cgi-bin/ipcEntry?id={content}",
+  "redirect": "http://pir.georgetown.edu/cgi-bin/ipcEntry?id=${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "sitex",
   "target": {
-    "DEFAULT": "http://www-bionet.sscc.ru/sitex/index.php?siteid={content}"
+    "DEFAULT": "http://www-bionet.sscc.ru/sitex/index.php?siteid=${content}"
   },
   "type": "scheme",
   "name": "SitEx at Novosibirsk State University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www-bionet.sscc.ru/sitex/index.php?siteid=${ac}",
-  "redirect": "http://www-bionet.sscc.ru/sitex/index.php?siteid={content}",
+  "redirect": "http://www-bionet.sscc.ru/sitex/index.php?siteid=${content}",
   "description": "SitEx is a database containing information on eukaryotic protein functional sites. It stores the amino acid sequence positions in the functional site, in relation to the exon structure of encoding gene This can be used to detect the exons involved in shuffling in protein evolution, or to design protein-engineering experiments.",
   "subject": "structure; domain; eukaryotic; sequence",
   "location": "Russia",

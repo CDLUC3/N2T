@@ -1,9 +1,9 @@
 {
   "id": "ncrnas_database",
   "target": {
-    "DEFAULT": "http://ncrnadb.trna.ibch.poznan.pl/scripts/getdesc.cgi?id={content}"
+    "DEFAULT": "http://ncrnadb.trna.ibch.poznan.pl/scripts/getdesc.cgi?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://ncrnadb.trna.ibch.poznan.pl/scripts/getdesc.cgi?id={content}",
+  "redirect": "http://ncrnadb.trna.ibch.poznan.pl/scripts/getdesc.cgi?id=${content}",
   "revision": 0
 }

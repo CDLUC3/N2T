@@ -1,7 +1,7 @@
 {
   "id": "gdsc",
   "target": {
-    "DEFAULT": "https://www.cancerrxgene.org/translation/Drug/{content}"
+    "DEFAULT": "https://www.cancerrxgene.org/translation/Drug/${content}"
   },
   "type": "scheme",
   "name": "Genomics of Drug Sensitivity in Cancer",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.cancerrxgene.org/translation/Drug/${ac}",
-  "redirect": "https://www.cancerrxgene.org/translation/Drug/{content}",
+  "redirect": "https://www.cancerrxgene.org/translation/Drug/${content}",
   "description": "The Genomics of Drug Sensitivity in Cancer (GDSC) database is designed to facilitate an increased understanding of the molecular features that influence drug response in cancer cells and which will enable the design of improved cancer therapies.",
   "subject": null,
   "location": "UK and USA",

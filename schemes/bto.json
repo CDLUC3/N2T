@@ -1,7 +1,7 @@
 {
   "id": "bto",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/BTO/BTO:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/BTO/BTO:${content}"
   },
   "type": "scheme",
   "name": "Brenda Tissue Ontology through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/BTO/BTO:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/BTO/BTO:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/BTO/BTO:${content}",
   "description": "The Brenda tissue ontology is a structured controlled vocabulary eastablished to identify the source of an enzyme cited in the Brenda enzyme database. It comprises terms of tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.",
   "subject": "ontology",
   "location": "USA",

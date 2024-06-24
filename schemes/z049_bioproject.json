@@ -1,7 +1,7 @@
 {
   "id": "z049/bioproject",
   "target": {
-    "DEFAULT": "http://trace.ddbj.nig.ac.jp/BPSearch/bioproject?acc={content}"
+    "DEFAULT": "http://trace.ddbj.nig.ac.jp/BPSearch/bioproject?acc=${content}"
   },
   "type": "scheme",
   "name": "BioProject at DNA Data Bank of Japan",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://trace.ddbj.nig.ac.jp/BPSearch/bioproject?acc=${ac}",
-  "redirect": "http://trace.ddbj.nig.ac.jp/BPSearch/bioproject?acc={content}",
+  "redirect": "http://trace.ddbj.nig.ac.jp/BPSearch/bioproject?acc=${content}",
   "description": "BioProject provides an organizational framework to access metadata about research projects and the data from the projects that are deposited into different databases. It provides information about a project&#x2019;s scope, material, objectives, funding source and general relevance categories.",
   "subject": "annotation",
   "location": "Japan",

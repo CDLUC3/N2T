@@ -1,9 +1,9 @@
 {
   "id": "hdbas",
   "target": {
-    "DEFAULT": "http://jbirc.jbic.or.jp/h-dbas/locusOverview.do?db=all&hix={content}"
+    "DEFAULT": "http://jbirc.jbic.or.jp/h-dbas/locusOverview.do?db=all&hix=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://jbirc.jbic.or.jp/h-dbas/locusOverview.do?db=all&hix={content}",
+  "redirect": "http://jbirc.jbic.or.jp/h-dbas/locusOverview.do?db=all&hix=${content}",
   "revision": 0
 }

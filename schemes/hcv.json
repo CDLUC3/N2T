@@ -1,9 +1,9 @@
 {
   "id": "hcv",
   "target": {
-    "DEFAULT": "http://hcv.lanl.gov/components/sequence/HCV/asearch/query_one.comp?se_id={content}"
+    "DEFAULT": "http://hcv.lanl.gov/components/sequence/HCV/asearch/query_one.comp?se_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://hcv.lanl.gov/components/sequence/HCV/asearch/query_one.comp?se_id={content}",
+  "redirect": "http://hcv.lanl.gov/components/sequence/HCV/asearch/query_one.comp?se_id=${content}",
   "revision": 0
 }

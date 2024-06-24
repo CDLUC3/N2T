@@ -1,9 +1,9 @@
 {
   "id": "chromdb",
   "target": {
-    "DEFAULT": "http://www.chromdb.org/gene_record.html?g={content}"
+    "DEFAULT": "http://www.chromdb.org/gene_record.html?g=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.chromdb.org/gene_record.html?g={content}",
+  "redirect": "http://www.chromdb.org/gene_record.html?g=${content}",
   "revision": 0
 }

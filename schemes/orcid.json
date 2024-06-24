@@ -1,7 +1,7 @@
 {
   "id": "orcid",
   "target": {
-    "DEFAULT": "https://orcid.org/{content}"
+    "DEFAULT": "https://orcid.org/${content}"
   },
   "type": "scheme",
   "name": "ORCID at Bethesda",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://orcid.org/${ac}",
-  "redirect": "https://orcid.org/{content}",
+  "redirect": "https://orcid.org/${content}",
   "description": "ORCID (Open Researcher and Contributor ID) is an open, non-profit, community-based effort to create and maintain a registry of unique identifiers for individual researchers. ORCID records hold non-sensitive information such as name, email, organization name, and research activities.",
   "subject": "bibliography",
   "location": "USA",

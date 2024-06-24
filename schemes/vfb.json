@@ -1,7 +1,7 @@
 {
   "id": "vfb",
   "target": {
-    "DEFAULT": "http://virtualflybrain.org/reports/{content}"
+    "DEFAULT": "http://virtualflybrain.org/reports/${content}"
   },
   "type": "scheme",
   "name": "Virtual Fly Brain",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://virtualflybrain.org/reports/${ac}",
-  "redirect": "http://virtualflybrain.org/reports/{content}",
+  "redirect": "http://virtualflybrain.org/reports/${content}",
   "description": "An interactive tool for neurobiologists to explore the detailed neuroanatomy, neuron connectivity and gene expression of the Drosophila melanogaster.",
   "subject": null,
   "location": "UK",

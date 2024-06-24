@@ -1,9 +1,9 @@
 {
   "id": "systers",
   "target": {
-    "DEFAULT": "http://systers.molgen.mpg.de/cgi-bin/nph-fetchcluster.pl?CLNR={content}"
+    "DEFAULT": "http://systers.molgen.mpg.de/cgi-bin/nph-fetchcluster.pl?CLNR=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://systers.molgen.mpg.de/cgi-bin/nph-fetchcluster.pl?CLNR={content}",
+  "redirect": "http://systers.molgen.mpg.de/cgi-bin/nph-fetchcluster.pl?CLNR=${content}",
   "revision": 0
 }

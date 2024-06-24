@@ -1,7 +1,7 @@
 {
   "id": "eu89h",
   "target": {
-    "DEFAULT": "http://data.europa.eu/89h/{content}"
+    "DEFAULT": "http://data.europa.eu/89h/${content}"
   },
   "type": "scheme",
   "name": "JRC Data Catalogue",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://data.europa.eu/89h/${ac}",
-  "redirect": "http://data.europa.eu/89h/{content}",
+  "redirect": "http://data.europa.eu/89h/${content}",
   "description": "The JRC Data Catalogue gives access to the multidisciplinary data produced and maintained by the Joint Research Centre, the European Commission's in-house science service providing independent scientific advice and support to policies of the European Union.",
   "subject": null,
   "location": "EU",

@@ -1,7 +1,7 @@
 {
   "id": "rnacentral",
   "target": {
-    "DEFAULT": "https://rnacentral.org/rna/{content}"
+    "DEFAULT": "https://rnacentral.org/rna/${content}"
   },
   "type": "scheme",
   "name": "RNAcentral through EMBL-EBI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://rnacentral.org/rna/${ac}",
-  "redirect": "https://rnacentral.org/rna/{content}",
+  "redirect": "https://rnacentral.org/rna/${content}",
   "description": "RNAcentral is a public resource that offers integrated access to a comprehensive and up-to-date set of non-coding RNA sequences provided by a collaborating group of Expert Databases.",
   "subject": "schema.org",
   "location": "UK",

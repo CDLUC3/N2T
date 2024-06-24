@@ -1,9 +1,9 @@
 {
   "id": "mokca",
   "target": {
-    "DEFAULT": "http://strubiol.icr.ac.uk/extra/mokca/mut_by_prot.php?protein_q={content}"
+    "DEFAULT": "http://strubiol.icr.ac.uk/extra/mokca/mut_by_prot.php?protein_q=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://strubiol.icr.ac.uk/extra/mokca/mut_by_prot.php?protein_q={content}",
+  "redirect": "http://strubiol.icr.ac.uk/extra/mokca/mut_by_prot.php?protein_q=${content}",
   "revision": 0
 }

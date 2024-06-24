@@ -1,9 +1,9 @@
 {
   "id": "ergo",
   "target": {
-    "DEFAULT": "http://www.ergo-light.com/ERGO/CGI/prot.cgi?prot={content}"
+    "DEFAULT": "http://www.ergo-light.com/ERGO/CGI/prot.cgi?prot=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ergo-light.com/ERGO/CGI/prot.cgi?prot={content}",
+  "redirect": "http://www.ergo-light.com/ERGO/CGI/prot.cgi?prot=${content}",
   "revision": 0
 }

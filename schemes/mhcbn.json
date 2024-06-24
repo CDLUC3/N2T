@@ -1,9 +1,9 @@
 {
   "id": "mhcbn",
   "target": {
-    "DEFAULT": "http://www.imtech.res.in/cgibin/mhcbn/display.pl?field=sno&value={content}"
+    "DEFAULT": "http://www.imtech.res.in/cgibin/mhcbn/display.pl?field=sno&value=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.imtech.res.in/cgibin/mhcbn/display.pl?field=sno&value={content}",
+  "redirect": "http://www.imtech.res.in/cgibin/mhcbn/display.pl?field=sno&value=${content}",
   "revision": 0
 }

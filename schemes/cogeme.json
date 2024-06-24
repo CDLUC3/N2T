@@ -1,9 +1,9 @@
 {
   "id": "cogeme",
   "target": {
-    "DEFAULT": "http://cogeme.ex.ac.uk/cgi-bin/uni.pl?uni={content}"
+    "DEFAULT": "http://cogeme.ex.ac.uk/cgi-bin/uni.pl?uni=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://cogeme.ex.ac.uk/cgi-bin/uni.pl?uni={content}",
+  "redirect": "http://cogeme.ex.ac.uk/cgi-bin/uni.pl?uni=${content}",
   "revision": 0
 }

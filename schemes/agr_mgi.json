@@ -1,7 +1,7 @@
 {
   "id": "agr/mgi",
   "target": {
-    "DEFAULT": "https://www.alliancegenome.org/gene/MGI:{content}"
+    "DEFAULT": "https://www.alliancegenome.org/gene/MGI:${content}"
   },
   "type": "scheme",
   "name": "MGI through the Alliance of Genome Resources",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.alliancegenome.org/gene/MGI:${ac}",
-  "redirect": "https://www.alliancegenome.org/gene/MGI:{content}",
+  "redirect": "https://www.alliancegenome.org/gene/MGI:${content}",
   "description": "The Mouse Genome Database (MGD) project includes data on gene characterization, nomenclature, mapping, gene homologies among mammals, sequence links, phenotypes, allelic variants and mutants, and strain data.",
   "subject": "expression; sequence; phenotype",
   "location": "USA",

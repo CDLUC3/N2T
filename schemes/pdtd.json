@@ -1,9 +1,9 @@
 {
   "id": "pdtd",
   "target": {
-    "DEFAULT": "http://www.dddc.ac.cn/pdtd/detail.php?pdbId={content}"
+    "DEFAULT": "http://www.dddc.ac.cn/pdtd/detail.php?pdbId=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.dddc.ac.cn/pdtd/detail.php?pdbId={content}",
+  "redirect": "http://www.dddc.ac.cn/pdtd/detail.php?pdbId=${content}",
   "revision": 0
 }

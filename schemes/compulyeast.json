@@ -1,7 +1,7 @@
 {
   "id": "compulyeast",
   "target": {
-    "DEFAULT": "http://compluyeast2dpage.dacya.ucm.es/cgi-bin/2d/2d.cgi?ac={content}"
+    "DEFAULT": "http://compluyeast2dpage.dacya.ucm.es/cgi-bin/2d/2d.cgi?ac=${content}"
   },
   "type": "scheme",
   "name": "Compluyeast database at Universidad Complutense Madrid",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://compluyeast2dpage.dacya.ucm.es/cgi-bin/2d/2d.cgi?ac=${ac}",
-  "redirect": "http://compluyeast2dpage.dacya.ucm.es/cgi-bin/2d/2d.cgi?ac={content}",
+  "redirect": "http://compluyeast2dpage.dacya.ucm.es/cgi-bin/2d/2d.cgi?ac=${content}",
   "description": "Compluyeast-2D-DB is a two-dimensional polyacrylamide gel electrophoresis federated database. This collection references a subset of Uniprot, and contains general information about the protein record.",
   "subject": "protein",
   "location": "Spain",

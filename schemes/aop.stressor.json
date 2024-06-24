@@ -1,7 +1,7 @@
 {
   "id": "aop.stressor",
   "target": {
-    "DEFAULT": "https://aopwiki.org/stressors/{content}"
+    "DEFAULT": "https://aopwiki.org/stressors/${content}"
   },
   "type": "scheme",
   "name": "AOPWiki (Stressor)",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://aopwiki.org/stressors/${ac}",
-  "redirect": "https://aopwiki.org/stressors/{content}",
+  "redirect": "https://aopwiki.org/stressors/${content}",
   "description": "International repository of Adverse Outcome Pathways.",
   "subject": null,
   "location": "USA",

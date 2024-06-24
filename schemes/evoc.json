@@ -1,9 +1,9 @@
 {
   "id": "evoc",
   "target": {
-    "DEFAULT": "http://www.evocontology.org/site/Main/BrowseEvoc?x_termid={content}"
+    "DEFAULT": "http://www.evocontology.org/site/Main/BrowseEvoc?x_termid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.evocontology.org/site/Main/BrowseEvoc?x_termid={content}",
+  "redirect": "http://www.evocontology.org/site/Main/BrowseEvoc?x_termid=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "hpmr",
   "target": {
-    "DEFAULT": "http://www.receptome.org/HPMR/Families/Frameset_family.asp?FamId={content}"
+    "DEFAULT": "http://www.receptome.org/HPMR/Families/Frameset_family.asp?FamId=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.receptome.org/HPMR/Families/Frameset_family.asp?FamId={content}",
+  "redirect": "http://www.receptome.org/HPMR/Families/Frameset_family.asp?FamId=${content}",
   "revision": 0
 }

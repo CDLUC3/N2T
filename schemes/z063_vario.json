@@ -1,7 +1,7 @@
 {
   "id": "z063/vario",
   "target": {
-    "DEFAULT": "http://www.variationontology.org/cgi-bin/amivario/term-details.cgi?term=VariO:{content}"
+    "DEFAULT": "http://www.variationontology.org/cgi-bin/amivario/term-details.cgi?term=VariO:${content}"
   },
   "type": "scheme",
   "name": "VariO at Lund University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.variationontology.org/cgi-bin/amivario/term-details.cgi?term=VariO:${ac}",
-  "redirect": "http://www.variationontology.org/cgi-bin/amivario/term-details.cgi?term=VariO:{content}",
+  "redirect": "http://www.variationontology.org/cgi-bin/amivario/term-details.cgi?term=VariO:${content}",
   "description": "The Variation Ontology (VariO) is an ontology for the standardized, systematic description of effects, consequences and mechanisms of variations. It describes the effects of variations at the DNA, RNA and/or protein level.",
   "subject": "ontology; DNA; protein",
   "location": "Sweden",

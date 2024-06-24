@@ -1,7 +1,7 @@
 {
   "id": "arxiv",
   "target": {
-    "DEFAULT": "https://arxiv.org/abs/{content}"
+    "DEFAULT": "https://arxiv.org/abs/${content}"
   },
   "type": "scheme",
   "name": "Cornell University arXiv",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://arxiv.org/abs/${ac}",
-  "redirect": "https://arxiv.org/abs/{content}",
+  "redirect": "https://arxiv.org/abs/${content}",
   "description": "arXiv is an e-print service in the fields of physics, mathematics, non-linear science, computer science, and quantitative biology.",
   "subject": "bibliography",
   "location": "USA",

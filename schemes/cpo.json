@@ -1,9 +1,9 @@
 {
   "id": "cpo",
   "target": {
-    "DEFAULT": "http://phenomebrowser.net/cellphenotype.owl#{content}"
+    "DEFAULT": "http://phenomebrowser.net/cellphenotype.owl#${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://phenomebrowser.net/cellphenotype.owl#{content}",
+  "redirect": "http://phenomebrowser.net/cellphenotype.owl#${content}",
   "revision": 0
 }

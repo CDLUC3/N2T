@@ -1,7 +1,7 @@
 {
   "id": "ols/ma",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/ma/terms?obo_id=MA:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/ma/terms?obo_id=MA:${content}"
   },
   "type": "scheme",
   "name": "Mouse Adult Gross Anatomy through OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/ma/terms?obo_id=MA:${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/ma/terms?obo_id=MA:{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/ma/terms?obo_id=MA:${content}",
   "description": "A structured controlled vocabulary of the adult anatomy of the mouse (Mus)",
   "subject": "ontology",
   "location": "UK",

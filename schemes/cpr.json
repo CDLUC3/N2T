@@ -1,9 +1,9 @@
 {
   "id": "cpr",
   "target": {
-    "DEFAULT": "http://purl.org/cpr/{content}"
+    "DEFAULT": "http://purl.org/cpr/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://purl.org/cpr/{content}",
+  "redirect": "http://purl.org/cpr/${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "aracxyls",
   "target": {
-    "DEFAULT": "http://www.eez.csic.es/arac-xyls/wfichas/{content}rec.htm"
+    "DEFAULT": "http://www.eez.csic.es/arac-xyls/wfichas/${content}rec.htm"
   },
   "type": "commonspfx",
-  "redirect": "http://www.eez.csic.es/arac-xyls/wfichas/{content}rec.htm",
+  "redirect": "http://www.eez.csic.es/arac-xyls/wfichas/${content}rec.htm",
   "revision": 0
 }

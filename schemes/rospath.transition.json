@@ -1,9 +1,9 @@
 {
   "id": "rospath.transition",
   "target": {
-    "DEFAULT": "http://rospath.ewha.ac.kr/interaction/ProteinTransitionDetailFrm.jsp?ENTITY_ID={content}"
+    "DEFAULT": "http://rospath.ewha.ac.kr/interaction/ProteinTransitionDetailFrm.jsp?ENTITY_ID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://rospath.ewha.ac.kr/interaction/ProteinTransitionDetailFrm.jsp?ENTITY_ID={content}",
+  "redirect": "http://rospath.ewha.ac.kr/interaction/ProteinTransitionDetailFrm.jsp?ENTITY_ID=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "ligasite",
   "target": {
-    "DEFAULT": "http://www.bigre.ulb.ac.be/Users/benoit/LigASite/index.php?apo={content}"
+    "DEFAULT": "http://www.bigre.ulb.ac.be/Users/benoit/LigASite/index.php?apo=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.bigre.ulb.ac.be/Users/benoit/LigASite/index.php?apo={content}",
+  "redirect": "http://www.bigre.ulb.ac.be/Users/benoit/LigASite/index.php?apo=${content}",
   "revision": 0
 }

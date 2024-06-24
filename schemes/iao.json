@@ -1,7 +1,7 @@
 {
   "id": "iao",
   "target": {
-    "DEFAULT": "http://purl.obolibrary.org/obo/IAO_{content}"
+    "DEFAULT": "http://purl.obolibrary.org/obo/IAO_${content}"
   },
   "type": "scheme",
   "name": "IAO through Ontobee",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.obolibrary.org/obo/IAO_${ac}",
-  "redirect": "http://purl.obolibrary.org/obo/IAO_{content}",
+  "redirect": "http://purl.obolibrary.org/obo/IAO_${content}",
   "description": "An ontology of information entities, originally driven by work by the Ontology of Biomedical Investigation (OBI) digital entity and realizable information entity branch.",
   "subject": null,
   "location": "USA",

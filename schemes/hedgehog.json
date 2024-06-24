@@ -1,9 +1,9 @@
 {
   "id": "hedgehog",
   "target": {
-    "DEFAULT": "http://hedgehog.sfsu.edu/genes/{content}.html"
+    "DEFAULT": "http://hedgehog.sfsu.edu/genes/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://hedgehog.sfsu.edu/genes/{content}.html",
+  "redirect": "http://hedgehog.sfsu.edu/genes/${content}.html",
   "revision": 0
 }

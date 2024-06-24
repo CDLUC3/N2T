@@ -1,7 +1,7 @@
 {
   "id": "vipr",
   "target": {
-    "DEFAULT": "http://www.viprbrc.org/brc/viprStrainDetails.do?strainName={content}&decorator=arena"
+    "DEFAULT": "http://www.viprbrc.org/brc/viprStrainDetails.do?strainName=${content}&decorator=arena"
   },
   "type": "scheme",
   "name": "ViPR Strain at J. Craig Venter Institute",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.viprbrc.org/brc/viprStrainDetails.do?strainName=${ac}&decorator=arena",
-  "redirect": "http://www.viprbrc.org/brc/viprStrainDetails.do?strainName={content}&decorator=arena",
+  "redirect": "http://www.viprbrc.org/brc/viprStrainDetails.do?strainName=${content}&decorator=arena",
   "description": "The Virus Pathogen Database and Analysis Resource (ViPR) supports bioinformatics workflows for a broad range of human virus pathogens and other related viruses. It provides access to sequence records, gene and protein annotations, immune epitopes, 3D structures,  and host factor data. This collection references viral strain information.",
   "subject": "viral; strain",
   "location": "USA",

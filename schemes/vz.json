@@ -1,9 +1,9 @@
 {
   "id": "vz",
   "target": {
-    "DEFAULT": "http://viralzone.expasy.org/all_by_protein/{content}.html"
+    "DEFAULT": "http://viralzone.expasy.org/all_by_protein/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://viralzone.expasy.org/all_by_protein/{content}.html",
+  "redirect": "http://viralzone.expasy.org/all_by_protein/${content}.html",
   "revision": 0
 }

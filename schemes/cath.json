@@ -1,7 +1,7 @@
 {
   "id": "cath",
   "target": {
-    "DEFAULT": "http://www.cathdb.info/cathnode/{content}"
+    "DEFAULT": "http://www.cathdb.info/cathnode/${content}"
   },
   "type": "scheme",
   "name": "CATH Node through UCL",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.cathdb.info/cathnode/${ac}",
-  "redirect": "http://www.cathdb.info/cathnode/{content}",
+  "redirect": "http://www.cathdb.info/cathnode/${content}",
   "description": "CATH is a classification of protein structural domains. We group protein domains into superfamilies when there is sufficient evidence they have diverged from a common ancestor. CATH can be used to predict structural and functional information directly from protein sequence.",
   "subject": "schema.org",
   "location": "UK",

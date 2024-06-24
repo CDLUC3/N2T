@@ -1,7 +1,7 @@
 {
   "id": "zfin",
   "target": {
-    "DEFAULT": "http://zfin.org/{content}"
+    "DEFAULT": "http://zfin.org/${content}"
   },
   "type": "scheme",
   "name": "ZFIN at University of Oregon",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://zfin.org/${ac}",
-  "redirect": "http://zfin.org/{content}",
+  "redirect": "http://zfin.org/${content}",
   "description": "ZFIN serves as the zebrafish model organism database. This collection references all zebrafish biological entities in ZFIN.",
   "subject": "gene",
   "location": "USA",

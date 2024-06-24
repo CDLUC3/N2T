@@ -1,9 +1,9 @@
 {
   "id": "strepto_db",
   "target": {
-    "DEFAULT": "http://oger.tu-bs.de/websites/query_result.php?index=1&dbno={content}"
+    "DEFAULT": "http://oger.tu-bs.de/websites/query_result.php?index=1&dbno=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://oger.tu-bs.de/websites/query_result.php?index=1&dbno={content}",
+  "redirect": "http://oger.tu-bs.de/websites/query_result.php?index=1&dbno=${content}",
   "revision": 0
 }

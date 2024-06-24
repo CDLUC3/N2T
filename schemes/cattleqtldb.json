@@ -1,7 +1,7 @@
 {
   "id": "cattleqtldb",
   "target": {
-    "DEFAULT": "http://www.animalgenome.org/cgi-bin/QTLdb/BT/qdetails?QTL_ID={content}"
+    "DEFAULT": "http://www.animalgenome.org/cgi-bin/QTLdb/BT/qdetails?QTL_ID=${content}"
   },
   "type": "scheme",
   "name": "Animal QTL Cattle at Iowa State University",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.animalgenome.org/cgi-bin/QTLdb/BT/qdetails?QTL_ID=${ac}",
-  "redirect": "http://www.animalgenome.org/cgi-bin/QTLdb/BT/qdetails?QTL_ID={content}",
+  "redirect": "http://www.animalgenome.org/cgi-bin/QTLdb/BT/qdetails?QTL_ID=${content}",
   "description": "The Animal Quantitative Trait Loci (QTL) database (Animal QTLdb) is designed to house publicly all available QTL and single-nucleotide polymorphism/gene association data on livestock animal species. This collection references cattle QTLs.",
   "subject": "phenotype; gene",
   "location": "USA",

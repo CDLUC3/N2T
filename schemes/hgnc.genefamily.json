@@ -1,7 +1,7 @@
 {
   "id": "hgnc.genefamily",
   "target": {
-    "DEFAULT": "https://www.genenames.org/cgi-bin/genefamilies/set/{content}"
+    "DEFAULT": "https://www.genenames.org/cgi-bin/genefamilies/set/${content}"
   },
   "type": "scheme",
   "name": "HGNC gene family at HUGO Genome Nomenclature Committee",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.genenames.org/cgi-bin/genefamilies/set/${ac}",
-  "redirect": "https://www.genenames.org/cgi-bin/genefamilies/set/{content}",
+  "redirect": "https://www.genenames.org/cgi-bin/genefamilies/set/${content}",
   "description": "The HGNC (HUGO Gene Nomenclature Committee) provides an approved gene name and symbol (short-form abbreviation) for each known human gene. All approved symbols are stored in the HGNC database, and each symbol is unique. In addition, HGNC also provides a unique numerical ID to identify gene families, providing a display of curated hierarchical relationships between families.",
   "subject": "human; schema.org",
   "location": "UK",

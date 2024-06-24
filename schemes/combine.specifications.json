@@ -1,7 +1,7 @@
 {
   "id": "combine.specifications",
   "target": {
-    "DEFAULT": "https://co.mbine.org/specifications/{content}"
+    "DEFAULT": "https://co.mbine.org/specifications/${content}"
   },
   "type": "scheme",
   "name": "COMBINE at EBI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://co.mbine.org/specifications/${ac}",
-  "redirect": "https://co.mbine.org/specifications/{content}",
+  "redirect": "https://co.mbine.org/specifications/${content}",
   "description": "The 'COmputational Modeling in BIology' NEtwork (COMBINE) is an initiative to coordinate the development of the various community standards and formats for computational models, initially in Systems Biology and related fields. This collection pertains to specifications of the standard formats developed by the Computational Modeling in Biology Network.",
   "subject": null,
   "location": "UK",

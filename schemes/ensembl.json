@@ -1,7 +1,7 @@
 {
   "id": "ensembl",
   "target": {
-    "DEFAULT": "https://www.ensembl.org/id/{content}"
+    "DEFAULT": "https://www.ensembl.org/id/${content}"
   },
   "type": "scheme",
   "name": "Ensembl at Sanger/EMBL-EBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ensembl.org/id/${ac}",
-  "redirect": "https://www.ensembl.org/id/{content}",
+  "redirect": "https://www.ensembl.org/id/${content}",
   "description": "Ensembl is a joint project between EMBL - EBI and the Sanger Institute  to develop a software system which produces and maintains automatic annotation on selected eukaryotic genomes. This collections also references outgroup organisms.",
   "subject": "genome; nucleotide; sequence; schema.org; eukaryotic",
   "location": "UK",

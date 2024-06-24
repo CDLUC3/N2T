@@ -1,7 +1,7 @@
 {
   "id": "worfdb",
   "target": {
-    "DEFAULT": "http://worfdb.dfci.harvard.edu/index.php?search_type=name&page=showresultrc&race_query={content}"
+    "DEFAULT": "http://worfdb.dfci.harvard.edu/index.php?search_type=name&page=showresultrc&race_query=${content}"
   },
   "type": "scheme",
   "name": "Worm Orf DB at Harvard",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://worfdb.dfci.harvard.edu/index.php?search_type=name&page=showresultrc&race_query=${ac}",
-  "redirect": "http://worfdb.dfci.harvard.edu/index.php?search_type=name&page=showresultrc&race_query={content}",
+  "redirect": "http://worfdb.dfci.harvard.edu/index.php?search_type=name&page=showresultrc&race_query=${content}",
   "description": "WOrfDB (Worm ORFeome DataBase) contains data from the cloning of complete set of predicted protein-encoding Open Reading Frames (ORFs) of Caenorhabditis elegans. This collection describes experimentally defined transcript structures of unverified genes through RACE (Rapid Amplification of cDNA Ends).",
   "subject": "eukaryotic; gene",
   "location": "USA",

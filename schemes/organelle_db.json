@@ -1,9 +1,9 @@
 {
   "id": "organelle_db",
   "target": {
-    "DEFAULT": "http://organelledb.lsi.umich.edu/gene.php?id={content}"
+    "DEFAULT": "http://organelledb.lsi.umich.edu/gene.php?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://organelledb.lsi.umich.edu/gene.php?id={content}",
+  "redirect": "http://organelledb.lsi.umich.edu/gene.php?id=${content}",
   "revision": 0
 }

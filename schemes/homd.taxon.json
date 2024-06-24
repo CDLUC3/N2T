@@ -1,7 +1,7 @@
 {
   "id": "homd.taxon",
   "target": {
-    "DEFAULT": "http://www.homd.org/modules.php?op=modload&name=HOMD&file=index&oraltaxonid={content}&view=dynamic"
+    "DEFAULT": "http://www.homd.org/modules.php?op=modload&name=HOMD&file=index&oraltaxonid=${content}&view=dynamic"
   },
   "type": "scheme",
   "name": "HOMD taxon information at The Forsyth Institute",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.homd.org/modules.php?op=modload&name=HOMD&file=index&oraltaxonid=${ac}&view=dynamic",
-  "redirect": "http://www.homd.org/modules.php?op=modload&name=HOMD&file=index&oraltaxonid={content}&view=dynamic",
+  "redirect": "http://www.homd.org/modules.php?op=modload&name=HOMD&file=index&oraltaxonid=${content}&view=dynamic",
   "description": "The Human Oral Microbiome Database (HOMD) provides a site-specific comprehensive database for the more than 600 prokaryote species that are present in the human oral cavity. It contains genomic information based on a curated 16S rRNA gene-based provisional naming scheme, and taxonomic information. This datatype contains taxonomic information.",
   "subject": "microbial; taxonomy",
   "location": "USA",

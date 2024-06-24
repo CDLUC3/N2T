@@ -1,9 +1,9 @@
 {
   "id": "methycancer.clone",
   "target": {
-    "DEFAULT": "http://methycancer.psych.ac.cn/cloneDetail.do?clonename={content}"
+    "DEFAULT": "http://methycancer.psych.ac.cn/cloneDetail.do?clonename=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://methycancer.psych.ac.cn/cloneDetail.do?clonename={content}",
+  "redirect": "http://methycancer.psych.ac.cn/cloneDetail.do?clonename=${content}",
   "revision": 0
 }

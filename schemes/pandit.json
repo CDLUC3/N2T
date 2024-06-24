@@ -1,9 +1,9 @@
 {
   "id": "pandit",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/goldman-srv/pandit/pandit.cgi?action=browse&fam={content}"
+    "DEFAULT": "http://www.ebi.ac.uk/goldman-srv/pandit/pandit.cgi?action=browse&fam=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/goldman-srv/pandit/pandit.cgi?action=browse&fam={content}",
+  "redirect": "http://www.ebi.ac.uk/goldman-srv/pandit/pandit.cgi?action=browse&fam=${content}",
   "revision": 0
 }

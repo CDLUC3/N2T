@@ -1,7 +1,7 @@
 {
   "id": "ols/ncit",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?short_form=NCIT_{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?short_form=NCIT_${content}"
   },
   "type": "scheme",
   "name": "NCIt through OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?short_form=NCIT_${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?short_form=NCIT_{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?short_form=NCIT_${content}",
   "description": "NCI Thesaurus (NCIt) provides reference terminology covering vocabulary for clinical care, translational and basic research, and public information and administrative activities, providing a stable and unique identification code.",
   "subject": "controlled vocabulary; ontology",
   "location": "UK",

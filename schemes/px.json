@@ -1,7 +1,7 @@
 {
   "id": "px",
   "target": {
-    "DEFAULT": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID={content}"
+    "DEFAULT": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=${content}"
   },
   "type": "scheme",
   "name": "ProteomeXchange at Seattle",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=${ac}",
-  "redirect": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID={content}",
+  "redirect": "http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=${content}",
   "description": "The ProteomeXchange provides a single point of submission of Mass Spectrometry (MS) proteomics data for the main existing proteomics repositories, and encourages the data exchange between them for optimal data dissemination.",
   "subject": "mass spectrometry; protein",
   "location": "USA",

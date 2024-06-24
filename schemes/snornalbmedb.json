@@ -1,9 +1,9 @@
 {
   "id": "snornalbmedb",
   "target": {
-    "DEFAULT": "http://www-snorna.biotoul.fr/plus.php?id={content}"
+    "DEFAULT": "http://www-snorna.biotoul.fr/plus.php?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www-snorna.biotoul.fr/plus.php?id={content}",
+  "redirect": "http://www-snorna.biotoul.fr/plus.php?id=${content}",
   "revision": 0
 }

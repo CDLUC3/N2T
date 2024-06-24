@@ -1,7 +1,7 @@
 {
   "id": "cco",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/cco/terms?obo_id=CCO:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/cco/terms?obo_id=CCO:${content}"
   },
   "type": "scheme",
   "name": "Cell Cycle Ontology through OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/cco/terms?obo_id=CCO:${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/cco/terms?obo_id=CCO:{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/cco/terms?obo_id=CCO:${content}",
   "description": "The Cell Cycle Ontology is an application ontology that captures and integrates detailed knowledge on the cell cycle process.",
   "subject": "ontology",
   "location": "UK",

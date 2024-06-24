@@ -1,9 +1,9 @@
 {
   "id": "ivdb",
   "target": {
-    "DEFAULT": "http://influenza.psych.ac.cn/search/detail.jsp?segment.gb_id={content}"
+    "DEFAULT": "http://influenza.psych.ac.cn/search/detail.jsp?segment.gb_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://influenza.psych.ac.cn/search/detail.jsp?segment.gb_id={content}",
+  "redirect": "http://influenza.psych.ac.cn/search/detail.jsp?segment.gb_id=${content}",
   "revision": 0
 }

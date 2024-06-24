@@ -1,9 +1,9 @@
 {
   "id": "2dbaseecoli",
   "target": {
-    "DEFAULT": "http://2dbase.techfak.uni-bielefeld.de/cgi-bin/2d/2d.cgi?ac={content}"
+    "DEFAULT": "http://2dbase.techfak.uni-bielefeld.de/cgi-bin/2d/2d.cgi?ac=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://2dbase.techfak.uni-bielefeld.de/cgi-bin/2d/2d.cgi?ac={content}",
+  "redirect": "http://2dbase.techfak.uni-bielefeld.de/cgi-bin/2d/2d.cgi?ac=${content}",
   "revision": 0
 }

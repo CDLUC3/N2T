@@ -1,13 +1,13 @@
 {
   "id": "url",
   "target": {
-    "DEFAULT": "https://{content}"
+    "DEFAULT": "https://${content}"
   },
   "type": "scheme",
   "name": "Uniform Resource Locator",
   "alias": null,
   "primary": 1,
-  "redirect": "https://{content}",
+  "redirect": "https://${content}",
   "test": "www.w3c.org",
   "probe": "http://www.w3c.org",
   "more": "https://www.w3c.org/",

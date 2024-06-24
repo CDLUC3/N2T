@@ -1,9 +1,9 @@
 {
   "id": "dbtgr",
   "target": {
-    "DEFAULT": "http://dbtgr.hgc.jp/v2/id/{content}"
+    "DEFAULT": "http://dbtgr.hgc.jp/v2/id/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://dbtgr.hgc.jp/v2/id/{content}",
+  "redirect": "http://dbtgr.hgc.jp/v2/id/${content}",
   "revision": 0
 }

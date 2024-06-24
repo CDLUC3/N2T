@@ -1,7 +1,7 @@
 {
   "id": "cadsr",
   "target": {
-    "DEFAULT": "https://cadsrapi.nci.nih.gov/cadsrapi4/GetXML?query=DataElement[@publicId={content}]"
+    "DEFAULT": "https://cadsrapi.nci.nih.gov/cadsrapi4/GetXML?query=DataElement[@publicId=${content}]"
   },
   "type": "scheme",
   "name": "Cancer Data Standards Registry and Repository",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://cadsrapi.nci.nih.gov/cadsrapi4/GetXML?query=DataElement[@publicId=${ac}]",
-  "redirect": "https://cadsrapi.nci.nih.gov/cadsrapi4/GetXML?query=DataElement[@publicId={content}]",
+  "redirect": "https://cadsrapi.nci.nih.gov/cadsrapi4/GetXML?query=DataElement[@publicId=${content}]",
   "description": "The US National Cancer Institute (NCI) maintains and administers data elements, forms, models, and components of these items in a metadata registry referred to as the Cancer Data Standards Registry and Repository, or caDSR.",
   "subject": null,
   "location": "USA",

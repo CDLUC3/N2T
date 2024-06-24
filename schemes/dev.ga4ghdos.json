@@ -1,7 +1,7 @@
 {
   "id": "dev.ga4ghdos",
   "target": {
-    "DEFAULT": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/{content}"
+    "DEFAULT": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/${content}"
   },
   "type": "scheme",
   "name": "Data Object Service",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/${ac}",
-  "redirect": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/{content}",
+  "redirect": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/${content}",
   "description": "Assists in resolving data across cloud resources.",
   "subject": null,
   "location": "USA",

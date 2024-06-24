@@ -1,9 +1,9 @@
 {
   "id": "igtcd",
   "target": {
-    "DEFAULT": "http://www.genetrap.org/cgi-bin/annotation.py?gene_key={content}"
+    "DEFAULT": "http://www.genetrap.org/cgi-bin/annotation.py?gene_key=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.genetrap.org/cgi-bin/annotation.py?gene_key={content}",
+  "redirect": "http://www.genetrap.org/cgi-bin/annotation.py?gene_key=${content}",
   "revision": 0
 }

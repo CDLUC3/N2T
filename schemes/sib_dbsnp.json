@@ -1,7 +1,7 @@
 {
   "id": "sib/dbsnp",
   "target": {
-    "DEFAULT": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid={content}"
+    "DEFAULT": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid=${content}"
   },
   "type": "scheme",
   "name": "SNP2TFBS",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid=${ac}",
-  "redirect": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid={content}",
+  "redirect": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid=${content}",
   "description": "The dbSNP database is a repository for both single base nucleotide subsitutions and short deletion and insertion polymorphisms.",
   "subject": "gene; nucleotide",
   "location": "Switzerland",

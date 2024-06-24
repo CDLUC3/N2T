@@ -1,7 +1,7 @@
 {
   "id": "kegg.drug",
   "target": {
-    "DEFAULT": "https://www.kegg.jp/entry/{content}"
+    "DEFAULT": "https://www.kegg.jp/entry/${content}"
   },
   "type": "scheme",
   "name": "KEGG DRUG Database",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.kegg.jp/entry/${ac}",
-  "redirect": "https://www.kegg.jp/entry/{content}",
+  "redirect": "https://www.kegg.jp/entry/${content}",
   "description": "KEGG DRUG contains chemical structures of drugs and additional information such as therapeutic categories and target molecules.",
   "subject": "structure; drug",
   "location": "Japan",

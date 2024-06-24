@@ -1,7 +1,7 @@
 {
   "id": "pride.project",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/pride/archive/projects/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/pride/archive/projects/${content}"
   },
   "type": "scheme",
   "name": "PRIDE Project at EBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ebi.ac.uk/pride/archive/projects/${ac}",
-  "redirect": "https://www.ebi.ac.uk/pride/archive/projects/{content}",
+  "redirect": "https://www.ebi.ac.uk/pride/archive/projects/${content}",
   "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository that provides protein and peptide identifications together with supporting evidence. This collection references projects.",
   "subject": "protein",
   "location": "UK",

@@ -1,9 +1,9 @@
 {
   "id": "pogs_plantrbp",
   "target": {
-    "DEFAULT": "http://plantrbp.uoregon.edu/pogView.php?id={content}"
+    "DEFAULT": "http://plantrbp.uoregon.edu/pogView.php?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://plantrbp.uoregon.edu/pogView.php?id={content}",
+  "redirect": "http://plantrbp.uoregon.edu/pogView.php?id=${content}",
   "revision": 0
 }

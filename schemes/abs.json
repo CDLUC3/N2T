@@ -1,7 +1,7 @@
 {
   "id": "abs",
   "target": {
-    "DEFAULT": "http://genome.crg.es/datasets/abs2005/entries/{content}.html"
+    "DEFAULT": "http://genome.crg.es/datasets/abs2005/entries/${content}.html"
   },
   "type": "scheme",
   "name": "ABS at IMIM",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://genome.crg.es/datasets/abs2005/entries/${ac}.html",
-  "redirect": "http://genome.crg.es/datasets/abs2005/entries/{content}.html",
+  "redirect": "http://genome.crg.es/datasets/abs2005/entries/${content}.html",
   "description": "The database of Annotated regulatory Binding Sites (from orthologous promoters), ABS, is a public database of known binding sites identified in promoters of orthologous vertebrate genes that have been manually curated from bibliography.",
   "subject": "interaction; gene",
   "location": "Spain",

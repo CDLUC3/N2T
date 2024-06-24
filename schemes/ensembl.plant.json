@@ -1,7 +1,7 @@
 {
   "id": "ensembl.plant",
   "target": {
-    "DEFAULT": "https://plants.ensembl.org/id/{content}"
+    "DEFAULT": "https://plants.ensembl.org/id/${content}"
   },
   "type": "scheme",
   "name": "Enzembl Plants at EBI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://plants.ensembl.org/id/${ac}",
-  "redirect": "https://plants.ensembl.org/id/{content}",
+  "redirect": "https://plants.ensembl.org/id/${content}",
   "description": "Ensembl Genomes consists of five sub-portals (for bacteria, protists, fungi, plants and invertebrate metazoa) designed to complement the availability of vertebrate genomes in Ensembl. This collection is concerned with plant genomes.",
   "subject": "nucleotide; genome; sequence",
   "location": "UK",

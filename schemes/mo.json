@@ -1,7 +1,7 @@
 {
   "id": "mo",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/MO/{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/MO/${content}"
   },
   "type": "scheme",
   "name": "MGED Ontology at BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/MO/${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/MO/{content}",
+  "redirect": "http://purl.bioontology.org/ontology/MO/${content}",
   "description": "The MGED Ontology (MO) provides terms for annotating all aspects of a microarray experiment from the design of the experiment and array layout, through to the preparation of the biological sample and the protocols used to hybridize the RNA and analyze the data.",
   "subject": "ontology",
   "location": "USA",

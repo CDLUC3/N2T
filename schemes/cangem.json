@@ -1,9 +1,9 @@
 {
   "id": "cangem",
   "target": {
-    "DEFAULT": "http://www.cangem.org/index.php?gene={content}"
+    "DEFAULT": "http://www.cangem.org/index.php?gene=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.cangem.org/index.php?gene={content}",
+  "redirect": "http://www.cangem.org/index.php?gene=${content}",
   "revision": 0
 }

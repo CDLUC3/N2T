@@ -1,7 +1,7 @@
 {
   "id": "umbbd.compound",
   "target": {
-    "DEFAULT": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=c&compID={content}"
+    "DEFAULT": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=c&compID=${content}"
   },
   "type": "scheme",
   "name": "Biocatalysis/Biodegradation Database Mirror (Compound) at ETH Zurich",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=c&compID=${ac}",
-  "redirect": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=c&compID={content}",
+  "redirect": "http://umbbd.ethz.ch/servlets/pageservlet?ptype=c&compID=${content}",
   "description": "The University of Minnesota Biocatalysis/Biodegradation Database (UM-BBD) contains information on microbial biocatalytic reactions and biodegradation pathways for primarily xenobiotic, chemical compounds. The goal of the UM-BBD is to provide information on microbial enzyme-catalyzed reactions that are important for biotechnology. This collection refers to compound information.",
   "subject": "metabolite; microbial",
   "location": "Switzerland",

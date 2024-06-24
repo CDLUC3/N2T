@@ -1,7 +1,7 @@
 {
   "id": "po",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/PO/PO:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/PO/PO:${content}"
   },
   "type": "scheme",
   "name": "Plant Ontology through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/PO/PO:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/PO/PO:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/PO/PO:${content}",
   "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
   "subject": "ontology; plant",
   "location": "USA",

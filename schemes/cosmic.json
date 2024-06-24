@@ -1,7 +1,7 @@
 {
   "id": "cosmic",
   "target": {
-    "DEFAULT": "http://cancer.sanger.ac.uk/cosmic/gene/overview?ln={content}"
+    "DEFAULT": "http://cancer.sanger.ac.uk/cosmic/gene/overview?ln=${content}"
   },
   "type": "scheme",
   "name": "COSMIC Gene at Sanger",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://cancer.sanger.ac.uk/cosmic/gene/overview?ln=${ac}",
-  "redirect": "http://cancer.sanger.ac.uk/cosmic/gene/overview?ln={content}",
+  "redirect": "http://cancer.sanger.ac.uk/cosmic/gene/overview?ln=${content}",
   "description": "COSMIC is a comprehensive global resource for information on somatic mutations in human cancer, combining curation of the scientific literature with tumor resequencing data from the Cancer Genome Project at the Sanger Institute, U.K. This collection references genes.",
   "subject": "schema.org",
   "location": "UK",

@@ -1,7 +1,7 @@
 {
   "id": "obi",
   "target": {
-    "DEFAULT": "http://purl.obolibrary.org/obo/{content}"
+    "DEFAULT": "http://purl.obolibrary.org/obo/${content}"
   },
   "type": "scheme",
   "name": "OBI through Ontobee",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://purl.obolibrary.org/obo/${ac}",
-  "redirect": "http://purl.obolibrary.org/obo/{content}",
+  "redirect": "http://purl.obolibrary.org/obo/${content}",
   "description": "The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of biological and clinical investigations. The ontology will represent the design of an investigation, the protocols and instrumentation used, the material used, the data generated and the type analysis performed on it. Currently OBI is being built under the Basic Formal Ontology (BFO).",
   "subject": null,
   "location": "USA",

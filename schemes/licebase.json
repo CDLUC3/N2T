@@ -1,7 +1,7 @@
 {
   "id": "licebase",
   "target": {
-    "DEFAULT": "https://licebase.org/?q={content}"
+    "DEFAULT": "https://licebase.org/?q=${content}"
   },
   "type": "scheme",
   "name": "LiceBase",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://licebase.org/?q=${ac}",
-  "redirect": "https://licebase.org/?q={content}",
+  "redirect": "https://licebase.org/?q=${content}",
   "description": "Sea lice (Lepeophtheirus salmonis and Caligus species) are the major pathogens of salmon,  significantly impacting upon the global salmon farming industry. Lice control is primarily accomplished through chemotherapeutants, though emerging resistance necessitates the development of new treatment methods (biological agents, prophylactics and new drugs). LiceBase is a database for sea lice genomics, providing genome annotation of the Atlantic salmon louse Lepeophtheirus salmonis, a genome browser, and access to related high-thoughput genomics data. LiceBase also mines and stores data from related genome sequencing and functional genomics projects.",
   "subject": "genome; sequence",
   "location": "Norway",

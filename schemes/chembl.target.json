@@ -1,7 +1,7 @@
 {
   "id": "chembl.target",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/chembl/target/inspect/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/chembl/target/inspect/${content}"
   },
   "type": "scheme",
   "name": "ChEMBL targets database at EBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ebi.ac.uk/chembl/target/inspect/${ac}",
-  "redirect": "https://www.ebi.ac.uk/chembl/target/inspect/{content}",
+  "redirect": "https://www.ebi.ac.uk/chembl/target/inspect/${content}",
   "description": "ChEMBL is a database of bioactive compounds, their quantitative properties and bioactivities (binding constants, pharmacology and ADMET, etc). The data is abstracted and curated from the primary scientific literature.",
   "subject": "protein",
   "location": "UK",

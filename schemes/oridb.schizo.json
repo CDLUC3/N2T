@@ -1,7 +1,7 @@
 {
   "id": "oridb.schizo",
   "target": {
-    "DEFAULT": "http://pombe.oridb.org/details.php?id={content}"
+    "DEFAULT": "http://pombe.oridb.org/details.php?id=${content}"
   },
   "type": "scheme",
   "name": "OriDB Schizosaccharomyces at University of Nottingham",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://pombe.oridb.org/details.php?id=${ac}",
-  "redirect": "http://pombe.oridb.org/details.php?id={content}",
+  "redirect": "http://pombe.oridb.org/details.php?id=${content}",
   "description": "OriDB is a database of collated genome-wide mapping studies of confirmed and predicted replication origin sites in Saccharomyces cerevisiae and the fission yeast Schizosaccharomyces pombe. This collection references Schizosaccharomyces pombe.",
   "subject": "eukaryotic; genome",
   "location": "UK",

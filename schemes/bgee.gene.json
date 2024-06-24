@@ -1,7 +1,7 @@
 {
   "id": "bgee.gene",
   "target": {
-    "DEFAULT": "https://bgee.org/?page=gene&gene_id={content}"
+    "DEFAULT": "https://bgee.org/?page=gene&gene_id=${content}"
   },
   "type": "scheme",
   "name": "Bgee gene",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://bgee.org/?page=gene&gene_id=${ac}",
-  "redirect": "https://bgee.org/?page=gene&gene_id={content}",
+  "redirect": "https://bgee.org/?page=gene&gene_id=${content}",
   "description": "Bgee is a database to retrieve and compare gene expression patterns in multiple species, produced from multiple data types (RNA-Seq, Affymetrix, in situ hybridization, and EST data). This collection references genes in Bgee.",
   "subject": "expression; gene",
   "location": "Switzerland",

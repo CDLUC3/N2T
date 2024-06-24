@@ -1,7 +1,7 @@
 {
   "id": "ebi/efo",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/efo/EFO_{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/efo/EFO_${content}"
   },
   "type": "scheme",
   "name": "EFO through Functional Genomics Group (EBI)",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/efo/EFO_${ac}",
-  "redirect": "https://www.ebi.ac.uk/efo/EFO_{content}",
+  "redirect": "https://www.ebi.ac.uk/efo/EFO_${content}",
   "description": "The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases. It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds. The scope of EFO is to support the annotation, analysis and visualization of data handled by the EBI Functional Genomics Team.",
   "subject": "ontology",
   "location": "UK",

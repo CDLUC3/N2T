@@ -1,9 +1,9 @@
 {
   "id": "gopad",
   "target": {
-    "DEFAULT": "http://bcl.med.harvard.edu/proteomics/proj/gopart/gopart_all_tbl_view_detail_list.php?masterkey={content}"
+    "DEFAULT": "http://bcl.med.harvard.edu/proteomics/proj/gopart/gopart_all_tbl_view_detail_list.php?masterkey=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://bcl.med.harvard.edu/proteomics/proj/gopart/gopart_all_tbl_view_detail_list.php?masterkey={content}",
+  "redirect": "http://bcl.med.harvard.edu/proteomics/proj/gopart/gopart_all_tbl_view_detail_list.php?masterkey=${content}",
   "revision": 0
 }

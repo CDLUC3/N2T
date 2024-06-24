@@ -1,7 +1,7 @@
 {
   "id": "rhea",
   "target": {
-    "DEFAULT": "https://www.rhea-db.org/reaction?id={content}"
+    "DEFAULT": "https://www.rhea-db.org/reaction?id=${content}"
   },
   "type": "scheme",
   "name": "Rhea",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.rhea-db.org/reaction?id=${ac}",
-  "redirect": "https://www.rhea-db.org/reaction?id={content}",
+  "redirect": "https://www.rhea-db.org/reaction?id=${content}",
   "description": "Rhea is a manually annotated reaction database, where all reaction participants (reactants and products) are linked to the ChEBI database (Chemical Entities of Biological Interest), providing detailed information about structure, formulae and charge. It is populated with the reactions found in the EC list, IntEnz and ENZYME databases), as well as other biochemical reactions, including those that are often termed \"spontaneous\".",
   "subject": "reaction",
   "location": "UK",

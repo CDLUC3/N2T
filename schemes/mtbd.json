@@ -1,9 +1,9 @@
 {
   "id": "mtbd",
   "target": {
-    "DEFAULT": "http://tumor.informatics.jax.org/mtbwi/strainDetails.do?key={content}"
+    "DEFAULT": "http://tumor.informatics.jax.org/mtbwi/strainDetails.do?key=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://tumor.informatics.jax.org/mtbwi/strainDetails.do?key={content}",
+  "redirect": "http://tumor.informatics.jax.org/mtbwi/strainDetails.do?key=${content}",
   "revision": 0
 }

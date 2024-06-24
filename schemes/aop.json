@@ -1,7 +1,7 @@
 {
   "id": "aop",
   "target": {
-    "DEFAULT": "https://aopwiki.org/aops/{content}"
+    "DEFAULT": "https://aopwiki.org/aops/${content}"
   },
   "type": "scheme",
   "name": "AOPWiki",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://aopwiki.org/aops/${ac}",
-  "redirect": "https://aopwiki.org/aops/{content}",
+  "redirect": "https://aopwiki.org/aops/${content}",
   "description": "International repository of Adverse Outcome Pathways.",
   "subject": null,
   "location": "USA",

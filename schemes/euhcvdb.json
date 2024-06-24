@@ -1,9 +1,9 @@
 {
   "id": "euhcvdb",
   "target": {
-    "DEFAULT": "http://euhcvdb.ibcp.fr/euHCVdb/do/displayHCVEntry?primaryAC={content}"
+    "DEFAULT": "http://euhcvdb.ibcp.fr/euHCVdb/do/displayHCVEntry?primaryAC=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://euhcvdb.ibcp.fr/euHCVdb/do/displayHCVEntry?primaryAC={content}",
+  "redirect": "http://euhcvdb.ibcp.fr/euHCVdb/do/displayHCVEntry?primaryAC=${content}",
   "revision": 0
 }

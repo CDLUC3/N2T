@@ -1,9 +1,9 @@
 {
   "id": "procognate",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/procognate/PDBquery.pl?PDBcode={content}&Classification=[?CATH/?SCOP/?Pfam]"
+    "DEFAULT": "http://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/procognate/PDBquery.pl?PDBcode=${content}&Classification=[?CATH/?SCOP/?Pfam]"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/procognate/PDBquery.pl?PDBcode={content}&Classification=[?CATH/?SCOP/?Pfam]",
+  "redirect": "http://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/procognate/PDBquery.pl?PDBcode=${content}&Classification=[?CATH/?SCOP/?Pfam]",
   "revision": 0
 }

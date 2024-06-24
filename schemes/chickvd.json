@@ -1,9 +1,9 @@
 {
   "id": "chickvd",
   "target": {
-    "DEFAULT": "http://chicken.genomics.org.cn/chicken/jsp/gene_report.jsp?gene_id={content}"
+    "DEFAULT": "http://chicken.genomics.org.cn/chicken/jsp/gene_report.jsp?gene_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://chicken.genomics.org.cn/chicken/jsp/gene_report.jsp?gene_id={content}",
+  "redirect": "http://chicken.genomics.org.cn/chicken/jsp/gene_report.jsp?gene_id=${content}",
   "revision": 0
 }

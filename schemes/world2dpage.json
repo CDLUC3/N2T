@@ -1,9 +1,9 @@
 {
   "id": "world2dpage",
   "target": {
-    "DEFAULT": "http://world-2dpage.expasy.org/repository/database={content}"
+    "DEFAULT": "http://world-2dpage.expasy.org/repository/database=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://world-2dpage.expasy.org/repository/database={content}",
+  "redirect": "http://world-2dpage.expasy.org/repository/database=${content}",
   "revision": 0
 }

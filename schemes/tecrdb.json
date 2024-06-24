@@ -1,9 +1,9 @@
 {
   "id": "tecrdb",
   "target": {
-    "DEFAULT": "http://xpdb.nist.gov/enzyme_thermodynamics/enzyme_data1.pl?T1={content}"
+    "DEFAULT": "http://xpdb.nist.gov/enzyme_thermodynamics/enzyme_data1.pl?T1=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://xpdb.nist.gov/enzyme_thermodynamics/enzyme_data1.pl?T1={content}",
+  "redirect": "http://xpdb.nist.gov/enzyme_thermodynamics/enzyme_data1.pl?T1=${content}",
   "revision": 0
 }

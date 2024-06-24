@@ -1,7 +1,7 @@
 {
   "id": "oryzabase.reference",
   "target": {
-    "DEFAULT": "https://shigen.nig.ac.jp/rice/oryzabase/reference/detail/{content}"
+    "DEFAULT": "https://shigen.nig.ac.jp/rice/oryzabase/reference/detail/${content}"
   },
   "type": "scheme",
   "name": "Oryzabase",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://shigen.nig.ac.jp/rice/oryzabase/reference/detail/${ac}",
-  "redirect": "https://shigen.nig.ac.jp/rice/oryzabase/reference/detail/{content}",
+  "redirect": "https://shigen.nig.ac.jp/rice/oryzabase/reference/detail/${content}",
   "description": "The Oryzabase is a comprehensive rice science database established in 2000 by rice researcher's committee in Japan.",
   "subject": null,
   "location": "Japan",

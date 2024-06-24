@@ -1,7 +1,7 @@
 {
   "id": "glycoepitope",
   "target": {
-    "DEFAULT": "https://www.glycoepitope.jp/epitopes/{content}"
+    "DEFAULT": "https://www.glycoepitope.jp/epitopes/${content}"
   },
   "type": "scheme",
   "name": "GlycoEpitope at Ritsumeikan University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://www.glycoepitope.jp/epitopes/${ac}",
-  "redirect": "https://www.glycoepitope.jp/epitopes/{content}",
+  "redirect": "https://www.glycoepitope.jp/epitopes/${content}",
   "description": "GlycoEpitope is a database containing useful information about carbohydrate antigens (glyco-epitopes) and the antibodies (polyclonal or monoclonal) that can be used to analyze their expression. This collection references Glycoepitopes.",
   "subject": "immunogenetics; interaction",
   "location": "Japan",

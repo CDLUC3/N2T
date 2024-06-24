@@ -1,7 +1,7 @@
 {
   "id": "cst.ab",
   "target": {
-    "DEFAULT": "http://www.cellsignal.com/products/{content}.html"
+    "DEFAULT": "http://www.cellsignal.com/products/${content}.html"
   },
   "type": "scheme",
   "name": "CST Antibody at Cell Signaling Technology",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.cellsignal.com/products/${ac}.html",
-  "redirect": "http://www.cellsignal.com/products/{content}.html",
+  "redirect": "http://www.cellsignal.com/products/${content}.html",
   "description": "Cell Signaling Technology is a commercial organisation which provides a pathway portal to showcase their phospho-antibody products. This collection references antibody products.",
   "subject": "catalogue; interaction; immunogenetics",
   "location": "USA",

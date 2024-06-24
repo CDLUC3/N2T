@@ -1,7 +1,7 @@
 {
   "id": "gtex",
   "target": {
-    "DEFAULT": "https://www.gtexportal.org/home/gene/{content}"
+    "DEFAULT": "https://www.gtexportal.org/home/gene/${content}"
   },
   "type": "scheme",
   "name": "The GTEx Project",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.gtexportal.org/home/gene/${ac}",
-  "redirect": "https://www.gtexportal.org/home/gene/{content}",
+  "redirect": "https://www.gtexportal.org/home/gene/${content}",
   "description": "The Genotype-Tissue Expression (GTEx) project aims to provide to the scientific community a resource with which to study human gene expression and regulation and its relationship to genetic variation.",
   "subject": null,
   "location": "USA",

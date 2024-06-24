@@ -1,7 +1,7 @@
 {
   "id": "fbol",
   "target": {
-    "DEFAULT": "http://www.fungalbarcoding.org/BioloMICS.aspx?Table=Fungal barcodes&Rec={content}&Fields=All&ExactMatch=T"
+    "DEFAULT": "http://www.fungalbarcoding.org/BioloMICS.aspx?Table=Fungal barcodes&Rec=${content}&Fields=All&ExactMatch=T"
   },
   "type": "scheme",
   "name": "Fungal Barcode at Fungal Biodiversity Centre",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.fungalbarcoding.org/BioloMICS.aspx?Table=Fungal barcodes&Rec=${ac}&Fields=All&ExactMatch=T",
-  "redirect": "http://www.fungalbarcoding.org/BioloMICS.aspx?Table=Fungal barcodes&Rec={content}&Fields=All&ExactMatch=T",
+  "redirect": "http://www.fungalbarcoding.org/BioloMICS.aspx?Table=Fungal barcodes&Rec=${content}&Fields=All&ExactMatch=T",
   "description": "DNA barcoding is the use of short standardised segments of the genome for identification of species in all the Kingdoms of Life. The goal of the Fungal Barcoding site is to promote the DNA barcoding of fungi and other fungus-like organisms.",
   "subject": "eukaryotic; classification",
   "location": "Netherlands",

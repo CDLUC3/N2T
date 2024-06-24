@@ -1,7 +1,7 @@
 {
   "id": "arrayexpress.platform",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/arrayexpress/arrays/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/arrayexpress/arrays/${content}"
   },
   "type": "scheme",
   "name": "ArrayExpress Platform at EBI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/arrayexpress/arrays/${ac}",
-  "redirect": "https://www.ebi.ac.uk/arrayexpress/arrays/{content}",
+  "redirect": "https://www.ebi.ac.uk/arrayexpress/arrays/${content}",
   "description": "ArrayExpress is a public repository for microarray data, which is aimed at storing MIAME-compliant data in accordance with Microarray Gene Expression Data (MGED) recommendations.This collection references the specific platforms used in the generation of experimental results.",
   "subject": "microarray",
   "location": "UK",

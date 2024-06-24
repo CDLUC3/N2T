@@ -1,9 +1,9 @@
 {
   "id": "ctcae",
   "target": {
-    "DEFAULT": "http://ncicb.nci.nih.gov/xml/owl/EVS/ctcae.owl#{content}"
+    "DEFAULT": "http://ncicb.nci.nih.gov/xml/owl/EVS/ctcae.owl#${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://ncicb.nci.nih.gov/xml/owl/EVS/ctcae.owl#{content}",
+  "redirect": "http://ncicb.nci.nih.gov/xml/owl/EVS/ctcae.owl#${content}",
   "revision": 0
 }

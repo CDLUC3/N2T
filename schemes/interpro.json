@@ -1,7 +1,7 @@
 {
   "id": "interpro",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/interpro/entry/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/interpro/entry/${content}"
   },
   "type": "scheme",
   "name": "InterPro",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ebi.ac.uk/interpro/entry/${ac}",
-  "redirect": "https://www.ebi.ac.uk/interpro/entry/{content}",
+  "redirect": "https://www.ebi.ac.uk/interpro/entry/${content}",
   "description": "InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.",
   "subject": "protein; domain",
   "location": "UK",

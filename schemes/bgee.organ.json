@@ -1,7 +1,7 @@
 {
   "id": "bgee.organ",
   "target": {
-    "DEFAULT": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organ_details&organ_id={content}&organ_children=on"
+    "DEFAULT": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organ_details&organ_id=${content}&organ_children=on"
   },
   "type": "scheme",
   "name": "Bgee at Lausanne",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organ_details&organ_id=${ac}&organ_children=on",
-  "redirect": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organ_details&organ_id={content}&organ_children=on",
+  "redirect": "http://bgee.unil.ch/bgee/bgee?page=anatomy&action=organ_details&organ_id=${content}&organ_children=on",
   "description": "Bgee is a database of gene expression patterns within particular anatomical structures within a species, and between different animal species. This collection refers to anatomical structures.",
   "subject": "expression; gene; controlled vocabulary",
   "location": "Switzerland",

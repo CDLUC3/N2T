@@ -1,9 +1,9 @@
 {
   "id": "biocatalogue",
   "target": {
-    "DEFAULT": "http://www.biocatalogue.org/services/{content}"
+    "DEFAULT": "http://www.biocatalogue.org/services/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.biocatalogue.org/services/{content}",
+  "redirect": "http://www.biocatalogue.org/services/${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "autdb",
   "target": {
-    "DEFAULT": "http://autism.mindspec.org/GeneDetail/{content}"
+    "DEFAULT": "http://autism.mindspec.org/GeneDetail/${content}"
   },
   "type": "scheme",
   "name": "AutDB at MindSpec",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://autism.mindspec.org/GeneDetail/${ac}",
-  "redirect": "http://autism.mindspec.org/GeneDetail/{content}",
+  "redirect": "http://autism.mindspec.org/GeneDetail/${content}",
   "description": "AutDB is a curated database for autism research. It is built on information extracted from the studies on molecular genetics and biology of Autism Spectrum Disorders (ASD). The four modules of AutDB include information on Human Genes, Animal models, Protein Interactions (PIN) and Copy Number Variants (CNV) respectively. It provides an annotated list of ASD candidate genes in the form of reference dataset for interrogating molecular mechanisms underlying the disorder.",
   "subject": "human; gene; disorder",
   "location": "USA",

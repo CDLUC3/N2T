@@ -1,9 +1,9 @@
 {
   "id": "ena",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/ena/data/view/{content}"
+    "DEFAULT": "http://www.ebi.ac.uk/ena/data/view/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/ena/data/view/{content}",
+  "redirect": "http://www.ebi.ac.uk/ena/data/view/${content}",
   "revision": 0
 }

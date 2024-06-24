@@ -1,7 +1,7 @@
 {
   "id": "umls",
   "target": {
-    "DEFAULT": "http://linkedlifedata.com/resource/umls/id/{content}"
+    "DEFAULT": "http://linkedlifedata.com/resource/umls/id/${content}"
   },
   "type": "scheme",
   "name": "Unified Medical Language System at LinkedLifeData",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://linkedlifedata.com/resource/umls/id/${ac}",
-  "redirect": "http://linkedlifedata.com/resource/umls/id/{content}",
+  "redirect": "http://linkedlifedata.com/resource/umls/id/${content}",
   "description": "The Unified Medical Language System is a repository of biomedical vocabularies. Vocabularies integrated in the UMLS Metathesaurus include the NCBI taxonomy, Gene Ontology, the Medical Subject Headings (MeSH), OMIM and the Digital Anatomist Symbolic Knowledge Base. UMLS concepts are not only inter-related, but may also be linked to external resources such as GenBank.",
   "subject": "controlled vocabulary",
   "location": "Bulgaria",

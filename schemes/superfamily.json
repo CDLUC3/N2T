@@ -1,9 +1,9 @@
 {
   "id": "superfamily",
   "target": {
-    "DEFAULT": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?sunid={content}"
+    "DEFAULT": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?sunid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?sunid={content}",
+  "redirect": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?sunid=${content}",
   "revision": 0
 }

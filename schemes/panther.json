@@ -1,9 +1,9 @@
 {
   "id": "panther",
   "target": {
-    "DEFAULT": "http://www.pantherdb.org/panther/family.do?clsAccession={content}"
+    "DEFAULT": "http://www.pantherdb.org/panther/family.do?clsAccession=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.pantherdb.org/panther/family.do?clsAccession={content}",
+  "redirect": "http://www.pantherdb.org/panther/family.do?clsAccession=${content}",
   "revision": 0
 }

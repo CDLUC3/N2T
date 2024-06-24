@@ -1,7 +1,7 @@
 {
   "id": "bioentitylink/fb",
   "target": {
-    "DEFAULT": "https://bioentity.link/#/lexicon/public/{content}"
+    "DEFAULT": "https://bioentity.link/#/lexicon/public/${content}"
   },
   "type": "scheme",
   "name": "FlyBase through BioEntity Link",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://bioentity.link/#/lexicon/public/${ac}",
-  "redirect": "https://bioentity.link/#/lexicon/public/{content}",
+  "redirect": "https://bioentity.link/#/lexicon/public/${content}",
   "description": "FlyBase is the database of the Drosophila Genome Projects and of associated literature.",
   "subject": "eukaryotic; genome; nucleotide",
   "location": "USA",

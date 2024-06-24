@@ -1,9 +1,9 @@
 {
   "id": "drospege",
   "target": {
-    "DEFAULT": "http://arthropods.eugenes.org/genepage/[?species_name]/{content}]"
+    "DEFAULT": "http://arthropods.eugenes.org/genepage/[?species_name]/${content}]"
   },
   "type": "commonspfx",
-  "redirect": "http://arthropods.eugenes.org/genepage/[?species_name]/{content}]",
+  "redirect": "http://arthropods.eugenes.org/genepage/[?species_name]/${content}]",
   "revision": 0
 }

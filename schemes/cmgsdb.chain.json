@@ -1,9 +1,9 @@
 {
   "id": "cmgsdb.chain",
   "target": {
-    "DEFAULT": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewChain.php?chainid={content}"
+    "DEFAULT": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewChain.php?chainid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewChain.php?chainid={content}",
+  "redirect": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewChain.php?chainid=${content}",
   "revision": 0
 }

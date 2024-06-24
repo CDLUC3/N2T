@@ -1,7 +1,7 @@
 {
   "id": "chemidplus",
   "target": {
-    "DEFAULT": "https://chem.nlm.nih.gov/chemidplus/rn/{content}"
+    "DEFAULT": "https://chem.nlm.nih.gov/chemidplus/rn/${content}"
   },
   "type": "scheme",
   "name": "ChemIDplus at National Library of Medicine",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://chem.nlm.nih.gov/chemidplus/rn/${ac}",
-  "redirect": "https://chem.nlm.nih.gov/chemidplus/rn/{content}",
+  "redirect": "https://chem.nlm.nih.gov/chemidplus/rn/${content}",
   "description": "ChemIDplus is a web-based search system that provides access to structure and nomenclature authority files used for the identification of chemical substances cited in National Library of Medicine (NLM) databases. It also provides structure searching and direct links to many biomedical resources at NLM and on the Internet for chemicals of interest.",
   "subject": "structure; chemical",
   "location": "USA",

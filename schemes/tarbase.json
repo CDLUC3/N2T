@@ -1,7 +1,7 @@
 {
   "id": "tarbase",
   "target": {
-    "DEFAULT": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index&mirnas={content}"
+    "DEFAULT": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index&mirnas=${content}"
   },
   "type": "scheme",
   "name": "TarBase v7 at University of Thessaly",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index&mirnas=${ac}",
-  "redirect": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index&mirnas={content}",
+  "redirect": "http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index&mirnas=${content}",
   "description": "TarBase stores microRNA (miRNA) information for miRNA&#x2013;gene interactions, as well as miRNA- and gene-related facts to information specific to the interaction and the experimental validation methodologies used.",
   "subject": "gene; nucleotide; interaction",
   "location": "Greece",

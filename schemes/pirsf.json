@@ -1,7 +1,7 @@
 {
   "id": "pirsf",
   "target": {
-    "DEFAULT": "https://pir.georgetown.edu/cgi-bin/ipcSF?id={content}"
+    "DEFAULT": "https://pir.georgetown.edu/cgi-bin/ipcSF?id=${content}"
   },
   "type": "scheme",
   "name": "PIRSF",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://pir.georgetown.edu/cgi-bin/ipcSF?id=${ac}",
-  "redirect": "https://pir.georgetown.edu/cgi-bin/ipcSF?id={content}",
+  "redirect": "https://pir.georgetown.edu/cgi-bin/ipcSF?id=${content}",
   "description": "The PIR SuperFamily concept is being used as a guiding principle to provide comprehensive and non-overlapping clustering of UniProtKB sequences into a hierarchical order to reflect their evolutionary relationships.",
   "subject": "clustering; protein",
   "location": "USA",

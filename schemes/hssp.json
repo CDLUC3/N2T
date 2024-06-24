@@ -1,7 +1,7 @@
 {
   "id": "hssp",
   "target": {
-    "DEFAULT": "ftp://ftp.cmbi.ru.nl/pub/molbio/data/hssp/{content}.hssp.bz2"
+    "DEFAULT": "ftp://ftp.cmbi.ru.nl/pub/molbio/data/hssp/${content}.hssp.bz2"
   },
   "type": "scheme",
   "name": "HSSP at CMBI",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "ftp://ftp.cmbi.ru.nl/pub/molbio/data/hssp/${ac}.hssp.bz2",
-  "redirect": "ftp://ftp.cmbi.ru.nl/pub/molbio/data/hssp/{content}.hssp.bz2",
+  "redirect": "ftp://ftp.cmbi.ru.nl/pub/molbio/data/hssp/${content}.hssp.bz2",
   "description": "HSSP (homology-derived structures of proteins) is a derived database merging structural (2-D and 3-D) and sequence information (1-D). For each protein of known 3D structure from the Protein Data Bank, the database has a file with all sequence homologues, properly aligned to the PDB protein.",
   "subject": "clustering; sequence; protein",
   "location": "Holland",

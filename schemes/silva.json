@@ -1,9 +1,9 @@
 {
   "id": "silva",
   "target": {
-    "DEFAULT": "http://www.arb-silva.de/browser/ssu/{content}/embl/?tx_pmtree_pi1[pid]={content}"
+    "DEFAULT": "http://www.arb-silva.de/browser/ssu/${content}/embl/?tx_pmtree_pi1[pid]=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.arb-silva.de/browser/ssu/{content}/embl/?tx_pmtree_pi1[pid]={content}",
+  "redirect": "http://www.arb-silva.de/browser/ssu/${content}/embl/?tx_pmtree_pi1[pid]=${content}",
   "revision": 0
 }

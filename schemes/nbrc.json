@@ -1,7 +1,7 @@
 {
   "id": "nbrc",
   "target": {
-    "DEFAULT": "http://www.nbrc.nite.go.jp/NBRC2/NBRCCatalogueDetailServlet?ID=NBRC&CAT={content}"
+    "DEFAULT": "http://www.nbrc.nite.go.jp/NBRC2/NBRCCatalogueDetailServlet?ID=NBRC&CAT=${content}"
   },
   "type": "scheme",
   "name": "NBRC Catalogue at National Institute of Technology Evaluation",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.nbrc.nite.go.jp/NBRC2/NBRCCatalogueDetailServlet?ID=NBRC&CAT=${ac}",
-  "redirect": "http://www.nbrc.nite.go.jp/NBRC2/NBRCCatalogueDetailServlet?ID=NBRC&CAT={content}",
+  "redirect": "http://www.nbrc.nite.go.jp/NBRC2/NBRCCatalogueDetailServlet?ID=NBRC&CAT=${content}",
   "description": "NITE Biological Research Center (NBRC) provides a collection of microbial resources, performing taxonomic characterization of individual microorganisms such as bacteria including actinomycetes and archaea, yeasts, fungi, algaes, bacteriophages and DNA resources for academic research and industrial applications. A catalogue is maintained which states strain nomenclature, synonyms, and culture and sequence information.",
   "subject": "microbial; strain",
   "location": "Japan",

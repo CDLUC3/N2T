@@ -1,7 +1,7 @@
 {
   "id": "bacdive",
   "target": {
-    "DEFAULT": "https://bacdive.dsmz.de/strain/{content}"
+    "DEFAULT": "https://bacdive.dsmz.de/strain/${content}"
   },
   "type": "scheme",
   "name": "Bacterial Diversity Metadatabase",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://bacdive.dsmz.de/strain/${ac}",
-  "redirect": "https://bacdive.dsmz.de/strain/{content}",
+  "redirect": "https://bacdive.dsmz.de/strain/${content}",
   "description": "BacDive&#x2014;the Bacterial Diversity Metadatabase merges detailed strain-linked information on the different aspects of bacterial and archaeal biodiversity.",
   "subject": null,
   "location": "Germany",

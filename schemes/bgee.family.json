@@ -1,7 +1,7 @@
 {
   "id": "bgee.family",
   "target": {
-    "DEFAULT": "http://bgee.unil.ch/bgee/bgee?page=gene_family&action=family_details&gene_family_id={content}"
+    "DEFAULT": "http://bgee.unil.ch/bgee/bgee?page=gene_family&action=family_details&gene_family_id=${content}"
   },
   "type": "scheme",
   "name": "Bgee at Lausanne",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://bgee.unil.ch/bgee/bgee?page=gene_family&action=family_details&gene_family_id=${ac}",
-  "redirect": "http://bgee.unil.ch/bgee/bgee?page=gene_family&action=family_details&gene_family_id={content}",
+  "redirect": "http://bgee.unil.ch/bgee/bgee?page=gene_family&action=family_details&gene_family_id=${content}",
   "description": "Bgee is a database of gene expression patterns within particular anatomical structures within a species, and between different animal species. This collection refers to expression across species.",
   "subject": "clustering; gene; expression",
   "location": "Switzerland",

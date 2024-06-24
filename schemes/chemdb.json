@@ -1,7 +1,7 @@
 {
   "id": "chemdb",
   "target": {
-    "DEFAULT": "http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id={content}"
+    "DEFAULT": "http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id=${content}"
   },
   "type": "scheme",
   "name": "ChemDB at UC Irvine",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id=${ac}",
-  "redirect": "http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id={content}",
+  "redirect": "http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id=${content}",
   "description": "ChemDB is a chemical database containing commercially available small molecules, important for use as synthetic building blocks, probes in systems biology and as leads for the discovery of drugs and other useful compounds.",
   "subject": "chemical",
   "location": "USA",

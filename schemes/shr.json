@@ -1,9 +1,9 @@
 {
   "id": "shr",
   "target": {
-    "DEFAULT": "http://www.shojaee.com/shr/shr.owl#{content}"
+    "DEFAULT": "http://www.shojaee.com/shr/shr.owl#${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.shojaee.com/shr/shr.owl#{content}",
+  "redirect": "http://www.shojaee.com/shr/shr.owl#${content}",
   "revision": 0
 }

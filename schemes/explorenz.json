@@ -1,9 +1,9 @@
 {
   "id": "explorenz",
   "target": {
-    "DEFAULT": "http://www.enzyme-database.org/query.php?ec={content}"
+    "DEFAULT": "http://www.enzyme-database.org/query.php?ec=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.enzyme-database.org/query.php?ec={content}",
+  "redirect": "http://www.enzyme-database.org/query.php?ec=${content}",
   "revision": 0
 }

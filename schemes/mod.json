@@ -1,7 +1,7 @@
 {
   "id": "mod",
   "target": {
-    "DEFAULT": "http://bioportal.bioontology.org/ontologies/1041?p=terms&conceptid=MOD:{content}"
+    "DEFAULT": "http://bioportal.bioontology.org/ontologies/1041?p=terms&conceptid=MOD:${content}"
   },
   "type": "scheme",
   "name": "Protein modifications ontology through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://bioportal.bioontology.org/ontologies/1041?p=terms&conceptid=MOD:${ac}",
-  "redirect": "http://bioportal.bioontology.org/ontologies/1041?p=terms&conceptid=MOD:{content}",
+  "redirect": "http://bioportal.bioontology.org/ontologies/1041?p=terms&conceptid=MOD:${content}",
   "description": "The Proteomics Standards Initiative modification ontology (PSI-MOD)  aims to define a concensus nomenclature and ontology reconciling, in a hierarchical representation, the complementary descriptions of residue modifications.",
   "subject": "ontology; protein",
   "location": "USA",

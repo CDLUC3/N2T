@@ -1,13 +1,13 @@
 {
   "id": "repec",
   "target": {
-    "DEFAULT": "http://econpapers.repec.org/{content}"
+    "DEFAULT": "http://econpapers.repec.org/${content}"
   },
   "type": "scheme",
   "name": "Research Papers in Economics",
   "alias": null,
   "primary": 1,
-  "redirect": "http://econpapers.repec.org/{content}",
+  "redirect": "http://econpapers.repec.org/${content}",
   "test": "pdi221",
   "probe": "http://econpapers.repec.org/pdi221",
   "more": "http://repec.org/",

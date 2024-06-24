@@ -1,9 +1,9 @@
 {
   "id": "plpmdb",
   "target": {
-    "DEFAULT": "http://www.studiofmp.com/plpmdb/mutant.asp?Id={content}"
+    "DEFAULT": "http://www.studiofmp.com/plpmdb/mutant.asp?Id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.studiofmp.com/plpmdb/mutant.asp?Id={content}",
+  "redirect": "http://www.studiofmp.com/plpmdb/mutant.asp?Id=${content}",
   "revision": 0
 }

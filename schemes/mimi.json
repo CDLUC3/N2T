@@ -1,9 +1,9 @@
 {
   "id": "mimi",
   "target": {
-    "DEFAULT": "http://mimi.ncibi.org/MimiWeb/gene-details-page-front.jsp?geneid={content}"
+    "DEFAULT": "http://mimi.ncibi.org/MimiWeb/gene-details-page-front.jsp?geneid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://mimi.ncibi.org/MimiWeb/gene-details-page-front.jsp?geneid={content}",
+  "redirect": "http://mimi.ncibi.org/MimiWeb/gene-details-page-front.jsp?geneid=${content}",
   "revision": 0
 }

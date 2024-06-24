@@ -1,9 +1,9 @@
 {
   "id": "supertoxic",
   "target": {
-    "DEFAULT": "http://bioinformatics.charite.de/supertoxic/index.php?site=detail_view&ids=({content})"
+    "DEFAULT": "http://bioinformatics.charite.de/supertoxic/index.php?site=detail_view&ids=(${content})"
   },
   "type": "commonspfx",
-  "redirect": "http://bioinformatics.charite.de/supertoxic/index.php?site=detail_view&ids=({content})",
+  "redirect": "http://bioinformatics.charite.de/supertoxic/index.php?site=detail_view&ids=(${content})",
   "revision": 0
 }

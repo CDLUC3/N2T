@@ -1,7 +1,7 @@
 {
   "id": "ligandbook",
   "target": {
-    "DEFAULT": "https://ligandbook.org/package/{content}"
+    "DEFAULT": "https://ligandbook.org/package/${content}"
   },
   "type": "scheme",
   "name": "LigandBook",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://ligandbook.org/package/${ac}",
-  "redirect": "https://ligandbook.org/package/{content}",
+  "redirect": "https://ligandbook.org/package/${content}",
   "description": "Ligandbook is a public repository for force field parameters with a special emphasis on small molecules and known ligands of proteins. It acts as a warehouse for parameter files that are supplied by the community.",
   "subject": null,
   "location": "France",

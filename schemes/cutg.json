@@ -1,9 +1,9 @@
 {
   "id": "cutg",
   "target": {
-    "DEFAULT": "http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species={content}"
+    "DEFAULT": "http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species={content}",
+  "redirect": "http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species=${content}",
   "revision": 0
 }

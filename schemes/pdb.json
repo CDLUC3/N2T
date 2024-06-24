@@ -1,7 +1,7 @@
 {
   "id": "pdb",
   "target": {
-    "DEFAULT": "https://www.rcsb.org/pdb/explore/explore.do?structureId={content}"
+    "DEFAULT": "https://www.rcsb.org/pdb/explore/explore.do?structureId=${content}"
   },
   "type": "scheme",
   "name": "RCSB PDB",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.rcsb.org/pdb/explore/explore.do?structureId=${ac}",
-  "redirect": "https://www.rcsb.org/pdb/explore/explore.do?structureId={content}",
+  "redirect": "https://www.rcsb.org/pdb/explore/explore.do?structureId=${content}",
   "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules.",
   "subject": "protein; structure",
   "location": "USA",

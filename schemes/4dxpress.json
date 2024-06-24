@@ -1,9 +1,9 @@
 {
   "id": "4dxpress",
   "target": {
-    "DEFAULT": "http://4dx.embl.de/4DXpress/reg/all/cview/gene.do?geneID={content}"
+    "DEFAULT": "http://4dx.embl.de/4DXpress/reg/all/cview/gene.do?geneID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://4dx.embl.de/4DXpress/reg/all/cview/gene.do?geneID={content}",
+  "redirect": "http://4dx.embl.de/4DXpress/reg/all/cview/gene.do?geneID=${content}",
   "revision": 0
 }

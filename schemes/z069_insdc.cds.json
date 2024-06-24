@@ -1,7 +1,7 @@
 {
   "id": "z069/insdc.cds",
   "target": {
-    "DEFAULT": "http://getentry.ddbj.nig.ac.jp/getentry/dad/{content}"
+    "DEFAULT": "http://getentry.ddbj.nig.ac.jp/getentry/dad/${content}"
   },
   "type": "scheme",
   "name": "INSDC CDS through DDBJ",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://getentry.ddbj.nig.ac.jp/getentry/dad/${ac}",
-  "redirect": "http://getentry.ddbj.nig.ac.jp/getentry/dad/{content}",
+  "redirect": "http://getentry.ddbj.nig.ac.jp/getentry/dad/${content}",
   "description": "The coding sequence or protein identifiers as maintained in INSDC.",
   "subject": null,
   "location": "Japan",

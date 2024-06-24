@@ -1,9 +1,9 @@
 {
   "id": "vkcdb",
   "target": {
-    "DEFAULT": "http://vkcdb.biology.ualberta.ca/cgi-bin/vkcdb/vkcdb-scp/entry.cgi?vkcid={content}"
+    "DEFAULT": "http://vkcdb.biology.ualberta.ca/cgi-bin/vkcdb/vkcdb-scp/entry.cgi?vkcid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://vkcdb.biology.ualberta.ca/cgi-bin/vkcdb/vkcdb-scp/entry.cgi?vkcid={content}",
+  "redirect": "http://vkcdb.biology.ualberta.ca/cgi-bin/vkcdb/vkcdb-scp/entry.cgi?vkcid=${content}",
   "revision": 0
 }

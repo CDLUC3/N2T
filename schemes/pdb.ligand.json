@@ -1,7 +1,7 @@
 {
   "id": "pdb.ligand",
   "target": {
-    "DEFAULT": "http://www.rcsb.org/pdb/ligand/ligandsummary.do?hetId={content}"
+    "DEFAULT": "http://www.rcsb.org/pdb/ligand/ligandsummary.do?hetId=${content}"
   },
   "type": "scheme",
   "name": "PDB Ligand at RCSB",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.rcsb.org/pdb/ligand/ligandsummary.do?hetId=${ac}",
-  "redirect": "http://www.rcsb.org/pdb/ligand/ligandsummary.do?hetId={content}",
+  "redirect": "http://www.rcsb.org/pdb/ligand/ligandsummary.do?hetId=${content}",
   "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules. This collection references ligands.",
   "subject": "protein; structure",
   "location": "USA",

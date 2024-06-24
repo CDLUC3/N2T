@@ -1,9 +1,9 @@
 {
   "id": "protcom",
   "target": {
-    "DEFAULT": "http://www.ces.clemson.edu/compbio/protcom/print_file.cgi?pdbid={content}"
+    "DEFAULT": "http://www.ces.clemson.edu/compbio/protcom/print_file.cgi?pdbid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ces.clemson.edu/compbio/protcom/print_file.cgi?pdbid={content}",
+  "redirect": "http://www.ces.clemson.edu/compbio/protcom/print_file.cgi?pdbid=${content}",
   "revision": 0
 }

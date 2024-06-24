@@ -1,7 +1,7 @@
 {
   "id": "kegg.glycan",
   "target": {
-    "DEFAULT": "https://www.kegg.jp/entry/{content}"
+    "DEFAULT": "https://www.kegg.jp/entry/${content}"
   },
   "type": "scheme",
   "name": "KEGG GLYCAN Database",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.kegg.jp/entry/${ac}",
-  "redirect": "https://www.kegg.jp/entry/{content}",
+  "redirect": "https://www.kegg.jp/entry/${content}",
   "description": "KEGG GLYCAN, a part of the KEGG LIGAND database, is a collection of experimentally determined glycan structures. It contains all unique structures taken from CarbBank, structures entered from recent publications, and structures present in KEGG pathways.",
   "subject": "polysaccharide; structure",
   "location": "Japan",

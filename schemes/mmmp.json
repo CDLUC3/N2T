@@ -1,9 +1,9 @@
 {
   "id": "mmmp",
   "target": {
-    "DEFAULT": "http://www.mmmp.org/MMMP/public/biomap/viewBiomap.mmmp?id={content}"
+    "DEFAULT": "http://www.mmmp.org/MMMP/public/biomap/viewBiomap.mmmp?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.mmmp.org/MMMP/public/biomap/viewBiomap.mmmp?id={content}",
+  "redirect": "http://www.mmmp.org/MMMP/public/biomap/viewBiomap.mmmp?id=${content}",
   "revision": 0
 }

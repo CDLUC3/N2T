@@ -1,7 +1,7 @@
 {
   "id": "neuromorpho",
   "target": {
-    "DEFAULT": "http://neuromorpho.org/neuron_info.jsp?neuron_name={content}"
+    "DEFAULT": "http://neuromorpho.org/neuron_info.jsp?neuron_name=${content}"
   },
   "type": "scheme",
   "name": "NeuroMorpho",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://neuromorpho.org/neuron_info.jsp?neuron_name=${ac}",
-  "redirect": "http://neuromorpho.org/neuron_info.jsp?neuron_name={content}",
+  "redirect": "http://neuromorpho.org/neuron_info.jsp?neuron_name=${content}",
   "description": "NeuroMorpho.Org is a centrally curated inventory of  digitally reconstructed neurons.",
   "subject": "neuroscience",
   "location": "USA",

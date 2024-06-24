@@ -1,7 +1,7 @@
 {
   "id": "cubedb",
   "target": {
-    "DEFAULT": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/{content}/"
+    "DEFAULT": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/${content}/"
   },
   "type": "scheme",
   "name": "Cube db at Bioinformatics Institute (Singapore)",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/${ac}/",
-  "redirect": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/{content}/",
+  "redirect": "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/${content}/",
   "description": "Cube-DB is a database of pre-evaluated results for detection of functional divergence in human/vertebrate protein families. It analyzes comparable taxonomical samples for all paralogues under consideration, storing functional specialisation at the level of residues. The data are presented as a table of per-residue scores, and mapped onto related structures where available.",
   "subject": "protein; domain; human",
   "location": "China",

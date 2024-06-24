@@ -1,9 +1,9 @@
 {
   "id": "artadedb",
   "target": {
-    "DEFAULT": "http://omicspace.riken.jp/gps/index.html?url=/gps/LineMode/ArtadeSearch_Flower&hCheck=v200307&hHead=[?genomic_region]&highlight={content}"
+    "DEFAULT": "http://omicspace.riken.jp/gps/index.html?url=/gps/LineMode/ArtadeSearch_Flower&hCheck=v200307&hHead=[?genomic_region]&highlight=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://omicspace.riken.jp/gps/index.html?url=/gps/LineMode/ArtadeSearch_Flower&hCheck=v200307&hHead=[?genomic_region]&highlight={content}",
+  "redirect": "http://omicspace.riken.jp/gps/index.html?url=/gps/LineMode/ArtadeSearch_Flower&hCheck=v200307&hHead=[?genomic_region]&highlight=${content}",
   "revision": 0
 }

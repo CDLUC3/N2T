@@ -1,7 +1,7 @@
 {
   "id": "ngl",
   "target": {
-    "DEFAULT": "https://genelab-data.ndc.nasa.gov/genelab/accession/{content}"
+    "DEFAULT": "https://genelab-data.ndc.nasa.gov/genelab/accession/${content}"
   },
   "type": "scheme",
   "name": "NASA GeneLab",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://genelab-data.ndc.nasa.gov/genelab/accession/${ac}",
-  "redirect": "https://genelab-data.ndc.nasa.gov/genelab/accession/{content}",
+  "redirect": "https://genelab-data.ndc.nasa.gov/genelab/accession/${content}",
   "description": "NASA's GeneLab gathers spaceflight genomic data, RNA and protein expression, and metabolic profiles, interfaces with existing databases for expanded research, will offer tools to conduct data analysis, and is in the process of creating a place online where scientists, researchers, teachers and students can connect with their peers, share their results, and communicate with NASA.",
   "subject": null,
   "location": "USA",

@@ -1,9 +1,9 @@
 {
   "id": "kdbi",
   "target": {
-    "DEFAULT": "http://bidd.nus.edu.sg/group/KDBI/Detail-new.asp?ID={content}"
+    "DEFAULT": "http://bidd.nus.edu.sg/group/KDBI/Detail-new.asp?ID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://bidd.nus.edu.sg/group/KDBI/Detail-new.asp?ID={content}",
+  "redirect": "http://bidd.nus.edu.sg/group/KDBI/Detail-new.asp?ID=${content}",
   "revision": 0
 }

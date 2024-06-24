@@ -1,7 +1,7 @@
 {
   "id": "echobase",
   "target": {
-    "DEFAULT": "http://www.york.ac.uk/res/thomas/Gene.cfm?recordID={content}"
+    "DEFAULT": "http://www.york.ac.uk/res/thomas/Gene.cfm?recordID=${content}"
   },
   "type": "scheme",
   "name": "EchoBASE at the University of York",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.york.ac.uk/res/thomas/Gene.cfm?recordID=${ac}",
-  "redirect": "http://www.york.ac.uk/res/thomas/Gene.cfm?recordID={content}",
+  "redirect": "http://www.york.ac.uk/res/thomas/Gene.cfm?recordID=${content}",
   "description": "EchoBASE is a database designed to contain and manipulate information from post-genomic experiments using the model bacterium Escherichia coli K-12. The database is built on an enhanced annotation of the updated genome sequence of strain MG1655 and the association of experimental data with the E.coli genes and their products.",
   "subject": "genome; gene; protein",
   "location": "UK",

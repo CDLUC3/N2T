@@ -1,9 +1,9 @@
 {
   "id": "kegg.gene",
   "target": {
-    "DEFAULT": "http://www.genome.jp/dbget-bin/www_bget?[?species]:{content}"
+    "DEFAULT": "http://www.genome.jp/dbget-bin/www_bget?[?species]:${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.genome.jp/dbget-bin/www_bget?[?species]:{content}",
+  "redirect": "http://www.genome.jp/dbget-bin/www_bget?[?species]:${content}",
   "revision": 0
 }

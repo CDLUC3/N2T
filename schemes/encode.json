@@ -1,7 +1,7 @@
 {
   "id": "encode",
   "target": {
-    "DEFAULT": "https://www.encodeproject.org/{content}"
+    "DEFAULT": "https://www.encodeproject.org/${content}"
   },
   "type": "scheme",
   "name": "ENCODE: Encyclopedia of DNA Elements",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.encodeproject.org/${ac}",
-  "redirect": "https://www.encodeproject.org/{content}",
+  "redirect": "https://www.encodeproject.org/${content}",
   "description": "The ENCODE Consortium is integrating multiple technologies and approaches in a collective effort to discover and define the functional elements encoded in the human genome, including genes, transcripts, and transcriptional regulatory regions, together with their attendant chromatin states and DNA methylation patterns.",
   "subject": null,
   "location": "USA",

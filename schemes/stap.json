@@ -1,7 +1,7 @@
 {
   "id": "stap",
   "target": {
-    "DEFAULT": "http://psb.kobic.re.kr/STAP/refinement1/result.php?search={content}"
+    "DEFAULT": "http://psb.kobic.re.kr/STAP/refinement1/result.php?search=${content}"
   },
   "type": "scheme",
   "name": "STAP at Korean Bioinformation Center",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://psb.kobic.re.kr/STAP/refinement1/result.php?search=${ac}",
-  "redirect": "http://psb.kobic.re.kr/STAP/refinement1/result.php?search={content}",
+  "redirect": "http://psb.kobic.re.kr/STAP/refinement1/result.php?search=${content}",
   "description": "STAP (Statistical Torsional Angles Potentials) was developed since, according to several studies, some nuclear magnetic resonance (NMR) structures are of lower quality, are less reliable and less suitable for structural analysis than high-resolution X-ray crystallographic structures. The refined NMR solution structures (statistical torsion angle potentials; STAP) in the database are refined from the Protein Data Bank (PDB).",
   "subject": "structure; protein",
   "location": "South Korea",

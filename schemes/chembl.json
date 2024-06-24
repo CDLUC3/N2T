@@ -1,9 +1,9 @@
 {
   "id": "chembl",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/chembldb/index.php/compound/inspect/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/chembldb/index.php/compound/inspect/${content}"
   },
   "type": "commonspfx",
-  "redirect": "https://www.ebi.ac.uk/chembldb/index.php/compound/inspect/{content}",
+  "redirect": "https://www.ebi.ac.uk/chembldb/index.php/compound/inspect/${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "dictybase.gene",
   "target": {
-    "DEFAULT": "http://dictybase.org/gene/{content}"
+    "DEFAULT": "http://dictybase.org/gene/${content}"
   },
   "type": "scheme",
   "name": "Dictybase Gene at Northwestern University",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://dictybase.org/gene/${ac}",
-  "redirect": "http://dictybase.org/gene/{content}",
+  "redirect": "http://dictybase.org/gene/${content}",
   "description": "The dictyBase database provides data on the model organism Dictyostelium discoideum and related species. It contains the complete genome sequence, ESTs, gene models and functional annotations. This collection references gene information.",
   "subject": "gene; plant",
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "dbd",
   "target": {
-    "DEFAULT": "http://www.transcriptionfactor.org/index.cgi?Search/Domain+domain:{content}+cat:DBD"
+    "DEFAULT": "http://www.transcriptionfactor.org/index.cgi?Search/Domain+domain:${content}+cat:DBD"
   },
   "type": "scheme",
   "name": "DBD at MRC Laboratory of Molecular Biology",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.transcriptionfactor.org/index.cgi?Search/Domain+domain:${ac}+cat:DBD",
-  "redirect": "http://www.transcriptionfactor.org/index.cgi?Search/Domain+domain:{content}+cat:DBD",
+  "redirect": "http://www.transcriptionfactor.org/index.cgi?Search/Domain+domain:${content}+cat:DBD",
   "description": "The DBD (transcription factor database) provides genome-wide transcription factor predictions for organisms across the tree of life. The prediction method identifies sequence-specific DNA-binding transcription factors through homology using profile hidden Markov models (HMMs) of domains from Pfam and SUPERFAMILY. It does not include basal transcription factors or chromatin-associated proteins.",
   "subject": null,
   "location": "UK",

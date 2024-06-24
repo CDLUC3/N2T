@@ -1,7 +1,7 @@
 {
   "id": "hubmed/pubmed",
   "target": {
-    "DEFAULT": "http://www.hubmed.org/display.cgi?uids={content}"
+    "DEFAULT": "http://www.hubmed.org/display.cgi?uids=${content}"
   },
   "type": "scheme",
   "name": "HubMed",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.hubmed.org/display.cgi?uids=${ac}",
-  "redirect": "http://www.hubmed.org/display.cgi?uids={content}",
+  "redirect": "http://www.hubmed.org/display.cgi?uids=${content}",
   "description": "PubMed is a service of the U.S. National Library of Medicine that includes citations from MEDLINE and other life science journals for biomedical articles back to the 1950s.",
   "subject": "schema.org; bibliography",
   "location": "United Kingdom",

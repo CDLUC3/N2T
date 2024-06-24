@@ -1,9 +1,9 @@
 {
   "id": "bacmap",
   "target": {
-    "DEFAULT": "http://wishart.biology.ualberta.ca/BacMap/cgview_linked_maps/{content}/index.html"
+    "DEFAULT": "http://wishart.biology.ualberta.ca/BacMap/cgview_linked_maps/${content}/index.html"
   },
   "type": "commonspfx",
-  "redirect": "http://wishart.biology.ualberta.ca/BacMap/cgview_linked_maps/{content}/index.html",
+  "redirect": "http://wishart.biology.ualberta.ca/BacMap/cgview_linked_maps/${content}/index.html",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "bptl/go",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/GO/GO:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/GO/GO:${content}"
   },
   "type": "scheme",
   "name": "GO through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/GO/GO:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/GO/GO:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/GO/GO:${content}",
   "description": "The Gene Ontology project provides a controlled vocabulary to describe gene and gene product attributes in any organism.",
   "subject": "ontology",
   "location": "USA",

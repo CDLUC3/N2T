@@ -1,7 +1,7 @@
 {
   "id": "biosystems",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/biosystems/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/biosystems/${content}"
   },
   "type": "scheme",
   "name": "BioSystems database at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/biosystems/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/biosystems/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/biosystems/${content}",
   "description": "The NCBI BioSystems database centralizes and cross-links existing biological systems databases, increasing their utility and target audience by integrating their pathways and systems into NCBI resources.",
   "subject": "pathway; protein; gene",
   "location": "USA",

@@ -1,9 +1,9 @@
 {
   "id": "trnadbce",
   "target": {
-    "DEFAULT": "http://trna.nagahama-i-bio.ac.jp/cgi-bin/trnadb/whole_detail.cgi?SID={content}"
+    "DEFAULT": "http://trna.nagahama-i-bio.ac.jp/cgi-bin/trnadb/whole_detail.cgi?SID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://trna.nagahama-i-bio.ac.jp/cgi-bin/trnadb/whole_detail.cgi?SID={content}",
+  "redirect": "http://trna.nagahama-i-bio.ac.jp/cgi-bin/trnadb/whole_detail.cgi?SID=${content}",
   "revision": 0
 }

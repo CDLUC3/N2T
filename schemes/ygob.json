@@ -1,9 +1,9 @@
 {
   "id": "ygob",
   "target": {
-    "DEFAULT": "http://wolfe.gen.tcd.ie/cgi/browser/ygob.pl?gene={content}"
+    "DEFAULT": "http://wolfe.gen.tcd.ie/cgi/browser/ygob.pl?gene=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://wolfe.gen.tcd.ie/cgi/browser/ygob.pl?gene={content}",
+  "redirect": "http://wolfe.gen.tcd.ie/cgi/browser/ygob.pl?gene=${content}",
   "revision": 0
 }

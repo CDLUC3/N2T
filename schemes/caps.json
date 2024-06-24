@@ -1,7 +1,7 @@
 {
   "id": "caps",
   "target": {
-    "DEFAULT": "http://www.bioinsilico.org/cgi-bin/CAPSDB/getCAPScluster?nidcl={content}"
+    "DEFAULT": "http://www.bioinsilico.org/cgi-bin/CAPSDB/getCAPScluster?nidcl=${content}"
   },
   "type": "scheme",
   "name": "CAPS-DB at Leeds Institute of Molecular Medicine",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.bioinsilico.org/cgi-bin/CAPSDB/getCAPScluster?nidcl=${ac}",
-  "redirect": "http://www.bioinsilico.org/cgi-bin/CAPSDB/getCAPScluster?nidcl={content}",
+  "redirect": "http://www.bioinsilico.org/cgi-bin/CAPSDB/getCAPScluster?nidcl=${content}",
   "description": "CAPS-DB is a structural classification of helix-cappings or caps compiled from protein structures. The regions of the polypeptide chain immediately preceding or following an alpha-helix are known as Nt- and Ct cappings, respectively. Caps extracted from protein structures have been structurally classified based on geometry and conformation and organized in a tree-like hierarchical classification where the different levels correspond to different properties of the caps.",
   "subject": "protein; structure; domain",
   "location": "UK",

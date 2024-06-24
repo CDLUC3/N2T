@@ -1,7 +1,7 @@
 {
   "id": "bptl/pr",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/PR/PR:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/PR/PR:${content}"
   },
   "type": "scheme",
   "name": "Protein Ontology through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/PR/PR:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/PR/PR:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/PR/PR:${content}",
   "description": "The PRotein Ontology (PRO) has been designed to describe the relationships of proteins and protein evolutionary classes, to delineate the multiple protein forms of a gene locus (ontology for protein forms), and to interconnect existing ontologies.",
   "subject": "protein; ontology",
   "location": "USA",

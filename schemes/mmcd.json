@@ -1,9 +1,9 @@
 {
   "id": "mmcd",
   "target": {
-    "DEFAULT": "http://mmcd.nmrfam.wisc.edu/test/cqsearch.py?cqid={content}"
+    "DEFAULT": "http://mmcd.nmrfam.wisc.edu/test/cqsearch.py?cqid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://mmcd.nmrfam.wisc.edu/test/cqsearch.py?cqid={content}",
+  "redirect": "http://mmcd.nmrfam.wisc.edu/test/cqsearch.py?cqid=${content}",
   "revision": 0
 }

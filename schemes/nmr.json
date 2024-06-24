@@ -1,7 +1,7 @@
 {
   "id": "nmr",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/nmrcv/terms?short_form=NMR:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/nmrcv/terms?short_form=NMR:${content}"
   },
   "type": "scheme",
   "name": "NMR through OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/nmrcv/terms?short_form=NMR:${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/nmrcv/terms?short_form=NMR:{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/nmrcv/terms?short_form=NMR:${content}",
   "description": "nmrCV is a controlled vocabulary to deliver standardized descriptors for the open mark-up language for NMR raw and spectrum data, sanctioned by the metabolomics standards initiative msi.",
   "subject": null,
   "location": "UK",

@@ -1,9 +1,9 @@
 {
   "id": "repo",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/REPO.owl#{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/REPO.owl#${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://purl.bioontology.org/ontology/REPO.owl#{content}",
+  "redirect": "http://purl.bioontology.org/ontology/REPO.owl#${content}",
   "revision": 0
 }

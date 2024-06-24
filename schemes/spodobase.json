@@ -1,9 +1,9 @@
 {
   "id": "spodobase",
   "target": {
-    "DEFAULT": "http://bioweb.ensam.inra.fr/Spodopterav3/sequence?name={content}&class=Sequence"
+    "DEFAULT": "http://bioweb.ensam.inra.fr/Spodopterav3/sequence?name=${content}&class=Sequence"
   },
   "type": "commonspfx",
-  "redirect": "http://bioweb.ensam.inra.fr/Spodopterav3/sequence?name={content}&class=Sequence",
+  "redirect": "http://bioweb.ensam.inra.fr/Spodopterav3/sequence?name=${content}&class=Sequence",
   "revision": 0
 }

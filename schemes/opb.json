@@ -1,7 +1,7 @@
 {
   "id": "opb",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/OPB?conceptid=http%3A%2F%2Fbhi.washington.edu%2FOPB%23{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/OPB?conceptid=http%3A%2F%2Fbhi.washington.edu%2FOPB%23${content}"
   },
   "type": "scheme",
   "name": "Ontology of Physics for Biology through Bioportal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/OPB?conceptid=http%3A%2F%2Fbhi.washington.edu%2FOPB%23${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/OPB?conceptid=http%3A%2F%2Fbhi.washington.edu%2FOPB%23{content}",
+  "redirect": "http://purl.bioontology.org/ontology/OPB?conceptid=http%3A%2F%2Fbhi.washington.edu%2FOPB%23${content}",
   "description": "The OPB is a reference ontology of classical physics as applied to the dynamics of biological systems. It is designed to encompass the multiple structural scales (multiscale atoms to organisms) and multiple physical domains (multidomain fluid dynamics, chemical kinetics, particle diffusion, etc.) that are encountered in the study and analysis of biological organisms.",
   "subject": "ontology",
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "ols/biomodels.teddy",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/teddy/terms?short_form={content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/teddy/terms?short_form=${content}"
   },
   "type": "scheme",
   "name": "TEDDY though OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/teddy/terms?short_form=${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/teddy/terms?short_form={content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/teddy/terms?short_form=${content}",
   "description": "The Terminology for Description of Dynamics (TEDDY) is an ontology for dynamical behaviours, observable dynamical phenomena, and control elements of bio-models and biological systems in Systems Biology and Synthetic Biology.",
   "subject": "ontology",
   "location": "UK",

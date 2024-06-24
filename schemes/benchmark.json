@@ -1,9 +1,9 @@
 {
   "id": "benchmark",
   "target": {
-    "DEFAULT": "http://net.icgeb.org/benchmark/index.php?experiment={content}"
+    "DEFAULT": "http://net.icgeb.org/benchmark/index.php?experiment=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://net.icgeb.org/benchmark/index.php?experiment={content}",
+  "redirect": "http://net.icgeb.org/benchmark/index.php?experiment=${content}",
   "revision": 0
 }

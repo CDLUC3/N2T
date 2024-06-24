@@ -1,7 +1,7 @@
 {
   "id": "yrcpdr",
   "target": {
-    "DEFAULT": "http://yeastrc.org/pdr/viewProtein.do?id={content}"
+    "DEFAULT": "http://yeastrc.org/pdr/viewProtein.do?id=${content}"
   },
   "type": "scheme",
   "name": "YRC PDR at University of Washington",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://yeastrc.org/pdr/viewProtein.do?id=${ac}",
-  "redirect": "http://yeastrc.org/pdr/viewProtein.do?id={content}",
+  "redirect": "http://yeastrc.org/pdr/viewProtein.do?id=${content}",
   "description": "The Yeast Resource Center Public Data Repository (YRC PDR) serves as a single point of access for the experimental data produced from many collaborations typically studying Saccharomyces cerevisiae (baker's yeast). The experimental data include large amounts of mass spectrometry results from protein co-purification experiments, yeast two-hybrid interaction experiments, fluorescence microscopy images and protein structure predictions.",
   "subject": null,
   "location": "USA",

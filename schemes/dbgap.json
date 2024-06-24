@@ -1,7 +1,7 @@
 {
   "id": "dbgap",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id={content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=${content}"
   },
   "type": "scheme",
   "name": "dbGaP through NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id={content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=${content}",
   "description": "The database of Genotypes and Phenotypes (dbGaP) archives and distributes the results of studies that have investigated the interaction of genotype and phenotype.",
   "subject": null,
   "location": "USA",

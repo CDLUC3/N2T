@@ -1,9 +1,9 @@
 {
   "id": "arkdb",
   "target": {
-    "DEFAULT": "http://www.thearkdb.org/arkdb/do/getMappableDetails?accession={content}"
+    "DEFAULT": "http://www.thearkdb.org/arkdb/do/getMappableDetails?accession=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.thearkdb.org/arkdb/do/getMappableDetails?accession={content}",
+  "redirect": "http://www.thearkdb.org/arkdb/do/getMappableDetails?accession=${content}",
   "revision": 0
 }

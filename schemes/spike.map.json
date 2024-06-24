@@ -1,7 +1,7 @@
 {
   "id": "spike.map",
   "target": {
-    "DEFAULT": "http://www.cs.tau.ac.il/~spike/maps/{content}.html"
+    "DEFAULT": "http://www.cs.tau.ac.il/~spike/maps/${content}.html"
   },
   "type": "scheme",
   "name": "SPIKE database at Tel Aviv University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.cs.tau.ac.il/~spike/maps/${ac}.html",
-  "redirect": "http://www.cs.tau.ac.il/~spike/maps/{content}.html",
+  "redirect": "http://www.cs.tau.ac.il/~spike/maps/${content}.html",
   "description": "SPIKE (Signaling Pathways Integrated Knowledge Engine) is a repository that can store, organise and allow retrieval of pathway information in a way that will be useful for the research community. The database currently focuses primarily on pathways describing DNA damage response, cell cycle, programmed cell death and hearing related pathways. Pathways are regularly updated, and additional pathways are gradually added. The complete database and the individual maps are freely exportable in several formats. This collection references pathway maps.",
   "subject": "pathway",
   "location": "Israel",

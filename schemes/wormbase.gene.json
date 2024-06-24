@@ -1,9 +1,9 @@
 {
   "id": "wormbase.gene",
   "target": {
-    "DEFAULT": "http://www.wormbase.org/species/c_elegans/gene/{content}"
+    "DEFAULT": "http://www.wormbase.org/species/c_elegans/gene/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.wormbase.org/species/c_elegans/gene/{content}",
+  "redirect": "http://www.wormbase.org/species/c_elegans/gene/${content}",
   "revision": 0
 }

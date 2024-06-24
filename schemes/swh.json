@@ -1,7 +1,7 @@
 {
   "id": "swh",
   "target": {
-    "DEFAULT": "https://archive.softwareheritage.org/browse/swh:{content}"
+    "DEFAULT": "https://archive.softwareheritage.org/browse/swh:${content}"
   },
   "type": "scheme",
   "name": "Software Heritage",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://archive.softwareheritage.org/browse/swh:${ac}",
-  "redirect": "https://archive.softwareheritage.org/browse/swh:{content}",
+  "redirect": "https://archive.softwareheritage.org/browse/swh:${content}",
   "description": "Software Heritage is the universal archive of software source code.",
   "subject": null,
   "location": "France",

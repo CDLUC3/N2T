@@ -1,9 +1,9 @@
 {
   "id": "wbbt",
   "target": {
-    "DEFAULT": "http://wormbase.org/db/ontology/anatomy?name={content}"
+    "DEFAULT": "http://wormbase.org/db/ontology/anatomy?name=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://wormbase.org/db/ontology/anatomy?name={content}",
+  "redirect": "http://wormbase.org/db/ontology/anatomy?name=${content}",
   "revision": 0
 }

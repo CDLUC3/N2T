@@ -1,7 +1,7 @@
 {
   "id": "matrixdb.association",
   "target": {
-    "DEFAULT": "http://matrixdb.univ-lyon1.fr//cgi-bin/current/newPort?type=association&value={content}&class=Association"
+    "DEFAULT": "http://matrixdb.univ-lyon1.fr//cgi-bin/current/newPort?type=association&value=${content}&class=Association"
   },
   "type": "scheme",
   "name": "MatrixDB Association",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://matrixdb.univ-lyon1.fr//cgi-bin/current/newPort?type=association&value=${ac}&class=Association",
-  "redirect": "http://matrixdb.univ-lyon1.fr//cgi-bin/current/newPort?type=association&value={content}&class=Association",
+  "redirect": "http://matrixdb.univ-lyon1.fr//cgi-bin/current/newPort?type=association&value=${content}&class=Association",
   "description": "MatrixDB stores experimentally determined interactions involving at least one extracellular biomolecule. It includes mostly protein-protein and protein-glycosaminoglycan interactions, as well as interactions with lipids and cations.",
   "subject": "polysaccharide; interaction; lipid; protein",
   "location": "France",

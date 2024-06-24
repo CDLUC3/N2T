@@ -1,7 +1,7 @@
 {
   "id": "bioentitylink/sgd",
   "target": {
-    "DEFAULT": "https://bioentity.link/#/lexicon/public/{content}"
+    "DEFAULT": "https://bioentity.link/#/lexicon/public/${content}"
   },
   "type": "scheme",
   "name": "SGD through BioEntity Link",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://bioentity.link/#/lexicon/public/${ac}",
-  "redirect": "https://bioentity.link/#/lexicon/public/{content}",
+  "redirect": "https://bioentity.link/#/lexicon/public/${content}",
   "description": "The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.",
   "subject": "genome; eukaryotic; nucleotide",
   "location": "USA",

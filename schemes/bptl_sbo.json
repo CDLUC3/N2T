@@ -1,7 +1,7 @@
 {
   "id": "bptl/sbo",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/SBO/SBO:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/SBO/SBO:${content}"
   },
   "type": "scheme",
   "name": "SBO through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/SBO/SBO:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/SBO/SBO:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/SBO/SBO:${content}",
   "description": "The goal of the Systems Biology Ontology is to develop controlled vocabularies and ontologies tailored specifically for the kinds of problems being faced in Systems Biology, especially in the context of computational modeling. SBO is a project of the BioModels.net effort.",
   "subject": "ontology",
   "location": "USA",

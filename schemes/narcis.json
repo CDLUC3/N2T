@@ -1,7 +1,7 @@
 {
   "id": "narcis",
   "target": {
-    "DEFAULT": "http://www.narcis.nl/publication/RecordID/{content}"
+    "DEFAULT": "http://www.narcis.nl/publication/RecordID/${content}"
   },
   "type": "scheme",
   "name": "NARCIS at The Hague",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.narcis.nl/publication/RecordID/${ac}",
-  "redirect": "http://www.narcis.nl/publication/RecordID/{content}",
+  "redirect": "http://www.narcis.nl/publication/RecordID/${content}",
   "description": "NARCIS provides access to scientific information, including (open access) publications from the repositories of all the Dutch universities, KNAW, NWO and a number of research institutes, which is not referenced in other citation databases.",
   "subject": "bibliography",
   "location": "Holland",

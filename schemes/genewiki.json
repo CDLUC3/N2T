@@ -1,7 +1,7 @@
 {
   "id": "genewiki",
   "target": {
-    "DEFAULT": "http://plugins.biogps.org/cgi-bin/wp.cgi?id={content}"
+    "DEFAULT": "http://plugins.biogps.org/cgi-bin/wp.cgi?id=${content}"
   },
   "type": "scheme",
   "name": "Gene Wiki through BioGPS",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://plugins.biogps.org/cgi-bin/wp.cgi?id=${ac}",
-  "redirect": "http://plugins.biogps.org/cgi-bin/wp.cgi?id={content}",
+  "redirect": "http://plugins.biogps.org/cgi-bin/wp.cgi?id=${content}",
   "description": "The Gene Wiki is project which seeks to provide detailed information on human genes. Initial 'stub' articles are created in an automated manner, with further information added by the community. Gene Wiki can be accessed in wikipedia using Gene identifiers from NCBI.",
   "subject": "human; gene; encyclopedia",
   "location": "USA",

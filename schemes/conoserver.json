@@ -1,7 +1,7 @@
 {
   "id": "conoserver",
   "target": {
-    "DEFAULT": "http://www.conoserver.org/?page=card&table=protein&id={content}"
+    "DEFAULT": "http://www.conoserver.org/?page=card&table=protein&id=${content}"
   },
   "type": "scheme",
   "name": "ConoServer at University of Queensland",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.conoserver.org/?page=card&table=protein&id=${ac}",
-  "redirect": "http://www.conoserver.org/?page=card&table=protein&id={content}",
+  "redirect": "http://www.conoserver.org/?page=card&table=protein&id=${content}",
   "description": "ConoServer is a database specialized in the sequence and structures of conopeptides, which are peptides expressed by carnivorous marine cone snails.",
   "subject": "drug; protein",
   "location": "Australia",

@@ -1,7 +1,7 @@
 {
   "id": "ncim",
   "target": {
-    "DEFAULT": "http://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code={content}"
+    "DEFAULT": "http://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=${content}"
   },
   "type": "scheme",
   "name": "NCIm at National Cancer Institue",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=${ac}",
-  "redirect": "http://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code={content}",
+  "redirect": "http://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=${content}",
   "description": "NCI Metathesaurus (NCIm) is a wide-ranging biomedical terminology database that covers most terminologies used by NCI for clinical care, translational and basic research, and public information and administrative activities. It integrates terms and definitions from different terminologies, including NCI Thesaurus, however the representation is not identical.",
   "subject": "ontology; controlled vocabulary",
   "location": "USA",

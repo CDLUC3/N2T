@@ -1,7 +1,7 @@
 {
   "id": "biogrid",
   "target": {
-    "DEFAULT": "http://thebiogrid.org/{content}"
+    "DEFAULT": "http://thebiogrid.org/${content}"
   },
   "type": "scheme",
   "name": "BioGRID database of physical and genetic interactions",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://thebiogrid.org/${ac}",
-  "redirect": "http://thebiogrid.org/{content}",
+  "redirect": "http://thebiogrid.org/${content}",
   "description": "BioGRID is a database of physical and genetic interactions in Saccharomyces cerevisiae, Caenorhabditis elegans, Drosophila melanogaster, Homo sapiens, and Schizosaccharomyces pombe.",
   "subject": "interaction; protein; gene",
   "location": "Canada",

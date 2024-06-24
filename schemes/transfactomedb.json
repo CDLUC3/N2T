@@ -1,9 +1,9 @@
 {
   "id": "transfactomedb",
   "target": {
-    "DEFAULT": "http://bussemaker.bio.columbia.edu:8080/ytdb-cgi/[?RNA/?DNA]/ViewPSAM?ms=[?RNA/?DNA]&M={content}"
+    "DEFAULT": "http://bussemaker.bio.columbia.edu:8080/ytdb-cgi/[?RNA/?DNA]/ViewPSAM?ms=[?RNA/?DNA]&M=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://bussemaker.bio.columbia.edu:8080/ytdb-cgi/[?RNA/?DNA]/ViewPSAM?ms=[?RNA/?DNA]&M={content}",
+  "redirect": "http://bussemaker.bio.columbia.edu:8080/ytdb-cgi/[?RNA/?DNA]/ViewPSAM?ms=[?RNA/?DNA]&M=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "edas_mouse",
   "target": {
-    "DEFAULT": "http://edas2.bioinf.fbb.msu.ru/mouse/data.cgi?chromosome={content}"
+    "DEFAULT": "http://edas2.bioinf.fbb.msu.ru/mouse/data.cgi?chromosome=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://edas2.bioinf.fbb.msu.ru/mouse/data.cgi?chromosome={content}",
+  "redirect": "http://edas2.bioinf.fbb.msu.ru/mouse/data.cgi?chromosome=${content}",
   "revision": 0
 }

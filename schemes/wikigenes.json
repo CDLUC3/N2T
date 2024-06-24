@@ -1,7 +1,7 @@
 {
   "id": "wikigenes",
   "target": {
-    "DEFAULT": "http://www.wikigenes.org/e/gene/e/{content}.html"
+    "DEFAULT": "http://www.wikigenes.org/e/gene/e/${content}.html"
   },
   "type": "scheme",
   "name": "WikiGenes at Massachusetts Institute of Technology",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.wikigenes.org/e/gene/e/${ac}.html",
-  "redirect": "http://www.wikigenes.org/e/gene/e/{content}.html",
+  "redirect": "http://www.wikigenes.org/e/gene/e/${content}.html",
   "description": "WikiGenes is a collaborative knowledge resource for the life sciences, which is based on the general wiki idea but employs specifically developed technology to serve as a rigorous scientific tool. The rationale behind WikiGenes is to provide a platform for the scientific community to collect, communicate and evaluate knowledge about genes, chemicals, diseases and other biomedical concepts in a bottom-up process.",
   "subject": "interaction; disease; gene",
   "location": "USA",

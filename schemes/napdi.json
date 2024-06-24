@@ -1,7 +1,7 @@
 {
   "id": "napdi",
   "target": {
-    "DEFAULT": "https://repo.napdi.org/study/{content}"
+    "DEFAULT": "https://repo.napdi.org/study/${content}"
   },
   "type": "scheme",
   "name": "Natural Product-Drug Interaction Research Data Repository",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://repo.napdi.org/study/${ac}",
-  "redirect": "https://repo.napdi.org/study/{content}",
+  "redirect": "https://repo.napdi.org/study/${content}",
   "description": "The Natural Product-Drug Interaction Research Data Repository, a publicly accessible database where researchers can access scientific results, raw data, and recommended approaches to optimally assess the clinical significance of pharmacokinetic natural product-drug interactions (PK-NPDIs).",
   "subject": null,
   "location": "USA",

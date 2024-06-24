@@ -1,9 +1,9 @@
 {
   "id": "attedii",
   "target": {
-    "DEFAULT": "http://atted.jp/data/cis/{content}.html"
+    "DEFAULT": "http://atted.jp/data/cis/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://atted.jp/data/cis/{content}.html",
+  "redirect": "http://atted.jp/data/cis/${content}.html",
   "revision": 0
 }

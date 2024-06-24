@@ -1,9 +1,9 @@
 {
   "id": "cyanobase",
   "target": {
-    "DEFAULT": "http://genome.kazusa.or.jp/cyanobase/Synechocystis/genes/{content}"
+    "DEFAULT": "http://genome.kazusa.or.jp/cyanobase/Synechocystis/genes/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://genome.kazusa.or.jp/cyanobase/Synechocystis/genes/{content}",
+  "redirect": "http://genome.kazusa.or.jp/cyanobase/Synechocystis/genes/${content}",
   "revision": 0
 }

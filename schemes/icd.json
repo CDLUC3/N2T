@@ -1,7 +1,7 @@
 {
   "id": "icd",
   "target": {
-    "DEFAULT": "http://apps.who.int/classifications/icd10/browse/2010/en#/{content}"
+    "DEFAULT": "http://apps.who.int/classifications/icd10/browse/2010/en#/${content}"
   },
   "type": "scheme",
   "name": "International Statistical Classification of Diseases and Related Health Problems",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://apps.who.int/classifications/icd10/browse/2010/en#/${ac}",
-  "redirect": "http://apps.who.int/classifications/icd10/browse/2010/en#/{content}",
+  "redirect": "http://apps.who.int/classifications/icd10/browse/2010/en#/${content}",
   "description": "The International Classification of Diseases is the international standard diagnostic classification for all general epidemiological and many health management purposes.",
   "subject": "taxonomy; schema.org; disease",
   "location": "Germany",

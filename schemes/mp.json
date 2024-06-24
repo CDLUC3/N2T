@@ -1,7 +1,7 @@
 {
   "id": "mp",
   "target": {
-    "DEFAULT": "https://bioportal.bioontology.org/ontologies/MP/MP:{content}"
+    "DEFAULT": "https://bioportal.bioontology.org/ontologies/MP/MP:${content}"
   },
   "type": "scheme",
   "name": "Mammalian Phenotype Ontology through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://bioportal.bioontology.org/ontologies/MP/MP:${ac}",
-  "redirect": "https://bioportal.bioontology.org/ontologies/MP/MP:{content}",
+  "redirect": "https://bioportal.bioontology.org/ontologies/MP/MP:${content}",
   "description": "The Mammalian Phenotype Ontology (MP) classifies and organises phenotypic information related to the mouse and other mammalian species. This ontology has been applied to mouse phenotype descriptions in various databases allowing comparisons of data from diverse mammalian sources. It can facilitate in the identification of appropriate experimental disease models, and aid in the discovery of candidate disease genes and molecular signaling pathways.",
   "subject": "ontology; phenotype; mammalian",
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "gramene.growthstage",
   "target": {
-    "DEFAULT": "http://www.gramene.org/db/ontology/search?id=GRO:{content}"
+    "DEFAULT": "http://www.gramene.org/db/ontology/search?id=GRO:${content}"
   },
   "type": "scheme",
   "name": "Gramene Growth Stage Ontology at Cold Spring Harbor",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.gramene.org/db/ontology/search?id=GRO:${ac}",
-  "redirect": "http://www.gramene.org/db/ontology/search?id=GRO:{content}",
+  "redirect": "http://www.gramene.org/db/ontology/search?id=GRO:${content}",
   "description": "Gramene is a comparative genome mapping database for grasses and crop plants. It combines a semi-automatically generated database of cereal genomic and expressed sequence tag sequences, genetic maps, map relations, quantitative trait loci (QTL), and publications, with a curated database of mutants (genes and alleles), molecular markers, and proteins. This collection refers to growth stage ontology information in Gramene.",
   "subject": "ontology",
   "location": "USA",

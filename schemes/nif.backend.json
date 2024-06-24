@@ -1,9 +1,9 @@
 {
   "id": "nif.backend",
   "target": {
-    "DEFAULT": "http://www.neurolex.org/wiki/Category:{content}"
+    "DEFAULT": "http://www.neurolex.org/wiki/Category:${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.neurolex.org/wiki/Category:{content}",
+  "redirect": "http://www.neurolex.org/wiki/Category:${content}",
   "revision": 0
 }

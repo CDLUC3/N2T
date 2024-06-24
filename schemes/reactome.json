@@ -1,7 +1,7 @@
 {
   "id": "reactome",
   "target": {
-    "DEFAULT": "https://reactome.org/content/detail/{content}"
+    "DEFAULT": "https://reactome.org/content/detail/${content}"
   },
   "type": "scheme",
   "name": "Reactome, a curated knowledgebase of biological pathways",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://reactome.org/content/detail/${ac}",
-  "redirect": "https://reactome.org/content/detail/{content}",
+  "redirect": "https://reactome.org/content/detail/${content}",
   "description": "The Reactome project is a collaboration to develop a curated resource of core pathways and reactions in human biology.",
   "subject": "pathway; human; reaction; schema.org",
   "location": "Canada / USA / UK",

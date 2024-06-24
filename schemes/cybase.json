@@ -1,9 +1,9 @@
 {
   "id": "cybase",
   "target": {
-    "DEFAULT": "http://research1t.imb.uq.edu.au/cybase/index.php?page=card&table=protein&id={content}"
+    "DEFAULT": "http://research1t.imb.uq.edu.au/cybase/index.php?page=card&table=protein&id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://research1t.imb.uq.edu.au/cybase/index.php?page=card&table=protein&id={content}",
+  "redirect": "http://research1t.imb.uq.edu.au/cybase/index.php?page=card&table=protein&id=${content}",
   "revision": 0
 }

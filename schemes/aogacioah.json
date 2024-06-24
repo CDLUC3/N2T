@@ -1,9 +1,9 @@
 {
   "id": "aogacioah",
   "target": {
-    "DEFAULT": "http://atlasgeneticsoncology.org/Genes/{content}.html"
+    "DEFAULT": "http://atlasgeneticsoncology.org/Genes/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://atlasgeneticsoncology.org/Genes/{content}.html",
+  "redirect": "http://atlasgeneticsoncology.org/Genes/${content}.html",
   "revision": 0
 }

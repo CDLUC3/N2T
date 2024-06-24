@@ -1,7 +1,7 @@
 {
   "id": "pocketome",
   "target": {
-    "DEFAULT": "http://www.pocketome.org/files/{content}.html"
+    "DEFAULT": "http://www.pocketome.org/files/${content}.html"
   },
   "type": "scheme",
   "name": "Pocketome at UCSD Skaggs School",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.pocketome.org/files/${ac}.html",
-  "redirect": "http://www.pocketome.org/files/{content}.html",
+  "redirect": "http://www.pocketome.org/files/${content}.html",
   "description": "Pocketome is an encyclopedia of conformational ensembles of all druggable binding sites that can be identified experimentally from co-crystal structures in the Protein Data Bank. Each Pocketome entry corresponds to a small molecule binding site in a protein which has been co-crystallized in complex with at least one drug-like small molecule, and is represented in at least two PDB entries.",
   "subject": "interaction; protein; structure",
   "location": "USA",

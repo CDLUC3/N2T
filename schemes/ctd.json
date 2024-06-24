@@ -1,9 +1,9 @@
 {
   "id": "ctd",
   "target": {
-    "DEFAULT": "http://ctd.mdibl.org/detail.go?type=chem&acc={content}"
+    "DEFAULT": "http://ctd.mdibl.org/detail.go?type=chem&acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://ctd.mdibl.org/detail.go?type=chem&acc={content}",
+  "redirect": "http://ctd.mdibl.org/detail.go?type=chem&acc=${content}",
   "revision": 0
 }

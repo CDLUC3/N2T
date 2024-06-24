@@ -1,9 +1,9 @@
 {
   "id": "ntdb",
   "target": {
-    "DEFAULT": "http://ntdb.chem.cuhk.edu.hk/data/{content}.htm"
+    "DEFAULT": "http://ntdb.chem.cuhk.edu.hk/data/${content}.htm"
   },
   "type": "commonspfx",
-  "redirect": "http://ntdb.chem.cuhk.edu.hk/data/{content}.htm",
+  "redirect": "http://ntdb.chem.cuhk.edu.hk/data/${content}.htm",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "ird.segment",
   "target": {
-    "DEFAULT": "http://www.fludb.org/brc/fluSegmentDetails.do?ncbiGenomicAccession={content}"
+    "DEFAULT": "http://www.fludb.org/brc/fluSegmentDetails.do?ncbiGenomicAccession=${content}"
   },
   "type": "scheme",
   "name": "IRD at BioHealthBase",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.fludb.org/brc/fluSegmentDetails.do?ncbiGenomicAccession=${ac}",
-  "redirect": "http://www.fludb.org/brc/fluSegmentDetails.do?ncbiGenomicAccession={content}",
+  "redirect": "http://www.fludb.org/brc/fluSegmentDetails.do?ncbiGenomicAccession=${content}",
   "description": "Influenza Research Database (IRD) contains information related to influenza virus, including genomic sequence, strain, protein, epitope  and bibliographic information. The Segment Details page contains descriptive information and annotation data about a particular genomic segment and its encoded product(s).",
   "subject": "protein; gene",
   "location": "USA",

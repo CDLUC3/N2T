@@ -1,9 +1,9 @@
 {
   "id": "uniref",
   "target": {
-    "DEFAULT": "http://www.uniprot.org/uniref/{content}"
+    "DEFAULT": "http://www.uniprot.org/uniref/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.uniprot.org/uniref/{content}",
+  "redirect": "http://www.uniprot.org/uniref/${content}",
   "revision": 0
 }

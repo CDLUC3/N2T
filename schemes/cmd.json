@@ -1,9 +1,9 @@
 {
   "id": "cmd",
   "target": {
-    "DEFAULT": "https://eds.gene.le.ac.uk/home.php?select_db={content}"
+    "DEFAULT": "https://eds.gene.le.ac.uk/home.php?select_db=${content}"
   },
   "type": "commonspfx",
-  "redirect": "https://eds.gene.le.ac.uk/home.php?select_db={content}",
+  "redirect": "https://eds.gene.le.ac.uk/home.php?select_db=${content}",
   "revision": 0
 }

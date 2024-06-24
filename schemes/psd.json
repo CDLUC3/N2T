@@ -1,9 +1,9 @@
 {
   "id": "psd",
   "target": {
-    "DEFAULT": "http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/get-sno-sequence-and-allignments?id={content}"
+    "DEFAULT": "http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/get-sno-sequence-and-allignments?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/get-sno-sequence-and-allignments?id={content}",
+  "redirect": "http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/get-sno-sequence-and-allignments?id=${content}",
   "revision": 0
 }

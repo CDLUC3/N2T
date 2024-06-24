@@ -1,7 +1,7 @@
 {
   "id": "molbase",
   "target": {
-    "DEFAULT": "http://www.molbase.com/en/index.php?app=search&search_keyword={content}"
+    "DEFAULT": "http://www.molbase.com/en/index.php?app=search&search_keyword=${content}"
   },
   "type": "scheme",
   "name": "Molbase at Chinese Academy of Sciences",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.molbase.com/en/index.php?app=search&search_keyword=${ac}",
-  "redirect": "http://www.molbase.com/en/index.php?app=search&search_keyword={content}",
+  "redirect": "http://www.molbase.com/en/index.php?app=search&search_keyword=${content}",
   "description": "Molbase provides compound data information for researchers as well as listing suppliers and price information. It can be searched by keyword or CAS indetifier.",
   "subject": null,
   "location": "China",

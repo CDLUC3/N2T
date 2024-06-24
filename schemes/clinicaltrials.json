@@ -1,7 +1,7 @@
 {
   "id": "clinicaltrials",
   "target": {
-    "DEFAULT": "https://clinicaltrials.gov/ct2/show/{content}"
+    "DEFAULT": "https://clinicaltrials.gov/ct2/show/${content}"
   },
   "type": "scheme",
   "name": "ClinicalTrials.gov at NIH",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://clinicaltrials.gov/ct2/show/${ac}",
-  "redirect": "https://clinicaltrials.gov/ct2/show/{content}",
+  "redirect": "https://clinicaltrials.gov/ct2/show/${content}",
   "description": "ClinicalTrials.gov provides free access to information on clinical studies for a wide range of diseases and conditions. Studies listed in the database are conducted in 175 countries",
   "subject": "disorder; disease; pharmacogenomics; human",
   "location": "USA",

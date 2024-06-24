@@ -1,7 +1,7 @@
 {
   "id": "phosphosite.residue",
   "target": {
-    "DEFAULT": "http://www.phosphosite.org/siteAction.do?id={content}"
+    "DEFAULT": "http://www.phosphosite.org/siteAction.do?id=${content}"
   },
   "type": "scheme",
   "name": "PhosphoSite Residue",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.phosphosite.org/siteAction.do?id=${ac}",
-  "redirect": "http://www.phosphosite.org/siteAction.do?id={content}",
+  "redirect": "http://www.phosphosite.org/siteAction.do?id=${content}",
   "description": "PhosphoSite is a mammalian protein database that provides information about in vivo phosphorylation sites. This datatype refers to residue-level information, providing a information about a single modification position in a specific protein sequence.",
   "subject": null,
   "location": "USA",

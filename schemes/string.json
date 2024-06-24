@@ -1,7 +1,7 @@
 {
   "id": "string",
   "target": {
-    "DEFAULT": "http://string-db.org/interactions/{content}"
+    "DEFAULT": "http://string-db.org/interactions/${content}"
   },
   "type": "scheme",
   "name": "STRING Mirror at Heidelberg",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://string-db.org/interactions/${ac}",
-  "redirect": "http://string-db.org/interactions/{content}",
+  "redirect": "http://string-db.org/interactions/${content}",
   "description": "STRING (Search Tool for Retrieval of Interacting Genes/Proteins) is a database of known and predicted protein interactions. The interactions include direct (physical) and indirect (functional) associations; they are derived from four sources:Genomic Context, High-throughput Experiments,(Conserved) Coexpression, Previous Knowledge. STRING quantitatively integrates interaction data from these sources for a large number of organisms, and transfers information between these organisms where applicable.",
   "subject": "protein; interaction",
   "location": "Germany",

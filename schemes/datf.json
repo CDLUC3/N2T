@@ -1,7 +1,7 @@
 {
   "id": "datf",
   "target": {
-    "DEFAULT": "http://planttfdb.cbi.pku.edu.cn/tf.php?sp=Ath&did={content}"
+    "DEFAULT": "http://planttfdb.cbi.pku.edu.cn/tf.php?sp=Ath&did=${content}"
   },
   "type": "scheme",
   "name": "DATF through PlantTFDB",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://planttfdb.cbi.pku.edu.cn/tf.php?sp=Ath&did=${ac}",
-  "redirect": "http://planttfdb.cbi.pku.edu.cn/tf.php?sp=Ath&did={content}",
+  "redirect": "http://planttfdb.cbi.pku.edu.cn/tf.php?sp=Ath&did=${content}",
   "description": "DATF contains known and predicted Arabidopsis transcription factors (1827 genes in 56 families) with the unique information of 1177 cloned sequences and many other features including 3D structure templates, EST expression information, transcription factor binding sites and nuclear location signals.",
   "subject": null,
   "location": "Peoples Republic of China.",

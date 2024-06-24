@@ -1,9 +1,9 @@
 {
   "id": "hmp",
   "target": {
-    "DEFAULT": "http://www.hmpdacc-resources.org/cgi-bin/hmp_catalog/main.cgi?section=HmpSummary&page=displayHmpProject&hmp_id={content}"
+    "DEFAULT": "http://www.hmpdacc-resources.org/cgi-bin/hmp_catalog/main.cgi?section=HmpSummary&page=displayHmpProject&hmp_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.hmpdacc-resources.org/cgi-bin/hmp_catalog/main.cgi?section=HmpSummary&page=displayHmpProject&hmp_id={content}",
+  "redirect": "http://www.hmpdacc-resources.org/cgi-bin/hmp_catalog/main.cgi?section=HmpSummary&page=displayHmpProject&hmp_id=${content}",
   "revision": 0
 }

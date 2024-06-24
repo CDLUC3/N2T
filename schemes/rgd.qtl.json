@@ -1,7 +1,7 @@
 {
   "id": "rgd.qtl",
   "target": {
-    "DEFAULT": "http://rgd.mcw.edu/rgdweb/report/qtl/main.html?id={content}"
+    "DEFAULT": "http://rgd.mcw.edu/rgdweb/report/qtl/main.html?id=${content}"
   },
   "type": "scheme",
   "name": "Rat Genome Database qTL at Medical College of Wisconsin",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://rgd.mcw.edu/rgdweb/report/qtl/main.html?id=${ac}",
-  "redirect": "http://rgd.mcw.edu/rgdweb/report/qtl/main.html?id={content}",
+  "redirect": "http://rgd.mcw.edu/rgdweb/report/qtl/main.html?id=${content}",
   "description": "Rat Genome Database seeks to collect, consolidate, and integrate rat genomic and genetic data with curated functional and physiological data and make these data widely available to the scientific community. This collection references quantitative trait loci (qTLs), providing phenotype and disease descriptions, mapping, and strain information as well as links to markers and candidate genes.",
   "subject": "gene; phenotype",
   "location": "USA",

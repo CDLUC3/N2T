@@ -1,9 +1,9 @@
 {
   "id": "jail",
   "target": {
-    "DEFAULT": "http://bioinf-apache.charite.de/jail/index.php?site=show_interfaces&pdb_id={content}"
+    "DEFAULT": "http://bioinf-apache.charite.de/jail/index.php?site=show_interfaces&pdb_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://bioinf-apache.charite.de/jail/index.php?site=show_interfaces&pdb_id={content}",
+  "redirect": "http://bioinf-apache.charite.de/jail/index.php?site=show_interfaces&pdb_id=${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "z022/go",
   "target": {
-    "DEFAULT": "http://www.informatics.jax.org/searches/GO.cgi?id=GO:{content}"
+    "DEFAULT": "http://www.informatics.jax.org/searches/GO.cgi?id=GO:${content}"
   },
   "type": "scheme",
   "name": "GO Browser",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.informatics.jax.org/searches/GO.cgi?id=GO:${ac}",
-  "redirect": "http://www.informatics.jax.org/searches/GO.cgi?id=GO:{content}",
+  "redirect": "http://www.informatics.jax.org/searches/GO.cgi?id=GO:${content}",
   "description": "The Gene Ontology project provides a controlled vocabulary to describe gene and gene product attributes in any organism.",
   "subject": "ontology",
   "location": "USA",

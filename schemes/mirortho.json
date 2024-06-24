@@ -1,9 +1,9 @@
 {
   "id": "mirortho",
   "target": {
-    "DEFAULT": "http://cegg.unige.ch/mirortho/entry_details/{content}"
+    "DEFAULT": "http://cegg.unige.ch/mirortho/entry_details/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://cegg.unige.ch/mirortho/entry_details/{content}",
+  "redirect": "http://cegg.unige.ch/mirortho/entry_details/${content}",
   "revision": 0
 }

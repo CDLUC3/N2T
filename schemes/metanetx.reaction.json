@@ -1,7 +1,7 @@
 {
   "id": "metanetx.reaction",
   "target": {
-    "DEFAULT": "http://www.metanetx.org/equa_info/{content}"
+    "DEFAULT": "http://www.metanetx.org/equa_info/${content}"
   },
   "type": "scheme",
   "name": "MetaNetX reaction at SIB Swiss Institute of Bioinformatics",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.metanetx.org/equa_info/${ac}",
-  "redirect": "http://www.metanetx.org/equa_info/{content}",
+  "redirect": "http://www.metanetx.org/equa_info/${content}",
   "description": "MetaNetX/MNXref integrates various information from genome-scale metabolic network reconstructions such as information on reactions, metabolites and compartments. This information undergoes a reconciliation process to minimise for discrepancies between different data sources, and makes the data accessible under a common namespace. This collection references reactions.",
   "subject": "reaction; model",
   "location": "Switzerland",

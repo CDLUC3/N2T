@@ -1,7 +1,7 @@
 {
   "id": "expenz/ec-code",
   "target": {
-    "DEFAULT": "http://www.enzyme-database.org/query.php?ec={content}"
+    "DEFAULT": "http://www.enzyme-database.org/query.php?ec=${content}"
   },
   "type": "scheme",
   "name": "ExploreEnz at Trinity College",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.enzyme-database.org/query.php?ec=${ac}",
-  "redirect": "http://www.enzyme-database.org/query.php?ec={content}",
+  "redirect": "http://www.enzyme-database.org/query.php?ec=${content}",
   "description": "The Enzyme Classification contains the recommendations of the Nomenclature Committee of the International Union of Biochemistry and Molecular Biology on the nomenclature and classification of enzyme-catalysed reactions.",
   "subject": "enzyme; classification; protein; taxonomy",
   "location": "Ireland",

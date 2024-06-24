@@ -1,9 +1,9 @@
 {
   "id": "cope",
   "target": {
-    "DEFAULT": "http://www.copewithcytokines.de/cope.cgi?key={content}"
+    "DEFAULT": "http://www.copewithcytokines.de/cope.cgi?key=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.copewithcytokines.de/cope.cgi?key={content}",
+  "redirect": "http://www.copewithcytokines.de/cope.cgi?key=${content}",
   "revision": 0
 }

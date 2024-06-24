@@ -1,7 +1,7 @@
 {
   "id": "prosite",
   "target": {
-    "DEFAULT": "https://prosite.expasy.org/{content}"
+    "DEFAULT": "https://prosite.expasy.org/${content}"
   },
   "type": "scheme",
   "name": "ExPASy PROSITE",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://prosite.expasy.org/${ac}",
-  "redirect": "https://prosite.expasy.org/{content}",
+  "redirect": "https://prosite.expasy.org/${content}",
   "description": "PROSITE consists of documentation entries describing protein domains, families and functional sites as well as associated patterns and profiles to identify them.",
   "subject": "domain; protein",
   "location": "Switzerland",

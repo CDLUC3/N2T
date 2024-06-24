@@ -1,9 +1,9 @@
 {
   "id": "transportdb",
   "target": {
-    "DEFAULT": "http://www.membranetransport.org/protein.php?pOID=mmar1&pSynonym={content}"
+    "DEFAULT": "http://www.membranetransport.org/protein.php?pOID=mmar1&pSynonym=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.membranetransport.org/protein.php?pOID=mmar1&pSynonym={content}",
+  "redirect": "http://www.membranetransport.org/protein.php?pOID=mmar1&pSynonym=${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "wormpep",
   "target": {
-    "DEFAULT": "https://www.wormbase.org/db/seq/protein?name=WP:{content}"
+    "DEFAULT": "https://www.wormbase.org/db/seq/protein?name=WP:${content}"
   },
   "type": "scheme",
   "name": "Wormpep (Master)",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.wormbase.org/db/seq/protein?name=WP:${ac}",
-  "redirect": "https://www.wormbase.org/db/seq/protein?name=WP:{content}",
+  "redirect": "https://www.wormbase.org/db/seq/protein?name=WP:${content}",
   "description": "Wormpep contains the predicted proteins from the Caenorhabditis elegans genome sequencing project.",
   "subject": "genome; protein",
   "location": "USA",

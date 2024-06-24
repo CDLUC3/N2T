@@ -1,9 +1,9 @@
 {
   "id": "superhapten",
   "target": {
-    "DEFAULT": "http://bioinformatics.charite.de/superhapten/fullinfo_hapten_chime.php?id={content}"
+    "DEFAULT": "http://bioinformatics.charite.de/superhapten/fullinfo_hapten_chime.php?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://bioinformatics.charite.de/superhapten/fullinfo_hapten_chime.php?id={content}",
+  "redirect": "http://bioinformatics.charite.de/superhapten/fullinfo_hapten_chime.php?id=${content}",
   "revision": 0
 }

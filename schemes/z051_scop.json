@@ -1,7 +1,7 @@
 {
   "id": "z051/scop",
   "target": {
-    "DEFAULT": "http://scop.mrc-lmb.cam.ac.uk/scop/search.cgi?sunid={content}"
+    "DEFAULT": "http://scop.mrc-lmb.cam.ac.uk/scop/search.cgi?sunid=${content}"
   },
   "type": "scheme",
   "name": "SCOP at MRC",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://scop.mrc-lmb.cam.ac.uk/scop/search.cgi?sunid=${ac}",
-  "redirect": "http://scop.mrc-lmb.cam.ac.uk/scop/search.cgi?sunid={content}",
+  "redirect": "http://scop.mrc-lmb.cam.ac.uk/scop/search.cgi?sunid=${content}",
   "description": "The SCOP (Structural Classification of Protein) database is a comprehensive ordering of all proteins of known structure according to their evolutionary, functional and structural relationships. The basic classification unit is the protein domain. Domains are hierarchically classified into species, proteins, families, superfamilies, folds, and classes.",
   "subject": "protein; classification; structure",
   "location": "UK",

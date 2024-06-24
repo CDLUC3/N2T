@@ -1,7 +1,7 @@
 {
   "id": "seed.compound",
   "target": {
-    "DEFAULT": "http://modelseed.org/biochem/compounds/{content}"
+    "DEFAULT": "http://modelseed.org/biochem/compounds/${content}"
   },
   "type": "scheme",
   "name": "SEED Compound at Argonne National Laboratory",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://modelseed.org/biochem/compounds/${ac}",
-  "redirect": "http://modelseed.org/biochem/compounds/{content}",
+  "redirect": "http://modelseed.org/biochem/compounds/${content}",
   "description": "This cooperative effort, which includes Fellowship for Interpretation of Genomes (FIG), Argonne National Laboratory, and the University of Chicago, focuses on the development of the comparative genomics environment called the SEED. It is a framework to support comparative analysis and annotation of genomes, and the development of curated genomic data (annotation). Curation is performed at the level of subsystems by an expert annotator, across many genomes, and not on a gene by gene basis. This collection references subsystems.",
   "subject": "chemical; metabolite; structure",
   "location": "USA",

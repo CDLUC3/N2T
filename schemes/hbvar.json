@@ -1,9 +1,9 @@
 {
   "id": "hbvar",
   "target": {
-    "DEFAULT": "http://globin.bx.psu.edu/cgi-bin/hbvar/query_vars3?mode=output&display_format=page&i={content}"
+    "DEFAULT": "http://globin.bx.psu.edu/cgi-bin/hbvar/query_vars3?mode=output&display_format=page&i=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://globin.bx.psu.edu/cgi-bin/hbvar/query_vars3?mode=output&display_format=page&i={content}",
+  "redirect": "http://globin.bx.psu.edu/cgi-bin/hbvar/query_vars3?mode=output&display_format=page&i=${content}",
   "revision": 0
 }

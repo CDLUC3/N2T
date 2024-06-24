@@ -1,7 +1,7 @@
 {
   "id": "pscdb",
   "target": {
-    "DEFAULT": "http://idp1.force.cs.is.nagoya-u.ac.jp/pscdb/{content}.html"
+    "DEFAULT": "http://idp1.force.cs.is.nagoya-u.ac.jp/pscdb/${content}.html"
   },
   "type": "scheme",
   "name": "PSCDB at Nagoya University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://idp1.force.cs.is.nagoya-u.ac.jp/pscdb/${ac}.html",
-  "redirect": "http://idp1.force.cs.is.nagoya-u.ac.jp/pscdb/{content}.html",
+  "redirect": "http://idp1.force.cs.is.nagoya-u.ac.jp/pscdb/${content}.html",
   "description": "The PSCDB (Protein Structural Change DataBase) collects information on the relationship between protein structural change upon ligand binding. Each entry page provides detailed information about this structural motion.",
   "subject": "protein; interaction; structure",
   "location": "Japan",

@@ -1,9 +1,9 @@
 {
   "id": "hcpin",
   "target": {
-    "DEFAULT": "http://nesg.org:9090/HCPIN/NShowProteinInfor.jsp?protein_id={content}"
+    "DEFAULT": "http://nesg.org:9090/HCPIN/NShowProteinInfor.jsp?protein_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://nesg.org:9090/HCPIN/NShowProteinInfor.jsp?protein_id={content}",
+  "redirect": "http://nesg.org:9090/HCPIN/NShowProteinInfor.jsp?protein_id=${content}",
   "revision": 0
 }

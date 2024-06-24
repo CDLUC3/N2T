@@ -1,7 +1,7 @@
 {
   "id": "pmp",
   "target": {
-    "DEFAULT": "http://www.proteinmodelportal.org/query/uniprot/{content}"
+    "DEFAULT": "http://www.proteinmodelportal.org/query/uniprot/${content}"
   },
   "type": "scheme",
   "name": "PMP at University of Basel",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.proteinmodelportal.org/query/uniprot/${ac}",
-  "redirect": "http://www.proteinmodelportal.org/query/uniprot/{content}",
+  "redirect": "http://www.proteinmodelportal.org/query/uniprot/${content}",
   "description": "The number of known protein sequences exceeds those of experimentally solved protein structures. Homology (or comparative) modeling methods make use of experimental protein structures to build models for evolutionary related proteins. The Protein Model Portal (PMP) provides a single portal to access these models, which are accessed through their UniProt identifiers.",
   "subject": "structure; protein",
   "location": "Switzerland",

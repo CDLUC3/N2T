@@ -1,9 +1,9 @@
 {
   "id": "vega",
   "target": {
-    "DEFAULT": "http://vega.sanger.ac.uk/[?species_name]/Gene/Summary?g={content}"
+    "DEFAULT": "http://vega.sanger.ac.uk/[?species_name]/Gene/Summary?g=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://vega.sanger.ac.uk/[?species_name]/Gene/Summary?g={content}",
+  "redirect": "http://vega.sanger.ac.uk/[?species_name]/Gene/Summary?g=${content}",
   "revision": 0
 }

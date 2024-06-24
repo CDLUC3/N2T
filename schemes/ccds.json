@@ -1,7 +1,7 @@
 {
   "id": "ccds",
   "target": {
-    "DEFAULT": "http://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi?REQUEST=CCDS&DATA={content}"
+    "DEFAULT": "http://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi?REQUEST=CCDS&DATA=${content}"
   },
   "type": "scheme",
   "name": "Consensus CDS at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi?REQUEST=CCDS&DATA=${ac}",
-  "redirect": "http://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi?REQUEST=CCDS&DATA={content}",
+  "redirect": "http://www.ncbi.nlm.nih.gov/CCDS/CcdsBrowse.cgi?REQUEST=CCDS&DATA=${content}",
   "description": "The Consensus CDS (CCDS) project is a collaborative effort to identify a core set of human and mouse protein coding regions that are consistently annotated and of high quality. The CCDS set is calculated following coordinated whole genome annotation updates carried out by the NCBI, WTSI, and Ensembl. The long term goal is to support convergence towards a standard set of gene annotations.",
   "subject": "genome; sequence; protein; mammalian",
   "location": "USA",

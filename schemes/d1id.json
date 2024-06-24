@@ -1,7 +1,7 @@
 {
   "id": "d1id",
   "target": {
-    "DEFAULT": "https://cn.dataone.org/cn/v2/resolve/{{content}}"
+    "DEFAULT": "https://cn.dataone.org/cn/v2/resolve/{${content}}"
   },
   "type": "scheme",
   "name": "DataONE",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://cn.dataone.org/cn/v2/resolve/{${ac}}",
-  "redirect": "https://cn.dataone.org/cn/v2/resolve/{{content}}",
+  "redirect": "https://cn.dataone.org/cn/v2/resolve/{${content}}",
   "description": "DataONE provides infrastructure facilitating long-term access to scientific research data of relevance to the earth sciences.",
   "subject": null,
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "img.gene",
   "target": {
-    "DEFAULT": "http://img.jgi.doe.gov/cgi-bin/w/main.cgi?section=GeneDetail&gene_oid={content}"
+    "DEFAULT": "http://img.jgi.doe.gov/cgi-bin/w/main.cgi?section=GeneDetail&gene_oid=${content}"
   },
   "type": "scheme",
   "name": "Integrated Microbial Genomes Taxon at Lawrence Berkeley National Laboratory",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://img.jgi.doe.gov/cgi-bin/w/main.cgi?section=GeneDetail&gene_oid=${ac}",
-  "redirect": "http://img.jgi.doe.gov/cgi-bin/w/main.cgi?section=GeneDetail&gene_oid={content}",
+  "redirect": "http://img.jgi.doe.gov/cgi-bin/w/main.cgi?section=GeneDetail&gene_oid=${content}",
   "description": "The integrated microbial genomes (IMG) system is a data management, analysis and annotation platform for all publicly available genomes. IMG contains both draft and complete JGI (DoE Joint Genome Institute) microbial genomes integrated with all other publicly available genomes from all three domains of life, together with a large number of plasmids and viruses. This datatype refers to gene information.",
   "subject": "gene; genome",
   "location": "USA",

@@ -1,9 +1,9 @@
 {
   "id": "ipdmhc",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/cgi-bin/ipd/mhc/get_allele.cgi?{content}"
+    "DEFAULT": "http://www.ebi.ac.uk/cgi-bin/ipd/mhc/get_allele.cgi?${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/cgi-bin/ipd/mhc/get_allele.cgi?{content}",
+  "redirect": "http://www.ebi.ac.uk/cgi-bin/ipd/mhc/get_allele.cgi?${content}",
   "revision": 0
 }

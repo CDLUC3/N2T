@@ -1,7 +1,7 @@
 {
   "id": "mirnest",
   "target": {
-    "DEFAULT": "http://rhesus.amu.edu.pl/mirnest/copy/details.php?id={content}"
+    "DEFAULT": "http://rhesus.amu.edu.pl/mirnest/copy/details.php?id=${content}"
   },
   "type": "scheme",
   "name": "miRNEST at Adam Mickiewicz University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://rhesus.amu.edu.pl/mirnest/copy/details.php?id=${ac}",
-  "redirect": "http://rhesus.amu.edu.pl/mirnest/copy/details.php?id={content}",
+  "redirect": "http://rhesus.amu.edu.pl/mirnest/copy/details.php?id=${content}",
   "description": "miRNEST is a database of animal, plant and virus microRNAs, containing  miRNA predictions conducted on Expressed Sequence Tags of animal and  plant species.",
   "subject": "expression",
   "location": "Poland",

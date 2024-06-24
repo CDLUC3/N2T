@@ -1,7 +1,7 @@
 {
   "id": "z070/insdc.gca",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/${content}"
   },
   "type": "scheme",
   "name": "Genome assembly database through ENA",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ena/data/view/${ac}",
-  "redirect": "https://www.ebi.ac.uk/ena/data/view/{content}",
+  "redirect": "https://www.ebi.ac.uk/ena/data/view/${content}",
   "description": "The genome assembly database contains detailed information about genome assemblies for eukaryota, bacteria and archaea. The scope of the genome collections database does not extend to viruses, viroids and bacteriophage.",
   "subject": null,
   "location": "UK",

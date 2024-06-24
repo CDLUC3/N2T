@@ -1,7 +1,7 @@
 {
   "id": "peroxibase",
   "target": {
-    "DEFAULT": "http://peroxibase.toulouse.inra.fr/browse/process/view_perox.php?id={content}"
+    "DEFAULT": "http://peroxibase.toulouse.inra.fr/browse/process/view_perox.php?id=${content}"
   },
   "type": "scheme",
   "name": "Peroxibase at University of Geneva",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://peroxibase.toulouse.inra.fr/browse/process/view_perox.php?id=${ac}",
-  "redirect": "http://peroxibase.toulouse.inra.fr/browse/process/view_perox.php?id={content}",
+  "redirect": "http://peroxibase.toulouse.inra.fr/browse/process/view_perox.php?id=${content}",
   "description": "Peroxibase provides access to peroxidase sequences from all kingdoms of life, and provides a series of bioinformatics tools and facilities suitable for analysing these sequences.",
   "subject": "enzyme; sequence",
   "location": "Switzerland",

@@ -1,7 +1,7 @@
 {
   "id": "facebase",
   "target": {
-    "DEFAULT": "https://www.facebase.org/data/record/#1/isa:dataset/accession={content}"
+    "DEFAULT": "https://www.facebase.org/data/record/#1/isa:dataset/accession=${content}"
   },
   "type": "scheme",
   "name": "FaceBase Data Repository",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.facebase.org/data/record/#1/isa:dataset/accession=${ac}",
-  "redirect": "https://www.facebase.org/data/record/#1/isa:dataset/accession={content}",
+  "redirect": "https://www.facebase.org/data/record/#1/isa:dataset/accession=${content}",
   "description": "FaceBase is a collaborative NIDCR-funded consortium to generate data in support of advancing research into craniofacial development and malformation. It serves as a community resource by generating large datasets of a variety of types and making them available to the wider research community via this website. Practices emphasize a comprehensive and multidisciplinary approach to understanding the developmental processes that create the face. The data offered spotlights high-throughput genetic, molecular, biological, imaging and computational techniques. One of the missions of this consortium is to facilitate cooperation and collaboration between projects.",
   "subject": null,
   "location": "USA",

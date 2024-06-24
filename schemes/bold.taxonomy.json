@@ -1,7 +1,7 @@
 {
   "id": "bold.taxonomy",
   "target": {
-    "DEFAULT": "http://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid={content}"
+    "DEFAULT": "http://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=${content}"
   },
   "type": "scheme",
   "name": "BOLD taxonomy browser",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=${ac}",
-  "redirect": "http://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid={content}",
+  "redirect": "http://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=${content}",
   "description": "The Barcode of Life Data System (BOLD) is an informatics workbench aiding the acquisition, storage, analysis and publication of DNA barcode records. The associated taxonomy browser shows the progress of DNA barcoding and provides sample collection site distribution, and taxon occurence information.",
   "subject": "classification",
   "location": "Canada",

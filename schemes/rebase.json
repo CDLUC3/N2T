@@ -1,7 +1,7 @@
 {
   "id": "rebase",
   "target": {
-    "DEFAULT": "http://rebase.neb.com/rebase/enz/{content}.html"
+    "DEFAULT": "http://rebase.neb.com/rebase/enz/${content}.html"
   },
   "type": "scheme",
   "name": "REBASE at New England Biolabs",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://rebase.neb.com/rebase/enz/${ac}.html",
-  "redirect": "http://rebase.neb.com/rebase/enz/{content}.html",
+  "redirect": "http://rebase.neb.com/rebase/enz/${content}.html",
   "description": "REBASE is a comprehensive database of information about restriction enzymes, DNA methyltransferases and related proteins involved in the biological process of restriction-modification (R-M). It contains fully referenced information about recognition and cleavage sites, isoschizomers, neoschizomers, commercial availability, methylation sensitivity, crystal and sequence data.",
   "subject": "reaction; enzyme",
   "location": "USA",

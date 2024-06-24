@@ -1,7 +1,7 @@
 {
   "id": "ncbiprotein",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/protein/${content}"
   },
   "type": "scheme",
   "name": "NCBI Protein at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/protein/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/protein/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/protein/${content}",
   "description": "The Protein database is a collection of sequences from several sources, including translations from annotated coding regions in GenBank, RefSeq and TPA, as well as records from SwissProt, PIR, PRF, and PDB.",
   "subject": "protein; sequence",
   "location": "USA",

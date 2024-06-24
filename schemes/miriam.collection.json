@@ -1,7 +1,7 @@
 {
   "id": "miriam.collection",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/miriam/main/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/miriam/main/${content}"
   },
   "type": "scheme",
   "name": "MIRIAM Resources (data collection)",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/miriam/main/${ac}",
-  "redirect": "https://www.ebi.ac.uk/miriam/main/{content}",
+  "redirect": "https://www.ebi.ac.uk/miriam/main/${content}",
   "description": "MIRIAM Registry is an online resource created to catalogue collections (Gene Ontology, Taxonomy or PubMed are some examples) and the corresponding resources (physical locations) providing access to those data collections. The Registry provides unique and perennial URIs for each entity of those data collections.",
   "subject": "schema.org; registry",
   "location": "UK",

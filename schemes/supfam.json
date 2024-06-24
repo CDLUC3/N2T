@@ -1,7 +1,7 @@
 {
   "id": "supfam",
   "target": {
-    "DEFAULT": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?ipid={content}"
+    "DEFAULT": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?ipid=${content}"
   },
   "type": "scheme",
   "name": "SUPFAM at MRC and University of Bristol",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?ipid=${ac}",
-  "redirect": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?ipid={content}",
+  "redirect": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?ipid=${content}",
   "description": "SUPERFAMILY provides structural, functional and evolutionary information for proteins from all completely sequenced genomes, and large sequence collections such as UniProt.",
   "subject": "structure; protein",
   "location": "UK",

@@ -1,7 +1,7 @@
 {
   "id": "dailymed",
   "target": {
-    "DEFAULT": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={content}"
+    "DEFAULT": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=${content}"
   },
   "type": "scheme",
   "name": "DailyMed at NLM",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=${ac}",
-  "redirect": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={content}",
+  "redirect": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=${content}",
   "description": "DailyMed provides information about marketed drugs. This information includes FDA labels (package inserts). The Web site provides a standard, comprehensive, up-to-date, look-up and download resource of medication content and labeling as found in medication package inserts. Drug labeling is the most recent submitted to the Food and Drug Administration (FDA) and currently in use; it may include, for example, strengthened warnings undergoing FDA review or minor editorial changes. These labels have been reformatted to make them easier to read.",
   "subject": "catalogue; drug",
   "location": "USA",

@@ -1,9 +1,9 @@
 {
   "id": "partigenedb",
   "target": {
-    "DEFAULT": "http://www.compsysbio.org/partigene/cluster.php?cluster={content}"
+    "DEFAULT": "http://www.compsysbio.org/partigene/cluster.php?cluster=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.compsysbio.org/partigene/cluster.php?cluster={content}",
+  "redirect": "http://www.compsysbio.org/partigene/cluster.php?cluster=${content}",
   "revision": 0
 }

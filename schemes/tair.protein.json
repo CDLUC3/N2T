@@ -1,7 +1,7 @@
 {
   "id": "tair.protein",
   "target": {
-    "DEFAULT": "http://arabidopsis.org/servlets/TairObject?accession={content}"
+    "DEFAULT": "http://arabidopsis.org/servlets/TairObject?accession=${content}"
   },
   "type": "scheme",
   "name": "The Arabidopsis Information Resource (TAIR) Protein",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://arabidopsis.org/servlets/TairObject?accession=${ac}",
-  "redirect": "http://arabidopsis.org/servlets/TairObject?accession={content}",
+  "redirect": "http://arabidopsis.org/servlets/TairObject?accession=${content}",
   "description": "The Arabidopsis Information Resource (TAIR) maintains a database of genetic and molecular biology data for the model higher plant Arabidopsis thaliana. This provides protein information for a given gene model and provides links to other sources such as UniProtKB and GenPept",
   "subject": "protein; genome; eukaryotic; plant",
   "location": "USA",

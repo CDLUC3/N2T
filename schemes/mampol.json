@@ -1,9 +1,9 @@
 {
   "id": "mampol",
   "target": {
-    "DEFAULT": "http://mampol.uab.es/cgi-bin/MamPol_s2.pl?Accession={content}"
+    "DEFAULT": "http://mampol.uab.es/cgi-bin/MamPol_s2.pl?Accession=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://mampol.uab.es/cgi-bin/MamPol_s2.pl?Accession={content}",
+  "redirect": "http://mampol.uab.es/cgi-bin/MamPol_s2.pl?Accession=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "pathoplant",
   "target": {
-    "DEFAULT": "http://www.pathoplant.de/detail.php?accNo={content}"
+    "DEFAULT": "http://www.pathoplant.de/detail.php?accNo=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.pathoplant.de/detail.php?accNo={content}",
+  "redirect": "http://www.pathoplant.de/detail.php?accNo=${content}",
   "revision": 0
 }

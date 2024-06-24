@@ -1,7 +1,7 @@
 {
   "id": "kegg.metagenome",
   "target": {
-    "DEFAULT": "http://www.kegg.jp/entry/{content}"
+    "DEFAULT": "http://www.kegg.jp/entry/${content}"
   },
   "type": "scheme",
   "name": "KEGG Metagenome Database",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.kegg.jp/entry/${ac}",
-  "redirect": "http://www.kegg.jp/entry/{content}",
+  "redirect": "http://www.kegg.jp/entry/${content}",
   "description": "The KEGG Metagenome Database collection information on environmental samples (ecosystems) of genome sequences for multiple species.",
   "subject": "genome",
   "location": "Japan",

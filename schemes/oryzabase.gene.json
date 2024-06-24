@@ -1,7 +1,7 @@
 {
   "id": "oryzabase.gene",
   "target": {
-    "DEFAULT": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/gene/detail/{content}"
+    "DEFAULT": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/gene/detail/${content}"
   },
   "type": "scheme",
   "name": "Oryzabase v4 Gene at National Institute of Genetics (Japan)",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/gene/detail/${ac}",
-  "redirect": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/gene/detail/{content}",
+  "redirect": "http://www.shigen.nig.ac.jp/rice/oryzabaseV4/gene/detail/${content}",
   "description": "Oryzabase provides a view of rice (Oryza sativa) as a model monocot plant by integrating biological data with molecular genomic information. It contains information about rice development and anatomy, rice mutants, and genetic resources, especially for wild varieties of rice. Developmental and anatomical descriptions include in situ gene expression data serving as stage and tissue markers. This collection references gene information.",
   "subject": "plant; gene",
   "location": "Japan",

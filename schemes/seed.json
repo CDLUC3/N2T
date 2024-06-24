@@ -1,7 +1,7 @@
 {
   "id": "seed",
   "target": {
-    "DEFAULT": "http://seed-viewer.theseed.org/seedviewer.cgi?page=Subsystems&subsystem={content}"
+    "DEFAULT": "http://seed-viewer.theseed.org/seedviewer.cgi?page=Subsystems&subsystem=${content}"
   },
   "type": "scheme",
   "name": "SEED Subsystem at Argonne National Laboratory",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://seed-viewer.theseed.org/seedviewer.cgi?page=Subsystems&subsystem=${ac}",
-  "redirect": "http://seed-viewer.theseed.org/seedviewer.cgi?page=Subsystems&subsystem={content}",
+  "redirect": "http://seed-viewer.theseed.org/seedviewer.cgi?page=Subsystems&subsystem=${content}",
   "description": "This cooperative effort, which includes Fellowship for Interpretation of Genomes (FIG), Argonne National Laboratory, and the University of Chicago, focuses on the development of the comparative genomics environment called the SEED. It is a framework to support comparative analysis and annotation of genomes, and the development of curated genomic data (annotation). Curation is performed at the level of subsystems by an expert annotator, across many genomes, and not on a gene by gene basis. This collection references subsystems.",
   "subject": "pathway",
   "location": "USA",

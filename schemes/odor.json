@@ -1,7 +1,7 @@
 {
   "id": "odor",
   "target": {
-    "DEFAULT": "http://senselab.med.yale.edu/OdorDB/Data/{content}/?db=5"
+    "DEFAULT": "http://senselab.med.yale.edu/OdorDB/Data/${content}/?db=5"
   },
   "type": "scheme",
   "name": "Odor Molecules DataBase at Yale University School of Medicine",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://senselab.med.yale.edu/OdorDB/Data/${ac}/?db=5",
-  "redirect": "http://senselab.med.yale.edu/OdorDB/Data/{content}/?db=5",
+  "redirect": "http://senselab.med.yale.edu/OdorDB/Data/${content}/?db=5",
   "description": "OdorDB stores information related to odorous compounds, specifically identifying those that have been shown to interact with olfactory receptors",
   "subject": "chemical",
   "location": "USA",

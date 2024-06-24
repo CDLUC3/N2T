@@ -1,7 +1,7 @@
 {
   "id": "z029/isbn",
   "target": {
-    "DEFAULT": "http://www.worldcat.org/isbn/{content}"
+    "DEFAULT": "http://www.worldcat.org/isbn/${content}"
   },
   "type": "scheme",
   "name": "ISBN database at WorldCat",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.worldcat.org/isbn/${ac}",
-  "redirect": "http://www.worldcat.org/isbn/{content}",
+  "redirect": "http://www.worldcat.org/isbn/${content}",
   "description": "The International Standard Book Number (ISBN) is for identifying printed books.",
   "subject": "bibliography",
   "location": "USA",

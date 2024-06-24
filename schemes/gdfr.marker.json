@@ -1,9 +1,9 @@
 {
   "id": "gdfr.marker",
   "target": {
-    "DEFAULT": "http://www.rosaceae.org/bio/content/?title=&url=http://www.rosaceae.org/cgi-bin/gdr/gdr_marker.cgi?MName_Result={content}"
+    "DEFAULT": "http://www.rosaceae.org/bio/content/?title=&url=http://www.rosaceae.org/cgi-bin/gdr/gdr_marker.cgi?MName_Result=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.rosaceae.org/bio/content/?title=&url=http://www.rosaceae.org/cgi-bin/gdr/gdr_marker.cgi?MName_Result={content}",
+  "redirect": "http://www.rosaceae.org/bio/content/?title=&url=http://www.rosaceae.org/cgi-bin/gdr/gdr_marker.cgi?MName_Result=${content}",
   "revision": 0
 }

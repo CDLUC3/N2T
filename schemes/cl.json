@@ -1,7 +1,7 @@
 {
   "id": "cl",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/CL/CL:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/CL/CL:${content}"
   },
   "type": "scheme",
   "name": "Cell Type Ontology through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/CL/CL:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/CL/CL:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/CL/CL:${content}",
   "description": "The Cell Ontology is designed as a structured controlled vocabulary for cell types. The ontology was constructed for use by the model organism and other bioinformatics databases, incorporating cell types from prokaryotes to mammals, and includes plants and fungi.",
   "subject": "ontology",
   "location": "USA",

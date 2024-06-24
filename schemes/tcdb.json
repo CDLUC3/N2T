@@ -1,7 +1,7 @@
 {
   "id": "tcdb",
   "target": {
-    "DEFAULT": "http://www.tcdb.org/search/result.php?tc={content}"
+    "DEFAULT": "http://www.tcdb.org/search/result.php?tc=${content}"
   },
   "type": "scheme",
   "name": "TCDB",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.tcdb.org/search/result.php?tc=${ac}",
-  "redirect": "http://www.tcdb.org/search/result.php?tc={content}",
+  "redirect": "http://www.tcdb.org/search/result.php?tc=${content}",
   "description": "The database details a comprehensive  IUBMB approved classification system for membrane transport proteins known as the Transporter Classification (TC) system. The TC system is analogous to the Enzyme Commission (EC) system for classification of enzymes, but incorporates phylogenetic information additionally.",
   "subject": "classification; interaction; protein",
   "location": "USA",

@@ -1,9 +1,9 @@
 {
   "id": "citexplore",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/citexplore/citationDetails.do?dataSource=MED&externalId={content}"
+    "DEFAULT": "http://www.ebi.ac.uk/citexplore/citationDetails.do?dataSource=MED&externalId=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/citexplore/citationDetails.do?dataSource=MED&externalId={content}",
+  "redirect": "http://www.ebi.ac.uk/citexplore/citationDetails.do?dataSource=MED&externalId=${content}",
   "revision": 0
 }

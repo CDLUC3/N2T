@@ -1,9 +1,9 @@
 {
   "id": "hgpd",
   "target": {
-    "DEFAULT": "http://riodb.ibase.aist.go.jp/hgpd/cgi-bin/pg_locus_list.cgi?txt_srch_cdna_name={content}"
+    "DEFAULT": "http://riodb.ibase.aist.go.jp/hgpd/cgi-bin/pg_locus_list.cgi?txt_srch_cdna_name=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://riodb.ibase.aist.go.jp/hgpd/cgi-bin/pg_locus_list.cgi?txt_srch_cdna_name={content}",
+  "redirect": "http://riodb.ibase.aist.go.jp/hgpd/cgi-bin/pg_locus_list.cgi?txt_srch_cdna_name=${content}",
   "revision": 0
 }

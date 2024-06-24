@@ -1,9 +1,9 @@
 {
   "id": "metacyc",
   "target": {
-    "DEFAULT": "http://biocyc.org/META/NEW-IMAGE?type=ENZYME&object={content}"
+    "DEFAULT": "http://biocyc.org/META/NEW-IMAGE?type=ENZYME&object=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://biocyc.org/META/NEW-IMAGE?type=ENZYME&object={content}",
+  "redirect": "http://biocyc.org/META/NEW-IMAGE?type=ENZYME&object=${content}",
   "revision": 0
 }

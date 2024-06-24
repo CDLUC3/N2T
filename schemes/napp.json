@@ -1,7 +1,7 @@
 {
   "id": "napp",
   "target": {
-    "DEFAULT": "http://rna.igmors.u-psud.fr/NAPP/Niveau2.php?specie={content}"
+    "DEFAULT": "http://rna.igmors.u-psud.fr/NAPP/Niveau2.php?specie=${content}"
   },
   "type": "scheme",
   "name": "NAPP at CNRS",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://rna.igmors.u-psud.fr/NAPP/Niveau2.php?specie=${ac}",
-  "redirect": "http://rna.igmors.u-psud.fr/NAPP/Niveau2.php?specie={content}",
+  "redirect": "http://rna.igmors.u-psud.fr/NAPP/Niveau2.php?specie=${content}",
   "description": "NAPP (Nucleic Acids Phylogenetic Profiling is a clustering method based on conserved noncoding RNA (ncRNA) elements in a bacterial genomes. Short intergenic regions from a reference genome are compared with other genomes to identify RNA rich clusters.",
   "subject": "nucleotide; clustering",
   "location": "France",

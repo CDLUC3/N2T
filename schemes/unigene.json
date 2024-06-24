@@ -1,7 +1,7 @@
 {
   "id": "unigene",
   "target": {
-    "DEFAULT": "http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?UGID={content}"
+    "DEFAULT": "http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?UGID=${content}"
   },
   "type": "scheme",
   "name": "UniGene at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?UGID=${ac}",
-  "redirect": "http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?UGID={content}",
+  "redirect": "http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?UGID=${content}",
   "description": "A UniGene entry is a set of transcript sequences that appear to come from the same transcription locus (gene or expressed pseudogene), together with information on protein similarities, gene expression, cDNA clone reagents, and genomic location.",
   "subject": null,
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "topdb",
   "target": {
-    "DEFAULT": "http://topdb.enzim.hu/?m=show&id={content}"
+    "DEFAULT": "http://topdb.enzim.hu/?m=show&id=${content}"
   },
   "type": "scheme",
   "name": "TOPDB at Hungarian Academy of Sciences",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://topdb.enzim.hu/?m=show&id=${ac}",
-  "redirect": "http://topdb.enzim.hu/?m=show&id={content}",
+  "redirect": "http://topdb.enzim.hu/?m=show&id=${content}",
   "description": "The Topology Data Bank of Transmembrane Proteins (TOPDB) is a collection of transmembrane protein datasets containing experimentally derived topology information. It contains information gathered from the literature and from public databases availableon transmembrane proteins. Each record in TOPDB also contains information on the given protein sequence, name, organism and cross references to various other databases.",
   "subject": "protein",
   "location": "Hungary",

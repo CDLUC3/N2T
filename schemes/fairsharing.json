@@ -1,7 +1,7 @@
 {
   "id": "fairsharing",
   "target": {
-    "DEFAULT": "https://fairsharing.org/{content}"
+    "DEFAULT": "https://fairsharing.org/${content}"
   },
   "type": "scheme",
   "name": "FAIRSharing at University of Oxford",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://fairsharing.org/${ac}",
-  "redirect": "https://fairsharing.org/{content}",
+  "redirect": "https://fairsharing.org/${content}",
   "description": "The web-based FAIRSharing catalogues aim to centralize bioscience data policies, reporting standards and links to other related portals. This collection references bioinformatics data exchange standards, which includes 'Reporting Guidelines', Format Specifications and Terminologies.",
   "subject": "registry; schema.org",
   "location": "UK",

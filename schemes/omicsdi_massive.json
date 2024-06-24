@@ -1,7 +1,7 @@
 {
   "id": "omicsdi/massive",
   "target": {
-    "DEFAULT": "https://www.omicsdi.org/dataset/massive/{content}"
+    "DEFAULT": "https://www.omicsdi.org/dataset/massive/${content}"
   },
   "type": "scheme",
   "name": "MassIVE through OmicsDI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.omicsdi.org/dataset/massive/${ac}",
-  "redirect": "https://www.omicsdi.org/dataset/massive/{content}",
+  "redirect": "https://www.omicsdi.org/dataset/massive/${content}",
   "description": "MassIVE is a community resource developed by the NIH-funded Center for Computational Mass Spectrometry to promote the global, free exchange of mass spectrometry data.",
   "subject": null,
   "location": "UK",

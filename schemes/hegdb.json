@@ -1,9 +1,9 @@
 {
   "id": "hegdb",
   "target": {
-    "DEFAULT": "http://genomes.urv.cat/HEG-DB/buscador/mostrar_statical.php?name={content}&aa=true&codon=true&rscu=true"
+    "DEFAULT": "http://genomes.urv.cat/HEG-DB/buscador/mostrar_statical.php?name=${content}&aa=true&codon=true&rscu=true"
   },
   "type": "commonspfx",
-  "redirect": "http://genomes.urv.cat/HEG-DB/buscador/mostrar_statical.php?name={content}&aa=true&codon=true&rscu=true",
+  "redirect": "http://genomes.urv.cat/HEG-DB/buscador/mostrar_statical.php?name=${content}&aa=true&codon=true&rscu=true",
   "revision": 0
 }

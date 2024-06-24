@@ -1,7 +1,7 @@
 {
   "id": "topfind",
   "target": {
-    "DEFAULT": "http://clipserve.clip.ubc.ca/topfind/proteins/{content}"
+    "DEFAULT": "http://clipserve.clip.ubc.ca/topfind/proteins/${content}"
   },
   "type": "scheme",
   "name": "TopFind at University of British Columbia",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://clipserve.clip.ubc.ca/topfind/proteins/${ac}",
-  "redirect": "http://clipserve.clip.ubc.ca/topfind/proteins/{content}",
+  "redirect": "http://clipserve.clip.ubc.ca/topfind/proteins/${content}",
   "description": "TopFIND is a database of protein termini, terminus modifications and their proteolytic processing in the species: Homo sapiens, Mus musculus, Arabidopsis thaliana, Saccharomyces cerevisiae and Escherichia coli.",
   "subject": "protein; domain",
   "location": "Canada",

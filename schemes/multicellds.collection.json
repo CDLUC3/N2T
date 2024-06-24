@@ -1,7 +1,7 @@
 {
   "id": "multicellds.collection",
   "target": {
-    "DEFAULT": "http://multicellds.org/MultiCellDB/{content}"
+    "DEFAULT": "http://multicellds.org/MultiCellDB/${content}"
   },
   "type": "scheme",
   "name": "MultiCellDScollection at Keck School of Medicine",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://multicellds.org/MultiCellDB/${ac}",
-  "redirect": "http://multicellds.org/MultiCellDB/{content}",
+  "redirect": "http://multicellds.org/MultiCellDB/${content}",
   "description": "MultiCellDS is data standard for multicellular simulation, experimental, and clinical data. A collection groups one or more individual uniquely identified cell lines, snapshots, or collections. Primary uses are times series (collections of snapshots), patient cohorts (collections of cell lines), and studies (collections of time series collections).",
   "subject": "model",
   "location": "USA",

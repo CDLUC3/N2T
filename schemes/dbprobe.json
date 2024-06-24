@@ -1,7 +1,7 @@
 {
   "id": "dbprobe",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/probe/?term={content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/probe/?term=${content}"
   },
   "type": "scheme",
   "name": "dbProbe at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/probe/?term=${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/probe/?term={content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/probe/?term=${content}",
   "description": "The NCBI Probe Database is a public registry of nucleic acid reagents designed for use in a wide variety of biomedical research applications, together with information on reagent distributors, probe effectiveness, and computed sequence similarities.",
   "subject": "nucleotide",
   "location": "USA",

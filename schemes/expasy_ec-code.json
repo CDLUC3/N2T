@@ -1,7 +1,7 @@
 {
   "id": "expasy/ec-code",
   "target": {
-    "DEFAULT": "https://enzyme.expasy.org/EC/{content}"
+    "DEFAULT": "https://enzyme.expasy.org/EC/${content}"
   },
   "type": "scheme",
   "name": "Enzyme nomenclature database, ExPASy (Expert Protein Analysis System)",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://enzyme.expasy.org/EC/${ac}",
-  "redirect": "https://enzyme.expasy.org/EC/{content}",
+  "redirect": "https://enzyme.expasy.org/EC/${content}",
   "description": "The Enzyme Classification contains the recommendations of the Nomenclature Committee of the International Union of Biochemistry and Molecular Biology on the nomenclature and classification of enzyme-catalysed reactions.",
   "subject": "enzyme; classification; protein; taxonomy",
   "location": "Switzerland",

@@ -1,7 +1,7 @@
 {
   "id": "biocyc",
   "target": {
-    "DEFAULT": "http://biocyc.org/getid?id={content}"
+    "DEFAULT": "http://biocyc.org/getid?id=${content}"
   },
   "type": "scheme",
   "name": "BioCyc at SRI International",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://biocyc.org/getid?id=${ac}",
-  "redirect": "http://biocyc.org/getid?id={content}",
+  "redirect": "http://biocyc.org/getid?id=${content}",
   "description": "BioCyc is a collection of Pathway/Genome Databases (PGDBs) which provides an electronic reference source on the genomes and metabolic pathways of sequenced organisms.",
   "subject": "chemical; sequence; reaction; genome; pathway",
   "location": "USA",

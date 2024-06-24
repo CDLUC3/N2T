@@ -1,9 +1,9 @@
 {
   "id": "epcondb",
   "target": {
-    "DEFAULT": "http://www.cbil.upenn.edu/epcondb42/showRecord.do?name=TranscriptRecordClasses.TranscriptRecordClass&project_id=GenomicsBC&primary_key={content}"
+    "DEFAULT": "http://www.cbil.upenn.edu/epcondb42/showRecord.do?name=TranscriptRecordClasses.TranscriptRecordClass&project_id=GenomicsBC&primary_key=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.cbil.upenn.edu/epcondb42/showRecord.do?name=TranscriptRecordClasses.TranscriptRecordClass&project_id=GenomicsBC&primary_key={content}",
+  "redirect": "http://www.cbil.upenn.edu/epcondb42/showRecord.do?name=TranscriptRecordClasses.TranscriptRecordClass&project_id=GenomicsBC&primary_key=${content}",
   "revision": 0
 }

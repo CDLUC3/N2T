@@ -1,9 +1,9 @@
 {
   "id": "homstrad",
   "target": {
-    "DEFAULT": "http://tardis.nibio.go.jp/cgi-bin/homstrad/getdata.cgi?id={content}"
+    "DEFAULT": "http://tardis.nibio.go.jp/cgi-bin/homstrad/getdata.cgi?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://tardis.nibio.go.jp/cgi-bin/homstrad/getdata.cgi?id={content}",
+  "redirect": "http://tardis.nibio.go.jp/cgi-bin/homstrad/getdata.cgi?id=${content}",
   "revision": 0
 }

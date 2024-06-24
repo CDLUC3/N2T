@@ -1,7 +1,7 @@
 {
   "id": "ec-code",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec={content}"
+    "DEFAULT": "https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=${content}"
   },
   "type": "scheme",
   "name": "IntEnZ (Integrated relational Enzyme database)",
@@ -11,7 +11,7 @@
   "sort_score": "3",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=${ac}",
-  "redirect": "https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec={content}",
+  "redirect": "https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=${content}",
   "description": "The Enzyme Classification contains the recommendations of the Nomenclature Committee of the International Union of Biochemistry and Molecular Biology on the nomenclature and classification of enzyme-catalysed reactions.",
   "subject": "enzyme; classification; protein; taxonomy",
   "location": "UK",

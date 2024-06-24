@@ -1,7 +1,7 @@
 {
   "id": "neurovault.collection",
   "target": {
-    "DEFAULT": "https://neurovault.org/collections/{content}"
+    "DEFAULT": "https://neurovault.org/collections/${content}"
   },
   "type": "scheme",
   "name": "NeuroVault Collection",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://neurovault.org/collections/${ac}",
-  "redirect": "https://neurovault.org/collections/{content}",
+  "redirect": "https://neurovault.org/collections/${content}",
   "description": "Neurovault is an online repository for statistical maps, parcellations and atlases of the brain. This collection references sets (collections) of images.",
   "subject": null,
   "location": "USA",

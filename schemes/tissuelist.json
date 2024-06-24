@@ -1,7 +1,7 @@
 {
   "id": "tissuelist",
   "target": {
-    "DEFAULT": "https://www.uniprot.org/tissues/{content}"
+    "DEFAULT": "https://www.uniprot.org/tissues/${content}"
   },
   "type": "scheme",
   "name": "Tissue List at Swiss Institute of Bioinformatics",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://www.uniprot.org/tissues/${ac}",
-  "redirect": "https://www.uniprot.org/tissues/{content}",
+  "redirect": "https://www.uniprot.org/tissues/${content}",
   "description": "The UniProt Tissue List is a controlled vocabulary of terms used to annotate biological tissues. It also contains cross-references to other ontologies where tissue types are specified.",
   "subject": "controlled vocabulary",
   "location": "Switzerland",

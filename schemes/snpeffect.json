@@ -1,9 +1,9 @@
 {
   "id": "snpeffect",
   "target": {
-    "DEFAULT": "http://snpeffect.vib.be/snp_main.php?id={content}"
+    "DEFAULT": "http://snpeffect.vib.be/snp_main.php?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://snpeffect.vib.be/snp_main.php?id={content}",
+  "redirect": "http://snpeffect.vib.be/snp_main.php?id=${content}",
   "revision": 0
 }

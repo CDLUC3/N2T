@@ -1,9 +1,9 @@
 {
   "id": "pisite",
   "target": {
-    "DEFAULT": "http://pisite.hgc.jp/cgi-bin/view.cgi?pdbid={content}&chain=[?chain]"
+    "DEFAULT": "http://pisite.hgc.jp/cgi-bin/view.cgi?pdbid=${content}&chain=[?chain]"
   },
   "type": "commonspfx",
-  "redirect": "http://pisite.hgc.jp/cgi-bin/view.cgi?pdbid={content}&chain=[?chain]",
+  "redirect": "http://pisite.hgc.jp/cgi-bin/view.cgi?pdbid=${content}&chain=[?chain]",
   "revision": 0
 }

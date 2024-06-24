@@ -1,7 +1,7 @@
 {
   "id": "bao",
   "target": {
-    "DEFAULT": "http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_{content}"
+    "DEFAULT": "http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_${content}"
   },
   "type": "scheme",
   "name": "BioAssay Ontology through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_${ac}",
-  "redirect": "http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_{content}",
+  "redirect": "http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_${content}",
   "description": "The BioAssay Ontology (BAO) describes chemical biology screening assays and their results including high-throughput screening (HTS) data for the purpose of categorizing assays and data analysis.",
   "subject": null,
   "location": "USA",

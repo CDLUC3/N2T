@@ -1,7 +1,7 @@
 {
   "id": "biomodels.vocabulary",
   "target": {
-    "DEFAULT": "http://biomodels.net/rdf/vocabulary.rdf#{content}"
+    "DEFAULT": "http://biomodels.net/rdf/vocabulary.rdf#${content}"
   },
   "type": "scheme",
   "name": "Vocabulary via BioModels.net",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://biomodels.net/rdf/vocabulary.rdf#${ac}",
-  "redirect": "http://biomodels.net/rdf/vocabulary.rdf#{content}",
+  "redirect": "http://biomodels.net/rdf/vocabulary.rdf#${content}",
   "description": "Vocabulary used in the RDF representation of SBML models.",
   "subject": null,
   "location": "UK",

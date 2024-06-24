@@ -1,9 +1,9 @@
 {
   "id": "flight",
   "target": {
-    "DEFAULT": "http://flight.licr.org/browse/view_rnai_hits.jsp?project_id=[$project_id]&screen_id={content}"
+    "DEFAULT": "http://flight.licr.org/browse/view_rnai_hits.jsp?project_id=[$project_id]&screen_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://flight.licr.org/browse/view_rnai_hits.jsp?project_id=[$project_id]&screen_id={content}",
+  "redirect": "http://flight.licr.org/browse/view_rnai_hits.jsp?project_id=[$project_id]&screen_id=${content}",
   "revision": 0
 }

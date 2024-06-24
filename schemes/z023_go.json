@@ -1,7 +1,7 @@
 {
   "id": "z023/go",
   "target": {
-    "DEFAULT": "http://www.pantherdb.org/panther/category.do?categoryAcc=GO:{content}"
+    "DEFAULT": "http://www.pantherdb.org/panther/category.do?categoryAcc=GO:${content}"
   },
   "type": "scheme",
   "name": "GO through PANTHER",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.pantherdb.org/panther/category.do?categoryAcc=GO:${ac}",
-  "redirect": "http://www.pantherdb.org/panther/category.do?categoryAcc=GO:{content}",
+  "redirect": "http://www.pantherdb.org/panther/category.do?categoryAcc=GO:${content}",
   "description": "The Gene Ontology project provides a controlled vocabulary to describe gene and gene product attributes in any organism.",
   "subject": "ontology",
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "omicsdi/ega.dataset",
   "target": {
-    "DEFAULT": "https://www.omicsdi.org/dataset/ega/{content}"
+    "DEFAULT": "https://www.omicsdi.org/dataset/ega/${content}"
   },
   "type": "scheme",
   "name": "EGA Dataset through OmicsDI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.omicsdi.org/dataset/ega/${ac}",
-  "redirect": "https://www.omicsdi.org/dataset/ega/{content}",
+  "redirect": "https://www.omicsdi.org/dataset/ega/${content}",
   "description": "The EGA is a service for permanent archiving and sharing of all types of personally identifiable genetic and phenotypic data resulting from biomedical research projects. The EGA contains exclusive data collected from individuals whose consent agreements authorize data release only for specific research use or to bona fide researchers. Strict protocols govern how information is managed, stored and distributed by the EGA project. This collection references 'Datasets'.",
   "subject": "phenotype; gene; human",
   "location": "UK",

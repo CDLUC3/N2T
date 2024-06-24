@@ -1,7 +1,7 @@
 {
   "id": "antweb",
   "target": {
-    "DEFAULT": "http://www.antweb.org/specimen.do?name={content}"
+    "DEFAULT": "http://www.antweb.org/specimen.do?name=${content}"
   },
   "type": "scheme",
   "name": "AntWeb at California Academy of Sciences",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.antweb.org/specimen.do?name=${ac}",
-  "redirect": "http://www.antweb.org/specimen.do?name={content}",
+  "redirect": "http://www.antweb.org/specimen.do?name=${content}",
   "description": "AntWeb is a website documenting the known species of ants, with records for each species linked to their geographical distribution, life history, and includes pictures.",
   "subject": "classification",
   "location": "USA",

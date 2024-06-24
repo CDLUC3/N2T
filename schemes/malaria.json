@@ -1,9 +1,9 @@
 {
   "id": "malaria",
   "target": {
-    "DEFAULT": "http://sites.huji.ac.il/malaria/maps/{content}.html"
+    "DEFAULT": "http://sites.huji.ac.il/malaria/maps/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://sites.huji.ac.il/malaria/maps/{content}.html",
+  "redirect": "http://sites.huji.ac.il/malaria/maps/${content}.html",
   "revision": 0
 }

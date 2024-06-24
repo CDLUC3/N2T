@@ -1,7 +1,7 @@
 {
   "id": "degradome",
   "target": {
-    "DEFAULT": "http://degradome.uniovi.es/cgi-bin/protease/{content}"
+    "DEFAULT": "http://degradome.uniovi.es/cgi-bin/protease/${content}"
   },
   "type": "scheme",
   "name": "Degradome Database at",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://degradome.uniovi.es/cgi-bin/protease/${ac}",
-  "redirect": "http://degradome.uniovi.es/cgi-bin/protease/{content}",
+  "redirect": "http://degradome.uniovi.es/cgi-bin/protease/${content}",
   "description": "The Degradome Database contains information on the complete set of predicted proteases present in a a variety of mammalian species that have been subjected to whole genome sequencing. Each protease sequence is curated and, when necessary, cloned and sequenced.",
   "subject": null,
   "location": "Spain",

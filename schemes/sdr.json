@@ -1,9 +1,9 @@
 {
   "id": "sdr",
   "target": {
-    "DEFAULT": "http://paradox.harvard.edu/sdr/families/{content}/{content}_main.html"
+    "DEFAULT": "http://paradox.harvard.edu/sdr/families/${content}/${content}_main.html"
   },
   "type": "commonspfx",
-  "redirect": "http://paradox.harvard.edu/sdr/families/{content}/{content}_main.html",
+  "redirect": "http://paradox.harvard.edu/sdr/families/${content}/${content}_main.html",
   "revision": 0
 }

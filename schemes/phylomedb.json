@@ -1,7 +1,7 @@
 {
   "id": "phylomedb",
   "target": {
-    "DEFAULT": "http://phylomedb.org/?seqid={content}"
+    "DEFAULT": "http://phylomedb.org/?seqid=${content}"
   },
   "type": "scheme",
   "name": "PhylomeDB at Centro de Investigaci&#xF3;n Pr&#xED;ncipe Felipe",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://phylomedb.org/?seqid=${ac}",
-  "redirect": "http://phylomedb.org/?seqid={content}",
+  "redirect": "http://phylomedb.org/?seqid=${content}",
   "description": "PhylomeDB is a database of complete phylomes derived for different genomes within a specific taxonomic range. It provides alignments, phylogentic trees and tree-based orthology predictions for all encoded proteins.",
   "subject": "taxonomy; protein; genome",
   "location": "Spain",

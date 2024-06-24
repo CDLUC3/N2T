@@ -1,7 +1,7 @@
 {
   "id": "z032/chembl.compound",
   "target": {
-    "DEFAULT": "https://rdf.ebi.ac.uk/resource/chembl/molecule/{content}"
+    "DEFAULT": "https://rdf.ebi.ac.uk/resource/chembl/molecule/${content}"
   },
   "type": "scheme",
   "name": "ChEMBL compound RDF through EBI RDF Platform",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://rdf.ebi.ac.uk/resource/chembl/molecule/${ac}",
-  "redirect": "https://rdf.ebi.ac.uk/resource/chembl/molecule/{content}",
+  "redirect": "https://rdf.ebi.ac.uk/resource/chembl/molecule/${content}",
   "description": "ChEMBL is a database of bioactive compounds, their quantitative properties and bioactivities (binding constants, pharmacology and ADMET, etc). The data is abstracted and curated from the primary scientific literature.",
   "subject": "chemical; metabolite",
   "location": "UK",

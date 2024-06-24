@@ -1,9 +1,9 @@
 {
   "id": "hcnet",
   "target": {
-    "DEFAULT": "http://sbrg2.gist.ac.kr/hcnet/ver1.1/php/showDetailGeneInfo.php?unigeneID={content}"
+    "DEFAULT": "http://sbrg2.gist.ac.kr/hcnet/ver1.1/php/showDetailGeneInfo.php?unigeneID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://sbrg2.gist.ac.kr/hcnet/ver1.1/php/showDetailGeneInfo.php?unigeneID={content}",
+  "redirect": "http://sbrg2.gist.ac.kr/hcnet/ver1.1/php/showDetailGeneInfo.php?unigeneID=${content}",
   "revision": 0
 }

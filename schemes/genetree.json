@@ -1,7 +1,7 @@
 {
   "id": "genetree",
   "target": {
-    "DEFAULT": "http://www.ensembl.org/Multi/GeneTree/Image?db=core;gt={content}"
+    "DEFAULT": "http://www.ensembl.org/Multi/GeneTree/Image?db=core;gt=${content}"
   },
   "type": "scheme",
   "name": "GeneTree at Ensembl",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.ensembl.org/Multi/GeneTree/Image?db=core;gt=${ac}",
-  "redirect": "http://www.ensembl.org/Multi/GeneTree/Image?db=core;gt={content}",
+  "redirect": "http://www.ensembl.org/Multi/GeneTree/Image?db=core;gt=${content}",
   "description": "Genetree displays the maximum likelihood phylogenetic (protein) trees representing the evolutionary history of the genes. These are constructed using the canonical protein for every gene in Ensembl.",
   "subject": "classification; gene; protein; schema.org",
   "location": "UK",

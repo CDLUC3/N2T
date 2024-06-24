@@ -1,9 +1,9 @@
 {
   "id": "intenz",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/intenz/query?cmd=SearchID&id={content}"
+    "DEFAULT": "http://www.ebi.ac.uk/intenz/query?cmd=SearchID&id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/intenz/query?cmd=SearchID&id={content}",
+  "redirect": "http://www.ebi.ac.uk/intenz/query?cmd=SearchID&id=${content}",
   "revision": 0
 }

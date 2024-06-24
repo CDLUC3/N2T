@@ -1,7 +1,7 @@
 {
   "id": "oci",
   "target": {
-    "DEFAULT": "https://w3id.org/oc/oci/{content}"
+    "DEFAULT": "https://w3id.org/oc/oci/${content}"
   },
   "type": "scheme",
   "name": "OpenCitations",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://w3id.org/oc/oci/${ac}",
-  "redirect": "https://w3id.org/oc/oci/{content}",
+  "redirect": "https://w3id.org/oc/oci/${content}",
   "description": "Each OCI (Open Citation Identifier) has a simple structure: oci:number-number, where &#x201C;oci:&#x201D; is the identifier prefix, and is used to identify a citation as a first-class data entitiy - see https://opencitations.wordpress.com/2018/02/19/citations-as-first-class-data-entities-introduction/ for additional information.  OCIs for citations stored within the OpenCitations Corpus are constructed by combining the OpenCitations Corpus local identifiers for the citing and cited bibliographic resources, separating them with a dash. For example, oci:2544384-7295288 is a valid OCI for the citation between two papers stored within the OpenCitations Corpus.  OCIs can also be created for bibliographic resources described in an external bibliographic database, if they are similarly identified there by identifiers having a unique numerical part. For example, the OCI for the citation that exists between Wikidata resources Q27931310 and Q22252312 is oci:01027931310&#x2013;01022252312.  OCIs can also be created for bibliographic resources described in external bibliographic database such as Crossref or DataCite where they are identified by alphanumeric Digital Object Identifiers (DOIs), rather than purely numerical strings.",
   "subject": null,
   "location": "Italy",

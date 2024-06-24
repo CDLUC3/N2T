@@ -1,7 +1,7 @@
 {
   "id": "gmd.gcms",
   "target": {
-    "DEFAULT": "http://gmd.mpimp-golm.mpg.de/Spectrums/{content}"
+    "DEFAULT": "http://gmd.mpimp-golm.mpg.de/Spectrums/${content}"
   },
   "type": "scheme",
   "name": "Golm Metabolome Database (GC-MS Spectra) at Max Planck Institute of Molecular Plant Physiology",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://gmd.mpimp-golm.mpg.de/Spectrums/${ac}",
-  "redirect": "http://gmd.mpimp-golm.mpg.de/Spectrums/{content}",
+  "redirect": "http://gmd.mpimp-golm.mpg.de/Spectrums/${content}",
   "description": "Golm Metabolome Database (GMD) provides public access to custom mass spectral libraries, metabolite profiling experiments as well as additional information and tools. Analytes are subjected to a gas chromatograph coupled to a mass spectrometer, which records the mass spectrum and the retention time linked to an analyte. This collection references GC-MS spectra.",
   "subject": "metabolite; mass spectrometry",
   "location": "Germany",

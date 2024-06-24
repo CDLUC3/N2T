@@ -1,9 +1,9 @@
 {
   "id": "netbiochem",
   "target": {
-    "DEFAULT": "http://library.med.utah.edu/NetBiochem/{content}.htm"
+    "DEFAULT": "http://library.med.utah.edu/NetBiochem/${content}.htm"
   },
   "type": "commonspfx",
-  "redirect": "http://library.med.utah.edu/NetBiochem/{content}.htm",
+  "redirect": "http://library.med.utah.edu/NetBiochem/${content}.htm",
   "revision": 0
 }

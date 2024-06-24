@@ -1,9 +1,9 @@
 {
   "id": "imgt.3dstructuredb",
   "target": {
-    "DEFAULT": "http://imgt.cines.fr/3Dstructure-DB/cgi/details.cgi?pdbcode={content}"
+    "DEFAULT": "http://imgt.cines.fr/3Dstructure-DB/cgi/details.cgi?pdbcode=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://imgt.cines.fr/3Dstructure-DB/cgi/details.cgi?pdbcode={content}",
+  "redirect": "http://imgt.cines.fr/3Dstructure-DB/cgi/details.cgi?pdbcode=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "ycmn.protein",
   "target": {
-    "DEFAULT": "http://www.comp-sys-bio.org/yeastnet/v4/showProteins.php?protein_id={content}"
+    "DEFAULT": "http://www.comp-sys-bio.org/yeastnet/v4/showProteins.php?protein_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.comp-sys-bio.org/yeastnet/v4/showProteins.php?protein_id={content}",
+  "redirect": "http://www.comp-sys-bio.org/yeastnet/v4/showProteins.php?protein_id=${content}",
   "revision": 0
 }

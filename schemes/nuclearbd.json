@@ -1,7 +1,7 @@
 {
   "id": "nuclearbd",
   "target": {
-    "DEFAULT": "http://www.receptors.org/nucleardb/proteins/{content}"
+    "DEFAULT": "http://www.receptors.org/nucleardb/proteins/${content}"
   },
   "type": "scheme",
   "name": "NucleaRDB at Radboud University Nijmegen Medical Centre",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.receptors.org/nucleardb/proteins/${ac}",
-  "redirect": "http://www.receptors.org/nucleardb/proteins/{content}",
+  "redirect": "http://www.receptors.org/nucleardb/proteins/${content}",
   "description": "NucleaRDB is an information system that stores heterogenous data on Nuclear Hormone Receptors (NHRs). It contains data on sequences, ligand binding constants and mutations for NHRs.",
   "subject": "interaction; sequence; protein",
   "location": "Holland",

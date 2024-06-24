@@ -1,7 +1,7 @@
 {
   "id": "ols/hp",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/hp/terms?obo_id=HP:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/hp/terms?obo_id=HP:${content}"
   },
   "type": "scheme",
   "name": "Human Phenotype Ontology through OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/hp/terms?obo_id=HP:${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/hp/terms?obo_id=HP:{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/hp/terms?obo_id=HP:${content}",
   "description": "The Human Phenotype Ontology (HPO) aims to provide a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM.",
   "subject": "human; phenotype; ontology",
   "location": "UK",

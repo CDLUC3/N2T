@@ -1,7 +1,7 @@
 {
   "id": "ecoliwiki",
   "target": {
-    "DEFAULT": "http://ecoliwiki.net/colipedia/index.php/{content}:Gene"
+    "DEFAULT": "http://ecoliwiki.net/colipedia/index.php/${content}:Gene"
   },
   "type": "scheme",
   "name": "EcoliWiki at Texas Agrilife Research",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://ecoliwiki.net/colipedia/index.php/${ac}:Gene",
-  "redirect": "http://ecoliwiki.net/colipedia/index.php/{content}:Gene",
+  "redirect": "http://ecoliwiki.net/colipedia/index.php/${content}:Gene",
   "description": "EcoliWiki is a wiki-based resource to store information related to non-pathogenic E. coli, its phages, plasmids, and mobile genetic elements. This collection references genes.",
   "subject": "genome; microbial",
   "location": "USA",

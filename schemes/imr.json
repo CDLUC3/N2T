@@ -1,9 +1,9 @@
 {
   "id": "imr",
   "target": {
-    "DEFAULT": "http://www.inoh.org/ontology-viewer/cgi-bin/InohOVAttr.php?type=IMR&id={content}"
+    "DEFAULT": "http://www.inoh.org/ontology-viewer/cgi-bin/InohOVAttr.php?type=IMR&id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.inoh.org/ontology-viewer/cgi-bin/InohOVAttr.php?type=IMR&id={content}",
+  "redirect": "http://www.inoh.org/ontology-viewer/cgi-bin/InohOVAttr.php?type=IMR&id=${content}",
   "revision": 0
 }

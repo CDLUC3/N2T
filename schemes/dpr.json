@@ -1,9 +1,9 @@
 {
   "id": "dpr",
   "target": {
-    "DEFAULT": "http://dnasu.asu.edu/DNASU/GetCloneDetail.do?cloneid={content}"
+    "DEFAULT": "http://dnasu.asu.edu/DNASU/GetCloneDetail.do?cloneid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://dnasu.asu.edu/DNASU/GetCloneDetail.do?cloneid={content}",
+  "redirect": "http://dnasu.asu.edu/DNASU/GetCloneDetail.do?cloneid=${content}",
   "revision": 0
 }

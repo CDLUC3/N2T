@@ -1,9 +1,9 @@
 {
   "id": "dart",
   "target": {
-    "DEFAULT": "http://xin.cz3.nus.edu.sg/group/DRT/Detail.asp?ID={content}"
+    "DEFAULT": "http://xin.cz3.nus.edu.sg/group/DRT/Detail.asp?ID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://xin.cz3.nus.edu.sg/group/DRT/Detail.asp?ID={content}",
+  "redirect": "http://xin.cz3.nus.edu.sg/group/DRT/Detail.asp?ID=${content}",
   "revision": 0
 }

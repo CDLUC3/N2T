@@ -1,7 +1,7 @@
 {
   "id": "pass2",
   "target": {
-    "DEFAULT": "http://caps.ncbs.res.in/cgi-bin/pass2//show_sf.py?sf_id={content}"
+    "DEFAULT": "http://caps.ncbs.res.in/cgi-bin/pass2//show_sf.py?sf_id=${content}"
   },
   "type": "scheme",
   "name": "PASS2 at National centre for Biological Sciences (India)",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://caps.ncbs.res.in/cgi-bin/pass2//show_sf.py?sf_id=${ac}",
-  "redirect": "http://caps.ncbs.res.in/cgi-bin/pass2//show_sf.py?sf_id={content}",
+  "redirect": "http://caps.ncbs.res.in/cgi-bin/pass2//show_sf.py?sf_id=${content}",
   "description": "The PASS2 database provides alignments of proteins related at the superfamily level and are characterized by low sequence identity.",
   "subject": null,
   "location": "India",

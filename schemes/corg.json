@@ -1,9 +1,9 @@
 {
   "id": "corg",
   "target": {
-    "DEFAULT": "http://corg.eb.tuebingen.mpg.de/cgi-bin/get_gene_info_v38.pl?id={content}&species=[?species_name]&version=v38"
+    "DEFAULT": "http://corg.eb.tuebingen.mpg.de/cgi-bin/get_gene_info_v38.pl?id=${content}&species=[?species_name]&version=v38"
   },
   "type": "commonspfx",
-  "redirect": "http://corg.eb.tuebingen.mpg.de/cgi-bin/get_gene_info_v38.pl?id={content}&species=[?species_name]&version=v38",
+  "redirect": "http://corg.eb.tuebingen.mpg.de/cgi-bin/get_gene_info_v38.pl?id=${content}&species=[?species_name]&version=v38",
   "revision": 0
 }

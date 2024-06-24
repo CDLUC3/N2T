@@ -1,7 +1,7 @@
 {
   "id": "bugbase.expt",
   "target": {
-    "DEFAULT": "http://bugs.sgul.ac.uk/bugsbase/tabs/experiment.php?expt_id={content}&action=view"
+    "DEFAULT": "http://bugs.sgul.ac.uk/bugsbase/tabs/experiment.php?expt_id=${content}&action=view"
   },
   "type": "scheme",
   "name": "BugBase Expt at University of London",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://bugs.sgul.ac.uk/bugsbase/tabs/experiment.php?expt_id=${ac}&action=view",
-  "redirect": "http://bugs.sgul.ac.uk/bugsbase/tabs/experiment.php?expt_id={content}&action=view",
+  "redirect": "http://bugs.sgul.ac.uk/bugsbase/tabs/experiment.php?expt_id=${content}&action=view",
   "description": "BugBase is a MIAME-compliant microbial gene expression and comparative genomic database. It stores experimental annotation and multiple raw and analysed data formats, as well as protocols for bacterial microarray designs. This collection references microarray experiments.",
   "subject": "expression; microbial; microarray",
   "location": "UK",

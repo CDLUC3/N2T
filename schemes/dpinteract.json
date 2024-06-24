@@ -1,9 +1,9 @@
 {
   "id": "dpinteract",
   "target": {
-    "DEFAULT": "http://arep.med.harvard.edu/ecoli_matrices/sco/{content}.sco"
+    "DEFAULT": "http://arep.med.harvard.edu/ecoli_matrices/sco/${content}.sco"
   },
   "type": "commonspfx",
-  "redirect": "http://arep.med.harvard.edu/ecoli_matrices/sco/{content}.sco",
+  "redirect": "http://arep.med.harvard.edu/ecoli_matrices/sco/${content}.sco",
   "revision": 0
 }

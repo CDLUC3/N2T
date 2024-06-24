@@ -1,7 +1,7 @@
 {
   "id": "glytoucan",
   "target": {
-    "DEFAULT": "https://glytoucan.org/Structures/Glycans/{content}"
+    "DEFAULT": "https://glytoucan.org/Structures/Glycans/${content}"
   },
   "type": "scheme",
   "name": "The Glycan Repository",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://glytoucan.org/Structures/Glycans/${ac}",
-  "redirect": "https://glytoucan.org/Structures/Glycans/{content}",
+  "redirect": "https://glytoucan.org/Structures/Glycans/${content}",
   "description": "GlyTouCan is the single worldwide registry of glycan (carbohydrate sugar chain) data.",
   "subject": "schema.org",
   "location": "Japan",

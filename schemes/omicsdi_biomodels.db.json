@@ -1,7 +1,7 @@
 {
   "id": "omicsdi/biomodels.db",
   "target": {
-    "DEFAULT": "https://www.omicsdi.org/dataset/biomodels/{content}"
+    "DEFAULT": "https://www.omicsdi.org/dataset/biomodels/${content}"
   },
   "type": "scheme",
   "name": "BioModels through OmicsDI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.omicsdi.org/dataset/biomodels/${ac}",
-  "redirect": "https://www.omicsdi.org/dataset/biomodels/{content}",
+  "redirect": "https://www.omicsdi.org/dataset/biomodels/${content}",
   "description": "BioModels Database is a data resource that allows biologists to store, search and retrieve published mathematical models of biological interests.",
   "subject": "model",
   "location": "UK",

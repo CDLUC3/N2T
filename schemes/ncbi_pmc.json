@@ -1,7 +1,7 @@
 {
   "id": "ncbi/pmc",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/pmc/articles/{content}/?tool=pubmed"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/pmc/articles/${content}/?tool=pubmed"
   },
   "type": "scheme",
   "name": "PubMed Central",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/pmc/articles/${ac}/?tool=pubmed",
-  "redirect": "https://www.ncbi.nlm.nih.gov/pmc/articles/{content}/?tool=pubmed",
+  "redirect": "https://www.ncbi.nlm.nih.gov/pmc/articles/${content}/?tool=pubmed",
   "description": "PMC International (PMCI) is a free full-text archive of biomedical and life sciences journal literature. PMCI is a collaborative effort between the U.S. National Institutes of Health and the National Library of Medicine, the publishers whose journal content makes up the PMC archive, and organizations in other countries that share NIH's and NLM's interest in archiving life sciences literature.",
   "subject": "schema.org; bibliography",
   "location": "USA",

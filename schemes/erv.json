@@ -1,7 +1,7 @@
 {
   "id": "erv",
   "target": {
-    "DEFAULT": "https://herv.img.cas.cz/s/{content}"
+    "DEFAULT": "https://herv.img.cas.cz/s/${content}"
   },
   "type": "scheme",
   "name": "Human Endogenous Retrovirus Database",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://herv.img.cas.cz/s/${ac}",
-  "redirect": "https://herv.img.cas.cz/s/{content}",
+  "redirect": "https://herv.img.cas.cz/s/${content}",
   "description": "Endogenous retroviruses (ERVs) are common in vertebrate genomes; a typical mammalian genome contains tens to hundreds of thousands of ERV elements. Most ERVs are evolutionarily old and have accumulated multiple mutations, playing important roles in physiology and disease processes. The Human Endogenous Retrovirus Database (hERV) is compiled from the human genome nucleotide sequences obtained from Human Genome Projects, and screens those sequences for hERVs, whilst continuously improving classification and characterization of retroviral families. It provides access to individual reconstructed HERV elements, their sequence, structure and features.",
   "subject": "genome; human",
   "location": "Czech Republic",

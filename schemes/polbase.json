@@ -1,7 +1,7 @@
 {
   "id": "polbase",
   "target": {
-    "DEFAULT": "https://polbase.neb.com/polymerases/{content}#sequences"
+    "DEFAULT": "https://polbase.neb.com/polymerases/${content}#sequences"
   },
   "type": "scheme",
   "name": "PolBase at New England BioLabs",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://polbase.neb.com/polymerases/${ac}#sequences",
-  "redirect": "https://polbase.neb.com/polymerases/{content}#sequences",
+  "redirect": "https://polbase.neb.com/polymerases/${content}#sequences",
   "description": "Polbase is a database of DNA polymerases providing information on polymerase protein sequence, target DNA sequence, enzyme structure, sequence mutations and details on polymerase activity.",
   "subject": "DNA; enzyme",
   "location": "USA",

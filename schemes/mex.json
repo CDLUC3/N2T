@@ -1,7 +1,7 @@
 {
   "id": "mex",
   "target": {
-    "DEFAULT": "https://www.metabolome-express.org/datasetview.php?datasetid={content}"
+    "DEFAULT": "https://www.metabolome-express.org/datasetview.php?datasetid=${content}"
   },
   "type": "scheme",
   "name": "Metabolome Express",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.metabolome-express.org/datasetview.php?datasetid=${ac}",
-  "redirect": "https://www.metabolome-express.org/datasetview.php?datasetid={content}",
+  "redirect": "https://www.metabolome-express.org/datasetview.php?datasetid=${content}",
   "description": "A public place to process, interpret and share GC/MS metabolomics datasets.",
   "subject": null,
   "location": "Australia",

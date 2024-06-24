@@ -1,9 +1,9 @@
 {
   "id": "spbase",
   "target": {
-    "DEFAULT": "http://www.spbase.org/SpBase/search/viewAnnoGeneInfo.php?spu_id={content}"
+    "DEFAULT": "http://www.spbase.org/SpBase/search/viewAnnoGeneInfo.php?spu_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.spbase.org/SpBase/search/viewAnnoGeneInfo.php?spu_id={content}",
+  "redirect": "http://www.spbase.org/SpBase/search/viewAnnoGeneInfo.php?spu_id=${content}",
   "revision": 0
 }

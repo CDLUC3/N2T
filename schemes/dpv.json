@@ -1,7 +1,7 @@
 {
   "id": "dpv",
   "target": {
-    "DEFAULT": "http://www.dpvweb.net/dpv/showdpv.php?dpvno={content}"
+    "DEFAULT": "http://www.dpvweb.net/dpv/showdpv.php?dpvno=${content}"
   },
   "type": "scheme",
   "name": "DPV at Rothamsted",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.dpvweb.net/dpv/showdpv.php?dpvno=${ac}",
-  "redirect": "http://www.dpvweb.net/dpv/showdpv.php?dpvno={content}",
+  "redirect": "http://www.dpvweb.net/dpv/showdpv.php?dpvno=${content}",
   "description": "Description of Plant Viruses (DPV) provides information about viruses, viroids and satellites of plants, fungi and protozoa. It provides taxonomic information, including brief descriptions of each family and genus, and classified lists of virus sequences. The database also holds detailed information for all sequences of viruses, viroids and satellites of plants, fungi and protozoa that are complete or that contain at least one complete gene.",
   "subject": "plant",
   "location": "UK",

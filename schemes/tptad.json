@@ -1,9 +1,9 @@
 {
   "id": "tptad",
   "target": {
-    "DEFAULT": "http://plantta.jcvi.org/cgi-bin/plantta_report.pl?ta={content}"
+    "DEFAULT": "http://plantta.jcvi.org/cgi-bin/plantta_report.pl?ta=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://plantta.jcvi.org/cgi-bin/plantta_report.pl?ta={content}",
+  "redirect": "http://plantta.jcvi.org/cgi-bin/plantta_report.pl?ta=${content}",
   "revision": 0
 }

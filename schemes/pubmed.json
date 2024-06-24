@@ -1,7 +1,7 @@
 {
   "id": "pubmed",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/pubmed/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/pubmed/${content}"
   },
   "type": "scheme",
   "name": "NCBI PubMed",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ncbi.nlm.nih.gov/pubmed/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/pubmed/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/pubmed/${content}",
   "description": "PubMed is a service of the U.S. National Library of Medicine that includes citations from MEDLINE and other life science journals for biomedical articles back to the 1950s.",
   "subject": "schema.org; bibliography",
   "location": "USA",

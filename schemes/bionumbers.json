@@ -1,7 +1,7 @@
 {
   "id": "bionumbers",
   "target": {
-    "DEFAULT": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id={content}"
+    "DEFAULT": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id=${content}"
   },
   "type": "scheme",
   "name": "BioNumbers database",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id=${ac}",
-  "redirect": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id={content}",
+  "redirect": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id=${content}",
   "description": "BioNumbers is a database of key numberical information that may be used in molecular biology. Along with the numbers, it contains references to the original literature, useful comments, and related numeric data.",
   "subject": "registry",
   "location": "Israel",

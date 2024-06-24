@@ -1,9 +1,9 @@
 {
   "id": "oreganno",
   "target": {
-    "DEFAULT": "http://www.oreganno.org/oregano/recordview.action?recid={content}"
+    "DEFAULT": "http://www.oreganno.org/oregano/recordview.action?recid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.oreganno.org/oregano/recordview.action?recid={content}",
+  "redirect": "http://www.oreganno.org/oregano/recordview.action?recid=${content}",
   "revision": 0
 }

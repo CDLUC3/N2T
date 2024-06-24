@@ -1,7 +1,7 @@
 {
   "id": "uo",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/UO/UO:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/UO/UO:${content}"
   },
   "type": "scheme",
   "name": "Unit Ontology through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/UO/UO:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/UO/UO:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/UO/UO:${content}",
   "description": "Ontology of standardized units",
   "subject": "ontology",
   "location": "USA",

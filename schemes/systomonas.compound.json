@@ -1,9 +1,9 @@
 {
   "id": "systomonas.compound",
   "target": {
-    "DEFAULT": "http://www.systomonas.de/compound.php?cp_acc={content}"
+    "DEFAULT": "http://www.systomonas.de/compound.php?cp_acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.systomonas.de/compound.php?cp_acc={content}",
+  "redirect": "http://www.systomonas.de/compound.php?cp_acc=${content}",
   "revision": 0
 }

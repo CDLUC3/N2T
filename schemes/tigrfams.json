@@ -1,9 +1,9 @@
 {
   "id": "tigrfams",
   "target": {
-    "DEFAULT": "http://cmr.jcvi.org/cgi-bin/CMR/HmmReport.cgi?hmm_acc={content}"
+    "DEFAULT": "http://cmr.jcvi.org/cgi-bin/CMR/HmmReport.cgi?hmm_acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://cmr.jcvi.org/cgi-bin/CMR/HmmReport.cgi?hmm_acc={content}",
+  "redirect": "http://cmr.jcvi.org/cgi-bin/CMR/HmmReport.cgi?hmm_acc=${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "jws",
   "target": {
-    "DEFAULT": "http://jjj.mib.ac.uk/models/{content}"
+    "DEFAULT": "http://jjj.mib.ac.uk/models/${content}"
   },
   "type": "scheme",
   "name": "JWS Online Model Repository at Manchester",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://jjj.mib.ac.uk/models/${ac}",
-  "redirect": "http://jjj.mib.ac.uk/models/{content}",
+  "redirect": "http://jjj.mib.ac.uk/models/${content}",
   "description": "JWS Online is a repository of curated biochemical pathway models, and additionally provides the ability to run simulations of these models in a web browser.",
   "subject": "model",
   "location": "UK",

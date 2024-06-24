@@ -1,7 +1,7 @@
 {
   "id": "subtiwiki",
   "target": {
-    "DEFAULT": "http://www.subtiwiki.uni-goettingen.de/wiki/index.php/{content}"
+    "DEFAULT": "http://www.subtiwiki.uni-goettingen.de/wiki/index.php/${content}"
   },
   "type": "scheme",
   "name": "SubtiWiki website",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.subtiwiki.uni-goettingen.de/wiki/index.php/${ac}",
-  "redirect": "http://www.subtiwiki.uni-goettingen.de/wiki/index.php/{content}",
+  "redirect": "http://www.subtiwiki.uni-goettingen.de/wiki/index.php/${content}",
   "description": "SubtiWiki is a scientific wiki for the model bacterium Bacillus subtilis. It provides comprehensive information on all genes and their proteins and RNA products, as well as information related to the current investigation of the gene/protein.  Note: Currently, direct access to RNA products is restricted. This is expected to be rectified soon.",
   "subject": "protein; genome; microbial; gene",
   "location": "Germany",

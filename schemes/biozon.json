@@ -1,9 +1,9 @@
 {
   "id": "biozon",
   "target": {
-    "DEFAULT": "http://biozon.org/Biozon/Profile/{content}"
+    "DEFAULT": "http://biozon.org/Biozon/Profile/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://biozon.org/Biozon/Profile/{content}",
+  "redirect": "http://biozon.org/Biozon/Profile/${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "bindingdb",
   "target": {
-    "DEFAULT": "http://www.bindingdb.org/compact/{content}"
+    "DEFAULT": "http://www.bindingdb.org/compact/${content}"
   },
   "type": "scheme",
   "name": "BindingDB",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.bindingdb.org/compact/${ac}",
-  "redirect": "http://www.bindingdb.org/compact/{content}",
+  "redirect": "http://www.bindingdb.org/compact/${content}",
   "description": "BindingDB is the first public database of protein-small molecule affinity data.",
   "subject": "interaction; protein; drug",
   "location": "USA",

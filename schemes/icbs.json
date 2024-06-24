@@ -1,9 +1,9 @@
 {
   "id": "icbs",
   "target": {
-    "DEFAULT": "http://contact14.ics.uci.edu/htmlfiles/{content}.mmol.html"
+    "DEFAULT": "http://contact14.ics.uci.edu/htmlfiles/${content}.mmol.html"
   },
   "type": "commonspfx",
-  "redirect": "http://contact14.ics.uci.edu/htmlfiles/{content}.mmol.html",
+  "redirect": "http://contact14.ics.uci.edu/htmlfiles/${content}.mmol.html",
   "revision": 0
 }

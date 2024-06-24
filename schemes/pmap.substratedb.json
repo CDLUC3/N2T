@@ -1,7 +1,7 @@
 {
   "id": "pmap.substratedb",
   "target": {
-    "DEFAULT": "http://substrate.burnham.org/protein/annotation/{content}/html"
+    "DEFAULT": "http://substrate.burnham.org/protein/annotation/${content}/html"
   },
   "type": "scheme",
   "name": "SubstrateDB at The Burnham Institute for Medical Research",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://substrate.burnham.org/protein/annotation/${ac}/html",
-  "redirect": "http://substrate.burnham.org/protein/annotation/{content}/html",
+  "redirect": "http://substrate.burnham.org/protein/annotation/${content}/html",
   "description": "The Proteolysis MAP is a resource for proteolytic networks and pathways. PMAP is comprised of five databases, linked together in one environment. SubstrateDB contains molecular information on documented protease substrates.",
   "subject": "protein; reaction; domain",
   "location": "USA",

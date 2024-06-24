@@ -1,9 +1,9 @@
 {
   "id": "icds",
   "target": {
-    "DEFAULT": "http://www-bio3d-igbmc.u-strasbg.fr/ICDS/cgi-bin/gscope_html_server.tcsh?ICDS&PagesWeb&GvioManu&UnICDS&{content}"
+    "DEFAULT": "http://www-bio3d-igbmc.u-strasbg.fr/ICDS/cgi-bin/gscope_html_server.tcsh?ICDS&PagesWeb&GvioManu&UnICDS&${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www-bio3d-igbmc.u-strasbg.fr/ICDS/cgi-bin/gscope_html_server.tcsh?ICDS&PagesWeb&GvioManu&UnICDS&{content}",
+  "redirect": "http://www-bio3d-igbmc.u-strasbg.fr/ICDS/cgi-bin/gscope_html_server.tcsh?ICDS&PagesWeb&GvioManu&UnICDS&${content}",
   "revision": 0
 }

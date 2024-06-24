@@ -1,9 +1,9 @@
 {
   "id": "grin",
   "target": {
-    "DEFAULT": "http://www.ars.usda.gov/research/publications/publications.htm?seq_no_115={content}"
+    "DEFAULT": "http://www.ars.usda.gov/research/publications/publications.htm?seq_no_115=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ars.usda.gov/research/publications/publications.htm?seq_no_115={content}",
+  "redirect": "http://www.ars.usda.gov/research/publications/publications.htm?seq_no_115=${content}",
   "revision": 0
 }

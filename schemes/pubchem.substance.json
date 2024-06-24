@@ -1,7 +1,7 @@
 {
   "id": "pubchem.substance",
   "target": {
-    "DEFAULT": "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?sid={content}"
+    "DEFAULT": "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?sid=${content}"
   },
   "type": "scheme",
   "name": "NCBI PubChem Substance",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?sid=${ac}",
-  "redirect": "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?sid={content}",
+  "redirect": "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?sid=${content}",
   "description": "PubChem provides information on the biological activities of small molecules. It is a component of NIH's Molecular Libraries Roadmap Initiative. PubChem Substance archives chemical substance records.",
   "subject": "chemical",
   "location": "USA",

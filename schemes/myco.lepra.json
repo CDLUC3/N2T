@@ -1,7 +1,7 @@
 {
   "id": "myco.lepra",
   "target": {
-    "DEFAULT": "http://mycobrowser.epfl.ch/leprosysearch.php?gene+name={content}"
+    "DEFAULT": "http://mycobrowser.epfl.ch/leprosysearch.php?gene+name=${content}"
   },
   "type": "scheme",
   "name": "MycoBrowser leprae at Global Health Institute",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://mycobrowser.epfl.ch/leprosysearch.php?gene+name=${ac}",
-  "redirect": "http://mycobrowser.epfl.ch/leprosysearch.php?gene+name={content}",
+  "redirect": "http://mycobrowser.epfl.ch/leprosysearch.php?gene+name=${content}",
   "description": "Mycobrowser is a resource that provides both in silico generated and manually reviewed information within databases dedicated to the complete genomes of Mycobacterium tuberculosis, Mycobacterium leprae, Mycobacterium marinum and Mycobacterium smegmatis. This collection references Mycobacteria leprae information.",
   "subject": "genome; sequence",
   "location": "Switzerland",

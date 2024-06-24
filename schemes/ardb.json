@@ -1,7 +1,7 @@
 {
   "id": "ardb",
   "target": {
-    "DEFAULT": "http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term={content}"
+    "DEFAULT": "http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term=${content}"
   },
   "type": "scheme",
   "name": "ARDB at University of Maryland",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term=${ac}",
-  "redirect": "http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term={content}",
+  "redirect": "http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term=${content}",
   "description": "The Antibiotic Resistance Genes Database (ARDB) is a manually curated database which characterises genes involved in antibiotic resistance. Each gene and resistance type is annotated with information, including resistance profile, mechanism of action, ontology, COG and CDD annotations, as well as external links to sequence and protein databases. This collection references resistance genes.",
   "subject": "drug; gene",
   "location": "USA",

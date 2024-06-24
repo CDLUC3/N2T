@@ -1,9 +1,9 @@
 {
   "id": "poxvirus.gene",
   "target": {
-    "DEFAULT": "http://www.poxvirus.org/gene_detail.asp?gene_id={content}"
+    "DEFAULT": "http://www.poxvirus.org/gene_detail.asp?gene_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.poxvirus.org/gene_detail.asp?gene_id={content}",
+  "redirect": "http://www.poxvirus.org/gene_detail.asp?gene_id=${content}",
   "revision": 0
 }

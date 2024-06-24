@@ -1,7 +1,7 @@
 {
   "id": "ro",
   "target": {
-    "DEFAULT": "http://purl.obolibrary.org/obo/{content}"
+    "DEFAULT": "http://purl.obolibrary.org/obo/${content}"
   },
   "type": "scheme",
   "name": "OBO Relation Ontology through OntoBee",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.obolibrary.org/obo/${ac}",
-  "redirect": "http://purl.obolibrary.org/obo/{content}",
+  "redirect": "http://purl.obolibrary.org/obo/${content}",
   "description": "The OBO Relation Ontology provides consistent and unambiguous formal definitions of the relational expressions used in biomedical ontologies.",
   "subject": "ontology",
   "location": "USA",

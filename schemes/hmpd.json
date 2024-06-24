@@ -1,9 +1,9 @@
 {
   "id": "hmpd",
   "target": {
-    "DEFAULT": "http://bioinfo.nist.gov/hmpd/servlet/Search3?vswiss_id={content}"
+    "DEFAULT": "http://bioinfo.nist.gov/hmpd/servlet/Search3?vswiss_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://bioinfo.nist.gov/hmpd/servlet/Search3?vswiss_id={content}",
+  "redirect": "http://bioinfo.nist.gov/hmpd/servlet/Search3?vswiss_id=${content}",
   "revision": 0
 }

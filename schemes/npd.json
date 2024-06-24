@@ -1,9 +1,9 @@
 {
   "id": "npd",
   "target": {
-    "DEFAULT": "http://npd.hgu.mrc.ac.uk/user/{content}"
+    "DEFAULT": "http://npd.hgu.mrc.ac.uk/user/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://npd.hgu.mrc.ac.uk/user/{content}",
+  "redirect": "http://npd.hgu.mrc.ac.uk/user/${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "pathfinder",
   "target": {
-    "DEFAULT": "http://www.sigmaaldrich.com/life-science/your-favorite-gene-search/pathway-overviews/{content}.html"
+    "DEFAULT": "http://www.sigmaaldrich.com/life-science/your-favorite-gene-search/pathway-overviews/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://www.sigmaaldrich.com/life-science/your-favorite-gene-search/pathway-overviews/{content}.html",
+  "redirect": "http://www.sigmaaldrich.com/life-science/your-favorite-gene-search/pathway-overviews/${content}.html",
   "revision": 0
 }

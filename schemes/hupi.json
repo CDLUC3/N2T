@@ -1,9 +1,9 @@
 {
   "id": "hupi",
   "target": {
-    "DEFAULT": "http://hupi.ircm.qc.ca/hupi/gene/{content}"
+    "DEFAULT": "http://hupi.ircm.qc.ca/hupi/gene/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://hupi.ircm.qc.ca/hupi/gene/{content}",
+  "redirect": "http://hupi.ircm.qc.ca/hupi/gene/${content}",
   "revision": 0
 }

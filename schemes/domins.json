@@ -1,9 +1,9 @@
 {
   "id": "domins",
   "target": {
-    "DEFAULT": "http://www.domins.org/cgi/pdbcode.pl?id={content}"
+    "DEFAULT": "http://www.domins.org/cgi/pdbcode.pl?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.domins.org/cgi/pdbcode.pl?id={content}",
+  "redirect": "http://www.domins.org/cgi/pdbcode.pl?id=${content}",
   "revision": 0
 }

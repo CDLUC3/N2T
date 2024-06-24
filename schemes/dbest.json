@@ -1,7 +1,7 @@
 {
   "id": "dbest",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/nucest/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/nucest/${content}"
   },
   "type": "scheme",
   "name": "dbEST at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/nucest/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/nucest/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/nucest/${content}",
   "description": "The dbEST contains sequence data and other information on \"single-pass\" cDNA sequences, or \"Expressed Sequence Tags\", from a number of organisms.",
   "subject": "gene; expression",
   "location": "USA",

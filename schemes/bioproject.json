@@ -1,7 +1,7 @@
 {
   "id": "bioproject",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/bioproject?term={content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/bioproject?term=${content}"
   },
   "type": "scheme",
   "name": "BioProject at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/bioproject?term=${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/bioproject?term={content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/bioproject?term=${content}",
   "description": "BioProject provides an organizational framework to access metadata about research projects and the data from the projects that are deposited into different databases. It provides information about a project&#x2019;s scope, material, objectives, funding source and general relevance categories.",
   "subject": "annotation",
   "location": "USA",

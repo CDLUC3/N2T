@@ -1,7 +1,7 @@
 {
   "id": "crisprdb",
   "target": {
-    "DEFAULT": "http://crispr.i2bc.paris-saclay.fr/cgi-bin/crispr/SpecieProperties_db.cgi?Taxon_id[]={content}"
+    "DEFAULT": "http://crispr.i2bc.paris-saclay.fr/cgi-bin/crispr/SpecieProperties_db.cgi?Taxon_id[]=${content}"
   },
   "type": "scheme",
   "name": "CRISPRdb",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://crispr.i2bc.paris-saclay.fr/cgi-bin/crispr/SpecieProperties_db.cgi?Taxon_id[]=${ac}",
-  "redirect": "http://crispr.i2bc.paris-saclay.fr/cgi-bin/crispr/SpecieProperties_db.cgi?Taxon_id[]={content}",
+  "redirect": "http://crispr.i2bc.paris-saclay.fr/cgi-bin/crispr/SpecieProperties_db.cgi?Taxon_id[]=${content}",
   "description": "Repeated CRISPR (\"clustered regularly interspaced short palindromic repeats\") elements found in archaebacteria and eubacteria are believed to defend against viral infection, potentially targeting invading DNA for degradation. CRISPRdb is a database that stores information on CRISPRs that are automatically extracted from newly released genome sequence data.",
   "subject": "sequence; microbial",
   "location": "France",

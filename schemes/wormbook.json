@@ -1,9 +1,9 @@
 {
   "id": "wormbook",
   "target": {
-    "DEFAULT": "http://www.wormbook.org/chapters/{content}"
+    "DEFAULT": "http://www.wormbook.org/chapters/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.wormbook.org/chapters/{content}",
+  "redirect": "http://www.wormbook.org/chapters/${content}",
   "revision": 0
 }

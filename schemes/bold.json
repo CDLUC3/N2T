@@ -1,9 +1,9 @@
 {
   "id": "bold",
   "target": {
-    "DEFAULT": "http://www.barcodinglife.com/views/taxbrowser.php?taxid={content}"
+    "DEFAULT": "http://www.barcodinglife.com/views/taxbrowser.php?taxid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.barcodinglife.com/views/taxbrowser.php?taxid={content}",
+  "redirect": "http://www.barcodinglife.com/views/taxbrowser.php?taxid=${content}",
   "revision": 0
 }

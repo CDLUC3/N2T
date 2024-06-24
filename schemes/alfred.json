@@ -1,9 +1,9 @@
 {
   "id": "alfred",
   "target": {
-    "DEFAULT": "http://alfred.med.yale.edu/alfred/recordinfo.asp?condition=loci.locus_uid=%27{content}"
+    "DEFAULT": "http://alfred.med.yale.edu/alfred/recordinfo.asp?condition=loci.locus_uid=%27${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://alfred.med.yale.edu/alfred/recordinfo.asp?condition=loci.locus_uid=%27{content}",
+  "redirect": "http://alfred.med.yale.edu/alfred/recordinfo.asp?condition=loci.locus_uid=%27${content}",
   "revision": 0
 }

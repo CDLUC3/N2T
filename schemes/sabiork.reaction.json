@@ -1,7 +1,7 @@
 {
   "id": "sabiork.reaction",
   "target": {
-    "DEFAULT": "http://sabiork.h-its.org/newSearch?q=sabioreactionid:{content}"
+    "DEFAULT": "http://sabiork.h-its.org/newSearch?q=sabioreactionid:${content}"
   },
   "type": "scheme",
   "name": "SABIO-RK reaction",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://sabiork.h-its.org/newSearch?q=sabioreactionid:${ac}",
-  "redirect": "http://sabiork.h-its.org/newSearch?q=sabioreactionid:{content}",
+  "redirect": "http://sabiork.h-its.org/newSearch?q=sabioreactionid:${content}",
   "description": "SABIO-RK is a relational database system that contains information about biochemical reactions, their kinetic equations with their parameters, and the experimental conditions under which these parameters were measured. The reaction data set provides information regarding the organism in which a reaction is observed, pathways in which it participates, and links to further information.",
   "subject": "kinetics; reaction; pathway",
   "location": "Germany",

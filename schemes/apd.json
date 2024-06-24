@@ -1,7 +1,7 @@
 {
   "id": "apd",
   "target": {
-    "DEFAULT": "http://aps.unmc.edu/AP/database/query_output.php?ID={content}"
+    "DEFAULT": "http://aps.unmc.edu/AP/database/query_output.php?ID=${content}"
   },
   "type": "scheme",
   "name": "APD at Nebraska",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://aps.unmc.edu/AP/database/query_output.php?ID=${ac}",
-  "redirect": "http://aps.unmc.edu/AP/database/query_output.php?ID={content}",
+  "redirect": "http://aps.unmc.edu/AP/database/query_output.php?ID=${content}",
   "description": "The antimicrobial peptide database (APD) provides information on anticancer, antiviral, antifungal and antibacterial peptides.",
   "subject": "protein; drug",
   "location": "USA",

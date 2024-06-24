@@ -1,7 +1,7 @@
 {
   "id": "mpid",
   "target": {
-    "DEFAULT": "http://www.jcvi.org/mpidb/experiment.php?interaction_id={content}"
+    "DEFAULT": "http://www.jcvi.org/mpidb/experiment.php?interaction_id=${content}"
   },
   "type": "scheme",
   "name": "Microbial Protein Interaction Database",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.jcvi.org/mpidb/experiment.php?interaction_id=${ac}",
-  "redirect": "http://www.jcvi.org/mpidb/experiment.php?interaction_id={content}",
+  "redirect": "http://www.jcvi.org/mpidb/experiment.php?interaction_id=${content}",
   "description": "The microbial protein interaction database (MPIDB) provides physical microbial interaction data. The interactions are manually curated from the literature or imported from other databases, and are linked to supporting experimental evidence, as well as evidences based on interaction conservation, protein complex membership, and 3D domain contacts.",
   "subject": "microbial; protein; interaction",
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "swisslipid",
   "target": {
-    "DEFAULT": "http://www.swisslipids.org/#/entity/SLM:{content}/"
+    "DEFAULT": "http://www.swisslipids.org/#/entity/SLM:${content}/"
   },
   "type": "scheme",
   "name": "SwissLipids at Swiss Institute of Bioinformatics",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.swisslipids.org/#/entity/SLM:${ac}/",
-  "redirect": "http://www.swisslipids.org/#/entity/SLM:{content}/",
+  "redirect": "http://www.swisslipids.org/#/entity/SLM:${content}/",
   "description": "SwissLipids is a curated resource that provides information about known lipids, including lipid structure, metabolism, interactions, and subcellular and tissue localization. Information is curated from peer-reviewed literature and referenced using established ontologies, and provided with full provenance and evidence codes for curated assertions.",
   "subject": "lipid; metabolite",
   "location": "Switzerland",

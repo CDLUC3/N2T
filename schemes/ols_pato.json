@@ -1,7 +1,7 @@
 {
   "id": "ols/pato",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/pato/terms?obo_id=PATO:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/pato/terms?obo_id=PATO:${content}"
   },
   "type": "scheme",
   "name": "PATO through OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/pato/terms?obo_id=PATO:${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/pato/terms?obo_id=PATO:{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/pato/terms?obo_id=PATO:${content}",
   "description": "PATO is an ontology of phenotypic qualities, intended for use in a number of applications, primarily defining composite phenotypes and phenotype  annotation.",
   "subject": "phenotype; ontology",
   "location": "UK",

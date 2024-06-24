@@ -1,14 +1,14 @@
 {
   "id": "ark",
   "target": {
-    "DEFAULT": "https://arks.org/ark:{content}"
+    "DEFAULT": "https://arks.org/ark:${content}"
   },
   "type": "scheme",
   "name": "Archival Resource Key",
   "alias": null,
   "provider": "n2t",
   "primary": 1,
-  "redirect": "https://arks.org/ark:{content}",
+  "redirect": "https://arks.org/ark:${content}",
   "test": "/88435/hq37vq534",
   "probe": "http://arks.org/ark:/88435/hq37vq534",
   "more": "https://en.wikipedia.org/wiki/Archival_Resource_Key",

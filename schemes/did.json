@@ -1,7 +1,7 @@
 {
   "id": "did",
   "target": {
-    "DEFAULT": "https://uniresolver.io/#did:{content}"
+    "DEFAULT": "https://uniresolver.io/#did:${content}"
   },
   "type": "scheme",
   "name": "Decentralized Identifiers (DIDs)",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://uniresolver.io/#did:${ac}",
-  "redirect": "https://uniresolver.io/#did:{content}",
+  "redirect": "https://uniresolver.io/#did:${content}",
   "description": "DIDs are an effort by the W3C Credentials Community Group and the wider Internet identity community to define identifiers that can be registered, updated, resolved, and revoked without any dependency on a central authority or intermediary.",
   "subject": null,
   "location": "USA",

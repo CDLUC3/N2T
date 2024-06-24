@@ -1,7 +1,7 @@
 {
   "id": "bioentitylink/zfin",
   "target": {
-    "DEFAULT": "https://bioentity.link/#/lexicon/public/{content}"
+    "DEFAULT": "https://bioentity.link/#/lexicon/public/${content}"
   },
   "type": "scheme",
   "name": "ZFIN through BioEntity Link",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://bioentity.link/#/lexicon/public/${ac}",
-  "redirect": "https://bioentity.link/#/lexicon/public/{content}",
+  "redirect": "https://bioentity.link/#/lexicon/public/${content}",
   "description": "ZFIN serves as the zebrafish model organism database. This collection references all zebrafish biological entities in ZFIN.",
   "subject": "gene",
   "location": "USA",

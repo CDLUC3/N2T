@@ -1,7 +1,7 @@
 {
   "id": "kegg.orthology",
   "target": {
-    "DEFAULT": "http://www.kegg.jp/entry/{content}"
+    "DEFAULT": "http://www.kegg.jp/entry/${content}"
   },
   "type": "scheme",
   "name": "KEGG Orthology Database",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.kegg.jp/entry/${ac}",
-  "redirect": "http://www.kegg.jp/entry/{content}",
+  "redirect": "http://www.kegg.jp/entry/${content}",
   "description": "KEGG Orthology (KO) consists of manually defined, generalised ortholog groups that correspond to KEGG pathway nodes and BRITE hierarchy nodes in all organisms.",
   "subject": "pathway; clustering",
   "location": "Japan",

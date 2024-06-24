@@ -1,9 +1,9 @@
 {
   "id": "hapmap",
   "target": {
-    "DEFAULT": "http://snp.cshl.org/cgi-perl/gbrowse/hapmap27_B36/?name={content}"
+    "DEFAULT": "http://snp.cshl.org/cgi-perl/gbrowse/hapmap27_B36/?name=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://snp.cshl.org/cgi-perl/gbrowse/hapmap27_B36/?name={content}",
+  "redirect": "http://snp.cshl.org/cgi-perl/gbrowse/hapmap27_B36/?name=${content}",
   "revision": 0
 }

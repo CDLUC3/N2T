@@ -1,7 +1,7 @@
 {
   "id": "phosphopoint.kinase",
   "target": {
-    "DEFAULT": "http://kinase.bioinformatics.tw/showall.jsp?type=Kinase&info=Gene&name={content}&drawing=0&sorting=0&kinome=1"
+    "DEFAULT": "http://kinase.bioinformatics.tw/showall.jsp?type=Kinase&info=Gene&name=${content}&drawing=0&sorting=0&kinome=1"
   },
   "type": "scheme",
   "name": "PhosphoPoint Kinase at National Taiwan University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://kinase.bioinformatics.tw/showall.jsp?type=Kinase&info=Gene&name=${ac}&drawing=0&sorting=0&kinome=1",
-  "redirect": "http://kinase.bioinformatics.tw/showall.jsp?type=Kinase&info=Gene&name={content}&drawing=0&sorting=0&kinome=1",
+  "redirect": "http://kinase.bioinformatics.tw/showall.jsp?type=Kinase&info=Gene&name=${content}&drawing=0&sorting=0&kinome=1",
   "description": "PhosphoPOINT is a database of the human kinase and phospho-protein interactome. It describes the interactions among kinases, their potential substrates and their interacting (phospho)-proteins. It also incorporates gene expression and uses gene ontology (GO) terms to annotate interactions. This collection references kinase information.",
   "subject": "protein; human; interaction",
   "location": "Republic of China",

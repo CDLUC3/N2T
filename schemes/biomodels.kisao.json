@@ -1,7 +1,7 @@
 {
   "id": "biomodels.kisao",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/KISAO/kisao:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/KISAO/kisao:${content}"
   },
   "type": "scheme",
   "name": "KiSAO via NCBO's Bioportal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/KISAO/kisao:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/KISAO/kisao:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/KISAO/kisao:${content}",
   "description": "The Kinetic Simulation Algorithm Ontology (KiSAO) is an ontology that describes simulation algorithms and methods used for biological kinetic models, and the relationships between them. This provides a means to unambiguously refer to simulation algorithms when describing a simulation experiment.",
   "subject": null,
   "location": "USA",

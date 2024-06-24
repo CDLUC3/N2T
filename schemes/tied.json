@@ -1,9 +1,9 @@
 {
   "id": "tied",
   "target": {
-    "DEFAULT": "http://www.iedb.org/epId/{content}"
+    "DEFAULT": "http://www.iedb.org/epId/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.iedb.org/epId/{content}",
+  "redirect": "http://www.iedb.org/epId/${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "regtransbase",
   "target": {
-    "DEFAULT": "http://regtransbase.lbl.gov/cgi-bin/regtransbase?page=geneinfo&seqfeature_id={content}"
+    "DEFAULT": "http://regtransbase.lbl.gov/cgi-bin/regtransbase?page=geneinfo&seqfeature_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://regtransbase.lbl.gov/cgi-bin/regtransbase?page=geneinfo&seqfeature_id={content}",
+  "redirect": "http://regtransbase.lbl.gov/cgi-bin/regtransbase?page=geneinfo&seqfeature_id=${content}",
   "revision": 0
 }

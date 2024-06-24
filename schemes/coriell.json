@@ -1,7 +1,7 @@
 {
   "id": "coriell",
   "target": {
-    "DEFAULT": "http://ccr.coriell.org/Sections/Search/Sample_Detail.aspx?Ref={content}"
+    "DEFAULT": "http://ccr.coriell.org/Sections/Search/Sample_Detail.aspx?Ref=${content}"
   },
   "type": "scheme",
   "name": "Coriell Cell Repositories at Coriell Institute",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://ccr.coriell.org/Sections/Search/Sample_Detail.aspx?Ref=${ac}",
-  "redirect": "http://ccr.coriell.org/Sections/Search/Sample_Detail.aspx?Ref={content}",
+  "redirect": "http://ccr.coriell.org/Sections/Search/Sample_Detail.aspx?Ref=${content}",
   "description": "The Coriell Cell Repositories provide essential research reagents to the scientific community by establishing, verifying, maintaining, and distributing cell cultures and DNA derived from cell cultures. These collections, supported by funds from the National Institutes of Health (NIH) and several foundations, are extensively utilized by research scientists around the world.",
   "subject": "mammalian; catalogue; human",
   "location": "USA",

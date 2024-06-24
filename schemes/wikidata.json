@@ -1,7 +1,7 @@
 {
   "id": "wikidata",
   "target": {
-    "DEFAULT": "https://www.wikidata.org/wiki/{content}"
+    "DEFAULT": "https://www.wikidata.org/wiki/${content}"
   },
   "type": "scheme",
   "name": "Wikidata at Wikimedia Foundation",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.wikidata.org/wiki/${ac}",
-  "redirect": "https://www.wikidata.org/wiki/{content}",
+  "redirect": "https://www.wikidata.org/wiki/${content}",
   "description": "Wikidata is a collaboratively edited knowledge base operated by the Wikimedia Foundation. It is intended to provide a common source of certain types of data which can be used by Wikimedia projects such as Wikipedia. Wikidata functions as a document-oriented database, centred on individual items. Items represent topics, for which basic information is stored that identifies each topic.",
   "subject": "encyclopedia",
   "location": "USA",

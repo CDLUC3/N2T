@@ -1,7 +1,7 @@
 {
   "id": "z037/jws",
   "target": {
-    "DEFAULT": "http://jjj.biochem.sun.ac.za/models/{content}/"
+    "DEFAULT": "http://jjj.biochem.sun.ac.za/models/${content}/"
   },
   "type": "scheme",
   "name": "JWS Online Model Repository at Stellenbosch",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://jjj.biochem.sun.ac.za/models/${ac}/",
-  "redirect": "http://jjj.biochem.sun.ac.za/models/{content}/",
+  "redirect": "http://jjj.biochem.sun.ac.za/models/${content}/",
   "description": "JWS Online is a repository of curated biochemical pathway models, and additionally provides the ability to run simulations of these models in a web browser.",
   "subject": "model",
   "location": "South Africa",

@@ -1,9 +1,9 @@
 {
   "id": "rapdb",
   "target": {
-    "DEFAULT": "http://rapdb.dna.affrc.go.jp/viewer/gbrowse_details/build5?name=[{content}"
+    "DEFAULT": "http://rapdb.dna.affrc.go.jp/viewer/gbrowse_details/build5?name=[${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://rapdb.dna.affrc.go.jp/viewer/gbrowse_details/build5?name=[{content}",
+  "redirect": "http://rapdb.dna.affrc.go.jp/viewer/gbrowse_details/build5?name=[${content}",
   "revision": 0
 }

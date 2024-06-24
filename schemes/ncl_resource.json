@@ -1,9 +1,9 @@
 {
   "id": "ncl_resource",
   "target": {
-    "DEFAULT": "http://www.ucl.ac.uk/ncl/{content}.shtml"
+    "DEFAULT": "http://www.ucl.ac.uk/ncl/${content}.shtml"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ucl.ac.uk/ncl/{content}.shtml",
+  "redirect": "http://www.ucl.ac.uk/ncl/${content}.shtml",
   "revision": 0
 }

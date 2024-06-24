@@ -1,7 +1,7 @@
 {
   "id": "unimod",
   "target": {
-    "DEFAULT": "http://www.unimod.org/modifications_view.php?editid1={content}"
+    "DEFAULT": "http://www.unimod.org/modifications_view.php?editid1=${content}"
   },
   "type": "scheme",
   "name": "Unimod at Matrix Sciences Ltd.",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.unimod.org/modifications_view.php?editid1=${ac}",
-  "redirect": "http://www.unimod.org/modifications_view.php?editid1={content}",
+  "redirect": "http://www.unimod.org/modifications_view.php?editid1=${content}",
   "description": "Unimod is a public domain database created to provide a community supported, comprehensive database of protein modifications for mass spectrometry applications. That is, accurate and verifiable values, derived from elemental compositions, for the mass differences introduced by all types of natural and artificial modifications. Other important information includes any mass change, (neutral loss), that occurs during MS/MS analysis, and site specificity, (which residues are susceptible to modification and any constraints on the position of the modification within the protein or peptide).",
   "subject": "mass spectrometry; protein",
   "location": "UK",

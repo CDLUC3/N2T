@@ -1,9 +1,9 @@
 {
   "id": "iev",
   "target": {
-    "DEFAULT": "http://www.inoh.org/ontology-viewer/cgi-bin/InohOVAttr.php?type=IEV&id={content}"
+    "DEFAULT": "http://www.inoh.org/ontology-viewer/cgi-bin/InohOVAttr.php?type=IEV&id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.inoh.org/ontology-viewer/cgi-bin/InohOVAttr.php?type=IEV&id={content}",
+  "redirect": "http://www.inoh.org/ontology-viewer/cgi-bin/InohOVAttr.php?type=IEV&id=${content}",
   "revision": 0
 }

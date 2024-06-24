@@ -1,7 +1,7 @@
 {
   "id": "occ",
   "target": {
-    "DEFAULT": "https://w3id.org/oc/corpus/{content}"
+    "DEFAULT": "https://w3id.org/oc/corpus/${content}"
   },
   "type": "scheme",
   "name": "OpenCitations Corpus",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://w3id.org/oc/corpus/${ac}",
-  "redirect": "https://w3id.org/oc/corpus/{content}",
+  "redirect": "https://w3id.org/oc/corpus/${content}",
   "description": "The OpenCitations Corpus is open repository of scholarly citation data made available under a Creative Commons public domain dedication (CC0), which provides accurate bibliographic references harvested from the scholarly literature that others may freely build upon, enhance and reuse for any purpose, without restriction under copyright or database law.",
   "subject": null,
   "location": "Italy",

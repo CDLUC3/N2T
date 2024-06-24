@@ -1,9 +1,9 @@
 {
   "id": "jcvi.genprop",
   "target": {
-    "DEFAULT": "http://cmr.jcvi.org/tigr-scripts/CMR/shared/GenomePropDefinition.cgi?prop_acc={content}"
+    "DEFAULT": "http://cmr.jcvi.org/tigr-scripts/CMR/shared/GenomePropDefinition.cgi?prop_acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://cmr.jcvi.org/tigr-scripts/CMR/shared/GenomePropDefinition.cgi?prop_acc={content}",
+  "redirect": "http://cmr.jcvi.org/tigr-scripts/CMR/shared/GenomePropDefinition.cgi?prop_acc=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "edas_human",
   "target": {
-    "DEFAULT": "http://edas2.bioinf.fbb.msu.ru/human/summary.cgi?gene_id={content}"
+    "DEFAULT": "http://edas2.bioinf.fbb.msu.ru/human/summary.cgi?gene_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://edas2.bioinf.fbb.msu.ru/human/summary.cgi?gene_id={content}",
+  "redirect": "http://edas2.bioinf.fbb.msu.ru/human/summary.cgi?gene_id=${content}",
   "revision": 0
 }

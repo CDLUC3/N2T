@@ -1,7 +1,7 @@
 {
   "id": "vfdb.gene",
   "target": {
-    "DEFAULT": "http://www.mgc.ac.cn/cgi-bin/VFs/gene.cgi?GeneID={content}"
+    "DEFAULT": "http://www.mgc.ac.cn/cgi-bin/VFs/gene.cgi?GeneID=${content}"
   },
   "type": "scheme",
   "name": "VFDB Gene at Institute of Pathogen Biology",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.mgc.ac.cn/cgi-bin/VFs/gene.cgi?GeneID=${ac}",
-  "redirect": "http://www.mgc.ac.cn/cgi-bin/VFs/gene.cgi?GeneID={content}",
+  "redirect": "http://www.mgc.ac.cn/cgi-bin/VFs/gene.cgi?GeneID=${content}",
   "description": "VFDB is a repository of virulence factors (VFs) of pathogenic bacteria.This collection references VF genes.",
   "subject": null,
   "location": "China",

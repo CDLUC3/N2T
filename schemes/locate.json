@@ -1,9 +1,9 @@
 {
   "id": "locate",
   "target": {
-    "DEFAULT": "http://locate.imb.uq.edu.au/cgi-bin/report.cgi?entry={content}"
+    "DEFAULT": "http://locate.imb.uq.edu.au/cgi-bin/report.cgi?entry=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://locate.imb.uq.edu.au/cgi-bin/report.cgi?entry={content}",
+  "redirect": "http://locate.imb.uq.edu.au/cgi-bin/report.cgi?entry=${content}",
   "revision": 0
 }

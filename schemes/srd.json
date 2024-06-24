@@ -1,9 +1,9 @@
 {
   "id": "srd",
   "target": {
-    "DEFAULT": "http://rapeseed.plantsignal.cn/viewGene.do?id={content}"
+    "DEFAULT": "http://rapeseed.plantsignal.cn/viewGene.do?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://rapeseed.plantsignal.cn/viewGene.do?id={content}",
+  "redirect": "http://rapeseed.plantsignal.cn/viewGene.do?id=${content}",
   "revision": 0
 }

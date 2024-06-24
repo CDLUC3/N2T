@@ -1,9 +1,9 @@
 {
   "id": "rgd.ref",
   "target": {
-    "DEFAULT": "http://rgd.mcw.edu/tools/references/references_view.cgi?id={content}"
+    "DEFAULT": "http://rgd.mcw.edu/tools/references/references_view.cgi?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://rgd.mcw.edu/tools/references/references_view.cgi?id={content}",
+  "redirect": "http://rgd.mcw.edu/tools/references/references_view.cgi?id=${content}",
   "revision": 0
 }

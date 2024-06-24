@@ -1,7 +1,7 @@
 {
   "id": "aftol.taxonomy",
   "target": {
-    "DEFAULT": "http://wasabi.lutzonilab.net/pub/displayTaxonInfo?aftol_id={content}"
+    "DEFAULT": "http://wasabi.lutzonilab.net/pub/displayTaxonInfo?aftol_id=${content}"
   },
   "type": "scheme",
   "name": "AFTOL at University of Minnesota",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://wasabi.lutzonilab.net/pub/displayTaxonInfo?aftol_id=${ac}",
-  "redirect": "http://wasabi.lutzonilab.net/pub/displayTaxonInfo?aftol_id={content}",
+  "redirect": "http://wasabi.lutzonilab.net/pub/displayTaxonInfo?aftol_id=${content}",
   "description": "The Assembling the Fungal Tree of Life (AFTOL) project is dedicated to significantly enhancing our understanding of the evolution of the Kingdom Fungi, which represents one of the major clades of life. There are roughly 80,000 described species of Fungi, but the actual diversity in the group has been estimated to be about 1.5 million species.",
   "subject": null,
   "location": "USA",

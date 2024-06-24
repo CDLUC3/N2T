@@ -1,7 +1,7 @@
 {
   "id": "z045/massbank",
   "target": {
-    "DEFAULT": "http://www.massbank.eu/MassBank/jsp/FwdRecord.jsp?id={content}"
+    "DEFAULT": "http://www.massbank.eu/MassBank/jsp/FwdRecord.jsp?id=${content}"
   },
   "type": "scheme",
   "name": "MassBank in Europe",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.massbank.eu/MassBank/jsp/FwdRecord.jsp?id=${ac}",
-  "redirect": "http://www.massbank.eu/MassBank/jsp/FwdRecord.jsp?id={content}",
+  "redirect": "http://www.massbank.eu/MassBank/jsp/FwdRecord.jsp?id=${content}",
   "description": "MassBank is a federated database of reference spectra from different instruments, including high-resolution mass spectra of small metabolites (<3000 Da).",
   "subject": "chemical; mass spectrometry; metabolite",
   "location": "Germany",

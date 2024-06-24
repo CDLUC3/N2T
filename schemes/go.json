@@ -1,7 +1,7 @@
 {
   "id": "go",
   "target": {
-    "DEFAULT": "http://amigo.geneontology.org/amigo/term/GO:{content}"
+    "DEFAULT": "http://amigo.geneontology.org/amigo/term/GO:${content}"
   },
   "type": "scheme",
   "name": "AmiGO 2",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://amigo.geneontology.org/amigo/term/GO:${ac}",
-  "redirect": "http://amigo.geneontology.org/amigo/term/GO:{content}",
+  "redirect": "http://amigo.geneontology.org/amigo/term/GO:${content}",
   "description": "The Gene Ontology project provides a controlled vocabulary to describe gene and gene product attributes in any organism.",
   "subject": "ontology",
   "location": "USA",

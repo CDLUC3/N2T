@@ -1,7 +1,7 @@
 {
   "id": "glycomedb",
   "target": {
-    "DEFAULT": "https://glytoucan.org/Structures/Glycans/{content}"
+    "DEFAULT": "https://glytoucan.org/Structures/Glycans/${content}"
   },
   "type": "scheme",
   "name": "GlycomeDB carbohydrate structure database",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://glytoucan.org/Structures/Glycans/${ac}",
-  "redirect": "https://glytoucan.org/Structures/Glycans/{content}",
+  "redirect": "https://glytoucan.org/Structures/Glycans/${content}",
   "description": "GlycomeDB is the result of a systematic data integration effort, and provides an overview of all carbohydrate structures available in public databases, as well as cross-links.",
   "subject": "structure",
   "location": "Germany",

@@ -1,7 +1,7 @@
 {
   "id": "z025/insdc",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/nuccore/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/nuccore/${content}"
   },
   "type": "scheme",
   "name": "INSDC through GenBank",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/nuccore/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/nuccore/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/nuccore/${content}",
   "description": "The International Nucleotide Sequence Database Collaboration (INSDC) consists of a joint effort to collect and disseminate databases containing DNA and RNA sequences.",
   "subject": "nucleotide; sequence",
   "location": "USA",

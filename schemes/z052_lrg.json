@@ -1,7 +1,7 @@
 {
   "id": "z052/lrg",
   "target": {
-    "DEFAULT": "http://useast.ensembl.org/Homo_sapiens/LRG/Summary?lrg={content}"
+    "DEFAULT": "http://useast.ensembl.org/Homo_sapiens/LRG/Summary?lrg=${content}"
   },
   "type": "scheme",
   "name": "Locus Reference Genomic through Ensembl mirror (US east)",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://useast.ensembl.org/Homo_sapiens/LRG/Summary?lrg=${ac}",
-  "redirect": "http://useast.ensembl.org/Homo_sapiens/LRG/Summary?lrg={content}",
+  "redirect": "http://useast.ensembl.org/Homo_sapiens/LRG/Summary?lrg=${content}",
   "description": "Locus Reference Genomic (LRG) provides identifiers to stable genomic DNA sequences for regions of the human genome, providing a recognized reference-sequence standard for reporting sequence variants. LRG is maintained by the NCBI and the European Bioinformatics Institute (EBI).",
   "subject": "sequence; genome; DNA; schema.org; human",
   "location": "USA",

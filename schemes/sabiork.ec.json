@@ -1,7 +1,7 @@
 {
   "id": "sabiork.ec",
   "target": {
-    "DEFAULT": "http://sabiork.h-its.org/newSearch?q=ecnumber:{content}"
+    "DEFAULT": "http://sabiork.h-its.org/newSearch?q=ecnumber:${content}"
   },
   "type": "scheme",
   "name": "SABIO-RK Reaction Kinetics Database - Enzyme Classification (EC)",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://sabiork.h-its.org/newSearch?q=ecnumber:${ac}",
-  "redirect": "http://sabiork.h-its.org/newSearch?q=ecnumber:{content}",
+  "redirect": "http://sabiork.h-its.org/newSearch?q=ecnumber:${content}",
   "description": "SABIO-RK is a relational database system that contains information about biochemical reactions, their kinetic equations with their parameters, and the experimental conditions under which these parameters were measured. The EC record provides for a given enzyme classification (EC) the associated list of enzyme-catalysed reactions and their corresponding kinetic data.",
   "subject": "enzyme; kinetics; classification",
   "location": "Germany",

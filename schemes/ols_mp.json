@@ -1,7 +1,7 @@
 {
   "id": "ols/mp",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/mp/terms?obo_id=MP:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/mp/terms?obo_id=MP:${content}"
   },
   "type": "scheme",
   "name": "Mammalian Phenotype Ontology through OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/mp/terms?obo_id=MP:${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/mp/terms?obo_id=MP:{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/mp/terms?obo_id=MP:${content}",
   "description": "The Mammalian Phenotype Ontology (MP) classifies and organises phenotypic information related to the mouse and other mammalian species. This ontology has been applied to mouse phenotype descriptions in various databases allowing comparisons of data from diverse mammalian sources. It can facilitate in the identification of appropriate experimental disease models, and aid in the discovery of candidate disease genes and molecular signaling pathways.",
   "subject": "ontology; phenotype; mammalian",
   "location": "UK",

@@ -1,9 +1,9 @@
 {
   "id": "eropmoscow",
   "target": {
-    "DEFAULT": "http://erop.inbi.ras.ru/result2.php?PepName={content}"
+    "DEFAULT": "http://erop.inbi.ras.ru/result2.php?PepName=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://erop.inbi.ras.ru/result2.php?PepName={content}",
+  "redirect": "http://erop.inbi.ras.ru/result2.php?PepName=${content}",
   "revision": 0
 }

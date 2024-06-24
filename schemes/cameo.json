@@ -1,7 +1,7 @@
 {
   "id": "cameo",
   "target": {
-    "DEFAULT": "https://www.cameo3d.org/sp/targets/target/{content}"
+    "DEFAULT": "https://www.cameo3d.org/sp/targets/target/${content}"
   },
   "type": "scheme",
   "name": "CAMEO",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://www.cameo3d.org/sp/targets/target/${ac}",
-  "redirect": "https://www.cameo3d.org/sp/targets/target/{content}",
+  "redirect": "https://www.cameo3d.org/sp/targets/target/${content}",
   "description": "The goal of the CAMEO (Continuous Automated Model EvaluatiOn) community project is to continuously evaluate the accuracy and reliability of protein structure prediction servers, offering scores on  tertiary and quaternary structure prediction, model quality estimation, accessible surface area prediction, ligand binding site residue prediction and contact prediction services in a fully automated manner. These predictions are regularly compared against reference structures from PDB.",
   "subject": "structure",
   "location": "Switzerland",

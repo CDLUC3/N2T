@@ -1,7 +1,7 @@
 {
   "id": "seed.reaction",
   "target": {
-    "DEFAULT": "http://modelseed.org/biochem/reactions/{content}"
+    "DEFAULT": "http://modelseed.org/biochem/reactions/${content}"
   },
   "type": "scheme",
   "name": "SEED Reactions",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://modelseed.org/biochem/reactions/${ac}",
-  "redirect": "http://modelseed.org/biochem/reactions/{content}",
+  "redirect": "http://modelseed.org/biochem/reactions/${content}",
   "description": "ModelSEED is a platform for creating genome-scale metabolic network reconstructions for microbes and plants. As part of the platform, a biochemistry database is managed that contains reactions unique to ModelSEED as well as reactions aggregated from other databases or from manually-curated genome-scale metabolic network reconstructions.",
   "subject": null,
   "location": "USA",

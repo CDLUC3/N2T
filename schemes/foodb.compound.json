@@ -1,7 +1,7 @@
 {
   "id": "foodb.compound",
   "target": {
-    "DEFAULT": "http://foodb.ca/compounds/{content}"
+    "DEFAULT": "http://foodb.ca/compounds/${content}"
   },
   "type": "scheme",
   "name": "FooDB database of food additives at University of Alberta",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://foodb.ca/compounds/${ac}",
-  "redirect": "http://foodb.ca/compounds/{content}",
+  "redirect": "http://foodb.ca/compounds/${content}",
   "description": "FooDB is resource on food and its constituent compounds. It includes data on the compound&#x2019;s nomenclature, its description, information on its structure, chemical class, its physico-chemical data, its food source(s), its color, its aroma, its taste, its physiological effect, presumptive health effects (from published studies), and concentrations in various foods. This collection references compounds.",
   "subject": "structure; chemical",
   "location": "Canada",

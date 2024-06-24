@@ -1,9 +1,9 @@
 {
   "id": "linkedspl",
   "target": {
-    "DEFAULT": "http://dbmi-icode-01.dbmi.pitt.edu/linkedSPLs/page/structuredProductLabelMetadata/{content}"
+    "DEFAULT": "http://dbmi-icode-01.dbmi.pitt.edu/linkedSPLs/page/structuredProductLabelMetadata/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://dbmi-icode-01.dbmi.pitt.edu/linkedSPLs/page/structuredProductLabelMetadata/{content}",
+  "redirect": "http://dbmi-icode-01.dbmi.pitt.edu/linkedSPLs/page/structuredProductLabelMetadata/${content}",
   "revision": 0
 }

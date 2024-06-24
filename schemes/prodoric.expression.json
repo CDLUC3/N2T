@@ -1,9 +1,9 @@
 {
   "id": "prodoric.expression",
   "target": {
-    "DEFAULT": "http://prodoric.tu-bs.de/profile.php?profile_acc={content}"
+    "DEFAULT": "http://prodoric.tu-bs.de/profile.php?profile_acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://prodoric.tu-bs.de/profile.php?profile_acc={content}",
+  "redirect": "http://prodoric.tu-bs.de/profile.php?profile_acc=${content}",
   "revision": 0
 }

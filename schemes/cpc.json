@@ -1,7 +1,7 @@
 {
   "id": "cpc",
   "target": {
-    "DEFAULT": "https://worldwide.espacenet.com/classification?locale=en_EP#!/CPC={content}"
+    "DEFAULT": "https://worldwide.espacenet.com/classification?locale=en_EP#!/CPC=${content}"
   },
   "type": "scheme",
   "name": "Cooperative Patent Classification at Espace",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://worldwide.espacenet.com/classification?locale=en_EP#!/CPC=${ac}",
-  "redirect": "https://worldwide.espacenet.com/classification?locale=en_EP#!/CPC={content}",
+  "redirect": "https://worldwide.espacenet.com/classification?locale=en_EP#!/CPC=${content}",
   "description": "The Cooperative Patent Classification (CPC) is a patent classification system, developed jointly by the European Patent Office (EPO) and the United States Patent and Trademark Office (USPTO). It is based on the previous European classification system (ECLA), which itself was a version of the International Patent Classification (IPC) system. The CPC patent classification system has been used by EPO and USPTO since 1st January, 2013.",
   "subject": "classification",
   "location": null,

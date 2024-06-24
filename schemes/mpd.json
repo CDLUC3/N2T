@@ -1,9 +1,9 @@
 {
   "id": "mpd",
   "target": {
-    "DEFAULT": "http://phenome.jax.org/db/q?rtn=markers/details&reqsym={content}"
+    "DEFAULT": "http://phenome.jax.org/db/q?rtn=markers/details&reqsym=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://phenome.jax.org/db/q?rtn=markers/details&reqsym={content}",
+  "redirect": "http://phenome.jax.org/db/q?rtn=markers/details&reqsym=${content}",
   "revision": 0
 }

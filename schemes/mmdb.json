@@ -1,7 +1,7 @@
 {
   "id": "mmdb",
   "target": {
-    "DEFAULT": "http://www.ncbi.nlm.nih.gov/Structure/mmdb/mmdbsrv.cgi?uid={content}"
+    "DEFAULT": "http://www.ncbi.nlm.nih.gov/Structure/mmdb/mmdbsrv.cgi?uid=${content}"
   },
   "type": "scheme",
   "name": "MMDB at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.ncbi.nlm.nih.gov/Structure/mmdb/mmdbsrv.cgi?uid=${ac}",
-  "redirect": "http://www.ncbi.nlm.nih.gov/Structure/mmdb/mmdbsrv.cgi?uid={content}",
+  "redirect": "http://www.ncbi.nlm.nih.gov/Structure/mmdb/mmdbsrv.cgi?uid=${content}",
   "description": "The Molecular Modeling Database (MMDB) is a database of experimentally determined structures obtained from the Protein Data Bank (PDB). Since structures are known for a large fraction of all protein families, structure homologs may facilitate inference of biological function, or the identification of binding or catalytic sites.",
   "subject": "protein; structure; domain",
   "location": "USA",

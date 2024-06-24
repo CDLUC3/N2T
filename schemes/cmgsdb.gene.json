@@ -1,9 +1,9 @@
 {
   "id": "cmgsdb.gene",
   "target": {
-    "DEFAULT": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewGene.php?wbgene={content}"
+    "DEFAULT": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewGene.php?wbgene=${content}"
   },
   "type": "commonspfx",
-  "redirect": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewGene.php?wbgene={content}",
+  "redirect": "https://bioinformatics.cs.vt.edu/cmgs/CMGSDB/viewGene.php?wbgene=${content}",
   "revision": 0
 }

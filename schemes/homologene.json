@@ -1,7 +1,7 @@
 {
   "id": "homologene",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/homologene/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/homologene/${content}"
   },
   "type": "scheme",
   "name": "Homologene at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ncbi.nlm.nih.gov/homologene/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/homologene/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/homologene/${content}",
   "description": "HomoloGene is a system for automated detection of homologs among the annotated genes of several completely sequenced eukaryotic genomes.",
   "subject": "eukaryotic; gene; clustering",
   "location": "USA",

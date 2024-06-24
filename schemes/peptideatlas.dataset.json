@@ -1,7 +1,7 @@
 {
   "id": "peptideatlas.dataset",
   "target": {
-    "DEFAULT": "http://www.peptideatlas.org/PASS/{content}"
+    "DEFAULT": "http://www.peptideatlas.org/PASS/${content}"
   },
   "type": "scheme",
   "name": "PeptideAtlas Dataset",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.peptideatlas.org/PASS/${ac}",
-  "redirect": "http://www.peptideatlas.org/PASS/{content}",
+  "redirect": "http://www.peptideatlas.org/PASS/${content}",
   "description": "Experiment details about PeptideAtlas entries. Each PASS entry provides direct access to the data files submitted to PeptideAtlas.",
   "subject": null,
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "maizegdb.locus",
   "target": {
-    "DEFAULT": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id={content}"
+    "DEFAULT": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id=${content}"
   },
   "type": "scheme",
   "name": "MaizeGDB at Missouri",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id=${ac}",
-  "redirect": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id={content}",
+  "redirect": "http://www.maizegdb.org/cgi-bin/displaylocusrecord.cgi?id=${content}",
   "description": "MaizeGDB is the maize research community's central repository for genetics and genomics information.",
   "subject": "plant; genome",
   "location": "USA",

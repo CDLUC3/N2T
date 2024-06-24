@@ -1,7 +1,7 @@
 {
   "id": "mir",
   "target": {
-    "DEFAULT": "https://identifiers.org/registry?query=%22MIR:{content}%22"
+    "DEFAULT": "https://identifiers.org/registry?query=%22MIR:${content}%22"
   },
   "type": "scheme",
   "name": "Identifiers.org Registry through EBI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://identifiers.org/registry?query=\"MIR:${ac}\"",
-  "redirect": "https://identifiers.org/registry?query=%22MIR:{content}%22",
+  "redirect": "https://identifiers.org/registry?query=%22MIR:${content}%22",
   "description": "The Identifiers.org registry contains registered namespace and provider prefixes with associated access URIs for a large number of high quality data collections. These prefixes are used in web resolution of compact identifiers of the form &#x201C;PREFIX:ACCESSION&#x201D; or \"PROVIDER/PREFIX:ACCESSION&#x201D; commonly used to specify bioinformatics and other data resources.",
   "subject": null,
   "location": "UK",

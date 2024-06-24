@@ -1,7 +1,7 @@
 {
   "id": "proglyc",
   "target": {
-    "DEFAULT": "http://www.proglycprot.org/detail.aspx?ProId={content}"
+    "DEFAULT": "http://www.proglycprot.org/detail.aspx?ProId=${content}"
   },
   "type": "scheme",
   "name": "ProGlycProt at IMT",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.proglycprot.org/detail.aspx?ProId=${ac}",
-  "redirect": "http://www.proglycprot.org/detail.aspx?ProId={content}",
+  "redirect": "http://www.proglycprot.org/detail.aspx?ProId=${content}",
   "description": "ProGlycProt (Prokaryotic Glycoprotein) is a repository of bacterial and archaeal glycoproteins with at least one experimentally validated glycosite (glycosylated residue). Each entry in the database is fully cross-referenced and enriched with available published information about source organism, coding gene, protein, glycosites, glycosylation type, attached glycan, associated oligosaccharyl/glycosyl transferases (OSTs/GTs), supporting references, and applicable additional information.",
   "subject": "sequence; protein",
   "location": "India",

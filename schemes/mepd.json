@@ -1,9 +1,9 @@
 {
   "id": "mepd",
   "target": {
-    "DEFAULT": "http://ani.embl.de:8080/mepd/MdbShowClone01?cloneID={content}"
+    "DEFAULT": "http://ani.embl.de:8080/mepd/MdbShowClone01?cloneID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://ani.embl.de:8080/mepd/MdbShowClone01?cloneID={content}",
+  "redirect": "http://ani.embl.de:8080/mepd/MdbShowClone01?cloneID=${content}",
   "revision": 0
 }

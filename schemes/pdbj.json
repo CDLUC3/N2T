@@ -1,9 +1,9 @@
 {
   "id": "pdbj",
   "target": {
-    "DEFAULT": "http://service.pdbj.org/mine/Detail?PDBID={content}&PAGEID=Summary"
+    "DEFAULT": "http://service.pdbj.org/mine/Detail?PDBID=${content}&PAGEID=Summary"
   },
   "type": "commonspfx",
-  "redirect": "http://service.pdbj.org/mine/Detail?PDBID={content}&PAGEID=Summary",
+  "redirect": "http://service.pdbj.org/mine/Detail?PDBID=${content}&PAGEID=Summary",
   "revision": 0
 }

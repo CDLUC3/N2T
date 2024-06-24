@@ -1,7 +1,7 @@
 {
   "id": "protonet.cluster",
   "target": {
-    "DEFAULT": "http://www.protonet.cs.huji.ac.il/requested/cluster_card.php?cluster={content}"
+    "DEFAULT": "http://www.protonet.cs.huji.ac.il/requested/cluster_card.php?cluster=${content}"
   },
   "type": "scheme",
   "name": "ProtoNet at Hebrew University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.protonet.cs.huji.ac.il/requested/cluster_card.php?cluster=${ac}",
-  "redirect": "http://www.protonet.cs.huji.ac.il/requested/cluster_card.php?cluster={content}",
+  "redirect": "http://www.protonet.cs.huji.ac.il/requested/cluster_card.php?cluster=${content}",
   "description": "ProtoNet provides automatic hierarchical classification of protein sequences in the UniProt database, partitioning the protein space into clusters of similar proteins. This collection references cluster information.",
   "subject": "protein; clustering; classification",
   "location": "Israel",

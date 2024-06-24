@@ -1,7 +1,7 @@
 {
   "id": "unite",
   "target": {
-    "DEFAULT": "http://unite.ut.ee/bl_forw.php?nimi={content}"
+    "DEFAULT": "http://unite.ut.ee/bl_forw.php?nimi=${content}"
   },
   "type": "scheme",
   "name": "Unite at University of Tartu",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://unite.ut.ee/bl_forw.php?nimi=${ac}",
-  "redirect": "http://unite.ut.ee/bl_forw.php?nimi={content}",
+  "redirect": "http://unite.ut.ee/bl_forw.php?nimi=${content}",
   "description": "UNITE is a fungal rDNA internal transcribed spacer (ITS) sequence database. It focuses on high-quality ITS sequences generated from fruiting bodies collected and identified by experts and deposited in public herbaria. Entries may be supplemented with metadata on describing locality, habitat, soil, climate, and interacting taxa.",
   "subject": "nucleotide; sequence",
   "location": "Estonia",

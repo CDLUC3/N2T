@@ -1,9 +1,9 @@
 {
   "id": "genolevures",
   "target": {
-    "DEFAULT": "http://www.genolevures.org/elt/{content}"
+    "DEFAULT": "http://www.genolevures.org/elt/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.genolevures.org/elt/{content}",
+  "redirect": "http://www.genolevures.org/elt/${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "z058/wikipedia.en",
   "target": {
-    "DEFAULT": "http://en.wikipedia.org/wiki/{content}"
+    "DEFAULT": "http://en.wikipedia.org/wiki/${content}"
   },
   "type": "scheme",
   "name": "Wikipedia (English)",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://en.wikipedia.org/wiki/${ac}",
-  "redirect": "http://en.wikipedia.org/wiki/{content}",
+  "redirect": "http://en.wikipedia.org/wiki/${content}",
   "description": "Wikipedia is a multilingual, web-based, free-content encyclopedia project based on an openly editable model. It is written collaboratively by largely anonymous Internet volunteers who write without pay.",
   "subject": "encyclopedia",
   "location": "USA",

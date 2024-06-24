@@ -1,9 +1,9 @@
 {
   "id": "agd",
   "target": {
-    "DEFAULT": "http://agd.vital-it.ch/Ashbya_gossypii/geneview?gene={content}"
+    "DEFAULT": "http://agd.vital-it.ch/Ashbya_gossypii/geneview?gene=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://agd.vital-it.ch/Ashbya_gossypii/geneview?gene={content}",
+  "redirect": "http://agd.vital-it.ch/Ashbya_gossypii/geneview?gene=${content}",
   "revision": 0
 }

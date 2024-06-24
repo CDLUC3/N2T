@@ -1,9 +1,9 @@
 {
   "id": "uagb",
   "target": {
-    "DEFAULT": "http://archaea.ucsc.edu/cgi-bin/hgGateway?db={content}"
+    "DEFAULT": "http://archaea.ucsc.edu/cgi-bin/hgGateway?db=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://archaea.ucsc.edu/cgi-bin/hgGateway?db={content}",
+  "redirect": "http://archaea.ucsc.edu/cgi-bin/hgGateway?db=${content}",
   "revision": 0
 }

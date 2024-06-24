@@ -1,9 +1,9 @@
 {
   "id": "biopax.l2",
   "target": {
-    "DEFAULT": "http://www.biopax.org/release/biopax-level2.owl#{content}"
+    "DEFAULT": "http://www.biopax.org/release/biopax-level2.owl#${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.biopax.org/release/biopax-level2.owl#{content}",
+  "redirect": "http://www.biopax.org/release/biopax-level2.owl#${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "ego",
   "target": {
-    "DEFAULT": "http://compbio.dfci.harvard.edu/tgi/cgi-bin/tgi/ego/ego_report.pl?ego={content}"
+    "DEFAULT": "http://compbio.dfci.harvard.edu/tgi/cgi-bin/tgi/ego/ego_report.pl?ego=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://compbio.dfci.harvard.edu/tgi/cgi-bin/tgi/ego/ego_report.pl?ego={content}",
+  "redirect": "http://compbio.dfci.harvard.edu/tgi/cgi-bin/tgi/ego/ego_report.pl?ego=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "bacteriome",
   "target": {
-    "DEFAULT": "http://www.compsysbio.org/bacteriome/tsdetail.php?cutoff=50&genestr={content}&genenum=0"
+    "DEFAULT": "http://www.compsysbio.org/bacteriome/tsdetail.php?cutoff=50&genestr=${content}&genenum=0"
   },
   "type": "commonspfx",
-  "redirect": "http://www.compsysbio.org/bacteriome/tsdetail.php?cutoff=50&genestr={content}&genenum=0",
+  "redirect": "http://www.compsysbio.org/bacteriome/tsdetail.php?cutoff=50&genestr=${content}&genenum=0",
   "revision": 0
 }

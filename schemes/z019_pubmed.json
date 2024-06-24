@@ -1,7 +1,7 @@
 {
   "id": "z019/pubmed",
   "target": {
-    "DEFAULT": "http://linkedlifedata.com/resource/pubmed/id/{content}"
+    "DEFAULT": "http://linkedlifedata.com/resource/pubmed/id/${content}"
   },
   "type": "scheme",
   "name": "PubMed through Linkedlife data",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://linkedlifedata.com/resource/pubmed/id/${ac}",
-  "redirect": "http://linkedlifedata.com/resource/pubmed/id/{content}",
+  "redirect": "http://linkedlifedata.com/resource/pubmed/id/${content}",
   "description": "PubMed is a service of the U.S. National Library of Medicine that includes citations from MEDLINE and other life science journals for biomedical articles back to the 1950s.",
   "subject": "schema.org; bibliography",
   "location": "Bulgaria",

@@ -1,7 +1,7 @@
 {
   "id": "addgene",
   "target": {
-    "DEFAULT": "http://addgene.org/{content}"
+    "DEFAULT": "http://addgene.org/${content}"
   },
   "type": "scheme",
   "name": "Addgene Plasmid Repository",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://addgene.org/${ac}",
-  "redirect": "http://addgene.org/{content}",
+  "redirect": "http://addgene.org/${content}",
   "description": "Addgene is a non-profit plasmid repository. Addgene facilitates the exchange of genetic material between laboratories by offering plasmids and their associated cloning data to not-for-profit laboratories around the world.",
   "subject": null,
   "location": "USA",

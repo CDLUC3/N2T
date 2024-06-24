@@ -1,7 +1,7 @@
 {
   "id": "kegg.disease",
   "target": {
-    "DEFAULT": "http://www.kegg.jp/entry/{content}"
+    "DEFAULT": "http://www.kegg.jp/entry/${content}"
   },
   "type": "scheme",
   "name": "KEGG Disease at Kyoto University Bioinformatics Center",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.kegg.jp/entry/${ac}",
-  "redirect": "http://www.kegg.jp/entry/{content}",
+  "redirect": "http://www.kegg.jp/entry/${content}",
   "description": "The KEGG DISEASE database is a collection of disease entries capturing knowledge on genetic and environmental perturbations. Each disease entry contains a list of known genetic factors (disease genes), environmental factors, diagnostic markers, and therapeutic drugs. Diseases are viewed as perturbed states of the molecular system, and drugs as perturbants to the molecular system.",
   "subject": "disease",
   "location": "Japan",

@@ -1,7 +1,7 @@
 {
   "id": "charprot",
   "target": {
-    "DEFAULT": "http://www.jcvi.org/charprotdb/index.cgi/view/{content}"
+    "DEFAULT": "http://www.jcvi.org/charprotdb/index.cgi/view/${content}"
   },
   "type": "scheme",
   "name": "CharProt at JCVI",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.jcvi.org/charprotdb/index.cgi/view/${ac}",
-  "redirect": "http://www.jcvi.org/charprotdb/index.cgi/view/{content}",
+  "redirect": "http://www.jcvi.org/charprotdb/index.cgi/view/${content}",
   "description": "CharProt is a database of biochemically characterized proteins designed to support automated annotation pipelines. Entries are annotated with gene name, symbol and various controlled vocabulary terms, including Gene Ontology terms, Enzyme Commission number and TransportDB accession.",
   "subject": "controlled vocabulary; gene; annotation",
   "location": "USA",

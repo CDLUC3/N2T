@@ -1,7 +1,7 @@
 {
   "id": "lincs.data",
   "target": {
-    "DEFAULT": "http://lincsportal.ccs.miami.edu/datasets/#/view/{content}"
+    "DEFAULT": "http://lincsportal.ccs.miami.edu/datasets/#/view/${content}"
   },
   "type": "scheme",
   "name": "LINCS Data at University of Miami",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://lincsportal.ccs.miami.edu/datasets/#/view/${ac}",
-  "redirect": "http://lincsportal.ccs.miami.edu/datasets/#/view/{content}",
+  "redirect": "http://lincsportal.ccs.miami.edu/datasets/#/view/${content}",
   "description": "The Library of Network-Based Cellular Signatures (LINCS) Program aims to create a network-based understanding of biology by cataloguing changes in gene expression and other cellular processes that occur when cells are exposed to perturbing agents. The data is organized and available as datasets, each including experimental data, metadata and a description of the dataset and assay. The dataset group comprises datasets for the same experiment but with different data level results (data processed to a different level).",
   "subject": "human",
   "location": "USA",

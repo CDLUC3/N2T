@@ -1,7 +1,7 @@
 {
   "id": "tigrfam",
   "target": {
-    "DEFAULT": "http://www.jcvi.org/cgi-bin/tigrfams/HmmReportPage.cgi?acc={content}"
+    "DEFAULT": "http://www.jcvi.org/cgi-bin/tigrfams/HmmReportPage.cgi?acc=${content}"
   },
   "type": "scheme",
   "name": "TIGRFAM at JCVI",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.jcvi.org/cgi-bin/tigrfams/HmmReportPage.cgi?acc=${ac}",
-  "redirect": "http://www.jcvi.org/cgi-bin/tigrfams/HmmReportPage.cgi?acc={content}",
+  "redirect": "http://www.jcvi.org/cgi-bin/tigrfams/HmmReportPage.cgi?acc=${content}",
   "description": "TIGRFAMs is a resource consisting of curated multiple sequence alignments, Hidden Markov Models (HMMs) for protein sequence classification, and associated information designed to support automated annotation of (mostly prokaryotic) proteins.",
   "subject": "protein; clustering",
   "location": "USA",

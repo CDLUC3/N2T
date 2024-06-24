@@ -1,7 +1,7 @@
 {
   "id": "pid.pathway",
   "target": {
-    "DEFAULT": "http://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id={content}"
+    "DEFAULT": "http://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id=${content}"
   },
   "type": "scheme",
   "name": "NCI Pathway Interaction Database (Pathway)",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id=${ac}",
-  "redirect": "http://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id={content}",
+  "redirect": "http://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id=${content}",
   "description": "The Pathway Interaction Database is a highly-structured, curated collection of information about known human biomolecular interactions and key cellular processes assembled into signaling pathways. This datatype provides access to pathway information.",
   "subject": "interaction; human; pathway",
   "location": "USA",

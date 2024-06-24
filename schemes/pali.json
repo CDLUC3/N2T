@@ -1,9 +1,9 @@
 {
   "id": "pali",
   "target": {
-    "DEFAULT": "http://pauling.mbu.iisc.ernet.in/~pali/cgi/members.cgi?famno={content}"
+    "DEFAULT": "http://pauling.mbu.iisc.ernet.in/~pali/cgi/members.cgi?famno=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://pauling.mbu.iisc.ernet.in/~pali/cgi/members.cgi?famno={content}",
+  "redirect": "http://pauling.mbu.iisc.ernet.in/~pali/cgi/members.cgi?famno=${content}",
   "revision": 0
 }

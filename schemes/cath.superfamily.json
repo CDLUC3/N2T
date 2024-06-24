@@ -1,7 +1,7 @@
 {
   "id": "cath.superfamily",
   "target": {
-    "DEFAULT": "http://www.cathdb.info/cathnode/{content}"
+    "DEFAULT": "http://www.cathdb.info/cathnode/${content}"
   },
   "type": "scheme",
   "name": "CATH superfamily at UCL",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.cathdb.info/cathnode/${ac}",
-  "redirect": "http://www.cathdb.info/cathnode/{content}",
+  "redirect": "http://www.cathdb.info/cathnode/${content}",
   "description": "The CATH database is a hierarchical domain classification of protein structures in the Protein Data Bank. Protein structures are classified using a combination of automated and manual procedures. There are four major levels in this hierarchy; Class (secondary structure classification, e.g. mostly alpha), Architecture (classification based on overall shape), Topology (fold family) and  Homologous superfamily (protein domains which are thought to share a common ancestor). This colelction is concerned with superfamily classification.",
   "subject": "schema.org; classification; protein; structure",
   "location": "United Kingdom",

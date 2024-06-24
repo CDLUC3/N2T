@@ -1,7 +1,7 @@
 {
   "id": "gmd.analyte",
   "target": {
-    "DEFAULT": "http://gmd.mpimp-golm.mpg.de/Analytes/{content}"
+    "DEFAULT": "http://gmd.mpimp-golm.mpg.de/Analytes/${content}"
   },
   "type": "scheme",
   "name": "Golm Metabolome Database (Analyte) at Max Planck Institute of Molecular Plant Physiology",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://gmd.mpimp-golm.mpg.de/Analytes/${ac}",
-  "redirect": "http://gmd.mpimp-golm.mpg.de/Analytes/{content}",
+  "redirect": "http://gmd.mpimp-golm.mpg.de/Analytes/${content}",
   "description": "Golm Metabolome Database (GMD) provides public access to custom mass spectral libraries, metabolite profiling experiments as well as additional information and tools. For GC-MS profiling analyses, polar metabolite extracts are chemically converted, i.e. derivatised into less polar and volatile compounds, so called analytes.  This collection references analytes.",
   "subject": "structure; mass spectrometry; metabolite",
   "location": "Germany",

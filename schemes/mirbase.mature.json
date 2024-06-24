@@ -1,7 +1,7 @@
 {
   "id": "mirbase.mature",
   "target": {
-    "DEFAULT": "http://www.mirbase.org/cgi-bin/mature.pl?mature_acc={content}"
+    "DEFAULT": "http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=${content}"
   },
   "type": "scheme",
   "name": "miRBase",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=${ac}",
-  "redirect": "http://www.mirbase.org/cgi-bin/mature.pl?mature_acc={content}",
+  "redirect": "http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=${content}",
   "description": "The miRBase Sequence Database is a searchable database of published miRNA sequences and annotation. This collection refers specifically to the mature miRNA sequence.",
   "subject": "nucleotide; sequence",
   "location": "UK",

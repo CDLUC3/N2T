@@ -1,7 +1,7 @@
 {
   "id": "greengenes",
   "target": {
-    "DEFAULT": "http://greengenes.lbl.gov/cgi-bin/show_one_record_v2.pl?prokMSA_id={content}"
+    "DEFAULT": "http://greengenes.lbl.gov/cgi-bin/show_one_record_v2.pl?prokMSA_id=${content}"
   },
   "type": "scheme",
   "name": "GreenGenes at Lawrence Berkeley",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://greengenes.lbl.gov/cgi-bin/show_one_record_v2.pl?prokMSA_id=${ac}",
-  "redirect": "http://greengenes.lbl.gov/cgi-bin/show_one_record_v2.pl?prokMSA_id={content}",
+  "redirect": "http://greengenes.lbl.gov/cgi-bin/show_one_record_v2.pl?prokMSA_id=${content}",
   "description": "A 16S rRNA gene database which provides chimera screening, standard alignment, and taxonomic classification using multiple published taxonomies.",
   "subject": "sequence",
   "location": "USA",

@@ -1,13 +1,13 @@
 {
   "id": "zzztestprefix",
   "target": {
-    "DEFAULT": "https://id.example.org/{content}"
+    "DEFAULT": "https://id.example.org/${content}"
   },
   "type": "scheme",
   "name": "Test Prefix",
   "alias": null,
   "primary": 1,
-  "redirect": "https://id.example.org/{content}",
+  "redirect": "https://id.example.org/${content}",
   "test": "0123456789",
   "probe": "id.example.org/0123456789",
   "more": "https://id.example.org/",

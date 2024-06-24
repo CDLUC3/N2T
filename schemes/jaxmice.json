@@ -1,7 +1,7 @@
 {
   "id": "jaxmice",
   "target": {
-    "DEFAULT": "http://jaxmice.jax.org/strain/{content}.html"
+    "DEFAULT": "http://jaxmice.jax.org/strain/${content}.html"
   },
   "type": "scheme",
   "name": "JAX Mice at Jackson Laboratory",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://jaxmice.jax.org/strain/${ac}.html",
-  "redirect": "http://jaxmice.jax.org/strain/{content}.html",
+  "redirect": "http://jaxmice.jax.org/strain/${content}.html",
   "description": "JAX Mice is a catalogue of mouse strains supplied by the Jackson Laboratory.",
   "subject": "strain; mammalian; schema.org",
   "location": "USA",

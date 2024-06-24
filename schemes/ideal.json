@@ -1,7 +1,7 @@
 {
   "id": "ideal",
   "target": {
-    "DEFAULT": "http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/idealItem.php?id={content}"
+    "DEFAULT": "http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/idealItem.php?id=${content}"
   },
   "type": "scheme",
   "name": "IDEAL at Maebashi Institute of Technology",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/idealItem.php?id=${ac}",
-  "redirect": "http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/idealItem.php?id={content}",
+  "redirect": "http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/idealItem.php?id=${content}",
   "description": "IDEAL provides a collection of knowledge on experimentally verified intrinsically disordered proteins. It contains manual annotations by curators on intrinsically disordered regions, interaction regions to other molecules, post-translational modification sites, references and structural domain assignments.",
   "subject": "protein",
   "location": "Japan",

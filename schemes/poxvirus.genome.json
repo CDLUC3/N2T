@@ -1,9 +1,9 @@
 {
   "id": "poxvirus.genome",
   "target": {
-    "DEFAULT": "http://www.poxvirus.org/map.asp?genome_id={content}"
+    "DEFAULT": "http://www.poxvirus.org/map.asp?genome_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.poxvirus.org/map.asp?genome_id={content}",
+  "redirect": "http://www.poxvirus.org/map.asp?genome_id=${content}",
   "revision": 0
 }

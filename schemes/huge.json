@@ -1,7 +1,7 @@
 {
   "id": "huge",
   "target": {
-    "DEFAULT": "http://www.kazusa.or.jp/huge/gfpage/{content}/"
+    "DEFAULT": "http://www.kazusa.or.jp/huge/gfpage/${content}/"
   },
   "type": "scheme",
   "name": "HUGE at Kazusa DNA Research Institute",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.kazusa.or.jp/huge/gfpage/${ac}/",
-  "redirect": "http://www.kazusa.or.jp/huge/gfpage/{content}/",
+  "redirect": "http://www.kazusa.or.jp/huge/gfpage/${content}/",
   "description": "The Human Unidentified Gene-Encoded (HUGE) protein database contains  results from sequence analysis of human novel large (>4 kb) cDNAs identified in the Kazusa cDNA sequencing project.",
   "subject": "DNA; protein",
   "location": "Japan",

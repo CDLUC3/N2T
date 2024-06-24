@@ -1,7 +1,7 @@
 {
   "id": "mobidb",
   "target": {
-    "DEFAULT": "http://mobidb.bio.unipd.it/{content}"
+    "DEFAULT": "http://mobidb.bio.unipd.it/${content}"
   },
   "type": "scheme",
   "name": "MobiDB",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://mobidb.bio.unipd.it/${ac}",
-  "redirect": "http://mobidb.bio.unipd.it/{content}",
+  "redirect": "http://mobidb.bio.unipd.it/${content}",
   "description": "MobiDB is a database of protein disorder and mobility annotations.",
   "subject": "schema.org",
   "location": "Italy",

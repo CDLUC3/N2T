@@ -1,7 +1,7 @@
 {
   "id": "drugbank",
   "target": {
-    "DEFAULT": "http://www.drugbank.ca/drugs/{content}"
+    "DEFAULT": "http://www.drugbank.ca/drugs/${content}"
   },
   "type": "scheme",
   "name": "DrugBank drug information",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.drugbank.ca/drugs/${ac}",
-  "redirect": "http://www.drugbank.ca/drugs/{content}",
+  "redirect": "http://www.drugbank.ca/drugs/${content}",
   "description": "The DrugBank database is a bioinformatics and chemoinformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information. This collection references drug information.",
   "subject": "protein; drug",
   "location": "Canada",

@@ -1,7 +1,7 @@
 {
   "id": "z021/pdb",
   "target": {
-    "DEFAULT": "http://proteopedia.org/wiki/index.php/{content}"
+    "DEFAULT": "http://proteopedia.org/wiki/index.php/${content}"
   },
   "type": "scheme",
   "name": "Proteopedia",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://proteopedia.org/wiki/index.php/${ac}",
-  "redirect": "http://proteopedia.org/wiki/index.php/{content}",
+  "redirect": "http://proteopedia.org/wiki/index.php/${content}",
   "description": "The Protein Data Bank is the single worldwide archive of structural data of biological macromolecules.",
   "subject": "protein; structure",
   "location": "Israel",

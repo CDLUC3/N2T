@@ -1,9 +1,9 @@
 {
   "id": "natsdb",
   "target": {
-    "DEFAULT": "http://natsdb.cbi.pku.edu.cn/nats_list.php?sa_type=SA_20&represent=1&keyword_term=&species=[?species_name]&id={content}"
+    "DEFAULT": "http://natsdb.cbi.pku.edu.cn/nats_list.php?sa_type=SA_20&represent=1&keyword_term=&species=[?species_name]&id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://natsdb.cbi.pku.edu.cn/nats_list.php?sa_type=SA_20&represent=1&keyword_term=&species=[?species_name]&id={content}",
+  "redirect": "http://natsdb.cbi.pku.edu.cn/nats_list.php?sa_type=SA_20&represent=1&keyword_term=&species=[?species_name]&id=${content}",
   "revision": 0
 }

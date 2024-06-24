@@ -1,7 +1,7 @@
 {
   "id": "geo",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${content}"
   },
   "type": "scheme",
   "name": "Gene Expression Omnibus at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${content}",
   "description": "The Gene Expression Omnibus (GEO) is a gene expression repository providing a curated, online resource for gene expression data browsing, query and retrieval.",
   "subject": "microarray; expression; nucleotide",
   "location": "USA",

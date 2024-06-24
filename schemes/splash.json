@@ -1,7 +1,7 @@
 {
   "id": "splash",
   "target": {
-    "DEFAULT": "http://mona.fiehnlab.ucdavis.edu/#/spectra/splash/{content}"
+    "DEFAULT": "http://mona.fiehnlab.ucdavis.edu/#/spectra/splash/${content}"
   },
   "type": "scheme",
   "name": "Mass Bank of North America (MoNA)",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://mona.fiehnlab.ucdavis.edu/#/spectra/splash/${ac}",
-  "redirect": "http://mona.fiehnlab.ucdavis.edu/#/spectra/splash/{content}",
+  "redirect": "http://mona.fiehnlab.ucdavis.edu/#/spectra/splash/${content}",
   "description": "The spectra hash code (SPLASH) is a unique and non-proprietary identifier for spectra, and is independent of how the spectra were acquired or processed. It can be easily calculated for a wide range of spectra, including Mass spectroscopy,  infrared spectroscopy, ultraviolet and nuclear magnetic resonance.",
   "subject": "mass spectrometry; metabolite; chemical",
   "location": "USA",

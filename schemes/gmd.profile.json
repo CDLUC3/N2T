@@ -1,7 +1,7 @@
 {
   "id": "gmd.profile",
   "target": {
-    "DEFAULT": "http://gmd.mpimp-golm.mpg.de/profile/default.aspx?XemlId={content}"
+    "DEFAULT": "http://gmd.mpimp-golm.mpg.de/profile/default.aspx?XemlId=${content}"
   },
   "type": "scheme",
   "name": "Golm Metabolome Database (Profile) at Max Planck Institute of Molecular Plant Physiology",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://gmd.mpimp-golm.mpg.de/profile/default.aspx?XemlId=${ac}",
-  "redirect": "http://gmd.mpimp-golm.mpg.de/profile/default.aspx?XemlId={content}",
+  "redirect": "http://gmd.mpimp-golm.mpg.de/profile/default.aspx?XemlId=${content}",
   "description": "Golm Metabolome Database (GMD) provides public access to custom mass spectral libraries, metabolite profiling experiments as well as additional information and tools. GMD's metabolite profiles provide relative metabolite concentrations normalised according to fresh weight (or comparable quantitative data, such as volume, cell count, etc.) and internal standards (e.g. ribotol) of biological reference conditions and tissues.",
   "subject": "assay; metabolite",
   "location": "Germany",

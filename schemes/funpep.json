@@ -1,9 +1,9 @@
 {
   "id": "funpep",
   "target": {
-    "DEFAULT": "http://swift.cmbi.kun.nl/swift/FUNPEP/gergo/{content}/index.html"
+    "DEFAULT": "http://swift.cmbi.kun.nl/swift/FUNPEP/gergo/${content}/index.html"
   },
   "type": "commonspfx",
-  "redirect": "http://swift.cmbi.kun.nl/swift/FUNPEP/gergo/{content}/index.html",
+  "redirect": "http://swift.cmbi.kun.nl/swift/FUNPEP/gergo/${content}/index.html",
   "revision": 0
 }

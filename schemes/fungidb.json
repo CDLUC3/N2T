@@ -1,7 +1,7 @@
 {
   "id": "fungidb",
   "target": {
-    "DEFAULT": "https://fungidb.org/fungidb/app/record/gene/{content}"
+    "DEFAULT": "https://fungidb.org/fungidb/app/record/gene/${content}"
   },
   "type": "scheme",
   "name": "FungiDB at University of California",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://fungidb.org/fungidb/app/record/gene/${ac}",
-  "redirect": "https://fungidb.org/fungidb/app/record/gene/{content}",
+  "redirect": "https://fungidb.org/fungidb/app/record/gene/${content}",
   "description": "FungiDB is a genomic resource for fungal genomes. It contains contains genome sequence and annotation from several fungal classes, including the Ascomycota classes, Eurotiomycetes, Sordariomycetes, Saccharomycetes and the Basidiomycota orders, Pucciniomycetes and Tremellomycetes, and the basal 'Zygomycete' lineage Mucormycotina.",
   "subject": "genome; gene",
   "location": "USA",

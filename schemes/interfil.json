@@ -1,9 +1,9 @@
 {
   "id": "interfil",
   "target": {
-    "DEFAULT": "http://www.interfil.org/details.php?id={content}"
+    "DEFAULT": "http://www.interfil.org/details.php?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.interfil.org/details.php?id={content}",
+  "redirect": "http://www.interfil.org/details.php?id=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "rvd",
   "target": {
-    "DEFAULT": "http://virus.zoo.ox.ac.uk/rnavirusdb/virus.php?id={content}"
+    "DEFAULT": "http://virus.zoo.ox.ac.uk/rnavirusdb/virus.php?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://virus.zoo.ox.ac.uk/rnavirusdb/virus.php?id={content}",
+  "redirect": "http://virus.zoo.ox.ac.uk/rnavirusdb/virus.php?id=${content}",
   "revision": 0
 }

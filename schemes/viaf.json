@@ -1,7 +1,7 @@
 {
   "id": "viaf",
   "target": {
-    "DEFAULT": "http://viaf.org/viaf/{content}"
+    "DEFAULT": "http://viaf.org/viaf/${content}"
   },
   "type": "scheme",
   "name": "Virtual International Authority File",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://viaf.org/viaf/${ac}",
-  "redirect": "http://viaf.org/viaf/{content}",
+  "redirect": "http://viaf.org/viaf/${content}",
   "description": "The VIAF&#xAE; (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted name authority service. The goal of the service is to lower the cost and increase the utility of library authority files by matching and linking widely-used authority files and making that information available on the Web.",
   "subject": null,
   "location": "US",

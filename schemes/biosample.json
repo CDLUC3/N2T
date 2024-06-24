@@ -1,7 +1,7 @@
 {
   "id": "biosample",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/biosamples/sample/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/biosamples/sample/${content}"
   },
   "type": "scheme",
   "name": "BioSamples Database at EBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.ebi.ac.uk/biosamples/sample/${ac}",
-  "redirect": "https://www.ebi.ac.uk/biosamples/sample/{content}",
+  "redirect": "https://www.ebi.ac.uk/biosamples/sample/${content}",
   "description": "The BioSample Database stores information about biological samples used in molecular experiments, such as sequencing, gene expression or proteomics. It includes reference samples, such as cell lines, which are repeatedly used in experiments. Accession numbers for the reference samples will be exchanged with a similar database at NCBI, and DDBJ (Japan). Record access may be affected due to different release cycles and inter-institutional synchronisation.",
   "subject": "annotation",
   "location": "UK",

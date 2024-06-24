@@ -1,9 +1,9 @@
 {
   "id": "ec",
   "target": {
-    "DEFAULT": "http://www.chem.qmul.ac.uk/iubmb/{content}"
+    "DEFAULT": "http://www.chem.qmul.ac.uk/iubmb/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.chem.qmul.ac.uk/iubmb/{content}",
+  "redirect": "http://www.chem.qmul.ac.uk/iubmb/${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "replicationdomain",
   "target": {
-    "DEFAULT": "http://www.replicationdomain.com/view-dataset.php?RecordID={content}"
+    "DEFAULT": "http://www.replicationdomain.com/view-dataset.php?RecordID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.replicationdomain.com/view-dataset.php?RecordID={content}",
+  "redirect": "http://www.replicationdomain.com/view-dataset.php?RecordID=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "tgi",
   "target": {
-    "DEFAULT": "http://compbio.dfci.harvard.edu/cgi-bin/tgi/gimain.pl?gudb={content}"
+    "DEFAULT": "http://compbio.dfci.harvard.edu/cgi-bin/tgi/gimain.pl?gudb=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://compbio.dfci.harvard.edu/cgi-bin/tgi/gimain.pl?gudb={content}",
+  "redirect": "http://compbio.dfci.harvard.edu/cgi-bin/tgi/gimain.pl?gudb=${content}",
   "revision": 0
 }

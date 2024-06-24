@@ -1,9 +1,9 @@
 {
   "id": "sbase",
   "target": {
-    "DEFAULT": "http://hydra.icgeb.trieste.it/sbase/sbase.php?sec=search&sub=group&group_id={content}"
+    "DEFAULT": "http://hydra.icgeb.trieste.it/sbase/sbase.php?sec=search&sub=group&group_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://hydra.icgeb.trieste.it/sbase/sbase.php?sec=search&sub=group&group_id={content}",
+  "redirect": "http://hydra.icgeb.trieste.it/sbase/sbase.php?sec=search&sub=group&group_id=${content}",
   "revision": 0
 }

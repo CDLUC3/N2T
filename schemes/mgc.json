@@ -1,9 +1,9 @@
 {
   "id": "mgc",
   "target": {
-    "DEFAULT": "http://mgc.nci.nih.gov/Tissues/LibInfo?LID={content}"
+    "DEFAULT": "http://mgc.nci.nih.gov/Tissues/LibInfo?LID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://mgc.nci.nih.gov/Tissues/LibInfo?LID={content}",
+  "redirect": "http://mgc.nci.nih.gov/Tissues/LibInfo?LID=${content}",
   "revision": 0
 }

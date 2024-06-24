@@ -1,9 +1,9 @@
 {
   "id": "dima",
   "target": {
-    "DEFAULT": "http://mips.helmholtz-muenchen.de/genre/proj/dima2/query/query.jsp?domain={content}"
+    "DEFAULT": "http://mips.helmholtz-muenchen.de/genre/proj/dima2/query/query.jsp?domain=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://mips.helmholtz-muenchen.de/genre/proj/dima2/query/query.jsp?domain={content}",
+  "redirect": "http://mips.helmholtz-muenchen.de/genre/proj/dima2/query/query.jsp?domain=${content}",
   "revision": 0
 }

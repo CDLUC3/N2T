@@ -1,7 +1,7 @@
 {
   "id": "massbank",
   "target": {
-    "DEFAULT": "http://www.massbank.jp/jsp/FwdRecord.jsp?id={content}"
+    "DEFAULT": "http://www.massbank.jp/jsp/FwdRecord.jsp?id=${content}"
   },
   "type": "scheme",
   "name": "MassBank in Japan",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://www.massbank.jp/jsp/FwdRecord.jsp?id=${ac}",
-  "redirect": "http://www.massbank.jp/jsp/FwdRecord.jsp?id={content}",
+  "redirect": "http://www.massbank.jp/jsp/FwdRecord.jsp?id=${content}",
   "description": "MassBank is a federated database of reference spectra from different instruments, including high-resolution mass spectra of small metabolites (<3000 Da).",
   "subject": "chemical; mass spectrometry; metabolite",
   "location": "Japan",

@@ -1,9 +1,9 @@
 {
   "id": "interpare",
   "target": {
-    "DEFAULT": "http://interpare.kobic.re.kr/cgi-bin/search_interface_from_interpare_new.cgi?pdb={content}"
+    "DEFAULT": "http://interpare.kobic.re.kr/cgi-bin/search_interface_from_interpare_new.cgi?pdb=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://interpare.kobic.re.kr/cgi-bin/search_interface_from_interpare_new.cgi?pdb={content}",
+  "redirect": "http://interpare.kobic.re.kr/cgi-bin/search_interface_from_interpare_new.cgi?pdb=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "alterorf",
   "target": {
-    "DEFAULT": "http://www.alterorf.cl/SearchResults/SearchResult.aspx?variable1={content}"
+    "DEFAULT": "http://www.alterorf.cl/SearchResults/SearchResult.aspx?variable1=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.alterorf.cl/SearchResults/SearchResult.aspx?variable1={content}",
+  "redirect": "http://www.alterorf.cl/SearchResults/SearchResult.aspx?variable1=${content}",
   "revision": 0
 }

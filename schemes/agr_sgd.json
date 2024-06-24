@@ -1,7 +1,7 @@
 {
   "id": "agr/sgd",
   "target": {
-    "DEFAULT": "https://www.alliancegenome.org/gene/SGD:{content}"
+    "DEFAULT": "https://www.alliancegenome.org/gene/SGD:${content}"
   },
   "type": "scheme",
   "name": "SGD through the Alliance of Genome Resources",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.alliancegenome.org/gene/SGD:${ac}",
-  "redirect": "https://www.alliancegenome.org/gene/SGD:{content}",
+  "redirect": "https://www.alliancegenome.org/gene/SGD:${content}",
   "description": "The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.",
   "subject": "genome; eukaryotic; nucleotide",
   "location": "USA",

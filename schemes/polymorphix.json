@@ -1,9 +1,9 @@
 {
   "id": "polymorphix",
   "target": {
-    "DEFAULT": "http://pbil.univ-lyon1.fr/cgi-bin/acnuc-dispfam?query={content}&db=Polymorphix"
+    "DEFAULT": "http://pbil.univ-lyon1.fr/cgi-bin/acnuc-dispfam?query=${content}&db=Polymorphix"
   },
   "type": "commonspfx",
-  "redirect": "http://pbil.univ-lyon1.fr/cgi-bin/acnuc-dispfam?query={content}&db=Polymorphix",
+  "redirect": "http://pbil.univ-lyon1.fr/cgi-bin/acnuc-dispfam?query=${content}&db=Polymorphix",
   "revision": 0
 }

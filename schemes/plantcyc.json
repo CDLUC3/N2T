@@ -1,9 +1,9 @@
 {
   "id": "plantcyc",
   "target": {
-    "DEFAULT": "http://pmn.plantcyc.org/PLANT/NEW-IMAGE?type=GENE&object={content}"
+    "DEFAULT": "http://pmn.plantcyc.org/PLANT/NEW-IMAGE?type=GENE&object=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://pmn.plantcyc.org/PLANT/NEW-IMAGE?type=GENE&object={content}",
+  "redirect": "http://pmn.plantcyc.org/PLANT/NEW-IMAGE?type=GENE&object=${content}",
   "revision": 0
 }

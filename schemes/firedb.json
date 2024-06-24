@@ -1,9 +1,9 @@
 {
   "id": "firedb",
   "target": {
-    "DEFAULT": "http://firedb.bioinfo.cnio.es/Php/FireDB.php?pdbcode={content}"
+    "DEFAULT": "http://firedb.bioinfo.cnio.es/Php/FireDB.php?pdbcode=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://firedb.bioinfo.cnio.es/Php/FireDB.php?pdbcode={content}",
+  "redirect": "http://firedb.bioinfo.cnio.es/Php/FireDB.php?pdbcode=${content}",
   "revision": 0
 }

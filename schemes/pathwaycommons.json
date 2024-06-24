@@ -1,7 +1,7 @@
 {
   "id": "pathwaycommons",
   "target": {
-    "DEFAULT": "http://www.pathwaycommons.org/pc/record2.do?id={content}"
+    "DEFAULT": "http://www.pathwaycommons.org/pc/record2.do?id=${content}"
   },
   "type": "scheme",
   "name": "Pathway Commons",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.pathwaycommons.org/pc/record2.do?id=${ac}",
-  "redirect": "http://www.pathwaycommons.org/pc/record2.do?id={content}",
+  "redirect": "http://www.pathwaycommons.org/pc/record2.do?id=${content}",
   "description": "Pathway Commons is a convenient point of access to biological pathway information collected from public pathway databases, which you can browse or search. It is a collection of publicly available pathways from multiple organisms that provides researchers with convenient access to a comprehensive collection of pathways from multiple sources represented in a common language.",
   "subject": "pathway",
   "location": "USA",

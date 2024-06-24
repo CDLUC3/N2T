@@ -1,7 +1,7 @@
 {
   "id": "protclustdb",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/sites/entrez?Db=proteinclusters&Cmd=DetailsSearch&Term={content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/sites/entrez?Db=proteinclusters&Cmd=DetailsSearch&Term=${content}"
   },
   "type": "scheme",
   "name": "ProtClustDB at NCBI",
@@ -11,7 +11,7 @@
   "sort_score": "5",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/sites/entrez?Db=proteinclusters&Cmd=DetailsSearch&Term=${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/sites/entrez?Db=proteinclusters&Cmd=DetailsSearch&Term={content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/sites/entrez?Db=proteinclusters&Cmd=DetailsSearch&Term=${content}",
   "description": "ProtClustDB is a collection of related protein sequences (clusters) consisting of Reference Sequence proteins encoded by complete genomes. This database contains both curated and non-curated clusters.",
   "subject": "clustering; protein",
   "location": "USA",

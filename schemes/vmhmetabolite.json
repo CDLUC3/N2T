@@ -1,7 +1,7 @@
 {
   "id": "vmhmetabolite",
   "target": {
-    "DEFAULT": "http://vmh.uni.lu/#metabolite/{content}"
+    "DEFAULT": "http://vmh.uni.lu/#metabolite/${content}"
   },
   "type": "scheme",
   "name": "VMH metabolite",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://vmh.uni.lu/#metabolite/${ac}",
-  "redirect": "http://vmh.uni.lu/#metabolite/{content}",
+  "redirect": "http://vmh.uni.lu/#metabolite/${content}",
   "description": "The Virtual Metabolic Human (VMH) is a resource that combines human and gut microbiota metabolism with nutrition and disease.",
   "subject": null,
   "location": "Luxembourg",

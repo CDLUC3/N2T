@@ -1,7 +1,7 @@
 {
   "id": "wikipathways",
   "target": {
-    "DEFAULT": "http://www.wikipathways.org/instance/{content}"
+    "DEFAULT": "http://www.wikipathways.org/instance/${content}"
   },
   "type": "scheme",
   "name": "Wikipathways",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.wikipathways.org/instance/${ac}",
-  "redirect": "http://www.wikipathways.org/instance/{content}",
+  "redirect": "http://www.wikipathways.org/instance/${content}",
   "description": "WikiPathways is a resource providing an open and public collection of  pathway maps created and curated by the community in a Wiki like style. All content is under the Creative Commons Attribution 3.0 Unported license.",
   "subject": "pathway",
   "location": "Holland and USA",

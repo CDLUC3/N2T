@@ -1,9 +1,9 @@
 {
   "id": "pig",
   "target": {
-    "DEFAULT": "http://molvis.vbi.vt.edu/pig/view/pig_protein_view.php?protein={content}"
+    "DEFAULT": "http://molvis.vbi.vt.edu/pig/view/pig_protein_view.php?protein=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://molvis.vbi.vt.edu/pig/view/pig_protein_view.php?protein={content}",
+  "redirect": "http://molvis.vbi.vt.edu/pig/view/pig_protein_view.php?protein=${content}",
   "revision": 0
 }

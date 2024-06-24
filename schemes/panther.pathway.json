@@ -1,7 +1,7 @@
 {
   "id": "panther.pathway",
   "target": {
-    "DEFAULT": "http://www.pantherdb.org/pathway/pathwayDiagram.jsp?catAccession={content}"
+    "DEFAULT": "http://www.pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=${content}"
   },
   "type": "scheme",
   "name": "PANTHER Pathway at USC (Los Angeles)",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=${ac}",
-  "redirect": "http://www.pantherdb.org/pathway/pathwayDiagram.jsp?catAccession={content}",
+  "redirect": "http://www.pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=${content}",
   "description": "The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System is a resource that classifies genes by their functions, using published scientific experimental evidence and evolutionary relationships to predict function even in the absence of direct experimental evidence. The PANTHER Pathway collection references pathway information, primarily for signaling pathways, each with subfamilies and protein sequences mapped to individual pathway components.",
   "subject": null,
   "location": "USA",

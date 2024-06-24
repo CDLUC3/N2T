@@ -1,9 +1,9 @@
 {
   "id": "integr8",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/integr8/OrganismSelection.do?action=makeCurrent&proteomeId={content}"
+    "DEFAULT": "http://www.ebi.ac.uk/integr8/OrganismSelection.do?action=makeCurrent&proteomeId=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/integr8/OrganismSelection.do?action=makeCurrent&proteomeId={content}",
+  "redirect": "http://www.ebi.ac.uk/integr8/OrganismSelection.do?action=makeCurrent&proteomeId=${content}",
   "revision": 0
 }

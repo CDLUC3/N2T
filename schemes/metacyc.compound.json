@@ -1,7 +1,7 @@
 {
   "id": "metacyc.compound",
   "target": {
-    "DEFAULT": "https://metacyc.org/compound?orgid=META&id={content}"
+    "DEFAULT": "https://metacyc.org/compound?orgid=META&id=${content}"
   },
   "type": "scheme",
   "name": "MetaCyc Metabolic Pathway Database",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://metacyc.org/compound?orgid=META&id=${ac}",
-  "redirect": "https://metacyc.org/compound?orgid=META&id={content}",
+  "redirect": "https://metacyc.org/compound?orgid=META&id=${content}",
   "description": "MetaCyc is a curated database of experimentally elucidated metabolic pathways from all domains of life. MetaCyc contains 2526 pathways from 2844 different organisms. MetaCyc contains pathways involved in both primary and secondary metabolism, as well as associated metabolites, reactions, enzymes, and genes. The goal of MetaCyc is to catalog the universe of metabolism by storing a representative sample of each experimentally elucidated pathway.",
   "subject": null,
   "location": "USA",

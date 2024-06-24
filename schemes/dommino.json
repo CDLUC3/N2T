@@ -1,7 +1,7 @@
 {
   "id": "dommino",
   "target": {
-    "DEFAULT": "http://orion.rnet.missouri.edu/~nz953/DOMMINO/index.php/result/show_network/{content}"
+    "DEFAULT": "http://orion.rnet.missouri.edu/~nz953/DOMMINO/index.php/result/show_network/${content}"
   },
   "type": "scheme",
   "name": "DOMMINO at University of Missouri",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://orion.rnet.missouri.edu/~nz953/DOMMINO/index.php/result/show_network/${ac}",
-  "redirect": "http://orion.rnet.missouri.edu/~nz953/DOMMINO/index.php/result/show_network/{content}",
+  "redirect": "http://orion.rnet.missouri.edu/~nz953/DOMMINO/index.php/result/show_network/${content}",
   "description": "DOMMINO is a database of macromolecular interactions that includes the interactions between protein domains, interdomain linkers, N- and C-terminal regions and protein peptides.",
   "subject": "protein; interaction",
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "mesh",
   "target": {
-    "DEFAULT": "http://id.nlm.nih.gov/mesh/{content}"
+    "DEFAULT": "http://id.nlm.nih.gov/mesh/${content}"
   },
   "type": "scheme",
   "name": "MeSH Linked Data at National Library of Medicine",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://id.nlm.nih.gov/mesh/${ac}",
-  "redirect": "http://id.nlm.nih.gov/mesh/{content}",
+  "redirect": "http://id.nlm.nih.gov/mesh/${content}",
   "description": "MeSH (Medical Subject Headings) is the National Library of Medicine's controlled vocabulary thesaurus. It consists of sets of terms naming descriptors in a hierarchical structure that permits searching at various levels of specificity. This thesaurus is used by NLM for indexing articles from biomedical journals, cataloguing of books, documents, etc.",
   "subject": null,
   "location": "USA",

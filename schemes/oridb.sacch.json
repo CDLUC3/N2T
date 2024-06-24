@@ -1,7 +1,7 @@
 {
   "id": "oridb.sacch",
   "target": {
-    "DEFAULT": "http://cerevisiae.oridb.org/details.php?id={content}"
+    "DEFAULT": "http://cerevisiae.oridb.org/details.php?id=${content}"
   },
   "type": "scheme",
   "name": "OriDB Saccharomyces at University of Nottingham",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://cerevisiae.oridb.org/details.php?id=${ac}",
-  "redirect": "http://cerevisiae.oridb.org/details.php?id={content}",
+  "redirect": "http://cerevisiae.oridb.org/details.php?id=${content}",
   "description": "OriDB is a database of collated genome-wide mapping studies of confirmed and predicted replication origin sites in Saccharomyces cerevisiae and the fission yeast Schizosaccharomyces pombe. This collection references Saccharomyces cerevisiae.",
   "subject": "genome; eukaryotic",
   "location": "UK",

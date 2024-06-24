@@ -1,7 +1,7 @@
 {
   "id": "mint",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/intact/query/interaction_id:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/intact/query/interaction_id:${content}"
   },
   "type": "scheme",
   "name": "MINT subset through IntAct",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/intact/query/interaction_id:${ac}",
-  "redirect": "https://www.ebi.ac.uk/intact/query/interaction_id:{content}",
+  "redirect": "https://www.ebi.ac.uk/intact/query/interaction_id:${content}",
   "description": "The Molecular INTeraction database (MINT) stores, in a structured format, information about molecular interactions by extracting experimental details from work published in peer-reviewed journals.",
   "subject": "protein; interaction",
   "location": "UK",

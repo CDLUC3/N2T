@@ -1,7 +1,7 @@
 {
   "id": "sgd",
   "target": {
-    "DEFAULT": "https://www.yeastgenome.org/locus/{content}"
+    "DEFAULT": "https://www.yeastgenome.org/locus/${content}"
   },
   "type": "scheme",
   "name": "SGD",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.yeastgenome.org/locus/${ac}",
-  "redirect": "https://www.yeastgenome.org/locus/{content}",
+  "redirect": "https://www.yeastgenome.org/locus/${content}",
   "description": "The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.",
   "subject": "genome; eukaryotic; nucleotide",
   "location": "USA",

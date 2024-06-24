@@ -1,9 +1,9 @@
 {
   "id": "pod",
   "target": {
-    "DEFAULT": "http://podb.nibb.ac.jp/Organellome/bin/browseImage.php?ID=Image-toshi_biochem.tohoku.ac.jp-{content}"
+    "DEFAULT": "http://podb.nibb.ac.jp/Organellome/bin/browseImage.php?ID=Image-toshi_biochem.tohoku.ac.jp-${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://podb.nibb.ac.jp/Organellome/bin/browseImage.php?ID=Image-toshi_biochem.tohoku.ac.jp-{content}",
+  "redirect": "http://podb.nibb.ac.jp/Organellome/bin/browseImage.php?ID=Image-toshi_biochem.tohoku.ac.jp-${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "pseudogene",
   "target": {
-    "DEFAULT": "http://tables.pseudogene.org/[?species_name]/{content}"
+    "DEFAULT": "http://tables.pseudogene.org/[?species_name]/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://tables.pseudogene.org/[?species_name]/{content}",
+  "redirect": "http://tables.pseudogene.org/[?species_name]/${content}",
   "revision": 0
 }

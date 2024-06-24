@@ -1,9 +1,9 @@
 {
   "id": "ccm",
   "target": {
-    "DEFAULT": "http://cancer.cellmap.org/cellmap/record.do?id={content}"
+    "DEFAULT": "http://cancer.cellmap.org/cellmap/record.do?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://cancer.cellmap.org/cellmap/record.do?id={content}",
+  "redirect": "http://cancer.cellmap.org/cellmap/record.do?id=${content}",
   "revision": 0
 }

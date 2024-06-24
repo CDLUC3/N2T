@@ -1,9 +1,9 @@
 {
   "id": "asrp",
   "target": {
-    "DEFAULT": "http://asrp.cgrb.oregonstate.edu/db/sRNAdisplay.html?ASRP_id={content}"
+    "DEFAULT": "http://asrp.cgrb.oregonstate.edu/db/sRNAdisplay.html?ASRP_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://asrp.cgrb.oregonstate.edu/db/sRNAdisplay.html?ASRP_id={content}",
+  "redirect": "http://asrp.cgrb.oregonstate.edu/db/sRNAdisplay.html?ASRP_id=${content}",
   "revision": 0
 }

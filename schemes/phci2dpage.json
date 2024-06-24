@@ -1,9 +1,9 @@
 {
   "id": "phci2dpage",
   "target": {
-    "DEFAULT": "http://www.gram.au.dk/cgi-bin/get-2d-entry/def?{content}"
+    "DEFAULT": "http://www.gram.au.dk/cgi-bin/get-2d-entry/def?${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.gram.au.dk/cgi-bin/get-2d-entry/def?{content}",
+  "redirect": "http://www.gram.au.dk/cgi-bin/get-2d-entry/def?${content}",
   "revision": 0
 }

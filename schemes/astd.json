@@ -1,9 +1,9 @@
 {
   "id": "astd",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/astd/geneview.html?acc={content}"
+    "DEFAULT": "http://www.ebi.ac.uk/astd/geneview.html?acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/astd/geneview.html?acc={content}",
+  "redirect": "http://www.ebi.ac.uk/astd/geneview.html?acc=${content}",
   "revision": 0
 }

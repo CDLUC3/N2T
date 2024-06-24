@@ -1,7 +1,7 @@
 {
   "id": "t3db",
   "target": {
-    "DEFAULT": "http://www.t3db.org/toxins/{content}"
+    "DEFAULT": "http://www.t3db.org/toxins/${content}"
   },
   "type": "scheme",
   "name": "Toxin and Toxin Target Database",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.t3db.org/toxins/${ac}",
-  "redirect": "http://www.t3db.org/toxins/{content}",
+  "redirect": "http://www.t3db.org/toxins/${content}",
   "description": "Toxin and Toxin Target Database (T3DB) is a bioinformatics resource that combines detailed toxin data with comprehensive toxin target information.",
   "subject": "drug; protein",
   "location": "Canada",

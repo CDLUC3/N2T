@@ -1,7 +1,7 @@
 {
   "id": "validatordb",
   "target": {
-    "DEFAULT": "https://webchem.ncbr.muni.cz/Platform/ValidatorDb/{content}"
+    "DEFAULT": "https://webchem.ncbr.muni.cz/Platform/ValidatorDb/${content}"
   },
   "type": "scheme",
   "name": "ValidatorDB",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://webchem.ncbr.muni.cz/Platform/ValidatorDb/${ac}",
-  "redirect": "https://webchem.ncbr.muni.cz/Platform/ValidatorDb/{content}",
+  "redirect": "https://webchem.ncbr.muni.cz/Platform/ValidatorDb/${content}",
   "description": "Database of validation results for ligands and non-standard residues in the Protein Data Bank.",
   "subject": null,
   "location": "Czech Republic",

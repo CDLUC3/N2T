@@ -1,7 +1,7 @@
 {
   "id": "euclinicaltrials",
   "target": {
-    "DEFAULT": "https://www.clinicaltrialsregister.eu/ctr-search/search?query={content}"
+    "DEFAULT": "https://www.clinicaltrialsregister.eu/ctr-search/search?query=${content}"
   },
   "type": "scheme",
   "name": "EU Clinical Trials at  European Medicines Agency",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.clinicaltrialsregister.eu/ctr-search/search?query=${ac}",
-  "redirect": "https://www.clinicaltrialsregister.eu/ctr-search/search?query={content}",
+  "redirect": "https://www.clinicaltrialsregister.eu/ctr-search/search?query=${content}",
   "description": "The EU Clinical Trials Register contains information on clinical trials conducted in the European Union (EU), or the European Economic Area (EEA) which started after 1 May 2004. It also includes trials conducted outside these areas if they form part of a paediatric investigation plan (PIP), or are sponsored by a marketing authorisation holder, and involve the use of a medicine in the paediatric population.",
   "subject": "pharmacogenomics; disease; human; disorder",
   "location": "UK",

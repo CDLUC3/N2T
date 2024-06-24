@@ -1,9 +1,9 @@
 {
   "id": "rpg",
   "target": {
-    "DEFAULT": "http://ribosome.miyazaki-med.ac.jp/rpg.cgi?mode=gene&id={content}"
+    "DEFAULT": "http://ribosome.miyazaki-med.ac.jp/rpg.cgi?mode=gene&id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://ribosome.miyazaki-med.ac.jp/rpg.cgi?mode=gene&id={content}",
+  "redirect": "http://ribosome.miyazaki-med.ac.jp/rpg.cgi?mode=gene&id=${content}",
   "revision": 0
 }

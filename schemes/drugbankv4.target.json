@@ -1,7 +1,7 @@
 {
   "id": "drugbankv4.target",
   "target": {
-    "DEFAULT": "http://www.drugbank.ca/biodb/bio_entities/{content}"
+    "DEFAULT": "http://www.drugbank.ca/biodb/bio_entities/${content}"
   },
   "type": "scheme",
   "name": "DrugBank Target information version 4",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.drugbank.ca/biodb/bio_entities/${ac}",
-  "redirect": "http://www.drugbank.ca/biodb/bio_entities/{content}",
+  "redirect": "http://www.drugbank.ca/biodb/bio_entities/${content}",
   "description": "The DrugBank database is a bioinformatics and chemoinformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information. This collection references target information from version 4 of the database.",
   "subject": "interaction; chemical; protein",
   "location": "Canada",

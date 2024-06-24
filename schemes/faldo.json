@@ -1,9 +1,9 @@
 {
   "id": "faldo",
   "target": {
-    "DEFAULT": "http://biohackathon.org/resource/faldo#{content}"
+    "DEFAULT": "http://biohackathon.org/resource/faldo#${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://biohackathon.org/resource/faldo#{content}",
+  "redirect": "http://biohackathon.org/resource/faldo#${content}",
   "revision": 0
 }

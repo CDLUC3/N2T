@@ -1,9 +1,9 @@
 {
   "id": "systomonas.gene",
   "target": {
-    "DEFAULT": "http://www.systomonas.de/gene.php?ge_acc={content}"
+    "DEFAULT": "http://www.systomonas.de/gene.php?ge_acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.systomonas.de/gene.php?ge_acc={content}",
+  "redirect": "http://www.systomonas.de/gene.php?ge_acc=${content}",
   "revision": 0
 }

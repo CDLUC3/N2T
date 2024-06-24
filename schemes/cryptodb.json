@@ -1,7 +1,7 @@
 {
   "id": "cryptodb",
   "target": {
-    "DEFAULT": "https://cryptodb.org/cryptodb/app/record/gene/{content}"
+    "DEFAULT": "https://cryptodb.org/cryptodb/app/record/gene/${content}"
   },
   "type": "scheme",
   "name": "CryptoDB at EuPathDB",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://cryptodb.org/cryptodb/app/record/gene/${ac}",
-  "redirect": "https://cryptodb.org/cryptodb/app/record/gene/{content}",
+  "redirect": "https://cryptodb.org/cryptodb/app/record/gene/${content}",
   "description": "CryptoDB is one of the databases that can be accessed through the EuPathDB (http://EuPathDB.org; formerly ApiDB) portal, covering eukaryotic pathogens of the genera Cryptosporidium, Giardia, Leishmania, Neospora, Plasmodium, Toxoplasma, Trichomonas and Trypanosoma. While each of these groups is supported by a taxon-specific database built upon the same infrastructure, the EuPathDB portal offers an entry point to all these resources, and the opportunity to leverage orthology for searches across genera.",
   "subject": "eukaryotic; genome",
   "location": "USA",

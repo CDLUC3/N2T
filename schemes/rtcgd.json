@@ -1,9 +1,9 @@
 {
   "id": "rtcgd",
   "target": {
-    "DEFAULT": "http://rtcgd.abcc.ncifcrf.gov/cgi-bin/mm9/clone_finder.cgi?query={content}"
+    "DEFAULT": "http://rtcgd.abcc.ncifcrf.gov/cgi-bin/mm9/clone_finder.cgi?query=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://rtcgd.abcc.ncifcrf.gov/cgi-bin/mm9/clone_finder.cgi?query={content}",
+  "redirect": "http://rtcgd.abcc.ncifcrf.gov/cgi-bin/mm9/clone_finder.cgi?query=${content}",
   "revision": 0
 }

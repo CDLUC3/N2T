@@ -1,7 +1,7 @@
 {
   "id": "z046/homologene",
   "target": {
-    "DEFAULT": "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:{content}"
+    "DEFAULT": "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:${content}"
   },
   "type": "scheme",
   "name": "Bio2RDF",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:${ac}",
-  "redirect": "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:{content}",
+  "redirect": "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:${content}",
   "description": "HomoloGene is a system for automated detection of homologs among the annotated genes of several completely sequenced eukaryotic genomes.",
   "subject": "eukaryotic; gene; clustering",
   "location": null,

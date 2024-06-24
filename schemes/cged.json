@@ -1,9 +1,9 @@
 {
   "id": "cged",
   "target": {
-    "DEFAULT": "http://lifesciencedb.jp/cgi-bin/cged/detail.cgi?ci=3&cg={content}"
+    "DEFAULT": "http://lifesciencedb.jp/cgi-bin/cged/detail.cgi?ci=3&cg=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://lifesciencedb.jp/cgi-bin/cged/detail.cgi?ci=3&cg={content}",
+  "redirect": "http://lifesciencedb.jp/cgi-bin/cged/detail.cgi?ci=3&cg=${content}",
   "revision": 0
 }

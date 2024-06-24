@@ -1,7 +1,7 @@
 {
   "id": "ebi/insdc",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ena/data/view/${content}"
   },
   "type": "scheme",
   "name": "INSDC through European Nucleotide Archive (ENA)",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ena/data/view/${ac}",
-  "redirect": "https://www.ebi.ac.uk/ena/data/view/{content}",
+  "redirect": "https://www.ebi.ac.uk/ena/data/view/${content}",
   "description": "The International Nucleotide Sequence Database Collaboration (INSDC) consists of a joint effort to collect and disseminate databases containing DNA and RNA sequences.",
   "subject": "nucleotide; sequence",
   "location": "UK",

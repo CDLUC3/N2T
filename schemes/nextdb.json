@@ -1,7 +1,7 @@
 {
   "id": "nextdb",
   "target": {
-    "DEFAULT": "http://nematode.lab.nig.ac.jp/db2/ShowCloneInfo.php?clone={content}"
+    "DEFAULT": "http://nematode.lab.nig.ac.jp/db2/ShowCloneInfo.php?clone=${content}"
   },
   "type": "scheme",
   "name": "NEXTDB at Shizuoka",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://nematode.lab.nig.ac.jp/db2/ShowCloneInfo.php?clone=${ac}",
-  "redirect": "http://nematode.lab.nig.ac.jp/db2/ShowCloneInfo.php?clone={content}",
+  "redirect": "http://nematode.lab.nig.ac.jp/db2/ShowCloneInfo.php?clone=${content}",
   "description": "NextDb is a database that provides information on the expression pattern map of the 100Mb genome of the nematode Caenorhabditis elegans. This was done through EST analysis and systematic whole mount in situ hybridization. Information available includes 5' and 3' ESTs, and in-situ hybridization images of 11,237 cDNA clones.",
   "subject": "expression; eukaryotic",
   "location": "Japan",

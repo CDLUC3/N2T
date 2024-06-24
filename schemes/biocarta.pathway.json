@@ -1,7 +1,7 @@
 {
   "id": "biocarta.pathway",
   "target": {
-    "DEFAULT": "https://cgap.nci.nih.gov/Pathways/BioCarta/{content}"
+    "DEFAULT": "https://cgap.nci.nih.gov/Pathways/BioCarta/${content}"
   },
   "type": "scheme",
   "name": "BioCarta Pathway at NCI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://cgap.nci.nih.gov/Pathways/BioCarta/${ac}",
-  "redirect": "https://cgap.nci.nih.gov/Pathways/BioCarta/{content}",
+  "redirect": "https://cgap.nci.nih.gov/Pathways/BioCarta/${content}",
   "description": "BioCarta is a supplier and distributor of characterized reagents and assays for biopharmaceutical and academic research. It catalogs community produced online maps depicting molecular relationships from areas of active research, generating classical pathways as well as suggestions for new pathways. This collections references pathway maps.",
   "subject": "pathway; image library",
   "location": "USA",

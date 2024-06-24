@@ -1,7 +1,7 @@
 {
   "id": "z012/ensembl",
   "target": {
-    "DEFAULT": "http://useast.ensembl.org/id/{content}"
+    "DEFAULT": "http://useast.ensembl.org/id/${content}"
   },
   "type": "scheme",
   "name": "Ensembl US East mirror",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://useast.ensembl.org/id/${ac}",
-  "redirect": "http://useast.ensembl.org/id/{content}",
+  "redirect": "http://useast.ensembl.org/id/${content}",
   "description": "Ensembl is a joint project between EMBL - EBI and the Sanger Institute  to develop a software system which produces and maintains automatic annotation on selected eukaryotic genomes. This collections also references outgroup organisms.",
   "subject": "genome; nucleotide; sequence; schema.org; eukaryotic",
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "smart",
   "target": {
-    "DEFAULT": "http://smart.embl-heidelberg.de/smart/do_annotation.pl?DOMAIN={content}"
+    "DEFAULT": "http://smart.embl-heidelberg.de/smart/do_annotation.pl?DOMAIN=${content}"
   },
   "type": "scheme",
   "name": "SMART (Simple Modular Architecture Research Tool)",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://smart.embl-heidelberg.de/smart/do_annotation.pl?DOMAIN=${ac}",
-  "redirect": "http://smart.embl-heidelberg.de/smart/do_annotation.pl?DOMAIN={content}",
+  "redirect": "http://smart.embl-heidelberg.de/smart/do_annotation.pl?DOMAIN=${content}",
   "description": "The Simple Modular Architecture Research Tool (SMART) is an online tool for the identification and annotation of protein domains, and the analysis of domain architectures.",
   "subject": "protein; domain; gene",
   "location": "Germany",

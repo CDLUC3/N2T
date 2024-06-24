@@ -1,9 +1,9 @@
 {
   "id": "mitoproteome",
   "target": {
-    "DEFAULT": "http://www.mitoproteome.org/data/proteome/index.cgi?db=mito&pid=L{content}"
+    "DEFAULT": "http://www.mitoproteome.org/data/proteome/index.cgi?db=mito&pid=L${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.mitoproteome.org/data/proteome/index.cgi?db=mito&pid=L{content}",
+  "redirect": "http://www.mitoproteome.org/data/proteome/index.cgi?db=mito&pid=L${content}",
   "revision": 0
 }

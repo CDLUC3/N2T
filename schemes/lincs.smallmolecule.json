@@ -1,7 +1,7 @@
 {
   "id": "lincs.smallmolecule",
   "target": {
-    "DEFAULT": "http://lincsportal.ccs.miami.edu/SmallMolecules/#/view/{content}"
+    "DEFAULT": "http://lincsportal.ccs.miami.edu/SmallMolecules/#/view/${content}"
   },
   "type": "scheme",
   "name": "LINCS Portal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://lincsportal.ccs.miami.edu/SmallMolecules/#/view/${ac}",
-  "redirect": "http://lincsportal.ccs.miami.edu/SmallMolecules/#/view/{content}",
+  "redirect": "http://lincsportal.ccs.miami.edu/SmallMolecules/#/view/${content}",
   "description": "The Library of Network-Based Cellular Signatures (LINCS) Program aims to create a network-based understanding of biology by cataloging changes in gene expression and other cellular processes that occur when cells are exposed to a variety of perturbing agents. The LINCS small molecule collection is used as perturbagens in LINCS experiments. The small molecule metadata includes substance-specific batch information provided by each LINCS Data and Signature Generation Center (DSGC).",
   "subject": "human",
   "location": "USA",

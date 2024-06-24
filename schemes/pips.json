@@ -1,9 +1,9 @@
 {
   "id": "pips",
   "target": {
-    "DEFAULT": "http://www.compbio.dundee.ac.uk/www-pips/Identifier.jsp?ID={content}&Interactions=Prot&LR=1.0&modules=on"
+    "DEFAULT": "http://www.compbio.dundee.ac.uk/www-pips/Identifier.jsp?ID=${content}&Interactions=Prot&LR=1.0&modules=on"
   },
   "type": "commonspfx",
-  "redirect": "http://www.compbio.dundee.ac.uk/www-pips/Identifier.jsp?ID={content}&Interactions=Prot&LR=1.0&modules=on",
+  "redirect": "http://www.compbio.dundee.ac.uk/www-pips/Identifier.jsp?ID=${content}&Interactions=Prot&LR=1.0&modules=on",
   "revision": 0
 }

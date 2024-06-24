@@ -1,7 +1,7 @@
 {
   "id": "dragondb.locus",
   "target": {
-    "DEFAULT": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name={content}&amp;class=Locus"
+    "DEFAULT": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name=${content}&amp;class=Locus"
   },
   "type": "scheme",
   "name": "DragonDB Locus at University of British Columbia",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name=${ac}&amp;class=Locus",
-  "redirect": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name={content}&amp;class=Locus",
+  "redirect": "http://antirrhinum.net/cgi-bin/ace/generic/tree/DragonDB?name=${content}&amp;class=Locus",
   "description": "DragonDB is a genetic and genomic database for Antirrhinum majus (Snapdragon). This collection refers to Locus information.",
   "subject": "DNA; plant",
   "location": "Canada",

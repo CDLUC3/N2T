@@ -1,7 +1,7 @@
 {
   "id": "prints",
   "target": {
-    "DEFAULT": "http://www.bioinf.manchester.ac.uk/cgi-bin/dbbrowser/sprint/searchprintss.cgi?prints_accn={content}&display_opts=Prints&category=None&queryform=false&regexpr=off"
+    "DEFAULT": "http://www.bioinf.manchester.ac.uk/cgi-bin/dbbrowser/sprint/searchprintss.cgi?prints_accn=${content}&display_opts=Prints&category=None&queryform=false&regexpr=off"
   },
   "type": "scheme",
   "name": "PRINTS through SPRINT",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.bioinf.manchester.ac.uk/cgi-bin/dbbrowser/sprint/searchprintss.cgi?prints_accn=${ac}&display_opts=Prints&category=None&queryform=false&regexpr=off",
-  "redirect": "http://www.bioinf.manchester.ac.uk/cgi-bin/dbbrowser/sprint/searchprintss.cgi?prints_accn={content}&display_opts=Prints&category=None&queryform=false&regexpr=off",
+  "redirect": "http://www.bioinf.manchester.ac.uk/cgi-bin/dbbrowser/sprint/searchprintss.cgi?prints_accn=${content}&display_opts=Prints&category=None&queryform=false&regexpr=off",
   "description": "PRINTS is a compendium of protein fingerprints. A fingerprint is a group of conserved motifs used to characterise a protein family; its diagnostic power is refined by iterative scanning of a SWISS-PROT/TrEMBL composite. Usually the motifs do not overlap, but are separated along a sequence, though they may be contiguous in 3D-space. Fingerprints can encode protein folds and functionalities more flexibly and powerfully than can single motifs, full diagnostic potency deriving from the mutual context provided by motif neighbours.",
   "subject": "protein; domain",
   "location": "United Kingdom",

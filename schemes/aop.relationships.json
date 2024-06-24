@@ -1,7 +1,7 @@
 {
   "id": "aop.relationships",
   "target": {
-    "DEFAULT": "https://aopwiki.org/relationships/{content}"
+    "DEFAULT": "https://aopwiki.org/relationships/${content}"
   },
   "type": "scheme",
   "name": "AOPWiki (Key Event Relationship)",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://aopwiki.org/relationships/${ac}",
-  "redirect": "https://aopwiki.org/relationships/{content}",
+  "redirect": "https://aopwiki.org/relationships/${content}",
   "description": "International repository of Adverse Outcome Pathways.",
   "subject": null,
   "location": "USA",

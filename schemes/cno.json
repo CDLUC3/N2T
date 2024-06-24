@@ -1,9 +1,9 @@
 {
   "id": "cno",
   "target": {
-    "DEFAULT": "http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#{content}"
+    "DEFAULT": "http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#{content}",
+  "redirect": "http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "gramene.po",
   "target": {
-    "DEFAULT": "http://www.gramene.org/db/ontology/search?id={content}"
+    "DEFAULT": "http://www.gramene.org/db/ontology/search?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.gramene.org/db/ontology/search?id={content}",
+  "redirect": "http://www.gramene.org/db/ontology/search?id=${content}",
   "revision": 0
 }

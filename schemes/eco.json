@@ -1,7 +1,7 @@
 {
   "id": "eco",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/ECO/ECO:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/ECO/ECO:${content}"
   },
   "type": "scheme",
   "name": "Evidence Code Ontology through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/ECO/ECO:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/ECO/ECO:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/ECO/ECO:${content}",
   "description": "Evidence codes can be used to specify the type of supporting evidence for a piece of knowledge. This allows inference of a 'level of support' between an entity and an annotation made to an entity.",
   "subject": "classification",
   "location": "USA",

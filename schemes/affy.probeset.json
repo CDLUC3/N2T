@@ -1,7 +1,7 @@
 {
   "id": "affy.probeset",
   "target": {
-    "DEFAULT": "https://www.affymetrix.com/LinkServlet?probeset={content}"
+    "DEFAULT": "https://www.affymetrix.com/LinkServlet?probeset=${content}"
   },
   "type": "scheme",
   "name": "Affymetrix ProbeSet in Santa Clara",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.affymetrix.com/LinkServlet?probeset=${ac}",
-  "redirect": "https://www.affymetrix.com/LinkServlet?probeset={content}",
+  "redirect": "https://www.affymetrix.com/LinkServlet?probeset=${content}",
   "description": "An Affymetrix ProbeSet is a collection of up to 11 short (~22 nucleotide) microarray probes designed to measure a single gene or a family of genes as a unit. Multiple probe sets may be available for each gene under consideration.",
   "subject": "genome; nucleotide",
   "location": "USA",

@@ -1,9 +1,9 @@
 {
   "id": "genetrap",
   "target": {
-    "DEFAULT": "http://pokey.ibme.utoronto.ca/clone_report.php?id={content}"
+    "DEFAULT": "http://pokey.ibme.utoronto.ca/clone_report.php?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://pokey.ibme.utoronto.ca/clone_report.php?id={content}",
+  "redirect": "http://pokey.ibme.utoronto.ca/clone_report.php?id=${content}",
   "revision": 0
 }

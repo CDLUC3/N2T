@@ -1,7 +1,7 @@
 {
   "id": "adw",
   "target": {
-    "DEFAULT": "https://animaldiversity.org/accounts/{content}/"
+    "DEFAULT": "https://animaldiversity.org/accounts/${content}/"
   },
   "type": "scheme",
   "name": "Animal Diversity Web at University of Michigan",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://animaldiversity.org/accounts/${ac}/",
-  "redirect": "https://animaldiversity.org/accounts/{content}/",
+  "redirect": "https://animaldiversity.org/accounts/${content}/",
   "description": "Animal Diversity Web (ADW) is an online database of animal natural history, distribution, classification, and conservation biology.",
   "subject": "classification",
   "location": "USA",

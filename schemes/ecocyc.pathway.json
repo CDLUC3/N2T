@@ -1,9 +1,9 @@
 {
   "id": "ecocyc.pathway",
   "target": {
-    "DEFAULT": "http://biocyc.org/ECOLI/NEW-IMAGE?type=PATHWAY&object={content}"
+    "DEFAULT": "http://biocyc.org/ECOLI/NEW-IMAGE?type=PATHWAY&object=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://biocyc.org/ECOLI/NEW-IMAGE?type=PATHWAY&object={content}",
+  "redirect": "http://biocyc.org/ECOLI/NEW-IMAGE?type=PATHWAY&object=${content}",
   "revision": 0
 }

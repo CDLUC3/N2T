@@ -1,7 +1,7 @@
 {
   "id": "omicsdi/metabolights",
   "target": {
-    "DEFAULT": "https://www.omicsdi.org/dataset/metabolights_dataset/{content}"
+    "DEFAULT": "https://www.omicsdi.org/dataset/metabolights_dataset/${content}"
   },
   "type": "scheme",
   "name": "MataboLights through OmicsDI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.omicsdi.org/dataset/metabolights_dataset/${ac}",
-  "redirect": "https://www.omicsdi.org/dataset/metabolights_dataset/{content}",
+  "redirect": "https://www.omicsdi.org/dataset/metabolights_dataset/${content}",
   "description": "MetaboLights is a database for Metabolomics experiments and derived information. The database is cross-species, cross-technique and covers metabolite structures and their reference spectra as well as their biological roles, locations and concentrations, and experimental data from metabolic experiments. This collection references individual metabolomics studies.",
   "subject": "metabolite",
   "location": "UK",

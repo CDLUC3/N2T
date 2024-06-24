@@ -1,7 +1,7 @@
 {
   "id": "gpcrdb",
   "target": {
-    "DEFAULT": "http://www.gpcrdb.org/protein/{content}/"
+    "DEFAULT": "http://www.gpcrdb.org/protein/${content}/"
   },
   "type": "scheme",
   "name": "GPCRDB at Radboud University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.gpcrdb.org/protein/${ac}/",
-  "redirect": "http://www.gpcrdb.org/protein/{content}/",
+  "redirect": "http://www.gpcrdb.org/protein/${content}/",
   "description": "The G protein-coupled receptor database (GPCRDB) collects, large amounts of heterogeneous data on GPCRs. It contains experimental data on sequences, ligand-binding constants, mutations and oligomers, and derived data such as multiple sequence alignments and homology models.",
   "subject": "protein",
   "location": "Holland",

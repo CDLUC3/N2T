@@ -1,9 +1,9 @@
 {
   "id": "ecocyc.reaction",
   "target": {
-    "DEFAULT": "http://biocyc.org/ECOLI/NEW-IMAGE?type=REACTION&object={content}"
+    "DEFAULT": "http://biocyc.org/ECOLI/NEW-IMAGE?type=REACTION&object=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://biocyc.org/ECOLI/NEW-IMAGE?type=REACTION&object={content}",
+  "redirect": "http://biocyc.org/ECOLI/NEW-IMAGE?type=REACTION&object=${content}",
   "revision": 0
 }

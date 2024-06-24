@@ -1,7 +1,7 @@
 {
   "id": "mirtarbase",
   "target": {
-    "DEFAULT": "http://mirtarbase.mbc.nctu.edu.tw/php/detail.php?mirtid={content}"
+    "DEFAULT": "http://mirtarbase.mbc.nctu.edu.tw/php/detail.php?mirtid=${content}"
   },
   "type": "scheme",
   "name": "miRTarBase at National Chiao Tung University",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://mirtarbase.mbc.nctu.edu.tw/php/detail.php?mirtid=${ac}",
-  "redirect": "http://mirtarbase.mbc.nctu.edu.tw/php/detail.php?mirtid={content}",
+  "redirect": "http://mirtarbase.mbc.nctu.edu.tw/php/detail.php?mirtid=${content}",
   "description": "miRTarBase is a database of miRNA-target interactions (MTIs), collected manually from relevant literature, following Natural Language Processing of the text to identify research articles related to functional studies of miRNAs. Generally, the collected MTIs are validated experimentally by reporter assay, western blot, microarray and next-generation sequencing experiments.",
   "subject": "nucleotide; interaction",
   "location": "Taiwan",

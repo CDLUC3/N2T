@@ -1,9 +1,9 @@
 {
   "id": "rad",
   "target": {
-    "DEFAULT": "http://rad.dna.affrc.go.jp/SY-1102-cgi-bin/rad/PCA/ctl_frame.cgi?clone={content}"
+    "DEFAULT": "http://rad.dna.affrc.go.jp/SY-1102-cgi-bin/rad/PCA/ctl_frame.cgi?clone=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://rad.dna.affrc.go.jp/SY-1102-cgi-bin/rad/PCA/ctl_frame.cgi?clone={content}",
+  "redirect": "http://rad.dna.affrc.go.jp/SY-1102-cgi-bin/rad/PCA/ctl_frame.cgi?clone=${content}",
   "revision": 0
 }

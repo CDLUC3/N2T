@@ -1,9 +1,9 @@
 {
   "id": "agbase",
   "target": {
-    "DEFAULT": "http://www.agbase.msstate.edu/cgi-bin/getEntry.pl?db_pick=all&database=UniProtKB&gb_acc={content}"
+    "DEFAULT": "http://www.agbase.msstate.edu/cgi-bin/getEntry.pl?db_pick=all&database=UniProtKB&gb_acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.agbase.msstate.edu/cgi-bin/getEntry.pl?db_pick=all&database=UniProtKB&gb_acc={content}",
+  "redirect": "http://www.agbase.msstate.edu/cgi-bin/getEntry.pl?db_pick=all&database=UniProtKB&gb_acc=${content}",
   "revision": 0
 }

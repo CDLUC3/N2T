@@ -1,7 +1,7 @@
 {
   "id": "sgd.pathways",
   "target": {
-    "DEFAULT": "http://pathway.yeastgenome.org/YEAST/new-image?type=PATHWAY&object={content}"
+    "DEFAULT": "http://pathway.yeastgenome.org/YEAST/new-image?type=PATHWAY&object=${content}"
   },
   "type": "scheme",
   "name": "Saccharomyces cerevisiae pathways at SGD.",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://pathway.yeastgenome.org/YEAST/new-image?type=PATHWAY&object=${ac}",
-  "redirect": "http://pathway.yeastgenome.org/YEAST/new-image?type=PATHWAY&object={content}",
+  "redirect": "http://pathway.yeastgenome.org/YEAST/new-image?type=PATHWAY&object=${content}",
   "description": "Curated biochemical pathways for Saccharomyces cerevisiae at Saccharomyces genome database (SGD).",
   "subject": "genome; sequence; pathway",
   "location": "USA",

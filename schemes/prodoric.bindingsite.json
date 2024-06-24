@@ -1,9 +1,9 @@
 {
   "id": "prodoric.bindingsite",
   "target": {
-    "DEFAULT": "http://prodoric.tu-bs.de/site.php?site_acc={content}"
+    "DEFAULT": "http://prodoric.tu-bs.de/site.php?site_acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://prodoric.tu-bs.de/site.php?site_acc={content}",
+  "redirect": "http://prodoric.tu-bs.de/site.php?site_acc=${content}",
   "revision": 0
 }

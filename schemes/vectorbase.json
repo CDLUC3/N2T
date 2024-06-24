@@ -1,7 +1,7 @@
 {
   "id": "vectorbase",
   "target": {
-    "DEFAULT": "https://www.vectorbase.org/search/site/{content}?&site=%22Genome%22"
+    "DEFAULT": "https://www.vectorbase.org/search/site/${content}?&site=%22Genome%22"
   },
   "type": "scheme",
   "name": "Vectorbase at EMBL-EBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.vectorbase.org/search/site/${ac}?&site=\"Genome\"",
-  "redirect": "https://www.vectorbase.org/search/site/{content}?&site=%22Genome%22",
+  "redirect": "https://www.vectorbase.org/search/site/${content}?&site=%22Genome%22",
   "description": "VectorBase is an NIAID-funded Bioinformatic Resource Center focused on invertebrate vectors of human pathogens. VectorBase annotates and curates vector genomes providing a web accessible integrated resource for the research community. Currently, VectorBase contains genome information for three mosquito species: Aedes aegypti, Anopheles gambiae and Culex quinquefasciatus, a body louse Pediculus humanus and a tick species Ixodes scapularis.",
   "subject": "gene; protein; genome",
   "location": "UK",

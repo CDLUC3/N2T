@@ -1,9 +1,9 @@
 {
   "id": "merna",
   "target": {
-    "DEFAULT": "http://merna.lbl.gov/search.php?type=simple&metal_ion={content}"
+    "DEFAULT": "http://merna.lbl.gov/search.php?type=simple&metal_ion=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://merna.lbl.gov/search.php?type=simple&metal_ion={content}",
+  "redirect": "http://merna.lbl.gov/search.php?type=simple&metal_ion=${content}",
   "revision": 0
 }

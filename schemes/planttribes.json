@@ -1,9 +1,9 @@
 {
   "id": "planttribes",
   "target": {
-    "DEFAULT": "http://fgp.huck.psu.edu/tribedb/gene.pl?action=view_gene&gene_id={content}"
+    "DEFAULT": "http://fgp.huck.psu.edu/tribedb/gene.pl?action=view_gene&gene_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://fgp.huck.psu.edu/tribedb/gene.pl?action=view_gene&gene_id={content}",
+  "redirect": "http://fgp.huck.psu.edu/tribedb/gene.pl?action=view_gene&gene_id=${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "panther.family",
   "target": {
-    "DEFAULT": "http://www.pantherdb.org/panther/family.do?clsAccession={content}"
+    "DEFAULT": "http://www.pantherdb.org/panther/family.do?clsAccession=${content}"
   },
   "type": "scheme",
   "name": "PANTHER Family at USC (Los Angeles)",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.pantherdb.org/panther/family.do?clsAccession=${ac}",
-  "redirect": "http://www.pantherdb.org/panther/family.do?clsAccession={content}",
+  "redirect": "http://www.pantherdb.org/panther/family.do?clsAccession=${content}",
   "description": "The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System is a resource that classifies genes by their functions, using published scientific experimental evidence and evolutionary relationships to predict function even in the absence of direct experimental evidence. This collection references groups of genes that have been organised as families.",
   "subject": "gene",
   "location": "USA",

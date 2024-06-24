@@ -1,9 +1,9 @@
 {
   "id": "pdb.tm",
   "target": {
-    "DEFAULT": "http://pdbtm.enzim.hu/?m=show_entry&id={content}"
+    "DEFAULT": "http://pdbtm.enzim.hu/?m=show_entry&id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://pdbtm.enzim.hu/?m=show_entry&id={content}",
+  "redirect": "http://pdbtm.enzim.hu/?m=show_entry&id=${content}",
   "revision": 0
 }

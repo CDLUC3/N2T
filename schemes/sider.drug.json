@@ -1,7 +1,7 @@
 {
   "id": "sider.drug",
   "target": {
-    "DEFAULT": "http://sideeffects.embl.de/drugs/{content}/"
+    "DEFAULT": "http://sideeffects.embl.de/drugs/${content}/"
   },
   "type": "scheme",
   "name": "SIDER Drug v2 at EMBL (Heidelberg)",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://sideeffects.embl.de/drugs/${ac}/",
-  "redirect": "http://sideeffects.embl.de/drugs/{content}/",
+  "redirect": "http://sideeffects.embl.de/drugs/${content}/",
   "description": "SIDER (Side Effect Resource) is a public, computer-readable side effect resource that connects drugs to side effect terms. It aggregates dispersed public information on side effects. This collection references drugs in SIDER.",
   "subject": "drug; phenotype",
   "location": "Germany",

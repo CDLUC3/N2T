@@ -1,7 +1,7 @@
 {
   "id": "idoo",
   "target": {
-    "DEFAULT": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology#{content}"
+    "DEFAULT": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology#${content}"
   },
   "type": "scheme",
   "name": "Identifiers.org Ontology",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology#${ac}",
-  "redirect": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology#{content}",
+  "redirect": "http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology#${content}",
   "description": "Identifiers.org Ontology",
   "subject": null,
   "location": "UK",

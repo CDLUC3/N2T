@@ -1,9 +1,9 @@
 {
   "id": "mmsinc",
   "target": {
-    "DEFAULT": "http://mms.dsfarm.unipd.it/mmsinc/search/molecule.php?mmscode={content}"
+    "DEFAULT": "http://mms.dsfarm.unipd.it/mmsinc/search/molecule.php?mmscode=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://mms.dsfarm.unipd.it/mmsinc/search/molecule.php?mmscode={content}",
+  "redirect": "http://mms.dsfarm.unipd.it/mmsinc/search/molecule.php?mmscode=${content}",
   "revision": 0
 }

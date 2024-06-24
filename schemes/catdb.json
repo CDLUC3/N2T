@@ -1,9 +1,9 @@
 {
   "id": "catdb",
   "target": {
-    "DEFAULT": "http://urgv.evry.inra.fr/cgi-bin/projects/CATdb/consult_project.pl?project_id={content}"
+    "DEFAULT": "http://urgv.evry.inra.fr/cgi-bin/projects/CATdb/consult_project.pl?project_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://urgv.evry.inra.fr/cgi-bin/projects/CATdb/consult_project.pl?project_id={content}",
+  "redirect": "http://urgv.evry.inra.fr/cgi-bin/projects/CATdb/consult_project.pl?project_id=${content}",
   "revision": 0
 }

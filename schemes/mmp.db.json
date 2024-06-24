@@ -1,7 +1,7 @@
 {
   "id": "mmp.db",
   "target": {
-    "DEFAULT": "https://mmp.sfb.uit.no/databases/mardb/#/records/{content}"
+    "DEFAULT": "https://mmp.sfb.uit.no/databases/mardb/#/records/${content}"
   },
   "type": "scheme",
   "name": "MarDB through SfB",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://mmp.sfb.uit.no/databases/mardb/#/records/${ac}",
-  "redirect": "https://mmp.sfb.uit.no/databases/mardb/#/records/{content}",
+  "redirect": "https://mmp.sfb.uit.no/databases/mardb/#/records/${content}",
   "description": "MarDB includes all sequenced marine microbial genomes regardless of level of completeness.",
   "subject": null,
   "location": "Norway",

@@ -1,7 +1,7 @@
 {
   "id": "inchikey",
   "target": {
-    "DEFAULT": "http://cactus.nci.nih.gov/chemical/structure/{content}/names"
+    "DEFAULT": "http://cactus.nci.nih.gov/chemical/structure/${content}/names"
   },
   "type": "scheme",
   "name": "InChiKey resolver at NCI",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://cactus.nci.nih.gov/chemical/structure/${ac}/names",
-  "redirect": "http://cactus.nci.nih.gov/chemical/structure/{content}/names",
+  "redirect": "http://cactus.nci.nih.gov/chemical/structure/${content}/names",
   "description": "The IUPAC International Chemical Identifier (InChI, see MIR:00000383) is an identifier for chemical substances, and is derived solely from a structural representation of that substance. Since these can be quite unwieldly, particularly for web use, the InChIKey was developed. These are of a fixed length (25 character) and were created as a condensed, more web friendly, digital representation of the InChI.",
   "subject": "structure; chemical",
   "location": "USA",

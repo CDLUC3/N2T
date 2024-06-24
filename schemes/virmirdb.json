@@ -1,9 +1,9 @@
 {
   "id": "virmirdb",
   "target": {
-    "DEFAULT": "http://alk.ibms.sinica.edu.tw/cgi-bin/miRNA/virus.cgi?tax_id={content}"
+    "DEFAULT": "http://alk.ibms.sinica.edu.tw/cgi-bin/miRNA/virus.cgi?tax_id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://alk.ibms.sinica.edu.tw/cgi-bin/miRNA/virus.cgi?tax_id={content}",
+  "redirect": "http://alk.ibms.sinica.edu.tw/cgi-bin/miRNA/virus.cgi?tax_id=${content}",
   "revision": 0
 }

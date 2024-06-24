@@ -1,9 +1,9 @@
 {
   "id": "wbphenotype",
   "target": {
-    "DEFAULT": "http://purl.obolibrary.org/obo/{content}"
+    "DEFAULT": "http://purl.obolibrary.org/obo/${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://purl.obolibrary.org/obo/{content}",
+  "redirect": "http://purl.obolibrary.org/obo/${content}",
   "revision": 0
 }

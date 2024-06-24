@@ -1,7 +1,7 @@
 {
   "id": "z048/issn",
   "target": {
-    "DEFAULT": "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg={content}&searchType=1&recCount=25"
+    "DEFAULT": "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg=${content}&searchType=1&recCount=25"
   },
   "type": "scheme",
   "name": "ISSN at Library of Congress",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg=${ac}&searchType=1&recCount=25",
-  "redirect": "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg={content}&searchType=1&recCount=25",
+  "redirect": "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg=${content}&searchType=1&recCount=25",
   "description": "The International Standard Serial Number (ISSN) is a unique eight-digit number used to identify a print or electronic periodical publication, rather than individual articles or books.",
   "subject": "bibliography",
   "location": "USA",

@@ -1,7 +1,7 @@
 {
   "id": "metlin",
   "target": {
-    "DEFAULT": "http://metlin.scripps.edu/metabo_info.php?molid={content}"
+    "DEFAULT": "http://metlin.scripps.edu/metabo_info.php?molid=${content}"
   },
   "type": "scheme",
   "name": "METLIN at Scripps Center, Molecular Biology and Center for Mass Spectrometry, La Jolla",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://metlin.scripps.edu/metabo_info.php?molid=${ac}",
-  "redirect": "http://metlin.scripps.edu/metabo_info.php?molid={content}",
+  "redirect": "http://metlin.scripps.edu/metabo_info.php?molid=${content}",
   "description": "The METLIN (Metabolite and Tandem Mass Spectrometry) Database is a repository of metabolite information as well as tandem mass spectrometry data, providing public access to its comprehensive MS and MS/MS metabolite data. An annotated list of known metabolites and their mass, chemical formula, and structure are available, with each metabolite linked to external resources for further reference and inquiry.",
   "subject": "mass spectrometry; metabolite",
   "location": "USA",

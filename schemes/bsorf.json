@@ -1,9 +1,9 @@
 {
   "id": "bsorf",
   "target": {
-    "DEFAULT": "http://bacillus.genome.jp/cgi-bin/BSORF_data_view.pl?ACCESSION={content}"
+    "DEFAULT": "http://bacillus.genome.jp/cgi-bin/BSORF_data_view.pl?ACCESSION=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://bacillus.genome.jp/cgi-bin/BSORF_data_view.pl?ACCESSION={content}",
+  "redirect": "http://bacillus.genome.jp/cgi-bin/BSORF_data_view.pl?ACCESSION=${content}",
   "revision": 0
 }

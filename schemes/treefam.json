@@ -1,7 +1,7 @@
 {
   "id": "treefam",
   "target": {
-    "DEFAULT": "http://www.treefam.org/family/{content}"
+    "DEFAULT": "http://www.treefam.org/family/${content}"
   },
   "type": "scheme",
   "name": "TreeFam database",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.treefam.org/family/${ac}",
-  "redirect": "http://www.treefam.org/family/{content}",
+  "redirect": "http://www.treefam.org/family/${content}",
   "description": "TreeFam is a database of phylogenetic trees of gene families found in animals. Automatically generated trees are curated, to create a curated resource that presents the accurate evolutionary history of all animal gene families, as well as reliable ortholog and paralog assignments.",
   "subject": null,
   "location": "China",

@@ -1,9 +1,9 @@
 {
   "id": "mirnamap",
   "target": {
-    "DEFAULT": "http://mirnamap.mbc.nctu.edu.tw/php/mirna_entry.php?acc={content}"
+    "DEFAULT": "http://mirnamap.mbc.nctu.edu.tw/php/mirna_entry.php?acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://mirnamap.mbc.nctu.edu.tw/php/mirna_entry.php?acc={content}",
+  "redirect": "http://mirnamap.mbc.nctu.edu.tw/php/mirna_entry.php?acc=${content}",
   "revision": 0
 }

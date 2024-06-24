@@ -1,7 +1,7 @@
 {
   "id": "z027/fb",
   "target": {
-    "DEFAULT": "http://flybase.org/reports/{content}.html"
+    "DEFAULT": "http://flybase.org/reports/${content}.html"
   },
   "type": "scheme",
   "name": "The FlyBase Database",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://flybase.org/reports/${ac}.html",
-  "redirect": "http://flybase.org/reports/{content}.html",
+  "redirect": "http://flybase.org/reports/${content}.html",
   "description": "FlyBase is the database of the Drosophila Genome Projects and of associated literature.",
   "subject": "eukaryotic; genome; nucleotide",
   "location": "USA / United Kingdom",

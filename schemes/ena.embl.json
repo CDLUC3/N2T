@@ -1,7 +1,7 @@
 {
   "id": "ena.embl",
   "target": {
-    "DEFAULT": "https://www.ncbi.nlm.nih.gov/nuccore/{content}"
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/nuccore/${content}"
   },
   "type": "scheme",
   "name": "ENA through GenBank",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.ncbi.nlm.nih.gov/nuccore/${ac}",
-  "redirect": "https://www.ncbi.nlm.nih.gov/nuccore/{content}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/nuccore/${content}",
   "description": "The European Nucleotide Archive (ENA) captures and presents information relating to experimental workflows that are based around nucleotide sequencing. ENA is made up of a number of distinct databases that includes EMBL-Bank, the Sequence Read Archive (SRA) and the Trace Archive each with their own data formats and standards. This collection references Embl-Bank identifiers.",
   "subject": "sequence; nucleotide",
   "location": "USA",

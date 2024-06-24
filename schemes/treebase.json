@@ -1,7 +1,7 @@
 {
   "id": "treebase",
   "target": {
-    "DEFAULT": "http://purl.org/phylo/treebase/phylows/study/{content}?format=html"
+    "DEFAULT": "http://purl.org/phylo/treebase/phylows/study/${content}?format=html"
   },
   "type": "scheme",
   "name": "TreeBASE (hosted at National Evolutionary Synthesis Center)",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.org/phylo/treebase/phylows/study/${ac}?format=html",
-  "redirect": "http://purl.org/phylo/treebase/phylows/study/{content}?format=html",
+  "redirect": "http://purl.org/phylo/treebase/phylows/study/${content}?format=html",
   "description": "TreeBASE is a relational database designed to manage and explore information on phylogenetic relationships. It includes phylogenetic trees and data matrices, together with information about the relevant publication, taxa, morphological and sequence-based characters, and published analyses. Data in TreeBASE are exposed to the public if they are used in a publication that is in press or published in a peer-reviewed scientific journal, etc.",
   "subject": "clustering",
   "location": "USA",

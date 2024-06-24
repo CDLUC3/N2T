@@ -1,7 +1,7 @@
 {
   "id": "depod",
   "target": {
-    "DEFAULT": "http://www.depod.bioss.uni-freiburg.de/showp.php?gene={content}"
+    "DEFAULT": "http://www.depod.bioss.uni-freiburg.de/showp.php?gene=${content}"
   },
   "type": "scheme",
   "name": "DEPOD at EMBL",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.depod.bioss.uni-freiburg.de/showp.php?gene=${ac}",
-  "redirect": "http://www.depod.bioss.uni-freiburg.de/showp.php?gene={content}",
+  "redirect": "http://www.depod.bioss.uni-freiburg.de/showp.php?gene=${content}",
   "description": "The human DEPhOsphorylation Database (DEPOD) contains information on known human active phosphatases and their experimentally verified protein and nonprotein substrates. Reliability scores are provided for dephosphorylation interactions, according to the type of assay used, as well as the number of laboratories that have confirmed such interaction. Phosphatase and substrate entries are listed along with the dephosphorylation site, bioassay type, and original literature, and contain links to other resources.",
   "subject": "interaction; structure; human",
   "location": "Germany",

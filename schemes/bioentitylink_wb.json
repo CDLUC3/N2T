@@ -1,7 +1,7 @@
 {
   "id": "bioentitylink/wb",
   "target": {
-    "DEFAULT": "https://bioentity.link/#/lexicon/public/{content}"
+    "DEFAULT": "https://bioentity.link/#/lexicon/public/${content}"
   },
   "type": "scheme",
   "name": "WormBase through BioEntity Link",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://bioentity.link/#/lexicon/public/${ac}",
-  "redirect": "https://bioentity.link/#/lexicon/public/{content}",
+  "redirect": "https://bioentity.link/#/lexicon/public/${content}",
   "description": "WormBase is an online bioinformatics database of the biology and genome of the model organism Caenorhabditis elegans and other nematodes. It is used by the C. elegans research community both as an information resource and as a mode to publish and distribute their results. This collection references WormBase-accessioned entities.",
   "subject": "expression; genome; protein; nucleotide",
   "location": "USA",

@@ -1,9 +1,9 @@
 {
   "id": "emim",
   "target": {
-    "DEFAULT": "http://discover.nci.nih.gov/mim/view.jsp?selection=map&MIM={content}"
+    "DEFAULT": "http://discover.nci.nih.gov/mim/view.jsp?selection=map&MIM=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://discover.nci.nih.gov/mim/view.jsp?selection=map&MIM={content}",
+  "redirect": "http://discover.nci.nih.gov/mim/view.jsp?selection=map&MIM=${content}",
   "revision": 0
 }

@@ -1,7 +1,7 @@
 {
   "id": "oclc",
   "target": {
-    "DEFAULT": "https://www.worldcat.org/oclc/{content}"
+    "DEFAULT": "https://www.worldcat.org/oclc/${content}"
   },
   "type": "scheme",
   "name": "Online Computer Library Center (OCLC) WorldCat",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://www.worldcat.org/oclc/${ac}",
-  "redirect": "https://www.worldcat.org/oclc/{content}",
+  "redirect": "https://www.worldcat.org/oclc/${content}",
   "description": "The global library cooperative OCLC maintains WorldCat. WorldCat is the world's largest network of library content and services. WorldCat libraries are dedicated to providing access to their resources on the Web, where most people start their search for information.",
   "subject": null,
   "location": "USA",

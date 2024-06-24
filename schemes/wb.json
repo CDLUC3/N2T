@@ -1,7 +1,7 @@
 {
   "id": "wb",
   "target": {
-    "DEFAULT": "https://www.wormbase.org/get?name={content}"
+    "DEFAULT": "https://www.wormbase.org/get?name=${content}"
   },
   "type": "scheme",
   "name": "WormBase",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://www.wormbase.org/get?name=${ac}",
-  "redirect": "https://www.wormbase.org/get?name={content}",
+  "redirect": "https://www.wormbase.org/get?name=${content}",
   "description": "WormBase is an online bioinformatics database of the biology and genome of the model organism Caenorhabditis elegans and other nematodes. It is used by the C. elegans research community both as an information resource and as a mode to publish and distribute their results. This collection references WormBase-accessioned entities.",
   "subject": "expression; genome; protein; nucleotide",
   "location": "UK",

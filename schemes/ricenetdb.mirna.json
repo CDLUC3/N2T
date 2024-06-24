@@ -1,7 +1,7 @@
 {
   "id": "ricenetdb.mirna",
   "target": {
-    "DEFAULT": "http://bis.zju.edu.cn/ricenetdb/miRNAdetails.php?ID={content}"
+    "DEFAULT": "http://bis.zju.edu.cn/ricenetdb/miRNAdetails.php?ID=${content}"
   },
   "type": "scheme",
   "name": "RiceNetDB miRNA",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://bis.zju.edu.cn/ricenetdb/miRNAdetails.php?ID=${ac}",
-  "redirect": "http://bis.zju.edu.cn/ricenetdb/miRNAdetails.php?ID={content}",
+  "redirect": "http://bis.zju.edu.cn/ricenetdb/miRNAdetails.php?ID=${content}",
   "description": "RiceNetDB is currently the most comprehensive regulatory database on Oryza Sativa based on genome annotation. It was displayed in three levels: GEM, PPIs and GRNs to facilitate biomolecular regulatory analysis and gene-metabolite mapping.",
   "subject": null,
   "location": "China",

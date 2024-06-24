@@ -1,7 +1,7 @@
 {
   "id": "pombase",
   "target": {
-    "DEFAULT": "http://www.pombase.org/spombe/result/{content}"
+    "DEFAULT": "http://www.pombase.org/spombe/result/${content}"
   },
   "type": "scheme",
   "name": "PomBase at University of Cambridge",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "http://www.pombase.org/spombe/result/${ac}",
-  "redirect": "http://www.pombase.org/spombe/result/{content}",
+  "redirect": "http://www.pombase.org/spombe/result/${content}",
   "description": "PomBase is a model organism database established to provide access to molecular data and biological information for the fission yeast Schizosaccharomyces pombe. It encompasses annotation of genomic sequence and features, comprehensive manual literature curation and genome-wide data sets.",
   "subject": "genome; nucleotide; eukaryotic",
   "location": "UK",

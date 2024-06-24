@@ -1,7 +1,7 @@
 {
   "id": "omicsdi/pride.project",
   "target": {
-    "DEFAULT": "https://www.omicsdi.org/dataset/pride/{content}"
+    "DEFAULT": "https://www.omicsdi.org/dataset/pride/${content}"
   },
   "type": "scheme",
   "name": "PRIDE Project through OmicsDI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.omicsdi.org/dataset/pride/${ac}",
-  "redirect": "https://www.omicsdi.org/dataset/pride/{content}",
+  "redirect": "https://www.omicsdi.org/dataset/pride/${content}",
   "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository that provides protein and peptide identifications together with supporting evidence. This collection references projects.",
   "subject": "protein",
   "location": "UK",

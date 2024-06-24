@@ -1,9 +1,9 @@
 {
   "id": "interactive_fly",
   "target": {
-    "DEFAULT": "http://www.sdbonline.org/fly/{content}.htm"
+    "DEFAULT": "http://www.sdbonline.org/fly/${content}.htm"
   },
   "type": "commonspfx",
-  "redirect": "http://www.sdbonline.org/fly/{content}.htm",
+  "redirect": "http://www.sdbonline.org/fly/${content}.htm",
   "revision": 0
 }

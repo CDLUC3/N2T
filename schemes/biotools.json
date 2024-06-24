@@ -1,7 +1,7 @@
 {
   "id": "biotools",
   "target": {
-    "DEFAULT": "https://bio.tools/{content}"
+    "DEFAULT": "https://bio.tools/${content}"
   },
   "type": "scheme",
   "name": "BioTools",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://bio.tools/${ac}",
-  "redirect": "https://bio.tools/{content}",
+  "redirect": "https://bio.tools/${content}",
   "description": "Tool and data services registry.",
   "subject": null,
   "location": "Denmark",

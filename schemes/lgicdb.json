@@ -1,9 +1,9 @@
 {
   "id": "lgicdb",
   "target": {
-    "DEFAULT": "http://www.ebi.ac.uk/compneur-srv/LGICdb/HTML/{content}.php"
+    "DEFAULT": "http://www.ebi.ac.uk/compneur-srv/LGICdb/HTML/${content}.php"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ebi.ac.uk/compneur-srv/LGICdb/HTML/{content}.php",
+  "redirect": "http://www.ebi.ac.uk/compneur-srv/LGICdb/HTML/${content}.php",
   "revision": 0
 }

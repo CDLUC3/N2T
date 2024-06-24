@@ -1,7 +1,7 @@
 {
   "id": "edam",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/EDAM/{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/EDAM/${content}"
   },
   "type": "scheme",
   "name": "EDAM through BioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/EDAM/${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/EDAM/{content}",
+  "redirect": "http://purl.bioontology.org/ontology/EDAM/${content}",
   "description": "EDAM is an ontology of general bioinformatics concepts, including topics, data types, formats, identifiers and operations. EDAM provides a controlled vocabulary for the description, in semantic terms, of things such as: web services (e.g. WSDL files), applications, tool collections and packages, work-benches and workflow software, databases and ontologies, XSD data schema and data objects, data syntax and file formats, web portals and pages, resource catalogues and documents (such as scientific publications).",
   "subject": "ontology",
   "location": "USA",

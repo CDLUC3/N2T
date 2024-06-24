@@ -1,7 +1,7 @@
 {
   "id": "asap",
   "target": {
-    "DEFAULT": "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID={content}"
+    "DEFAULT": "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID=${content}"
   },
   "type": "scheme",
   "name": "ASAP at University of Wisconsin",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID=${ac}",
-  "redirect": "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID={content}",
+  "redirect": "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID=${content}",
   "description": "ASAP (a systematic annotation package for community analysis of genomes) stores bacterial genome sequence and functional characterization data. It includes multiple genome sequences at various stages of analysis, corresponding experimental data and access to collections of related genome resources.",
   "subject": "microbial; genome; gene",
   "location": "USA",

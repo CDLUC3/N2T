@@ -1,7 +1,7 @@
 {
   "id": "biominder",
   "target": {
-    "DEFAULT": "https://datalab.rwth-aachen.de/MINDER/resource/{content}"
+    "DEFAULT": "https://datalab.rwth-aachen.de/MINDER/resource/${content}"
   },
   "type": "scheme",
   "name": "Bio-MINDER Tissue Database",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://datalab.rwth-aachen.de/MINDER/resource/${ac}",
-  "redirect": "https://datalab.rwth-aachen.de/MINDER/resource/{content}",
+  "redirect": "https://datalab.rwth-aachen.de/MINDER/resource/${content}",
   "description": "Database of the dielectric properties of biological tissues.",
   "subject": null,
   "location": "Ireland",

@@ -1,9 +1,9 @@
 {
   "id": "chembank",
   "target": {
-    "DEFAULT": "http://chembank.broadinstitute.org/chemistry/viewMolecule.htm?cbid={content}"
+    "DEFAULT": "http://chembank.broadinstitute.org/chemistry/viewMolecule.htm?cbid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://chembank.broadinstitute.org/chemistry/viewMolecule.htm?cbid={content}",
+  "redirect": "http://chembank.broadinstitute.org/chemistry/viewMolecule.htm?cbid=${content}",
   "revision": 0
 }

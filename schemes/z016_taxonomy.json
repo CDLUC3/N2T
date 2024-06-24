@@ -1,7 +1,7 @@
 {
   "id": "z016/taxonomy",
   "target": {
-    "DEFAULT": "http://taxonomy.bio2rdf.org/describe/?url=http://bio2rdf.org/taxonomy:{content}"
+    "DEFAULT": "http://taxonomy.bio2rdf.org/describe/?url=http://bio2rdf.org/taxonomy:${content}"
   },
   "type": "scheme",
   "name": "Bio2RDF",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://taxonomy.bio2rdf.org/describe/?url=http://bio2rdf.org/taxonomy:${ac}",
-  "redirect": "http://taxonomy.bio2rdf.org/describe/?url=http://bio2rdf.org/taxonomy:{content}",
+  "redirect": "http://taxonomy.bio2rdf.org/describe/?url=http://bio2rdf.org/taxonomy:${content}",
   "description": "The taxonomy contains the relationships between all living forms for which nucleic acid or protein sequence have been determined.",
   "subject": "taxonomy",
   "location": null,

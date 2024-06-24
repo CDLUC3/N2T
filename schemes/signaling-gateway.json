@@ -1,7 +1,7 @@
 {
   "id": "signaling-gateway",
   "target": {
-    "DEFAULT": "http://www.signaling-gateway.org/molecule/query?afcsid={content}"
+    "DEFAULT": "http://www.signaling-gateway.org/molecule/query?afcsid=${content}"
   },
   "type": "scheme",
   "name": "Signaling Gateway Molecule Pages",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.signaling-gateway.org/molecule/query?afcsid=${ac}",
-  "redirect": "http://www.signaling-gateway.org/molecule/query?afcsid={content}",
+  "redirect": "http://www.signaling-gateway.org/molecule/query?afcsid=${content}",
   "description": "The Signaling Gateway provides  information on  mammalian proteins involved in cellular signaling.",
   "subject": "mammalian; protein",
   "location": "USA",

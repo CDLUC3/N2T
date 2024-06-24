@@ -1,7 +1,7 @@
 {
   "id": "microscope",
   "target": {
-    "DEFAULT": "http://www.genoscope.cns.fr/agc/microscope/mage/info.php?id={content}"
+    "DEFAULT": "http://www.genoscope.cns.fr/agc/microscope/mage/info.php?id=${content}"
   },
   "type": "scheme",
   "name": "MicroScope",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://www.genoscope.cns.fr/agc/microscope/mage/info.php?id=${ac}",
-  "redirect": "http://www.genoscope.cns.fr/agc/microscope/mage/info.php?id={content}",
+  "redirect": "http://www.genoscope.cns.fr/agc/microscope/mage/info.php?id=${content}",
   "description": "MicroScope is an integrative resource that supports systematic and efficient revision of microbial genome annotation, data management and comparative analysis.",
   "subject": "genome; microbial",
   "location": "France",

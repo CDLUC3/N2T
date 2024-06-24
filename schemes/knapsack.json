@@ -1,7 +1,7 @@
 {
   "id": "knapsack",
   "target": {
-    "DEFAULT": "http://kanaya.naist.jp/knapsack_jsp/information.jsp?word={content}"
+    "DEFAULT": "http://kanaya.naist.jp/knapsack_jsp/information.jsp?word=${content}"
   },
   "type": "scheme",
   "name": "KnapSack at Nara Institute",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://kanaya.naist.jp/knapsack_jsp/information.jsp?word=${ac}",
-  "redirect": "http://kanaya.naist.jp/knapsack_jsp/information.jsp?word={content}",
+  "redirect": "http://kanaya.naist.jp/knapsack_jsp/information.jsp?word=${content}",
   "description": "Knapsack provides information on metabolites and  the taxonomic class with which they are associated.",
   "subject": "metabolite",
   "location": "Japan",

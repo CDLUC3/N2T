@@ -1,7 +1,7 @@
 {
   "id": "isbn",
   "target": {
-    "DEFAULT": "http://isbndb.com/search-all.html?kw={content}"
+    "DEFAULT": "http://isbndb.com/search-all.html?kw=${content}"
   },
   "type": "scheme",
   "name": "ISBNDB - ISBN Database",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://isbndb.com/search-all.html?kw=${ac}",
-  "redirect": "http://isbndb.com/search-all.html?kw={content}",
+  "redirect": "http://isbndb.com/search-all.html?kw=${content}",
   "description": "The International Standard Book Number (ISBN) is for identifying printed books.",
   "subject": "bibliography",
   "location": "USA",

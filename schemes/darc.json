@@ -1,7 +1,7 @@
 {
   "id": "darc",
   "target": {
-    "DEFAULT": "http://darcsite.genzentrum.lmu.de/darc/view.php?id={content}"
+    "DEFAULT": "http://darcsite.genzentrum.lmu.de/darc/view.php?id=${content}"
   },
   "type": "scheme",
   "name": "DARC at University of Munich",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://darcsite.genzentrum.lmu.de/darc/view.php?id=${ac}",
-  "redirect": "http://darcsite.genzentrum.lmu.de/darc/view.php?id={content}",
+  "redirect": "http://darcsite.genzentrum.lmu.de/darc/view.php?id=${content}",
   "description": "DARC (Database of Aligned Ribosomal Complexes) stores available cryo-EM (electron microscopy) data and atomic coordinates of ribosomal particles from the PDB, which are aligned within a common coordinate system. The aligned coordinate system simplifies direct visualization of conformational changes in the ribosome, such as subunit rotation and head-swiveling, as well as direct comparison of bound ligands, such as antibiotics or translation factors.",
   "subject": "structure; protein",
   "location": "Germany",

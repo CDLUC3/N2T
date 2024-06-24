@@ -1,9 +1,9 @@
 {
   "id": "alzgene",
   "target": {
-    "DEFAULT": "http://www.alzgene.org/geneoverview.asp?geneid={content}"
+    "DEFAULT": "http://www.alzgene.org/geneoverview.asp?geneid=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.alzgene.org/geneoverview.asp?geneid={content}",
+  "redirect": "http://www.alzgene.org/geneoverview.asp?geneid=${content}",
   "revision": 0
 }

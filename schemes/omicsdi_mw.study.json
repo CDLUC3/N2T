@@ -1,7 +1,7 @@
 {
   "id": "omicsdi/mw.study",
   "target": {
-    "DEFAULT": "https://www.omicsdi.org/dataset/metabolomics_workbench/{content}"
+    "DEFAULT": "https://www.omicsdi.org/dataset/metabolomics_workbench/${content}"
   },
   "type": "scheme",
   "name": "Metabolomics Workbench Study through OmicsDI",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.omicsdi.org/dataset/metabolomics_workbench/${ac}",
-  "redirect": "https://www.omicsdi.org/dataset/metabolomics_workbench/{content}",
+  "redirect": "https://www.omicsdi.org/dataset/metabolomics_workbench/${content}",
   "description": "Metabolomics Workbench stores metabolomics data for small and large studies on cells, tissues and organisms for the Metabolomics Consortium Data Repository and Coordinating Center (DRCC).",
   "subject": null,
   "location": "UK",

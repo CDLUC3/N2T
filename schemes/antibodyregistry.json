@@ -1,7 +1,7 @@
 {
   "id": "antibodyregistry",
   "target": {
-    "DEFAULT": "http://antibodyregistry.org/AB_{content}"
+    "DEFAULT": "http://antibodyregistry.org/AB_${content}"
   },
   "type": "scheme",
   "name": "Antibody Registry at University of California",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://antibodyregistry.org/AB_${ac}",
-  "redirect": "http://antibodyregistry.org/AB_{content}",
+  "redirect": "http://antibodyregistry.org/AB_${content}",
   "description": "The Antibody Registry provides identifiers for antibodies used in publications. It lists commercial antibodies from numerous vendors, each assigned with a unique identifier. Unlisted antibodies can be submitted by providing the catalog number and vendor information.",
   "subject": "registry; immunogenetics",
   "location": "USA",

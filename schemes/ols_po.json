@@ -1,7 +1,7 @@
 {
   "id": "ols/po",
   "target": {
-    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/po/terms?obo_id=PO:{content}"
+    "DEFAULT": "https://www.ebi.ac.uk/ols/ontologies/po/terms?obo_id=PO:${content}"
   },
   "type": "scheme",
   "name": "Plant Ontology through OLS",
@@ -11,7 +11,7 @@
   "sort_score": "2",
   "primary": 0,
   "forward": "https://www.ebi.ac.uk/ols/ontologies/po/terms?obo_id=PO:${ac}",
-  "redirect": "https://www.ebi.ac.uk/ols/ontologies/po/terms?obo_id=PO:{content}",
+  "redirect": "https://www.ebi.ac.uk/ols/ontologies/po/terms?obo_id=PO:${content}",
   "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
   "subject": "ontology; plant",
   "location": "UK",

@@ -1,9 +1,9 @@
 {
   "id": "tpmd",
   "target": {
-    "DEFAULT": "http://tpmd2.nhri.org.tw/tpmd/php-bin/filter.php?search={content}"
+    "DEFAULT": "http://tpmd2.nhri.org.tw/tpmd/php-bin/filter.php?search=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://tpmd2.nhri.org.tw/tpmd/php-bin/filter.php?search={content}",
+  "redirect": "http://tpmd2.nhri.org.tw/tpmd/php-bin/filter.php?search=${content}",
   "revision": 0
 }

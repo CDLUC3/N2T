@@ -1,9 +1,9 @@
 {
   "id": "nmpdr",
   "target": {
-    "DEFAULT": "http://www.nmpdr.org/FIG/wiki/rest.cgi/NmpdrPlugin/SeedViewer?page=Annotation;feature={content}"
+    "DEFAULT": "http://www.nmpdr.org/FIG/wiki/rest.cgi/NmpdrPlugin/SeedViewer?page=Annotation;feature=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.nmpdr.org/FIG/wiki/rest.cgi/NmpdrPlugin/SeedViewer?page=Annotation;feature={content}",
+  "redirect": "http://www.nmpdr.org/FIG/wiki/rest.cgi/NmpdrPlugin/SeedViewer?page=Annotation;feature=${content}",
   "revision": 0
 }

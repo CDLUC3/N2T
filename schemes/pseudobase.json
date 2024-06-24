@@ -1,9 +1,9 @@
 {
   "id": "pseudobase",
   "target": {
-    "DEFAULT": "http://www.ekevanbatenburg.nl/PKBASE/{content}.HTML"
+    "DEFAULT": "http://www.ekevanbatenburg.nl/PKBASE/${content}.HTML"
   },
   "type": "commonspfx",
-  "redirect": "http://www.ekevanbatenburg.nl/PKBASE/{content}.HTML",
+  "redirect": "http://www.ekevanbatenburg.nl/PKBASE/${content}.HTML",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "snp2nmd",
   "target": {
-    "DEFAULT": "http://variome.kobic.re.kr/SNP2NMD/snp2nmd.jsp?id={content}&rule=50"
+    "DEFAULT": "http://variome.kobic.re.kr/SNP2NMD/snp2nmd.jsp?id=${content}&rule=50"
   },
   "type": "commonspfx",
-  "redirect": "http://variome.kobic.re.kr/SNP2NMD/snp2nmd.jsp?id={content}&rule=50",
+  "redirect": "http://variome.kobic.re.kr/SNP2NMD/snp2nmd.jsp?id=${content}&rule=50",
   "revision": 0
 }

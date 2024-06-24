@@ -1,7 +1,7 @@
 {
   "id": "grin.taxonomy",
   "target": {
-    "DEFAULT": "http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?{content}"
+    "DEFAULT": "http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?${content}"
   },
   "type": "scheme",
   "name": "GRIN at Maryland",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?${ac}",
-  "redirect": "http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?{content}",
+  "redirect": "http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?${content}",
   "description": "GRIN (Germplasm Resources Information Network) Taxonomy for Plants provides information on scientific and common names, classification, distribution, references, and economic impact.",
   "subject": "taxonomy; plant",
   "location": "USA",

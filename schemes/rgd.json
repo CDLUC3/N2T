@@ -1,7 +1,7 @@
 {
   "id": "rgd",
   "target": {
-    "DEFAULT": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id={content}"
+    "DEFAULT": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=${content}"
   },
   "type": "scheme",
   "name": "Rat Genome Database",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=${ac}",
-  "redirect": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id={content}",
+  "redirect": "http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=${content}",
   "description": "Rat Genome Database seeks to collect, consolidate, and integrate rat genomic and genetic data with curated functional and physiological data and make these data widely available to the scientific community. This collection references genes.",
   "subject": "annotation; phenotype; disease; eukaryotic; gene; sequence; nucleotide; genome; pathway; mammalian",
   "location": "USA",

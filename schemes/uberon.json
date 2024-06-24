@@ -1,7 +1,7 @@
 {
   "id": "uberon",
   "target": {
-    "DEFAULT": "http://purl.bioontology.org/ontology/UBERON/UBERON:{content}"
+    "DEFAULT": "http://purl.bioontology.org/ontology/UBERON/UBERON:${content}"
   },
   "type": "scheme",
   "name": "UBERON through bioPortal",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://purl.bioontology.org/ontology/UBERON/UBERON:${ac}",
-  "redirect": "http://purl.bioontology.org/ontology/UBERON/UBERON:{content}",
+  "redirect": "http://purl.bioontology.org/ontology/UBERON/UBERON:${content}",
   "description": "Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.",
   "subject": "ontology",
   "location": "USA",

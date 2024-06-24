@@ -1,7 +1,7 @@
 {
   "id": "swissregulon",
   "target": {
-    "DEFAULT": "http://swissregulon.unibas.ch/query/{content}"
+    "DEFAULT": "http://swissregulon.unibas.ch/query/${content}"
   },
   "type": "scheme",
   "name": "SwissRegulon",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://swissregulon.unibas.ch/query/${ac}",
-  "redirect": "http://swissregulon.unibas.ch/query/{content}",
+  "redirect": "http://swissregulon.unibas.ch/query/${content}",
   "description": "A database of genome-wide annotations of regulatory sites. It contains annotations for 17 prokaryotes and 3 eukaryotes. The database frontend offers an intuitive interface showing genomic information in a graphical form.",
   "subject": null,
   "location": "Switzerland",

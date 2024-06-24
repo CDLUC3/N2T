@@ -1,7 +1,7 @@
 {
   "id": "z038/jws",
   "target": {
-    "DEFAULT": "http://jjj.bio.vu.nl/models/{content}/"
+    "DEFAULT": "http://jjj.bio.vu.nl/models/${content}/"
   },
   "type": "scheme",
   "name": "JWS Online Model Repository at Amsterdam",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://jjj.bio.vu.nl/models/${ac}/",
-  "redirect": "http://jjj.bio.vu.nl/models/{content}/",
+  "redirect": "http://jjj.bio.vu.nl/models/${content}/",
   "description": "JWS Online is a repository of curated biochemical pathway models, and additionally provides the ability to run simulations of these models in a web browser.",
   "subject": "model",
   "location": "Netherlands",

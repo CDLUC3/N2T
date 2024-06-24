@@ -1,7 +1,7 @@
 {
   "id": "zinc",
   "target": {
-    "DEFAULT": "http://zinc15.docking.org/substances/{content}"
+    "DEFAULT": "http://zinc15.docking.org/substances/${content}"
   },
   "type": "scheme",
   "name": "ZINC at University of California (San Francisco)",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "http://zinc15.docking.org/substances/${ac}",
-  "redirect": "http://zinc15.docking.org/substances/{content}",
+  "redirect": "http://zinc15.docking.org/substances/${content}",
   "description": "ZINC is a free public resource for ligand discovery. The database contains over twenty million commercially available molecules in biologically relevant representations that may be downloaded in popular ready-to-dock formats and subsets. The Web site enables searches by structure, biological activity, physical property, vendor, catalog number, name, and CAS number.",
   "subject": "structure; chemical",
   "location": "USA",

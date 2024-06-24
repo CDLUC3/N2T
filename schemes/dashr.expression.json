@@ -1,7 +1,7 @@
 {
   "id": "dashr.expression",
   "target": {
-    "DEFAULT": "https://dashr1.lisanwanglab.org/entry/hsa-mir-200a#{content}#exprPerTissueTable"
+    "DEFAULT": "https://dashr1.lisanwanglab.org/entry/hsa-mir-200a#${content}#exprPerTissueTable"
   },
   "type": "scheme",
   "name": "DASHR expression at University of Pennsylvania",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "https://dashr1.lisanwanglab.org/entry/hsa-mir-200a#${ac}#exprPerTissueTable",
-  "redirect": "https://dashr1.lisanwanglab.org/entry/hsa-mir-200a#{content}#exprPerTissueTable",
+  "redirect": "https://dashr1.lisanwanglab.org/entry/hsa-mir-200a#${content}#exprPerTissueTable",
   "description": "DASHR reports the annotation, expression and evidence for specific RNA processing (cleavage specificity scores/entropy) of human sncRNA genes, precursor and mature sncRNA products across different human tissues and cell types. DASHR integrates information from multiple existing annotation resources for small non-coding RNAs, including microRNAs (miRNAs), Piwi-interacting (piRNAs), small nuclear (snRNAs), nucleolar (snoRNAs), cytoplasmic (scRNAs), transfer (tRNAs), tRNA fragments (tRFs), and ribosomal RNAs (rRNAs). These datasets were obtained from non-diseased human tissues and cell types and were generated for studying or profiling small non-coding RNAs. This collection references RNA expression.",
   "subject": "nucleotide; expression; sequence; human",
   "location": "USA",

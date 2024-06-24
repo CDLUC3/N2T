@@ -1,9 +1,9 @@
 {
   "id": "ptmswitchboard",
   "target": {
-    "DEFAULT": "http://cagr.pcbi.upenn.edu/PTMswitchboard/jsp/detail.jsp?ID={content}"
+    "DEFAULT": "http://cagr.pcbi.upenn.edu/PTMswitchboard/jsp/detail.jsp?ID=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://cagr.pcbi.upenn.edu/PTMswitchboard/jsp/detail.jsp?ID={content}",
+  "redirect": "http://cagr.pcbi.upenn.edu/PTMswitchboard/jsp/detail.jsp?ID=${content}",
   "revision": 0
 }

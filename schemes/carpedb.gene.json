@@ -1,9 +1,9 @@
 {
   "id": "carpedb.gene",
   "target": {
-    "DEFAULT": "http://www.carpedb.ua.edu/summary.cfm?id={content}"
+    "DEFAULT": "http://www.carpedb.ua.edu/summary.cfm?id=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.carpedb.ua.edu/summary.cfm?id={content}",
+  "redirect": "http://www.carpedb.ua.edu/summary.cfm?id=${content}",
   "revision": 0
 }

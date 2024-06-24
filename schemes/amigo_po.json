@@ -1,7 +1,7 @@
 {
   "id": "amigo/po",
   "target": {
-    "DEFAULT": "http://www.plantontology.org/amigo/go.cgi?view=details&query=PO:{content}"
+    "DEFAULT": "http://www.plantontology.org/amigo/go.cgi?view=details&query=PO:${content}"
   },
   "type": "scheme",
   "name": "Plant Ontology through Amigo",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.plantontology.org/amigo/go.cgi?view=details&query=PO:${ac}",
-  "redirect": "http://www.plantontology.org/amigo/go.cgi?view=details&query=PO:{content}",
+  "redirect": "http://www.plantontology.org/amigo/go.cgi?view=details&query=PO:${content}",
   "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
   "subject": "ontology; plant",
   "location": "USA",

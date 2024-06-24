@@ -1,7 +1,7 @@
 {
   "id": "pharmgkb.disease",
   "target": {
-    "DEFAULT": "http://www.pharmgkb.org/disease/{content}"
+    "DEFAULT": "http://www.pharmgkb.org/disease/${content}"
   },
   "type": "scheme",
   "name": "PharmGKB Disease at Stanford",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.pharmgkb.org/disease/${ac}",
-  "redirect": "http://www.pharmgkb.org/disease/{content}",
+  "redirect": "http://www.pharmgkb.org/disease/${content}",
   "description": "The PharmGKB database is a central repository for genetic, genomic, molecular and cellular phenotype data and clinical information about people who have participated in pharmacogenomics research studies. The data includes, but is not limited to, clinical and basic pharmacokinetic and pharmacogenomic research in the cardiovascular, pulmonary, cancer, pathways, metabolic and transporter domains.",
   "subject": "pharmacogenomics",
   "location": "USA",

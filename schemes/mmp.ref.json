@@ -1,7 +1,7 @@
 {
   "id": "mmp.ref",
   "target": {
-    "DEFAULT": "https://mmp.sfb.uit.no/databases/marref/#/records/{content}"
+    "DEFAULT": "https://mmp.sfb.uit.no/databases/marref/#/records/${content}"
   },
   "type": "scheme",
   "name": "MarRef through SfB",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://mmp.sfb.uit.no/databases/marref/#/records/${ac}",
-  "redirect": "https://mmp.sfb.uit.no/databases/marref/#/records/{content}",
+  "redirect": "https://mmp.sfb.uit.no/databases/marref/#/records/${content}",
   "description": "MarRef is a manually curated marine microbial reference genome database that contains completely sequenced genomes.",
   "subject": null,
   "location": "Norway",

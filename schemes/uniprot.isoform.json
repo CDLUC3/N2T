@@ -1,7 +1,7 @@
 {
   "id": "uniprot.isoform",
   "target": {
-    "DEFAULT": "http://www.uniprot.org/uniparc/?query={content}"
+    "DEFAULT": "http://www.uniprot.org/uniparc/?query=${content}"
   },
   "type": "scheme",
   "name": "UniProt Isoform through UniParc",
@@ -11,7 +11,7 @@
   "sort_score": "4",
   "primary": 0,
   "forward": "http://www.uniprot.org/uniparc/?query=${ac}",
-  "redirect": "http://www.uniprot.org/uniparc/?query={content}",
+  "redirect": "http://www.uniprot.org/uniparc/?query=${content}",
   "description": "The UniProt Knowledgebase (UniProtKB) is a comprehensive resource for protein sequence and functional information with extensive cross-references to more than 120 external databases. This collection is a subset of UniProtKB, and provides a means to reference isoform information.",
   "subject": "sequence; protein",
   "location": "USA, UK and Switzerland",

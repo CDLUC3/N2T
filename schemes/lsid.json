@@ -1,13 +1,13 @@
 {
   "id": "lsid",
   "target": {
-    "DEFAULT": "http://www.lsid.info/urn:{content}"
+    "DEFAULT": "http://www.lsid.info/urn:${content}"
   },
   "type": "scheme",
   "name": "Life Sciences Identifier",
   "alias": null,
   "primary": 1,
-  "redirect": "http://www.lsid.info/urn:{content}",
+  "redirect": "http://www.lsid.info/urn:${content}",
   "test": "lsid:ipni.org:names:77145066-1:1.4",
   "probe": "http://www.lsid.info/urn:lsid:ipni.org:names:77145066-1:1.4",
   "more": "https://www.lsid.info/",

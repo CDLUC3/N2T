@@ -1,7 +1,7 @@
 {
   "id": "metanetx.chemical",
   "target": {
-    "DEFAULT": "https://www.metanetx.org/chem_info/{content}"
+    "DEFAULT": "https://www.metanetx.org/chem_info/${content}"
   },
   "type": "scheme",
   "name": "MetaNetX chemical at SIB Swiss Institute of Bioinformatics",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "https://www.metanetx.org/chem_info/${ac}",
-  "redirect": "https://www.metanetx.org/chem_info/{content}",
+  "redirect": "https://www.metanetx.org/chem_info/${content}",
   "description": "MetaNetX/MNXref integrates various information from genome-scale metabolic network reconstructions such as information on reactions, metabolites and compartments. This information undergoes a reconciliation process to minimise for discrepancies between different data sources, and makes the data accessible under a common namespace. This collection references chemical or metabolic components.",
   "subject": "chemical; model",
   "location": "Switzerland",

@@ -1,9 +1,9 @@
 {
   "id": "siena2dpage",
   "target": {
-    "DEFAULT": "http://www.bio-mol.unisi.it/cgi-bin/2d/2d.cgi?ac={content}"
+    "DEFAULT": "http://www.bio-mol.unisi.it/cgi-bin/2d/2d.cgi?ac=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.bio-mol.unisi.it/cgi-bin/2d/2d.cgi?ac={content}",
+  "redirect": "http://www.bio-mol.unisi.it/cgi-bin/2d/2d.cgi?ac=${content}",
   "revision": 0
 }

@@ -1,9 +1,9 @@
 {
   "id": "kdd",
   "target": {
-    "DEFAULT": "http://golgi.ana.ed.ac.uk/{content}.html"
+    "DEFAULT": "http://golgi.ana.ed.ac.uk/${content}.html"
   },
   "type": "commonspfx",
-  "redirect": "http://golgi.ana.ed.ac.uk/{content}.html",
+  "redirect": "http://golgi.ana.ed.ac.uk/${content}.html",
   "revision": 0
 }

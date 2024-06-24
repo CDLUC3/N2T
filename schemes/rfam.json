@@ -1,7 +1,7 @@
 {
   "id": "rfam",
   "target": {
-    "DEFAULT": "https://rfam.xfam.org/family/{content}"
+    "DEFAULT": "https://rfam.xfam.org/family/${content}"
   },
   "type": "scheme",
   "name": "Rfam at EMBL-EBI",
@@ -11,7 +11,7 @@
   "sort_score": "6",
   "primary": 1,
   "forward": "https://rfam.xfam.org/family/${ac}",
-  "redirect": "https://rfam.xfam.org/family/{content}",
+  "redirect": "https://rfam.xfam.org/family/${content}",
   "description": "The Rfam database is a collection of RNA families, each represented by multiple sequence alignments, consensus secondary structures and covariance models (CMs). The families in Rfam break down into three broad functional classes: non-coding RNA genes, structured cis-regulatory elements and self-splicing RNAs. Typically these functional RNAs often have a conserved secondary structure which may be better preserved than the RNA sequence. The CMs used to describe each family are a slightly more complicated relative of the profile hidden Markov models (HMMs) used by Pfam. CMs can simultaneously model RNA sequence and the structure in an elegant and accurate fashion.",
   "subject": "nucleotide; domain",
   "location": "UK",

@@ -1,9 +1,9 @@
 {
   "id": "panther.gene",
   "target": {
-    "DEFAULT": "http://www.pantherdb.org/genes/gene.do?acc={content}"
+    "DEFAULT": "http://www.pantherdb.org/genes/gene.do?acc=${content}"
   },
   "type": "commonspfx",
-  "redirect": "http://www.pantherdb.org/genes/gene.do?acc={content}",
+  "redirect": "http://www.pantherdb.org/genes/gene.do?acc=${content}",
   "revision": 0
 }

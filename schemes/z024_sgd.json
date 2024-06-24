@@ -1,7 +1,7 @@
 {
   "id": "z024/sgd",
   "target": {
-    "DEFAULT": "http://sgd.bio2rdf.org/describe/?url=http://bio2rdf.org/sgd:{content}"
+    "DEFAULT": "http://sgd.bio2rdf.org/describe/?url=http://bio2rdf.org/sgd:${content}"
   },
   "type": "scheme",
   "name": "Bio2RDF",
@@ -11,7 +11,7 @@
   "sort_score": "1",
   "primary": 0,
   "forward": "http://sgd.bio2rdf.org/describe/?url=http://bio2rdf.org/sgd:${ac}",
-  "redirect": "http://sgd.bio2rdf.org/describe/?url=http://bio2rdf.org/sgd:{content}",
+  "redirect": "http://sgd.bio2rdf.org/describe/?url=http://bio2rdf.org/sgd:${content}",
   "description": "The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.",
   "subject": "genome; eukaryotic; nucleotide",
   "location": null,
