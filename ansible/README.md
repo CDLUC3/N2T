@@ -32,7 +32,8 @@ variable `n2t_version`:
 ansible-playbook -i hosts deploy_n2t.yaml -e n2t_version=0.7.0
 ```
 
-Updating a development deployment can be done without puppet. After logging in as `ezid` user:
+Updating a development deployment can be done without puppet (only applies to the dev server). 
+After logging in as `ezid` user:
 
 ```
 cd ~/install/n2t/ansible
