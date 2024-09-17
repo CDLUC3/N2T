@@ -4,13 +4,14 @@ import os.path
 import typing
 
 import pydantic_settings
+import rslv.config
 
 ENV_PREFIX = "n2t_"
 BASE_FOLDER = os.path.dirname(os.path.abspath(__file__))
 SETTINGS_FILE_KEY = f"{ENV_PREFIX.upper()}SETTINGS"
 
 
-class Settings(pydantic_settings.BaseSettings):
+class Settings(rslv.config.Settings):
     # env_prefix provides the environment variable prefix
     # for overriding these settings with env vars.
     # e.g. N2T_PORT=11000
