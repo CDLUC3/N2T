@@ -236,7 +236,7 @@ def records_to_db(
             _total += tau[0]
             _nsynonyms += tau[1]
             _updated += tau[2]
-
+    repository.refresh_metadata()
     return (_total, _added, _updated, _nsynonyms)
 
 

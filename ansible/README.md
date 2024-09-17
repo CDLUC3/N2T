@@ -17,7 +17,7 @@ to perform end-to-end deployment of the n2t service on AWS EC2 hosts.
 
 Execute this playbook on the localhost as user `ezid`:
 ```
-cd ~/install/n2t
+cd ~/install/n2t/ansible
 export ANSIBLE_STDOUT_CALLBACK=debug
 
 ansible-playbook -i hosts deploy_n2t.yaml -CD
@@ -30,6 +30,29 @@ n2t application, supply the version number (git tag) on the command line as
 variable `n2t_version`:
 ```
 ansible-playbook -i hosts deploy_n2t.yaml -e n2t_version=0.7.0
+```
+
+Updating a development deployment can be done without puppet. After logging in as `ezid` user:
+
+```
+cd ~/install/n2t/ansible
+export ANSIBLE_STDOUT_CALLBACK=debug
+ansible-playbook -i hosts -e n2t_version=develop deploy_n2t.yaml
+```
+
+The `develop` value can be any branch or tag name.
+
+After successful deployment, restart the `unit` application by either
+restarting the unit service:
+
+```
+sudo cdlsysctl restart unit
+```
+
+or restarting the application:
+
+```
+curl -X GET --unix-socket /var/run/unit/control.sock http://localhost/control/applications/n2t/restart | jq '.'
 ```
 
 
