@@ -19,6 +19,14 @@
       version: "{{ n2t_version }}"
       force: yes
 
+  - name: Install n2t application dependencies
+    ansible.builtin.pip:
+      state: present
+      chdir: "{{deploy_dir}}"
+      virtualenv: "{{deploy_dir}}/venv"
+      virtualenv_command: "python3.11 -m venv"
+      requirements: requirements.txt
+
   - name: Install n2t application
     ansible.builtin.pip:
       state: present
