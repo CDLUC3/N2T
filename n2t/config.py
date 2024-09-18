@@ -26,6 +26,7 @@ class Settings(rslv.config.Settings):
     log_filename: typing.Optional[str] = None
     environment: str = "development"
     allow_appinfo: bool = True
+    auto_introspection: bool = False
 
 @functools.lru_cache
 def get_settings(env_file=None):
