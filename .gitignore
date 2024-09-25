@@ -5,6 +5,7 @@
 data/
 scripts/*.cfg
 .deta/
+_local/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
