@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "n2t"
-version = "0.9.3"
+version = "0.9.5"
 description = "Implementation of N2T in python"
 authors = ["datadavev <605409+datadavev@users.noreply.github.com>"]
 license = "MIT"
