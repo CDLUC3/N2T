@@ -1,0 +1,27 @@
+{
+  "id": "rism",
+  "target": {
+    "DEFAULT": "https://rism.online/${content}"
+  },
+  "type": "scheme",
+  "name": "Répertoire International des Sources Musicales (RISM)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00000911",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://rism.online/${ac}",
+  "redirect": "https://rism.online/${content}",
+  "description": "Bibliographic and authority data from the catalogue of the Répertoire International des Sources Musicales.",
+  "subject": "music; libraries; bibliography",
+  "location": "Germany; Switzerland",
+  "synonym": "CPC",
+  "institution": "Répertoire International des Sources Musicales (RISM), Frankfurt (DE) and Bern (CH).",
+  "prefixed": 0,
+  "test": "people/11035",
+  "probe": "https://rism.online/people/11035",
+  "pattern": "^(?:people|institutions|sources)\/\\d+\/?$",
+  "state": "87:Up",
+  "more": "https://rism.online/docs/",
+  "revision": 0
+}
