@@ -25,7 +25,7 @@ class Settings(rslv.config.Settings):
     template_dir: str = os.path.join(BASE_FOLDER, "templates")
     log_filename: typing.Optional[str] = None
     environment: str = "development"
-    allow_appinfo: bool = True
+    allow_appinfo: bool = False
     auto_introspection: bool = False
 
 @functools.lru_cache
