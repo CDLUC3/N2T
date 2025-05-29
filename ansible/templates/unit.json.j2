@@ -23,6 +23,15 @@
     "n2t": [
       {
           "match": {
+              "uri": "/e/pub/*"
+          },
+          "action": {
+              "return": 301,
+              "location": "`https://cdluc3.github.io/naan_reg_priv${uri.substring(uri.lastIndexOf('/'))}`"
+          }
+      },
+      {
+          "match": {
               "uri": "/e/*"
           },
           "action": {

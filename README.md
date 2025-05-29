@@ -119,7 +119,7 @@ Commands:
   yaml2json  Generate or update JSON record from YAML source.
 ```
 
-### Configure the n2t application with identifier schem information
+### Configure the n2t application with identifier scheme information
 
 Before operation, the N2T application scheme database must be initialized. This 
 process creates an sqlite database containing the scheme records to support 
@@ -199,3 +199,25 @@ $ n2t info
 
 ## Managing Scheme Records
 
+## Local Development
+
+### Nginx Unit on OS X (silicon)
+
+```
+brew install nginx/unit/unit
+brew install unit-python3
+
+/opt/homebrew/opt/unit/bin/unitd --no-daemon
+```
+
+Control socket: `/opt/homebrew/var/run/unit/control.sock`
+Log file: `/opt/homebrew/var/log/unit/unit.log `
+
+```
+export UNIT_CONTROL="/opt/homebrew/var/run/unit/control.sock"
+```
+
+Set configuration:
+```
+curl -X PUT --data-binary @unit.conf --unix-socket ${UNIT_CONTROL} http://localhost/config/applications/n2t"
+```
