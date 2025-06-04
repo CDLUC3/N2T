@@ -1,0 +1,27 @@
+{
+  "id": "cstr",
+  "target": {
+    "DEFAULT": "https://cstr.cn/${content}"
+  },
+  "type": "scheme",
+  "name": "Common Science and Technology Resources (CSTR)",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00000997",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://cstr.cn/${ac}",
+  "redirect": "https://cstr.cn/${content}",
+  "description": "CSTR Identification Platform https://www.cstr.cn/en) is initialed in 2016 based on the National Standard GB/T 32843—2016 \"Science and technology resource identification\", providing unique identification service for global scientific data, papers, scientific institutions, researchers, scientific instruments, patents and other scientific and technological resources. CSTR is also accepted as the international standard, such as IANA., etc.",
+  "subject": "scientific data; papers; institutions; researchers; instruments; patents",
+  "location": "Beijing, China",
+  "synonym": null,
+  "institution": "Computer Network Information Center, Chinese Academy of Sciences, Beijing, China",
+  "prefixed": 0,
+  "test": "1253.11.sciencedb.j00001.00123",
+  "probe": "https://cstr.cn/32038.14.CPB.ada432",
+  "pattern": "^\\w{5}\\.\\d{2}\\..*$",
+  "state": "87:Up",
+  "more": "https://www.cstr.cn/en/",
+  "revision": 0
+}
