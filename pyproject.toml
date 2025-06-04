@@ -1,6 +1,6 @@
 [project]
 name = "n2t"
-version = "0.10.1"
+version = "0.10.2"
 description = "Implementation of N2T in python"
 authors = [{ name = "datadavev", email = "605409+datadavev@users.noreply.github.com" }]
 requires-python = "~=3.11"

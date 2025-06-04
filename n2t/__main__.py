@@ -330,6 +330,7 @@ def cli_yaml2json(config: appconfig.Settings, yamlsrc: str) -> int:
     """
     Generate or update JSON record from YAML source.
     """
+    
     L = logging.getLogger(APP_NAME)
     ignore_types = ["datacenter", "naan", "shoulder"]
     records = load_yaml_to_dict(yamlsrc, ignore_types=ignore_types)
