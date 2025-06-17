@@ -1,11 +1,10 @@
 # N2T Python Implementation
 
-This is a reimplementation of N2T using python.
+N2T is an identifier scheme resolver. 
 
-N2T is an identifier scheme resolver. Its role is to redirect clients to the 
-registered handler for an identifier scheme. The handler is expected to 
-continue interaction with the client for identifier resolution.
-
+Its role is to redirect clients to the registered handler for an identifier 
+scheme. The handler is expected to continue interaction with the client for 
+identifier resolution.
 
 ## Manual Deploy on Amazon Linux 2023
 
