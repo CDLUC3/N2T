@@ -1,14 +1,14 @@
 {
   "id": "urn",
   "target": {
-    "DEFAULT": "http://nbn-resolving.org/resolver?identifier=urn:${content}&verb=redirect"
+    "DEFAULT": "http://nbn-resolving.org/urn:${content}"
   },
   "type": "scheme",
   "name": "Uniform Resource Name",
   "alias": null,
   "primary": 1,
-  "forward": "http://nbn-resolving.org/resolver?identifier=urn:${ac}&verb=redirect",
-  "redirect": "http://nbn-resolving.org/resolver?identifier=urn:${content}&verb=redirect",
+  "forward": "http://nbn-resolving.org/urn:${ac}",
+  "redirect": "http://nbn-resolving.org/urn:${content}",
   "description": "Uniform Resource Names (URNs) are intended to serve as persistent, location-independent, resource identifiers.",
   "location": "Germany",
   "institution": "Deutsche Nationalbibliothek, Frankfurt",
