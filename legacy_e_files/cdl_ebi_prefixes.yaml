@@ -1,0 +1,3355 @@
+# Last modified: 2025.05.07_07.48.03
+# Updates available at: https://n2t.net/ark:/13030/c7xk84q2j
+# To request a prefix: https://n2t.net/e/prefix_request
+#
+# This is a YAML-format registry that enumerates the Compact Identifier
+# prefixes (id schemes) jointly recognized by the California Digital
+# Library (CDL) and the European Molecular Biology Laboratory - European
+# Bioinformatics Institute (EMBL-EBI) and their respective meta-resolvers,
+#
+#    n2t.net and identifiers.org.
+#
+# A prefix consists of a namespace, optionally preceded by a provider code
+# and a '/' character, for example, "pdb", "pmid", "taxon", and "rcsb/pdb".
+#
+#    <prefix> := [ <provider> + '/' ] + <namespace>
+#
+# A published compact identifier (compact-id) consists of a prefix, a colon,
+# and a scheme-local identifier (eg, a database accession number):
+#
+#    <compact-id> := <prefix> + ':' + <prefix-specific-identifier>
+#
+# A compact-id is made actionable by using it as the path part of a URL
+# and prepending one of the meta-resolvers for the hostname, for example,
+#
+#     n2t.net/pmid:1234567
+#     identifiers.org/pmid:1234567
+# 
+# This registry file is a series of YAML blocks, each ending in a blank line.
+# The elements in a block are defined as follows:
+#
+# namespace (required)
+#   A string of lowercase letters and digits defining the identifier
+#   collection, typically for a given database. The combination of
+#   namespace prefix and provider (below) must be unique across the
+#   registry.
+#
+# provider (optional)
+#   A string of lowercase letters and digits defining one provider for an
+#   identifier namespace prefix. The combination of namespace prefix and
+#   provider (above) must be unique across the registry.
+#
+# alias (optional)
+#   A string of lowercase letters and digits specifying an alternate name for
+#   the namespace. The combination of alias prefix, or namespace prefix, and
+#   provider (below) must be unique across the registry.
+#
+# title (required)
+#   A text string containing the full name of the prefix.
+#
+# homepage (required)
+#   A URL that leads to a web page with more information about the prefix. If
+#   the page contains schema.org tags, the meta-resolver may exploit them for
+#   descriptive information.
+#
+# note (optional, repeatable)
+#   A text string containing arbitrary annotations.
+#
+# The contents of this file are dedicated to the public domain under the terms
+# of CC0 1.0 Universal https://creativecommons.org/publicdomain/zero/1.0/
+# and FAIRsharing entry https://fairsharing.org/bsg-s001091.  Please visit
+# https://www.ebi.ac.uk/support/identifiers.org for questions or feedback.
+
+- namespace: 3dmet
+  title: 3DMET database
+  homepage: http://www.3dmet.dna.affrc.go.jp/
+
+- namespace: abs
+  title: ABS at IMIM
+  homepage: http://genome.crg.es/datasets/abs2005/
+
+- namespace: aceview.worm
+  provider: ncbi
+  title: AceView Worm at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/IEB/Research/Acembly/index.html?worm
+
+- namespace: addgene
+  title: Addgene Plasmid Repository
+  homepage: http://addgene.org/
+
+- namespace: adw
+  title: Animal Diversity Web at University of Michigan
+  homepage: https://animaldiversity.org/
+
+- namespace: affy.probeset
+  title: Affymetrix ProbeSet in Santa Clara
+  homepage: http://www.affymetrix.com/
+
+- namespace: aftol.taxonomy
+  title: AFTOL at University of Minnesota
+  homepage: http://aftol.org/data.php
+
+- namespace: agricola
+  title: AGRICOLA at National Agricultural Library
+  homepage: http://agricola.nal.usda.gov/
+
+- namespace: allergome
+  title: Allergome at Rome
+  homepage: http://www.allergome.org/
+
+- namespace: amoebadb
+  title: AmoebaDB at EuPathDB
+  homepage: http://amoebadb.org/amoeba/
+
+- namespace: antibodyregistry
+  title: Antibody Registry at University of California
+  homepage: http://antibodyregistry.org/
+
+- namespace: antweb
+  title: AntWeb at California Academy of Sciences
+  homepage: http://www.antweb.org/
+
+- namespace: aop
+  title: AOPWiki
+  homepage: https://aopwiki.org/
+
+- namespace: aop.events
+  title: AOPWiki (Key Event)
+  homepage: https://aopwiki.org/
+
+- namespace: aop.relationships
+  title: AOPWiki (Key Event Relationship)
+  homepage: https://aopwiki.org/
+
+- namespace: aop.stressor
+  title: AOPWiki (Stressor)
+  homepage: https://aopwiki.org/
+
+- namespace: apd
+  title: APD at Nebraska
+  homepage: http://aps.unmc.edu/AP/
+
+- namespace: aphidbase.transcript
+  title: AphidBase at INRA
+  homepage: http://www.aphidbase.com/aphidbase
+
+- namespace: apid.interactions
+  title: APID at Salamanca
+  homepage: http://cicblade.dep.usal.es:8080/APID/
+
+- namespace: arachnoserver
+  title: ArachnoServer at Brisbane
+  homepage: http://www.arachnoserver.org/
+
+- namespace: ardb
+  title: ARDB at University of Maryland
+  homepage: http://ardb.cbcb.umd.edu/
+
+- namespace: ark
+  title: ARK via the Name-to-Thing resolver.
+  homepage: http://n2t.net/
+
+- namespace: arrayexpress
+  provider: ebi
+  title: ArrayExpress
+  homepage: https://www.ebi.ac.uk/arrayexpress/
+
+- namespace: arrayexpress
+  provider: omicsdi
+  title: ArrayExpress through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: arrayexpress.platform
+  provider: ebi
+  title: ArrayExpress Platform at EBI
+  homepage: https://www.ebi.ac.uk/arrayexpress/
+
+- namespace: arraymap
+  title: ArrayMap
+  homepage: https://www.arraymap.org
+
+- namespace: arxiv
+  title: Cornell University arXiv
+  homepage: https://arxiv.org/
+
+- namespace: asap
+  title: ASAP at University of Wisconsin
+  homepage: http://asap.ahabs.wisc.edu/asap/home.php
+
+- namespace: ascl
+  title: Astrophysics Source Code Library
+  homepage: http://ascl.net/
+
+- namespace: asin
+  title: Amazon Standard Identification Number (ASIN)
+  homepage: https://www.amazon.co.uk/gp/help/customer/display.html/277-3416785-8259466?ie=UTF8&nodeId=898182
+
+- namespace: aspgd.locus
+  title: AspGD at Stanford Medical School
+  homepage: http://www.aspgd.org/
+
+- namespace: aspgd.protein
+  title: AspGD Protein at Stanford Medical School
+  homepage: http://www.aspgd.org/
+
+- namespace: atc
+  title: Anatomical Therapeutic Chemical Index at WHO
+  homepage: http://www.whocc.no/atc_ddd_index/
+
+- namespace: atcc
+  title: ATCC in Virginia
+  homepage: http://www.atcc.org/
+
+- namespace: atcvet
+  title: Anatomical Therapeutic Chemical Vet Index at WHO
+  homepage: http://www.whocc.no/atcvet/atcvet_index/
+
+- namespace: atfdb.family
+  title: Animal TFDB at Hubei Bioinformatics & Molecular Imaging Key Laboratory
+  homepage: http://www.bioguo.org/AnimalTFDB/family_index.php
+
+- namespace: autdb
+  title: AutDB at MindSpec
+  homepage: http://autism.mindspec.org/autdb/
+
+- namespace: bacdive
+  title: Bacterial Diversity Metadatabase
+  homepage: https://bacdive.dsmz.de/
+
+- namespace: bacmap.biog
+  title: BacMap Biography at University of Alberta
+  homepage: http://bacmap.wishartlab.com/
+
+- namespace: bacmap.map
+  title: BacMap Genome Map at University of Alberta
+  homepage: http://bacmap.wishartlab.com/
+
+- namespace: bao
+  provider: bptl
+  title: BioAssay Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/BAO/
+
+- namespace: bao
+  provider: ols
+  title: BioAssay Ontology through OLS
+  homepage: https://bioportal.bioontology.org/ontologies/BAO/
+
+- namespace: bdgp.est
+  provider: ncbi
+  title: BDGP EST at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/dbEST/index.html
+
+- namespace: bdgp.insertion
+  title: BDGP Gene Disruption Project
+  homepage: http://flypush.imgen.bcm.tmc.edu/pscreen/
+
+- namespace: bdsc
+  title: BDSC at Indiana University
+  homepage: https://bdsc.indiana.edu/about/mission.html
+
+- namespace: beetlebase
+  title: BeetleBase at Kansas State University
+  homepage: http://beetlebase.org/
+
+- namespace: begdb
+  title: Benchmark Energy & Geometry Database
+  homepage: http://www.begdb.com
+
+- namespace: bgee.family
+  title: Bgee at Lausanne
+  homepage: http://bgee.unil.ch/bgee/bgee
+
+- namespace: bgee.gene
+  title: Bgee gene
+  homepage: https://bgee.org/
+
+- namespace: bgee.organ
+  title: Bgee at Lausanne
+  homepage: http://bgee.unil.ch/bgee/bgee
+
+- namespace: bgee.stage
+  title: Bgee at Lausanne
+  homepage: http://bgee.unil.ch/bgee/bgee
+
+- namespace: bigg.compartment
+  title: BiGG Compartment at University of California
+  homepage: http://bigg.ucsd.edu/compartments/
+
+- namespace: bigg.metabolite
+  title: BiGG Metabolite at University of Cakifornia
+  homepage: http://bigg.ucsd.edu/universal/metabolites
+
+- namespace: bigg.model
+  title: BiGG Model at University of California
+  homepage: http://bigg.ucsd.edu/models
+
+- namespace: bigg.reaction
+  title: BiGG Reaction at University of California
+  homepage: http://bigg.ucsd.edu/universal/reactions
+
+- namespace: bindingdb
+  title: BindingDB
+  homepage: https://www.bindingdb.org
+
+- namespace: biocarta.pathway
+  title: BioCarta Pathway at NCI
+  homepage: https://www.biocarta.com/
+
+- namespace: biocatalogue.service
+  provider: ebi
+  title: BioCatalogue at EMBL-EBI
+  homepage: https://www.biocatalogue.org/
+
+- namespace: biocyc
+  title: BioCyc at SRI International
+  homepage: http://biocyc.org
+
+- namespace: biogrid
+  title: BioGRID database of physical and genetic interactions
+  homepage: http://thebiogrid.org/
+
+- namespace: biomaps
+  title: main webpage
+  homepage: http://www.mmmp.org/MMMP/public/biomap/listBiomap.mmmp
+
+- namespace: biominder
+  title: Bio-MINDER Tissue Database
+  homepage: https://datalab.rwth-aachen.de/MINDER
+
+- namespace: biomodels.db
+  provider: ebi
+  title: BioModels Database
+  homepage: https://www.ebi.ac.uk/biomodels/
+
+- namespace: biomodels.db
+  provider: omicsdi
+  title: BioModels through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: biomodels.kisao
+  provider: bptl
+  title: KiSAO via NCBO's Bioportal
+  homepage: http://bioportal.bioontology.org/ontologies/KISAO
+
+- namespace: biomodels.kisao
+  provider: ols
+  title: KiSAO through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/kisao
+
+- namespace: biomodels.teddy
+  provider: bptl
+  title: TEDDY through BioPortal
+  homepage: http://teddyontology.sourceforge.net/
+
+- namespace: biomodels.teddy
+  provider: ols
+  title: TEDDY though OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/teddy
+
+- namespace: biomodels.vocabulary
+  title: Vocabulary via BioModels.net
+  homepage: http://biomodels.net/rdf/vocabulary.rdf
+
+- namespace: bionumbers
+  title: BioNumbers database
+  homepage: https://bionumbers.hms.harvard.edu
+
+- namespace: bioportal
+  provider: bptl
+  title: BioPortal at National Center for Biomedical Ontology
+  homepage: http://bioportal.bioontology.org/
+
+- namespace: bioproject
+  provider: ncbi
+  title: BioProject at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/bioproject
+
+- namespace: bioproject
+  provider: ebi
+  title: BioProject at European Nucleotide Archive (ENA)
+  homepage: https://www.ebi.ac.uk/ena/
+
+- namespace: biosample
+  provider: ebi
+  title: BioSamples Database at EBI
+  homepage: https://www.ebi.ac.uk/biosamples/
+
+- namespace: biosample
+  provider: ncbi
+  title: BioSample at NCBI
+  homepage: http://www.ncbi.nlm.nih.gov/biosample
+
+- namespace: biostudies
+  provider: ebi
+  title: BioStudies database
+  homepage: https://www.ebi.ac.uk/biostudies/
+
+- namespace: biosystems
+  provider: ncbi
+  title: BioSystems database at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/biosystems/
+
+- namespace: biotools
+  title: BioTools
+  homepage: https://bio.tools/
+
+- namespace: bitterdb.cpd
+  title: BitterDB Compound at The Hebrew University of Jerusalem
+  homepage: http://bitterdb.agri.huji.ac.il/dbbitter.php
+
+- namespace: bitterdb.rec
+  title: BitterDB Receptor at The Hebrew University of Jerusalem
+  homepage: http://bitterdb.agri.huji.ac.il/dbbitter.php
+
+- namespace: bold.taxonomy
+  title: BOLD taxonomy browser
+  homepage: http://www.boldsystems.org/
+
+- namespace: brenda
+  title: Brenda enzyme database
+  homepage: https://www.brenda-enzymes.org/
+
+- namespace: broad
+  title: Broad Fungal Genome Initiative at Broad Institute
+  homepage: https://www.broadinstitute.org/annotation/genome/magnaporthe_grisea/
+
+- namespace: bto
+  provider: bptl
+  title: Brenda Tissue Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/BTO
+
+- namespace: bto
+  provider: ols
+  title: Brenda Tissue Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/bto
+
+- namespace: bugbase.expt
+  title: BugBase Expt at University of London
+  homepage: http://bugs.sgul.ac.uk/E-BUGS
+
+- namespace: bugbase.protocol
+  title: BugBase Protocol at University of London
+  homepage: http://bugs.sgul.ac.uk/E-BUGS
+
+- namespace: bykdb
+  title: BYKdb at CNRS
+  homepage: https://bykdb.ibcp.fr/BYKdb/
+
+- namespace: cabri
+  title: CABRI Cell Lines catalogue in Genova (SRS)
+  homepage: http://www.cabri.org/
+
+- namespace: cadsr
+  title: Cancer Data Standards Registry and Repository
+  homepage: https://wiki.nci.nih.gov/display/caDSR/caDSR+Wiki
+
+- namespace: cameo
+  title: CAMEO
+  homepage: https://cameo3d.org
+
+- namespace: caps
+  title: CAPS-DB at Leeds Institute of Molecular Medicine
+  homepage: http://www.bioinsilico.org/cgi-bin/CAPSDB/staticHTML/home
+
+- namespace: cas
+  title: CAS through Common Chemistry
+  homepage: http://commonchemistry.org
+
+- namespace: cath
+  title: CATH Node through UCL
+  homepage: http://www.cathdb.info
+
+- namespace: cath.domain
+  title: CATH domain at UCL
+  homepage: http://www.cathdb.info/
+
+- namespace: cath.superfamily
+  title: CATH superfamily at UCL
+  homepage: http://www.cathdb.info/
+
+- namespace: cattleqtldb
+  title: Animal QTL Cattle at Iowa State University
+  homepage: http://www.animalgenome.org/cgi-bin/QTLdb/BT/index
+
+- namespace: cazy
+  title: CAZy at CNRS
+  homepage: http://www.cazy.org/
+
+- namespace: cbioportal
+  title: The cBioPortal for Cancer Genomics
+  homepage: http://www.cbioportal.org
+
+- namespace: ccds
+  provider: ncbi
+  title: Consensus CDS at NCBI
+  homepage: http://www.ncbi.nlm.nih.gov/CCDS/
+
+- namespace: cco
+  provider: ols
+  title: Cell Cycle Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=CCO
+
+- namespace: cdd
+  provider: ncbi
+  title: Conserved Domain Database at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/sites/entrez?db=cdd
+
+- namespace: cdpd
+  title: Canadian Drug Identification Number at Health Canada
+  homepage: http://webprod3.hc-sc.gc.ca/dpd-bdpp/index-eng.jsp
+
+- namespace: cellimage
+  title: Cell Image Library at American Society for Cell Biology
+  homepage: http://cellimagelibrary.org/
+
+- namespace: cellosaurus
+  provider: sib
+  title: Cellosaurus through SIB
+  homepage: https://web.expasy.org/cellosaurus/
+
+- namespace: cgd
+  title: Candida Genome Database at Stanford University
+  homepage: http://www.candidagenome.org/
+
+- namespace: cgsc
+  title: CGSC at Yale university
+  homepage: http://cgsc.biology.yale.edu/index.php
+
+- namespace: charprot
+  title: CharProt at JCVI
+  homepage: http://www.jcvi.org/charprotdb
+
+- namespace: chebi
+  provider: ebi
+  title: ChEBI (Chemical Entities of Biological Interest)
+  homepage: https://www.ebi.ac.uk/chebi/
+
+- namespace: chebi
+  provider: bptl
+  title: ChEBI through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/CHEBI
+
+- namespace: chebi
+  provider: ols
+  title: ChEBI through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/chebi
+
+- namespace: chembl.compound
+  provider: ebi
+  title: ChEMBL compound database at EBI
+  homepage: https://www.ebi.ac.uk/chembldb/
+
+- namespace: chembl.target
+  provider: ebi
+  title: ChEMBL targets database at EBI
+  homepage: https://www.ebi.ac.uk/chembldb/
+
+- namespace: chemdb
+  title: ChemDB at UC Irvine
+  homepage: http://cdb.ics.uci.edu/
+
+- namespace: chemidplus
+  title: ChemIDplus at National Library of Medicine
+  homepage: https://chem.nlm.nih.gov/chemidplus/chemidheavy.jsp
+
+- namespace: chemspider
+  title: ChemSpider at RSC
+  homepage: http://www.chemspider.com/
+
+- namespace: chickenqtldb
+  title: Animal QTL Chicken at Iowa State University
+  homepage: http://www.animalgenome.org/cgi-bin/QTLdb/GG/index
+
+- namespace: cl
+  provider: bptl
+  title: Cell Type Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/CL
+
+- namespace: cl
+  provider: ols
+  title: Cell Type Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/cl
+
+- namespace: cldb
+  title: CLDB at Genova
+  homepage: http://bioinformatics.hsanmartino.it/hypercldb/indexes.html
+
+- namespace: clinicaltrials
+  title: ClinicalTrials.gov at NIH
+  homepage: https://clinicaltrials.gov/
+
+- namespace: clinvar
+  provider: ncbi
+  title: ClinVar Variant at NCBI
+  homepage: http://www.ncbi.nlm.nih.gov/clinvar/
+
+- namespace: clinvar.record
+  provider: ncbi
+  title: ClinVar Record at NCBI
+  homepage: http://www.ncbi.nlm.nih.gov/clinvar/
+
+- namespace: clinvar.submission
+  provider: ncbi
+  title: ClinVar Submission at NCBI
+  homepage: http://www.ncbi.nlm.nih.gov/clinvar/
+
+- namespace: combine.specifications
+  provider: ebi
+  title: COMBINE at EBI
+  homepage: https://co.mbine.org/standards/
+
+- namespace: complexportal
+  title: Complex Portal
+  homepage: https://www.ebi.ac.uk/complexportal
+
+- namespace: comptox
+  title: CompTox Chemistry Dashboard
+  homepage: https://comptox.epa.gov/dashboard
+
+- namespace: compulyeast
+  title: Compluyeast database at Universidad Complutense Madrid
+  homepage: http://compluyeast2dpage.dacya.ucm.es/
+
+- namespace: conoserver
+  title: ConoServer at University of Queensland
+  homepage: http://www.conoserver.org/
+
+- namespace: coriell
+  title: Coriell Cell Repositories at Coriell Institute
+  homepage: http://ccr.coriell.org/
+
+- namespace: corum
+  title: CORUM at Institute for Bioinformatics and Systems Biology (Germany)
+  homepage: https://mips.helmholtz-muenchen.de/genre/proj/corum/
+
+- namespace: cosmic
+  title: COSMIC Gene at Sanger
+  homepage: http://cancer.sanger.ac.uk/cosmic/
+
+- namespace: cpc
+  title: Cooperative Patent Classification at Espace
+  homepage: https://worldwide.espacenet.com/classification
+
+- namespace: crisprdb
+  title: CRISPRdb
+  homepage: http://crispr.i2bc.paris-saclay.fr/
+
+- namespace: cryptodb
+  title: CryptoDB at EuPathDB
+  homepage: https://cryptodb.org/cryptodb/
+
+- namespace: csa
+  provider: ebi
+  title: CSA at EBI
+  homepage: https://www.ebi.ac.uk/thornton-srv/databases/CSA/
+
+- namespace: cst
+  title: CST Pathways at Cell Signaling Technology
+  homepage: http://www.cellsignal.com/pathways/index.html
+
+- namespace: cst.ab
+  title: CST Antibody at Cell Signaling Technology
+  homepage: http://www.cellsignal.com/catalog/index.html
+
+- namespace: ctd.chemical
+  title: Comparative Toxicogenomics Database (Chemical)
+  homepage: http://ctdbase.org/
+
+- namespace: ctd.disease
+  title: Comparative Toxicogenomics Database (Disease)
+  homepage: http://ctdbase.org/
+
+- namespace: ctd.gene
+  title: Comparative Toxicogenomics Database (Gene)
+  homepage: http://ctdbase.org/
+
+- namespace: cubedb
+  title: Cube db at Bioinformatics Institute (Singapore)
+  homepage: http://epsf.bmad.bii.a-star.edu.sg/cube/db/html/home.html
+
+- namespace: d1id
+  title: DataONE
+  homepage: https://www.dataone.org
+
+- namespace: dailymed
+  title: DailyMed at NLM
+  homepage: https://dailymed.nlm.nih.gov/dailymed/
+
+- namespace: darc
+  title: DARC at University of Munich
+  homepage: http://darcsite.genzentrum.lmu.de/darc/index.php
+
+- namespace: dashr
+  title: DASHR at  University of Pennsylvania
+  homepage: http://lisanwanglab.org/DASHR/
+
+- namespace: dashr.expression
+  title: DASHR expression at University of Pennsylvania
+  homepage: https://dashr1.lisanwanglab.org/show-expression-table.php?start=0
+
+- namespace: datf
+  title: DATF through PlantTFDB
+  homepage: http://datf.cbi.pku.edu.cn/
+
+- namespace: dbd
+  title: DBD at MRC Laboratory of Molecular Biology
+  homepage: http://www.transcriptionfactor.org/
+
+- namespace: dbest
+  provider: ncbi
+  title: dbEST at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/nucest
+
+- namespace: dbest
+  provider: ebi
+  title: dbEST through European Nucleotide Archive (ENA)
+  homepage: https://www.ebi.ac.uk/ena
+
+- namespace: dbg2introns
+  title: Bacterial Group II Introns at University of Calgary
+  homepage: http://webapps2.ucalgary.ca/~groupii/
+
+- namespace: dbgap
+  provider: ncbi
+  title: dbGaP through NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/projects/gap
+
+- namespace: dbprobe
+  provider: ncbi
+  title: dbProbe at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/sites/entrez?db=probe
+
+- namespace: dbsnp
+  provider: ncbi
+  title: dbSNP at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/snp/
+
+- namespace: dbsnp
+  provider: sib
+  title: SNP2TFBS
+  homepage: https://ccg.epfl.ch/snp2tfbs/
+
+- namespace: degradome
+  title: Degradome Database at
+  homepage: http://degradome.uniovi.es/
+
+- namespace: depod
+  title: DEPOD at EMBL
+  homepage: http://www.depod.bioss.uni-freiburg.de
+
+- namespace: dev.ga4ghdos
+  title: Data Object Service
+  homepage: http://github.com/ga4gh/data-object-service-schemas
+
+- namespace: dictybase.est
+  title: Dictybase Gene at Northwestern University
+  homepage: http://dictybase.org/
+
+- namespace: dictybase.gene
+  title: Dictybase Gene at Northwestern University
+  homepage: http://dictybase.org/
+
+- namespace: did
+  title: Decentralized Identifiers (DIDs)
+  homepage: https://w3c-ccg.github.io/did-spec/
+
+- namespace: dip
+  title: Database of interacting proteins
+  homepage: https://dip.doe-mbi.ucla.edu/
+
+- namespace: disprot
+  title: DisProt at Indiana University
+  homepage: http://www.disprot.org/
+
+- namespace: doi
+  title: Digital Object Identifier
+  homepage: https://www.doi.org/
+
+- namespace: doid
+  title: Human Disease Ontology at Northwestern University
+  homepage: http://disease-ontology.org/
+
+- namespace: doid
+  provider: bptl
+  title: Human Disease Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/DOID
+
+- namespace: doid
+  provider: ols
+  title: Human Disease Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/doid
+
+- namespace: dommino
+  title: DOMMINO at University of Missouri
+  homepage: http://dommino.org/
+
+- namespace: door
+  title: DOOR v1 at University of Georgia
+  homepage: http://csbl.bmb.uga.edu/DOOR/operon.php
+
+- namespace: doqcs.model
+  title: Database of Quantitative Cellular Signaling (DOQCS) - Model Access
+  homepage: http://doqcs.ncbs.res.in/
+
+- namespace: doqcs.pathway
+  title: Database of Quantitative Cellular Signaling (DOQCS) - Pathway Access
+  homepage: http://doqcs.ncbs.res.in/
+
+- namespace: dpv
+  title: DPV at Rothamsted
+  homepage: http://www.dpvweb.net/
+
+- namespace: dragondb.allele
+  title: DragonDB Allele at University of British Columbia
+  homepage: http://www.antirrhinum.net/
+
+- namespace: dragondb.dna
+  title: DragonDB DNA at University of British Columbia
+  homepage: http://www.antirrhinum.net/
+
+- namespace: dragondb.locus
+  title: DragonDB Locus at University of British Columbia
+  homepage: http://www.antirrhinum.net/
+
+- namespace: dragondb.protein
+  title: DragonDB Protein at University of British Columbia
+  homepage: http://www.antirrhinum.net/
+
+- namespace: drsc
+  title: DRSC at Harvard Medical School
+  homepage: http://flyrnai.org/
+
+- namespace: drugbank
+  title: DrugBank drug information
+  homepage: http://www.drugbank.ca/
+
+- namespace: drugbankv4.target
+  title: DrugBank Target information version 4
+  homepage: http://www.drugbank.ca/targets
+
+- namespace: ec-code
+  provider: intenz
+  alias: ec
+  title: IntEnZ (Integrated relational Enzyme database)
+  homepage: https://www.ebi.ac.uk/intenz/
+
+- namespace: ec-code
+  provider: enzymeportal
+  alias: ec
+  title: Enzyme Portal through EMBL-EBI
+  homepage: https://www.ebi.ac.uk/enzymeportal
+
+- namespace: ec-code
+  provider: expasy
+  alias: ec
+  title: Enzyme nomenclature database, ExPASy (Expert Protein Analysis System)
+  homepage: https://enzyme.expasy.org/
+
+- namespace: ec-code
+  provider: expenz
+  alias: ec
+  title: ExploreEnz at Trinity College
+  homepage: http://www.enzyme-database.org/
+
+- namespace: echobase
+  title: EchoBASE at the University of York
+  homepage: http://www.york.ac.uk/
+
+- namespace: eco
+  provider: bptl
+  title: Evidence Code Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/ECO
+
+- namespace: eco
+  provider: ols
+  title: Evidence Codes via the Ontology Lookup Service (OLS)
+  homepage: https://www.ebi.ac.uk/ols/ontologies/eco
+
+- namespace: ecogene
+  title: EcoGene at University of Miami
+  homepage: http://ecogene.org/
+
+- namespace: ecoliwiki
+  title: EcoliWiki at Texas Agrilife Research
+  homepage: http://ecoliwiki.net/colipedia/
+
+- namespace: ecyano.entity
+  title: e-cyanobacterium entity at Masaryk University Brno
+  homepage: http://www.e-cyanobacterium.org/bcs/entity/
+
+- namespace: ecyano.model
+  title: e-cyanobacterium entity at Masaryk University Brno
+  homepage: http://e-cyanobacterium.org/models/
+
+- namespace: ecyano.rule
+  title: e-cyanobacterium entity at Masaryk University Brno
+  homepage: http://www.e-cyanobacterium.org/bcs/rule/
+
+- namespace: edam
+  provider: bptl
+  title: EDAM through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/EDAM
+
+- namespace: edam
+  provider: ols
+  title: EDAM through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/edam
+
+- namespace: efo
+  provider: bptl
+  title: EFO through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/EFO
+
+- namespace: efo
+  provider: ebi
+  title: EFO through Functional Genomics Group (EBI)
+  homepage: https://www.ebi.ac.uk/efo/
+
+- namespace: efo
+  provider: ols
+  title: EFO through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/efo
+
+- namespace: ega.dataset
+  provider: ebi
+  title: EGA Dataset at European Bioinformatics Institute
+  homepage: https://www.ebi.ac.uk/ega/dataset
+
+- namespace: ega.dataset
+  provider: omicsdi
+  title: EGA Dataset through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: ega.study
+  provider: ebi
+  title: EGA Study at European Bioinformatics Institute
+  homepage: https://www.ebi.ac.uk/ega/studies
+
+- namespace: ega.study
+  provider: omicsdi
+  title: EGA Study through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: eggnog
+  title: eggNOG Version 3 at European Molecular Biology Laboratory
+  homepage: http://eggnog.embl.de/version_3.0/
+
+- namespace: elm
+  title: ELM at EMBL (Germany)
+  homepage: http://elm.eu.org/
+
+- namespace: emdb
+  provider: ebi
+  title: EMDB at Protein Data Bank in Europe
+  homepage: https://www.ebi.ac.uk/pdbe/emdb/
+
+- namespace: ena.embl
+  title: ENA through GenBank
+  homepage: https://www.ncbi.nlm.nih.gov/Genbank/
+
+- namespace: ena.embl
+  provider: ebi
+  title: ENA at European Bioinformatics Institute
+  homepage: https://www.ebi.ac.uk/ena/
+
+- namespace: encode
+  title: ENCODE: Encyclopedia of DNA Elements
+  homepage: www.encodeproject.org
+
+- namespace: ensembl
+  provider: ebi
+  title: Ensembl at Sanger/EMBL-EBI
+  homepage: https://www.ensembl.org/
+
+- namespace: ensembl.bacteria
+  provider: ebi
+  title: Ensembl Bacteria at EBI
+  homepage: https://bacteria.ensembl.org/
+
+- namespace: ensembl.fungi
+  provider: ebi
+  title: Enzembl Fungi at EBI
+  homepage: https://fungi.ensembl.org/
+
+- namespace: ensembl.metazoa
+  provider: ebi
+  title: Enzembl Metazoa at EBI
+  homepage: https://metazoa.ensembl.org/
+
+- namespace: ensembl.plant
+  provider: ebi
+  title: Enzembl Plants at EBI
+  homepage: https://plants.ensembl.org/
+
+- namespace: ensembl.protist
+  provider: ebi
+  title: Ensembl Protists at EBI
+  homepage: https://protists.ensembl.org
+
+- namespace: envo
+  provider: bptl
+  title: The Environment Ontology through BioPortal
+  homepage: http://purl.bioontology.org/ontology/ENVO/
+
+- namespace: envo
+  provider: ols
+  title: The Environment Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/envo
+
+- namespace: eo
+  provider: bptl
+  title: Plant Environment Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/PECO
+
+- namespace: eo
+  provider: ols
+  title: Plant Environment Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/eo
+
+- namespace: epd
+  title: EPD at Swiss Institute of Bioinformatics
+  homepage: http://epd.vital-it.ch/
+
+- namespace: erm
+  title: European Registry of Materials
+  homepage: https://nanocommons.github.io/identifiers/
+
+- namespace: erv
+  title: Human Endogenous Retrovirus Database
+  homepage: https://herv.img.cas.cz/
+
+- namespace: eu89h
+  title: JRC Data Catalogue
+  homepage: http://data.jrc.ec.europa.eu/
+
+- namespace: euclinicaltrials
+  title: EU Clinical Trials at  European Medicines Agency
+  homepage: https://www.clinicaltrialsregister.eu/
+
+- namespace: exac.gene
+  title: ExAC Gene at Exome Aggregation Consortium
+  homepage: http://exac.broadinstitute.org/
+
+- namespace: exac.transcript
+  title: ExAC Transcript at Exome Aggregation Consortium
+  homepage: http://exac.broadinstitute.org/
+
+- namespace: exac.variant
+  title: ExAC Variant at Exome Aggregation Consortium
+  homepage: http://exac.broadinstitute.org/
+
+- namespace: facebase
+  title: FaceBase Data Repository
+  homepage: https://www.facebase.org
+
+- namespace: fairsharing
+  title: FAIRSharing at University of Oxford
+  homepage: https://fairsharing.org/
+
+- namespace: fb
+  provider: agr
+  title: FlyBase through the Alliance of Genome Resources
+  homepage: https://www.alliancegenome.org
+
+- namespace: fb
+  provider: bioentitylink
+  title: FlyBase through BioEntity Link
+  homepage: https://bioentity.link/
+
+- namespace: fbol
+  title: Fungal Barcode at Fungal Biodiversity Centre
+  homepage: http://www.fungalbarcoding.org/
+
+- namespace: flowrepository
+  title: FlowRepository
+  homepage: https://flowrepository.org/
+
+- namespace: fma
+  provider: bptl
+  title: Foundational Model of Anatomy through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/FMA
+
+- namespace: fma
+  provider: ols
+  title: Foundational Model of Anatomy via Ontology Lookup Service (OLS)
+  homepage: https://www.ebi.ac.uk/ols/ontologies/fma/
+
+- namespace: foodb.compound
+  title: FooDB database of food additives at University of Alberta
+  homepage: http://foodb.ca/foods
+
+- namespace: foodon
+  provider: ebi
+  title: FoodOn Food Ontology through OLS
+  homepage: https://foodon.org
+
+- namespace: fplx
+  provider: bptl
+  title: FPLX through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/FPLX/
+
+- namespace: fsnp
+  title: F-SNP at Queen's University (Canada)
+  homepage: http://compbio.cs.queensu.ca/F-SNP/
+
+- namespace: funcbase.fly
+  title: FuncBase Fly at Harvard Medical School
+  homepage: http://func.mshri.on.ca/fly
+
+- namespace: funcbase.human
+  title: FuncBase Human at Harvard Medical School
+  homepage: http://func.mshri.on.ca/human/
+
+- namespace: funcbase.mouse
+  title: FuncBase Mouse at Harvard Medical School
+  homepage: http://func.mshri.on.ca/mouse/
+
+- namespace: funcbase.yeast
+  title: FuncBase Yeast at Harvard Medical School
+  homepage: http://func.mshri.on.ca/yeast
+
+- namespace: fungidb
+  title: FungiDB at University of California
+  homepage: https://fungidb.org/fungidb
+
+- namespace: ga4ghdos
+  title: Data Object Service
+  homepage: http://github.com/ga4gh/data-object-service-schemas
+
+- namespace: gabi
+  title: GABI at Max Planck
+  homepage: http://www.gabipd.org/
+
+- namespace: gcst
+  title: GWAS Catalog
+  homepage: https://www.ebi.ac.uk/gwas/studies
+
+- namespace: gdc
+  title: Genomic Data Commons
+  homepage: https://gdc.cancer.gov
+
+- namespace: gdsc
+  title: Genomics of Drug Sensitivity in Cancer
+  homepage: https://www.cancerrxgene.org
+
+- namespace: genatlas
+  title: Genatlas at Paris Descartes University
+  homepage: http://genatlas.medecine.univ-paris5.fr/
+
+- namespace: genecards
+  title: GeneCards at Weizmann Institute
+  homepage: http://www.genecards.org/
+
+- namespace: genedb
+  title: GeneDB at Sanger Institute
+  homepage: https://www.genedb.org/
+
+- namespace: genefarm
+  title: GeneFarm at Unit&#xE9; de Recherche en G&#xE9;nomique V&#xE9;g&#xE9;tale
+  homepage: http://urgi.versailles.inra.fr/Genefarm/
+
+- namespace: genetree
+  title: GeneTree at Ensembl
+  homepage: http://www.ensembl.org/
+
+- namespace: genewiki
+  title: Gene Wiki through BioGPS
+  homepage: http://en.wikipedia.org/wiki/Gene_Wiki
+
+- namespace: genpept
+  provider: ncbi
+  title: GenPept at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/protein
+
+- namespace: genprop
+  provider: ebi
+  title: Genome Properties
+  homepage: https://www.ebi.ac.uk/interpro/genomeproperties/
+
+- namespace: geo
+  provider: ncbi
+  title: Gene Expression Omnibus at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/geo/
+
+- namespace: giardiadb
+  title: GiardiaDB at EuPathDB
+  homepage: https://giardiadb.org/giardiadb/
+
+- namespace: glida.gpcr
+  title: GLIDA GPCR at Kyoto University
+  homepage: http://pharminfo.pharm.kyoto-u.ac.jp/services/glida/
+
+- namespace: glida.ligand
+  title: GLIDA Ligand at Kyoto University
+  homepage: http://pharminfo.pharm.kyoto-u.ac.jp/services/glida/
+
+- namespace: glycoepitope
+  title: GlycoEpitope at Ritsumeikan University
+  homepage: https://www.glycoepitope.jp/epitopes/
+
+- namespace: glycomedb
+  title: GlycomeDB carbohydrate structure database
+  homepage: https://glytoucan.org/
+
+- namespace: glytoucan
+  title: The Glycan Repository
+  homepage: https://glytoucan.org
+
+- namespace: gmd
+  title: Golm Metabolome Database at Max Planck Institute of Molecular Plant Physiology
+  homepage: http://gmd.mpimp-golm.mpg.de/
+
+- namespace: gmd.analyte
+  title: Golm Metabolome Database (Analyte) at Max Planck Institute of Molecular Plant Physiology
+  homepage: http://gmd.mpimp-golm.mpg.de/
+
+- namespace: gmd.gcms
+  title: Golm Metabolome Database (GC-MS Spectra) at Max Planck Institute of Molecular Plant Physiology
+  homepage: http://gmd.mpimp-golm.mpg.de/
+
+- namespace: gmd.profile
+  title: Golm Metabolome Database (Profile) at Max Planck Institute of Molecular Plant Physiology
+  homepage: http://gmd.mpimp-golm.mpg.de/
+
+- namespace: gmd.ref
+  title: Golm Metabolome Database (Reference Substance) at Max Planck Institute of Molecular Plant Physiology
+  homepage: http://gmd.mpimp-golm.mpg.de/
+
+- namespace: gnpis
+  title: GnpIS
+  homepage: https://urgi.versailles.inra.fr/gnpis/
+
+- namespace: go
+  provider: amigo
+  title: AmiGO 2
+  homepage: http://amigo.geneontology.org/
+
+- namespace: go
+  provider: bptl
+  title: GO through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/GO
+
+- namespace: go
+  provider: ols
+  title: GO through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/go
+
+- namespace: go
+  provider: quickgo
+  title: QuickGO (Gene Ontology browser)
+  homepage: https://www.ebi.ac.uk/QuickGO/
+
+- namespace: go.ref
+  title: Gene Ontology Reference at The Gene Ontology Consortium
+  homepage: http://www.geneontology.org/cgi-bin/references.cgi
+
+- namespace: goa
+  provider: quickgo
+  title: GOA through QuickGO
+  homepage: https://www.ebi.ac.uk/GOA/
+
+- namespace: gold.genome
+  title: GOLD genome at Department of Energy Joint Genome Institute
+  homepage: http://www.genomesonline.org/cgi-bin/GOLD/index.cgi
+
+- namespace: gold.meta
+  title: GOLD metadata at Department of Energy Joint Genome Institute
+  homepage: http://www.genomesonline.org/cgi-bin/GOLD/index.cgi
+
+- namespace: google.patent
+  title: Google Patents at Google
+  homepage: https://www.google.com/patents/
+
+- namespace: gpcrdb
+  title: GPCRDB at Radboud University
+  homepage: http://www.gpcrdb.org/
+
+- namespace: gpmdb
+  title: GPMDB
+  homepage: http://gpmdb.thegpm.org/
+
+- namespace: gpmdb
+  provider: omicsdi
+  title: GPMDB through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: gramene.gene
+  title: Gramene Genes at Cold Spring Harbor
+  homepage: http://www.gramene.org/
+
+- namespace: gramene.growthstage
+  title: Gramene Growth Stage Ontology at Cold Spring Harbor
+  homepage: http://www.gramene.org/
+
+- namespace: gramene.protein
+  title: Gramene Protein at Cold Spring Harbor
+  homepage: http://www.gramene.org/
+
+- namespace: gramene.qtl
+  title: Gramene Quantitative Trait Loci at Cold Spring Harbor
+  homepage: http://www.gramene.org/
+
+- namespace: gramene.taxonomy
+  title: Gramene Taxonomy at Cold Spring Harbor
+  homepage: http://www.gramene.org/
+
+- namespace: greengenes
+  title: GreenGenes at Lawrence Berkeley
+  homepage: http://greengenes.lbl.gov/
+
+- namespace: grid
+  title: GRID at Digital Science & Research Ltd.
+  homepage: https://www.grid.ac/
+
+- namespace: grin.taxonomy
+  title: GRIN at Maryland
+  homepage: http://www.ars-grin.gov/cgi-bin/npgs/html/index.pl?language=en
+
+- namespace: grsdb
+  title: GRSDB v2 at  Ramapo College of New Jersey
+  homepage: http://bioinformatics.ramapo.edu/GRSDB2/
+
+- namespace: gtex
+  title: The GTEx Project
+  homepage: https://www.gtexportal.org
+
+- namespace: gudmap
+  title: GUDMAP
+  homepage: http://www.gudmap.org/
+
+- namespace: gwascentral.marker
+  title: GWAS Central Marker at University of Leicester
+  homepage: https://www.gwascentral.org/markers/
+
+- namespace: gwascentral.phenotype
+  title: GWAS Central Phenotype at University of Leicester
+  homepage: https://www.gwascentral.org/phenotypes
+
+- namespace: gwascentral.study
+  title: GWAS Central Study at University of Leicester
+  homepage: https://www.gwascentral.org/studies
+
+- namespace: gxa.expt
+  provider: ebi
+  title: GXA Expt at EBI
+  homepage: https://www.ebi.ac.uk/gxa/
+
+- namespace: gxa.expt
+  provider: omicsdi
+  title: GXA Expt through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: gxa.gene
+  provider: ebi
+  title: GXA Gene at EBI
+  homepage: https://www.ebi.ac.uk/gxa/
+
+- namespace: hamap
+  title: HAPMAP at Swiss Institute of Bioinformatics
+  homepage: https://hamap.expasy.org/
+
+- namespace: hcvdb
+  title: HCVDB at CNRS
+  homepage: http://euhcvdb.ibcp.fr/euHCVdb/
+
+- namespace: hdr
+  title: Homeodomain Research at National Human Genome Research Institute (NIH)
+  homepage: http://research.nhgri.nih.gov/apps/homeodomain/web/
+
+- namespace: hgmd
+  title: HGMD at Cardiff University
+  homepage: http://www.hgmd.cf.ac.uk/ac/index.php
+
+- namespace: hgnc
+  provider: ebi
+  title: HUGO Genome Nomenclature Committee
+  homepage: https://www.genenames.org
+
+- namespace: hgnc.family
+  title: HGNC Family at HUGO Genome Nomenclature Committee
+  homepage: https://www.genenames.org/
+
+- namespace: hgnc.genefamily
+  title: HGNC gene family at HUGO Genome Nomenclature Committee
+  homepage: https://www.genenames.org/
+
+- namespace: hgnc.symbol
+  provider: ebi
+  title: HGNC Symbol at HUGO Genome Nomenclature Committee
+  homepage: https://www.genenames.org/
+
+- namespace: hinv.locus
+  title: H-Invitational Locus View at BIRC
+  homepage: http://h-invitational.jp/hinv/ahg-db/index.jsp
+
+- namespace: hinv.protein
+  title: H-Invitational Protein View at BIRC
+  homepage: http://h-invitational.jp/hinv/ahg-db/index.jsp
+
+- namespace: hinv.transcript
+  title: H-Invitational Transcript View at BIRC
+  homepage: http://h-invitational.jp/hinv/ahg-db/index.jsp
+
+- namespace: hmdb
+  title: The Human Metabolome Database
+  homepage: http://www.hmdb.ca/
+
+- namespace: hogenom
+  title: HOGENOM at CNRS
+  homepage: http://pbil.univ-lyon1.fr/databases/hogenom/
+
+- namespace: homd.seq
+  title: HOMD sequence metainformation at The Forsyth Institute
+  homepage: http://www.homd.org/index.php
+
+- namespace: homd.taxon
+  title: HOMD taxon information at The Forsyth Institute
+  homepage: http://www.homd.org/index.php
+
+- namespace: homologene
+  provider: ncbi
+  title: Homologene at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/homologene/
+
+- namespace: hovergen
+  title: Hovergen
+  homepage: http://pbil.univ-lyon1.fr/databases/hovergen.php
+
+- namespace: hp
+  title: Human Phenotype Ontology at Institute for Medical Genetics and Human Genetics
+  homepage: http://human-phenotype-ontology.github.io/
+
+- namespace: hp
+  provider: ols
+  title: Human Phenotype Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/hp
+
+- namespace: hpa
+  title: Human Protein Atlas at AlbaNova University
+  homepage: http://www.proteinatlas.org/
+
+- namespace: hpm.peptide
+  title: Human Proteome Map Peptide at Institute of Bioinformatics (Bangalore)
+  homepage: http://www.humanproteomemap.org/index.php
+
+- namespace: hpm.protein
+  title: Human Proteome Map Protein at Institute of Bioinformatics (Bangalore)
+  homepage: http://www.humanproteomemap.org/index.php
+
+- namespace: hprd
+  title: Human Protein Reference Database
+  homepage: http://www.hprd.org/
+
+- namespace: hpscreg
+  title: Human Pluripotent Stem Cell Registry
+  homepage: https://hpscreg.eu/
+
+- namespace: hssp
+  title: HSSP at CMBI
+  homepage: ftp://ftp.cmbi.ru.nl/pub/molbio/data/hssp/
+
+- namespace: huge
+  title: HUGE at Kazusa DNA Research Institute
+  homepage: http://www.kazusa.or.jp/huge/
+
+- namespace: iao
+  title: IAO through Ontobee
+  homepage: http://www.ontobee.org/ontology/IAO
+
+- namespace: icd
+  title: International Statistical Classification of Diseases and Related Health Problems
+  homepage: http://www.who.int/classifications/icd/en/
+
+- namespace: iceberg.element
+  title: ICEberg element at Shanghai Jiaotong University
+  homepage: http://db-mml.sjtu.edu.cn/ICEberg/
+
+- namespace: iceberg.family
+  title: ICEberg family at Shanghai Jiaotong University
+  homepage: http://db-mml.sjtu.edu.cn/ICEberg/
+
+- namespace: ideal
+  title: IDEAL at Maebashi Institute of Technology
+  homepage: http://www.ideal.force.cs.is.nagoya-u.ac.jp/IDEAL/
+
+- namespace: ido
+  provider: ols
+  title: IDO through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/ido
+
+- namespace: idoo
+  title: Identifiers.org Ontology
+  homepage: http://registry.api.hq.identifiers.org/semanticApi/getRegistryOntology
+
+- namespace: idot
+  title: IdoT via biomodels.net
+  homepage: https://identifiers.org/
+
+- namespace: imex
+  provider: ebi
+  title: IMEx Consortium running at EBI
+  homepage: https://www.imexconsortium.org/
+
+- namespace: img.gene
+  title: Integrated Microbial Genomes Taxon at Lawrence Berkeley National Laboratory
+  homepage: http://img.jgi.doe.gov/
+
+- namespace: img.taxon
+  title: Integrated Microbial Genomes Taxon at Lawrence Berkeley National Laboratory
+  homepage: http://img.jgi.doe.gov/
+
+- namespace: imgt.hla
+  provider: ebi
+  title: IMGT HLA at EBI
+  homepage: https://www.ebi.ac.uk/imgt/hla/allele.html
+
+- namespace: imgt.ligm
+  title: IMGT LIGM at CNRS
+  homepage: http://www.imgt.org/
+
+- namespace: inchi
+  title: InChI through NIST
+  homepage: http://webbook.nist.gov/chemistry
+
+- namespace: inchi
+  provider: ebi
+  title: InChI through ChEBI
+  homepage: https://www.ebi.ac.uk/chebi/
+
+- namespace: inchikey
+  title: InChiKey resolver at NCI
+  homepage: http://cactus.nci.nih.gov/chemical/structure
+
+- namespace: insdc
+  provider: ncbi
+  title: INSDC through Nucleotide database at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/nuccore/
+
+- namespace: insdc
+  provider: ebi
+  title: INSDC through European Nucleotide Archive (ENA)
+  homepage: https://www.ebi.ac.uk/ena/
+
+- namespace: insdc.cds
+  title: INSDC CDS through NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/protein/
+
+- namespace: insdc.gca
+  provider: ncbi
+  title: Genome assembly database NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/assembly/
+
+- namespace: insdc.sra
+  provider: ncbi
+  title: Sequence Read Archive at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/sra
+
+- namespace: insdc.sra
+  provider: ddbj
+  title: DDBJ Sequence Read Archive (DRA)
+  homepage: http://trace.ddbj.nig.ac.jp/dra/
+
+- namespace: insdc.sra
+  provider: ebi
+  title: European Nucleotide Archive (ENA)
+  homepage: https://www.ebi.ac.uk/ena
+
+- namespace: intact
+  provider: ebi
+  title: IntAct at EBI
+  homepage: https://www.ebi.ac.uk/intact/
+
+- namespace: intact.molecule
+  provider: ebi
+  title: IntAct Molecule at EBI
+  homepage: https://www.ebi.ac.uk/intact/
+
+- namespace: interpro
+  provider: ebi
+  title: InterPro
+  homepage: https://www.ebi.ac.uk/interpro/
+
+- namespace: ird.segment
+  title: IRD at BioHealthBase
+  homepage: http://www.fludb.org/
+
+- namespace: irefweb
+  title: iRefWeb Protein Interaction Reference Index
+  homepage: http://wodaklab.org/iRefWeb/
+
+- namespace: isbn
+  title: ISBNDB - ISBN Database
+  homepage: http://isbndb.com/
+
+- namespace: isfinder
+  title: IS Finder at CNRS
+  homepage: http://www-is.biotoul.fr/i
+
+- namespace: isni
+  title: International Standard Name Identifier
+  homepage: http://www.isni.org
+
+- namespace: issn
+  title: ISSN Portal
+  homepage: https://portal.issn.org
+
+- namespace: iuphar.family
+  title: The IUPHAR/BPS Guide to PHARMACOLOGY
+  homepage: http://www.guidetopharmacology.org/
+
+- namespace: iuphar.ligand
+  title: IUPHAR ligand at University of Edinburgh
+  homepage: http://www.guidetopharmacology.org/GRAC/LigandListForward?database=all
+
+- namespace: iuphar.receptor
+  title: IUPHAR Receptor at University of Edinburgh
+  homepage: http://www.guidetopharmacology.org/targets.jsp
+
+- namespace: jaxmice
+  title: JAX Mice at Jackson Laboratory
+  homepage: http://jaxmice.jax.org/
+
+- namespace: jcggdb
+  title: JCGGDB at Advanced Science Institute (Japan)
+  homepage: http://jcggdb.jp/index_en.html
+
+- namespace: jcm
+  title: JCM at RIKEN BioResource Center
+  homepage: http://www.jcm.riken.go.jp/
+
+- namespace: jcsd
+  title: Japan Chemical Substance Dictionary
+  homepage: http://jglobal.jst.go.jp/en/
+
+- namespace: jstor
+  title: JSTOR Online
+  homepage: http://www.jstor.org/
+
+- namespace: jws
+  title: JWS Online Model Repository at Manchester
+  homepage: http://jjj.mib.ac.uk/index.html
+
+- namespace: kaggle
+  title: Kaggle
+  homepage: https://kaggle.com
+
+- namespace: kegg
+  title: KEGG at Kyoto University Bioinformatics Center
+  homepage: http://www.kegg.jp/
+
+- namespace: kegg.compound
+  title: KEGG LIGAND Database
+  homepage: https://www.genome.jp/kegg/ligand.html
+
+- namespace: kegg.disease
+  title: KEGG Disease at Kyoto University Bioinformatics Center
+  homepage: http://www.genome.jp/kegg/disease/
+
+- namespace: kegg.drug
+  title: KEGG DRUG Database
+  homepage: https://www.genome.jp/kegg/drug/
+
+- namespace: kegg.environ
+  title: KEGG ENVIRON Database
+  homepage: http://www.genome.jp/kegg/drug/environ.html
+
+- namespace: kegg.genes
+  title: KEGG GENES Database
+  homepage: http://www.genome.jp/kegg/genes.html
+
+- namespace: kegg.genome
+  title: KEGG Genome Database
+  homepage: http://www.genome.jp/kegg/catalog/org_list.html
+
+- namespace: kegg.glycan
+  title: KEGG GLYCAN Database
+  homepage: https://www.genome.jp/kegg/glycan/
+
+- namespace: kegg.metagenome
+  title: KEGG Metagenome Database
+  homepage: http://www.genome.jp/kegg/catalog/org_list3.html
+
+- namespace: kegg.module
+  title: KEGG Module at Kyoto University Bioinformatics Center
+  homepage: http://www.kegg.jp/kegg/module.html
+
+- namespace: kegg.orthology
+  title: KEGG Orthology Database
+  homepage: http://www.genome.jp/kegg/ko.html
+
+- namespace: kegg.pathway
+  title: KEGG PATHWAY Database
+  homepage: https://www.genome.jp/kegg/pathway.html
+
+- namespace: kegg.reaction
+  title: KEGG Reaction Database
+  homepage: https://www.genome.jp/kegg/reaction/
+
+- namespace: knapsack
+  title: KnapSack at Nara Institute
+  homepage: http://kanaya.aist-nara.ac.jp/KNApSAcK/
+
+- namespace: lei
+  title: Global LEI Index
+  homepage: https://www.gleif.org/
+
+- namespace: lgic
+  provider: ebi
+  title: Ligand-Gated Ion Channel database at EBI
+  homepage: https://www.ebi.ac.uk/compneur-srv/LGICdb/LGICdb.php
+
+- namespace: licebase
+  title: LiceBase
+  homepage: https://licebase.org
+
+- namespace: ligandbook
+  title: LigandBook
+  homepage: https://ligandbook.org/
+
+- namespace: ligandbox
+  title: LigandBox at
+  homepage: http://ligandbox.protein.osaka-u.ac.jp/ligandbox//cgi-bin/index.cgi?LANG=en
+
+- namespace: ligandexpo
+  title: Ligand Expo at Rutgers
+  homepage: http://ligand-expo.rcsb.org/
+
+- namespace: ligandexpo
+  provider: rcsb
+  title: Ligand Expo at RutgersRCSB PDB
+  homepage: http://ligand-depot.rutgers.edu/index.html
+
+- namespace: lincs.cell
+  title: LINCS Portal
+  homepage: http://lincsportal.ccs.miami.edu/cells/
+
+- namespace: lincs.data
+  title: LINCS Data at University of Miami
+  homepage: http://lincsportal.ccs.miami.edu/datasets/
+
+- namespace: lincs.data
+  provider: omicsdi
+  title: Lincs through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: lincs.protein
+  title: LINCS Protein at Harvard Medical School
+  homepage: http://lincs.hms.harvard.edu/db/proteins/
+
+- namespace: lincs.smallmolecule
+  title: LINCS Portal
+  homepage: http://lincsportal.ccs.miami.edu/SmallMolecules/
+
+- namespace: lipidbank
+  title: LipidBank the Lipid database
+  homepage: http://lipidbank.jp/index.html
+
+- namespace: lipidmaps
+  title: Department of Bioengineering and the San Diego Supercomputer Center
+  homepage: http://www.lipidmaps.org
+
+- namespace: lrg
+  title: Locus Reference Genomic through Ensembl mirror (US west)
+  homepage: http://uswest.ensembl.org/
+
+- namespace: ma
+  title: Mouse Adult Gross Anatomy at The Jackson Laboratory
+  homepage: http://www.informatics.jax.org/
+
+- namespace: ma
+  provider: bptl
+  title: Mouse Adult Gross Anatomy through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/MA
+
+- namespace: ma
+  provider: ols
+  title: Mouse Adult Gross Anatomy through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/ma
+
+- namespace: macie
+  provider: ebi
+  title: MACiE database of mechanisms, annotation and classification in enzymes
+  homepage: https://www.ebi.ac.uk/thornton-srv/databases/MACiE/index.html
+
+- namespace: maizegdb.locus
+  title: MaizeGDB at Missouri
+  homepage: http://www.maizegdb.org/
+
+- namespace: mamo
+  provider: bptl
+  title: MAMO through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/MAMO
+
+- namespace: mamo
+  provider: ols
+  title: MaMO through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/mamo
+
+- namespace: massbank
+  title: MassBank in Japan
+  homepage: http://www.massbank.jp
+
+- namespace: massive
+  title: MassIVE
+  homepage: https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp
+
+- namespace: massive
+  provider: omicsdi
+  title: MassIVE through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: matrixdb.association
+  title: MatrixDB Association
+  homepage: http://matrixdb.univ-lyon1.fr/
+
+- namespace: mdm
+  title: MDM at University of Muenster
+  homepage: https://medical-data-models.org/
+
+- namespace: meddra
+  title: MedDRA through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/MEDDRA
+
+- namespace: medgen
+  provider: ncbi
+  title: MedGen at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/medgen/
+
+- namespace: medlineplus
+  title: MedlinePlus at NCBI
+  homepage: http://www.nlm.nih.gov/medlineplus/
+
+- namespace: merops
+  title: MEROPS database at Sanger Institute
+  homepage: http://merops.sanger.ac.uk/index.htm
+
+- namespace: merops.family
+  title: Merops Family at Sanger Institute
+  homepage: http://merops.sanger.ac.uk/index.htm
+
+- namespace: merops.inhibitor
+  title: MEROPS Inhibitor at Sanger Institute
+  homepage: http://merops.sanger.ac.uk/index.htm
+
+- namespace: mesh
+  title: MeSH Linked Data at National Library of Medicine
+  homepage: http://id.nlm.nih.gov/mesh/
+
+- namespace: mesh.2012
+  title: MeSH at National Library of Medicine
+  homepage: http://www.nlm.nih.gov/mesh/
+
+- namespace: mesh.2013
+  title: MeSH 2013 at National Library of Medicine
+  homepage: http://www.nlm.nih.gov/mesh/
+
+- namespace: metabolights
+  provider: ebi
+  title: MetaboLights at EBI
+  homepage: https://www.ebi.ac.uk/metabolights/
+
+- namespace: metabolights
+  provider: omicsdi
+  title: MataboLights through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: metacyc.compound
+  title: MetaCyc Metabolic Pathway Database
+  homepage: https://metacyc.org
+
+- namespace: metacyc.reaction
+  title: MetaCyc Metabolic Pathway Database - Reaction
+  homepage: https://metacyc.org
+
+- namespace: metanetx.chemical
+  title: MetaNetX chemical at SIB Swiss Institute of Bioinformatics
+  homepage: http://www.metanetx.org/
+
+- namespace: metanetx.compartment
+  title: MetaNetX compartment at SIB Swiss Institute of Bioinformatics
+  homepage: http://www.metanetx.org/
+
+- namespace: metanetx.reaction
+  title: MetaNetX reaction at SIB Swiss Institute of Bioinformatics
+  homepage: http://www.metanetx.org/
+
+- namespace: metlin
+  title: METLIN at Scripps Center, Molecular Biology and Center for Mass Spectrometry, La Jolla
+  homepage: http://masspec.scripps.edu/
+
+- namespace: mex
+  title: Metabolome Express
+  homepage: https://www.metabolome-express.org/
+
+- namespace: mex
+  provider: omicsdi
+  title: Metabolome Express through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: mge
+  title: Aclame database of mobile genetic elements
+  homepage: http://aclame.ulb.ac.be/
+
+- namespace: mgi
+  title: Mouse Genome Informatics Database
+  homepage: http://www.informatics.jax.org/
+
+- namespace: mgi
+  provider: agr
+  title: MGI through the Alliance of Genome Resources
+  homepage: https://www.alliancegenome.org
+
+- namespace: mgi
+  provider: bioentitylink
+  title: MGD through BioEntity Link
+  homepage: https://bioentity.link/
+
+- namespace: mgnify.proj
+  provider: ebi
+  title: MGnify Project
+  homepage: https://www.ebi.ac.uk/metagenomics
+
+- namespace: mgnify.samp
+  provider: ebi
+  title: MGnify Sample
+  homepage: https://www.ebi.ac.uk/metagenomics
+
+- namespace: microscope
+  title: MicroScope
+  homepage: http://www.genoscope.cns.fr/agc/microscope
+
+- namespace: microsporidia
+  title: MicrosporidiaDB at EuPathDB
+  homepage: http://microsporidiadb.org/micro/
+
+- namespace: mim
+  alias: omim
+  title: OMIM at John Hopkins
+  homepage: https://omim.org/
+
+- namespace: mimodb
+  title: BDB at University of Electronic Science and Technology of China
+  homepage: http://immunet.cn/bdb/
+
+- namespace: minid
+  title: Minimal Identifiers for Transient Data
+  homepage: http://minid.bd2k.org
+
+- namespace: mint
+  provider: ebi
+  title: MINT subset through IntAct
+  homepage: https://www.ebi.ac.uk/intact/
+
+- namespace: mipmod
+  title: MIPModDB at Indian Institute of Technology Kanpur
+  homepage: http://bioinfo.iitk.ac.in/MIPModDB
+
+- namespace: mir
+  provider: ebi
+  title: Identifiers.org Registry through EBI
+  homepage: https://identifiers.org/registry
+
+- namespace: mirbase
+  title: miRBase Sequence Database
+  homepage: http://www.mirbase.org/
+
+- namespace: mirbase.mature
+  title: miRBase
+  homepage: http://www.mirbase.org/
+
+- namespace: mirex
+  title: mirEX at Adam Mickiewicz University
+  homepage: http://comgen.pl/mirex/?page=home
+
+- namespace: miriam.collection
+  provider: ebi
+  title: MIRIAM Resources (data collection)
+  homepage: https://www.ebi.ac.uk/miriam/
+
+- namespace: miriam.resource
+  provider: ebi
+  title: MIRIAM Registry (resources)
+  homepage: https://www.ebi.ac.uk/miriam/
+
+- namespace: mirnest
+  title: miRNEST at Adam Mickiewicz University
+  homepage: http://rhesus.amu.edu.pl/mirnest/copy/
+
+- namespace: mirtarbase
+  title: miRTarBase at National Chiao Tung University
+  homepage: http://mirtarbase.mbc.nctu.edu.tw/
+
+- namespace: mmdb
+  title: MMDB at NCBI
+  homepage: http://www.ncbi.nlm.nih.gov/sites/entrez?db=structure
+
+- namespace: mmp.cat
+  title: MarCat through SfB
+  homepage: https://mmp.sfb.uit.no/databases/marcat/
+
+- namespace: mmp.db
+  title: MarDB through SfB
+  homepage: https://mmp.sfb.uit.no/databases/mardb/
+
+- namespace: mmp.ref
+  title: MarRef through SfB
+  homepage: https://mmp.sfb.uit.no/databases/marref/
+
+- namespace: mmrrc
+  title: MMRRC  at University of North Carolina
+  homepage: http://www.mmrrc.org/
+
+- namespace: mo
+  provider: bptl
+  title: MGED Ontology at BioPortal
+  homepage: http://bioportal.bioontology.org/
+
+- namespace: mo
+  provider: ebi
+  title: MGED Ontology at SourceForge
+  homepage: https://mged.sourceforge.net/ontologies/MGEDontology.php
+
+- namespace: mobidb
+  title: MobiDB
+  homepage: http://mobidb.bio.unipd.it
+
+- namespace: mod
+  provider: bptl
+  title: Protein modifications ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/PSIMOD
+
+- namespace: mod
+  provider: ols
+  title: Protein modifications ontology via the Ontology Lookup Service (OLS)
+  homepage: https://www.ebi.ac.uk/ols/ontologies/mod
+
+- namespace: modeldb
+  title: ModelDB at SenseLab
+  homepage: http://senselab.med.yale.edu/ModelDB/
+
+- namespace: molbase
+  title: Molbase at Chinese Academy of Sciences
+  homepage: http://www.molbase.com/
+
+- namespace: mp
+  provider: bptl
+  title: Mammalian Phenotype Ontology through BioPortal
+  homepage: https://bioportal.bioontology.org/ontologies/MP
+
+- namespace: mp
+  provider: ols
+  title: Mammalian Phenotype Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/mp/
+
+- namespace: mpid
+  title: Microbial Protein Interaction Database
+  homepage: http://www.jcvi.org/mpidb/about.php
+
+- namespace: mpid
+  provider: ebi
+  title: Microbial Protein Interaction Database subset through IntAct
+  homepage: https://www.ebi.ac.uk/intact/
+
+- namespace: ms
+  provider: bptl
+  title: Mass Spectrometry Controlled Vocabulary through BioPortal
+  homepage: https://bioportal.bioontology.org/ontologies/MS
+
+- namespace: ms
+  provider: ols
+  title: Mass Spectrometry Controlled Vocabulary through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/ms
+
+- namespace: multicellds.cell_line
+  title: MultiCellDS Digital Cell Line at Keck School of Medicine
+  homepage: http://multicellds.org/MultiCellDB.php
+
+- namespace: multicellds.collection
+  title: MultiCellDScollection at Keck School of Medicine
+  homepage: http://multicellds.org/MultiCellDB.php
+
+- namespace: multicellds.snapshot
+  title: MultiCellDS snapshot at Keck School of Medicine
+  homepage: http://multicellds.org/MultiCellDB.php
+
+- namespace: mw.project
+  title: Metabolomics Workbench Project
+  homepage: http://www.metabolomicsworkbench.org/
+
+- namespace: mw.study
+  title: Metabolomics Workbench Study
+  homepage: http://www.metabolomicsworkbench.org/
+
+- namespace: mw.study
+  provider: omicsdi
+  title: Metabolomics Workbench Study through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: myco.lepra
+  title: MycoBrowser leprae at Global Health Institute
+  homepage: http://mycobrowser.epfl.ch/leprosy.html
+
+- namespace: myco.marinum
+  title: MycoBrowser marinum at Global Health Institute
+  homepage: http://mycobrowser.epfl.ch/marinolist.html
+
+- namespace: myco.smeg
+  title: MycoBrowser smegmatis at Global Health Institute
+  homepage: http://mycobrowser.epfl.ch/smegmalist.html
+
+- namespace: myco.tuber
+  title: MycoBrowser tuberculosis at Global Health Institute
+  homepage: http://tuberculist.epfl.ch/
+
+- namespace: mycobank
+  title: MycoBank at Fungal Biodiversity Centre
+  homepage: http://www.mycobank.org/
+
+- namespace: mzspec
+  title: Universal Spectrum Identifier through Peptide Atlas
+  homepage: https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/ShowObservedSpectrum
+
+- namespace: napdi
+  title: Natural Product-Drug Interaction Research Data Repository
+  homepage: https://repo.napdi.org/
+
+- namespace: napp
+  title: NAPP at CNRS
+  homepage: http://napp.u-psud.fr/
+
+- namespace: narcis
+  title: NARCIS at The Hague
+  homepage: http://www.narcis.nl/?Language=en
+
+- namespace: nasc
+  title: NASC at University of Nottingham
+  homepage: http://arabidopsis.info/
+
+- namespace: nbn
+  title: NBN through URN Resolver at German National Library
+  homepage: http://nbn-resolving.org/resolve_urn.htm
+
+- namespace: nbrc
+  title: NBRC Catalogue at National Institute of Technology Evaluation
+  homepage: http://www.nbrc.nite.go.jp/e/index.html
+
+- namespace: ncbigene
+  provider: ncbi
+  title: Entrez Gene (NCBI)
+  homepage: https://www.ncbi.nlm.nih.gov/gene
+
+- namespace: ncbiprotein
+  provider: ncbi
+  title: NCBI Protein at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/protein
+
+- namespace: ncim
+  title: NCIm at National Cancer Institue
+  homepage: http://ncim.nci.nih.gov/
+
+- namespace: ncit
+  title: NCIt at National Cancer Institute
+  homepage: http://ncit.nci.nih.gov/
+
+- namespace: ncit
+  provider: ols
+  title: NCIt through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/ncit
+
+- namespace: ndc
+  title: National Drug Code at Food and Drug Administration
+  homepage: http://www.accessdata.fda.gov/scripts/cder/ndc/
+
+- namespace: neurolex
+  title: NeuroLex Neuroscience Lexicon
+  homepage: http://www.neurolex.org/wiki/Main_Page
+
+- namespace: neurolex
+  provider: bptl
+  title: NeuroLex through NCBO's BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/BIRNLEX
+
+- namespace: neuromorpho
+  title: NeuroMorpho
+  homepage: http://neuromorpho.org/index.jsp
+
+- namespace: neurondb
+  title: NeuronDB at SenseLab
+  homepage: http://senselab.med.yale.edu/NeuronDB/
+
+- namespace: neurovault.collection
+  title: NeuroVault Collection
+  homepage: http://neurovault.org
+
+- namespace: neurovault.image
+  title: NeuroVault
+  homepage: http://neurovault.org
+
+- namespace: nextdb
+  title: NEXTDB at Shizuoka
+  homepage: http://nematode.lab.nig.ac.jp/
+
+- namespace: nextprot
+  title: nextProt at Swiss Institute of Bioinformatics
+  homepage: https://www.nextprot.org/
+
+- namespace: ngl
+  title: NASA GeneLab
+  homepage: https://genelab-data.ndc.nasa.gov/genelab/
+
+- namespace: niaest
+  title: NIAEST at National Institute on Aging
+  homepage: http://lgsun.grc.nia.nih.gov/cDNA/
+
+- namespace: nmr
+  provider: ols
+  title: NMR through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/nmrcv
+
+- namespace: noncodev3
+  title: NONCODE at Chinese Academy of Sciences
+  homepage: http://www.noncode.org/
+
+- namespace: noncodev4.gene
+  title: NONCODE v4 Gene at Chinese Academy of Sciences
+  homepage: http://www.bioinfo.org/NONCODEv4/
+
+- namespace: noncodev4.rna
+  title: NONCODE v4 Transcript at Chinese Academy of Sciences
+  homepage: http://www.bioinfo.org/NONCODEv4/
+
+- namespace: norine
+  title: NORINE at Computer Science Laboratory of Lille
+  homepage: http://bioinfo.lifl.fr/norine/
+
+- namespace: nuclearbd
+  title: NucleaRDB at Radboud University Nijmegen Medical Centre
+  homepage: http://www.receptors.org/nucleardb/
+
+- namespace: obi
+  title: OBI through Ontobee
+  homepage: http://www.ontobee.org/
+
+- namespace: obi
+  provider: bptl
+  title: Ontology for Biomedical Investigations through Bioportal
+  homepage: http://bioportal.bioontology.org/ontologies/OBI
+
+- namespace: obi
+  provider: ols
+  title: OBI through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/obi
+
+- namespace: occ
+  title: OpenCitations Corpus
+  homepage: https://w3id.org/oc/corpus
+
+- namespace: oci
+  title: OpenCitations
+  homepage: http://opencitations.net
+
+- namespace: oclc
+  title: Online Computer Library Center (OCLC) WorldCat
+  homepage: https://www.oclc.org/en/about.html
+
+- namespace: odor
+  title: Odor Molecules DataBase at Yale University School of Medicine
+  homepage: http://senselab.med.yale.edu/OdorDB
+
+- namespace: oid
+  title: OID Repository
+  homepage: http://www.oid-info.com/introduction.htm
+
+- namespace: oma.grp
+  title: OMA Group through OMA browser at ETH Zurich
+  homepage: https://omabrowser.org/cgi-bin/gateway.pl
+
+- namespace: oma.protein
+  title: OMA Protein through OMA browser at ETH Zurich
+  homepage: https://omabrowser.org/cgi-bin/gateway.pl
+
+- namespace: omia
+  title: OMIA at University of Sydney
+  homepage: http://omia.angis.org.au/
+
+- namespace: omit
+  provider: ols
+  title: Ontology for miRNA Target (OMIT) through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/omit/
+
+- namespace: opb
+  provider: bptl
+  title: Ontology of Physics for Biology through Bioportal
+  homepage: http://bioportal.bioontology.org/ontologies/OPB
+
+- namespace: opm
+  title: OPM at University of Michigan
+  homepage: http://opm.phar.umich.edu/
+
+- namespace: orcid
+  title: ORCID at Bethesda
+  homepage: https://orcid.org
+
+- namespace: ordb
+  title: Olfactory Receptor Database at Yale University School of Medicine
+  homepage: http://senselab.med.yale.edu/OrDB/
+
+- namespace: oridb.sacch
+  title: OriDB Saccharomyces at University of Nottingham
+  homepage: http://cerevisiae.oridb.org/index.php
+
+- namespace: oridb.schizo
+  title: OriDB Schizosaccharomyces at University of Nottingham
+  homepage: http://pombe.oridb.org/index.php
+
+- namespace: orphanet
+  title: Orphanet at Inserm
+  homepage: http://www.orpha.net/consor/
+
+- namespace: orphanet.ordo
+  provider: ols
+  title: ORDO via OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/ordo
+
+- namespace: orthodb
+  title: OrthoDB at Swiss Institute of Bioinformatics
+  homepage: http://cegg.unige.ch/orthodb4
+
+- namespace: oryzabase.gene
+  title: Oryzabase v4 Gene at National Institute of Genetics (Japan)
+  homepage: http://www.shigen.nig.ac.jp/rice/oryzabaseV4/
+
+- namespace: oryzabase.mutant
+  title: Oryzabase v4 Mutant at National Institute of Genetics (Japan)
+  homepage: http://www.shigen.nig.ac.jp/rice/oryzabaseV4/
+
+- namespace: oryzabase.reference
+  title: Oryzabase
+  homepage: http://www.shigen.nig.ac.jp/rice/oryzabaseV4/
+
+- namespace: oryzabase.stage
+  title: Oryzabase v4 Stage at National Institute of Genetics (Japan)
+  homepage: http://www.shigen.nig.ac.jp/rice/oryzabaseV4/
+
+- namespace: oryzabase.strain
+  title: Oryzabase v4 Strain at National Institute of Genetics (Japan)
+  homepage: http://www.shigen.nig.ac.jp/rice/oryzabaseV4/
+
+- namespace: otl
+  title: Oryza Tag Line at CIRAD-INRA-SUPAGRO-UMI
+  homepage: http://oryzatagline.cirad.fr/
+
+- namespace: p3db.protein
+  title: P3DB Protein at University of Missouri
+  homepage: http://www.p3db.org/
+
+- namespace: p3db.site
+  title: P3DB Site at University of Missouri
+  homepage: http://www.p3db.org/
+
+- namespace: paleodb
+  title: PaleoDB at Macquarie University
+  homepage: http://paleodb.org/
+
+- namespace: panther.family
+  title: PANTHER Family at USC (Los Angeles)
+  homepage: http://www.pantherdb.org/
+
+- namespace: panther.node
+  title: PANTHER Node at USC (Los Angeles)
+  homepage: http://pantree.org/
+
+- namespace: panther.pathway
+  title: PANTHER Pathway at USC (Los Angeles)
+  homepage: http://www.pantherdb.org/
+
+- namespace: panther.pthcmp
+  title: PANTHER Pathway Component at USC (Los Angeles)
+  homepage: http://www.pantherdb.org/
+
+- namespace: pass2
+  title: PASS2 at National centre for Biological Sciences (India)
+  homepage: http://caps.ncbs.res.in/pass2/
+
+- namespace: pathwaycommons
+  title: Pathway Commons
+  homepage: http://www.pathwaycommons.org/pc/
+
+- namespace: pato
+  provider: bptl
+  title: PATO through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/PATO
+
+- namespace: pato
+  provider: ols
+  title: PATO through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/pato
+
+- namespace: paxdb.organism
+  title: PaxDb v3 at University of Zurich
+  homepage: http://pax-db.org/
+
+- namespace: paxdb.protein
+  title: PaxDb v3 at University of Zurich
+  homepage: http://pax-db.org/
+
+- namespace: pazar
+  title: Pazar Transcription Factor at University of British Columbia
+  homepage: http://www.pazar.info/
+
+- namespace: pdb
+  provider: rcsb
+  title: RCSB PDB
+  homepage: https://www.pdb.org/
+
+- namespace: pdb
+  provider: ebi
+  title: Protein Databank through PDBsum
+  homepage: https://www.ebi.ac.uk/pdbsum/
+
+- namespace: pdb
+  provider: pdbe
+  title: Protein Databank in Europe (PDBe)
+  homepage: http://www.pdbe.org/
+
+- namespace: pdb
+  provider: pdbj
+  title: Protein Data Bank Japan (PDBj)
+  homepage: http://www.pdbj.org/
+
+- namespace: pdb-ccd
+  provider: ebi
+  title: Protein Data Bank Chemical Component Dictionary at EBI
+  homepage: https://www.ebi.ac.uk/pdbe-srv/pdbechem/
+
+- namespace: pdb.ligand
+  provider: rcsb
+  title: PDB Ligand at RCSB
+  homepage: http://www.pdb.org/
+
+- namespace: peptideatlas
+  title: PeptideAtlas at ISB
+  homepage: http://www.peptideatlas.org/
+
+- namespace: peptideatlas.dataset
+  title: PeptideAtlas Dataset
+  homepage: https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/PASS_Summary
+
+- namespace: peroxibase
+  title: Peroxibase at University of Geneva
+  homepage: http://peroxibase.toulouse.inra.fr/
+
+- namespace: pfam
+  provider: ebi
+  title: Pfam at EMBL-EBI
+  homepage: https://pfam.xfam.org/
+
+- namespace: pgx
+  title: Progenetix
+  homepage: http://progenetix.org/
+
+- namespace: pharmgkb.disease
+  title: PharmGKB Disease at Stanford
+  homepage: http://www.pharmgkb.org/
+
+- namespace: pharmgkb.drug
+  title: PharmGKB Drug at Stanford
+  homepage: http://www.pharmgkb.org/
+
+- namespace: pharmgkb.gene
+  title: PharmGKB Gene at Stanford
+  homepage: http://www.pharmgkb.org/
+
+- namespace: pharmgkb.pathways
+  title: PharmGKB at Stanford
+  homepage: http://www.pharmgkb.org/
+
+- namespace: phenolexplorer
+  title: Phenol-Explorer Database on Phenol content of foods
+  homepage: http://www.phenol-explorer.eu/foods/
+
+- namespace: phosphopoint.kinase
+  title: PhosphoPoint Kinase at National Taiwan University
+  homepage: http://kinase.bioinformatics.tw/
+
+- namespace: phosphopoint.protein
+  title: PhosphoPoint Phosphoprotein at National Taiwan University
+  homepage: http://kinase.bioinformatics.tw/
+
+- namespace: phosphosite.protein
+  title: PhosphoSite
+  homepage: http://www.phosphosite.org/homeAction.do
+
+- namespace: phosphosite.residue
+  title: PhosphoSite Residue
+  homepage: http://www.phosphosite.org/homeAction.do
+
+- namespace: phylomedb
+  title: PhylomeDB at Centro de Investigaci&#xF3;n Pr&#xED;ncipe Felipe
+  homepage: http://phylomedb.org/
+
+- namespace: phytozome.locus
+  title: Phytozome Locus at Joint Genome Institute
+  homepage: http://www.phytozome.net/
+
+- namespace: pid.pathway
+  title: NCI Pathway Interaction Database (Pathway)
+  homepage: http://pid.nci.nih.gov/
+
+- namespace: pigqtldb
+  title: Animal QTL Pig at Iowa State University
+  homepage: http://www.animalgenome.org/cgi-bin/QTLdb/SS/index
+
+- namespace: pina
+  title: Protein Interaction Network Analysis (PINA) at Garvan Institute
+  homepage: http://cbg.garvan.unsw.edu.au/pina/
+
+- namespace: piroplasma
+  title: PiroplasmaBD at EuPathDB
+  homepage: http://piroplasmadb.org/
+
+- namespace: pirsf
+  title: PIRSF
+  homepage: https://pir.georgetown.edu/
+
+- namespace: planttfdb
+  title: PlantTFDB at Peking University
+  homepage: http://planttfdb.cbi.pku.edu.cn
+
+- namespace: plasmodb
+  title: PlasmoDB at EuPathDB
+  homepage: http://plasmodb.org/plasmo/
+
+- namespace: pmap.cutdb
+  title: CutDB at The Burnham Institute for Medical Research
+  homepage: http://cutdb.burnham.org
+
+- namespace: pmap.substratedb
+  title: SubstrateDB at The Burnham Institute for Medical Research
+  homepage: http://substrate.burnham.org/
+
+- namespace: pmc
+  provider: epmc
+  title: Europe PMC
+  homepage: http://europepmc.org/
+
+- namespace: pmc
+  provider: ncbi
+  title: PubMed Central
+  homepage: https://www.ncbi.nlm.nih.gov/pmc/
+
+- namespace: pmdb
+  title: Protein Model Database at University of Rome
+  homepage: https://bioinformatics.cineca.it/PMDB/
+
+- namespace: pmp
+  title: PMP at University of Basel
+  homepage: http://www.proteinmodelportal.org/
+
+- namespace: po
+  provider: bptl
+  title: Plant Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/PO
+
+- namespace: po
+  provider: amigo
+  title: Plant Ontology through Amigo
+  homepage: http://www.plantontology.org/
+
+- namespace: po
+  provider: ols
+  title: Plant Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/po
+
+- namespace: pocketome
+  title: Pocketome at UCSD Skaggs School
+  homepage: http://www.pocketome.org/sfSearch.cgi?act=browseall
+
+- namespace: polbase
+  title: PolBase at New England BioLabs
+  homepage: http://polbase.neb.com/
+
+- namespace: pombase
+  title: PomBase at University of Cambridge
+  homepage: http://www.pombase.org/
+
+- namespace: pr
+  title: Protein Ontology at Georgetown
+  homepage: https://proconsortium.org/
+
+- namespace: pr
+  provider: bptl
+  title: Protein Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/PR
+
+- namespace: pr
+  provider: ols
+  title: Protein Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/pr
+
+- namespace: pride
+  provider: ebi
+  title: PRIDE at EBI
+  homepage: https://www.ebi.ac.uk/pride/
+
+- namespace: pride.project
+  provider: ebi
+  title: PRIDE Project at EBI
+  homepage: https://www.ebi.ac.uk/pride/
+
+- namespace: pride.project
+  provider: omicsdi
+  title: PRIDE Project through OmicsDI
+  homepage: https://www.omicsdi.org/
+
+- namespace: prints
+  title: PRINTS through SPRINT
+  homepage: http://www.bioinf.manchester.ac.uk/dbbrowser/sprint/
+
+- namespace: probonto
+  provider: ols
+  title: ProbOnto through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/probonto
+
+- namespace: prodom
+  title: ProDom Protein Domain Database
+  homepage: http://prodom.prabi.fr/prodom/current/html/home.php
+
+- namespace: proglyc
+  title: ProGlycProt at IMT
+  homepage: http://www.proglycprot.org/
+
+- namespace: prosite
+  provider: expasy
+  title: ExPASy PROSITE
+  homepage: https://www.expasy.org/prosite/
+
+- namespace: protclustdb
+  provider: ncbi
+  title: ProtClustDB at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/proteinclusters?db=proteinclusters
+
+- namespace: proteomicsdb.peptide
+  title: Proteomics DB Peptide at Center for Integrated Protein Science
+  homepage: https://www.proteomicsdb.org/#peptideSearch
+
+- namespace: proteomicsdb.protein
+  title: Proteomics DB Protein at Center for Integrated Protein Science
+  homepage: https://www.proteomicsdb.org/#human
+
+- namespace: protonet.cluster
+  title: ProtoNet at Hebrew University
+  homepage: http://www.protonet.cs.huji.ac.il/
+
+- namespace: protonet.proteincard
+  title: ProtoNet at Hebrew University
+  homepage: http://www.protonet.cs.huji.ac.il/
+
+- namespace: pscdb
+  title: PSCDB at Nagoya University
+  homepage: http://idp1.force.cs.is.nagoya-u.ac.jp/pscdb/index.html
+
+- namespace: pseudomonas
+  title: Pseudomonas Genome Database at Simon Fraser University
+  homepage: http://www.pseudomonas.com/
+
+- namespace: psimi
+  provider: ols
+  title: Molecular Interactions Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/mi
+
+- namespace: psipar
+  provider: ols
+  title: Protein Affinity Reagents through OLS
+  homepage: https://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=PAR
+
+- namespace: pubchem.bioassay
+  provider: ncbi
+  title: PubChem Bioassay at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/sites/entrez?db=pcassay 
+
+- namespace: pubchem.compound
+  provider: ncbi
+  title: NCBI PubChem Compound
+  homepage: https://pubchem.ncbi.nlm.nih.gov/
+
+- namespace: pubchem.substance
+  provider: ncbi
+  title: NCBI PubChem Substance
+  homepage: https://pubchem.ncbi.nlm.nih.gov/
+
+- namespace: pubmed
+  provider: ncbi
+  alias: pmid
+  title: NCBI PubMed
+  homepage: https://www.ncbi.nlm.nih.gov/PubMed/
+
+- namespace: pubmed
+  provider: epmc
+  alias: pmid
+  title: Europe PMC
+  homepage: http://europepmc.org/
+
+- namespace: pubmed
+  provider: hubmed
+  alias: pmid
+  title: HubMed
+  homepage: http://www.hubmed.org/
+
+- namespace: pw
+  provider: bptl
+  title: Pathway Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/PW
+
+- namespace: pw
+  provider: ols
+  title: Pathway Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/pw
+
+- namespace: px
+  title: ProteomeXchange at Seattle
+  homepage: http://www.proteomexchange.org/
+
+- namespace: rbk
+  title: Rebuilding a Kidney
+  homepage: https://www.rebuildingakidney.org/
+
+- namespace: reactome
+  title: Reactome, a curated knowledgebase of biological pathways
+  homepage: https://www.reactome.org/
+
+- namespace: rebase
+  title: REBASE at New England Biolabs
+  homepage: http://rebase.neb.com/rebase/
+
+- namespace: refseq
+  provider: ncbi
+  title: The NCBI Reference Sequence database
+  homepage: https://www.ncbi.nlm.nih.gov/projects/RefSeq/
+
+- namespace: resid
+  title: RESID at Georgetown University
+  homepage: http://pir0.georgetown.edu/resid/
+
+- namespace: rfam
+  provider: ebi
+  title: Rfam at EMBL-EBI
+  homepage: https://rfam.xfam.org/
+
+- namespace: rgd
+  title: Rat Genome Database
+  homepage: http://rgd.mcw.edu/
+
+- namespace: rgd
+  provider: agr
+  title: RGD through the Alliance of Genome Resources
+  homepage: https://www.alliancegenome.org
+
+- namespace: rgd.qtl
+  title: Rat Genome Database qTL at Medical College of Wisconsin
+  homepage: http://rgd.mcw.edu/
+
+- namespace: rgd.strain
+  title: Rat Genome Database strain at Medical College of Wisconsin
+  homepage: http://rgd.mcw.edu/
+
+- namespace: rhea
+  title: Rhea
+  homepage: https://www.rhea-db.org/
+
+- namespace: ricegap
+  title: Rice Genome Annotation Project at TIGR
+  homepage: http://rice.plantbiology.msu.edu/annotation_pseudo_current.shtml
+
+- namespace: ricenetdb.compound
+  title: RiceNetDB Compound
+  homepage: http://bis.zju.edu.cn/ricenetdb
+
+- namespace: ricenetdb.gene
+  title: RiceNetDB
+  homepage: http://bis.zju.edu.cn/ricenetdb/
+
+- namespace: ricenetdb.mirna
+  title: RiceNetDB miRNA
+  homepage: http://bis.zju.edu.cn/ricenetdb
+
+- namespace: ricenetdb.protein
+  title: RiceNetDB
+  homepage: http://bis.zju.edu.cn/ricenetdb/
+
+- namespace: ricenetdb.reaction
+  title: RiceNetDB Reaction
+  homepage: http://bis.zju.edu.cn/ricenetdb
+
+- namespace: rnacentral
+  title: RNAcentral through EMBL-EBI
+  homepage: https://rnacentral.org/
+
+- namespace: rnamods
+  title: RNA Modification Database at University of Utah
+  homepage: http://rna-mdb.cas.albany.edu/RNAmods/rnaover.htm
+
+- namespace: ro
+  title: OBO Relation Ontology through OntoBee
+  homepage: http://obofoundry.org/ontology/ro.html
+
+- namespace: ro
+  provider: ols
+  title: OBO Relation Ontology through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/ro
+
+- namespace: rouge
+  title: Rouge at Kazusa DNA Research Institute
+  homepage: http://www.kazusa.or.jp/rouge/
+
+- namespace: rrid
+  title: RRID at SciCrunch
+  homepage: https://scicrunch.org/resolver
+
+- namespace: sabiork.compound
+  title: SABIO-RK Compound
+  homepage: http://sabiork.h-its.org/
+
+- namespace: sabiork.ec
+  title: SABIO-RK Reaction Kinetics Database - Enzyme Classification (EC)
+  homepage: http://sabiork.h-its.org/
+
+- namespace: sabiork.kineticrecord
+  title: SABIO-RK Reaction Kinetics Database - Kinetic Dataset
+  homepage: http://sabiork.h-its.org/
+
+- namespace: sabiork.reaction
+  title: SABIO-RK reaction
+  homepage: http://sabiork.h-its.org/
+
+- namespace: sasbdb
+  title: SASBDB at European Molecular Biology Laboratory
+  homepage: http://www.sasbdb.org/
+
+- namespace: sbo
+  provider: ebi
+  title: SBO
+  homepage: https://www.ebi.ac.uk/sbo/
+
+- namespace: sbo
+  provider: bptl
+  title: SBO through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/SBO
+
+- namespace: sbo
+  provider: ols
+  title: SBO through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/sbo
+
+- namespace: scop
+  title: SCOP at Berkeley
+  homepage: http://scop.berkeley.edu/
+
+- namespace: scretf
+  title: ScerTF at Washington University
+  homepage: http://stormo.wustl.edu/ScerTF/
+
+- namespace: sdbs
+  title: SDBS at AIST
+  homepage: http://riodb01.ibase.aist.go.jp/sdbs/cgi-bin/direct_frame_top.cgi
+
+- namespace: seed
+  title: SEED Subsystem at Argonne National Laboratory
+  homepage: http://seed-viewer.theseed.org/seedviewer.cgi
+
+- namespace: seed.compound
+  title: SEED Compound at Argonne National Laboratory
+  homepage: http://modelseed.org/
+
+- namespace: seed.reaction
+  title: SEED Reactions
+  homepage: http://modelseed.org/biochem/reactions/
+
+- namespace: sgd
+  title: SGD
+  homepage: https://www.yeastgenome.org/
+
+- namespace: sgd
+  provider: agr
+  title: SGD through the Alliance of Genome Resources
+  homepage: https://www.alliancegenome.org
+
+- namespace: sgd
+  provider: bioentitylink
+  title: SGD through BioEntity Link
+  homepage: https://bioentity.link/
+
+- namespace: sgd.pathways
+  title: Saccharomyces cerevisiae pathways at SGD.
+  homepage: http://pathway.yeastgenome.org/
+
+- namespace: sgn
+  title: Sol Genomics Network at Boyce Thompson Institute for Plant Research
+  homepage: http://solgenomics.net/
+
+- namespace: sheepqtldb
+  title: Animal QTL Sheep at Iowa State University
+  homepage: http://www.animalgenome.org/cgi-bin/QTLdb/OA/index
+
+- namespace: sider.drug
+  title: SIDER Drug v2 at EMBL (Heidelberg)
+  homepage: http://sideeffects.embl.de/
+
+- namespace: sider.effect
+  title: SIDER Side Effect v2 at EMBL (Heidelberg)
+  homepage: http://sideeffects.embl.de/
+
+- namespace: signaling-gateway
+  title: Signaling Gateway Molecule Pages
+  homepage: http://www.signaling-gateway.org/molecule
+
+- namespace: sisu
+  title: SISu
+  homepage: http://www.sisuproject.fi/
+
+- namespace: sitex
+  title: SitEx at Novosibirsk State University
+  homepage: http://www-bionet.sscc.ru/sitex/
+
+- namespace: smart
+  title: SMART (Simple Modular Architecture Research Tool)
+  homepage: http://smart.embl-heidelberg.de/
+
+- namespace: smpdb
+  title: Small Molecule Pathway Database
+  homepage: http://www.smpdb.ca/pathways
+
+- namespace: snomedct
+  title: SNOMED-CT at The National Pathology Exchange
+  homepage: http://www.snomedbrowser.com/
+
+- namespace: so
+  provider: bptl
+  title: Sequence Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/SO
+
+- namespace: so
+  provider: ols
+  title: Sequence Ontology through Ontology Lookup Service (OLS)
+  homepage: https://www.ebi.ac.uk/ols/ontologies/so
+
+- namespace: soybase
+  title: SoyBase at Iowa State University
+  homepage: http://soybase.org/
+
+- namespace: spdx
+  title: SPDX License List
+  homepage: https://spdx.org
+
+- namespace: spike.map
+  title: SPIKE database at Tel Aviv University
+  homepage: http://www.cs.tau.ac.il/~spike/
+
+- namespace: splash
+  title: Mass Bank of North America (MoNA)
+  homepage: http://mona.fiehnlab.ucdavis.edu/
+
+- namespace: stap
+  title: STAP at Korean Bioinformation Center
+  homepage: http://psb.kobic.re.kr/STAP/refinement/
+
+- namespace: stitch
+  title: STITCH
+  homepage: http://stitch.embl.de/
+
+- namespace: storedb
+  title: STOREDB at University of Cambridge
+  homepage: https://www.storedb.org/
+
+- namespace: string
+  title: STRING Mirror at Heidelberg
+  homepage: http://string-db.org/
+
+- namespace: subtilist
+  title: SubtiList at Pasteur Institute
+  homepage: http://genolist.pasteur.fr/SubtiList/
+
+- namespace: subtiwiki
+  title: SubtiWiki website
+  homepage: http://www.subtiwiki.uni-goettingen.de/wiki/index.php/Main_Page
+
+- namespace: sugarbind
+  title: SugarBind
+  homepage: http://sugarbind.expasy.org/
+
+- namespace: supfam
+  title: SUPFAM at MRC and University of Bristol
+  homepage: http://supfam.org/SUPERFAMILY/
+
+- namespace: swh
+  title: Software Heritage
+  homepage: https://archive.softwareheritage.org
+
+- namespace: swiss-model
+  title: SWISS-MODEL at SIB Swiss Institute of Bioinformatics
+  homepage: https://swissmodel.expasy.org
+
+- namespace: swisslipid
+  title: SwissLipids at Swiss Institute of Bioinformatics
+  homepage: http://www.swisslipids.org/#/
+
+- namespace: swissregulon
+  title: SwissRegulon
+  homepage: http://swissregulon.unibas.ch
+
+- namespace: t3db
+  title: Toxin and Toxin Target Database
+  homepage: http://www.t3db.org/
+
+- namespace: tair.gene
+  title: The Arabidopsis Information Resource (TAIR) Gene
+  homepage: http://arabidopsis.org/index.jsp
+
+- namespace: tair.locus
+  title: The Arabidopsis Information Resource (TAIR) Locus
+  homepage: http://arabidopsis.org/index.jsp
+
+- namespace: tair.protein
+  title: The Arabidopsis Information Resource (TAIR) Protein
+  homepage: http://arabidopsis.org/index.jsp
+
+- namespace: tarbase
+  title: TarBase v7 at University of Thessaly
+  homepage: http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index
+
+- namespace: taxonomy
+  provider: ncbi
+  alias: taxon
+  title: NCBI Taxonomy
+  homepage: https://www.ncbi.nlm.nih.gov/Taxonomy/
+
+- namespace: taxonomy
+  provider: bptl
+  alias: taxon
+  title: BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/NCBITAXON
+
+- namespace: taxonomy
+  provider: ebi
+  alias: taxon
+  title: European Nucleotide Archive (ENA)
+  homepage: https://www.ebi.ac.uk/ena/
+
+- namespace: taxonomy
+  provider: ols
+  alias: taxon
+  title: NCBI Taxonomy through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/ncbitaxon/
+
+- namespace: tcdb
+  title: TCDB
+  homepage: http://www.tcdb.org/
+
+- namespace: tgd
+  title: TGD at Stanford University
+  homepage: http://ciliate.org/index.php/
+
+- namespace: tigrfam
+  title: TIGRFAM at JCVI
+  homepage: http://www.jcvi.org/cgi-bin/tigrfams/Listing.cgi
+
+- namespace: tissuelist
+  title: Tissue List at Swiss Institute of Bioinformatics
+  homepage: https://www.uniprot.org/docs/tisslist.txt
+
+- namespace: tol
+  title: Tree of Life Web
+  homepage: http://tolweb.org/tree/
+
+- namespace: topdb
+  title: TOPDB at Hungarian Academy of Sciences
+  homepage: http://topdb.enzim.hu/
+
+- namespace: topfind
+  title: TopFind at University of British Columbia
+  homepage: http://clipserve.clip.ubc.ca/topfind
+
+- namespace: toxoplasma
+  title: ToxoDB at EuPathDB
+  homepage: http://toxodb.org/toxo/
+
+- namespace: treebase
+  title: TreeBASE (hosted at National Evolutionary Synthesis Center)
+  homepage: http://treebase.org/
+
+- namespace: treefam
+  title: TreeFam database
+  homepage: http://www.treefam.org/
+
+- namespace: trichdb
+  title: TrichDB at EuPathDB
+  homepage: http://trichdb.org/trichdb/
+
+- namespace: tritrypdb
+  title: TriTrypDB at EuPathDB
+  homepage: http://tritrypdb.org/tritrypdb/
+
+- namespace: ttd.drug
+  title: Therapeutic Target Database Drug
+  homepage: http://bidd.nus.edu.sg/group/ttd/ttd.asp
+
+- namespace: ttd.target
+  title: Therapeutic Target Database Target
+  homepage: http://bidd.nus.edu.sg/group/ttd/ttd.asp
+
+- namespace: uberon
+  provider: bptl
+  title: UBERON through bioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/UBERON
+
+- namespace: uberon
+  provider: ols
+  title: UBERON through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/uberon
+
+- namespace: ubio.namebank
+  title: uBio NameBank at The Marine Biological Laboratory
+  homepage: http://www.ubio.org
+
+- namespace: umbbd.compound
+  title: Biocatalysis/Biodegradation Database Mirror (Compound) at ETH Zurich
+  homepage: http://umbbd.ethz.ch/
+
+- namespace: umbbd.enzyme
+  title: Biocatalysis/Biodegradation Database Mirror (Enzyme) at ETH Zurich
+  homepage: http://umbbd.ethz.ch/
+
+- namespace: umbbd.pathway
+  title: Biocatalysis/Biodegradation Database Mirror (Pathway) at ETH Zurich
+  homepage: http://umbbd.ethz.ch/
+
+- namespace: umbbd.reaction
+  title: Biocatalysis/Biodegradation Database Mirror (Reaction) at ETH Zurich
+  homepage: http://umbbd.ethz.ch/
+
+- namespace: umbbd.rule
+  title: Biocatalysis/Biodegradation Database Mirror (Biotransformation Rule) at ETH Zurich
+  homepage: http://umbbd.ethz.ch/servlets/pageservlet?ptype=allrules
+
+- namespace: umls
+  title: Unified Medical Language System at LinkedLifeData
+  homepage: http://linkedlifedata.com/
+
+- namespace: unigene
+  title: UniGene at NCBI
+  homepage: http://www.ncbi.nlm.nih.gov/unigene
+
+- namespace: unii
+  title: UNII at U.S. Food and Drug Administration
+  homepage: http://fdasis.nlm.nih.gov/srs/
+
+- namespace: unimod
+  title: Unimod at Matrix Sciences Ltd.
+  homepage: http://www.unimod.org/
+
+- namespace: uniparc
+  title: UniParc through UniProt
+  homepage: http://www.uniprot.org/uniparc/
+
+- namespace: uniparc
+  provider: ebi
+  title: UniProt Archive (UniParc)
+  homepage: https://www.ebi.ac.uk/uniparc/
+
+- namespace: unipathway.compound
+  title: UniPathway Compound at Swiss Institute of Bioinformatics (SIB)
+  homepage: http://www.grenoble.prabi.fr/obiwarehouse/unipathway
+
+- namespace: unipathway.reaction
+  title: UniPathway Reaction at Swiss Institute of Bioinformatics (SIB)
+  homepage: http://www.grenoble.prabi.fr/obiwarehouse/unipathway
+
+- namespace: uniprot
+  alias: uniprotkb
+  title: Universal Protein Resource using Persistent URL system
+  homepage: https://www.uniprot.org/
+
+- namespace: uniprot
+  provider: ncbi
+  alias: uniprotkb
+  title: UniProt through NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/protein/
+
+- namespace: uniprot.isoform
+  title: UniProt Isoform through UniParc
+  homepage: http://www.uniprot.org/uniparc/
+
+- namespace: unists
+  provider: ncbi
+  title: UniSTS at NCBI
+  homepage: https://www.ncbi.nlm.nih.gov/sites/entrez?db=unists
+
+- namespace: unite
+  title: Unite at University of Tartu
+  homepage: http://unite.ut.ee/
+
+- namespace: uo
+  provider: bptl
+  title: Unit Ontology through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/UO
+
+- namespace: uo
+  provider: ols
+  title: Unit Ontology via Ontology Lookup Service
+  homepage: https://www.ebi.ac.uk/ols/ontologies/uo
+
+- namespace: uspto
+  title: USPTO patents at USPTO
+  homepage: http://patft.uspto.gov/netahtml/PTO/index.html
+
+- namespace: validatordb
+  title: ValidatorDB
+  homepage: https://webchem.ncbr.muni.cz/Platform/ValidatorDb/
+
+- namespace: vario
+  provider: bptl
+  title: VariO through BioPortal
+  homepage: http://bioportal.bioontology.org/ontologies/VARIO
+
+- namespace: vario
+  provider: ols
+  title: VariO through OLS
+  homepage: https://www.ebi.ac.uk/ols/ontologies/vario
+
+- namespace: vbase2
+  title: Vbase2 at German Research Centre for Biotechnology
+  homepage: http://www.vbase2.org/vbase2.php
+
+- namespace: vbrc
+  title: VBRC at University of Alabama
+  homepage: http://vbrc.org/
+
+- namespace: vectorbase
+  provider: ebi
+  title: Vectorbase at EMBL-EBI
+  homepage: https://www.vectorbase.org/
+
+- namespace: vfb
+  title: Virtual Fly Brain
+  homepage: https://VirtualFlyBrain.org
+
+- namespace: vfdb.gene
+  title: VFDB Gene at Institute of Pathogen Biology
+  homepage: http://www.mgc.ac.cn/VFs/
+
+- namespace: vfdb.genus
+  title: VFDB Genus at Institute of Pathogen Biology
+  homepage: http://www.mgc.ac.cn/VFs/
+
+- namespace: viaf
+  title: Virtual International Authority File
+  homepage: http://viaf.org
+
+- namespace: vipr
+  title: ViPR Strain at J. Craig Venter Institute
+  homepage: http://www.viprbrc.org/brc/home.do?decorator=vipr
+
+- namespace: viralzone
+  title: ViralZone at SIB
+  homepage: http://www.expasy.org/viralzone/
+
+- namespace: virsirna
+  title: VIRsiRNA at Institute of Microbial Technology
+  homepage: http://crdd.osdd.net/servers/virsirnadb
+
+- namespace: vmhmetabolite
+  title: VMH metabolite
+  homepage: http://vmh.uni.lu
+
+- namespace: vmhreaction
+  title: VMH reaction
+  homepage: https://vmh.uni.lu
+
+- namespace: wb
+  title: WormBase
+  homepage: https://www.wormbase.org/
+
+- namespace: wb
+  provider: agr
+  title: WormBase through the Alliance of Genome Resources
+  homepage: https://www.alliancegenome.org
+
+- namespace: wb
+  provider: bioentitylink
+  title: WormBase through BioEntity Link
+  homepage: https://bioentity.link/
+
+- namespace: wb.rnai
+  title: WormBase RNAi
+  homepage: https://www.wormbase.org/
+
+- namespace: wikidata
+  title: Wikidata at Wikimedia Foundation
+  homepage: https://www.wikidata.org/
+
+- namespace: wikigenes
+  title: WikiGenes at Massachusetts Institute of Technology
+  homepage: http://www.wikigenes.org/
+
+- namespace: wikipathways
+  title: Wikipathways
+  homepage: http://www.wikipathways.org/
+
+- namespace: wikipedia.en
+  title: Wikipedia structured content through DBpedia
+  homepage: http://wiki.dbpedia.org/
+
+- namespace: worfdb
+  title: Worm Orf DB at Harvard
+  homepage: http://worfdb.dfci.harvard.edu/
+
+- namespace: wormpep
+  title: Wormpep (Master)
+  homepage: https://www.wormbase.org/db/seq/protein
+
+- namespace: worms
+  title: World Register of Marine Species
+  homepage: http://www.marinespecies.org/
+
+- namespace: xenbase
+  title: Xenbase at University of Calgary
+  homepage: http://www.xenbase.org/
+
+- namespace: ydpm
+  title: YDPM at Stanford University School of Medicine
+  homepage: http://www-deletion.stanford.edu/YDPM/
+
+- namespace: yeastintron
+  title: Yeast Intron Database version 4.3 at Baskin School of Engineering
+  homepage: http://intron.ucsc.edu/yeast4.3/
+
+- namespace: yetfasco
+  title: YeTFasCo at University of Toronto
+  homepage: http://yetfasco.ccbr.utoronto.ca/
+
+- namespace: yid
+  title: Yeast Intron Database version 3 at Baskin School of Engineering
+  homepage: http://compbio.soe.ucsc.edu/yeast_introns.html
+
+- namespace: yrcpdr
+  title: YRC PDR at University of Washington
+  homepage: http://www.yeastrc.org/pdr/
+
+- namespace: zfin
+  title: ZFIN at University of Oregon
+  homepage: http://zfin.org
+
+- namespace: zfin
+  provider: agr
+  title: ZFIN through the Alliance of Genome Resources
+  homepage: https://www.alliancegenome.org
+
+- namespace: zfin
+  provider: bioentitylink
+  title: ZFIN through BioEntity Link
+  homepage: https://bioentity.link/
+
+- namespace: zinc
+  title: ZINC at University of California (San Francisco)
+  homepage: http://zinc15.docking.org/
+
