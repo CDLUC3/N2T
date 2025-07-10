@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--#include virtual="/e/prelim.html" -->
+  <title>About N2T.net</title>
+</head>
+<body>
+<div class="content">
+<!--#include virtual="/e/header.html" -->
+<!--#include virtual="breadcrumb_about.html" -->
+<div class="container-narrowest">
+<div class="section" id="about-n2t-net">
+<h1>About N2T.net</h1>
+<p>N2T.net (Name-to-Thing) is a &quot;resolver,&quot; a kind of server that specializes
+in <em>indirection</em>. Resolvers serve content indirectly by forwarding most
+incoming requests to other servers rather than serving content directly
+(this page being an exception). Resolvers are good at redirecting requests
+to content servers, similar to URL shorteners like bit.ly and t.co.</p>
+<div class="section" id="origins-of-n2t">
+<h2>Origins of N2T</h2>
+<p>The name &quot;n2t&quot; was chosen for several reasons. First, it is unique enough to be
+easy to search for. Second, &quot;n2t&quot; is relatively opaque, which helps URLs based
+at n2t.net to age and travel well, the presumption being that brand- and
+language-neutrality can shield URLs from future embarrassment and forced
+retirement due to long term evolving political, legal, and usability pressures.
+The name is also short, which saves time and space – both in storage and in
+&quot;visual real estate&quot; – across often-repeated acts of transcription and
+citation. Finally, N2T's name was patterned after a set of <a class="reference external" href="https://www.ietf.org/">IETF</a> (the main
+Internet standards body) mapping operations for the URN (Uniform Resource Name)
+dating back to 1997 (<a class="reference external" href="https://tools.ietf.org/rfc/rfc2168">RFC 2168</a>): N2R (Name to Resource), N2L (Name to URL),
+and N2C (Name to URC, 'C' = Characteristics/Citation).</p>
+<p>N2T's technical infrastructure arose from the demand for a global ARK (Archival
+Resource Key) resolver. All that a basic resolver needs is software to look up
+a given incoming string in a table and to issue a &quot;server redirect&quot;, as found
+in every web server since 1992. The approach taken by many systems (Handle,
+DOI, etc.), is to create a &quot;silo&quot; that only works for one type of identifier.
+Because making lookups fail except for certain parts of the alphabet is
+exclusionary and artificial, the ARK resolver design took a more open and
+general approach. The result was N2T, a scheme-agnostic resolver that currently
+works for over 900 types of identifier, including ARKs, DOIs, Handles, PURLs,
+URNs, ORCIDs, ISSNs, etc.</p>
+<p>The main use of N2T is for &quot;persistent identifiers&quot;. An archive or publisher
+that gives out content links (URLs) starting with n2t.net doesn't need to worry
+about their breaking when content eventually moves to different servers.
+Provided forwarding rules at N2T are updated, links starting with n2t.net
+remain stable. (All persistent identifier systems rely on this same basic
+principle.)</p>
+</div>
+<div class="section" id="features-unique-to-the-n2t-resolver">
+<h2>Features Unique to the N2T Resolver</h2>
+<p>Unlike URL shorteners, N2T can store more than one &quot;target&quot; (forwarding link)
+for an identifier, as well as any kind or amount of metadata (descriptive
+information) and links to metadata in different formats. When forwarding
+doesn't work for some reason, such as a temporary outage or insufficient
+permission at the target server, N2T can nonetheless return any persistent
+information it has about the identified object. N2T also supports CORS
+(Cross-Origin Resource Sharing) to securely enable JavaScript access to public
+content with identifiers based at N2T. Some other unique features:</p>
+<ul>
+<li><p class="first"><strong>Suffix passthrough.</strong> N2T supports &quot;<a class="reference external" href="/e/suffix_passthrough.html">suffix passthrough</a>&quot;, which
+drastically reduces the number of individual identifiers that providers need
+to maintain.</p>
+</li>
+<li><p class="first"><strong>Inflections.</strong> It supports &quot;inflections&quot; and &quot;content negotiation&quot;, which
+allow you to request descriptive information for identifiers that have it.</p>
+</li>
+<li><p class="first"><strong>Identifier-scheme-agnostic.</strong> N2T.net is unusual among resolvers because it
+is not a silo that works with only one kind of identifier. It stores
+individual identifiers of any kind, including both <a class="reference external" href="/e/ark_ids.html">ARK</a>s and <a class="reference external" href="https://www.doi.org">DOI</a>s, and
+provides equal services to all kinds, regardless of origin.</p>
+</li>
+<li><p class="first"><strong>Cross-scheme features.</strong> As a result N2T easily supports feature
+combinations that some find surprising, such as ARK-style inflections
+for DOIs, and ARKs that return <a class="reference external" href="https://www.datacite.org">DataCite</a> DOI metadata via content negotiation.</p>
+</li>
+<li><p class="first"><strong>Resolver and meta-resolver.</strong> Unusually, N2T is a &quot;meta-resolver&quot; (like
+identifiers.org), but at the same time it stores about 50 million
+identifiers. As a meta-resolver, it recognizes over 900 well-known identifier
+types, including all those known to identifiers.org, and knows where their
+respective servers are. Failing to find forwarding information for an
+identifier that it looks up (in its regular resolver role), it assumes its
+meta-resolver role and uses the identifier's type to look for an overall
+&quot;target rule&quot;.</p>
+</li>
+<li><p class="first"><strong>NLID substitution.</strong> N2T has a special target rule substitution feature
+for an identifier with a NAAN-like component (ARK, DOI, URN, Handle).
+Wherever the string ${nlid} appears in the target string, the NLID
+(NAAN-local identifier), which is everything to the right of the NAAN, will
+be substituted. It is best if the forwarding URL ends up showing the &quot;compact
+id&quot; (eg, the part starting &quot;ark:&quot;), but the NLID is useful since it is the
+identifier part over which most identifier creators have direct control.
+While it is easy for a web server to recognize an incoming NAAN, it still
+requires a one-time webmaster action, and that may not be feasible. The
+${nlid} substitution feature obviates that need because with a target rule
+such as</p>
+<pre class="literal-block">
+https://mysite.example.org/blog/${nlid}
+</pre>
+<p>N2T will forward an ARK such as <tt class="docutils literal"><span class="pre">ark:/12345/67890</span></tt> directly to</p>
+<pre class="literal-block">
+https://mysite.example.org/blog/67890
+</pre>
+<p>instead of forwarding it to (using the compact ARK)</p>
+<pre class="literal-block">
+https://mysite.example.org/ark:/12345/67890
+</pre>
+<p>which avoids an extra local web server configuration step.</p>
+</li>
+<li><p class="first"><strong>Prefix extension.</strong> N2T supports a &quot;prefix extension&quot; feature that permits
+developers to extend a scheme or an ARK NAAN (both of which &quot;prefix&quot; an
+identifier) with <tt class="docutils literal"><span class="pre">-dev</span></tt> in order to forward to an alternate destination.
+For example, if the NAAN <tt class="docutils literal">12345</tt> forwards to domain <tt class="docutils literal">a.b.org</tt>, then
+<tt class="docutils literal"><span class="pre">ark:/12345-dev/678</span></tt> forwards to <tt class="docutils literal"><span class="pre">a-dev.b.org/678</span></tt>. It works similarly
+for schemes, for example, if scheme <tt class="docutils literal">xyzzy</tt> forwards to <tt class="docutils literal"><span class="pre">a.b.org/$id</span></tt>,
+then <tt class="docutils literal"><span class="pre">xyzzy-dev:foo</span></tt> forwards to <tt class="docutils literal"><span class="pre">a-dev.b.org/foo</span></tt>.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="audience">
+<h2>Audience</h2>
+<p>The primary audience for N2T services is the global community of people
+engaged in research, academic, and cultural heritage endeavors. Together
+with our primary <a class="reference external" href="/e/partners.html">partners</a>, <a class="reference external" href="https://ezid.cdlib.org">EZID</a> and <a class="reference external" href="https://archive.org">Internet Archive</a>, we work with
+national, university, and public libraries, academic and society
+publishers, natural history and art museums, as well as companies and
+funders that support education and research.</p>
+<p>N2T identifiers are used for everything from citing scholarly works to
+referencing tissue samples. They link to cutting edge scientific datasets,
+historic botanists, evolving semantic web term definitions, living people,
+and many other things.</p>
+</div>
+<div class="section" id="organizational-backing">
+<h2>Organizational Backing</h2>
+<p>N2T is maintained at the <a class="reference external" href="https://www.cdlib.org">California Digital Library</a> (CDL) within the
+University of California (UC) Office of the President (UCOP). CDL supports
+electronic library services for ten UC campuses and affiliated law
+schools, medical centers, and national laboratories, as well as hundreds
+of museums, herbaria, botanical gardens, etc. You may provide feedback on
+N2T via the <a class="reference external" href="https://cdlib.org/contact/">CDL contact form</a>.</p>
+<p>N2T runs in the AWS (Amazon Web Services) cloud. On top of the foundational
+physical, network, and procedural security maintained by AWS datacenters
+located in the United States of America, N2T security and privacy is enhanced
+by additional CDL and UCOP privacy safeguards, patching policies, access
+restrictions, and firewall controls,</p>
+<p>N2T is a critical piece of global infrastructure under the purview of
+the <a class="reference external" href="https://arks.org">ARK Alliance</a>. Founded by the CDL and <a class="reference external" href="http://lyrasis.org/">LYRASIS</a>, the ARK Alliance now
+enjoys the support of some 40 institutions.</p>
+</div>
+<div class="section" id="maintenance-window">
+<h2>Maintenance Window</h2>
+<p>The N2T service may occasionally be suspended or interrupted for up to one hour
+during the routine maintenance window. If maintenance is to take place, it
+happens on Sundays beginning at 08:00 in California, UTC-08:00 (standard time),
+UTC-07:00 (daylight savings).</p>
+</div>
+<div class="section" id="other-information">
+<h2>Other Information</h2>
+<ul class="simple">
+<li><a class="reference external" href="/e/partners.html">N2T partners</a></li>
+<li><a class="reference external" href="/e/n2t_apidoc.html">N2T API Documentation</a></li>
+<li><a class="reference external" href="/e/n2t_vision.html">Original N2T vision</a></li>
+<li><a class="reference external" href="/e/images/N2T_Anatomy.jpg">N2T Architecture diagram</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<!--#include virtual="/e/footer.html" -->
+</body>
+</html>

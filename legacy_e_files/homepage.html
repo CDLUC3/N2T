@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Name-to-Thing (N2T) Identifier Resolver</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/e/css/flexboxgrid-6.3.1-min.css">
+  <link rel="stylesheet" href="/e/css/styles.css">
+  <link rel="stylesheet" href="/e/css/styles_rst.css">
+  <link rel="shortcut icon" type="image/png" href="/e/images/favicon.ico?v=2"/>
+  <link rel="icon" sizes="64x64" href="/e/images/favicon.ico?v=2">
+</head>
+
+<body class="background-home">
+<div class="content">
+<!--#include virtual="/e/header.html" -->
+
+<!--
+  <link rel="icon" sizes="16x16 32x32" href="/e/images/favicon.ico?v=2">
+<header class="header row center-xs">
+  <div class="col-xs-10 col-sm-10">
+    <div class="row middle-xs header">
+      <p class="col-xs header-logo-left center-horiz">
+        <img src="/e/images/n2t_net_logo.png" alt="Name-to-Thing Logo"
+	  width="auto" height="56"/>
+      </p>
+      <picture class="col-xs header-logo-right center-horiz">
+        <source srcSet="/e/images/LogoRight_178x56.png" media="(min-width: 31em)"/>
+        <img src="" alt="RESOLVING NAMES TO THINGS"/>
+      </picture>
+      <p align="right" class="single-space">
+        <a href="/e/about.html">About</a><br/>
+        <a href="/e/partners.html">N2T Partners</a><br/>
+        <a href="/e/n2t_apidoc.html">API Documentation</a>
+      </p>
+    </div>
+  </div>
+</header>
+-->
+
+<div class="container-narrowest">
+  <div class="row around-xs middle-xs">
+    <div class="col-xs-10 col-sm-5 center-horiz">
+      <div class="box-fixed box-big-text">N2T keeps identifiers persistent, forwarding them to the best known web addresses</div>
+    </div>
+    <div class="col-xs-10 col-sm-5 center-horiz">
+      <div class="box-fixed box-big-text">
+        <section>
+          <span>Partners with</span>
+            <a href="https://ezid.cdlib.org">EZID.cdlib.org</a>,
+	    <a href="https://identifiers.org">Identifiers.org</a>,
+            <a href="https://www.archive.org">Archive.org</a>,
+            <a href="https://www.yamz.net">YAMZ.net metadictionary</a>
+	<!--
+          <span>In partnership with:</span>
+          <ul class="list">
+            <li><a href="https://ezid.cdlib.org">EZID.cdlib.org</a></li>
+            <li><a href="https://identifiers.org">Identifiers.org</a></li>
+            <li><a href="https://www.archive.org">Internet Archive</a></li>
+            <li><a href="https://www.yamz.net">YAMZ Metadictionary</a></li>
+          </ul>
+	-->
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="row around-xs middle-xs">
+    <div class="col-xs-10 col-sm-5 center-horiz">
+      <div class="box-fixed box-big-text">Any kind of name – ARK, DOI, URN, Handle, PMID, PDB, Taxon, GRID, arxiv, ISSN, ...</div>
+    </div>
+    <div class="col-xs-10 col-sm-5 center-horiz">
+      <div class="box-fixed box-big-text">Any kind of thing – data, web page, physical specimen, group, vocabulary term, living being, ...</div>
+    </div>
+  </div>
+
+<!-- Spacer 
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="row center-xs">
+  &nbsp;<br/>
+</div>
+
+<div class="container-narrowest">
+  <div class="row center-xs">
+    <div class="box-bigger col-xs-5">
+      <h2 class="header2">N2T is a global
+      <a href="https://arks.org">ARK</a>
+      resolver
+      </h2>
+    </div>
+  </div>
+</div>
+<div class="container-narrowest">
+  <div class="row center-xs">
+    <div class="box-bigger col-xs-5">
+      <h2 class="header2">Also a meta-resolver for 900+ kinds of
+         <a href="/e/compact_ids.html">compact identifiers</a>
+      </h2>
+    </div>
+  </div>
+</div>
+
+<!-- Spacer 
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="row center-xs">
+  &nbsp;
+</div>
+
+  <div class="row center-xs">
+  </div>
+</div>
+
+<!-- removing ARK buttons
+
+<div class="container-widest">
+  <div class="row around-xs middle-xs">
+    <div class="col-xs-6 col-sm-3 center-horiz">
+      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('/e/ark_ids.html')" aria-label="More about Archival Resource Key Identifiers (ARKs)">
+        <span class="box-linked-text">About ARK Identifiers</span>
+      </button>
+    </div>
+    <div class="col-xs-6 col-sm-3 center-horiz">
+      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project')" aria-label="CDL and LYRASIS/Duraspace building an open, international community around Archival Resource Keys (ARKs)">
+        <span class="box-linked-text">ARKs in the Open</span>
+      </button>
+    </div>
+    <div class="col-xs-6 col-sm-3 center-horiz">
+      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('https://goo.gl/forms/bmckLSPpbzpZ5dix1')" aria-label="Register your organization's interest in assigning ARK identifiers">
+        <span class="box-linked-text">Register to assign ARKs (it's free)</span>
+      </button>
+    </div>
+    <div class="col-xs-6 col-sm-3 center-horiz">
+      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('https://groups.google.com/forum/?hl=en#!forum/arks-forum')" aria-label="ARKs Forum">
+        <span class="box-linked-text">ARKs discussion forum</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+-->
+
+</div>
+<!-- End of content block -->
+
+
+<!--#include virtual="/e/footer.html" -->
+  <!-- Function for button links -->
+  <script type="text/javascript">
+    function btnHref(url) {
+      window.location = url;
+    };
+  </script>
+
+  <!-- End Document -->
+</body>
+</html>

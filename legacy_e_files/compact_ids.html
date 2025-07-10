@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--#include virtual="/e/prelim.html" -->
+  <title>Compact Identifiers</title>
+</head>
+<body>
+<div class="content">
+<!--#include virtual="/e/header.html" -->
+<!--#include virtual="breadcrumb_compact_ids.html" -->
+<div class="container-narrowest">
+<div class="section" id="compact-identifiers-curies">
+<h1>Compact Identifiers (CURIEs)</h1>
+<pre class="literal-block">
+<strong>Examples</strong>                         <strong>PDB</strong>:2gc4
+                               <strong>Taxon</strong>:9606
+                                 <strong>DOI</strong>:10.5281/ZENODO.1289856
+                                 <strong>ark</strong>:/47881/m6g15z54
+                                <strong>IGSN</strong>:SSH000SUA
+
+<strong>General format</strong>                <em>Prefix</em>:<em>LocalId</em>
+
+<strong>Registry links</strong>      -&gt; <a class="reference external" href="/e/n2t_full_prefixes.yaml">full set of N2T prefix records</a>
+                    -&gt; <a class="reference external" href="/e/cdl_ebi_prefixes.yaml">joint N2T/Identifiers.org prefix list</a>
+                    -&gt; <a class="reference external" href="https://registry.identifiers.org/prefixregistrationrequest">request to add a prefix to the list</a>
+<strong>Early adoption</strong>      -&gt; Nature Scientic Data: <a class="reference external" href="https://doi.org/10.1038/sdata.2018.95">On the road to robust data citation</a>
+<strong>Formal support</strong>      -&gt; <a class="reference external" href="https://n2t.net/ark:/13030/c7bn9x29q">Memorandum of Understanding Between CDL and EMBL-EBI</a>
+</pre>
+</div>
+<div class="section" id="how-they-work">
+<h1>How they work</h1>
+<p>N2T.net is a kind of URL shortener for persistent identifiers. The above
+<em>compact identifiers</em>, also known as CURIEs (Compact URIs).
+They become actionable when appended to a URL based at N2T.net:</p>
+<pre class="literal-block">
+https://n2t.net/PDB:2gc4
+https://n2t.net/Taxon:9606
+https://n2t.net/DOI:10.5281/ZENODO.1289856
+https://n2t.net/ark:/47881/m6g15z54
+https://n2t.net/IGSN:SSH000SUA
+</pre>
+<p>Besides storing and resolving individual identifiers, N2T.net also stores
+resolution rules for entire classes, based on the prefixes. Failing to find
+a match after looking up an individual identifier, N2T looks for a rule
+associated with the identifier's prefix. Rules for the above identifiers
+result in the following redirects, respectively:</p>
+<pre class="literal-block">
+&gt; http://www.rcsb.org/pdb/explore/explore.do?structureId=2gc4
+&gt; http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606
+&gt; https://zenodo.org/record/1289856
+&gt; http://bibnum.univ-lyon1.fr/nuxeo/nxfile/default/49e1576c-0cae-4b4b-a63b-73370f476681/blobholder:0/THm_2014_NGUYEN_Marie_France.pdf
+&gt; https://app.geosamples.org/sample/igsn/SSH000SUA
+</pre>
+<p>There is a formal agreement between Identifiers.org and N2T.net to serve a
+common set of prefixes. You can read more about this effort and our plans to
+reach out to publishers to encourage adoption of inline citation of compact
+identifiers in <a class="reference external" href="https://doi.org/10.1038/sdata.2018.95">Uniform Resolution of Compact Identifiers for Biomedical
+Data</a>.</p>
+
+</div>
+</div>
+</div>
+</div>
+<!--#include virtual="/e/footer.html" -->
+</body>
+</html>

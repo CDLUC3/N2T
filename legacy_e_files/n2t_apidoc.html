@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--#include virtual="/e/prelim.html" -->
+  <title>N2T API and UI</title>
+</head>
+<body>
+<div class="content">
+<!--#include virtual="/e/header.html" -->
+<!--#include virtual="breadcrumb_n2t_apidoc.html" -->
+<div class="container-narrowest">
+<div class="section" id="the-n2t-api-and-ui">
+<h1>The N2T API and UI</h1>
+<div class="section" id="user-interface-overview">
+<h2>User interface overview</h2>
+<p>The Name-to-Thing (N2T.net) service provides public resolution of identifiers –
+ARKs, DOIs, etc.  Identifiers used by the public look like an acronym, a colon,
+and a string (eg, ark:/12345/fk1234), all appended to a URL based at n2t.net,
+for example,</p>
+<blockquote>
+<p><a class="reference external" href="https://n2t.net/ark:/12345/fk1234">https://n2t.net/ark:/12345/fk1234</a></p>
+<p><a class="reference external" href="http://n2t.net/doi:10.12345/FK4321">http://n2t.net/doi:10.12345/FK4321</a></p>
+</blockquote>
+<p>When an identifier is presented to N2T for resolution, the web server is
+configured to do a database lookup and ask that the target URL bound with the
+identifier be returned in the form of an HTTP redirect.</p>
+<p>The target value (a URL) is a metadata value stored in a reserved element name,
+<tt class="docutils literal">_t</tt>, and it is considered to be <em>bound under</em> its identifier. Arbitrary
+name/value pairs may be bound under an identifier. Other metadata elements
+support <a class="reference external" href="https://arks.org/about/ark-features/">inflections</a> and content negotiation.</p>
+<p>On resolution if a target URL is found, the server redirects the client to it.
+Failing to find a bound identifier, the N2T.net resolver then looks for a
+redirection rule associated with the identifier. It does so by inspecting its
+hierarchical ancestors, namely, shorter strings formed by successively chopping
+from the end. For example,</p>
+<pre class="literal-block">
+ark:/12345/fk1234        # original identifier string
+ark:/12345/fk1           # &quot;shoulder&quot;
+ark:/12345               # NAAN (Name Assigning Authority Number)
+ark:                     # &quot;scheme&quot; (identifier class, aka, prefix)
+</pre>
+<p>While N2T is mostly used to redirect identifiers to objects at external web
+addresses, it can also directly return internal N2T information on certain
+truncated identifier forms. For example (and these are subject to change),</p>
+<pre class="literal-block">
+ark:/99999               # records for ARK NAAN 99999 and its shoulders
+doi:10.5072              # records for DOI Prefix 10.5072 and its shoulders
+pdb:                     # records for scheme PDB and its providers
+*/pdb:2gc4               # all provider redirection targets for pdb:2gc4
+</pre>
+<p>That briefly describes the minimal UI (user interface) that N2T.net has.
+More about how N2T uses identifiers can be found in <a class="reference external" href="https://arks.org/about/identifier-concepts-and-conventions/">Identifier Conventions</a>.</p>
+</div>
+<div class="section" id="branded-vs-opaque-identifier-strings">
+<h2>Branded vs opaque identifier strings</h2>
+<p>Opaque identifier strings, which reveal little about the objects they identify
+or their origins, are generally considered good choices for persistent
+identifiers because they age and travel well. Often, however, organizations
+feel pressure to include branding in their strings to aid with visibility,
+promotion, and funding. If your ARKs are stored in N2T (eg, by the EZID
+service), how best to accommodate these seemingly conflictual aims of
+identifier and organizational sustainability?</p>
+<p>The approach advocated by N2T is for your organization to set up a very small
+web server under its own specially branded hostname that appears to users like
+a local resolver but that actually works by simply forwarding incoming ARK
+requests to N2T for resolution. In the explanation that follows we assume
+hypothetically that your organization, the Acme Archeology Board (AAB), has the
+domain name aab.org and an identifier ark:/12345/6789. The usual way of
+publishing that ARK would be (unbranded)</p>
+<blockquote>
+<a class="reference external" href="https://n2t.net/ark:/12345/6789">https://n2t.net/ark:/12345/6789</a></blockquote>
+<p>For a branded ARK, we recommend instead publishing it as,</p>
+<blockquote>
+<a class="reference external" href="https://n2t.aab.org/ark:/12345/6789">https://n2t.aab.org/ark:/12345/6789</a></blockquote>
+<p>The special dual-branded (AAB and N2T) hostname, n2t.aab.org, is where the
+small forwarding web server resides. There is a one-time set up step described
+below. Should the aab.org domain ever lapse, the published identifier will no
+longer resolve &quot;as is&quot;, but since the N2T brand is also present, it provides
+a social hint to future recipients that the well-known n2t.net resolver might
+still be able to resolve the part of the identifier after the hostname.</p>
+<p>There are other ways to do it, but the forwarding server is usually implemented
+as a &quot;virtual host&quot; on a server that may already exist for another reason (eg,
+it's a load balancer). Follow normal procedures for setting up a virtual host
+that works with both http and https, such as creating the new DNS name and its
+TLS/SSL certificate, and then add forwarding instructions. In an Apache server
+configuration, for example, that could be just this one line:</p>
+<pre class="literal-block">
+Redirect permanent / https://n2t.net/
+</pre>
+<p>You may need separate virtual hosts for http and https.</p>
+</div>
+<div class="section" id="this-document">
+<h2>This document</h2>
+<p>The API (application programming interface) is used to create and maintain
+identifiers and metadata. The API, the main subject of this document, supports</p>
+<ul class="simple">
+<li>minting – generating randomized strings that can be used in creating
+identifiers, and</li>
+<li>binding – associating metadata name/value pairs with identifier strings
+meant to be published as URLs.</li>
+</ul>
+<p>Under the hood, N2T.net uses the <a class="reference external" href="https://github.com/jkunze/n2t-eggnog">EggNog software</a>, with egg binders and
+nog (nice opaque generator) minters behind an Apache HTTP server.
+Minting and binding require HTTP Basic authentication over SSL.  The base
+<a class="reference external" href="https://n2t-stg.n2t.net/">test server</a> URL for operating the API is <a class="reference external" href="https://n2t-stg.n2t.net">https://n2t-stg.n2t.net</a>,
+abbreviated as $b below.  You would need an N2T user name (known as a
+<em>populator</em>, <tt class="docutils literal">sam</tt> below) and a password (<tt class="docutils literal">xyzzy</tt>, not a real password).
+(Due to current resource constraints, we can only add new N2T users in
+exchange for benefit to the <a class="reference external" href="https://arks.org">ARK Alliance</a> effort, for example,
+contributions of staff time for technical or promotional work;
+<a class="reference external" href="https://docs.google.com/forms/d/1ylEeI3hUVHcLl-wNtDI7-F7JReBtVbgx65y9Uiy78q8">please let us know</a> if you are interested.)</p>
+<p>The following shell definitions are used to shorten examples in this
+document.</p>
+<pre class="literal-block">
+b=https://n2t-stg.n2t.net
+alias wg='wget -q -O - --no-check-certificate --user=sam --password=xyzzy'
+</pre>
+<p>For example, with proper credentials this shell command displays more API
+functionality (for the egg part of Eggnog) than is described here.</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/b?help readme&quot;
+</pre>
+<p>Yes, there's a space inside that URL, which you may hex encode if you prefer.</p>
+</div>
+<div class="section" id="minting">
+<h2>Minting</h2>
+<p>Minting is optional, and is generally used if you wish to generate
+randomized strings when you don't already have specific identifier
+strings in mind. N2T minters are set up in advance (not using the API)
+and are exclusively associated with particular N2T credentials. To
+avoid common confusion with identifiers, identifier strings, and minter
+output, the randomized strings that minters generate are called <em>spings</em>.</p>
+<p>A <em>sping</em> (semi-opaque string) is meant to be used as all or part of an
+identifier string. We do not consider an identifier to be created until its
+association with something is publicized widely enough to be difficult to
+withdraw.</p>
+<p>Minters are useful to generate names at different levels in a hierarchical
+namespace. To help with this, each minter has a <em>shoulder</em>, usually a short
+string, such as <tt class="docutils literal">fk4</tt>, that extends an identifier base, such as <tt class="docutils literal">99999</tt>
+(see <a class="reference external" href="https://arks.org/about/identifier-concepts-and-conventions/">Identifier Conventions</a> for details). The examples
+that follow all use test spings beginning with 99999/fk4, as that designates a
+test shoulder shared across all N2T credentials.</p>
+<p>Anyone with a password can liberally mint <em>spings</em> from the test shoulder and
+use them to create test identifiers. Test identifiers behave the same as real
+identifiers except that you must not count on them to persist. For example, the
+EZID populator of N2T actively expires its test identifiers a few weeks after
+their creation. To mint a test sping, do</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/m/ark/99999/fk4?mint 1&quot;
+</pre>
+<p>which returns something like</p>
+<pre class="literal-block">
+s: 99999/fk4f30n
+</pre>
+<p>Note that most <em>spings</em> are auto-expanding in the sense that, as you keep
+minting, at the moment the unique spings of a given length run out, the
+next run of spings will be longer by 3 characters (at each next expansion
+time). Auto-expansion allows you to enjoy shorter spings to start with
+while not having to worry about running out of unique spings. So in
+general it is best not to rely on spings being of a fixed length.</p>
+<p>Typically, N2T API minting calls look like</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/m/&lt;Minter&gt;?mint &lt;Number&gt;&quot;
+</pre>
+<p>where Number is a positive integer.</p>
+</div>
+<div class="section" id="binding">
+<h2>Binding</h2>
+<p>N2T users have one or more binders (databases) for their exclusive use.
+Roughly, an identifier is created when you bind a string (whether a
+minted sping or not) to a thing. Underneath a given identifier string,
+you can bind any element, such as the redirection target URL (<tt class="docutils literal">_t</tt>).</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/b?ark:/99999/fk4f30n.set _t https://archive.org/details/AllAboutBooks&quot;
+</pre>
+<p>The identifier comes into being when the first element is bound under it.
+To verify what you just bound, you can fetch all current bindings or a
+specific binding.</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/b?ark:/99999/fk4f30n.fetch _t&quot;
+</pre>
+<p>You can change an element at any time using another <tt class="docutils literal">set</tt> command with a
+different value. Again, the identifier string you bind to doesn't have to
+have been created using an N2T minter; you may bind any identifier string
+of your choice. Also, you may bind any number of elements, of any name
+you choose, under any identifier.</p>
+</div>
+<div class="section" id="id1">
+<h2>Suffix Passthrough</h2>
+<p>In a special case, if a thing you identify has lots of sub-things at a web
+server under your control, you may want to take advantage of N2T.net's
+&quot;suffix passthrough&quot; feature. This allows you to bind one identifier to
+the top-level thing and advertise sub-thing (descendant) identifiers by adding
+a suffix to (thus lengthening) the original identifier.</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/b?ark:/99999/fk4f30n.set _t http://example.org/d?suffix=&quot;
+</pre>
+<p>For the above target, the following identifier resolutions would occur:</p>
+<pre class="literal-block">
+ark:/99999/fk4f30n             -&gt; http://example.org/d?suffix=
+ark:/99999/fk4f30n/doc1        -&gt; http://example.org/d?suffix=doc1
+ark:/99999/fk4f30n/doc999      -&gt; http://example.org/d?suffix=doc999
+ark:/99999/fk4f30n/doc8/chap7  -&gt; http://example.org/d?suffix=doc8/chap7
+</pre>
+<p>There is also a separate explanation of <a class="reference external" href="/e/suffix_passthrough.html">suffix passthrough</a>.</p>
+<p>Typically, N2T API binder calls look like</p>
+<pre class="literal-block">
+wg &quot;$b/a/&lt;User&gt;/b?&lt;Modifier&gt; &lt;Identifier&gt;.&lt;Operation&gt; &lt;Element&gt; &lt;Value&gt;&quot;
+</pre>
+<p>where Operation may be <tt class="docutils literal">set</tt>, <tt class="docutils literal">add</tt>, <tt class="docutils literal">rm</tt>, <tt class="docutils literal">purge</tt>, <tt class="docutils literal">exists</tt>, etc, and
+Modifier, Element, and Value are conditionally present (see below).
+The API closely resembles Eggnog's CLI (command line interface).</p>
+</div>
+<div class="section" id="prefix-extension">
+<h2>Prefix extension</h2>
+<p>N2T supports a &quot;prefix extension&quot; feature that permits developers to extend
+a scheme or an ARK NAAN (both of which &quot;prefix&quot; an identifier) with <tt class="docutils literal"><span class="pre">-dev</span></tt> in
+order to forward to an alternate destination. For example, if the NAAN
+<tt class="docutils literal">12345</tt> forwards to domain <tt class="docutils literal">a.b.org</tt>, then <tt class="docutils literal"><span class="pre">ark:/12345-dev/678</span></tt> forwards
+to <tt class="docutils literal"><span class="pre">a-dev.b.org/678</span></tt>.</p>
+<p>It works similarly for schemes, for example, if scheme
+<tt class="docutils literal">xyzzy</tt> forwards to <tt class="docutils literal"><span class="pre">a.b.org/$id</span></tt>, then <tt class="docutils literal"><span class="pre">xyzzy-dev:foo</span></tt> forwards to
+<tt class="docutils literal"><span class="pre">a-dev.b.org/foo</span></tt>. Just for NAANs, the <tt class="docutils literal"><span class="pre">-dev</span></tt> part can actually be a hyphen
+(<tt class="docutils literal">-</tt>) followed by any string that works in a hostname.</p>
+</div>
+<div class="section" id="deleting">
+<h2>Deleting</h2>
+<p>To delete an element entirely, use <tt class="docutils literal">rm</tt>. To delete all elements under an
+identifier -- which is how to delete the identifier itself -- use <tt class="docutils literal">purge</tt>.</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/b?ark:/99999/fk4f30n.rm _t&quot;
+wg &quot;$b/a/sam/b?ark:/99999/fk4f30n.purge&quot;
+</pre>
+<p>You can also check if an identifier exists.</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/b?ark:/99999/fk4f30n.exists&quot;
+</pre>
+</div>
+<div class="section" id="special-characters">
+<h2>Special characters</h2>
+<p>Some characters you may want to include are significant to the command
+syntax, and there are a couple ways to deal with them. One way is to hex
+encode them as &quot;^hh&quot; and insert a <tt class="docutils literal">:hx</tt> modifier in front of the whole
+command. For example, this command allows a newline to be used in the
+identifier (a contrived example, since newlines are not allowed in ARK
+identifiers) and the value:</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/b?:hx ark:/99999/fk4^0af30n.set _.eTm. http://example.com/content-negotiate/99999/fk4^0af30n&quot;
+</pre>
+<p>Strings representing the identifier <em>i</em>, an element name <em>n</em>, and a data value
+<em>d</em> must be less than 4GB in length and must not start with a literal ':', '&amp;',
+or '&#64;' unless it is encoded. Other literals that must be encoded are any of the
+characters in &quot;|;()[]=:&quot; anywhere in the strings <em>i</em> and <em>n</em>, and any '&lt;' at
+the start of <em>i</em>.</p>
+<p>The <tt class="docutils literal">set</tt> command takes two arguments, so names or values that contain
+spaces should be quoted. Normal shell-like quoting conventions work
+(single or double quotes, plus backslash), so 'a b&quot; c' would specify the
+value: a b&quot; c.</p>
+</div>
+<div class="section" id="bulk-operations">
+<h2>Bulk operations</h2>
+<p>You can submit lots of commands as a batch inside the HTTP Request body.
+N2T looks for a batch of commands when the query string consists of just
+&quot;-&quot; (a hyphen). For example, this command sets descriptive metadata along
+with a target URL.</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/b?-&quot; --post-data='
+ ark:/13960/t6m042969.set _t http://www.archive.org/details/wonderfulwizardo00baumiala
+ ark:/13960/t6m042969.set how (:mtype text)
+ ark:/13960/t6m042969.set who &quot;Baum, L. Frank (Lyman Frank), 1856-1919; Denslow, W. W. (William Wallace), 1856-1915&quot;
+ ark:/13960/t6m042969.set what &quot;The wonderful wizard of Oz&quot;
+ ark:/13960/t6m042969.set when &quot;1900, c1899&quot;
+'
+</pre>
+<p>Great efficiency is possible. For example, if a file named &quot;ids-to-purge&quot;
+contains 9 million identifiers, one per line, the following server-side
+shell script (which has a similar client-side equivalent) would purge them
+in batches of 5000 at a time.</p>
+<pre class="literal-block">
+#!/bin/env bash
+
+binder=~/sv/cur/apache2/binders/ezid
+batchsize=5000
+bigbatch=ids-to-purge
+linestotal=$( wc -l &lt; ids-to-purge )
+
+split --lines=$batchsize $bigbatch batch
+date &gt; pout
+
+n=0
+for f in batch??
+do
+    sed 's/$/.purge/' $f | egg -d $binder - &gt;&gt; pout
+    (( n+=$batchsize ))
+    (( percent=(( $n * 100 ) / $linestotal ) ))
+    echo Processed batch $f, progress $percent%
+    sleep 2      # pause, releasing DB lock so others can use it too
+done
+</pre>
+</div>
+<div class="section" id="identifier-metadata">
+<h2>Identifier metadata</h2>
+<p>Resolution does not require metadata other than target URLs, however, to be
+considered in good standing, ARKs and some other identifiers require a minimum
+set of descriptive elements. In order to achieve that standing, the four
+elements above (who, what, when, how) are <strong>required</strong> to support <em>basic
+metadata resolution</em>, which is done via inflections and content negotiation.
+Definitions of both required and optional elements follow.</p>
+<table border="1" class="leftheaders docutils">
+<colgroup>
+<col width="27%" />
+<col width="10%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Element Name</th>
+<th class="head">Required</th>
+<th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>who</td>
+<td>yes</td>
+<td>a responsible person or party</td>
+</tr>
+<tr><td>what</td>
+<td>yes</td>
+<td>a name or other human-oriented identifier</td>
+</tr>
+<tr><td>when</td>
+<td>yes</td>
+<td>a date important in the object's lifecycle</td>
+</tr>
+<tr><td>where</td>
+<td>yes</td>
+<td>a machine-oriented identifier; NB: <em>no need to</em>
+<em>supply, as it is implied by the identifier</em>
+<em>string itself and any target information</em></td>
+</tr>
+<tr><td>how</td>
+<td>yes</td>
+<td>a <em>metatype</em> constructed from the following
+base terms (described below)
+<tt class="docutils literal">: text, image, audio, video, data, code, term,
+service, agent, human, project, event, oba</tt>;
+optionally followed by a human-readable object
+(resource) type</td>
+</tr>
+<tr><td>_t</td>
+<td>yes</td>
+<td>a target URL for redirecting content requests
+(a well-formed URL is recommended but not
+required); if the URL is preceded by an integer
+and a space, the integer is used as a redirect
+code</td>
+</tr>
+<tr><td>_,eTm,<em>contype</em></td>
+<td>no</td>
+<td>(optional) a target URL for redirecting metadata
+requests for a given ContentType contype</td>
+</tr>
+<tr><td>_,eTi,<em>inflection</em></td>
+<td>no</td>
+<td>(optional) a target URL for redirecting
+inflection requests for a given inflection</td>
+</tr>
+<tr><td>language</td>
+<td>no</td>
+<td>(optional) a language used in the content</td>
+</tr>
+<tr><td>peek</td>
+<td>no</td>
+<td>(optional) a glimpse of the content as a
+thumbnail, clip, or abstract; for non-text
+values, use (:<a class="reference external" href="https://n2t.net/ark:/99152/h3889">at</a>) <em>URL_to_non-text_value</em></td>
+</tr>
+<tr><td>size</td>
+<td>no</td>
+<td>(optional) one or more &quot;;&quot;-separated quantities,
+which may be human- or machine-readable</td>
+</tr>
+</tbody>
+</table>
+<p>If you cannot enter an actual value for a <strong>required element</strong>, enter one
+of these special reserved flavors for &quot;missing value&quot;.</p>
+<table border="1" class="leftheaders docutils">
+<colgroup>
+<col width="12%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Literal</th>
+<th class="head">Definitions for missing values</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3878">unac</a>)</td>
+<td>temporarily inaccessible</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3880">unal</a>)</td>
+<td>unallowed, suppressed intentionally</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3881">unap</a>)</td>
+<td>not applicable, makes no sense</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3882">unas</a>)</td>
+<td>value unassigned (e.g., Untitled)</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3883">unav</a>)</td>
+<td>value unavailable, possibly unknown</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3884">unkn</a>)</td>
+<td>known to be unknown (e.g., Anonymous, Inconnue)</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3885">none</a>)</td>
+<td>never had a value, never will</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3886">null</a>)</td>
+<td>explicitly and meaningfully empty</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3887">etal</a>)</td>
+<td>other values too numerous to list</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3888">tba</a>)</td>
+<td>to be assigned or announced later</td>
+</tr>
+<tr><td>(:<a class="reference external" href="https://n2t.net/ark:/99152/h3889">at</a>)</td>
+<td>present value is an indirect reference to the real value</td>
+</tr>
+</tbody>
+</table>
+<p>You may optionally follow a reserved value with free text meant for human
+interpretation. For example,</p>
+<pre class="literal-block">
+who: (:unkn) Anonymous
+what: (:tba) Work in progress
+</pre>
+</div>
+<div class="section" id="metatypes">
+<h2>Metatypes</h2>
+<p>A &quot;resource type&quot; tells people that the identified object (resource) is of
+a certain kind. Often assigning the correct type requires deep subject
+expertise that people who manage and curate metadata do not have. Even if
+they had it, they often lack direct access (eg, to physical objects, to the
+means of production, or to the context of discovery), hence the ability to
+study and make a proper assignment. Consequently, the resource type is often
+wrong and cannot be fixed by collection curators.</p>
+<p>This is where the concept of the <a class="reference external" href="https://n2t.net/ark:/99152/h3865">metatype</a> comes in. The resource type, such
+as it is, traditionally plays a secondary role in setting expectataions about
+which metadata elements should be present. For example, if a resource is a
+&quot;book&quot;, we expect it to have an author, title, and publisher, but we don't
+expect those elements for a &quot;rock&quot;, which instead might have a collector,
+composition, and hardness. Note that only disciplinary experts are qualified
+to assign and review resource types, but they're seldom trained in metadata.
+Similarly, metadata managers usually lack object access or disciplinary
+expertise to review resource type assignments (eg, tissue sample vs
+specimen? map vs image vs pdf?). The flaw in the traditional approach is
+that resource types are inherently poor indicators of what metadata should
+be present.</p>
+<p>The <a class="reference external" href="https://n2t.net/ark:/99152/h3865">metatype</a> may look very much like a resource type, but differs from it
+in (a) being assigned by metadata experts who directly manage metadata and
+(b) requiring rather than suggesting things of the surrounding metadata.
+Thus when a metatype of &quot;book&quot; accompanies an object, which may or may not
+have an actual resource type of &quot;book&quot;, it was assigned by a metadata expert
+to authoritatively set expectations about the surrounding metadata. This
+relieves the resource type from the burden of having to describe both the
+object and its metadata.</p>
+<p>So a <a class="reference external" href="https://n2t.net/ark:/99152/h3865">metatype</a> (text, data, video, etc.) looks similar to a resource type,
+but instead of characterizing the object it gives a functional description
+of the surrounding metadata. A metatype assignment only reflects properties
+of the metadata and need not consider or match the resource type at all.
+Similarity between metatypes and resource types should be common but never
+required. A metataype of &quot;text&quot; asserts only that the surrounding metadata
+should include other elements that normally accompany text-like objects.
+This is <em>not</em> an assertion that the object itself is of type &quot;text&quot;. Exactly
+which elements are implied by a given metatype, along with core mappings to
+common metadata element sets, is defined along with the metatype term itself.
+Finally, metatypes also assert enough information to permit basic mapping
+(crosswalking) between metadata sets.</p>
+<p>The metatype and resource type both appear in the kernel element &quot;how&quot;, which
+permits machine-readable parts followed by optional human readable parts.
+For example,</p>
+<pre class="literal-block">
+how: (:mtype text) dissertation
+how: (:mtype data) financial spreadsheet
+how: (:mtype data+code set) time series analysis database
+how: (:mtype data+code) visualization and simulation
+how: (:mtype agent) fruit fly
+how: (:mtype agent set) orchestra
+</pre>
+<p>The machine-readable metatype must be preceded by <tt class="docutils literal">(:mtype</tt> and a space,
+and terminated by <tt class="docutils literal">)</tt>. The metatype itself may be composite, consisting of</p>
+<ol class="arabic simple">
+<li>a sequence of one or more <em>base</em> metatypes separated by &quot;+&quot;, and</li>
+<li>is optionally followed by `` set`` (a space and the word &quot;<a class="reference external" href="https://n2t.net/ark:/99152/h3866">set</a>&quot;) to
+indicate that the metadata describes a group, collection, or aggregation</li>
+</ol>
+<p class="leftheaders">The base metatypes are controlled values defined below.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Metatype</th>
+<th class="head">Typical corresponding resource type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3867">text</a></td>
+<td>words meant for reading, including scanned images of text</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3868">image</a></td>
+<td>visual information, other than text, made of still images</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3869">audio</a></td>
+<td>information rendered as sounds</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3870">video</a></td>
+<td>visual information made of moving images, often with sound</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3871">data</a></td>
+<td>structured information meant for study and analysis</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3872">code</a></td>
+<td>retrievable computer program in source or compiled form</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3873">term</a></td>
+<td>word or phrase</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3874">service</a></td>
+<td>destination or automaton with which interaction is possible</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3875">agent</a></td>
+<td>person, organization, or automaton that can act</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3876">human</a></td>
+<td>human being, as a specific kind of agent</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h3877">event</a></td>
+<td>non-persistent, time-based occurrence</td>
+</tr>
+<tr><td><a class="reference external" href="https://n2t.net/ark:/99152/h1193">oba</a></td>
+<td>other, or none of the above (from Tagolog)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="optional-descriptive-metadata">
+<h2>Optional descriptive metadata</h2>
+<p>To enable richer descriptions, supplement the required elements with any
+other named metadata elements that you wish to make publicly viewable,
+and don't worry if some of the values already appear among the required
+elements (eg, &quot;who&quot; and &quot;author&quot;, &quot;when&quot; and &quot;published&quot;). Note use of
+the &quot;add&quot; command to add an extra &quot;who&quot; element instead of the &quot;set&quot;
+command, which overwrites all pre-existing &quot;who&quot; elements.</p>
+<pre class="literal-block">
+wg &quot;$b/a/sam/b?-&quot; --post-data='
+ ark:/13960/t6m042969.set _t http://www.archive.org/details/wonderfulwizardo00baumiala
+ ark:/13960/t6m042969.set how text
+ ark:/13960/t6m042969.set who &quot;Baum, L. Frank (Lyman Frank), 1856-1919&quot;
+ ark:/13960/t6m042969.add who &quot;Denslow, W. W. (William Wallace), 1856-1915&quot;
+ ark:/13960/t6m042969.set what &quot;The wonderful wizard of Oz&quot;
+ ark:/13960/t6m042969.set when &quot;1900, c1899&quot;
+ ark:/13960/t6m042969.set language English
+ ark:/13960/t6m042969.set peek &quot;(:at) https://archive.org/services/img/wonderfulwizardo00baumiala&quot;
+ ark:/13960/t6m042969.set author &quot;Baum, L. Frank (Lyman Frank), 1856-1919; Denslow, W. W. (William Wallace), 1856-1915&quot;
+ ark:/13960/t6m042969.set title &quot;The wonderful wizard of Oz&quot;
+ ark:/13960/t6m042969.set published &quot;1900, c1899&quot;
+ ark:/13960/t6m042969.set topics &quot;Adventure and adventurers | Wizards&quot;
+ ark:/13960/t6m042969.set pages 216
+ ark:/13960/t6m042969.set &quot;possible copyright status&quot; NOT_IN_COPYRIGHT
+'
+</pre>
+</div>
+<div class="section" id="users-and-api-paths">
+<h2>Users and API paths</h2>
+<p>A <em>populator</em> is an N2T user (eg, &quot;ezid&quot;). Each populator has its own
+password and a set of binders and minters for its exclusive use.
+Components for the API are all laid out under n2t.net/a/... as follows,
+in this case, for the &quot;ezid&quot; populator/user:</p>
+<pre class="literal-block">
+n2t.net/a/ezid/b                 # main ezid binder
+n2t.net/a/ezid_test/b            # test ezid binder
+n2t.net/a/ezid/m/ark/99999/fk4   # to mint spings for fake/test ARKs
+n2t.net/a/ezid/m/ark/b5072/fk2   # to mint spings for fake/test DOIs
+n2t.net/a/ezid/m/ark/.../...     # all other ezid minters
+</pre>
+<p>You can try these paths in the browser (requiring authentication). For
+the base path, some helpful information is printed. See, for example, the
+information printed for both of these URLs:</p>
+<pre class="literal-block">
+https://n2t-stg.n2t.net/a/ezid/b
+https://n2t-stg.n2t.net/a/ezid/b?help%20readme
+</pre>
+</div>
+<div class="section" id="resolution">
+<h2>Resolution</h2>
+<p>N2T resolution requires a fully qualified identifier, which essentially means that the identifier that is stored, such as,</p>
+<blockquote>
+ark:/12345/fk3</blockquote>
+<p>is in the same form as what is presented to n2t.net:</p>
+<blockquote>
+https://n2t.net/ark:/12345/fk3</blockquote>
+<p>More generally, the form follows n2t.net/<em>scheme:[/]naan/string</em>.</p>
+<p><em>Last modified:</em> 2021-05-16</p>
+
+</div>
+</div>
+</div>
+</div>
+<!--#include virtual="/e/footer.html" -->
+</body>
+</html>
