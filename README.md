@@ -200,6 +200,65 @@ $ n2t info
 
 ## Local Development
 
+Clone the repository:
+
+```
+git clone https://github.com/CDLUC3/N2T.git
+cd N2T
+```
+
+Initialize a virtual environment:
+
+```
+uv venv .venv
+```
+
+Install the dependencies (includes the dev group dependencies):
+
+```
+uv sync
+```
+
+Create a data folder and generate the resolver database:
+
+```
+mkdir data
+uv run n2t -c dev-config.env loaddb
+```
+
+Run the local server:
+
+```
+uv run n2t -c dev-config.env serve
+```
+
+**Hint:** Running `source .venv/bin/activate` will load the virtual environment to the current shell, so you can run the `n2t` commands without `uv run`, e.g.:
+
+```
+source .venv/bin/activate
+n2t --help
+Usage: n2t [OPTIONS] COMMAND [ARGS]...
+
+  Management commands for N2T.
+
+  This script is used for initializing the JSON representation of scheme
+  records from the original YAML and creating or updating the sqlite store
+  used by the resolver application.
+
+Options:
+  -c, --config FILE
+  --help             Show this message and exit.
+
+Commands:
+  info       Print application version and basic status.
+  loaddb     Load or update the scheme database.
+  serve
+  yaml2json  Generate or update JSON record from YAML source.
+```
+
+The virtual environment can be unloaded with `deactivate`
+
+
 ### Nginx Unit on OS X (silicon)
 
 ```
