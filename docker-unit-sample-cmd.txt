@@ -1,0 +1,99 @@
+# start a docker container, run the n2t app in it with Uvicorn
+docker run -p 8000:8000 n2t-docker uvicorn n2t.app:app --host 0.0.0.0 --port 8000
+
+
+# start a docker container with unit config loaded
+docker run -d   \
+    --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
+    -p 18880:18880 n2t-docker
+
+# start the container in interactive terminal mode and open a shell - for debugging
+docker run --rm -it  \
+    --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
+    -p 18880:18880 n2t-docker sh
+
+# config unit logs - Not working
+# log settings in unit config:
+    "access_log": "/var/log/unit/access.log",
+    "log": "/var/log/unit/error.log"
+# with log mapping at runtime
+# or you can create log path in Dockerfile as
+# RUN mkdir -p /var/log/unit \
+#    && chown -R unit:unit /var/log/unit
+docker run -d    \
+    --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
+    --mount type=bind,src="$(pwd)/_local/log",dst=/var/log/unit  \
+    -p 18880:18880 n2t-docker     
+
+
+# config & map unit at runtime
+    docker run -d   \
+    --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
+    --mount type=bind,src="$(pwd)/_local/log",dst=/var/log/unit  \
+    --mount type=bind,src="$(pwd)/state",dst=/var/lib/unit    \
+    --mount type=bind,src="$(pwd)/n2t",dst=/n2t    \
+    -p 18880:18880 n2t-docker  
+
+
+    docker run -d    \
+    --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
+    --mount type=bind,src="$(pwd)/_local/log",dst=/var/log/unit  \
+    --mount type=bind,src="$(pwd)/n2t",dst=/n2t                     \
+    -p 18880:18880 n2t-docker 
+
+
+You can also configure the unit in the Dockerfile
+COPY unit_conf.json /docker-entrypoint.d/config.json
+
+In this case, you need to start unit and load the config file when starting the container.
+Define these steps in `start_unit.sh`, and include the following command in Dockerfile.
+
+CMD ["/start_unit.sh"]
+
+Then start the container in background (detach mode):
+docker run -d -p 18880:18880 n2t-docker
+
+docker run -p 18880:18880 n2t-docker
+
+#### For debugging
+# Run the container interactively with a shell instead of your app
+# You can inspect the container's file system.
+docker run --rm -it <docker_image_name> sh
+
+# ls -l /n2t
+total 116
+drwxr-xr-x 1 root root  4096 Aug  8 00:09 data
+-rw-r--r-- 1 root root   239 Aug  7 00:18 dev-config.env
+drwxr-xr-x 5 root root  4096 Aug  1 19:23 n2t
+-rw-r--r-- 1 root root   949 Aug  1 19:03 pyproject.toml
+-rw-r--r-- 1 root root  2635 Aug  1 19:03 requirements.txt
+drwxr-xr-x 2 root root 94208 Aug  1 19:03 schemes
+
+
+# ls -l /var/log
+total 200
+-rw-r--r-- 1 root root  10952 Jul 23 21:40 alternatives.log
+drwxr-xr-x 1 root root   4096 Jul 24 08:23 apt
+-rw-rw---- 1 root utmp      0 Jul 21 00:00 btmp
+-rw-r--r-- 1 root root 183992 Jul 24 08:23 dpkg.log
+-rw-r--r-- 1 root root      0 Jul 21 00:00 faillog
+-rw-r--r-- 1 root root    605 Jul 23 21:40 fontconfig.log
+-rw-rw-r-- 1 root utmp      0 Jul 21 00:00 lastlog
+lrwxrwxrwx 1 root root     11 Jul 24 08:23 unit.log -> /dev/stderr
+-rw-rw-r-- 1 root utmp      0 Jul 21 00:00 wtmp
+
+# Run an interactive shell (sh) inside a running container  
+docker exec -it <container_name or container_ID> sh
+
+# get unit config inside the container
+curl -X GET --unix-socket /var/run/control.unit.sock http://localhost/config
+
+# setup unit config inside the container
+curl -X PUT \
+     --data-binary @/docker-entrypoint.d/config.json \
+     --unix-socket /var/run/control.unit.sock \
+     http://localhost/config
+
+
+
+
