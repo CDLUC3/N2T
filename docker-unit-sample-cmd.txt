@@ -95,5 +95,22 @@ curl -X PUT \
      http://localhost/config
 
 
+# build and push docker image to AWS
+# Docker image is built as linux/arm64 by default on Mac
+# as AWS ECS Fargate defaults to running on linux/amd64
+# a linux/amd64 image is needed
+
+# Option 1: Build and push for amd64
+docker buildx build
+--platform linux/amd64
+-t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest
+--push .
+
+# Option 2: Build and push multi-arch image amd64 & arm64
+# both arm64 and amd64 will be in the same tag
+docker buildx build
+--platform linux/amd64,linux/arm64
+-t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest
+--push .
 
 
