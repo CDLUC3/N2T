@@ -32,6 +32,10 @@
         }
       }
     ]
+  },
+  "access_log": {
+    "path": "/var/log/unit_access.log",
+    "format": "$remote_addr \"$header_x_forwarded_for\" [$time_local] \"$request_line\" $status $body_bytes_sent \"$header_referer\" \"$header_user_agent\""
   }
 }
 

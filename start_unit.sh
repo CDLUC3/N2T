@@ -5,7 +5,7 @@ echo "Starting Unit in background..."
 unitd --no-daemon --control unix:/var/run/control.unit.sock &
 UNIT_PID=$!
 
-echo "Waiting for NGIX Unit to be read ..."
+echo "Waiting for NGIX Unit to be ready..."
 until curl --unix-socket /var/run/control.unit.sock http://localhost/status 2>/dev/null; do
     sleep 0.5
 done

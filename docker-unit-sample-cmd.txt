@@ -1,59 +1,41 @@
+# build docker image
+docker build -t n2t-docker .
+
 # start a docker container, run the n2t app in it with Uvicorn
 docker run -p 8000:8000 n2t-docker uvicorn n2t.app:app --host 0.0.0.0 --port 8000
 
-
 # start a docker container with unit config loaded
+# if loading config is not built in the docker image
 docker run -d   \
     --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
     -p 18880:18880 n2t-docker
 
-# start the container in interactive terminal mode and open a shell - for debugging
-docker run --rm -it  \
-    --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
-    -p 18880:18880 n2t-docker sh
-
-# config unit logs - Not working
-# log settings in unit config:
-    "access_log": "/var/log/unit/access.log",
-    "log": "/var/log/unit/error.log"
-# with log mapping at runtime
-# or you can create log path in Dockerfile as
-# RUN mkdir -p /var/log/unit \
-#    && chown -R unit:unit /var/log/unit
+# mapping unit log at runtime
+# default unit log 'unit.log' is stored in /var/log
+# define access log in unit config:
+    "access_log": "/var/log/unit_access.log",
 docker run -d    \
     --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
-    --mount type=bind,src="$(pwd)/_local/log",dst=/var/log/unit  \
-    -p 18880:18880 n2t-docker     
+    --mount type=bind,src="$(pwd)/_local/log",dst=/var/log  \
+    -p 18880:18880 n2t-docker    
 
 
-# config & map unit at runtime
+# other mapping entries
     docker run -d   \
     --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
-    --mount type=bind,src="$(pwd)/_local/log",dst=/var/log/unit  \
+    --mount type=bind,src="$(pwd)/_local/log",dst=/var/log  \
     --mount type=bind,src="$(pwd)/state",dst=/var/lib/unit    \
     --mount type=bind,src="$(pwd)/n2t",dst=/n2t    \
     -p 18880:18880 n2t-docker  
 
-
-    docker run -d    \
-    --mount type=bind,src="$(pwd)/unit_conf.json",dst=/docker-entrypoint.d/conf.json   \
-    --mount type=bind,src="$(pwd)/_local/log",dst=/var/log/unit  \
-    --mount type=bind,src="$(pwd)/n2t",dst=/n2t                     \
-    -p 18880:18880 n2t-docker 
-
-
-You can also configure the unit in the Dockerfile
-COPY unit_conf.json /docker-entrypoint.d/config.json
-
-In this case, you need to start unit and load the config file when starting the container.
-Define these steps in `start_unit.sh`, and include the following command in Dockerfile.
-
-CMD ["/start_unit.sh"]
-
-Then start the container in background (detach mode):
+# when loading unit config is built in the image, simply start a container
+# in detach mode
 docker run -d -p 18880:18880 n2t-docker
 
 docker run -p 18880:18880 n2t-docker
+
+# start a container in interactive terminal mode and open a shell - for debugging
+docker run --rm -it -p 18880:18880 n2t-docker sh
 
 #### For debugging
 # Run the container interactively with a shell instead of your app
@@ -95,22 +77,33 @@ curl -X PUT \
      http://localhost/config
 
 
-# build and push docker image to AWS
+# Build and push docker image to AWS
 # Docker image is built as linux/arm64 by default on Mac
 # as AWS ECS Fargate defaults to running on linux/amd64
 # a linux/amd64 image is needed
 
 # Option 1: Build and push for amd64
-docker buildx build
---platform linux/amd64
--t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest
+# image size: 1.7GB
+# build
+docker buildx build \
+--platform linux/amd64 \
+-t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest .
+
+# push
+docker push 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest
+
+# build & push
+docker buildx build \
+--platform linux/amd64 \
+-t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest \
 --push .
 
 # Option 2: Build and push multi-arch image amd64 & arm64
 # both arm64 and amd64 will be in the same tag
-docker buildx build
---platform linux/amd64,linux/arm64
--t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest
+# image size: 3.39GB
+docker buildx build \
+--platform linux/amd64,linux/arm64 \
+-t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:v1 \
 --push .
 
 
