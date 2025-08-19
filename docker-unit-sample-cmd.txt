@@ -34,13 +34,12 @@ docker run -d -p 18880:18880 n2t-docker
 
 docker run -p 18880:18880 n2t-docker
 
-# start a container in interactive terminal mode and open a shell - for debugging
-docker run --rm -it -p 18880:18880 n2t-docker sh
-
 #### For debugging
 # Run the container interactively with a shell instead of your app
 # You can inspect the container's file system.
 docker run --rm -it <docker_image_name> sh
+
+docker run --rm -it -p 18880:18880 n2t-docker sh
 
 # ls -l /n2t
 total 116
@@ -106,4 +105,25 @@ docker buildx build \
 -t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:v1 \
 --push .
 
+Note: Authentication is required to push a Docker image to AWS.
+Otherwise push will fail with error.
+ERROR: 403 Forbidden
+
+1. Get credentials and Set AWS environment variables:
+
+export AWS_ACCESS_KEY_ID="access key id"
+export AWS_SECRET_ACCESS_KEY="secret key"
+export AWS_SESSION_TOKEN="session token"
+
+2. Login to AWS
+
+aws ecr get-login-password --region us-west-2 \
+  | docker login --username AWS --password-stdin 671846987296.dkr.ecr.us-west-2.amazonaws.com
+
+# Force a new deployment
+
+aws ecs update-service \
+  --cluster ezid-n2t \
+  --service n2t-unit-with-alb \
+  --force-new-deployment
 
