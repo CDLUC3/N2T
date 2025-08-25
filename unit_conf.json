@@ -35,7 +35,17 @@
   },
   "access_log": {
     "path": "/dev/stdout",
-    "format": "$remote_addr \"$header_x_forwarded_for\" [$time_local] \"$request_line\" $status $body_bytes_sent \"$header_referer\" \"$header_user_agent\""
+    "format": {
+      "log_source": "n2t-access-log",
+      "remote_addr": "$remote_addr",
+      "header_x_forwarded_for": "$header_x_forwarded_for",
+      "time_local": "$time_local",
+      "request_line": "$request_line",
+      "status": "$status",
+      "body_bytes_sent": "$body_bytes_sent",
+      "header_referer": "$header_referer",
+      "$header_user_agent": "$header_user_agent"
+    }
   }
 }
 
