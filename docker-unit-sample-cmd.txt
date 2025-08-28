@@ -127,3 +127,11 @@ aws ecs update-service \
   --service n2t-unit-with-alb \
   --force-new-deployment
 
+# Connect to ECS container interactivelly
+
+aws ecs execute-command \
+  --cluster my-cluster \
+  --task <task_id> \
+  --container <container_name> \
+  --interactive \
+  --command "/bin/sh"
