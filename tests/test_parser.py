@@ -1,7 +1,7 @@
 import pytest
-import lib_n2t.model
-import lib_n2t.pidconfig
-import lib_n2t.pidparse
+import rslv.lib_rslv.model
+import lib_rslv.pidconfig
+import lib_rslv.pidparse
 
 config_ark = {
     "target": "https://arks.org/{group}/{value_raw}",
