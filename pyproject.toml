@@ -1,36 +1,42 @@
-[tool.poetry]
+[project]
 name = "n2t"
-version = "0.9.5"
+version = "0.10.0"
 description = "Implementation of N2T in python"
-authors = ["datadavev <605409+datadavev@users.noreply.github.com>"]
+authors = [{ name = "datadavev", email = "605409+datadavev@users.noreply.github.com" }]
+requires-python = ">=3.9,<4.0"
 license = "MIT"
+dependencies = [
+    "PyYAML>=6,<7",
+    "fastapi>=0,<1",
+    "pydantic-settings>=2,<3",
+    "rslv",
+    "click>=8.1.7,<9",
+    "httpx>=0.27.0,<0.28",
+    "sqlalchemy[asyncio]>=2.0.29,<3",
+    "aiosqlite>=0.20.0,<0.21",
+]
+
+[project.scripts]
+n2t = "n2t.__main__:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=7,<8",
+    "uvicorn>=0,<1",
+    "uvicorn>=0.27.1,<0.28",
+    "geoip2>=4.8.0,<5",
+    "textual>=0.56.4,<0.57",
+    "hopper",
+]
 
 [tool.poetry_bumpversion.file."n2t/__init__.py"]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-PyYAML = "^6"
-fastapi = "^0"
-pydantic-settings = "^2"
-rslv = {git = "https://github.com/CDLUC3/resolver.git", branch="main"}
-click = "^8.1.7"
-httpx = "^0.27.0"
-sqlalchemy = {extras = ["asyncio"], version = "^2.0.29"}
-aiosqlite = "^0.20.0"
+[tool.uv]
 
-[tool.poetry.dev-dependencies]
-pytest = "^7"
-uvicorn = "^0"
-
-[tool.poetry.scripts]
-n2t = 'n2t.__main__:main'
-
-[tool.poetry.group.dev.dependencies]
-uvicorn = "^0.27.1"
-geoip2 = "^4.8.0"
-textual = "^0.56.4"
-hopper = {git = "https://github.com/datadavev/looseroo.git"}
+[tool.uv.sources]
+hopper = { git = "https://github.com/datadavev/looseroo.git" }
+rslv = { git = "https://github.com/CDLUC3/resolver.git", branch = "main" }
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
