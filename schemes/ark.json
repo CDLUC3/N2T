@@ -10,6 +10,7 @@
   "primary": 1,
   "redirect": "https://arks.org/ark:${content}",
   "test": "/88435/hq37vq534",
+  "strip_hyphens": false,
   "probe": "http://arks.org/ark:/88435/hq37vq534",
   "more": "https://en.wikipedia.org/wiki/Archival_Resource_Key",
   "revision": 1
