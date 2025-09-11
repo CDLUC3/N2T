@@ -1,0 +1,15 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+- repo: https://github.com/astral-sh/uv-pre-commit
+  # uv version.
+  rev: 0.8.14
+  hooks:
+    # Update the uv lockfile
+    - id: uv-lock
+    - id: uv-export
+      args: ["--no-hashes", "--no-dev", "--no-group", "docs", "--output-file=requirements.txt"]
