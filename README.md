@@ -1,11 +1,10 @@
 # N2T Python Implementation
 
-This is a reimplementation of N2T using python.
+N2T is an identifier scheme resolver. 
 
-N2T is an identifier scheme resolver. Its role is to redirect clients to the 
-registered handler for an identifier scheme. The handler is expected to 
-continue interaction with the client for identifier resolution.
-
+Its role is to redirect clients to the registered handler for an identifier 
+scheme. The handler is expected to continue interaction with the client for 
+identifier resolution.
 
 ## Manual Deploy on Amazon Linux 2023
 
@@ -119,7 +118,7 @@ Commands:
   yaml2json  Generate or update JSON record from YAML source.
 ```
 
-### Configure the n2t application with identifier schem information
+### Configure the n2t application with identifier scheme information
 
 Before operation, the N2T application scheme database must be initialized. This 
 process creates an sqlite database containing the scheme records to support 
@@ -199,3 +198,84 @@ $ n2t info
 
 ## Managing Scheme Records
 
+## Local Development
+
+Clone the repository:
+
+```
+git clone https://github.com/CDLUC3/N2T.git
+cd N2T
+```
+
+Initialize a virtual environment:
+
+```
+uv venv .venv
+```
+
+Install the dependencies (includes the dev group dependencies):
+
+```
+uv sync
+```
+
+Create a data folder and generate the resolver database:
+
+```
+mkdir data
+uv run n2t -c dev-config.env loaddb
+```
+
+Run the local server:
+
+```
+uv run n2t -c dev-config.env serve
+```
+
+**Hint:** Running `source .venv/bin/activate` will load the virtual environment to the current shell, so you can run the `n2t` commands without `uv run`, e.g.:
+
+```
+source .venv/bin/activate
+n2t --help
+Usage: n2t [OPTIONS] COMMAND [ARGS]...
+
+  Management commands for N2T.
+
+  This script is used for initializing the JSON representation of scheme
+  records from the original YAML and creating or updating the sqlite store
+  used by the resolver application.
+
+Options:
+  -c, --config FILE
+  --help             Show this message and exit.
+
+Commands:
+  info       Print application version and basic status.
+  loaddb     Load or update the scheme database.
+  serve
+  yaml2json  Generate or update JSON record from YAML source.
+```
+
+The virtual environment can be unloaded with `deactivate`
+
+
+### Nginx Unit on OS X (silicon)
+
+```
+brew install nginx/unit/unit
+brew install unit-python3
+
+/opt/homebrew/opt/unit/bin/unitd --no-daemon
+```
+
+Control socket: `/opt/homebrew/var/run/unit/control.sock`
+Log file: `/opt/homebrew/var/log/unit/unit.log `
+
+```
+export UNIT_CONTROL="/opt/homebrew/var/run/unit/control.sock"
+```
+
+Set configuration:
+```
+curl -X PUT --data-binary @unit.conf --unix-socket ${UNIT_CONTROL} http://localhost/config/applications/n2t"
+```
