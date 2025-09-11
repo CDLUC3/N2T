@@ -12,4 +12,4 @@ repos:
     # Update the uv lockfile
     - id: uv-lock
     - id: uv-export
-      args: ["--no-hashes", "--no-dev", "--no-group", "docs", "--output-file=requirements.txt"]
+      args: ["--no-hashes", "--no-dev", "--output-file=requirements.txt"]
