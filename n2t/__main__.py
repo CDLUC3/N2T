@@ -287,6 +287,7 @@ def get_info(config: appconfig.Settings) -> int:
     repository = rslv.lib_rslv.piddefine.PidDefinitionCatalog(session)
     res = {
         "version": __version__,
+        "rslv_version": rslv.__version__,
         "environment": config.environment,
         "status": "not initialized",
         "description": None,
@@ -376,10 +377,10 @@ try:
     )
     def cli_serve(config: appconfig.Settings, reload, workers) -> int:
         uvicorn.run(
-            "n2t.app:app", 
-            host=config.host, 
-            port=config.port, 
-            log_level="info", 
+            "n2t.app:app",
+            host=config.host,
+            port=config.port,
+            log_level="info",
             reload=reload,
             workers=workers
         )
