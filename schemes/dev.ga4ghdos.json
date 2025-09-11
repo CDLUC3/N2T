@@ -19,7 +19,7 @@
   "institution": "University of California",
   "prefixed": 0,
   "test": "23fa7b4b-9d68-429b-aece-658b11124bb3#2017-03-24T18:43:16.886826-05:00",
-  "probe": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/23fa7b4b-9d68-429b-aece-658b11124bb3#2017-03-24T18:43:16.886826-05:00",
+  "probe": "https://dos-gdc.ucsc-cgp-dev.org/ga4gh/dos/v1/dataobjects/23fa7b4b-9d68-429b-aece-658b11124bb3",
   "pattern": "^[a-zA-Z0-9\\-:#\\.]+$",
   "state": "0:Unknown",
   "more": "http://github.com/ga4gh/data-object-service-schemas",

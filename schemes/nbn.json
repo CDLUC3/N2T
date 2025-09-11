@@ -1,7 +1,7 @@
 {
   "id": "nbn",
   "target": {
-    "DEFAULT": "http://nbn-resolving.org/urn:nbn:${content}"
+    "DEFAULT": "https://nbn-resolving.org/urn:nbn:${content}"
   },
   "type": "scheme",
   "name": "NBN through URN Resolver at German National Library",
@@ -18,8 +18,8 @@
   "synonym": "NBN",
   "institution": "Deutsche Nationalbibliothek, Frankfurt",
   "prefixed": 0,
-  "test": "urn:nbn:fi:tkk-004781",
-  "probe": "http://nbn-resolving.org/resolver?identifier=urn:nbn:fi:tkk-004781&verb=redirect",
+  "test": "nbn:fi:tkk-004781",
+  "probe": "https://nbn-resolving.org/urn:nbn:fi:tkk-004781",
   "pattern": "^urn\\:nbn\\:[A-Za-z_0-9]+\\:([A-Za-z_0-9]+)-[A-Za-z_0-9]+$",
   "state": "99:Unknown",
   "more": "http://nbn-resolving.org/resolve_urn.htm",

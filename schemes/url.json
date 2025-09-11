@@ -9,7 +9,7 @@
   "primary": 1,
   "redirect": "https://${content}",
   "test": "www.w3c.org",
-  "probe": "http://www.w3c.org",
+  "probe": "https://www.w3c.org",
   "more": "https://www.w3c.org/",
   "revision": 0
 }
