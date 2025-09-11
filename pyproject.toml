@@ -25,8 +25,6 @@ dev = [
     "uvicorn>=0,<1"
 ]
 
-[tool.poetry_bumpversion.file."n2t/__init__.py"]
-
 [tool.uv]
 
 [tool.uv.sources]
@@ -36,3 +34,9 @@ rslv = { git = "https://github.com/CDLUC3/resolver.git", branch = "main" }
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
