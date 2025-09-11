@@ -63,6 +63,8 @@ def test_cors_headers(n2tapp):
 ark_hyphen_tests = (
     ("/ark:99999/foo-bar", "https://arks.org/ark:99999/foo-bar"),
     ("/ark:99999/foobar", "https://arks.org/ark:99999/foobar"),
+    ("/ark:/99999/foo-bar", "https://arks.org/ark:/99999/foo-bar"),
+    ("/ark:/99999/foobar", "https://arks.org/ark:/99999/foobar"),
 )
 
 @pytest.mark.parametrize("inpid, expected", ark_hyphen_tests)
