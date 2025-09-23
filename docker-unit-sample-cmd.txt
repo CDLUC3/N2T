@@ -83,18 +83,20 @@ curl -X PUT \
 
 # Option 1: Build and push for amd64
 # image size: 1.7GB
+# repo name: 1234567890.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t
+# tag: n2t-latest
 # build
 docker buildx build \
 --platform linux/amd64 \
--t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest .
+-t 1234567890.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:n2t-latest .
 
 # push
-docker push 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest
+docker push 1234567890.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:n2t-latest
 
 # build & push
 docker buildx build \
 --platform linux/amd64 \
--t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:latest \
+-t 1234567890.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:n2t-latest \
 --push .
 
 # Option 2: Build and push multi-arch image amd64 & arm64
@@ -102,7 +104,7 @@ docker buildx build \
 # image size: 3.39GB
 docker buildx build \
 --platform linux/amd64,linux/arm64 \
--t 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:v1 \
+-t 1234567890.dkr.ecr.us-west-2.amazonaws.com/ezid/n2t:n2t-v1 \
 --push .
 
 Note: Authentication is required to push a Docker image to AWS.
@@ -118,7 +120,7 @@ export AWS_SESSION_TOKEN="session token"
 2. Login to AWS
 
 aws ecr get-login-password --region us-west-2 \
-  | docker login --username AWS --password-stdin 671846987296.dkr.ecr.us-west-2.amazonaws.com
+  | docker login --username AWS --password-stdin 1234567890.dkr.ecr.us-west-2.amazonaws.com
 
 # Force a new deployment
 
