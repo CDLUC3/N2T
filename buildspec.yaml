@@ -1,0 +1,48 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 20
+  pre_build:
+    commands:
+      # Set some ENV variables here because CF only allows a limit of 1000 characters in the
+      # EnvironmentVariable config for the Pipeline action :(
+      - export AWS_VERSION=$(aws --version)
+
+      # Fetch the ECR repository name
+      - echo $ECR_REPOSITORY_URI >> .ecr
+      - export SHORT_ECR_URI=$(awk '{gsub("$ECR_REPOSITORY_NAME", "");print}' .ecr)
+      - rm .ecr
+
+      # Set the repository URI to your ECR image and add an image tag with the first seven characters of the Git
+      # commit ID of the source.
+      - echo Logging in to Amazon ECR ...
+      - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $SHORT_ECR_URI
+      - IMAGE_TAG=${COMMIT_HASH:=n2t-latest}
+
+  build:
+      commands:
+        - echo "Running build in ${NODE_ENV} mode - started on `date`"
+        - echo Building the Docker image...
+        - cd $CODEBUILD_SRC_DIR
+        - docker build -t n2t:latest .
+        - docker tag n2t:latest $ECR_REPOSITORY_URI:n2t-latest
+
+  post_build:
+    commands:
+      # Push the Docker image to the ECR repository. Fargate will pick it up an deploy automatically
+      - echo Build completed on `date`
+      - echo Pushing the Docker images...
+      - cd $CODEBUILD_SRC_DIR
+      - docker push $SHORT_ECR_REPOSITORY_URI:n2t-latest
+
+      - echo Writing image definitions file...
+      - printf '[{"name":"%s","imageUri":"%s"}]' $TASK_DEFINITION_CONTAINER_NAME $ECR_REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+
+      - echo Build completed on `date`
+
+artifacts:
+  # The Deploy step is expecting this name
+  files: imagedefinitions.json
+
