@@ -26,8 +26,7 @@ phases:
         - echo "Running build in ${NODE_ENV} mode - started on `date`"
         - echo Building the Docker image...
         - cd $CODEBUILD_SRC_DIR
-        - docker build -f Dockerfile.aws -t n2t:latest .
-        - docker tag n2t:latest $ECR_REPOSITORY_URI:n2t-latest
+        - docker build -f Dockerfile.aws -t $ECR_REPOSITORY_URI:n2t-latest .
 
   post_build:
     commands:
