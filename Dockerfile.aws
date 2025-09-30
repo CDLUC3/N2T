@@ -1,7 +1,6 @@
 # syntax=docker/dockerfile:1.4
 
-ARG AWS_ID_DEV
-FROM ${AWS_ID_DEV}.dkr.ecr.us-west-2.amazonaws.com/ezid-n2t/unit:1.34.2-python3.12
+FROM 671846987296.dkr.ecr.us-west-2.amazonaws.com/ezid-n2t/unit:1.34.2-python3.12
 
 # Install git and cleanup apt cache
 RUN apt-get update && \
