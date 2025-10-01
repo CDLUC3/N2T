@@ -19,7 +19,7 @@
   "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
   "prefixed": 1,
   "test": "00100037",
-  "probe": "https://identifiers.org/registry?query=\"MIR:00100037\"",
+  "probe": "https://identifiers.org/registry?query=%22MIR:00100037%22",
   "pattern": "^MIR:\\d{8}$",
   "state": "86:Down",
   "more": "https://identifiers.org/registry",

@@ -1,9 +1,9 @@
 [project]
 name = "n2t"
-version = "0.10.8"
+version = "0.11.0"
 description = "Implementation of N2T in python"
 authors = [{ name = "datadavev", email = "605409+datadavev@users.noreply.github.com" }]
-requires-python = "~=3.11"
+requires-python = ">=3.9,<4.0"
 license = "MIT"
 dependencies = [
     "PyYAML>=6,<7",
@@ -11,9 +11,9 @@ dependencies = [
     "pydantic-settings>=2,<3",
     "rslv",
     "click>=8.1.7,<9",
-    "httpx>=0.27.0,<0.28",
+    "httpx>=0.27.0",
     "sqlalchemy[asyncio]>=2.0.29,<3",
-    "aiosqlite>=0.20.0,<0.21",
+    "aiosqlite>=0.20.0",
 ]
 
 [project.scripts]
@@ -22,14 +22,8 @@ n2t = "n2t.__main__:main"
 [dependency-groups]
 dev = [
     "pytest>=7,<8",
-    "uvicorn>=0,<1",
-    "uvicorn>=0.27.1,<0.28",
-    "geoip2>=4.8.0,<5",
-    "textual>=0.56.4,<0.57",
-    "hopper",
+    "uvicorn>=0,<1"
 ]
-
-[tool.poetry_bumpversion.file."n2t/__init__.py"]
 
 [tool.uv]
 
@@ -40,3 +34,9 @@ rslv = { git = "https://github.com/CDLUC3/resolver.git", branch = "main" }
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"

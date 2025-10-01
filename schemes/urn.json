@@ -1,7 +1,7 @@
 {
   "id": "urn",
   "target": {
-    "DEFAULT": "http://nbn-resolving.org/urn:${content}"
+    "DEFAULT": "https://nbn-resolving.org/${pid}"
   },
   "type": "scheme",
   "name": "Uniform Resource Name",
@@ -13,8 +13,9 @@
   "location": "Germany",
   "institution": "Deutsche Nationalbibliothek, Frankfurt",
   "prefixed": 0,
-  "test": "urn:nbn:fi:tkk-004781",
-  "probe": "http://nbn-resolving.org/resolver?identifier=urn:nbn:fi:tkk-004781&verb=redirect",
+  "test": "urn:nbn:de:1111-20091210269",
+  "testx": "urn:nbn:fi:tkk-004781",
+  "probe": "https://nbn-resolving.org/urn:nbn:de:1111-20091210269",
   "more": "https://tools.ietf.org/html/rfc2141",
   "revision": 0
 }

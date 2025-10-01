@@ -4,6 +4,7 @@ import logging
 import typing
 
 import fastapi
+import fastapi.middleware.cors
 import fastapi.staticfiles
 import fastapi.templating
 import sqlalchemy.orm
@@ -56,7 +57,6 @@ app = fastapi.FastAPI(
 
 app.state.settings = get_settings()
 
-
 def get_relative_url_for(name: str, *args: typing.Any, **kwargs: typing.Any) -> str:
     _path = kwargs.get("path", "/")
     return app.url_path_for(name, path=_path)
@@ -68,7 +68,6 @@ async def add_db_session_middleware(request: fastapi.Request, call_next):
         request.state.dbsession = dbsession
         response = await call_next(request)
         return response
-
 
 app.mount(
     "/static",
@@ -83,6 +82,13 @@ templates = fastapi.templating.Jinja2Templates(
 
 templates.env.globals.setdefault("relurl_for", get_relative_url_for)
 
+app.add_middleware(
+    fastapi.middleware.cors.CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*",],
+    allow_headers=["*"],
+)
 
 @app.get("/favicon.ico", include_in_schema=False)
 async def get_favicon():
