@@ -15,6 +15,7 @@ import typing
 
 import click
 import sqlalchemy
+import sqlalchemy.exc
 
 import rslv.lib_rslv.piddefine
 
@@ -119,6 +120,7 @@ def json_to_records(src_folder: str) -> typing.Dict[str, typing.Any]:
             record = json.load(fsrc)
             records[key] = record
     return records
+
 
 def _add_or_update_record(repository, key:str, value:dict[str, typing.Any]) -> typing.Tuple[int, int, int]:
     """Add or update the record identified by key with the properties of value.
@@ -285,6 +287,7 @@ def get_info(config: appconfig.Settings) -> int:
     repository = rslv.lib_rslv.piddefine.PidDefinitionCatalog(session)
     res = {
         "version": __version__,
+        "rslv_version": rslv.__version__,
         "environment": config.environment,
         "status": "not initialized",
         "description": None,
@@ -367,12 +370,25 @@ try:
         default=False,
         help="Enable service reload on source change.",
     )
-    def cli_serve(config: appconfig.Settings, reload) -> int:
-        uvicorn.run("n2t.app:app", host=config.host, port=config.port, log_level="info", reload=reload)
+    @click.option(
+        "--workers",
+        default=1,
+        help="Uvicorn workers to use. Reload is disabled if more than one."
+    )
+    def cli_serve(config: appconfig.Settings, reload, workers) -> int:
+        uvicorn.run(
+            "n2t.app:app",
+            host=config.host,
+            port=config.port,
+            log_level="info",
+            reload=reload,
+            workers=workers
+        )
         return 0
 
 except ImportError:
     print("Install uvicorn for development serve option to be available.")
+
 
 
 def main() -> int:

@@ -19,7 +19,7 @@
   "institution": "DKFZ TP3, Heidelberg",
   "prefixed": 0,
   "test": "M94112",
-  "probe": "http://genius.embnet.dkfz-heidelberg.de/menu/cgi-bin/srs7.1.3.1/wgetz?-id+4ktAl1fNMTA+-e+[IMGT:'M94112']",
+  "probe": "http://genius.embnet.dkfz-heidelberg.de/menu/cgi-bin/srs7.1.3.1/wgetz?-id+4ktAl1fNMTA+-e+[IMGT:%27M94112%27]",
   "pattern": "^M\\d+$",
   "state": "70:Down",
   "more": "http://genius.embnet.dkfz-heidelberg.de/",

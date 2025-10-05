@@ -19,7 +19,7 @@
   "institution": "European Bioinformatics Institute, Hinxton, Cambridge",
   "prefixed": 0,
   "test": "ISCW007415",
-  "probe": "https://www.vectorbase.org/search/site/ISCW007415?&site=\"Genome\"",
+  "probe": "https://www.vectorbase.org/search/site/ISCW007415?&site=%22Genome%22",
   "pattern": "^\\D{4}\\d{6}(\\-\\D{2})?$",
   "state": "35:Down",
   "more": "https://www.vectorbase.org/",

@@ -1,7 +1,7 @@
 {
   "id": "lsid",
   "target": {
-    "DEFAULT": "http://www.lsid.info/urn:${content}"
+    "DEFAULT": "http://www.lsid.info/urn:lsid:${content}"
   },
   "type": "scheme",
   "name": "Life Sciences Identifier",

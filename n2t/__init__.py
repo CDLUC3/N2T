@@ -1,1 +1,3 @@
-__version__ = "0.10.8"
+from importlib.metadata import version
+
+__version__ = version("n2t")

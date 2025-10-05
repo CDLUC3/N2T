@@ -18,7 +18,7 @@
   "synonym": null,
   "institution": "Computer Network Information Center, Chinese Academy of Sciences, Beijing, China",
   "prefixed": 0,
-  "test": "31253.11.sciencedb.j00001.00123",
+  "test": "32038.14.CPB.ada432",
   "probe": "https://cstr.cn/32038.14.CPB.ada432",
   "pattern": "^\\w{5}\\.\\d{2}\\..*$",
   "state": "87:Up",
