@@ -5,23 +5,23 @@ aiosqlite==0.21.0
     # via n2t
 annotated-types==0.7.0
     # via pydantic
-anyio==4.10.0
+anyio==4.11.0
     # via
     #   httpx
     #   starlette
-certifi==2025.8.3
+certifi==2025.10.5
     # via
     #   httpcore
     #   httpx
 click==8.1.8 ; python_full_version < '3.10'
     # via n2t
-click==8.2.1 ; python_full_version >= '3.10'
+click==8.3.0 ; python_full_version >= '3.10'
     # via n2t
 colorama==0.4.6 ; sys_platform == 'win32'
     # via click
 exceptiongroup==1.3.0 ; python_full_version < '3.11'
     # via anyio
-fastapi==0.116.1
+fastapi==0.119.1
     # via
     #   n2t
     #   rslv
@@ -33,37 +33,37 @@ httpcore==1.0.9
     # via httpx
 httpx==0.28.1
     # via n2t
-idna==3.10
+idna==3.11
     # via
     #   anyio
     #   httpx
 jinja2==3.1.6
     # via rslv
-markupsafe==3.0.2
+markupsafe==3.0.3
     # via jinja2
-pydantic==2.11.7
+pydantic==2.12.3
     # via
     #   fastapi
     #   pydantic-settings
-pydantic-core==2.33.2
+pydantic-core==2.41.4
     # via pydantic
-pydantic-settings==2.10.1
+pydantic-settings==2.11.0
     # via
     #   n2t
     #   rslv
 python-dotenv==1.1.1
     # via pydantic-settings
-pyyaml==6.0.2
+pyyaml==6.0.3
     # via n2t
-rslv @ git+https://github.com/CDLUC3/resolver.git@5eaba2230b76cd6cc7cd0a0b2e25a2390c756803
+rslv @ git+https://github.com/CDLUC3/resolver.git@a1d755425b772b80b4da7cdac95978a22a7273c6
     # via n2t
 sniffio==1.3.1
     # via anyio
-sqlalchemy==2.0.43
+sqlalchemy==2.0.44
     # via
     #   n2t
     #   rslv
-starlette==0.47.3
+starlette==0.48.0
     # via fastapi
 typing-extensions==4.15.0
     # via
@@ -76,7 +76,7 @@ typing-extensions==4.15.0
     #   sqlalchemy
     #   starlette
     #   typing-inspection
-typing-inspection==0.4.1
+typing-inspection==0.4.2
     # via
     #   pydantic
     #   pydantic-settings
