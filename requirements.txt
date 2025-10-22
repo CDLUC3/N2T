@@ -55,7 +55,7 @@ python-dotenv==1.1.1
     # via pydantic-settings
 pyyaml==6.0.3
     # via n2t
-rslv @ git+https://github.com/CDLUC3/resolver.git@a1d755425b772b80b4da7cdac95978a22a7273c6
+rslv @ git+https://github.com/CDLUC3/resolver.git@d8620f66cc6b784ff95d5a4224ad90ff17b4e84a
     # via n2t
 sniffio==1.3.1
     # via anyio

@@ -671,8 +671,8 @@ wheels = [
 
 [[package]]
 name = "rslv"
-version = "0.11.0"
-source = { git = "https://github.com/CDLUC3/resolver.git?branch=main#a1d755425b772b80b4da7cdac95978a22a7273c6" }
+version = "0.11.1"
+source = { git = "https://github.com/CDLUC3/resolver.git?branch=main#d8620f66cc6b784ff95d5a4224ad90ff17b4e84a" }
 dependencies = [
     { name = "fastapi" },
     { name = "jinja2" },
