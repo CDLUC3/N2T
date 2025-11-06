@@ -61,3 +61,8 @@ and the N2T production environment servers are:
 uc3-ezidn2t-prd01.cdlib.org
 uc3-ezidn2t-prd02.cdlib.org
 ```
+
+## Verify Operation
+
+Verify that the version reported by the service matches the expected version. N2T displays
+the python library version in the footer of the home page and also in the `/api` page.
