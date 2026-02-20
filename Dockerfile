@@ -2,6 +2,7 @@ FROM unit:1.34.2-python3.12
 
 # Install git and cleanup apt cache
 RUN apt-get update && \
+    apt-get upgrade -y && \
     apt-get install -y curl git && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
