@@ -82,3 +82,6 @@ typing-inspection==0.4.2
     # via
     #   pydantic
     #   pydantic-settings
+
+uvicorn==0.41.0
+gunicorn==25.1.0
