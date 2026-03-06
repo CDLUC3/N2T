@@ -15,22 +15,24 @@ certifi==2025.10.5
     # via
     #   httpcore
     #   httpx
-click==8.1.8 ; python_full_version < '3.10'
-    # via n2t
-click==8.3.0 ; python_full_version >= '3.10'
-    # via n2t
+click==8.3.0
+    # via
+    #   n2t
+    #   uvicorn
 colorama==0.4.6 ; sys_platform == 'win32'
     # via click
-exceptiongroup==1.3.0 ; python_full_version < '3.11'
-    # via anyio
 fastapi==0.121.0
     # via
     #   n2t
     #   rslv
 greenlet==3.2.4
     # via sqlalchemy
+gunicorn==25.1.0
+    # via n2t
 h11==0.16.0
-    # via httpcore
+    # via
+    #   httpcore
+    #   uvicorn
 httpcore==1.0.9
     # via httpx
 httpx==0.28.1
@@ -43,6 +45,8 @@ jinja2==3.1.6
     # via rslv
 markupsafe==3.0.3
     # via jinja2
+packaging==25.0
+    # via gunicorn
 pydantic==2.12.4
     # via
     #   fastapi
@@ -71,7 +75,6 @@ typing-extensions==4.15.0
     # via
     #   aiosqlite
     #   anyio
-    #   exceptiongroup
     #   fastapi
     #   pydantic
     #   pydantic-core
@@ -82,6 +85,5 @@ typing-inspection==0.4.2
     # via
     #   pydantic
     #   pydantic-settings
-
 uvicorn==0.41.0
-gunicorn==25.1.0
+    # via n2t
