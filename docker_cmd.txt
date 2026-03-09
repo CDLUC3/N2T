@@ -1,8 +1,15 @@
-# 1 build image
+# build image 
+# For Nginx + Gunicorn + Uvicorn
+# Dockerfile=Dockerfile.nginx
 docker build -t fastapi-nginx .
 
-# 2 start container
+# start container
 docker run -d -p 8080:80 --name fastapi-test fastapi-nginx
+
+# Dockerfile without Nginx
+docker build -t fastapi-test-image .
+
+docker run -d -p 8080:8000 --name fastapi-test fastapi-test-image
 
 # 3 check running containers
 docker ps
