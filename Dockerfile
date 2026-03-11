@@ -25,8 +25,8 @@ RUN rm -f /etc/nginx/sites-enabled/default
 # Create log + run directories
 RUN mkdir -p /var/run/nginx
 
-# Expose port
-EXPOSE 8000
+# Document the exposed port (nginx default port)
+EXPOSE 80
 
 RUN python n2t -c dev-config-docker.env loaddb
 
