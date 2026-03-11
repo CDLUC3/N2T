@@ -6,8 +6,9 @@ docker build -t fastapi-nginx .
 docker run -d -p 8000:80 --name fastapi-test fastapi-nginx
 
 # run multiple containers on different host ports
-docker run -d -p 8080:80 --name fastapi-test fastapi-nginx
-docker run -d -p 18880:80 --name fastapi-test fastapi-nginx
+docker run -d -p 80:80 --name container_1 fastapi-nginx
+docker run -d -p 8080:80 --name container_2 fastapi-nginx
+docker run -d -p 18880:80 --name container_3 fastapi-nginx
 
 # 3 check running containers
 docker ps
