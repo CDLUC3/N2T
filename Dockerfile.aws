@@ -28,6 +28,8 @@ RUN mkdir -p /var/run/nginx
 # Document the exposed port (nginx default port)
 EXPOSE 80
 
+RUN mkdir -p /app/n2t_data
+
 RUN python n2t -c dev-config-docker.env loaddb
 
 ENV N2T_SETTINGS=/app/dev-config-docker.env
