@@ -10,8 +10,14 @@ RUN apt-get update && \
 # Set working directory
 WORKDIR /app
 
-# Copy entire project FIRST (because of -e .)
-COPY . .
+# Copy files
+COPY requirements.txt .
+COPY pyproject.toml .
+COPY uv.lock .
+COPY n2t ./n2t
+COPY schemes ./schemes
+COPY tests ./tests
+COPY dev-config.env .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
@@ -26,13 +32,17 @@ RUN rm -f /etc/nginx/sites-enabled/default
 RUN mkdir -p /var/run/nginx
 
 # Document the exposed port (nginx default port)
-EXPOSE 80
+EXPOSE 18880
 
-RUN python n2t -c dev-config-docker.env loaddb
+# Create data directory for sqlite db
+RUN mkdir -p /app/data
 
-ENV N2T_SETTINGS=/app/dev-config-docker.env
+RUN python n2t -c dev-config.env loaddb
+
+ENV N2T_SETTINGS=/app/dev-config.env
 
 # Startup script
+COPY start_n2t_docker.sh start_n2t_docker.sh
 RUN chmod +x start_n2t_docker.sh
 
 CMD ["./start_n2t_docker.sh"]
