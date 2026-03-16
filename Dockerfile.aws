@@ -17,6 +17,7 @@ COPY uv.lock .
 COPY n2t ./n2t
 COPY schemes ./schemes
 COPY tests ./tests
+COPY legacy_e_files ./legacy_e_files
 COPY dev-config.env .
 
 # Install dependencies
