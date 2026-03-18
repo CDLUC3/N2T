@@ -1,5 +1,5 @@
 # ---- Base image ----
-FROM nginx:stable
+FROM 671846987296.dkr.ecr.us-west-2.amazonaws.com/docker-hub/library/nginx:stable
 
 # Set working directory
 WORKDIR /app
