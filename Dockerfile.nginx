@@ -1,0 +1,20 @@
+# ---- Base image ----
+FROM nginx:stable
+
+# Set working directory
+WORKDIR /app
+
+COPY legacy_e_files ./legacy_e_files
+# Copy nginx config
+COPY nginx_web.conf /etc/nginx/nginx.conf
+
+# Remove default nginx site
+RUN rm -f /etc/nginx/sites-enabled/default
+
+# Create log + run directories
+RUN mkdir -p /var/run/nginx
+
+# Document the exposed port
+EXPOSE 18880
+
+CMD ["nginx", "-g", "daemon off;"]
