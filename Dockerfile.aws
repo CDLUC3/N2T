@@ -3,7 +3,7 @@ FROM 671846987296.dkr.ecr.us-west-2.amazonaws.com/docker-hub/library/python:3.12
 
 # Install nginx
 RUN apt-get update && \
-    apt-get install -y nginx curl git && \
+    apt-get install -y curl git && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -17,22 +17,11 @@ COPY uv.lock .
 COPY n2t ./n2t
 COPY schemes ./schemes
 COPY tests ./tests
-COPY legacy_e_files ./legacy_e_files
 COPY dev-config.env .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy nginx config
-COPY nginx.conf /etc/nginx/nginx.conf
-
-# Remove default nginx site
-RUN rm -f /etc/nginx/sites-enabled/default
-
-# Create log + run directories
-RUN mkdir -p /var/run/nginx
-
-# Document the exposed port (nginx default port)
 EXPOSE 18880
 
 # Create data directory for sqlite db
@@ -41,10 +30,6 @@ RUN mkdir -p /app/data
 RUN python n2t -c dev-config.env loaddb
 
 ENV N2T_SETTINGS=/app/dev-config.env
-
-# Startup script
-COPY start_n2t_docker.sh start_n2t_docker.sh
-RUN chmod +x start_n2t_docker.sh
 
 CMD ["gunicorn", "n2t.app:app", \
     "-k", "uvicorn.workers.UvicornWorker", \
