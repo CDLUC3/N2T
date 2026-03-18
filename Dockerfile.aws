@@ -46,4 +46,7 @@ ENV N2T_SETTINGS=/app/dev-config.env
 COPY start_n2t_docker.sh start_n2t_docker.sh
 RUN chmod +x start_n2t_docker.sh
 
-CMD ["./start_n2t_docker.sh"]
+CMD ["gunicorn", "n2t.app:app", \
+    "-k", "uvicorn.workers.UvicornWorker", \
+    "--workers", "4", \
+    "--bind", "0.0.0.0:18880"]
