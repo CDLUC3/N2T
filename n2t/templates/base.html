@@ -27,15 +27,14 @@
         a successful match will either redirect to the registered target, or present
         information about the matched definition.</p>
     <p>Identifiers take the form:</p>
-    <pre>
-scheme:prefix/value
-    </pre>
+    <pre><code>scheme:prefix/value</code></pre>
         <p>The service API description is available at <a href="/api">/api</a>.</p>
         <p>A list of schemes registered with this service is available on the <a href="/_schemes.html">schemes page</a>.</p>
     </div>
     {% endblock %}
 </main>
-<footer>N2T, {{ environment }} environment, version {{ version }}</footer>
+<footer>N2T, {{ environment }} environment, version {{ version }}
+ &middot; <a href="/_accessibility.html">Accessibility</a></footer>
 {% endblock %}
 {% block addendum %}
 {% endblock %}
