@@ -26,7 +26,7 @@ phases:
         - echo "Running build in ${NODE_ENV} mode - started on `date`"
         - echo Building the Docker image...
         - cd $CODEBUILD_SRC_DIR
-        - docker buildx build --platform linux/amd64 -f Dockerfile.aws -t $ECR_REPOSITORY_URI:latest .
+        - docker buildx build --platform linux/amd64 -f Dockerfile.aws -t $ECR_REPOSITORY_URI:$IMAGE_TAG .
 
   post_build:
     commands:
@@ -34,7 +34,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - cd $CODEBUILD_SRC_DIR
-      - docker push $ECR_REPOSITORY_URI:latest
+      - docker push $ECR_REPOSITORY_URI:$IMAGE_TAG
 
       - echo Writing image definitions file...
       - printf '[{"name":"%s","imageUri":"%s"}]' $TASK_DEFINITION_CONTAINER_NAME $ECR_REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
