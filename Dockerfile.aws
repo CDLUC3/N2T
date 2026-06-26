@@ -34,4 +34,6 @@ ENV N2T_SETTINGS=/app/dev-config.env
 CMD ["gunicorn", "n2t.app:app", \
     "-k", "uvicorn.workers.UvicornWorker", \
     "--workers", "4", \
-    "--bind", "0.0.0.0:18880"]
+    "--bind", "0.0.0.0:18880", \
+    "--access-logfile", "-", \
+    "--log-level", "info"]
