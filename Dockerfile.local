@@ -18,6 +18,8 @@ COPY n2t ./n2t
 COPY schemes ./schemes
 COPY tests ./tests
 COPY dev-config.env .
+COPY uvicorn_log_config.json .
+COPY gunicorn.conf.py .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
@@ -31,9 +33,4 @@ RUN python n2t -c dev-config.env loaddb
 
 ENV N2T_SETTINGS=/app/dev-config.env
 
-CMD ["gunicorn", "n2t.app:app", \
-    "-k", "uvicorn.workers.UvicornWorker", \
-    "--workers", "4", \
-    "--bind", "0.0.0.0:18880", \
-    "--access-logfile", "-", \
-    "--log-level", "info"]
+CMD ["gunicorn", "n2t.app:app", "-c", "gunicorn.conf.py"]
