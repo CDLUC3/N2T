@@ -1,0 +1,27 @@
+{
+  "id": "uuaid",
+  "target": {
+    "DEFAULT": "https://api.uuaid.org/iaaso/v1/resolve/uuaid:${content}"
+  },
+  "type": "scheme",
+  "name": "UUAID (Universal Unique Agent Identifier) for autonomous AI agents",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00999999",
+  "sort_score": "4",
+  "primary": 0,
+  "forward": "https://api.uuaid.org/iaaso/v1/resolve/uuaid:${ac}",
+  "redirect": "https://api.uuaid.org/iaaso/v1/resolve/uuaid:${content}",
+  "description": "UUAID (Universal Unique Agent Identifier) provides persistent, globally unique identifiers for autonomous AI agents and their associated objects. Identifiers are minted once and never reissued; deactivation is a tombstone, not a deletion, so identifiers stay resolvable indefinitely. Every lifecycle event is recorded in a hash-chained ledger anchored on a public blockchain. Grammar and resolution are openly specified at https://github.com/uuaid/spec (ratified as IAASO-0001 by the International Autonomous Agents Standards Organization, iaaso.org). Resolution is public and unauthenticated. The uuaid: URI scheme has also been registered as a provisional scheme with IANA (2026-07-15, CRI scheme number 1015): https://www.iana.org/assignments/uri-schemes/prov/uuaid.",
+  "subject": "AI; LLM; artificial intelligence",
+  "location": "USA",
+  "synonym": null,
+  "institution": "UUAID Foundation (nonprofit incorporation in progress)",
+  "prefixed": 1,
+  "test": "foundation:agent:019f2e47-1c32-7c4b-937e-a25e2c502844",
+  "probe": "https://api.uuaid.org/iaaso/v1/resolve/uuaid:foundation:agent:019f2e47-1c32-7c4b-937e-a25e2c502844",
+  "pattern": "^[a-zA-Z0-9_-]+:(?:agent|agent-version|profile|work|post|activity|cert|exam|claim|ledger-event|issuer|organization|governance):[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+  "state": "98:Up",
+  "more": "https://uuaid.org/ -- human-browsable registry at https://registry.uuaid.org/",
+  "revision": 0
+}
