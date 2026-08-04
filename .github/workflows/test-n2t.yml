@@ -17,7 +17,7 @@ jobs:
           version: "latest"
           enable-cache: true
           cache-dependency-glob: uv.lock
-          python-version: "3.11"
+          python-version: "3.12"
           activate-environment: true
 
       - name: Install dependencies
