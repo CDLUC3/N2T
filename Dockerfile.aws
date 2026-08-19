@@ -1,11 +1,19 @@
 # ---- Base image ----
-FROM 671846987296.dkr.ecr.us-west-2.amazonaws.com/docker-hub/library/python:3.12-slim
+ARG BASE_IMAGE=public.ecr.aws/amazonlinux/amazonlinux:2023
 
-# Install nginx
-RUN apt-get update && \
-    apt-get install -y curl git && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+FROM $BASE_IMAGE
+
+# FROM 671846987296.dkr.ecr.us-west-2.amazonaws.com/docker-hub/library/python:3.12-slim
+
+# Install base tools and Python 3.12 on Amazon Linux 2023
+RUN dnf -y update && \
+    dnf -y install git python3.12 python3.12-pip python3.12-devel gcc && \
+    dnf clean all && \
+    rm -rf /var/cache/dnf
+
+# Keep python3/pip3 aligned to 3.12
+RUN alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 312 && \
+    ln -sf /usr/bin/pip3.12 /usr/bin/pip3
 
 # Set working directory
 WORKDIR /app
@@ -22,14 +30,14 @@ COPY uvicorn_log_config.json .
 COPY gunicorn.conf.py .
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 18880
 
 # Create data directory for sqlite db
 RUN mkdir -p /app/data
 
-RUN python n2t -c dev-config.env loaddb
+RUN python3 n2t -c dev-config.env loaddb
 
 ENV N2T_SETTINGS=/app/dev-config.env
 
