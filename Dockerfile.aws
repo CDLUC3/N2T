@@ -1,9 +1,5 @@
 # ---- Base image ----
-ARG BASE_IMAGE=public.ecr.aws/amazonlinux/amazonlinux:2023
-
-FROM $BASE_IMAGE
-
-# FROM 671846987296.dkr.ecr.us-west-2.amazonaws.com/docker-hub/library/python:3.12-slim
+FROM public.ecr.aws/amazonlinux/amazonlinux:2023
 
 # Install base tools and Python 3.12 on Amazon Linux 2023
 RUN dnf -y update && \
