@@ -23,7 +23,7 @@ phases:
 
   build:
       commands:
-        - echo "Running build in ${NODE_ENV} mode - started on `date`"
+        - echo "Running build - started on `date`"
         - echo Building the Docker image...
         - cd $CODEBUILD_SRC_DIR
         - docker buildx build --platform linux/amd64 -f Dockerfile.aws -t $ECR_REPOSITORY_URI:$IMAGE_TAG .
