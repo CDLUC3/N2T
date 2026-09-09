@@ -19,7 +19,7 @@ phases:
       # commit ID of the source.
       - echo Logging in to Amazon ECR ...
       - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $SHORT_ECR_URI
-      - IMAGE_TAG=${COMMIT_HASH:=latest}
+      - IMAGE_TAG="$CODEBUILD_RESOLVED_SOURCE_VERSION"
 
   build:
       commands:
