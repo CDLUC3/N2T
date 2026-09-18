@@ -98,9 +98,9 @@ async def get_favicon():
 @app.get("/", include_in_schema=False)
 async def redirect_docs(request: fastapi.Request):
     return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
+        request=request,
+        name="index.html",
+        context={
             "environment": app.state.settings.environment,
             "version": __version__,
         },
@@ -112,9 +112,9 @@ async def human_pages(request: fastapi.Request, page: str):
     L = logging.getLogger("n2t")
     try:
         return templates.TemplateResponse(
-            page,
-            {
-                "request": request,
+            request=request,
+            name=page,
+            context={
                 "environment": app.state.settings.environment,
                 "version": __version__,
             },
@@ -122,9 +122,9 @@ async def human_pages(request: fastapi.Request, page: str):
     except Exception as e:
         L.exception(e)
     return templates.TemplateResponse(
-        "404.html",
-        {
-            "request": request,
+        request=request,
+        name="404.html",
+        context={
             "environment": app.state.settings.environment,
             "version": __version__,
         },

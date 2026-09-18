@@ -3,7 +3,7 @@ name = "n2t"
 version = "0.12.3"
 description = "Implementation of N2T in python"
 authors = [{ name = "datadavev", email = "605409+datadavev@users.noreply.github.com" }]
-requires-python = ">=3.9,<4.0"
+requires-python = ">=3.11,<4.0"
 license = "MIT"
 dependencies = [
     "PyYAML>=6,<7",
@@ -21,7 +21,7 @@ n2t = "n2t.__main__:main"
 
 [dependency-groups]
 dev = [
-    "pytest>=7,<8",
+    "pytest>=9,<10",
     "uvicorn>=0,<1"
 ]
 
