@@ -1,0 +1,23 @@
+{
+  "id": "morpheus",
+  "target": {
+    "DEFAULT": "https://morpheus.gitlab.io/models/${content}"
+  },
+  "type": "scheme",
+  "name": "Morpheus.lab",
+  "alias": null,
+  "provider": "morpheus.lab",
+  "provider_id": "MIR:00000700",
+  "primary": 1,
+  "forward": "https://morpheus.gitlab.io/models/${ac}",
+  "redirect": "https://morpheus.gitlab.io/models/${content}",
+  "description": "The Morpheus model repository is an open-access data resource to store, search and retrieve unpublished and published computational models of spatio-temporal and multicellular biological systems, encoded in the MorpheusML language and readily executable with the Morpheus software.\n",
+  "location": "Germany",
+  "institution": "TU Dresden",
+  "prefixed": 0,
+  "test": "M0001",
+  "probe": "https://morpheus.gitlab.io/models/M0001",
+  "pattern": "^M[0-9]{4,}$",
+  "more": "https://morpheus.gitlab.io/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ps",
+  "target": {
+    "DEFAULT": "https://discover.pennsieve.io/package/${content}"
+  },
+  "type": "scheme",
+  "name": "Pennsieve Discover",
+  "alias": null,
+  "provider": "ps",
+  "provider_id": "MIR:00000950",
+  "primary": 1,
+  "forward": "https://discover.pennsieve.io/package/${ac}",
+  "redirect": "https://discover.pennsieve.io/package/${content}",
+  "description": "Pennsieve is a publicly accessible Scientific Data Management and publication platform. The platform supports data curation, sharing and publishing complex scientific datasets with a focus on integration between graph-based metadata and file-archival. The platform provides a \"peer\"-reviewed publication mechanism and public datasets are available through its Discover Web Application and APIs. ",
+  "location": "United States",
+  "institution": "University of Pennsylvania",
+  "prefixed": 0,
+  "test": "N:package:e3243db3-7986-488e-9a10-c7a0bfdcfe8a",
+  "probe": "https://discover.pennsieve.io/package/N:package:e3243db3-7986-488e-9a10-c7a0bfdcfe8a",
+  "pattern": "^N:package:[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$",
+  "more": "https://discover.pennsieve.io",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "mmp.fun",
+  "target": {
+    "DEFAULT": "https://mmp.sfb.uit.no/databases/marfun/#/records/${content}"
+  },
+  "type": "scheme",
+  "name": "MarFun through SfB",
+  "alias": null,
+  "provider": "mmp",
+  "provider_id": "MIR:00000713",
+  "primary": 1,
+  "forward": "https://mmp.sfb.uit.no/databases/marfun/#/records/${ac}",
+  "redirect": "https://mmp.sfb.uit.no/databases/marfun/#/records/${content}",
+  "description": "MarFun is manually curated database for marine fungi which is a part of the MAR databases.",
+  "location": "Norway",
+  "institution": "Center for Bioinformatics (SfB), UiT The Arctic university of Norway",
+  "prefixed": 0,
+  "test": "MMP3888430",
+  "probe": "https://mmp.sfb.uit.no/databases/marfun/#/records/MMP3888430",
+  "pattern": "^MMP\\d+.\\d+$",
+  "more": "https://mmp.sfb.uit.no/databases/marfun",
+  "revision": 0
+}

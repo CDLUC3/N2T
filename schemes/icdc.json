@@ -1,0 +1,23 @@
+{
+  "id": "icdc",
+  "target": {
+    "DEFAULT": "https://caninecommons.cancer.gov/#/study/${content}"
+  },
+  "type": "scheme",
+  "name": "Integrated Canine Data Commons",
+  "alias": null,
+  "provider": "icdc",
+  "provider_id": "MIR:00000811",
+  "primary": 1,
+  "forward": "https://caninecommons.cancer.gov/#/study/${ac}",
+  "redirect": "https://caninecommons.cancer.gov/#/study/${content}",
+  "description": "The Integrated Canine Data Commons is one of several repositories within the NCI Cancer Research Data Commons (CRDC), a cloud-based data science infrastructure that provides secure access to a large, comprehensive, and expanding collection of cancer research data. The ICDC was established to further research on human cancers by enabling comparative analysis with canine cancer.",
+  "location": "United States",
+  "institution": "National Cancer Institute",
+  "prefixed": 0,
+  "test": "000009",
+  "probe": "https://caninecommons.cancer.gov/#/study/000009",
+  "pattern": "^\\d{6}$",
+  "more": "https://caninecommons.cancer.gov/#/",
+  "revision": 0
+}

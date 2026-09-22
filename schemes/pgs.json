@@ -1,0 +1,23 @@
+{
+  "id": "pgs",
+  "target": {
+    "DEFAULT": "https://www.pgscatalog.org/pgs/${content}/"
+  },
+  "type": "scheme",
+  "name": "PGS Catalog",
+  "alias": null,
+  "provider": "pgs",
+  "provider_id": "MIR:00000755",
+  "primary": 1,
+  "forward": "https://www.pgscatalog.org/pgs/${ac}/",
+  "redirect": "https://www.pgscatalog.org/pgs/${content}/",
+  "description": "The Polygenic Score (PGS) Catalog is an open database of PGS and the relevant metadata required for accurate application and evaluation.",
+  "location": "United Kingdom",
+  "institution": "The University of Cambridge",
+  "prefixed": 0,
+  "test": "PGS000018",
+  "probe": "https://www.pgscatalog.org/pgs/PGS000018/",
+  "pattern": "^PGS[0-9]{6}$",
+  "more": "http://pgscatalog.org",
+  "revision": 0
+}

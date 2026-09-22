@@ -1,0 +1,23 @@
+{
+  "id": "6vts",
+  "target": {
+    "DEFAULT": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "JCOIN Portal",
+  "alias": null,
+  "provider": "dg.6VTS",
+  "provider_id": "MIR:00000933",
+  "primary": 1,
+  "forward": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/${content}",
+  "description": "The Helping to End Addiction Long-termSM Initiative, or NIH HEAL InitiativeSM, will support the Justice Community Opioid Innovation Network (JCOIN) to study approaches to increase high-quality care for people with opioid misuse and OUD in justice settings. JCOIN will test strategies to expand effective treatment and care in partnership with local and state justice systems and community-based treatment providers.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "005bf193-fa93-44c0-9b2b-9b039f94d692",
+  "probe": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/005bf193-fa93-44c0-9b2b-9b039f94d692",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://jcoin.datacommons.io/",
+  "revision": 0
+}

@@ -1,7 +1,23 @@
 {
   "id": "mi",
-  "target": {},
-  "type": "commonspfx",
-  "redirect": "N/A",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols4/ontologies/mi/terms?obo_id=MI:${content}"
+  },
+  "type": "scheme",
+  "name": "Molecular Interactions Ontology through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00100142",
+  "primary": 0,
+  "forward": "https://www.ebi.ac.uk/ols4/ontologies/mi/terms?obo_id=MI:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols4/ontologies/mi/terms?obo_id=MI:${content}",
+  "description": "The Molecular Interactions (MI) ontology forms a structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions. MI is developed by the HUPO Proteomics Standards Initiative.",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 1,
+  "test": "0308",
+  "probe": "https://www.ebi.ac.uk/ols4/ontologies/mi/terms?obo_id=MI:0308",
+  "pattern": "^MI:\\d{4}$",
+  "more": "https://www.ebi.ac.uk/ols4/ontologies/mi",
   "revision": 0
 }

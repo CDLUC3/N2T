@@ -1,0 +1,23 @@
+{
+  "id": "xfid",
+  "target": {
+    "DEFAULT": "https://xframework.id/${content}"
+  },
+  "type": "scheme",
+  "name": "XframeworkID Registry",
+  "alias": null,
+  "provider": "xfid",
+  "provider_id": "MIR:00001142",
+  "primary": 1,
+  "forward": "https://xframework.id/${ac}",
+  "redirect": "https://xframework.id/${content}",
+  "description": "XframeworkID (XFID) is an open registry of permanent, content-based identifiers for extra-financial disclosure documents associated with labelled bond issuances — green, social and sustainability bond frameworks, Second Party Opinions (SPOs), EU Green Bond Standard pre/post-issuance reviews and\nfactsheets, impact and allocation reports, certifications, assurance reports, and academic research analysing labelled bonds. XFIDs are derived from a SHA-256 hash of the document's canonical content, so an identifier permanently and verifiably denotes one specific document version regardless of where\n the file is hosted — addressing the measured erosion of this disclosure class (23% of tracked documents are no longer accessible at their original URLs). The registry cross-references documents to issuers, bond ISINs, assessment providers and analysts, and is used for citation in academic research, investor due diligence and regulatory monitoring.",
+  "location": "Canada",
+  "institution": "Vector Bravo Inc",
+  "prefixed": 0,
+  "test": "XFI5ICTDJ4",
+  "probe": "https://xframework.id/XFI5ICTDJ4",
+  "pattern": "^XF[A-Z0-9]{8}$",
+  "more": "https://xframework.id",
+  "revision": 0
+}

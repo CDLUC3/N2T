@@ -1,0 +1,23 @@
+{
+  "id": "nando",
+  "target": {
+    "DEFAULT": "https://nanbyodata.jp/disease/NANDO:${content}"
+  },
+  "type": "scheme",
+  "name": "Database Center for Life Science, Kashiwa, Chiba, Japan",
+  "alias": null,
+  "provider": "dbcls",
+  "provider_id": "MIR:00001009",
+  "primary": 1,
+  "forward": "https://nanbyodata.jp/disease/NANDO:${ac}",
+  "redirect": "https://nanbyodata.jp/disease/NANDO:${content}",
+  "description": "Nanbyo Disease Ontology (NANDO) is the ontology creating a comprehensive hierarchical controlled vocabulary for intractable and rare disease (i.e., nanbyo) representation in Japan.",
+  "location": "Japan",
+  "institution": "Database Center for Life Science, Kashiwa, Chiba, Japan",
+  "prefixed": 1,
+  "test": "1200031",
+  "probe": "https://nanbyodata.jp/disease/NANDO:1200031",
+  "pattern": "^NANDO:[0-9]+$",
+  "more": "https://nanbyodata.jp/",
+  "revision": 0
+}

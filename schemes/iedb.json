@@ -1,0 +1,23 @@
+{
+  "id": "iedb",
+  "target": {
+    "DEFAULT": "https://www.iedb.org/reference/${content}"
+  },
+  "type": "scheme",
+  "name": "La Jolla Institute for Immunology",
+  "alias": null,
+  "provider": "lji",
+  "provider_id": "MIR:00000864",
+  "primary": 1,
+  "forward": "https://www.iedb.org/reference/${ac}",
+  "redirect": "https://www.iedb.org/reference/${content}",
+  "description": "The Immune Epitope Database (IEDB) is a freely available resource funded by NIAID. It catalogs experimental data on antibody and T cell epitopes studied in humans, non-human primates, and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation. The IEDB also hosts tools to assist in the prediction and analysis of epitopes.",
+  "location": "United States",
+  "institution": "La Jolla Institute for Immunology",
+  "prefixed": 0,
+  "test": "1038233",
+  "probe": "https://www.iedb.org/reference/1038233",
+  "pattern": "^[0-9]+$",
+  "more": "https://www.lji.org/",
+  "revision": 0
+}

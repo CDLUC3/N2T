@@ -1,0 +1,23 @@
+{
+  "id": "mondo",
+  "target": {
+    "DEFAULT": "http://purl.obolibrary.org/obo/MONDO_${content}"
+  },
+  "type": "scheme",
+  "name": "Monarch Initiative",
+  "alias": null,
+  "provider": "mondo",
+  "provider_id": "MIR:00001088",
+  "primary": 1,
+  "forward": "http://purl.obolibrary.org/obo/MONDO_${ac}",
+  "redirect": "http://purl.obolibrary.org/obo/MONDO_${content}",
+  "description": "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world.",
+  "location": "United States",
+  "institution": "Monarch Initiative",
+  "prefixed": 0,
+  "test": "0004994",
+  "probe": "http://purl.obolibrary.org/obo/MONDO_0004994",
+  "pattern": "^\\d{7}$",
+  "more": "https://monarchinitiative.org",
+  "revision": 0
+}

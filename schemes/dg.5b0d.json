@@ -1,0 +1,23 @@
+{
+  "id": "dg.5b0d",
+  "target": {
+    "DEFAULT": "https://data.bloodpac.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "BloodPAC",
+  "alias": null,
+  "provider": "dg.5b0d",
+  "provider_id": "MIR:00000894",
+  "primary": 1,
+  "forward": "https://data.bloodpac.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://data.bloodpac.org/ga4gh/drs/v1/objects/${content}",
+  "description": "The Blood Profiling Atlas in Cancer (BloodPAC) supports the management, analysis and sharing of liquid biopsy data for the oncology research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for cancer treatment and prevention. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "00000d53-99bc-4d3e-8ed7-6dc358baccb7",
+  "probe": "https://data.bloodpac.org/ga4gh/drs/v1/objects/00000d53-99bc-4d3e-8ed7-6dc358baccb7",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://data.bloodpac.org/.",
+  "revision": 0
+}

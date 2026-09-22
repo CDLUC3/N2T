@@ -1,0 +1,23 @@
+{
+  "id": "qtldb",
+  "target": {
+    "DEFAULT": "https://www.animalgenome.org/QTLdb/q?id=QTL_ID:${content}"
+  },
+  "type": "scheme",
+  "name": "Animal QTL DB at Iowa State University",
+  "alias": null,
+  "provider": "iastate",
+  "provider_id": "MIR:00000797",
+  "primary": 1,
+  "forward": "https://www.animalgenome.org/QTLdb/q?id=QTL_ID:${ac}",
+  "redirect": "https://www.animalgenome.org/QTLdb/q?id=QTL_ID:${content}",
+  "description": "The Animal Quantitative Trait Loci (QTL) database (Animal QTLdb) is designed to house publicly all available QTL and single-nucleotide polymorphism/gene association data on livestock animal species. This collection is species-independent.",
+  "location": "United States",
+  "institution": "Iowa State University",
+  "prefixed": 0,
+  "test": "4685",
+  "probe": "https://www.animalgenome.org/QTLdb/q?id=QTL_ID:4685",
+  "pattern": "^\\d+$",
+  "more": "https://www.animalgenome.org/QTLdb",
+  "revision": 0
+}

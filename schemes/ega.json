@@ -1,0 +1,23 @@
+{
+  "id": "ega",
+  "target": {
+    "DEFAULT": "https://ega-archive.org/identifiers/${content}"
+  },
+  "type": "scheme",
+  "name": "European Genome-phenome Archive",
+  "alias": null,
+  "provider": "ega",
+  "provider_id": "MIR:00001112",
+  "primary": 1,
+  "forward": "https://ega-archive.org/identifiers/${ac}",
+  "redirect": "https://ega-archive.org/identifiers/${content}",
+  "description": "The European Genome-phenome Archive (EGA) is a global network for permanent archiving and sharing of personally identifiable genetic, phenotypic, and clinical data generated for the purposes of biomedical research projects or in the context of research-focused healthcare systems. Jointly managed by the European Bioinformatics Institute (EMBL-EBI) in Cambridge (UK) and the Centre for Genomic Regulation (CRG) in Barcelona.",
+  "location": "Spain",
+  "institution": "Centre for Genomic Regulation and European Bioinformatics Institute",
+  "prefixed": 0,
+  "test": "EGAD00001008392",
+  "probe": "https://ega-archive.org/identifiers/EGAD00001008392",
+  "pattern": "^EGA[SCPNRXZDBF][0-9]{11}$",
+  "more": "https://ega-archive.org/",
+  "revision": 0
+}

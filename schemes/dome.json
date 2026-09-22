@@ -1,0 +1,23 @@
+{
+  "id": "dome",
+  "target": {
+    "DEFAULT": "https://registry.dome-ml.org/review/${content}"
+  },
+  "type": "scheme",
+  "name": "DOME Registry",
+  "alias": null,
+  "provider": "dome",
+  "provider_id": "MIR:00001085",
+  "primary": 1,
+  "forward": "https://registry.dome-ml.org/review/${ac}",
+  "redirect": "https://registry.dome-ml.org/review/${content}",
+  "description": "A database of annotations for published papers describing machine learning methods in biology",
+  "location": "Italy",
+  "institution": "University of Padua",
+  "prefixed": 0,
+  "test": "88n4lxv68p",
+  "probe": "https://registry.dome-ml.org/review/88n4lxv68p",
+  "pattern": "^[a-z0-9]{10}$",
+  "more": "https://registry.dome-ml.org/",
+  "revision": 0
+}

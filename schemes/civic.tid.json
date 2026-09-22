@@ -1,0 +1,23 @@
+{
+  "id": "civic.tid",
+  "target": {
+    "DEFAULT": "https://civicdb.org/links/drugs/${content}"
+  },
+  "type": "scheme",
+  "name": "Clinical Interpretation of Variants in Cancer (CIViC)",
+  "alias": null,
+  "provider": "civicdb",
+  "provider_id": "MIR:00000954",
+  "primary": 1,
+  "forward": "https://civicdb.org/links/drugs/${ac}",
+  "redirect": "https://civicdb.org/links/drugs/${content}",
+  "description": "Therapies (often drugs) in CIViC are associated with Predictive Evidence Types, which describe sensitivity, resistance or adverse response to therapies when a given variant is present. The Therapy field may also be used to describe more general treatment types and regimes, such as FOLFOX or Radiation, as long as the literature derived Evidence Item makes a scientific association between the Therapy (treatment type) and the presence of the variant.",
+  "location": "United States",
+  "institution": "Washington University in St. Louis",
+  "prefixed": 0,
+  "test": "14",
+  "probe": "https://civicdb.org/links/drugs/14",
+  "pattern": "^[0-9]+$",
+  "more": "https://civicdb.org/",
+  "revision": 0
+}

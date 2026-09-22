@@ -1,0 +1,23 @@
+{
+  "id": "pkdb",
+  "target": {
+    "DEFAULT": "https://pk-db.com/data/${content}"
+  },
+  "type": "scheme",
+  "name": "Humboldt University of Berlin",
+  "alias": null,
+  "provider": "pkdb",
+  "provider_id": "MIR:00000714",
+  "primary": 1,
+  "forward": "https://pk-db.com/data/${ac}",
+  "redirect": "https://pk-db.com/data/${content}",
+  "description": "PK-DB an open database for pharmacokinetics information from clinical trials as well as pre-clinical research. The focus of PK-DB is to provide high-quality pharmacokinetics data enriched with the required meta-information for computational modeling and data integration. ",
+  "location": "Germany",
+  "institution": "Humboldt University of Berlin",
+  "prefixed": 0,
+  "test": "PKDB00198",
+  "probe": "https://pk-db.com/data/PKDB00198",
+  "pattern": "^PKDB[0-9]{5}$",
+  "more": "https://www.hu-berlin.de/?set_language=en&cl=en",
+  "revision": 0
+}

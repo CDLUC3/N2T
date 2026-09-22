@@ -1,0 +1,23 @@
+{
+  "id": "vegbank",
+  "target": {
+    "DEFAULT": "https://vegbank.org/cite/${content}"
+  },
+  "type": "scheme",
+  "name": "VegBank",
+  "alias": null,
+  "provider": "vegbank",
+  "provider_id": "MIR:00000751",
+  "primary": 1,
+  "forward": "https://vegbank.org/cite/${ac}",
+  "redirect": "https://vegbank.org/cite/${content}",
+  "description": "VegBank is the vegetation plot database of the Ecological Society of America's Panel on Vegetation Classification. VegBank consists of three linked databases that contain (1) vegetation plot records, (2) vegetation types recognized in the U.S. National Vegetation Classification and other vegetation types submitted by users, and (3) all plant taxa recognized by ITIS/USDA as well as all other plant taxa recorded in plot records. Vegetation records, community types and plant taxa may be submitted to VegBank and may be subsequently searched, viewed, annotated, revised, interpreted, downloaded, and cited. ",
+  "location": "United States",
+  "institution": "National Center for Ecological Analysis and Synthesis",
+  "prefixed": 0,
+  "test": "VB.Ob.3736.GRSM125",
+  "probe": "https://vegbank.org/cite/VB.Ob.3736.GRSM125",
+  "pattern": "^((VB\\.)?(?i:ds|cc|ob|pc|to|py)\\..*|doi:10\\.82902\\/.*)$",
+  "more": "https://vegbank.org/",
+  "revision": 0
+}

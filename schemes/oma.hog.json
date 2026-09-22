@@ -1,0 +1,23 @@
+{
+  "id": "oma.hog",
+  "target": {
+    "DEFAULT": "https://omabrowser.org/oma/hog/${content}/"
+  },
+  "type": "scheme",
+  "name": "ETH Zurich",
+  "alias": null,
+  "provider": "oma",
+  "provider_id": "MIR:00000761",
+  "primary": 1,
+  "forward": "https://omabrowser.org/oma/hog/${ac}/",
+  "redirect": "https://omabrowser.org/oma/hog/${content}/",
+  "description": "Hierarchical orthologous groups predicted by OMA (Orthologous MAtrix) database. Hierarchical orthologous groups are sets of genes that have started diverging from a single common ancestor gene at a certain taxonomic level of reference. ",
+  "location": "Switzerland",
+  "institution": "ETH Zurich",
+  "prefixed": 0,
+  "test": "HOG:E0666575",
+  "probe": "https://omabrowser.org/oma/hog/HOG:E0666575/",
+  "pattern": "^HOG:[0-9A-Z._]+$",
+  "more": "https://omabrowser.org",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "biolink",
+  "target": {
+    "DEFAULT": "https://w3id.org/biolink/vocab/${content}"
+  },
+  "type": "scheme",
+  "name": "BioLink GitHub Organization",
+  "alias": null,
+  "provider": "biolinkgithub",
+  "provider_id": "MIR:00000778",
+  "primary": 1,
+  "forward": "https://w3id.org/biolink/vocab/${ac}",
+  "redirect": "https://w3id.org/biolink/vocab/${content}",
+  "description": "A high level datamodel of biological entities (genes, diseases, phenotypes, pathways, individuals, substances, etc) and their associations.",
+  "location": "United States",
+  "institution": "BioLink GitHub Organization",
+  "prefixed": 0,
+  "test": "Gene",
+  "probe": "https://w3id.org/biolink/vocab/Gene",
+  "pattern": "^\\S+$",
+  "more": "https://biolink.github.io/biolink-model",
+  "revision": 0
+}

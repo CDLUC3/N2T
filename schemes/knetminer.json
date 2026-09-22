@@ -1,0 +1,23 @@
+{
+  "id": "knetminer",
+  "target": {
+    "DEFAULT": "https://app.knetminer.com/genepage/${content}"
+  },
+  "type": "scheme",
+  "name": "KnetMiner",
+  "alias": null,
+  "provider": "knetminer",
+  "provider_id": "MIR:00001139",
+  "primary": 1,
+  "forward": "https://app.knetminer.com/genepage/${ac}",
+  "redirect": "https://app.knetminer.com/genepage/${content}",
+  "description": "KnetMiner is a knowledge graph platform for evidence-based gene discovery and complex trait analysis across plants, crops and other species. It integrates genome annotations, orthology, pathways, protein interactions, gene expression, phenotypes, GWAS results and the published literature into a single knowledge graph, and publishes a gene page for every gene it holds. Identifiers in this namespace resolve to the KnetMiner gene page for a given gene in a given species, showing that gene's network context, traits, functional annotations, orthologs and supporting literature evidence.",
+  "location": "United Kingdom",
+  "institution": "KnetMiner Ltd, Harpenden, Hertfordshire, UK",
+  "prefixed": 0,
+  "test": "triticum_aestivum/TRAESCS5D02G004100",
+  "probe": "https://app.knetminer.com/genepage/triticum_aestivum/TRAESCS5D02G004100",
+  "pattern": "^[a-z0-9_]+/[A-Za-z0-9._-]+$",
+  "more": "https://knetminer.com/",
+  "revision": 0
+}

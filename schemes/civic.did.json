@@ -1,0 +1,23 @@
+{
+  "id": "civic.did",
+  "target": {
+    "DEFAULT": "https://civicdb.org/links/diseases/${content}"
+  },
+  "type": "scheme",
+  "name": "Clinical Interpretation of Variants in Cancer (CIViC)",
+  "alias": null,
+  "provider": "civicdb",
+  "provider_id": "MIR:00000956",
+  "primary": 1,
+  "forward": "https://civicdb.org/links/diseases/${ac}",
+  "redirect": "https://civicdb.org/links/diseases/${content}",
+  "description": "Within the CIViC database, the disease should be the cancer or cancer subtype that is a result of the described variant. The disease selected should be as specific as possible should reflect the disease type used in the source that supports the evidence statement.",
+  "location": "United States",
+  "institution": "Washington University in St. Louis",
+  "prefixed": 0,
+  "test": "46",
+  "probe": "https://civicdb.org/links/diseases/46",
+  "pattern": "^[0-9]+$",
+  "more": "https://civicdb.org/",
+  "revision": 0
+}

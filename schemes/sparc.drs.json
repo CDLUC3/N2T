@@ -1,0 +1,23 @@
+{
+  "id": "sparc.drs",
+  "target": {
+    "DEFAULT": "https://services.scicrunch.io/sparc/drs/v1/package/${content}"
+  },
+  "type": "scheme",
+  "name": "FAIR Data Informatics Laboratory",
+  "alias": null,
+  "provider": "fdilab",
+  "provider_id": "MIR:00001101",
+  "primary": 1,
+  "forward": "https://services.scicrunch.io/sparc/drs/v1/package/${ac}",
+  "redirect": "https://services.scicrunch.io/sparc/drs/v1/package/${content}",
+  "description": "The SPARC Data Repository Service (DRS) is an implementation of the Global Alliance for Genomics and Health (GA4GH) DRS specification that provides a standardized API that enables researchers and other data consumers to access and retrieve data objects from various data repositories in a consistent and cloud-agnostic way. This implementation provides information for data objects in the SPARC repository (sparc.science).",
+  "location": "United States",
+  "institution": "University of California, San Diego",
+  "prefixed": 0,
+  "test": "package/8ca67504-3167-4cc8-ba74-98137bb7cd0a",
+  "probe": "https://services.scicrunch.io/sparc/drs/v1/package/package/8ca67504-3167-4cc8-ba74-98137bb7cd0a",
+  "pattern": "(?:[a-zA-Z]+\\/)?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}",
+  "more": "https://www.fdilab.org",
+  "revision": 0
+}

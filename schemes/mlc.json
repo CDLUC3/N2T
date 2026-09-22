@@ -1,0 +1,23 @@
+{
+  "id": "mlc",
+  "target": {
+    "DEFAULT": "https://www.mlcommons.org/mlc-id/${content}"
+  },
+  "type": "scheme",
+  "name": "MLCommons Association",
+  "alias": null,
+  "provider": "mlc",
+  "provider_id": "MIR:00000823",
+  "primary": 1,
+  "forward": "https://www.mlcommons.org/mlc-id/${ac}",
+  "redirect": "https://www.mlcommons.org/mlc-id/${content}",
+  "description": "MLCommons Association artifacts, including benchmark results, datasets, and saved models.",
+  "location": "United States",
+  "institution": "MLCommons Association",
+  "prefixed": 0,
+  "test": "0.7-123",
+  "probe": "https://www.mlcommons.org/mlc-id/0.7-123",
+  "pattern": "^[0-9a-zA-Z\\.\\-\\_]+$",
+  "more": "https://mlcommons.org/en/",
+  "revision": 0
+}

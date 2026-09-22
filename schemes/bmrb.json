@@ -1,0 +1,23 @@
+{
+  "id": "bmrb",
+  "target": {
+    "DEFAULT": "https://bmrb.io/data_library/summary/index.php?bmrbId=${content}"
+  },
+  "type": "scheme",
+  "name": "Biological Magnetic Resonance Data Bank",
+  "alias": null,
+  "provider": "bmrb",
+  "provider_id": "MIR:00000735",
+  "primary": 1,
+  "forward": "https://bmrb.io/data_library/summary/index.php?bmrbId=${ac}",
+  "redirect": "https://bmrb.io/data_library/summary/index.php?bmrbId=${content}",
+  "description": "BMRB collects, annotates, archives, and disseminates (worldwide in the public domain) the important spectral and quantitative data derived from NMR spectroscopic investigations of biological macromolecules and metabolites. The goal is to empower scientists in their analysis of the structure, dynamics, and chemistry of biological systems and to support further development of the field of biomolecular NMR spectroscopy.",
+  "location": "United States",
+  "institution": "University of Wisconsin-Madison",
+  "prefixed": 0,
+  "test": "15000",
+  "probe": "https://bmrb.io/data_library/summary/index.php?bmrbId=15000",
+  "pattern": "^(bmr|bmse|bmst)?[0-9]{1,6}$",
+  "more": "https://bmrb.io/",
+  "revision": 0
+}

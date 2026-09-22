@@ -1,0 +1,23 @@
+{
+  "id": "covid19",
+  "target": {
+    "DEFAULT": "https://covid19.sfb.uit.no/api/records/${content}"
+  },
+  "type": "scheme",
+  "name": "Elixir@UiT",
+  "alias": null,
+  "provider": "sfb",
+  "provider_id": "MIR:00000787",
+  "primary": 1,
+  "forward": "https://covid19.sfb.uit.no/api/records/${ac}",
+  "redirect": "https://covid19.sfb.uit.no/api/records/${content}",
+  "description": "Curated contextual database gathering samples related to SARS-CoV-2 virus and covid-19 disease.",
+  "location": "Norway",
+  "institution": "University of Tromsø - The Arctic University of Norway",
+  "prefixed": 0,
+  "test": "SFB_COVID19_MW286762",
+  "probe": "https://covid19.sfb.uit.no/api/records/SFB_COVID19_MW286762",
+  "pattern": "^\\w+_COVID19_[-\\w]+$",
+  "more": "https://covid19.sfb.uit.no",
+  "revision": 0
+}

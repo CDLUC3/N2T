@@ -1,0 +1,23 @@
+{
+  "id": "stato",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols4/ontologies/stato/classes?obo_id=STATO:${content}"
+  },
+  "type": "scheme",
+  "name": "European Bioinformatics Institute",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00001050",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/ols4/ontologies/stato/classes?obo_id=STATO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols4/ontologies/stato/classes?obo_id=STATO:${content}",
+  "description": "STATO is the statistical methods ontology. It contains concepts and properties related to statistical methods, probability distributions and other concepts related to statistical analysis, including relationships to study designs and plots.",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 1,
+  "test": "0000138",
+  "probe": "https://www.ebi.ac.uk/ols4/ontologies/stato/classes?obo_id=STATO:0000138",
+  "pattern": "^STATO:\\d+$",
+  "more": "https://www.ebi.ac.uk",
+  "revision": 0
+}

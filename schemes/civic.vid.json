@@ -1,0 +1,23 @@
+{
+  "id": "civic.vid",
+  "target": {
+    "DEFAULT": "https://civicdb.org/links/variant/${content}"
+  },
+  "type": "scheme",
+  "name": "Clinical Interpretation of Variants in Cancer (CIViC)",
+  "alias": null,
+  "provider": "civicdb",
+  "provider_id": "MIR:00000908",
+  "primary": 1,
+  "forward": "https://civicdb.org/links/variant/${ac}",
+  "redirect": "https://civicdb.org/links/variant/${content}",
+  "description": "CIViC variants are usually genomic alterations, including single nucleotide variants (SNVs), insertion/deletion events (indels), copy number alterations (CNV’s such as amplification or deletion), structural variants (SVs such as translocations and inversions), and other events that differ from the “normal” genome. In some cases a CIViC variant may represent events of the transcriptome or proteome. For example, ‘expression’ or ‘over-expression’ is a valid variant. Regardless of the variant, it must have a Predictive, Prognostic, Predisposing, Diagnostic, Oncogenic, or Functional relevance that is clinical in nature to be entered in CIViC. i.e. There must be some rationale for why curation of this variant could ultimately aid clinical decision making.",
+  "location": "United States",
+  "institution": "Washington University in St. Louis",
+  "prefixed": 0,
+  "test": "12",
+  "probe": "https://civicdb.org/links/variant/12",
+  "pattern": "^[0-9]+$",
+  "more": "https://civicdb.org/",
+  "revision": 0
+}

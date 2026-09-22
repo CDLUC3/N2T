@@ -1,0 +1,23 @@
+{
+  "id": "civic.gid",
+  "target": {
+    "DEFAULT": "https://civicdb.org/links/gene/${content}"
+  },
+  "type": "scheme",
+  "name": "Clinical Interpretation of Variants in Cancer (CIViC)",
+  "alias": null,
+  "provider": "civicdb",
+  "provider_id": "MIR:00000906",
+  "primary": 1,
+  "forward": "https://civicdb.org/links/gene/${ac}",
+  "redirect": "https://civicdb.org/links/gene/${content}",
+  "description": "A CIViC Gene Summary is created to provide a high-level overview of clinical relevance of cancer variants for the gene. Gene Summaries in CIViC focus on emphasizing the clinical relevance from a molecular perspective rather than describing the biological function of the gene unless necessary to contextualize its clinical relevance in cancer. Gene Summaries include relevant cancer subtypes, specific treatments for the gene’s associated variants, pathway interactions, functional alterations caused by the variants in the gene, and normal/abnormal functions of the gene with associated roles in oncogenesis",
+  "location": "United States",
+  "institution": "Washington University in St. Louis",
+  "prefixed": 0,
+  "test": "272",
+  "probe": "https://civicdb.org/links/gene/272",
+  "pattern": "^[0-9]+$",
+  "more": "https://civicdb.org/",
+  "revision": 0
+}

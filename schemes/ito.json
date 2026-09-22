@@ -1,0 +1,23 @@
+{
+  "id": "ito",
+  "target": {
+    "DEFAULT": "https://bioportal.bioontology.org/ontologies/ITO/?p=classes&conceptid=https://identifiers.org/ito:${content}"
+  },
+  "type": "scheme",
+  "name": "BioPortal at National Center for Biomedical Ontology",
+  "alias": null,
+  "provider": "ito",
+  "provider_id": "MIR:00000801",
+  "primary": 1,
+  "forward": "https://bioportal.bioontology.org/ontologies/ITO/?p=classes&conceptid=https://identifiers.org/ito:${ac}",
+  "redirect": "https://bioportal.bioontology.org/ontologies/ITO/?p=classes&conceptid=https://identifiers.org/ito:${content}",
+  "description": "The Intelligence Task Ontology (ITO) provides a comprehensive map of machine intelligence tasks, as well as broader human intelligence or hybrid human/machine intelligence tasks.",
+  "location": "United States",
+  "institution": "Institute of Artificial Intelligence and Decision Support, Medical University of Vienna",
+  "prefixed": 0,
+  "test": "ITO_01625",
+  "probe": "https://bioportal.bioontology.org/ontologies/ITO/?p=classes&conceptid=https://identifiers.org/ito:ITO_01625",
+  "pattern": "^.+$",
+  "more": "https://bioportal.bioontology.org/",
+  "revision": 0
+}

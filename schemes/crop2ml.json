@@ -1,0 +1,23 @@
+{
+  "id": "crop2ml",
+  "target": {
+    "DEFAULT": "http://www.crop2ml.org/cropmdb/${content}"
+  },
+  "type": "scheme",
+  "name": "Crop2ML model repository",
+  "alias": null,
+  "provider": "cropmdb",
+  "provider_id": "MIR:00001016",
+  "primary": 1,
+  "forward": "http://www.crop2ml.org/cropmdb/${ac}",
+  "redirect": "http://www.crop2ml.org/cropmdb/${content}",
+  "description": "CropMRespository is a database of soil and crop biophysical process models.",
+  "location": "France",
+  "institution": "National Research Institute for Agriculture, Food and Environment",
+  "prefixed": 0,
+  "test": "000000001",
+  "probe": "http://www.crop2ml.org/cropmdb/000000001",
+  "pattern": "^[0-9]{9}$",
+  "more": "http://www.crop2ml.org",
+  "revision": 0
+}

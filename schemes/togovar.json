@@ -1,0 +1,23 @@
+{
+  "id": "togovar",
+  "target": {
+    "DEFAULT": "https://grch38.togovar.org/variant/${content}"
+  },
+  "type": "scheme",
+  "name": "Database Center for Life Science, Kashiwa, Chiba, Japan",
+  "alias": null,
+  "provider": "dbcls",
+  "provider_id": "MIR:00001005",
+  "primary": 1,
+  "forward": "https://grch38.togovar.org/variant/${ac}",
+  "redirect": "https://grch38.togovar.org/variant/${content}",
+  "description": "TogoVar (A comprehensive Japanese genetic variation database) is a database that has collected and organized genome sequence differences between individuals (variants) in the Japanese population and disease information associated with them.",
+  "location": "Japan",
+  "institution": "Database Center for Life Science, Kashiwa, Chiba, Japan",
+  "prefixed": 0,
+  "test": "tgv139393198",
+  "probe": "https://grch38.togovar.org/variant/tgv139393198",
+  "pattern": "^tgv[0-9]+$",
+  "more": "https://grch38.togovar.org/",
+  "revision": 0
+}

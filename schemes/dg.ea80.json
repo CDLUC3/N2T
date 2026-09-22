@@ -1,0 +1,23 @@
+{
+  "id": "dg.ea80",
+  "target": {
+    "DEFAULT": "https://ibdgc.datacommons.io/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "NIDDK IBD Genetics Consortium Portal",
+  "alias": null,
+  "provider": "dg.EA80",
+  "provider_id": "MIR:00000920",
+  "primary": 1,
+  "forward": "https://ibdgc.datacommons.io/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://ibdgc.datacommons.io/ga4gh/drs/v1/objects/${content}",
+  "description": "The Inflammatory Bowel Disease Genetics Consortium Data Commons supports the management, analysis, and sharing of genetic data to support the vision and mission of the IBD genetics consortium.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "00083977-d4d7-4593-a216-2b9c931b8b03",
+  "probe": "https://ibdgc.datacommons.io/ga4gh/drs/v1/objects/00083977-d4d7-4593-a216-2b9c931b8b03",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://ibdgc.datacommons.io/",
+  "revision": 0
+}

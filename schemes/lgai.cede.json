@@ -1,0 +1,23 @@
+{
+  "id": "lgai.cede",
+  "target": {
+    "DEFAULT": "https://s3.us-east-2.amazonaws.com/lg.cede/${content}"
+  },
+  "type": "scheme",
+  "name": "LG AI Research",
+  "alias": null,
+  "provider": "lgai.cede",
+  "provider_id": "MIR:00000866",
+  "primary": 1,
+  "forward": "https://s3.us-east-2.amazonaws.com/lg.cede/${ac}",
+  "redirect": "https://s3.us-east-2.amazonaws.com/lg.cede/${content}",
+  "description": "LG Chemical Entity Detection Dataset (LGCEDe) is only available open-dataset with molecular instance level annotations (i.e. atom-bond level position annotations within an image) for molecular structure images. This dataset was designed to encourage research on detection-based pipelines for Optical Chemical Structure Recognition (OCSR).",
+  "location": "Korea, Republic of",
+  "institution": "LG AI Research",
+  "prefixed": 0,
+  "test": "LGCEDe-S-000002244",
+  "probe": "https://s3.us-east-2.amazonaws.com/lg.cede/LGCEDe-S-000002244",
+  "pattern": "^LGCEDe-S-\\d{9}$",
+  "more": "https://www.lgresearch.ai",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "col",
+  "target": {
+    "DEFAULT": "https://www.checklistbank.org/dataset/3LR/taxon/${content}"
+  },
+  "type": "scheme",
+  "name": "ChecklistBank",
+  "alias": null,
+  "provider": "clb",
+  "provider_id": "MIR:00000970",
+  "primary": 1,
+  "forward": "https://www.checklistbank.org/dataset/3LR/taxon/${ac}",
+  "redirect": "https://www.checklistbank.org/dataset/3LR/taxon/${content}",
+  "description": "Identifier of a taxon or synonym in the Catalogue of Life",
+  "location": "Denmark",
+  "institution": "Global Biodiversity Information Facility",
+  "prefixed": 0,
+  "test": "4QHKG",
+  "probe": "https://www.checklistbank.org/dataset/3LR/taxon/4QHKG",
+  "pattern": "^[23456789BCDFGHJKLMNPQRSTVWXYZ]{1,6}$",
+  "more": "https://www.checklistbank.org",
+  "revision": 0
+}

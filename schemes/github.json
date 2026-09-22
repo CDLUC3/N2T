@@ -1,0 +1,23 @@
+{
+  "id": "github",
+  "target": {
+    "DEFAULT": "https://github.com/${content}"
+  },
+  "type": "scheme",
+  "name": "GitHub, Inc.",
+  "alias": null,
+  "provider": "github",
+  "provider_id": "MIR:00000852",
+  "primary": 1,
+  "forward": "https://github.com/${ac}",
+  "redirect": "https://github.com/${content}",
+  "description": "GitHub is an online host of Git source code repositories.",
+  "location": "United States",
+  "institution": "GitHub, Inc.",
+  "prefixed": 0,
+  "test": "identifiers-org/registry",
+  "probe": "https://github.com/identifiers-org/registry",
+  "pattern": "^[a-zA-Z0-9-_]+/[a-zA-Z0-9-_]+$",
+  "more": "https://github.com/",
+  "revision": 0
+}

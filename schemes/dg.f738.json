@@ -1,0 +1,23 @@
+{
+  "id": "dg.f738",
+  "target": {
+    "DEFAULT": "https://vpodc.data-commons.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "Veterans Precision Oncology Data Commons",
+  "alias": null,
+  "provider": "oc",
+  "provider_id": "MIR:00001017",
+  "primary": 1,
+  "forward": "https://vpodc.data-commons.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://vpodc.data-commons.org/ga4gh/drs/v1/objects/${content}",
+  "description": "The Veterans Data Commons supports the management, analysis and sharing of veteran oncologic data for the research community and aims to accelerate the discovery and development of therapies, diagnostic tests, and other technologies for precision oncology.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "000bf826-73ba-4685-aa6c-3e0971a2f260",
+  "probe": "https://vpodc.data-commons.org/ga4gh/drs/v1/objects/000bf826-73ba-4685-aa6c-3e0971a2f260",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://vpodc.data-commons.org/",
+  "revision": 0
+}

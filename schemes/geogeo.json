@@ -1,0 +1,23 @@
+{
+  "id": "geogeo",
+  "target": {
+    "DEFAULT": "http://purl.obolibrary.org/obo/${content}"
+  },
+  "type": "scheme",
+  "name": "University of Florida Biomedical Informatics Program",
+  "alias": null,
+  "provider": "obo",
+  "provider_id": "MIR:00000821",
+  "primary": 1,
+  "forward": "http://purl.obolibrary.org/obo/${ac}",
+  "redirect": "http://purl.obolibrary.org/obo/${content}",
+  "description": "An ontology and inventory of geopolitical entities such as nations and their components (states, provinces, districts, counties) and the actual physical territories over which they have jurisdiction.  We thus distinguish and assign different identifiers to the US in \"The US declared war on Germany\" vs. the US in \"The plane entered US airspace\".",
+  "location": "United States",
+  "institution": "University of Florida Biomedical Informatics Program",
+  "prefixed": 0,
+  "test": "GEO_000000021",
+  "probe": "http://purl.obolibrary.org/obo/GEO_000000021",
+  "pattern": "^GEO_[0-9]{9}$",
+  "more": "https://github.com/ufbmi",
+  "revision": 0
+}

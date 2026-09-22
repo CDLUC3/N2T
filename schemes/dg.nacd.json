@@ -1,0 +1,23 @@
+{
+  "id": "dg.nacd",
+  "target": {
+    "DEFAULT": "https://accessclinicaldata.niaid.nih.gov/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "https://accessclinicaldata.niaid.nih.gov/",
+  "alias": null,
+  "provider": "dg.nacd",
+  "provider_id": "MIR:00000999",
+  "primary": 1,
+  "forward": "https://accessclinicaldata.niaid.nih.gov/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://accessclinicaldata.niaid.nih.gov/ga4gh/drs/v1/objects/${content}",
+  "description": "AccessClinicalData@NIAID is a NIAID cloud-based, secure data platform that enables sharing of and access to reports and data sets from NIAID COVID-19 and other sponsored clinical trials for the basic and clinical research community.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "2096a0d6-1846-4b98-9ba3-e4065d82111d",
+  "probe": "https://accessclinicaldata.niaid.nih.gov/ga4gh/drs/v1/objects/2096a0d6-1846-4b98-9ba3-e4065d82111d",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://accessclinicaldata.niaid.nih.gov/",
+  "revision": 0
+}

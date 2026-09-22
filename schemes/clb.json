@@ -1,0 +1,23 @@
+{
+  "id": "clb",
+  "target": {
+    "DEFAULT": "https://www.checklistbank.org/dataset/${content}"
+  },
+  "type": "scheme",
+  "name": "ChecklistBank",
+  "alias": null,
+  "provider": "clb",
+  "provider_id": "MIR:00000963",
+  "primary": 1,
+  "forward": "https://www.checklistbank.org/dataset/${ac}",
+  "redirect": "https://www.checklistbank.org/dataset/${content}",
+  "description": "ChecklistBank is an index and repository for taxonomic and nomenclatural datasets",
+  "location": "Denmark",
+  "institution": "Global Biodiversity Information Facility",
+  "prefixed": 0,
+  "test": "1010",
+  "probe": "https://www.checklistbank.org/dataset/1010",
+  "pattern": "^[0-9]+(LR)?$",
+  "more": "https://www.checklistbank.org",
+  "revision": 0
+}

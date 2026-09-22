@@ -1,0 +1,23 @@
+{
+  "id": "dg.4825",
+  "target": {
+    "DEFAULT": "https://gen3.datacommons.io/ga4gh/drs/v1/objects/dg.4825/${content}"
+  },
+  "type": "scheme",
+  "name": "ACCOuNT Data Commons",
+  "alias": null,
+  "provider": "dg.4825",
+  "provider_id": "MIR:00001013",
+  "primary": 1,
+  "forward": "https://gen3.datacommons.io/ga4gh/drs/v1/objects/dg.4825/${ac}",
+  "redirect": "https://gen3.datacommons.io/ga4gh/drs/v1/objects/dg.4825/${content}",
+  "description": "This website provides a centralized, cloud-based discovery portal for African American pharmacogenomics data and aims to accelerate discovery of novel genetic variants in African Americans related to clinically actionable cardiovascular phenotypes.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "e322c7d9-a0fa-4a1d-83f0-0f06bda87fe8",
+  "probe": "https://gen3.datacommons.io/ga4gh/drs/v1/objects/dg.4825/e322c7d9-a0fa-4a1d-83f0-0f06bda87fe8",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://gen3.datacommons.io",
+  "revision": 0
+}

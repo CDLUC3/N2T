@@ -1,0 +1,23 @@
+{
+  "id": "identifiers.namespace",
+  "target": {
+    "DEFAULT": "https://registry.identifiers.org/registry/${content}"
+  },
+  "type": "scheme",
+  "name": "European Bioinformatics Institute",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00000858",
+  "primary": 1,
+  "forward": "https://registry.identifiers.org/registry/${ac}",
+  "redirect": "https://registry.identifiers.org/registry/${content}",
+  "description": "Identifiers.org is an established resolving system that enables the referencing of data for the scientific community, with a current focus on the Life Sciences domain.",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 0,
+  "test": "pubmed",
+  "probe": "https://registry.identifiers.org/registry/pubmed",
+  "pattern": "^[a-z_\\.]+$",
+  "more": "https://www.ebi.ac.uk",
+  "revision": 0
+}
