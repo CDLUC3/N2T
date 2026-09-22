@@ -4,6 +4,7 @@ Liberal CORS support is needed to enable in-browser programmatic use of
 PID identified resources.
 """
 
+import json
 import logging
 import os
 
@@ -99,3 +100,29 @@ def test_identifier_resolutions(n2tapp, test, probe):
     #print(f"RESPONSE = {response.headers}")
     target = response.headers.get("location")
     assert target == probe
+
+
+with open(os.path.join(THIS_FOLDER, "test_data/identifiers_org_repairs.json")) as repairs_file:
+    identifiers_org_repairs = json.load(repairs_file)
+
+
+@pytest.mark.parametrize("prefix, case", identifiers_org_repairs.items())
+def test_identifiers_org_repaired_routes(n2tapp, prefix, case):
+    client = fastapi.testclient.TestClient(n2tapp, follow_redirects=False)
+    response = client.get(f"/{prefix}:{case['sample_id']}")
+    assert response.status_code == 302
+    assert response.headers.get("location") in case["urls"]
+
+
+@pytest.mark.parametrize("identifier, expected", [
+    ("go.ref:GO_REF:0000041", "http://www.geneontology.org/cgi-bin/references.cgi#GO_REF:0000041"),
+    ("biomaps:37", "http://www.mmmp.org/MMMP/public/biomap/viewBiomap.mmmp?id=37"),
+    ("swisslipid:000048885", "http://www.swisslipids.org/#/entity/SLM:000048885/"),
+    ("gramene.growthstage:0007133", "http://www.gramene.org/db/ontology/search?id=GRO:0007133"),
+    ("psimi:0308", "https://www.ebi.ac.uk/ols/ontologies/mi/terms?obo_id=MI:0308"),
+])
+def test_identifiers_org_related_names_preserved(n2tapp, identifier, expected):
+    client = fastapi.testclient.TestClient(n2tapp, follow_redirects=False)
+    response = client.get(f"/{identifier}")
+    assert response.status_code == 302
+    assert response.headers.get("location") == expected
