@@ -15,8 +15,8 @@
   "location": "United States",
   "institution": "Open Commons Consortium",
   "prefixed": 0,
-  "test": "005bf193-fa93-44c0-9b2b-9b039f94d692",
-  "probe": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/005bf193-fa93-44c0-9b2b-9b039f94d692",
+  "test": "342e89bd-3d37-49be-8f97-ffb283649b9a",
+  "probe": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/342e89bd-3d37-49be-8f97-ffb283649b9a",
   "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
   "more": "https://jcoin.datacommons.io/",
   "revision": 0

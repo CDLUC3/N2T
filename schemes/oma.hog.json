@@ -15,8 +15,8 @@
   "location": "Switzerland",
   "institution": "ETH Zurich",
   "prefixed": 0,
-  "test": "HOG:E0666575",
-  "probe": "https://omabrowser.org/oma/hog/HOG:E0666575/",
+  "test": "HOG:F0000001",
+  "probe": "https://omabrowser.org/oma/hog/HOG:F0000001/",
   "pattern": "^HOG:[0-9A-Z._]+$",
   "more": "https://omabrowser.org",
   "revision": 0
