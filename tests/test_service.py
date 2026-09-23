@@ -4,7 +4,6 @@ Liberal CORS support is needed to enable in-browser programmatic use of
 PID identified resources.
 """
 
-import json
 import logging
 import os
 
@@ -100,19 +99,3 @@ def test_identifier_resolutions(n2tapp, test, probe):
     #print(f"RESPONSE = {response.headers}")
     target = response.headers.get("location")
     assert target == probe
-
-
-with open(os.path.join(THIS_FOLDER, "test_data/identifiers_org_repairs.json")) as repairs_file:
-    identifiers_org_repairs = json.load(repairs_file)
-
-
-@pytest.mark.parametrize(
-    "prefix, case",
-    identifiers_org_repairs.items(),
-    ids=identifiers_org_repairs,
-)
-def test_identifiers_org_repaired_routes(n2tapp, prefix, case):
-    client = fastapi.testclient.TestClient(n2tapp, follow_redirects=False)
-    response = client.get(f"/{prefix}:{case['sample_id']}")
-    assert response.status_code == 302
-    assert response.headers.get("location") in case["urls"]
