@@ -1,0 +1,23 @@
+{
+  "id": "dg.63d5",
+  "target": {
+    "DEFAULT": "https://chicagoland.pandemicresponsecommons.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "Chicago Pandemic Response Commons",
+  "alias": null,
+  "provider": "dg.63D5",
+  "provider_id": "MIR:00000929",
+  "primary": 1,
+  "forward": "https://chicagoland.pandemicresponsecommons.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://chicagoland.pandemicresponsecommons.org/ga4gh/drs/v1/objects/${content}",
+  "description": "Chicago Pandemic Response Commons known as CCC is the first regional data commons launched under the Pandemic Response Commons Consortium. Born out of a consortium of Chicago-area civic and healthcare organizations with support from several technology partners, the PRC represents a persistent data resource for the research community engaging with COVID-19.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "00002b0f-0adf-4015-b2b7-b38f9337044a",
+  "probe": "https://chicagoland.pandemicresponsecommons.org/ga4gh/drs/v1/objects/00002b0f-0adf-4015-b2b7-b38f9337044a",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://chicagoland.pandemicresponsecommons.org/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "funderregistry",
+  "target": {
+    "DEFAULT": "http://data.crossref.org/fundingdata/funder/10.13039/${content}"
+  },
+  "type": "scheme",
+  "name": "Crossref",
+  "alias": null,
+  "provider": "crossref",
+  "provider_id": "MIR:00000846",
+  "primary": 1,
+  "forward": "http://data.crossref.org/fundingdata/funder/10.13039/${ac}",
+  "redirect": "http://data.crossref.org/fundingdata/funder/10.13039/${content}",
+  "description": "The Funder Registry is an open registry of persistent identifiers for grant-giving organizations around the world.",
+  "location": "United States",
+  "institution": "Crossref",
+  "prefixed": 0,
+  "test": "100000001",
+  "probe": "http://data.crossref.org/fundingdata/funder/10.13039/100000001",
+  "pattern": "^\\d{9,9}$",
+  "more": "https://www.crossref.org/",
+  "revision": 0
+}

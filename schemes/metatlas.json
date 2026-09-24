@@ -1,0 +1,23 @@
+{
+  "id": "metatlas",
+  "target": {
+    "DEFAULT": "https://metabolicatlas.org/identifier/MetabolicAtlas/${content}"
+  },
+  "type": "scheme",
+  "name": "Metabolic Atlas",
+  "alias": null,
+  "provider": "metatlas",
+  "provider_id": "MIR:00000958",
+  "primary": 1,
+  "forward": "https://metabolicatlas.org/identifier/MetabolicAtlas/${ac}",
+  "redirect": "https://metabolicatlas.org/identifier/MetabolicAtlas/${content}",
+  "description": "Metabolic Atlas facilitates metabolic modelling by presenting open source genome-scale metabolic models for easy browsing and analysis.",
+  "location": "Sweden",
+  "institution": "National Bioinformatics Infrastructure Sweden",
+  "prefixed": 0,
+  "test": "MAR01234",
+  "probe": "https://metabolicatlas.org/identifier/MetabolicAtlas/MAR01234",
+  "pattern": "^MA[MR]\\d{5}[a-z]?$",
+  "more": "https://metabolicatlas.org",
+  "revision": 0
+}

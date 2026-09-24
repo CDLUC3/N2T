@@ -1,6 +1,23 @@
 {
   "id": "cheminf",
-  "target": {},
-  "type": "commonspfx",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols4/ontologies/cheminf/classes?obo_id=CHEMINF:${content}"
+  },
+  "type": "scheme",
+  "name": "CHEMINF via OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00001044",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/ols4/ontologies/cheminf/classes?obo_id=CHEMINF:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols4/ontologies/cheminf/classes?obo_id=CHEMINF:${content}",
+  "description": "The chemical information ontology (cheminf) describes information entities about chemical entities. It provides qualitative and quantitative attributes to richly describe chemicals.",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 1,
+  "test": "000306",
+  "probe": "https://www.ebi.ac.uk/ols4/ontologies/cheminf/classes?obo_id=CHEMINF:000306",
+  "pattern": "^CHEMINF:\\d+$",
+  "more": "https://www.ebi.ac.uk/ols4/ontologies/cheminf",
   "revision": 0
 }

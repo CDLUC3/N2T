@@ -1,0 +1,23 @@
+{
+  "id": "mcro",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols4/ontologies/mcro/classes?obo_id=MCRO:${content}"
+  },
+  "type": "scheme",
+  "name": "MCRO via OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00001048",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/ols4/ontologies/mcro/classes?obo_id=MCRO:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols4/ontologies/mcro/classes?obo_id=MCRO:${content}",
+  "description": "An ontology representing the model card structure, he aim of this work is to describe machine learning models to communicate information about specific details about the model (trade offs, intended users, licensing, etc.). ",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 1,
+  "test": "0000027",
+  "probe": "https://www.ebi.ac.uk/ols4/ontologies/mcro/classes?obo_id=MCRO:0000027",
+  "pattern": "^MCRO:\\d+$",
+  "more": "https://www.ebi.ac.uk/ols4/ontologies/mcro",
+  "revision": 0
+}

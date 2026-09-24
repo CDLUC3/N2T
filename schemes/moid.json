@@ -1,0 +1,23 @@
+{
+  "id": "moid",
+  "target": {
+    "DEFAULT": "https://gnss-metadata.eu/MOID/${content}"
+  },
+  "type": "scheme",
+  "name": "Royal Observatory of Belgium",
+  "alias": null,
+  "provider": "moid",
+  "provider_id": "MIR:00001067",
+  "primary": 1,
+  "forward": "https://gnss-metadata.eu/MOID/${ac}",
+  "redirect": "https://gnss-metadata.eu/MOID/${content}",
+  "description": "M3G stands for “Metadata Management and distribution system for Multiple GNSS Networks”. M3G allows to upload, validate, and distribute GNSS station metadata such as IGS-style site logs, information about local networks, DOIs, nominal data provision, data licenses attached to the daily RINEX data, etc...",
+  "location": "Belgium",
+  "institution": "Royal Observatory of Belgium",
+  "prefixed": 0,
+  "test": "station.6051b2f8b9142a5b8c676342",
+  "probe": "https://gnss-metadata.eu/MOID/station.6051b2f8b9142a5b8c676342",
+  "pattern": "^[a-zA-Z0-9]+\\.[a-f0-9]{24}$",
+  "more": "https://www.astro.oma.be/en/",
+  "revision": 0
+}

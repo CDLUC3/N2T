@@ -1,0 +1,23 @@
+{
+  "id": "odc.sci",
+  "target": {
+    "DEFAULT": "https://odc-sci.org/data/${content}"
+  },
+  "type": "scheme",
+  "name": "Open Data Commons for Spinal Cord Injury",
+  "alias": null,
+  "provider": "odc.sci",
+  "provider_id": "MIR:00000803",
+  "primary": 1,
+  "forward": "https://odc-sci.org/data/${ac}",
+  "redirect": "https://odc-sci.org/data/${content}",
+  "description": "The Open Data Commons for Spinal Cord Injury is a cloud-based community-driven repository to store, share, and publish spinal cord injury research data.",
+  "location": "United States",
+  "institution": "University of California, San Diego",
+  "prefixed": 0,
+  "test": "602",
+  "probe": "https://odc-sci.org/data/602",
+  "pattern": "^[0-9]*$",
+  "more": "https://odc-sci.org",
+  "revision": 0
+}

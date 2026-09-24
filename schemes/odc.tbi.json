@@ -1,0 +1,23 @@
+{
+  "id": "odc.tbi",
+  "target": {
+    "DEFAULT": "https://odc-tbi.org/data/${content}"
+  },
+  "type": "scheme",
+  "name": "Open Data Commons for Traumatic Brain Injury",
+  "alias": null,
+  "provider": "odc.tbi",
+  "provider_id": "MIR:00000815",
+  "primary": 1,
+  "forward": "https://odc-tbi.org/data/${ac}",
+  "redirect": "https://odc-tbi.org/data/${content}",
+  "description": "The Open Data Commons for Traumatic Brain Injury is a cloud-based community-driven repository to store, share, and publish traumatic brain injury research data.",
+  "location": "United States",
+  "institution": "University of California, San Diego",
+  "prefixed": 0,
+  "test": "408",
+  "probe": "https://odc-tbi.org/data/408",
+  "pattern": "^[0-9]*$",
+  "more": "https://odc-tbi.org",
+  "revision": 0
+}

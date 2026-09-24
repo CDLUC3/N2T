@@ -1,0 +1,23 @@
+{
+  "id": "nmrshiftdb2",
+  "target": {
+    "DEFAULT": "https://nmrshiftdb.nmr.uni-koeln.de/molecule/${content}"
+  },
+  "type": "scheme",
+  "name": "NMRShiftDB",
+  "alias": null,
+  "provider": "uoc",
+  "provider_id": "MIR:00000719",
+  "primary": 1,
+  "forward": "https://nmrshiftdb.nmr.uni-koeln.de/molecule/${ac}",
+  "redirect": "https://nmrshiftdb.nmr.uni-koeln.de/molecule/${content}",
+  "description": "NMR database for organic structures and their nuclear magnetic resonance (nmr) spectra. It allows for spectrum prediction (13C, 1H and other nuclei) as well as for searching spectra, structures and other properties.",
+  "location": "Germany",
+  "institution": "University of Cologne",
+  "prefixed": 0,
+  "test": "234",
+  "probe": "https://nmrshiftdb.nmr.uni-koeln.de/molecule/234",
+  "pattern": "^[0-9]+$",
+  "more": "https://nmrshiftdb.nmr.uni-koeln.de",
+  "revision": 0
+}

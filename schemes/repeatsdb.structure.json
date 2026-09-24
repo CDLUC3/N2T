@@ -1,0 +1,23 @@
+{
+  "id": "repeatsdb.structure",
+  "target": {
+    "DEFAULT": "https://repeatsdb.org/structure/${content}"
+  },
+  "type": "scheme",
+  "name": "RepeatsDB",
+  "alias": null,
+  "provider": "repeatsdb.structure",
+  "provider_id": "MIR:00000780",
+  "primary": 1,
+  "forward": "https://repeatsdb.org/structure/${ac}",
+  "redirect": "https://repeatsdb.org/structure/${content}",
+  "description": "RepeatsDB is a database of annotated tandem repeat protein structures. This collection references structural entries in the database.",
+  "location": "Italy",
+  "institution": "University of Padua",
+  "prefixed": 0,
+  "test": "2gc4E",
+  "probe": "https://repeatsdb.org/structure/2gc4E",
+  "pattern": "^[0-9][A-Za-z0-9]{3}[A-Za-z0-9][A-Za-z0-9]?[0-9]?[0-9]?$",
+  "more": "https://repeatsdb.org/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "corrdb",
+  "target": {
+    "DEFAULT": "https://www.animalgenome.org/CorrDB/q/?id=CorrID:${content}"
+  },
+  "type": "scheme",
+  "name": "USA National Animal Genome Research Program",
+  "alias": null,
+  "provider": "CorrDB",
+  "provider_id": "MIR:00000825",
+  "primary": 1,
+  "forward": "https://www.animalgenome.org/CorrDB/q/?id=CorrID:${ac}",
+  "redirect": "https://www.animalgenome.org/CorrDB/q/?id=CorrID:${content}",
+  "description": "A genetic correlation is the proportion of shared variance between two traits that is due to genetic causes; a phenotypic correlation is the degree to which two traits co-vary among individuals in a population. In the genomics era, while gene expression, genetic association, and network analysis provide unprecedented means to decode the genetic basis of complex phenotypes, it is important to recognize the possible effects genetic progress in one trait can have on other traits. This database is designed to collect all published livestock genetic/phenotypic trait correlation data, aimed at facilitating genetic network analysis or systems biology studies.",
+  "location": "United States",
+  "institution": "Iowa State University",
+  "prefixed": 0,
+  "test": "37232",
+  "probe": "https://www.animalgenome.org/CorrDB/q/?id=CorrID:37232",
+  "pattern": "^[0-9]+$",
+  "more": "https://www.animalgenome.org",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pmr.workspace",
+  "target": {
+    "DEFAULT": "https://models.physiomeproject.org/workspace/${content}"
+  },
+  "type": "scheme",
+  "name": "University of Auckland",
+  "alias": null,
+  "provider": "abi",
+  "provider_id": "MIR:00000947",
+  "primary": 1,
+  "forward": "https://models.physiomeproject.org/workspace/${ac}",
+  "redirect": "https://models.physiomeproject.org/workspace/${content}",
+  "description": "Workspace (Git repository) for modeling projects managed by the Physiome Model Repository",
+  "location": "New Zealand",
+  "institution": "University of Auckland",
+  "prefixed": 0,
+  "test": "modularmassactionprimer",
+  "probe": "https://models.physiomeproject.org/workspace/modularmassactionprimer",
+  "pattern": "^[a-zA-Z0-9_\\-]+(/.*?)?$",
+  "more": "https://www.auckland.ac.nz/en.html",
+  "revision": 0
+}

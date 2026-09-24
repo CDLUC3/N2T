@@ -1,0 +1,23 @@
+{
+  "id": "uniprot.chain",
+  "target": {
+    "DEFAULT": "http://purl.uniprot.org/annotation/${content}"
+  },
+  "type": "scheme",
+  "name": "UniProt Chain through Universal Protein Resource",
+  "alias": null,
+  "provider": "upr",
+  "provider_id": "MIR:00000728",
+  "primary": 1,
+  "forward": "http://purl.uniprot.org/annotation/${ac}",
+  "redirect": "http://purl.uniprot.org/annotation/${content}",
+  "description": "This collection is a subset of UniProtKB that provides a means to reference the proteolytic cleavage products of a precursor protein.",
+  "location": "United States",
+  "institution": "UniProt Consortium",
+  "prefixed": 0,
+  "test": "PRO_0000016681",
+  "probe": "http://purl.uniprot.org/annotation/PRO_0000016681",
+  "pattern": "^PRO_[0-9]{10}$",
+  "more": "https://www.uniprot.org",
+  "revision": 0
+}

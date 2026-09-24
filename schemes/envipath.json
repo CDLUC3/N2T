@@ -1,0 +1,23 @@
+{
+  "id": "envipath",
+  "target": {
+    "DEFAULT": "https://envipath.org/package/${content}"
+  },
+  "type": "scheme",
+  "name": "enviPath",
+  "alias": null,
+  "provider": "envipathug",
+  "provider_id": "MIR:00000776",
+  "primary": 1,
+  "forward": "https://envipath.org/package/${ac}",
+  "redirect": "https://envipath.org/package/${content}",
+  "description": "enviPath is a database and prediction system for the microbial biotransformation of organic environmental contaminants. The database provides the possibility to store and view experimentally observed biotransformation pathways. The pathway prediction system provides different relative reasoning models to predict likely biotransformation pathways and products.",
+  "location": "Germany",
+  "institution": "enviPath UG & Co. KG",
+  "prefixed": 0,
+  "test": "32de3cf4-e3e6-4168-956e-32fa5ddb0ce1/compound/b545cabc-8c9e-4b20-8848-efa015b481ea",
+  "probe": "https://envipath.org/package/32de3cf4-e3e6-4168-956e-32fa5ddb0ce1/compound/b545cabc-8c9e-4b20-8848-efa015b481ea",
+  "pattern": "^[\\w^_]{8}-[\\w^_]{4}-[\\w^_]{4}-[\\w^_]{4}-[\\w^_]{12}\\/[\\w-]+\\/[\\w^_]{8}-[\\w^_]{4}-[\\w^_]{4}-[\\w^_]{4}-[\\w^_]{12}$",
+  "more": "https://envipath.org/",
+  "revision": 0
+}

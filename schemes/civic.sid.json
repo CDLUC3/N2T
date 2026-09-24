@@ -1,0 +1,23 @@
+{
+  "id": "civic.sid",
+  "target": {
+    "DEFAULT": "https://civicdb.org/links/sources/${content}"
+  },
+  "type": "scheme",
+  "name": "Clinical Interpretation of Variants in Cancer (CIViC)",
+  "alias": null,
+  "provider": "civicdb",
+  "provider_id": "MIR:00000952",
+  "primary": 1,
+  "forward": "https://civicdb.org/links/sources/${ac}",
+  "redirect": "https://civicdb.org/links/sources/${content}",
+  "description": "In CIViC, each Evidence Item must be associated with a Source Type and Source ID, which link the Evidence Item to the original source of information supporting clinical claims. Currently, CIViC accepts publications indexed on PubMed OR abstracts published through the American Society of Clinical Oncology (ASCO). Each such source entered into CIViC is assigned a unique identifier and expert curators can curate guidance that assists future curators in the interpretation of information from this source.",
+  "location": "United States",
+  "institution": "Washington University in St. Louis",
+  "prefixed": 0,
+  "test": "62",
+  "probe": "https://civicdb.org/links/sources/62",
+  "pattern": "^[0-9]+$",
+  "more": "https://civicdb.org/",
+  "revision": 0
+}

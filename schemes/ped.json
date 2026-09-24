@@ -1,7 +1,23 @@
 {
   "id": "ped",
-  "target": {},
-  "type": "commonspfx",
-  "redirect": "N/A",
+  "target": {
+    "DEFAULT": "https://proteinensemble.org/${content}"
+  },
+  "type": "scheme",
+  "name": "PED - Protein Ensemble Database",
+  "alias": null,
+  "provider": "ped",
+  "provider_id": "MIR:00000784",
+  "primary": 1,
+  "forward": "https://proteinensemble.org/${ac}",
+  "redirect": "https://proteinensemble.org/${content}",
+  "description": "The Protein Ensemble Database is an open access database for the deposition of structural ensembles, including intrinsically disordered proteins.",
+  "location": "Italy",
+  "institution": "University of Padua",
+  "prefixed": 0,
+  "test": "PED00037",
+  "probe": "https://proteinensemble.org/PED00037",
+  "pattern": "^PED\\d{5}$",
+  "more": "https://proteinensemble.org/",
   "revision": 0
 }

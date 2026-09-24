@@ -1,0 +1,23 @@
+{
+  "id": "nlfff",
+  "target": {
+    "DEFAULT": "http://database.deepsolar.space:18080/dbs/nlfff/${content}"
+  },
+  "type": "scheme",
+  "name": "Deepsolar Laboratory",
+  "alias": null,
+  "provider": "deeps",
+  "provider_id": "MIR:00000987",
+  "primary": 1,
+  "forward": "http://database.deepsolar.space:18080/dbs/nlfff/${ac}",
+  "redirect": "http://database.deepsolar.space:18080/dbs/nlfff/${content}",
+  "description": "Nonlinear Force-Free Field Three-Dimensional Magnetic Fields Data of Solar Active Regions Database",
+  "location": "China",
+  "institution": "Deepsolar Laboratory",
+  "prefixed": 0,
+  "test": "345201101230312003",
+  "probe": "http://database.deepsolar.space:18080/dbs/nlfff/345201101230312003",
+  "pattern": "^[0-9]+$",
+  "more": "https://nlfff.dataset.deepsolar.space/en/",
+  "revision": 0
+}

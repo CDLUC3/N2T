@@ -1,0 +1,23 @@
+{
+  "id": "rapdb.transcript",
+  "target": {
+    "DEFAULT": "https://rapdb.dna.affrc.go.jp/viewer/gene_detail/irgsp1?name=${content}"
+  },
+  "type": "scheme",
+  "name": "RAP-DB",
+  "alias": null,
+  "provider": "rapdb",
+  "provider_id": "MIR:00000773",
+  "primary": 1,
+  "forward": "https://rapdb.dna.affrc.go.jp/viewer/gene_detail/irgsp1?name=${ac}",
+  "redirect": "https://rapdb.dna.affrc.go.jp/viewer/gene_detail/irgsp1?name=${content}",
+  "description": "Rice Annotation Project Database (RAP-DB) is a primary rice (Oryza sativa) annotation database established in 2004 upon the completion of the Oryza sativa ssp. japonica cv. Nipponbare genome sequencing by the International Rice Genome Sequencing Project. RAP-DB provides comprehensive resources (e.g. genome annotation, gene expression, DNA markers, genetic diversity, etc.) for biological and agricultural research communities. This collection provides transcript information in RAP-DB.",
+  "location": "Japan",
+  "institution": "The National Agriculture and Food Research Organization (NARO)",
+  "prefixed": 0,
+  "test": "Os01t0883800-02",
+  "probe": "https://rapdb.dna.affrc.go.jp/viewer/gene_detail/irgsp1?name=Os01t0883800-02",
+  "pattern": "^Os\\S+t\\d{7}-\\d{2}$",
+  "more": "https://rapdb.dna.affrc.go.jp/",
+  "revision": 0
+}

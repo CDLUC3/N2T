@@ -1,0 +1,23 @@
+{
+  "id": "dg.va03",
+  "target": {
+    "DEFAULT": "https://va.data-commons.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "VA Data Commons",
+  "alias": null,
+  "provider": "vadc",
+  "provider_id": "MIR:00001007",
+  "primary": 1,
+  "forward": "https://va.data-commons.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://va.data-commons.org/ga4gh/drs/v1/objects/${content}",
+  "description": "The VA Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond.\n",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "00990747-f66a-4b1e-a6d2-3f08c5c1461f",
+  "probe": "https://va.data-commons.org/ga4gh/drs/v1/objects/00990747-f66a-4b1e-a6d2-3f08c5c1461f",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://va.data-commons.org/",
+  "revision": 0
+}

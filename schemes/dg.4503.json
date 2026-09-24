@@ -1,0 +1,23 @@
+{
+  "id": "dg.4503",
+  "target": {
+    "DEFAULT": "https://gen3.biodatacatalyst.nhlbi.nih.gov/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "BioData Catalyst",
+  "alias": null,
+  "provider": "dg.4503",
+  "provider_id": "MIR:00000868",
+  "primary": 1,
+  "forward": "https://gen3.biodatacatalyst.nhlbi.nih.gov/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://gen3.biodatacatalyst.nhlbi.nih.gov/ga4gh/drs/v1/objects/${content}",
+  "description": "Full implementation of the DRS 1.1 standard with support for persistent identifiers. Open source DRS server that follows the Gen3 implementation. Gen3 is a GA4GH compliant open source platform for developing framework services and data commons. Data commons accelerate and democratize the process of scientific discovery, especially over large or complex datasets. Gen3 is maintained by the Center for Translational Data Science at the University of Chicago. https://gen3.org",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "0000ffeb-36e0-4a29-b21d-84423bda979d",
+  "probe": "https://gen3.biodatacatalyst.nhlbi.nih.gov/ga4gh/drs/v1/objects/0000ffeb-36e0-4a29-b21d-84423bda979d",
+  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://gen3.biodatacatalyst.nhlbi.nih.gov",
+  "revision": 0
+}

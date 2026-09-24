@@ -1,0 +1,23 @@
+{
+  "id": "f82a1a",
+  "target": {
+    "DEFAULT": "https://data.kidsfirstdrc.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "Kids First Data Catalog",
+  "alias": null,
+  "provider": "dg.F82A1A",
+  "provider_id": "MIR:00000924",
+  "primary": 1,
+  "forward": "https://data.kidsfirstdrc.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://data.kidsfirstdrc.org/ga4gh/drs/v1/objects/${content}",
+  "description": "The Kids First Data Catalog supports the Kids First Data Resource Center by providing a digital object services that allow interoperability between data commons, including authentication and authorization for controlled access data.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "0000324e-e2d9-4ccd-b25b-2d16c8a87b28",
+  "probe": "https://data.kidsfirstdrc.org/ga4gh/drs/v1/objects/0000324e-e2d9-4ccd-b25b-2d16c8a87b28",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://data.kidsfirstdrc.org/",
+  "revision": 0
+}

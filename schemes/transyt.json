@@ -1,0 +1,23 @@
+{
+  "id": "transyt",
+  "target": {
+    "DEFAULT": "https://transyt.bio.di.uminho.pt/reactions/${content}"
+  },
+  "type": "scheme",
+  "name": "BIOSYSTEMS Research Group",
+  "alias": null,
+  "provider": "transyt",
+  "provider_id": "MIR:00000731",
+  "primary": 1,
+  "forward": "https://transyt.bio.di.uminho.pt/reactions/${ac}",
+  "redirect": "https://transyt.bio.di.uminho.pt/reactions/${content}",
+  "description": "The Transport Systems Tracker (TranSyT) is a tool to identify transport systems and the compounds carried across membranes.",
+  "location": "Portugal",
+  "institution": "Centre of Biological Engineering",
+  "prefixed": 0,
+  "test": "TR0000001",
+  "probe": "https://transyt.bio.di.uminho.pt/reactions/TR0000001",
+  "pattern": "^T[A-Z]\\d{7}$",
+  "more": "https://www.bio.di.uminho.pt/",
+  "revision": 0
+}

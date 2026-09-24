@@ -1,0 +1,23 @@
+{
+  "id": "dg.7c5b",
+  "target": {
+    "DEFAULT": "https://portal.occ-data.org/loginga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "Environmental Data Commons",
+  "alias": null,
+  "provider": "dg.7C5B",
+  "provider_id": "MIR:00000923",
+  "primary": 1,
+  "forward": "https://portal.occ-data.org/loginga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://portal.occ-data.org/loginga4gh/drs/v1/objects/${content}",
+  "description": "This website provides a centralized, cloud-based portal for the open redistribution and analysis of environmental datasets and satellite imagery from OCC stakeholders like NASA and NOAA and aims to support the earth science research community as well as human assisted disaster relief.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "00000014-990c-48f2-b0a8-fbb533860512",
+  "probe": "https://portal.occ-data.org/loginga4gh/drs/v1/objects/00000014-990c-48f2-b0a8-fbb533860512",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://portal.occ-data.org/",
+  "revision": 0
+}

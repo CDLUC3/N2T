@@ -1,0 +1,23 @@
+{
+  "id": "gsso",
+  "target": {
+    "DEFAULT": "http://purl.obolibrary.org/obo/GSSO_${content}"
+  },
+  "type": "scheme",
+  "name": "National Center for Biomedical Ontology (NCBO) BioPortal",
+  "alias": null,
+  "provider": "bioportal",
+  "provider_id": "MIR:00000758",
+  "primary": 1,
+  "forward": "http://purl.obolibrary.org/obo/GSSO_${ac}",
+  "redirect": "http://purl.obolibrary.org/obo/GSSO_${content}",
+  "description": "The Gender, Sex, and Sexual Orientation (GSSO) ontology is an interdisciplinary ontology connecting terms from biology, medicine, psychology, sociology, and gender studies, aiming to bridge gaps between linguistic variations inside and outside of the health care environment. A large focus of the ontology is its consideration of LGBTQIA+ terminology.",
+  "location": "United States",
+  "institution": "University of Cincinnati",
+  "prefixed": 1,
+  "test": "002368",
+  "probe": "http://purl.obolibrary.org/obo/GSSO_002368",
+  "pattern": "^GSSO:\\d{6}$",
+  "more": "https://bioportal.bioontology.org/",
+  "revision": 0
+}

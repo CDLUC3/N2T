@@ -1,6 +1,23 @@
 {
   "id": "nemo",
-  "target": {},
-  "type": "commonspfx",
+  "target": {
+    "DEFAULT": "https://assets.nemoarchive.org/${content}"
+  },
+  "type": "scheme",
+  "name": "The NeMO Archive",
+  "alias": null,
+  "provider": "igs",
+  "provider_id": "MIR:00000790",
+  "primary": 1,
+  "forward": "https://assets.nemoarchive.org/${ac}",
+  "redirect": "https://assets.nemoarchive.org/${content}",
+  "description": "This namespace is about Neuroscience Multi-Omic data, specially focused on that data generated from the BRAIN Initiative and related brain research projects.",
+  "location": "United States",
+  "institution": "The Institute for Genome Sciences",
+  "prefixed": 0,
+  "test": "smp-m3w9hbe",
+  "probe": "https://assets.nemoarchive.org/smp-m3w9hbe",
+  "pattern": "^[a-z]{3}-[a-km-z0-9]{7}$",
+  "more": "https://www.nemoarchive.org",
   "revision": 0
 }

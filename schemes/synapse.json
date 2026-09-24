@@ -1,6 +1,23 @@
 {
   "id": "synapse",
-  "target": {},
-  "type": "commonspfx",
+  "target": {
+    "DEFAULT": "https://repo-prod.prod.sagebase.org/ga4gh/drs/v1/objects/syn${content}"
+  },
+  "type": "scheme",
+  "name": "Sage Bionetworks",
+  "alias": null,
+  "provider": "synapse",
+  "provider_id": "MIR:00001042",
+  "primary": 1,
+  "forward": "https://repo-prod.prod.sagebase.org/ga4gh/drs/v1/objects/syn${ac}",
+  "redirect": "https://repo-prod.prod.sagebase.org/ga4gh/drs/v1/objects/syn${content}",
+  "description": "Synapse is a collaborative, open-source research platform that allows teams to share data, track analyses, and collaborate.",
+  "location": "United States",
+  "institution": "Sage Bionetworks",
+  "prefixed": 0,
+  "test": "41455251.1",
+  "probe": "https://repo-prod.prod.sagebase.org/ga4gh/drs/v1/objects/syn41455251.1",
+  "pattern": "^[0-9]*\\.*[0-9]*$",
+  "more": "https://sagebionetworks.org",
   "revision": 0
 }

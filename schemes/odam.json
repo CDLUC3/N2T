@@ -1,0 +1,23 @@
+{
+  "id": "odam",
+  "target": {
+    "DEFAULT": "http://pmb-bordeaux.fr/getdata/json/${content}/datapackage?links=1"
+  },
+  "type": "scheme",
+  "name": "INRA",
+  "alias": null,
+  "provider": "bmf",
+  "provider_id": "MIR:00000759",
+  "primary": 1,
+  "forward": "http://pmb-bordeaux.fr/getdata/json/${ac}/datapackage?links=1",
+  "redirect": "http://pmb-bordeaux.fr/getdata/json/${content}/datapackage?links=1",
+  "description": "Experimental data table management software to make research data accessible and available for reuse with minimal effort on the part of the data provider. Designed to manage experimental data tables in an easy way for users, ODAM provides a model for structuring both data and metadata that facilitates data handling and analysis. It also encourages data dissemination according to FAIR principles by making the data interoperable and reusable by both humans and machines, allowing the dataset to be explored and then extracted in whole or in part as needed.",
+  "location": "France",
+  "institution": "National Research Institute for Agriculture, Food and Environment",
+  "prefixed": 0,
+  "test": "frim1",
+  "probe": "http://pmb-bordeaux.fr/getdata/json/frim1/datapackage?links=1",
+  "pattern": "^[A-Za-z0-9]+$",
+  "more": "https://metabolome.cgfb.u-bordeaux.fr/",
+  "revision": 0
+}

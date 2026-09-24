@@ -1,0 +1,23 @@
+{
+  "id": "ifloprop",
+  "target": {
+    "DEFAULT": "https://purl.infoflora.ch/concept/ifloprop/${content}"
+  },
+  "type": "scheme",
+  "name": "InfoFlora",
+  "alias": null,
+  "provider": "ifl",
+  "provider_id": "MIR:00001123",
+  "primary": 1,
+  "forward": "https://purl.infoflora.ch/concept/ifloprop/${ac}",
+  "redirect": "https://purl.infoflora.ch/concept/ifloprop/${content}",
+  "description": "Lexicon of properties and values that can be used in InfoFlora APIs.",
+  "location": "Switzerland",
+  "institution": "InfoFlora",
+  "prefixed": 0,
+  "test": "code0001",
+  "probe": "https://purl.infoflora.ch/concept/ifloprop/code0001",
+  "pattern": "^[A-Za-z0-9]+$",
+  "more": "https://www.infoflora.ch/",
+  "revision": 0
+}

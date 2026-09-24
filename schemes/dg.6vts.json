@@ -1,0 +1,23 @@
+{
+  "id": "dg.6vts",
+  "target": {
+    "DEFAULT": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "JCOIN",
+  "alias": null,
+  "provider": "dg.6vts",
+  "provider_id": "MIR:00000875",
+  "primary": 1,
+  "forward": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/${content}",
+  "description": "Full implementation of the DRS 1.1 standard with support for persistent identifiers. Open source DRS server that follows the Gen3 implementation. Gen3 is a GA4GH compliant open source platform for developing framework services and data commons. Data commons accelerate and democratize the process of scientific discovery, especially over large or complex datasets. Gen3 is maintained by the Center for Translational Data Science at the University of Chicago. https://gen3.org",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "2afacf00-9a1d-4d80-8c32-69d3923d3913",
+  "probe": "https://jcoin.datacommons.io/ga4gh/drs/v1/objects/2afacf00-9a1d-4d80-8c32-69d3923d3913",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://jcoin.datacommons.io",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "molmedb",
+  "target": {
+    "DEFAULT": "https://molmedb.upol.cz/mol/${content}"
+  },
+  "type": "scheme",
+  "name": "Palacký University, Olomouc",
+  "alias": null,
+  "provider": "upol",
+  "provider_id": "MIR:00000749",
+  "primary": 1,
+  "forward": "https://molmedb.upol.cz/mol/${ac}",
+  "redirect": "https://molmedb.upol.cz/mol/${content}",
+  "description": "MolMeDB is an open chemistry database about interactions of molecules with membranes. We collect information on how chemicals interact with individual membranes either from experiment or from simulations. ",
+  "location": "Czech Republic",
+  "institution": "Palacký University, Olomouc",
+  "prefixed": 0,
+  "test": "MM00040",
+  "probe": "https://molmedb.upol.cz/mol/MM00040",
+  "pattern": "^[Mm]{2}[0-9]{5,}(\\.[0-9]+)?$",
+  "more": "http://www.upol.cz/en/",
+  "revision": 0
+}

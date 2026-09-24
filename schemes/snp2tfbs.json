@@ -1,0 +1,23 @@
+{
+  "id": "snp2tfbs",
+  "target": {
+    "DEFAULT": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid=${content}"
+  },
+  "type": "scheme",
+  "name": "SNP2TFBS",
+  "alias": null,
+  "provider": "sib",
+  "provider_id": "MIR:00000737",
+  "primary": 1,
+  "forward": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid=${ac}",
+  "redirect": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid=${content}",
+  "description": "SNP2TFBS is aimed at studying variations (SNPs/indels) that affect transcription factor binding (TFB) in the Human genome.",
+  "location": "Switzerland",
+  "institution": "SIB Swiss Institute of Bioinformatics",
+  "prefixed": 0,
+  "test": "rs11603840",
+  "probe": "https://ccg.epfl.ch/cgi-bin/snp2tfbs/snpviewer_form_parser.cgi?snpid=rs11603840",
+  "pattern": "^rs[0-9]+$",
+  "more": "https://ccg.epfl.ch/snp2tfbs/",
+  "revision": 0
+}

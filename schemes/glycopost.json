@@ -1,0 +1,23 @@
+{
+  "id": "glycopost",
+  "target": {
+    "DEFAULT": "https://glycopost.glycosmos.org/entry/${content}"
+  },
+  "type": "scheme",
+  "name": "Niigata University",
+  "alias": null,
+  "provider": "glycopost",
+  "provider_id": "MIR:00000704",
+  "primary": 1,
+  "forward": "https://glycopost.glycosmos.org/entry/${ac}",
+  "redirect": "https://glycopost.glycosmos.org/entry/${content}",
+  "description": "GlycoPOST is a mass spectrometry data repository for glycomics and glycoproteomics. Users can release their \"raw/processed\" data via this site with a unique identifier number for the paper publication. Submission conditions are in accordance with the Minimum Information Required for a Glycomics Experiment (MIRAGE) guidelines.",
+  "location": "Japan",
+  "institution": "Niigata University",
+  "prefixed": 0,
+  "test": "GPST000024",
+  "probe": "https://glycopost.glycosmos.org/entry/GPST000024",
+  "pattern": "^GPST[0-9]{6}$",
+  "more": "https://glycopost.glycosmos.org",
+  "revision": 0
+}

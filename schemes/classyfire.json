@@ -1,0 +1,23 @@
+{
+  "id": "classyfire",
+  "target": {
+    "DEFAULT": "http://classyfire.wishartlab.com/tax_nodes/${content}"
+  },
+  "type": "scheme",
+  "name": "The Wishart Research Group, University of Alberta, Edmonton, Alberta, Canada",
+  "alias": null,
+  "provider": "classyfire",
+  "provider_id": "MIR:00000710",
+  "primary": 1,
+  "forward": "http://classyfire.wishartlab.com/tax_nodes/${ac}",
+  "redirect": "http://classyfire.wishartlab.com/tax_nodes/${content}",
+  "description": "ClassyFire is a web-based application for automated structural classification of chemical entities. This application uses a rule-based approach that relies on a comprehensible, comprehensive, and computable chemical taxonomy. ClassyFire provides a hierarchical chemical classification of chemical entities (mostly small molecules and short peptide sequences), as well as a structure-based textual description, based on a chemical taxonomy named ChemOnt, which covers 4825 chemical classes of organic and inorganic compounds. Moreover, ClassyFire allows for text-based search via its web interface. It can be accessed via the web interface or via the ClassyFire API.",
+  "location": "Canada",
+  "institution": "The Wishart Research Group, University of Alberta, Edmonton, Alberta, Canada",
+  "prefixed": 0,
+  "test": "C0004828",
+  "probe": "http://classyfire.wishartlab.com/tax_nodes/C0004828",
+  "pattern": "^C[0-9]{7}$",
+  "more": "http://classyfire.wishartlab.com/",
+  "revision": 0
+}

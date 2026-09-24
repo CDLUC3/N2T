@@ -1,0 +1,23 @@
+{
+  "id": "dandi",
+  "target": {
+    "DEFAULT": "https://dandiarchive.org/dandiset/${content}"
+  },
+  "type": "scheme",
+  "name": "DANDI: Distributed Archives for Neurophysiology Data Integration",
+  "alias": null,
+  "provider": "dandi",
+  "provider_id": "MIR:00000750",
+  "primary": 1,
+  "forward": "https://dandiarchive.org/dandiset/${ac}",
+  "redirect": "https://dandiarchive.org/dandiset/${content}",
+  "description": "DANDI works with BICCN and other BRAIN Initiative awardees to curate data using community data standards such as NWB and BIDS, and to make data and software for cellular neurophysiology FAIR (Findable, Accessible, Interoperable, and Reusable).\nDANDI references electrical and optical cellular neurophysiology recordings and associated MRI and/or optical imaging data.\nThese data will help scientists uncover and understand cellular level mechanisms of brain function. Scientists will study the formation of neural networks, how cells and networks enable functions such as learning and memory, and how these functions are disrupted in neurological disorders.",
+  "location": "United States",
+  "institution": "Massachusetts Institute of Technology",
+  "prefixed": 0,
+  "test": "000017",
+  "probe": "https://dandiarchive.org/dandiset/000017",
+  "pattern": "^\\d{6}(\\/\\d+\\.\\d+\\.\\d+)?$",
+  "more": "https://dandiarchive.org/",
+  "revision": 0
+}

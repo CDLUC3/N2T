@@ -1,0 +1,23 @@
+{
+  "id": "ccdc",
+  "target": {
+    "DEFAULT": "https://www.ccdc.cam.ac.uk/services/structures?pid=ccdc:${content}&sid=IDORG"
+  },
+  "type": "scheme",
+  "name": "Cambridge Crystallographic Data Centre",
+  "alias": null,
+  "provider": "ccdc",
+  "provider_id": "MIR:00000817",
+  "primary": 1,
+  "forward": "https://www.ccdc.cam.ac.uk/services/structures?pid=ccdc:${ac}&sid=IDORG",
+  "redirect": "https://www.ccdc.cam.ac.uk/services/structures?pid=ccdc:${content}&sid=IDORG",
+  "description": "The Cambridge Crystallographic Data Centre (CCDC) develops and maintains the Cambridge Stuctural Database, the world's most comprehensive archive of small-molecule crystal structure data. A CCDC Number is a unique identifier assigned to a dataset deposited with the CCDC.",
+  "location": "United Kingdom",
+  "institution": "Cambridge Crystallographic Data Centre",
+  "prefixed": 0,
+  "test": "1829126",
+  "probe": "https://www.ccdc.cam.ac.uk/services/structures?pid=ccdc:1829126&sid=IDORG",
+  "pattern": "^\\d{6,7}$",
+  "more": "https://www.ccdc.cam.ac.uk/",
+  "revision": 0
+}
