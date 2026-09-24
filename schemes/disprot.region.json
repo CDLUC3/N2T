@@ -1,0 +1,23 @@
+{
+  "id": "disprot.region",
+  "target": {
+    "DEFAULT": "https://www.disprot.org/${content}"
+  },
+  "type": "scheme",
+  "name": "DisProt region",
+  "alias": null,
+  "provider": "disprot.region",
+  "provider_id": "MIR:00000756",
+  "primary": 1,
+  "forward": "https://www.disprot.org/${ac}",
+  "redirect": "https://www.disprot.org/${content}",
+  "description": "DisProt is a database of intrisically disordered proteins and protein disordered regions, manually curated from literature.",
+  "location": "Italy",
+  "institution": "University of Padua",
+  "prefixed": 0,
+  "test": "DP00086r013",
+  "probe": "https://www.disprot.org/DP00086r013",
+  "pattern": "^DP\\d{5}r\\d{3}$",
+  "more": "https://www.disprot.org",
+  "revision": 0
+}

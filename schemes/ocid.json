@@ -1,0 +1,23 @@
+{
+  "id": "ocid",
+  "target": {
+    "DEFAULT": "https://ocid.ontochem.com/prefname?ocid=${content}"
+  },
+  "type": "scheme",
+  "name": "Ontochem GmbH",
+  "alias": null,
+  "provider": "ontochem",
+  "provider_id": "MIR:00000885",
+  "primary": 1,
+  "forward": "https://ocid.ontochem.com/prefname?ocid=${ac}",
+  "redirect": "https://ocid.ontochem.com/prefname?ocid=${content}",
+  "description": "'ocid' stands for \"Ontology Concept Identifiers\" and are 12 digit long integers covering IDs in topical ontologies from anatomy up to toxicology.",
+  "location": "Germany",
+  "institution": "OntoChem GmbH",
+  "prefixed": 1,
+  "test": "190000021540",
+  "probe": "https://ocid.ontochem.com/prefname?ocid=190000021540",
+  "pattern": "^ocid:[0-9]{12}$",
+  "more": "https://ontochem.com/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dg.80b6",
+  "target": {
+    "DEFAULT": "https://genomel.bionimbus.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "GenoMEL Data Commons",
+  "alias": null,
+  "provider": "dg.80b6",
+  "provider_id": "MIR:00000918",
+  "primary": 1,
+  "forward": "https://genomel.bionimbus.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://genomel.bionimbus.org/ga4gh/drs/v1/objects/${content}",
+  "description": "The GenoMEL data commons supports the management, analysis and sharing of next generation sequencing data for the GenoMEL research community and aims to accelerate opportunities for discovery of susceptibility genes for melanoma. The data commons supports cross-project analyses by harmonizing data from different projects through the development of a data dictionary and utilization of common workflows, providing an API for data queries, and providing a cloud-based analysis workspace with rich tools and resources.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "000e5d06-1326-4b6f-8d8a-95c63374c7c1",
+  "probe": "https://genomel.bionimbus.org/ga4gh/drs/v1/objects/000e5d06-1326-4b6f-8d8a-95c63374c7c1",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://genomel.bionimbus.org/",
+  "revision": 0
+}

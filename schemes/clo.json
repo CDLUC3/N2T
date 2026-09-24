@@ -1,6 +1,23 @@
 {
   "id": "clo",
-  "target": {},
-  "type": "commonspfx",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols4/ontologies/clo/terms?short_form=CLO_${content}"
+  },
+  "type": "scheme",
+  "name": "CLO through OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00000982",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/ols4/ontologies/clo/terms?short_form=CLO_${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols4/ontologies/clo/terms?short_form=CLO_${content}",
+  "description": "The Cell Line Ontology is a community-based ontology of cell lines. The CLO is developed to unify publicly available cell line entry data from multiple sources to a standardized logically defined format based on consensus design patterns.",
+  "location": "United States",
+  "institution": "University of Michigan–Ann Arbor",
+  "prefixed": 0,
+  "test": "0000091",
+  "probe": "https://www.ebi.ac.uk/ols4/ontologies/clo/terms?short_form=CLO_0000091",
+  "pattern": "^\\d{7}$",
+  "more": "https://www.ebi.ac.uk/ols4/ontologies/clo",
   "revision": 0
 }

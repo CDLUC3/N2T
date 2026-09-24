@@ -1,0 +1,23 @@
+{
+  "id": "sedml.format",
+  "target": {
+    "DEFAULT": "https://sed-ml.org/urns.html#format:${content}"
+  },
+  "type": "scheme",
+  "name": "SED-ML Editors",
+  "alias": null,
+  "provider": "sedml",
+  "provider_id": "MIR:00000840",
+  "primary": 1,
+  "forward": "https://sed-ml.org/urns.html#format:${ac}",
+  "redirect": "https://sed-ml.org/urns.html#format:${content}",
+  "description": "Data format that can be used in conjunction with the Simulation Experimental Description Markup Language (SED-ML).",
+  "location": "United States",
+  "institution": "SED-ML Editors",
+  "prefixed": 0,
+  "test": "csv",
+  "probe": "https://sed-ml.org/urns.html#format:csv",
+  "pattern": "^[a-z]+(\\..*?)?$",
+  "more": "http://sed-ml.org/",
+  "revision": 0
+}

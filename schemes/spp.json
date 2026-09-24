@@ -1,0 +1,23 @@
+{
+  "id": "spp",
+  "target": {
+    "DEFAULT": "https://www.signalingpathways.org/datasets/dataset.jsf?doi=${content}"
+  },
+  "type": "scheme",
+  "name": "Signaling Pathways Project",
+  "alias": null,
+  "provider": "spp",
+  "provider_id": "MIR:00000730",
+  "primary": 1,
+  "forward": "https://www.signalingpathways.org/datasets/dataset.jsf?doi=${ac}",
+  "redirect": "https://www.signalingpathways.org/datasets/dataset.jsf?doi=${content}",
+  "description": "The Signaling Pathways Project is an integrated 'omics knowledgebase based upon public, manually curated transcriptomic and cistromic (ChIP-Seq) datasets involving genetic and small molecule manipulations of cellular receptors, enzymes and transcription factors. Our goal is to create a resource where scientists can routinely generate research hypotheses or validate bench data relevant to cellular signaling pathways.",
+  "location": "United States",
+  "institution": "Baylor College of Medicine",
+  "prefixed": 0,
+  "test": "10.1621/vwN2g2HaX3",
+  "probe": "https://www.signalingpathways.org/datasets/dataset.jsf?doi=10.1621/vwN2g2HaX3",
+  "pattern": "^10.\\w{4}/\\w{10}$",
+  "more": "https://www.signalingpathways.org/index.jsf",
+  "revision": 0
+}

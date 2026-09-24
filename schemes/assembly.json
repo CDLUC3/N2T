@@ -1,0 +1,23 @@
+{
+  "id": "assembly",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/datasets/genome/${content}"
+  },
+  "type": "scheme",
+  "name": "National Center for Biotechnology Information",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00000883",
+  "primary": 1,
+  "forward": "https://www.ncbi.nlm.nih.gov/datasets/genome/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/datasets/genome/${content}",
+  "description": "A database providing information on the structure of assembled genomes, assembly names and other meta-data, statistical reports, and links to genomic sequence data.",
+  "location": "United States",
+  "institution": "National Center for Biotechnology Information",
+  "prefixed": 0,
+  "test": "GCF_000005845.2",
+  "probe": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000005845.2",
+  "pattern": "^[a-zA-Z0-9_\\.]+$",
+  "more": "https://www.ncbi.nlm.nih.gov/",
+  "revision": 0
+}

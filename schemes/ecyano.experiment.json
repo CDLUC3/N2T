@@ -1,0 +1,23 @@
+{
+  "id": "ecyano.experiment",
+  "target": {
+    "DEFAULT": "https://www.e-cyanobacterium.org/experiments-repository/?action=detail&id=${content}"
+  },
+  "type": "scheme",
+  "name": "E-cyanobacterium",
+  "alias": null,
+  "provider": "ecyano",
+  "provider_id": "MIR:00000754",
+  "primary": 1,
+  "forward": "https://www.e-cyanobacterium.org/experiments-repository/?action=detail&id=${ac}",
+  "redirect": "https://www.e-cyanobacterium.org/experiments-repository/?action=detail&id=${content}",
+  "description": "E-cyanobacterium experiments is a repository of wet-lab experiments related to cyanobacteria. The emphasis is placed on annotation via mapping to local database of biological knowledge and mathematical models along with the complete experimental setup supporting the reproducibility of the experiments.",
+  "location": "Czech Republic",
+  "institution": "Systems Biology Laboratory, Faculty of Informatics, Masaryk University Brno",
+  "prefixed": 0,
+  "test": "18",
+  "probe": "https://www.e-cyanobacterium.org/experiments-repository/?action=detail&id=18",
+  "pattern": "^\\d+$",
+  "more": "https://www.e-cyanobacterium.org/experiments-repository/",
+  "revision": 0
+}

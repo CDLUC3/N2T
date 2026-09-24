@@ -1,0 +1,23 @@
+{
+  "id": "tricdb",
+  "target": {
+    "DEFAULT": "http://biomeddb.org/Disease/Details?DISEASEID=${content}"
+  },
+  "type": "scheme",
+  "name": "BaoLab",
+  "alias": null,
+  "provider": "id",
+  "provider_id": "MIR:00001035",
+  "primary": 1,
+  "forward": "http://biomeddb.org/Disease/Details?DISEASEID=${ac}",
+  "redirect": "http://biomeddb.org/Disease/Details?DISEASEID=${content}",
+  "description": "Tri©DB is a newly developed integrated platform functioning as a knowledge base and reporting system for cancer precision medicine. This platform harmonizes and mines cancer-related data from various aspects, presenting them on a centralized platform with enhanced accessibility, rich annotations, and robust analysis capabilities. The development of Tri©DB is aimed at meeting the needs of a broad range of researchers, thereby propelling both foundational and translational research in cancer precision medicine.",
+  "location": "China",
+  "institution": "Hubei University",
+  "prefixed": 0,
+  "test": "1eec8393-e598-41ed-9d8b-6d5b0db94470",
+  "probe": "http://biomeddb.org/Disease/Details?DISEASEID=1eec8393-e598-41ed-9d8b-6d5b0db94470",
+  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+  "more": "http://www.biomeddb.org/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "sciflection",
+  "target": {
+    "DEFAULT": "https://sciflection.com/${content}"
+  },
+  "type": "scheme",
+  "name": "Sciformation Consulting GmbH",
+  "alias": null,
+  "provider": "sciformation",
+  "provider_id": "MIR:00000972",
+  "primary": 1,
+  "forward": "https://sciflection.com/${ac}",
+  "redirect": "https://sciflection.com/${content}",
+  "description": "Sciflection is a public repository for experiments and associated spectra, usually uploaded from Electronic Lab Notebooks, shared under FAIR conditions",
+  "location": "Germany",
+  "institution": "Sciformation Consulting GmbH",
+  "prefixed": 0,
+  "test": "5ede4273-b26c-4ea4-adb7-3ce294ab3397",
+  "probe": "https://sciflection.com/5ede4273-b26c-4ea4-adb7-3ce294ab3397",
+  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+  "more": "https://sciformation.com/sciflection.html",
+  "revision": 0
+}

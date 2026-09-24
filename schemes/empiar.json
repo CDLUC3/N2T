@@ -1,0 +1,23 @@
+{
+  "id": "empiar",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/empiar/${content}"
+  },
+  "type": "scheme",
+  "name": "European Bioinformatics Institute",
+  "alias": null,
+  "provider": "empiar",
+  "provider_id": "MIR:00000985",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/empiar/${ac}",
+  "redirect": "https://www.ebi.ac.uk/empiar/${content}",
+  "description": "EMPIAR, the Electron Microscopy Public Image Archive, is a public resource for raw images underpinning 3D cryo-EM maps and tomograms (themselves archived in EMDB). EMPIAR also accommodates 3D datasets obtained with volume EM techniques and soft and hard X-ray tomography.",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 0,
+  "test": "EMPIAR-10002",
+  "probe": "https://www.ebi.ac.uk/empiar/EMPIAR-10002",
+  "pattern": "^EMPIAR-\\d{5,}$",
+  "more": "https://www.ebi.ac.uk",
+  "revision": 0
+}

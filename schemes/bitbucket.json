@@ -1,0 +1,23 @@
+{
+  "id": "bitbucket",
+  "target": {
+    "DEFAULT": "https://bitbucket.org/${content}"
+  },
+  "type": "scheme",
+  "name": "Atlassian",
+  "alias": null,
+  "provider": "atlassian",
+  "provider_id": "MIR:00000896",
+  "primary": 1,
+  "forward": "https://bitbucket.org/${ac}",
+  "redirect": "https://bitbucket.org/${content}",
+  "description": "Bitbucket is a Git-based source code repository hosting service owned by Atlassian.",
+  "location": "Australia",
+  "institution": "Atlassian",
+  "prefixed": 0,
+  "test": "andreadega/systems-biology-compiler",
+  "probe": "https://bitbucket.org/andreadega/systems-biology-compiler",
+  "pattern": "^[0-9A-Za-z-_\\.]+/[0-9A-Za-z-_\\.]+$",
+  "more": "https://www.atlassian.com/",
+  "revision": 0
+}

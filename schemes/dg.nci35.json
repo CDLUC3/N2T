@@ -1,0 +1,23 @@
+{
+  "id": "dg.nci35",
+  "target": {
+    "DEFAULT": "https://nci-crdc.datacommons.io/login/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "NCI Data Commons Framework Services",
+  "alias": null,
+  "provider": "dg.NCI35",
+  "provider_id": "MIR:00000935",
+  "primary": 1,
+  "forward": "https://nci-crdc.datacommons.io/login/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://nci-crdc.datacommons.io/login/ga4gh/drs/v1/objects/${content}",
+  "description": "The vision of DCFS is to make it easier to develop, operate, and interoperate data commons, data clouds, knowledge bases, and other resources for managing, analyzing, and sharing research data that can be part of a large data commons ecosystem.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "81944ba1-81d0-436e-8552-33d77a27834b",
+  "probe": "https://nci-crdc.datacommons.io/login/ga4gh/drs/v1/objects/81944ba1-81d0-436e-8552-33d77a27834b",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://nci-crdc.datacommons.io/login",
+  "revision": 0
+}

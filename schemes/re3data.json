@@ -1,0 +1,23 @@
+{
+  "id": "re3data",
+  "target": {
+    "DEFAULT": "https://www.re3data.org/repository/${content}"
+  },
+  "type": "scheme",
+  "name": "DataCite",
+  "alias": null,
+  "provider": "datacite",
+  "provider_id": "MIR:00000860",
+  "primary": 1,
+  "forward": "https://www.re3data.org/repository/${ac}",
+  "redirect": "https://www.re3data.org/repository/${content}",
+  "description": "Re3data is a global registry of research data repositories that covers research data repositories from different academic disciplines.",
+  "location": "Germany",
+  "institution": "DataCite",
+  "prefixed": 0,
+  "test": "r3d100010772",
+  "probe": "https://www.re3data.org/repository/r3d100010772",
+  "pattern": "^r3d\\d{9,9}$",
+  "more": "https://datacite.org",
+  "revision": 0
+}

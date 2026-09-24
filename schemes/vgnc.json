@@ -1,0 +1,23 @@
+{
+  "id": "vgnc",
+  "target": {
+    "DEFAULT": "https://vertebrate.genenames.org/data/gene-symbol-report/#!/vgnc_id/${content}"
+  },
+  "type": "scheme",
+  "name": "VGNC",
+  "alias": null,
+  "provider": "vgnc",
+  "provider_id": "MIR:00000752",
+  "primary": 1,
+  "forward": "https://vertebrate.genenames.org/data/gene-symbol-report/#!/vgnc_id/${ac}",
+  "redirect": "https://vertebrate.genenames.org/data/gene-symbol-report/#!/vgnc_id/${content}",
+  "description": "The Vertebrate Gene Nomenclature Committee (VGNC) is an extension of the established HGNC (HUGO Gene Nomenclature Committee) project that names human genes. VGNC is responsible for assigning standardized names to genes in vertebrate species that currently lack a nomenclature committee.",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 0,
+  "test": "VGNC:3792",
+  "probe": "https://vertebrate.genenames.org/data/gene-symbol-report/#!/vgnc_id/VGNC:3792",
+  "pattern": "^((VGNC|vgnc):)?\\d{1,9}$",
+  "more": "https://vertebrate.genenames.org",
+  "revision": 0
+}

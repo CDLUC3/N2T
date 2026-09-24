@@ -1,0 +1,23 @@
+{
+  "id": "fairmd.lipids",
+  "target": {
+    "DEFAULT": "https://lipids.fairmd.org/${content}"
+  },
+  "type": "scheme",
+  "name": "University of Bergen",
+  "alias": null,
+  "provider": "uib",
+  "provider_id": "MIR:00001126",
+  "primary": 1,
+  "forward": "https://lipids.fairmd.org/${ac}",
+  "redirect": "https://lipids.fairmd.org/${content}",
+  "description": "FAIRMD Lipids Databank is a community-driven catalogue containing atomistic molecular dynamics (MD) simulations of biologically relevant lipid membranes emerging from the NMRlipids open collaboration. It improves the Findability, Accessibility, Interoperability, and Reuse (FAIR) of MD simulation data using an overlay databank structure.",
+  "location": "Norway",
+  "institution": "University of Bergen",
+  "prefixed": 0,
+  "test": "lipid/CHOL",
+  "probe": "https://lipids.fairmd.org/lipid/CHOL",
+  "pattern": "^(?:lipid/[A-Za-z0-9]+|simulations/\\d+|experiment/(?:OP|FF)/(?:unpublished/[A-Za-z0-9_-]+|10\\.\\d{4,9}/[A-Za-z0-9._/-]+)/\\d+)$",
+  "more": "https://www.uib.no",
+  "revision": 0
+}

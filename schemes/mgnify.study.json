@@ -1,0 +1,23 @@
+{
+  "id": "mgnify.study",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/metagenomics/studies/${content}"
+  },
+  "type": "scheme",
+  "name": "MGnify",
+  "alias": null,
+  "provider": "ebi",
+  "provider_id": "MIR:00001183",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/metagenomics/studies/${ac}",
+  "redirect": "https://www.ebi.ac.uk/metagenomics/studies/${content}",
+  "description": "The free-to-use MGnify platform provides assembly, analysis and archiving of microbiome-derived nucleic acid sequence data from a wide range of biomes, with analysis results providing taxonomic and functional\nprofiles. The platform also includes MGnify Proteins, a database of protein sequences derived from the analysis of metagenomic assemblies, and MGnify Genomes, a resource of biome-specific catalogues of microbial genomes, including extensive functional annotations.",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 0,
+  "test": "MGYS00006794",
+  "probe": "https://www.ebi.ac.uk/metagenomics/studies/MGYS00006794",
+  "pattern": "^MGYS\\d{8}$",
+  "more": "https://www.ebi.ac.uk/metagenomics",
+  "revision": 0
+}

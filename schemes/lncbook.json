@@ -1,0 +1,23 @@
+{
+  "id": "lncbook",
+  "target": {
+    "DEFAULT": "https://ngdc.cncb.ac.cn/lncbook/gene?geneid=${content}"
+  },
+  "type": "scheme",
+  "name": "National Genomics Data Center",
+  "alias": null,
+  "provider": "ngdc",
+  "provider_id": "MIR:00001108",
+  "primary": 1,
+  "forward": "https://ngdc.cncb.ac.cn/lncbook/gene?geneid=${ac}",
+  "redirect": "https://ngdc.cncb.ac.cn/lncbook/gene?geneid=${content}",
+  "description": "LncBook accommodates a high-quality collection of human lncRNA genes and transcripts, and incorporates their abundant annotations at different omics levels, thereby enabling users to decipher functional signatures of lncRNAs in human diseases and different biological contexts.\n\n",
+  "location": "China",
+  "institution": "China National Center for Bioinformation, Beijing, China",
+  "prefixed": 0,
+  "test": "HSALNG0006197",
+  "probe": "https://ngdc.cncb.ac.cn/lncbook/gene?geneid=HSALNG0006197",
+  "pattern": "^HSALNG\\d{7}$",
+  "more": "https://ngdc.cncb.ac.cn/?lang=en",
+  "revision": 0
+}

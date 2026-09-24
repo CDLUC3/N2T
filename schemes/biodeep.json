@@ -1,0 +1,23 @@
+{
+  "id": "biodeep",
+  "target": {
+    "DEFAULT": "https://query.biodeep.cn/metabolite/${content}"
+  },
+  "type": "scheme",
+  "name": "PANOMIX",
+  "alias": null,
+  "provider": "biodeep",
+  "provider_id": "MIR:00001079",
+  "primary": 1,
+  "forward": "https://query.biodeep.cn/metabolite/${ac}",
+  "redirect": "https://query.biodeep.cn/metabolite/${content}",
+  "description": "The BioDeep database is a comprehensive database of metabolite information in living organisms: by aggregating metabolite information from multiple public databases and large-scale natural language text mining work, we have built a large scale knowledge network for biological knowledge interpretation. By using the BioDeep database, it is possible to query such large scale metabolic knowledge network.",
+  "location": "China",
+  "institution": "PANOMIX",
+  "prefixed": 0,
+  "test": "BioDeep_00000000001",
+  "probe": "https://query.biodeep.cn/metabolite/BioDeep_00000000001",
+  "pattern": "^BioDeep_\\d{11}$",
+  "more": "https://en.panomix.com/",
+  "revision": 0
+}

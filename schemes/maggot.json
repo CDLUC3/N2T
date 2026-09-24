@@ -1,0 +1,23 @@
+{
+  "id": "maggot",
+  "target": {
+    "DEFAULT": "https://pmb-bordeaux.fr/maggot/metadata/${content}"
+  },
+  "type": "scheme",
+  "name": "Bordeaux Metabolome",
+  "alias": null,
+  "provider": "maggot",
+  "provider_id": "MIR:00001037",
+  "primary": 1,
+  "forward": "https://pmb-bordeaux.fr/maggot/metadata/${ac}",
+  "redirect": "https://pmb-bordeaux.fr/maggot/metadata/${content}",
+  "description": "Sharing descriptive Metadata is the first essential step towards Open Scientific Data. With this in mind, Maggot was specifically designed to annotate datasets by creating a metadata file to attach to the storage space. Indeed, it allows users to easily add descriptive metadata to datasets produced within a collective of people (research unit, platform, multi-partner project, etc.). This approach fits perfectly into a data management plan as it addresses the issues of data organization and documentation, data storage and frictionless metadata sharing within this same collective and beyond.",
+  "location": "France",
+  "institution": "National Research Institute for Agriculture, Food and Environment",
+  "prefixed": 0,
+  "test": "frim1",
+  "probe": "https://pmb-bordeaux.fr/maggot/metadata/frim1",
+  "pattern": "^[A-Za-z0-9]+$",
+  "more": "https://eng-bfp.bordeaux-aquitaine.hub.inrae.fr/resources/metabolome-platform",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hco",
+  "target": {
+    "DEFAULT": "http://biohackathon.org/resource/hco#${content}"
+  },
+  "type": "scheme",
+  "name": "Database Center for Life Science, Kashiwa, Chiba, Japan",
+  "alias": null,
+  "provider": "dbcls",
+  "provider_id": "MIR:00001039",
+  "primary": 1,
+  "forward": "http://biohackathon.org/resource/hco#${ac}",
+  "redirect": "http://biohackathon.org/resource/hco#${content}",
+  "description": "The Human Chromosome Ontology (HCO) provides simple and stable URIs for human reference genome versions to semantically identify human chromosomes.",
+  "location": "Japan",
+  "institution": "Database Center for Life Science, Kashiwa, Chiba, Japan",
+  "prefixed": 0,
+  "test": "MT",
+  "probe": "http://biohackathon.org/resource/hco#MT",
+  "pattern": "^.+$",
+  "more": "https://dbcls.rois.ac.jp/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "vmhgene",
+  "target": {
+    "DEFAULT": "https://www.vmh.life/#gene/${content}"
+  },
+  "type": "scheme",
+  "name": "VMH Gene",
+  "alias": null,
+  "provider": "NUI",
+  "provider_id": "MIR:00000794",
+  "primary": 1,
+  "forward": "https://www.vmh.life/#gene/${ac}",
+  "redirect": "https://www.vmh.life/#gene/${content}",
+  "description": "The Virtual Metabolic Human (VMH) is a resource that combines human and gut microbiota metabolism with nutrition and disease.",
+  "location": "Ireland",
+  "institution": "National University of Ireland, Galway",
+  "prefixed": 0,
+  "test": "8639.1",
+  "probe": "https://www.vmh.life/#gene/8639.1",
+  "pattern": "^[0-9]+\\.[0-9]+$",
+  "more": "https://www.vmh.life/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "nucleotide",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/nuccore/${content}"
+  },
+  "type": "scheme",
+  "name": "National Center for Biotechnology Information",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00000881",
+  "primary": 1,
+  "forward": "https://www.ncbi.nlm.nih.gov/nuccore/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/nuccore/${content}",
+  "description": "The Nucleotide database is a collection of sequences from several sources, including GenBank, RefSeq, TPA and PDB. Genome, gene and transcript sequence data provide the foundation for biomedical research and discovery.",
+  "location": "United States",
+  "institution": "National Center for Biotechnology Information",
+  "prefixed": 0,
+  "test": "880798137",
+  "probe": "https://www.ncbi.nlm.nih.gov/nuccore/880798137",
+  "pattern": "^[a-zA-Z0-9_\\.]+$",
+  "more": "https://www.ncbi.nlm.nih.gov/",
+  "revision": 0
+}

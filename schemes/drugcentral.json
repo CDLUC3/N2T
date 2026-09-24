@@ -1,0 +1,23 @@
+{
+  "id": "drugcentral",
+  "target": {
+    "DEFAULT": "https://drugcentral.org/drugcard/${content}"
+  },
+  "type": "scheme",
+  "name": "University of New Mexico",
+  "alias": null,
+  "provider": "drugcentral",
+  "provider_id": "MIR:00000965",
+  "primary": 1,
+  "forward": "https://drugcentral.org/drugcard/${ac}",
+  "redirect": "https://drugcentral.org/drugcard/${content}",
+  "description": "DrugCentral (http://drugcentral.org) is an open-access online drug compendium. DrugCentral integrates structure, bioactivity, regulatory, pharmacologic actions and indications for active pharmaceutical ingredients approved by FDA and other regulatory agencies. Monitoring of regulatory agencies for new drugs approvals ensures the resource is up-to-date. DrugCentral integrates content for active ingredients with pharmaceutical formulations, indexing drugs and drug label annotations, complementing similar resources available online. Its complementarity with other online resources is facilitated by cross referencing to external resources. At the molecular level, DrugCentral bridges drug-target interactions with pharmacological action and indications. The integration with FDA drug labels enables text mining applications for drug adverse events and clinical trial information. Chemical structure overlap between DrugCentral and five online drug resources, and the overlap between DrugCentral FDA-approved drugs and their presence in four different chemical collections, are discussed. DrugCentral can be accessed via the web application or downloaded in relational database format.",
+  "location": "United States",
+  "institution": "University of New Mexico",
+  "prefixed": 0,
+  "test": "257",
+  "probe": "https://drugcentral.org/drugcard/257",
+  "pattern": "^[0-9]+$",
+  "more": "http://www.unm.edu/",
+  "revision": 0
+}

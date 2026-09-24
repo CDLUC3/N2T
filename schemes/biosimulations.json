@@ -1,0 +1,23 @@
+{
+  "id": "biosimulations",
+  "target": {
+    "DEFAULT": "https://biosimulations.org/projects/${content}"
+  },
+  "type": "scheme",
+  "name": "Icahn School of Medicine at Mount Sinai",
+  "alias": null,
+  "provider": "icahn",
+  "provider_id": "MIR:00000879",
+  "primary": 1,
+  "forward": "https://biosimulations.org/projects/${ac}",
+  "redirect": "https://biosimulations.org/projects/${content}",
+  "description": "BioSimulations is an open repository of simulation projects, including simulation experiments, their results, and data visualizations of their results. BioSimulations supports a broad range of model languages, modeling frameworks, simulation algorithms, and simulation software tools.",
+  "location": "United States",
+  "institution": "Icahn School of Medicine at Mount Sinai",
+  "prefixed": 0,
+  "test": "Yeast-cell-cycle-Irons-J-Theor-Biol-2009",
+  "probe": "https://biosimulations.org/projects/Yeast-cell-cycle-Irons-J-Theor-Biol-2009",
+  "pattern": "^[a-zA-Z0-9_-]{3,}$",
+  "more": "https://icahn.mssm.edu/",
+  "revision": 0
+}

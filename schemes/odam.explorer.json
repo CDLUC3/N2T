@@ -1,0 +1,23 @@
+{
+  "id": "odam.explorer",
+  "target": {
+    "DEFAULT": "https://pmb-bordeaux.fr/dataexplorer/?ds=${content}"
+  },
+  "type": "scheme",
+  "name": "Biologie du Fruit et Pathologie",
+  "alias": null,
+  "provider": "bfp",
+  "provider_id": "MIR:00001075",
+  "primary": 1,
+  "forward": "https://pmb-bordeaux.fr/dataexplorer/?ds=${ac}",
+  "redirect": "https://pmb-bordeaux.fr/dataexplorer/?ds=${content}",
+  "description": "ODAM (Open Data for Access and Mining) is an Experimental data table management software (EDTMS) to make research data accessible and available for reuse with minimal effort on the part of the data provider. Designed to manage experimental data tables in an easy way for users, ODAM provides a model for structuring both data and metadata that facilitates data handling and analysis. It also encourages data dissemination according to FAIR principles by making the data interoperable and reusable by both humans and machines.\n\nODAM allows datasets to be explored and then extracted in whole or in part as needed.\n\nFor more information/explanation, see ODAM User's Guide : https://inrae.github.io/ODAM/",
+  "location": "France",
+  "institution": "Biologie du Fruit et Pathologie",
+  "prefixed": 0,
+  "test": "frim1",
+  "probe": "https://pmb-bordeaux.fr/dataexplorer/?ds=frim1",
+  "pattern": "^[A-Za-z][A-Za-z0-9]+$",
+  "more": "https://eng-bfp.bordeaux-aquitaine.hub.inrae.fr/",
+  "revision": 0
+}

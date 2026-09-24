@@ -1,0 +1,23 @@
+{
+  "id": "raid",
+  "target": {
+    "DEFAULT": "https://raid.org/${content}"
+  },
+  "type": "scheme",
+  "name": "Australian Research Data Commons",
+  "alias": null,
+  "provider": "ardc",
+  "provider_id": "MIR:00001105",
+  "primary": 1,
+  "forward": "https://raid.org/${ac}",
+  "redirect": "https://raid.org/${content}",
+  "description": "RAiD is an identifier and global system, governed by ISO 23527:2022, to uniquely identifiy research projects, collaboratively, collect and publicly share information about them.",
+  "location": "Australia",
+  "institution": "Australian Research Data Commons",
+  "prefixed": 0,
+  "test": "10.26259/0e59e9a5",
+  "probe": "https://raid.org/10.26259/0e59e9a5",
+  "pattern": "^102?\\.\\d+\\/.+$",
+  "more": "https://ardc.edu.au/",
+  "revision": 0
+}

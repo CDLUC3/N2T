@@ -1,0 +1,23 @@
+{
+  "id": "m4i",
+  "target": {
+    "DEFAULT": "http://w3id.org/nfdi4ing/metadata4ing#${content}"
+  },
+  "type": "scheme",
+  "name": "RWTH Aachen University",
+  "alias": null,
+  "provider": "rwth",
+  "provider_id": "MIR:00001103",
+  "primary": 1,
+  "forward": "http://w3id.org/nfdi4ing/metadata4ing#${ac}",
+  "redirect": "http://w3id.org/nfdi4ing/metadata4ing#${content}",
+  "description": "The ontology Metadata4Ing provides a framework for the semantic description of research data and of the whole data generation process, embracing the object of investigation, all sample and data manipulation methods and tools, the data files themselves, and the roles of persons and institutions. The structure and application of the ontology are based on the principles of modularity and inheritance.",
+  "location": "Germany",
+  "institution": "RWTH Aachen University",
+  "prefixed": 0,
+  "test": "ProcessingStep",
+  "probe": "http://w3id.org/nfdi4ing/metadata4ing#ProcessingStep",
+  "pattern": "[A-Za-z_0-9]*",
+  "more": "http://www.rwth-aachen.de/cms/~a/root/lidx/1/",
+  "revision": 0
+}

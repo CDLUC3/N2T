@@ -1,0 +1,23 @@
+{
+  "id": "omid",
+  "target": {
+    "DEFAULT": "https://w3id.org/oc/meta/${content}"
+  },
+  "type": "scheme",
+  "name": "OpenCitations",
+  "alias": null,
+  "provider": "oc",
+  "provider_id": "MIR:00001003",
+  "primary": 1,
+  "forward": "https://w3id.org/oc/meta/${ac}",
+  "redirect": "https://w3id.org/oc/meta/${content}",
+  "description": "Every entity in OpenCitations Meta (https://opencitations.net/meta) is assigned persistent internal identifier called OpenCitations Meta Identifier (OMID). The OMID has structure [[entity_type_abbreviation]]/[[supplier_prefix]][[sequential_number]]. For example, the first journal article ever processed has OMID br/0601 (the full URI is https://w3id.org/oc/meta/br/0601), where br is the abbreviation of bibliographic resource, and 060 corresponds to the supplier prefix, helpful in recognising at a glance the index it belongs to (i.e., OpenCitations Meta). Finally, 1 indicates that this is the index's first bibliographic resource ever minted.",
+  "location": "Italy",
+  "institution": "OpenCitations",
+  "prefixed": 0,
+  "test": "br/0601",
+  "probe": "https://w3id.org/oc/meta/br/0601",
+  "pattern": "^[a-z][a-z]/06[1-9]*0[1-9][0-9]*$",
+  "more": "http://opencitations.net/",
+  "revision": 0
+}

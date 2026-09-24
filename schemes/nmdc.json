@@ -1,0 +1,23 @@
+{
+  "id": "nmdc",
+  "target": {
+    "DEFAULT": "https://w3id.org/nmdc/${content}"
+  },
+  "type": "scheme",
+  "name": "Lawrence Berkeley National Laboratory",
+  "alias": null,
+  "provider": "nmdc",
+  "provider_id": "MIR:00000836",
+  "primary": 1,
+  "forward": "https://w3id.org/nmdc/${ac}",
+  "redirect": "https://w3id.org/nmdc/${content}",
+  "description": "The National Microbiome Data Collaborative (NMDC) is an initiative to empower the research community to harness microbiome data exploration and discovery through a collaborative integrative data science ecosystem.",
+  "location": "United States",
+  "institution": "Lawrence Berkeley National Laboratory",
+  "prefixed": 0,
+  "test": "6m4e-1vbv-03",
+  "probe": "https://w3id.org/nmdc/6m4e-1vbv-03",
+  "pattern": "^[A-Za-z0-9._~\\-\\:]+$",
+  "more": "http://www.lbl.gov/",
+  "revision": 0
+}

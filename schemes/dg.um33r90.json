@@ -1,0 +1,23 @@
+{
+  "id": "dg.um33r90",
+  "target": {
+    "DEFAULT": "https://gen3.agha.umccr.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "UMCCR AGHA Data Commons",
+  "alias": null,
+  "provider": "dg.UM33R90",
+  "provider_id": "MIR:00000945",
+  "primary": 1,
+  "forward": "https://gen3.agha.umccr.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://gen3.agha.umccr.org/ga4gh/drs/v1/objects/${content}",
+  "description": "The UMCCR AGHA Data Commons supports the management, analysis and sharing of data for the research community.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "0aa770b4-66b3-4009-9f02-852236b0544f",
+  "probe": "https://gen3.agha.umccr.org/ga4gh/drs/v1/objects/0aa770b4-66b3-4009-9f02-852236b0544f",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://gen3.agha.umccr.org/",
+  "revision": 0
+}

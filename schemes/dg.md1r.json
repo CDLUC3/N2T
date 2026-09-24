@@ -1,0 +1,23 @@
+{
+  "id": "dg.md1r",
+  "target": {
+    "DEFAULT": "https://data.midrc.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "MIDRC Data Commons",
+  "alias": null,
+  "provider": "dg.MD1R",
+  "provider_id": "MIR:00000931",
+  "primary": 1,
+  "forward": "https://data.midrc.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://data.midrc.org/ga4gh/drs/v1/objects/${content}",
+  "description": "The Medical Imaging & Data Resource Center (MIDRC) Data Commons supports the management, analysis and sharing of medical imaging data for the improvement of patient outcomes.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "52ed5c59-1910-499b-a80e-00329209e148",
+  "probe": "https://data.midrc.org/ga4gh/drs/v1/objects/52ed5c59-1910-499b-a80e-00329209e148",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://data.midrc.org/",
+  "revision": 0
+}

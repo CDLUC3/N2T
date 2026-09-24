@@ -4,9 +4,20 @@
     "DEFAULT": "https://locate.be-md.ncbi.nlm.nih.gov/ga4gh/drs/v1/objects/${content}"
   },
   "type": "scheme",
-  "name": "NCBI Data Repository Service",
-  "pattern": "^[0-9a-fA-F]{32}$",
+  "name": "National Center for Biotechnology Information",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00001033",
+  "primary": 1,
+  "forward": "https://locate.be-md.ncbi.nlm.nih.gov/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://locate.be-md.ncbi.nlm.nih.gov/ga4gh/drs/v1/objects/${content}",
+  "description": "This is the namespace for the archive of sequence and other files provided by NCBI e.g. in SRA and dbGaP. These files are related to objects in the sequencing data model managed under the insdc.sra namespace. ",
+  "location": "United States",
+  "institution": "National Center for Biotechnology Information",
+  "prefixed": 0,
   "test": "72ff6ff882ec447f12df018e6183de59",
   "probe": "https://locate.be-md.ncbi.nlm.nih.gov/ga4gh/drs/v1/objects/72ff6ff882ec447f12df018e6183de59",
+  "pattern": "^[0-9a-fA-F]{32}$",
+  "more": "https://www.ncbi.nlm.nih.gov/",
   "revision": 0
 }

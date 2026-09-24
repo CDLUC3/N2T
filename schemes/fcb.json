@@ -1,0 +1,23 @@
+{
+  "id": "fcb",
+  "target": {
+    "DEFAULT": "https://w3id.org/faircookbook/${content}"
+  },
+  "type": "scheme",
+  "name": "Permanent Identifiers for the Web",
+  "alias": null,
+  "provider": "fcb",
+  "provider_id": "MIR:00000890",
+  "primary": 1,
+  "forward": "https://w3id.org/faircookbook/${ac}",
+  "redirect": "https://w3id.org/faircookbook/${content}",
+  "description": "Created by researchers and data managers professionals, the FAIR Cookbook is an online resource for the Life Sciences with recipes that help you to make and keep data Findable, Accessible, Interoperable, and Reusable (FAIR).\n\n",
+  "location": "United Kingdom",
+  "institution": "University of Oxford",
+  "prefixed": 0,
+  "test": "FCB005",
+  "probe": "https://w3id.org/faircookbook/FCB005",
+  "pattern": "^FCB\\d{3}$",
+  "more": "https://w3id.org",
+  "revision": 0
+}

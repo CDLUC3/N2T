@@ -1,0 +1,23 @@
+{
+  "id": "obv",
+  "target": {
+    "DEFAULT": "https://permalink.obvsg.at/${content}"
+  },
+  "type": "scheme",
+  "name": "The Austrian Library Network and Service Ltd",
+  "alias": null,
+  "provider": "obvsg",
+  "provider_id": "MIR:00000915",
+  "primary": 1,
+  "forward": "https://permalink.obvsg.at/${ac}",
+  "redirect": "https://permalink.obvsg.at/${content}",
+  "description": "The Austrian Library Network (OBV) is the largest network of scientific and administrative libraries in Austria with 70 participants, representing more than 90 individual institutions - including the Austrian National Library, university libraries, the colleges of education, individual ministries, numerous technical colleges and other important collections.",
+  "location": "Austria",
+  "institution": "The Austrian Library Network and Service Ltd",
+  "prefixed": 0,
+  "test": "AC00963334",
+  "probe": "https://permalink.obvsg.at/AC00963334",
+  "pattern": "^AC[0-9]{8}$",
+  "more": "https://www.obvsg.at/",
+  "revision": 0
+}

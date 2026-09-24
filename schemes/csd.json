@@ -1,7 +1,23 @@
 {
   "id": "csd",
-  "target": {},
-  "type": "commonspfx",
-  "redirect": "N/A",
+  "target": {
+    "DEFAULT": "https://www.ccdc.cam.ac.uk/services/structures?pid=csd:${content}&sid=IDORG"
+  },
+  "type": "scheme",
+  "name": "Cambridge Crystallographic Data Centre",
+  "alias": null,
+  "provider": "csd",
+  "provider_id": "MIR:00000819",
+  "primary": 1,
+  "forward": "https://www.ccdc.cam.ac.uk/services/structures?pid=csd:${ac}&sid=IDORG",
+  "redirect": "https://www.ccdc.cam.ac.uk/services/structures?pid=csd:${content}&sid=IDORG",
+  "description": "The Cambridge Stuctural Database (CSD) is the world's most comprehensive collection of small-molecule crystal structures. Entries curated into the CSD are identified by a CSD Refcode.",
+  "location": "United Kingdom",
+  "institution": "Cambridge Crystallographic Data Centre",
+  "prefixed": 0,
+  "test": "PELNAW",
+  "probe": "https://www.ccdc.cam.ac.uk/services/structures?pid=csd:PELNAW&sid=IDORG",
+  "pattern": "^[A-Z]{6}(\\d{2})?$",
+  "more": "https://www.ccdc.cam.ac.uk/",
   "revision": 0
 }

@@ -1,0 +1,23 @@
+{
+  "id": "mediadive.medium",
+  "target": {
+    "DEFAULT": "https://mediadive.dsmz.de/medium/${content}"
+  },
+  "type": "scheme",
+  "name": "Leibniz-Institut DSMZ-Deutsche Sammlung von Mikroorganismen und Zellkulturen",
+  "alias": null,
+  "provider": "mediadive",
+  "provider_id": "MIR:00001077",
+  "primary": 1,
+  "forward": "https://mediadive.dsmz.de/medium/${ac}",
+  "redirect": "https://mediadive.dsmz.de/medium/${content}",
+  "description": "MediaDive is a manually curated collection of cultivation media and growth conditions. This namespace specifically references mediums.",
+  "location": "Germany",
+  "institution": "Leibniz-Institut DSMZ-Deutsche Sammlung von Mikroorganismen und Zellkulturen",
+  "prefixed": 0,
+  "test": "1011c",
+  "probe": "https://mediadive.dsmz.de/medium/1011c",
+  "pattern": "^[A-Z]?[0-9]{1,5}[a-z]?$",
+  "more": "https://www.dsmz.de/",
+  "revision": 0
+}

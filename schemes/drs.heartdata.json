@@ -1,0 +1,23 @@
+{
+  "id": "drs.heartdata",
+  "target": {
+    "DEFAULT": "https://commons.heartdata.baker.edu.au/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "Baker Heart and Diabetes Institute",
+  "alias": null,
+  "provider": "baker",
+  "provider_id": "MIR:00001137",
+  "primary": 1,
+  "forward": "https://commons.heartdata.baker.edu.au/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://commons.heartdata.baker.edu.au/ga4gh/drs/v1/objects/${content}",
+  "description": "GA4GH Data Repository Service for data objects managed by the HeartData data commons.",
+  "location": "Australia",
+  "institution": "Baker Heart and Diabetes Institute",
+  "prefixed": 0,
+  "test": "00018c2f-25bf-439b-a58f-8c098118300d",
+  "probe": "https://commons.heartdata.baker.edu.au/ga4gh/drs/v1/objects/00018c2f-25bf-439b-a58f-8c098118300d",
+  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+  "more": "https://baker.edu.au",
+  "revision": 0
+}

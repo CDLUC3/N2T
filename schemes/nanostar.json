@@ -1,0 +1,23 @@
+{
+  "id": "nanostar",
+  "target": {
+    "DEFAULT": "https://nanostardb.org/nanostar/${content}"
+  },
+  "type": "scheme",
+  "name": "NanostarDB",
+  "alias": null,
+  "provider": "nanostardb",
+  "provider_id": "MIR:00001132",
+  "primary": 1,
+  "forward": "https://nanostardb.org/nanostar/${ac}",
+  "redirect": "https://nanostardb.org/nanostar/${content}",
+  "description": "NanostarDB aggregates structured and searchable RNA and DNA nanostar data.",
+  "location": "United Kingdom",
+  "institution": "The University of Cambridge",
+  "prefixed": 0,
+  "test": "LDM24s001",
+  "probe": "https://nanostardb.org/nanostar/LDM24s001",
+  "pattern": "^[A-Z]{2,}(\\d{2}|__)[sm]\\d{3}$",
+  "more": "https://nanostardb.org",
+  "revision": 0
+}

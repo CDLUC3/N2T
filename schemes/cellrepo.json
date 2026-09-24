@@ -1,0 +1,23 @@
+{
+  "id": "cellrepo",
+  "target": {
+    "DEFAULT": "https://www.cellrepo.com/repositories/${content}"
+  },
+  "type": "scheme",
+  "name": "CellRepo",
+  "alias": null,
+  "provider": "cellrepo",
+  "provider_id": "MIR:00000826",
+  "primary": 1,
+  "forward": "https://www.cellrepo.com/repositories/${ac}",
+  "redirect": "https://www.cellrepo.com/repositories/${content}",
+  "description": "The Cell Version Control Repository is the single worldwide version control repository for engineered and natural cell lines",
+  "location": "United Kingdom",
+  "institution": "Interdisciplinary Computing and Complex BioSystems (ICOS) Research Group, Newcastle University, Newcastle upon Tyne, UK",
+  "prefixed": 0,
+  "test": "82",
+  "probe": "https://www.cellrepo.com/repositories/82",
+  "pattern": "^[0-9]+$",
+  "more": "https://www.cellrepo.com/",
+  "revision": 0
+}

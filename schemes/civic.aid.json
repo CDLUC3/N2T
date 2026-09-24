@@ -1,0 +1,23 @@
+{
+  "id": "civic.aid",
+  "target": {
+    "DEFAULT": "https://civicdb.org/links/assertions/${content}"
+  },
+  "type": "scheme",
+  "name": "Clinical Interpretation of Variants in Cancer (CIViC)",
+  "alias": null,
+  "provider": "civicdb",
+  "provider_id": "MIR:00000834",
+  "primary": 1,
+  "forward": "https://civicdb.org/links/assertions/${ac}",
+  "redirect": "https://civicdb.org/links/assertions/${content}",
+  "description": "A CIViC assertion classifies the clinical significance of a variant-disease relationship under recognized guidelines. The CIViC Assertion (AID) summarizes a collection of Evidence Items (EIDs) that covers predictive/therapeutic, diagnostic, prognostic or predisposing clinical information for a variant in a specific cancer context. CIViC currently has two main types of Assertions: those based on variants of primarily somatic origin (predictive/therapeutic, prognostic, and diagnostic) and those based on variants of primarily germline origin (predisposing). When the number and quality of Predictive, Prognostic, Diagnostic or Predisposing Evidence Items (EIDs) in CIViC sufficiently cover what is known for a particular variant and cancer type, then a corresponding assertion be created in CIViC.",
+  "location": "United States",
+  "institution": "Washington University in St. Louis",
+  "prefixed": 0,
+  "test": "3",
+  "probe": "https://civicdb.org/links/assertions/3",
+  "pattern": "^[0-9]+$",
+  "more": "https://civicdb.org/",
+  "revision": 0
+}
