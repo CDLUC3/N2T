@@ -1,0 +1,23 @@
+{
+  "id": "tair.name",
+  "target": {
+    "DEFAULT": "https://www.arabidopsis.org/locus?name=${content}"
+  },
+  "type": "scheme",
+  "name": "TAIR",
+  "alias": null,
+  "provider": "tair",
+  "provider_id": "MIR:00000975",
+  "primary": 1,
+  "forward": "https://www.arabidopsis.org/locus?name=${ac}",
+  "redirect": "https://www.arabidopsis.org/locus?name=${content}",
+  "description": "The Arabidopsis Information Resource (TAIR) maintains a database of genetic and molecular biology data for the model higher plant Arabidopsis thaliana. The name of a Locus is unique and used by TAIR, TIGR, and MIPS.",
+  "location": "United States",
+  "institution": "Phoenix Bioinformatics",
+  "prefixed": 0,
+  "test": "AT5G05330",
+  "probe": "https://www.arabidopsis.org/locus?name=AT5G05330",
+  "pattern": "^AT.G[0-9]{5}$",
+  "more": "https://www.arabidopsis.org/",
+  "revision": 0
+}

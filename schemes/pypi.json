@@ -1,0 +1,23 @@
+{
+  "id": "pypi",
+  "target": {
+    "DEFAULT": "https://pypi.org/project/${content}/"
+  },
+  "type": "scheme",
+  "name": "Python Software Foundation",
+  "alias": null,
+  "provider": "psf",
+  "provider_id": "MIR:00000862",
+  "primary": 1,
+  "forward": "https://pypi.org/project/${ac}/",
+  "redirect": "https://pypi.org/project/${content}/",
+  "description": "The Python Package Index (PyPI) is a repository for Python packages.",
+  "location": "United States",
+  "institution": "Python Software Foundation",
+  "prefixed": 0,
+  "test": "numpy",
+  "probe": "https://pypi.org/project/numpy/",
+  "pattern": "^[a-zA-Z_][a-zA-Z0-9\\-_]+$",
+  "more": "https://www.python.org/psf/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "vcell",
+  "target": {
+    "DEFAULT": "https://vcell.org/biomodel-${content}"
+  },
+  "type": "scheme",
+  "name": "University of Connecticut Health Center",
+  "alias": null,
+  "provider": "uchc",
+  "provider_id": "MIR:00000892",
+  "primary": 1,
+  "forward": "https://vcell.org/biomodel-${ac}",
+  "redirect": "https://vcell.org/biomodel-${content}",
+  "description": "Models developed with the Virtual Cell (VCell) software prorgam.",
+  "location": "United States",
+  "institution": "University of Connecticut Health Center",
+  "prefixed": 0,
+  "test": "201022999",
+  "probe": "https://vcell.org/biomodel-201022999",
+  "pattern": "^\\d{5,}$",
+  "more": "https://health.uconn.edu/",
+  "revision": 0
+}

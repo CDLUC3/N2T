@@ -1,0 +1,23 @@
+{
+  "id": "refseq.gcf",
+  "target": {
+    "DEFAULT": "https://www.ncbi.nlm.nih.gov/datasets/genome/${content}"
+  },
+  "type": "scheme",
+  "name": "National Center for Biotechnology Information",
+  "alias": null,
+  "provider": "ncbi",
+  "provider_id": "MIR:00001029",
+  "primary": 1,
+  "forward": "https://www.ncbi.nlm.nih.gov/datasets/genome/${ac}",
+  "redirect": "https://www.ncbi.nlm.nih.gov/datasets/genome/${content}",
+  "description": "The genome assembly database contains detailed information about genome assemblies for eukaryota, bacteria and archaea. The scope of the genome collections database RefSeq accessions does not extend to viroids and bacteriophage.",
+  "location": "United States",
+  "institution": "National Center for Biotechnology Information",
+  "prefixed": 0,
+  "test": "GCF_000001405",
+  "probe": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405",
+  "pattern": "^GCF_[0-9]{9}(\\.[0-9]+)?$",
+  "more": "https://www.ncbi.nlm.nih.gov/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "idr",
+  "target": {
+    "DEFAULT": "https://idr.openmicroscopy.org/search/?query=Name:idr${content}"
+  },
+  "type": "scheme",
+  "name": "Open Microscopy Environment",
+  "alias": null,
+  "provider": "ome",
+  "provider_id": "MIR:00000705",
+  "primary": 1,
+  "forward": "https://idr.openmicroscopy.org/search/?query=Name:idr${ac}",
+  "redirect": "https://idr.openmicroscopy.org/search/?query=Name:idr${content}",
+  "description": "Image Data Resource (IDR) is an online, public data repository that seeks to store, integrate and serve image datasets from published scientific studies. We have collected and are continuing to receive existing and newly created “reference image\" datasets that are valuable resources for a broad community of users, either because they will be frequently accessed and cited or because they can serve as a basis for re-analysis and the development of new computational tools.",
+  "location": "United Kingdom",
+  "institution": "University of Dundee",
+  "prefixed": 0,
+  "test": "0001",
+  "probe": "https://idr.openmicroscopy.org/search/?query=Name:idr0001",
+  "pattern": "^[0-9]{4}$",
+  "more": "https://idr.openmicroscopy.org",
+  "revision": 0
+}

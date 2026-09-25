@@ -1,0 +1,23 @@
+{
+  "id": "minid.test",
+  "target": {
+    "DEFAULT": "https://hdl.handle.net/hdl:20.500.12633/${content}"
+  },
+  "type": "scheme",
+  "name": "FAIR Research",
+  "alias": null,
+  "provider": "fair",
+  "provider_id": "MIR:00000724",
+  "primary": 1,
+  "forward": "https://hdl.handle.net/hdl:20.500.12633/${ac}",
+  "redirect": "https://hdl.handle.net/hdl:20.500.12633/${content}",
+  "description": "Minid are identifiers used to provide robust reference to intermediate data generated during the course of a research investigation. This is a prefix for referencing identifiers in the minid test namespace. ",
+  "location": "United States",
+  "institution": "University of Southern California",
+  "prefixed": 0,
+  "test": "3SBPLMKKVEVR",
+  "probe": "https://hdl.handle.net/hdl:20.500.12633/3SBPLMKKVEVR",
+  "pattern": "^[A-Za-z0-9]+$",
+  "more": "https://fair-research.org",
+  "revision": 0
+}

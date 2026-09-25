@@ -1,0 +1,23 @@
+{
+  "id": "dg.4dfc",
+  "target": {
+    "DEFAULT": "https://nci-crdc.datacommons.io/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "NCI Data Commons Framework Services",
+  "alias": null,
+  "provider": "dg.4dfc",
+  "provider_id": "MIR:00000856",
+  "primary": 1,
+  "forward": "https://nci-crdc.datacommons.io/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://nci-crdc.datacommons.io/ga4gh/drs/v1/objects/${content}",
+  "description": "DRS server that follows the Gen3 implementation. Gen3 is a GA4GH compliant open source platform for developing framework services and data commons. Data commons accelerate and democratize the process of scientific discovery, especially over large or complex datasets. Gen3 is maintained by the Center for Translational Data Science at the University of Chicago. https://gen3.org",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "81944ba1-81d0-436e-8552-33d77a27834b",
+  "probe": "https://nci-crdc.datacommons.io/ga4gh/drs/v1/objects/81944ba1-81d0-436e-8552-33d77a27834b",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://nci-crdc.datacommons.io/",
+  "revision": 0
+}

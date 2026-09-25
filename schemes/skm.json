@@ -1,0 +1,23 @@
+{
+  "id": "skm",
+  "target": {
+    "DEFAULT": "https://skm.nib.si/search/identifiers/${content}"
+  },
+  "type": "scheme",
+  "name": "National Institute of Biology",
+  "alias": null,
+  "provider": "skm",
+  "provider_id": "MIR:00000967",
+  "primary": 1,
+  "forward": "https://skm.nib.si/search/identifiers/${ac}",
+  "redirect": "https://skm.nib.si/search/identifiers/${content}",
+  "description": "Stress Knowledge Map (SKM, available at https://skm.nib.si) is a knowledge graph resulting from the integration of dispersed published information on plant molecular responses to biotic and abiotic stressors. ",
+  "location": "Slovenia",
+  "institution": "National Institute of Biology",
+  "prefixed": 0,
+  "test": "rx00408",
+  "probe": "https://skm.nib.si/search/identifiers/rx00408",
+  "pattern": "^(rx|fc)[0-9]{5}$",
+  "more": "http://www.nib.si/eng/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "sedml.language",
+  "target": {
+    "DEFAULT": "https://sed-ml.org/urns.html#language:${content}"
+  },
+  "type": "scheme",
+  "name": "SED-ML Editors",
+  "alias": null,
+  "provider": "sedml",
+  "provider_id": "MIR:00000842",
+  "primary": 1,
+  "forward": "https://sed-ml.org/urns.html#language:${ac}",
+  "redirect": "https://sed-ml.org/urns.html#language:${content}",
+  "description": "Model format that can be used in conjunction with the Simulation Experimental Description Markup Language (SED-ML).",
+  "location": "United States",
+  "institution": "SED-ML Editors",
+  "prefixed": 0,
+  "test": "sbml.level-3.version-2",
+  "probe": "https://sed-ml.org/urns.html#language:sbml.level-3.version-2",
+  "pattern": "^[a-z]+(\\..*?)?$",
+  "more": "http://sed-ml.org/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dg.h35l",
+  "target": {
+    "DEFAULT": "https://externaldata.healdata.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "HEAL Data Platform",
+  "alias": null,
+  "provider": "dg.h34L",
+  "provider_id": "MIR:00000943",
+  "primary": 1,
+  "forward": "https://externaldata.healdata.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://externaldata.healdata.org/ga4gh/drs/v1/objects/${content}",
+  "description": "This website supports the management, analysis and sharing of data for the research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "007e4996-c902-49a0-8fe8-b363f1d3fb23",
+  "probe": "https://externaldata.healdata.org/ga4gh/drs/v1/objects/007e4996-c902-49a0-8fe8-b363f1d3fb23",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://externaldata.healdata.org/",
+  "revision": 0
+}

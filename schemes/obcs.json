@@ -1,0 +1,23 @@
+{
+  "id": "obcs",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols4/ontologies/obcs/classes?obo_id=OBCS:${content}"
+  },
+  "type": "scheme",
+  "name": "OBCS via OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00001052",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/ols4/ontologies/obcs/classes?obo_id=OBCS:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols4/ontologies/obcs/classes?obo_id=OBCS:${content}",
+  "description": "OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI)",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 1,
+  "test": "0000086",
+  "probe": "https://www.ebi.ac.uk/ols4/ontologies/obcs/classes?obo_id=OBCS:0000086",
+  "pattern": "^OBCS:\\d+$",
+  "more": "https://www.ebi.ac.uk/ols4/ontologies/obcs",
+  "revision": 0
+}

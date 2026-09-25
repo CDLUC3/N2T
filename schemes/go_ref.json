@@ -1,0 +1,23 @@
+{
+  "id": "go_ref",
+  "target": {
+    "DEFAULT": "https://geneontology.org/GO_REF/${content}"
+  },
+  "type": "scheme",
+  "name": "Gene Ontology Reference at The Gene Ontology Consortium",
+  "alias": null,
+  "provider": null,
+  "provider_id": "MIR:00100584",
+  "primary": 0,
+  "forward": "https://geneontology.org/GO_REF/${ac}",
+  "redirect": "https://geneontology.org/GO_REF/${content}",
+  "description": "The GO reference collection is a set of abstracts that can be cited in the GO ontologies (e.g. as dbxrefs for term definitions) and annotation files (in the Reference column). It provides two types of reference; It can be used to provide details of why specific Evidence codes (see http://identifiers.org/eco/) are assigned, or to present abstract-style descriptions of \"GO content\" meetings at which substantial changes in the ontologies are discussed and made.",
+  "location": "United States",
+  "institution": "The Gene Ontology Consortium",
+  "prefixed": 1,
+  "test": "0000041",
+  "probe": "https://geneontology.org/GO_REF/0000041",
+  "pattern": "^GO_REF:\\d{7}$",
+  "more": "http://www.geneontology.org",
+  "revision": 0
+}

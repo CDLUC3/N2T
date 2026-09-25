@@ -1,0 +1,23 @@
+{
+  "id": "civic.mpid",
+  "target": {
+    "DEFAULT": "https://civicdb.org/links/molecular_profile/${content}"
+  },
+  "type": "scheme",
+  "name": "Clinical Interpretation of Variants in Cancer (CIViC)",
+  "alias": null,
+  "provider": "civicdb",
+  "provider_id": "MIR:00000980",
+  "primary": 1,
+  "forward": "https://civicdb.org/links/molecular_profile/${ac}",
+  "redirect": "https://civicdb.org/links/molecular_profile/${content}",
+  "description": "CIViC Molecular Profiles are combinations of one or more CIViC variants. Most Molecular Profiles are “Simple” Molecular Profiles comprised of a single variant. In most cases, these can be considered equivalent to the CIViC concept of a Variant. However, increasingly clinical significance must be considered in the context of multiple variants simultaneously. Complex Molecular Profiles in CIViC allow for curation of such variant combinations. Regardless of the nature of the Molecular Profile (Simple or Complex), it must have a Predictive, Prognostic, Predisposing, Diagnostic, Oncogenic, or Functional clinical relevance to be entered in CIViC.",
+  "location": "United States",
+  "institution": "Washington University in St. Louis",
+  "prefixed": 0,
+  "test": "559",
+  "probe": "https://civicdb.org/links/molecular_profile/559",
+  "pattern": "^[0-9]+$",
+  "more": "https://civicdb.org/",
+  "revision": 0
+}

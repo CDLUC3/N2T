@@ -1,6 +1,23 @@
 {
   "id": "pmr",
-  "target": {},
-  "type": "commonspfx",
+  "target": {
+    "DEFAULT": "https://models.physiomeproject.org/exposure/${content}"
+  },
+  "type": "scheme",
+  "name": "University of Auckland",
+  "alias": null,
+  "provider": "abi",
+  "provider_id": "MIR:00000844",
+  "primary": 1,
+  "forward": "https://models.physiomeproject.org/exposure/${ac}",
+  "redirect": "https://models.physiomeproject.org/exposure/${content}",
+  "description": "Resource for the community to store, retrieve, search, reference, and reuse CellML models.",
+  "location": "New Zealand",
+  "institution": "University of Auckland",
+  "prefixed": 0,
+  "test": "ebf69ca24298b28b2361e7d43eb52d6c",
+  "probe": "https://models.physiomeproject.org/exposure/ebf69ca24298b28b2361e7d43eb52d6c",
+  "pattern": "^[a-z0-9]{32,32}$",
+  "more": "https://www.auckland.ac.nz/en.html",
   "revision": 0
 }

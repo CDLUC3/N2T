@@ -1,0 +1,23 @@
+{
+  "id": "biosimulators",
+  "target": {
+    "DEFAULT": "https://biosimulators.org/simulators/${content}"
+  },
+  "type": "scheme",
+  "name": "BioSimulators",
+  "alias": null,
+  "provider": "icahn",
+  "provider_id": "MIR:00000746",
+  "primary": 1,
+  "forward": "https://biosimulators.org/simulators/${ac}",
+  "redirect": "https://biosimulators.org/simulators/${content}",
+  "description": "BioSimulators is a registry of containerized simulation tools that support a common interface. The containers in BioSimulators support a range of modeling frameworks (e.g., logical, constraint-based, continuous kinetic, discrete kinetic), simulation algorithms (e.g., CVODE, FBA, SSA), and modeling formats (e.g., BGNL, SBML, SED-ML).",
+  "location": "United States",
+  "institution": "Icahn School of Medicine at Mount Sinai",
+  "prefixed": 0,
+  "test": "vcell",
+  "probe": "https://biosimulators.org/simulators/vcell",
+  "pattern": "^[a-zA-Z0-9-_]+$",
+  "more": "https://biosimulators.org/",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "gitlab",
+  "target": {
+    "DEFAULT": "https://gitlab.com/${content}"
+  },
+  "type": "scheme",
+  "name": "GitLab B.V.",
+  "alias": null,
+  "provider": "gitlab",
+  "provider_id": "MIR:00000900",
+  "primary": 1,
+  "forward": "https://gitlab.com/${ac}",
+  "redirect": "https://gitlab.com/${content}",
+  "description": "GitLab is The DevOps platform that empowers organizations to maximize the overall return on software development by delivering software faster and efficiently, while strengthening security and compliance. With GitLab, every team in your organization can collaboratively plan, build, secure, and deploy software to drive business outcomes faster with complete transparency, consistency and traceability.",
+  "location": "United States",
+  "institution": "GitLab B.V.",
+  "prefixed": 0,
+  "test": "morpheus.lab/morpheus",
+  "probe": "https://gitlab.com/morpheus.lab/morpheus",
+  "pattern": "^[0-9A-Za-z_][0-9A-Za-z-_()\\. ]*/[0-9A-Za-z_][0-9A-Za-z-_\\. ]*$",
+  "more": "https://gitlab.com/",
+  "revision": 0
+}

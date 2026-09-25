@@ -1,0 +1,23 @@
+{
+  "id": "runbiosimulations",
+  "target": {
+    "DEFAULT": "https://run.biosimulations.org/simulations/${content}"
+  },
+  "type": "scheme",
+  "name": "Icahn School of Medicine at Mount Sinai",
+  "alias": null,
+  "provider": "icahn",
+  "provider_id": "MIR:00000898",
+  "primary": 1,
+  "forward": "https://run.biosimulations.org/simulations/${ac}",
+  "redirect": "https://run.biosimulations.org/simulations/${content}",
+  "description": "runBioSimulations is a platform for sharing simulation experiments and their results. runBioSimulations enables investigators to use a wide range of simulation tools to execute a wide range of simulations. runBioSimulations permanently saves the results of these simulations, and investigators can share results by sharing URLs similar to sharing URLs for files with DropBox and Google Drive.",
+  "location": "United States",
+  "institution": "Icahn School of Medicine at Mount Sinai",
+  "prefixed": 0,
+  "test": "5fde96bdc5f1aa9ff0cce18a",
+  "probe": "https://run.biosimulations.org/simulations/5fde96bdc5f1aa9ff0cce18a",
+  "pattern": "^[0-9a-z]{24,24}$",
+  "more": "https://icahn.mssm.edu/",
+  "revision": 0
+}

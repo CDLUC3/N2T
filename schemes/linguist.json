@@ -1,0 +1,23 @@
+{
+  "id": "linguist",
+  "target": {
+    "DEFAULT": "https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml#${content}"
+  },
+  "type": "scheme",
+  "name": "GitHub, Inc.",
+  "alias": null,
+  "provider": "github",
+  "provider_id": "MIR:00000848",
+  "primary": 1,
+  "forward": "https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml#${ac}",
+  "redirect": "https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml#${content}",
+  "description": "Registry of programming languages for the Linguist program for detecting and highlighting programming languages.",
+  "location": "United States",
+  "institution": "GitHub, Inc.",
+  "prefixed": 0,
+  "test": "Python",
+  "probe": "https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml#Python",
+  "pattern": "^[a-zA-Z0-9 +#'*]+$",
+  "more": "https://github.com/",
+  "revision": 0
+}

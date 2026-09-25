@@ -1,0 +1,23 @@
+{
+  "id": "datanator.metabolite",
+  "target": {
+    "DEFAULT": "https://www.datanator.info/metabolite/${content}"
+  },
+  "type": "scheme",
+  "name": "Icahn School of Medicine at Mount Sinai",
+  "alias": null,
+  "provider": "icahn",
+  "provider_id": "MIR:00000772",
+  "primary": 1,
+  "forward": "https://www.datanator.info/metabolite/${ac}",
+  "redirect": "https://www.datanator.info/metabolite/${content}",
+  "description": "Datanator is an integrated database of genomic and biochemical data designed to help investigators find data about specific molecules and reactions in specific organisms and specific environments for meta-analyses and mechanistic models. Datanator currently includes metabolite concentrations, RNA modifications and half-lives, protein abundances and modifications, and reaction kinetics integrated from several databases and numerous publications. The Datanator website and REST API provide tools for extracting clouds of data about specific molecules and reactions in specific organisms and specific environments, as well as data about similar molecules and reactions in taxonomically similar organisms.",
+  "location": "United States",
+  "institution": "Icahn School of Medicine at Mount Sinai",
+  "prefixed": 0,
+  "test": "OUYCCCASQSFEME-MRVPVSSYSA-N",
+  "probe": "https://www.datanator.info/metabolite/OUYCCCASQSFEME-MRVPVSSYSA-N",
+  "pattern": "^[A-Z\\-]+$",
+  "more": "https://datanator.info/",
+  "revision": 0
+}

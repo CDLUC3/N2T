@@ -1,0 +1,23 @@
+{
+  "id": "civic.vgid",
+  "target": {
+    "DEFAULT": "https://civicdb.org/links/variant_group/${content}"
+  },
+  "type": "scheme",
+  "name": "Clinical Interpretation of Variants in Cancer (CIViC)",
+  "alias": null,
+  "provider": "civicdb",
+  "provider_id": "MIR:00000978",
+  "primary": 1,
+  "forward": "https://civicdb.org/links/variant_group/${ac}",
+  "redirect": "https://civicdb.org/links/variant_group/${content}",
+  "description": "Variant Groups in CIViC provide user-defined grouping of Variants within and between genes based on unifying characteristics. CIViC curators are required to define a cohesive rationale for grouping these variants together, summarize their relevance to cancer diagnosis, prognosis or treatment and highlight any treatments or cancers of particular relevance",
+  "location": "United States",
+  "institution": "Washington University in St. Louis",
+  "prefixed": 0,
+  "test": "16",
+  "probe": "https://civicdb.org/links/variant_group/16",
+  "pattern": "^[0-9]+$",
+  "more": "https://civicdb.org/",
+  "revision": 0
+}

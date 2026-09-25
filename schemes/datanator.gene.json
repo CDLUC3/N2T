@@ -1,0 +1,23 @@
+{
+  "id": "datanator.gene",
+  "target": {
+    "DEFAULT": "https://www.datanator.info/gene/${content}"
+  },
+  "type": "scheme",
+  "name": "Icahn School of Medicine at Mount Sinai",
+  "alias": null,
+  "provider": "icahn",
+  "provider_id": "MIR:00000740",
+  "primary": 1,
+  "forward": "https://www.datanator.info/gene/${ac}",
+  "redirect": "https://www.datanator.info/gene/${content}",
+  "description": "Datanator is an integrated database of genomic and biochemical data designed to help investigators find data about specific molecules and reactions in specific organisms and specific environments for meta-analyses and mechanistic models. Datanator currently includes metabolite concentrations, RNA modifications and half-lives, protein abundances and modifications, and reaction kinetics integrated from several databases and numerous publications. The Datanator website and REST API provide tools for extracting clouds of data about specific molecules and reactions in specific organisms and specific environments, as well as data about similar molecules and reactions in taxonomically similar organisms.",
+  "location": "United States",
+  "institution": "Icahn School of Medicine at Mount Sinai",
+  "prefixed": 0,
+  "test": "K00973",
+  "probe": "https://www.datanator.info/gene/K00973",
+  "pattern": "^K[0-9]+$",
+  "more": "https://datanator.info/",
+  "revision": 0
+}

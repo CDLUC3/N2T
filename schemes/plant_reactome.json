@@ -1,0 +1,23 @@
+{
+  "id": "plant_reactome",
+  "target": {
+    "DEFAULT": "https://plantreactome.gramene.org/content/detail/${content}"
+  },
+  "type": "scheme",
+  "name": "Plant Reactome via Gramene",
+  "alias": null,
+  "provider": "gramene",
+  "provider_id": "MIR:00001110",
+  "primary": 1,
+  "forward": "https://plantreactome.gramene.org/content/detail/${ac}",
+  "redirect": "https://plantreactome.gramene.org/content/detail/${content}",
+  "description": "PLANT REACTOME is an open-source, open access, manually curated and peer-reviewed pathway database. Pathway annotations are authored by expert biologists, in collaboration with the Reactome editorial staff and cross-referenced to many bioinformatics databases. These include project databases like Gramene, Ensembl, UniProt, ChEBI small molecule databases, PubMed, and Gene Ontology.",
+  "location": "United States",
+  "institution": "Oregon State University, CSHL, Ontario Institute for Cancer Research, and NYU",
+  "prefixed": 0,
+  "test": "R-ACH-1120024",
+  "probe": "https://plantreactome.gramene.org/content/detail/R-ACH-1120024",
+  "pattern": "^R-[A-Z]{3}-\\d+(-\\d+)?(\\.\\d+)?$",
+  "more": "https://www.gramene.org",
+  "revision": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ice.chem",
+  "target": {
+    "DEFAULT": "https://ice.ntp.niehs.nih.gov/api/v1/search?chemid=${content}"
+  },
+  "type": "scheme",
+  "name": "National Institute of Environmental Health Sciences",
+  "alias": null,
+  "provider": "niehs",
+  "provider_id": "MIR:00001081",
+  "primary": 1,
+  "forward": "https://ice.ntp.niehs.nih.gov/api/v1/search?chemid=${ac}",
+  "redirect": "https://ice.ntp.niehs.nih.gov/api/v1/search?chemid=${content}",
+  "description": "The Integrated Chemical Environment (ICE) provides high-quality curated data and appropriate tools to support development and evaluation of new, revised, and alternative methods. ICE provides free online access to curated in vivo and in vitro test data, in silico toxicity predictions and chemical property data, reference chemical lists, and computational tools for chemical characterization and predicting toxicity.\nICE supports the following: (i) Data integration: brings together available data, including data on formulations; (ii) Results exploration: enables dynamic, graphical exploration with publication-quality graphics; (iii) Data analysis: allows characterization of data using online workflows, and (iv) FAIR data access: data are findable, accessible, interoperable, and reusable.",
+  "location": "United States",
+  "institution": "National Institute of Environmental Health Sciences",
+  "prefixed": 0,
+  "test": "DTXSID7032004",
+  "probe": "https://ice.ntp.niehs.nih.gov/api/v1/search?chemid=DTXSID7032004",
+  "pattern": "^\\d{2,7}-\\d{2}-\\d|DTXSID\\d{7,9}|[A-Z]{14}-[A-Z]{8}[SN][A-Z]-[A-Z]$",
+  "more": "https://ice.ntp.niehs.nih.gov",
+  "revision": 0
+}

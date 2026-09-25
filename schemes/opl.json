@@ -1,6 +1,23 @@
 {
   "id": "opl",
-  "target": {},
-  "type": "commonspfx",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols4/ontologies/opl/classes?obo_id=OPL:${content}"
+  },
+  "type": "scheme",
+  "name": "OPL via OLS",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00001046",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/ols4/ontologies/opl/classes?obo_id=OPL:${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols4/ontologies/opl/classes?obo_id=OPL:${content}",
+  "description": "The Ontology for Parasite Lifecycle (OPL) models the life cycle stage details of various parasites, including Trypanosoma sp., Leishmania major, and Plasmodium sp., etc.",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 1,
+  "test": "0000134",
+  "probe": "https://www.ebi.ac.uk/ols4/ontologies/opl/classes?obo_id=OPL:0000134",
+  "pattern": "^OPL:\\d+$",
+  "more": "https://www.ebi.ac.uk/ols4/ontologies/opl",
   "revision": 0
 }

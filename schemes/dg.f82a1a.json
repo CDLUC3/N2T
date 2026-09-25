@@ -1,0 +1,23 @@
+{
+  "id": "dg.f82a1a",
+  "target": {
+    "DEFAULT": "https://data.kidsfirstdrc.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "Kids First",
+  "alias": null,
+  "provider": "dg.f82a1a",
+  "provider_id": "MIR:00000886",
+  "primary": 1,
+  "forward": "https://data.kidsfirstdrc.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://data.kidsfirstdrc.org/ga4gh/drs/v1/objects/${content}",
+  "description": "Full implementation of the DRS 1.1 standard with support for persistent identifiers. Open source DRS server that follows the Gen3 implementation. Gen3 is a GA4GH compliant open source platform for developing framework services and data commons. Data commons accelerate and democratize the process of scientific discovery, especially over large or complex datasets. Gen3 is maintained by the Center for Translational Data Science at the University of Chicago. https://gen3.org",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "00026f50-858a-446b-8ed9-b0e3ecd7b20e",
+  "probe": "https://data.kidsfirstdrc.org/ga4gh/drs/v1/objects/00026f50-858a-446b-8ed9-b0e3ecd7b20e",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://kidsfirstdrc.org",
+  "revision": 0
+}

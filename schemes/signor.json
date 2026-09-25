@@ -1,0 +1,23 @@
+{
+  "id": "signor",
+  "target": {
+    "DEFAULT": "https://signor.uniroma2.it/relation_result.php?id=${content}"
+  },
+  "type": "scheme",
+  "name": "SIGNOR",
+  "alias": null,
+  "provider": "signor",
+  "provider_id": "MIR:00000807",
+  "primary": 1,
+  "forward": "https://signor.uniroma2.it/relation_result.php?id=${ac}",
+  "redirect": "https://signor.uniroma2.it/relation_result.php?id=${content}",
+  "description": "SIGNOR, the SIGnaling Network Open Resource, organizes and stores in a structured format signaling information published in the scientific literature.",
+  "location": "Italy",
+  "institution": "University of Rome Tor Vergata",
+  "prefixed": 0,
+  "test": "SIGNOR-C2",
+  "probe": "https://signor.uniroma2.it/relation_result.php?id=SIGNOR-C2",
+  "pattern": "^SIGNOR\\-[A-Z]+\\d+$",
+  "more": "https://signor.uniroma2.it/",
+  "revision": 0
+}

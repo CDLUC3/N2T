@@ -1,6 +1,23 @@
 {
   "id": "sio",
-  "target": {},
-  "type": "commonspfx",
+  "target": {
+    "DEFAULT": "https://www.ebi.ac.uk/ols4/ontologies/sio/terms?short_form=${content}"
+  },
+  "type": "scheme",
+  "name": "European Bioinformatics Institute",
+  "alias": null,
+  "provider": "ols",
+  "provider_id": "MIR:00000850",
+  "primary": 1,
+  "forward": "https://www.ebi.ac.uk/ols4/ontologies/sio/terms?short_form=${ac}",
+  "redirect": "https://www.ebi.ac.uk/ols4/ontologies/sio/terms?short_form=${content}",
+  "description": "The semanticscience integrated ontology (SIO) provides a simple, integrated upper level ontology (types, relations) for consistent knowledge representation across physical, processual and informational entities.",
+  "location": "United Kingdom",
+  "institution": "European Bioinformatics Institute",
+  "prefixed": 0,
+  "test": "SIO_000276",
+  "probe": "https://www.ebi.ac.uk/ols4/ontologies/sio/terms?short_form=SIO_000276",
+  "pattern": "^SIO_\\d{6,6}$",
+  "more": "https://www.ebi.ac.uk/ols4/ontologies/sio",
   "revision": 0
 }

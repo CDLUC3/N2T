@@ -1,0 +1,23 @@
+{
+  "id": "gateway",
+  "target": {
+    "DEFAULT": "https://web.www.healthdatagateway.org/dataset/${content}"
+  },
+  "type": "scheme",
+  "name": "Health Data Research UK",
+  "alias": null,
+  "provider": "hdruk",
+  "provider_id": "MIR:00000697",
+  "primary": 1,
+  "forward": "https://web.www.healthdatagateway.org/dataset/${ac}",
+  "redirect": "https://web.www.healthdatagateway.org/dataset/${content}",
+  "description": "The Health Data Research Innovation Gateway (the 'Gateway') provides a common entry point to discover and enquire about access to UK health datasets for research and innovation. It provides detailed information about the datasets, which are held by members of the UK Health Data Research Alliance, such as a description, size of the population, and the legal basis for access.",
+  "location": "United Kingdom",
+  "institution": "Health Data Research UK",
+  "prefixed": 0,
+  "test": "fd8d0743-344a-4758-bb97-f8ad84a37357",
+  "probe": "https://web.www.healthdatagateway.org/dataset/fd8d0743-344a-4758-bb97-f8ad84a37357",
+  "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+  "more": "https://www.hdruk.ac.uk",
+  "revision": 0
+}

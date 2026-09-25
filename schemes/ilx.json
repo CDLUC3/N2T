@@ -1,0 +1,23 @@
+{
+  "id": "ilx",
+  "target": {
+    "DEFAULT": "https://scicrunch.org/scicrunch/interlex/view/ilx_${content}"
+  },
+  "type": "scheme",
+  "name": "FAIR Data Informatics Laboratory",
+  "alias": null,
+  "provider": "ilx",
+  "provider_id": "MIR:00000813",
+  "primary": 1,
+  "forward": "https://scicrunch.org/scicrunch/interlex/view/ilx_${ac}",
+  "redirect": "https://scicrunch.org/scicrunch/interlex/view/ilx_${content}",
+  "description": "InterLex is a dynamic lexicon, initially built on the foundation of NeuroLex (PMID: 24009581), of biomedical terms and common data elements designed to help improve the way that biomedical scientists communicate about their data, so that information systems can find data more easily and provide more powerful means of integrating data across distributed resources and datasets. InterLex allows for the association of data fields and data values to common data elements and terminologies enabling the crowdsourcing of data-terminology mappings within and across communities. InterLex provides a stable layer on top of the many other existing terminologies, lexicons, ontologies, and common data element collections and provides a set of inter-lexical and inter-data-lexical mappings. ",
+  "location": "United States",
+  "institution": "University of California, San Diego",
+  "prefixed": 0,
+  "test": "0101963",
+  "probe": "https://scicrunch.org/scicrunch/interlex/view/ilx_0101963",
+  "pattern": "^[0-9]+$",
+  "more": "https://www.fdilab.org",
+  "revision": 0
+}

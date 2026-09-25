@@ -1,0 +1,23 @@
+{
+  "id": "modeldb.concept",
+  "target": {
+    "DEFAULT": "https://modeldb.science/${content}"
+  },
+  "type": "scheme",
+  "name": "Yale University",
+  "alias": null,
+  "provider": "yale",
+  "provider_id": "MIR:00000904",
+  "primary": 1,
+  "forward": "https://modeldb.science/${ac}",
+  "redirect": "https://modeldb.science/${content}",
+  "description": "Concept used by ModelDB, an accessible location for storing and efficiently retrieving computational neuroscience models.",
+  "location": "United States",
+  "institution": "Yale University",
+  "prefixed": 0,
+  "test": "226812",
+  "probe": "https://modeldb.science/226812",
+  "pattern": "^\\d+$",
+  "more": "https://modeldb.science/",
+  "revision": 0
+}

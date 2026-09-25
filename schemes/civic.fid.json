@@ -1,0 +1,23 @@
+{
+  "id": "civic.fid",
+  "target": {
+    "DEFAULT": "https://civicdb.org/links/feature/${content}"
+  },
+  "type": "scheme",
+  "name": "Washington University in St. Louis",
+  "alias": null,
+  "provider": "civic",
+  "provider_id": "MIR:00001135",
+  "primary": 1,
+  "forward": "https://civicdb.org/links/feature/${ac}",
+  "redirect": "https://civicdb.org/links/feature/${content}",
+  "description": "A CIViC Feature is the basis for variants in CIViC. Supported feature types are Genes, Fusions, Factors and Regions. Features define the classes of variants supported in CIViC. Molecular Profiles consist of one or more variants.",
+  "location": "United States",
+  "institution": "Washington University in St. Louis",
+  "prefixed": 0,
+  "test": "5",
+  "probe": "https://civicdb.org/links/feature/5",
+  "pattern": "^[0-9]+$",
+  "more": "https://wustl.edu/",
+  "revision": 0
+}

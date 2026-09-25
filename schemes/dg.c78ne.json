@@ -1,0 +1,23 @@
+{
+  "id": "dg.c78ne",
+  "target": {
+    "DEFAULT": "https://caninedc.org/ga4gh/drs/v1/objects/${content}"
+  },
+  "type": "scheme",
+  "name": "Canine Data Commons",
+  "alias": null,
+  "provider": "dg.C78ne",
+  "provider_id": "MIR:00000939",
+  "primary": 1,
+  "forward": "https://caninedc.org/ga4gh/drs/v1/objects/${ac}",
+  "redirect": "https://caninedc.org/ga4gh/drs/v1/objects/${content}",
+  "description": "This website analyzes and shares genomic architecture of modern dog breeds and runs analysis for canine cancer to create clean, easy to navigate visualizations for data-driven discovery for canine cancer.",
+  "location": "United States",
+  "institution": "Open Commons Consortium",
+  "prefixed": 0,
+  "test": "0002346e-5ee7-45fb-8c92-8333f8e13854",
+  "probe": "https://caninedc.org/ga4gh/drs/v1/objects/0002346e-5ee7-45fb-8c92-8333f8e13854",
+  "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$",
+  "more": "https://caninedc.org/",
+  "revision": 0
+}
