@@ -53,7 +53,7 @@ python-dotenv==1.2.4
     # via pydantic-settings
 pyyaml==6.0.3
     # via n2t
-rslv @ git+https://github.com/CDLUC3/resolver.git@959cda886de48041b188f7ff8f0bd4210b1df9f9
+rslv @ git+https://github.com/CDLUC3/resolver.git@0f57c0a29a96f20addf097005b06152769bf7d5b
     # via n2t
 sqlalchemy==2.1.1
     # via
