@@ -11,13 +11,13 @@ anyio==4.15.1
     # via
     #   httpx
     #   starlette
-certifi==2026.7.22
+certifi==2026.10.23
     # via
     #   httpcore
     #   httpx
 click==8.5.0
     # via n2t
-fastapi==0.142.2
+fastapi==0.162.0
     # via
     #   n2t
     #   rslv
@@ -35,17 +35,17 @@ idna==3.20
     #   httpx
 jinja2==3.1.6
     # via rslv
-markupsafe==3.0.3
+markupsafe==3.0.4
     # via jinja2
-opentelemetry-api==1.45.0
+opentelemetry-api==1.45.1
     # via fastapi
-pydantic==2.13.5
+pydantic==2.14.1
     # via
     #   fastapi
     #   pydantic-settings
-pydantic-core==2.46.5
+pydantic-core==2.50.1
     # via pydantic
-pydantic-settings==2.15.0
+pydantic-settings==2.16.2
     # via
     #   n2t
     #   rslv
@@ -53,13 +53,13 @@ python-dotenv==1.2.4
     # via pydantic-settings
 pyyaml==6.0.3
     # via n2t
-rslv @ git+https://github.com/CDLUC3/resolver.git@0f57c0a29a96f20addf097005b06152769bf7d5b
+rslv @ git+https://github.com/CDLUC3/resolver.git@98fc30bcda91ee64974ab2001c266ce259c96a13
     # via n2t
-sqlalchemy==2.1.1
+sqlalchemy==2.1.6
     # via
     #   n2t
     #   rslv
-starlette==1.7.0
+starlette==1.10.0
     # via fastapi
 typing-extensions==4.16.0
     # via
@@ -68,6 +68,7 @@ typing-extensions==4.16.0
     #   opentelemetry-api
     #   pydantic
     #   pydantic-core
+    #   pydantic-settings
     #   sqlalchemy
     #   starlette
     #   typing-inspection
