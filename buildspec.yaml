@@ -1,47 +1,134 @@
+# Build specifications for AWS CodeBuild
+#   See: https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html
 version: 0.2
 
 phases:
   install:
     runtime-versions:
       nodejs: 22
+
+
   pre_build:
     commands:
-      # Set some ENV variables here because CF only allows a limit of 1000 characters in the
-      # EnvironmentVariable config for the Pipeline action :(
-      - export AWS_VERSION=$(aws --version)
+      - |
+        echo "Supplied Vars:"
+        echo "  AWS_REGION - ${AWS_REGION}"
+        echo "  ECR_REGISTRY - ${ECR_REGISTRY}"
+        echo "  ECR_REPOSITORY_NAME - ${ECR_REPOSITORY_NAME}"
+        echo "  TASKDEF_IMAGETAG=${TASKDEF_IMAGETAG}"
+        echo "  SCHEDULED_BUILD=${SCHEDULED_BUILD}"
+        echo "  SSM_PATH=${SSM_PATH}"
+        echo "  UPDATE_RELEASE_MANIFEST=${UPDATE_RELEASE_MANIFEST}"
+      # for debugging:
+      #- echo "Full Environment"
+      #- env | sort
 
-      # Fetch the ECR repository name
-      - echo $ECR_REPOSITORY_URI >> .ecr
-      - export SHORT_ECR_URI=$(awk '{gsub("$ECR_REPOSITORY_NAME", "");print}' .ecr)
-      - rm .ecr
+      # set up ECR credentials
+      - echo Log in to Amazon ECR ...
+      - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $ECR_REGISTRY
 
-      # Set the repository URI to your ECR image and add an image tag with the first seven characters of the Git
-      # commit ID of the source.
-      - echo Logging in to Amazon ECR ...
-      - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $SHORT_ECR_URI
-      - IMAGE_TAG="${CODEBUILD_RESOLVED_SOURCE_VERSION:0:7}"
+      # Check if this in an initial build.
+      #
+      # Query ECR repo for an image with the TASKDEF_IMAGETAG.
+      # If not, set INITIAL_BUILD to true.
+      # This is used post_build to push a TASKDEF_IMAGETAG tag the repo.
+      - |
+        aws ecr describe-images \
+          --repository-name ${ECR_REPOSITORY_NAME} \
+          --image-ids imageTag=${TASKDEF_IMAGETAG} \
+          2>&1 > /dev/null && INITIAL_BUILD="false" || INITIAL_BUILD="true"
+      - echo "INITIAL_BUILD=$INITIAL_BUILD"
+
+      # Check if this is a scheduled build.
+      #
+      # In a scheduled build, codepipeline sources a default branch.
+      # We obtain the semantic version for the current deployed application from
+      # our deployment manifest in SSM ParameterStore at $SSM_PATH.
+      # We then check out that tag and proceed to build as usual.
+      - |
+        if [ -n "$SCHEDULED_BUILD" -a "$SCHEDULED_BUILD" == "true" ]; then
+          echo 'This is a scheduled build'
+          echo 'Get our "DEPLOYED_RELEASE" from deployment manifest'
+          DEPLOYED_RELEASE=$(aws --output text ssm get-parameter --name $SSM_PATH --query Parameter.Value)
+          echo "DEPLOYED_RELEASE=$DEPLOYED_RELEASE"
+          echo "checkout $DEPLOYED_RELEASE as a git tag"
+          git checkout $DEPLOYED_RELEASE
+          if [ "$?" != "0" ]; then
+            echo "Attempt to run git checkout $DEPLOYED_RELEASE failed. Exiting!"
+            exit 1
+          fi
+        fi
+
+
+      # Generate image tags
+      #
+      # get the first 7 chars of commit id provide by codebuild
+      - COMMIT=$(git rev-parse --short HEAD)
+      # Get release or semantic version tags for commit
+      # HINT: validate the egrep regex matches your tagging convention.
+      - RELEASE_TAG=$(git tag --points-at $COMMIT | egrep "^[0-9]+\.[0-9]+\.[0-9]+$" || echo '')
+      - SEMVER_TAG=$(git tag --points-at $COMMIT | egrep "^[0-9]+\.[0-9]+\.[0-9]-\w+$" || echo '')
+      # Get any other tags for commit
+      - OTHER_TAG=$(git tag --points-at $COMMIT | egrep -v "^[0-9]+\.[0-9]+\.[0-9]+" || echo '')
+      - |
+        if [ -n "$RELEASE_TAG" ]; then
+            IMAGE_TAG=$RELEASE_TAG
+        elif [ -n "$SEMVER_TAG" ]; then
+            IMAGE_TAG=$SEMVER_TAG
+        elif [ -n "$OTHER_TAG" ]; then
+            IMAGE_TAG=$OTHER_TAG
+        else
+            IMAGE_TAG=$COMMIT
+        fi
+      # In case multiple tags reference COMMIT, extract the last matching tag in IMAGE_TAG string
+      - IMAGE_TAG=($IMAGE_TAG)
+      - IMAGE_TAG=${IMAGE_TAG[-1]}
+      # timestamp
+      - BUILD_DATE=$(TZ='America/Los_Angeles' date +"%Y%m%d.%H.%M.%S")
+
+      # report tags
+      - |
+        echo "Tag Info:"
+        echo "  COMMIT=$COMMIT"
+        echo "  RELEASE_TAG=$RELEASE_TAG"
+        echo "  SEMVER_TAG=$SEMVER_TAG"
+        echo "  OTHER_TAG=$OTHER_TAG"
+        echo "  IMAGE_TAG=$IMAGE_TAG"
+        echo "  BUILD_DATE=$BUILD_DATE"
+        echo "  INITIAL_BUILD=$INITIAL_BUILD"
+
 
   build:
-      commands:
-        - echo "Running build - started on `date`"
-        - echo Building the Docker image...
-        - cd $CODEBUILD_SRC_DIR
-        - docker buildx build --platform linux/amd64 -f Dockerfile.aws -t $ECR_REPOSITORY_URI:$IMAGE_TAG .
+    commands:
+      - cd $CODEBUILD_SRC_DIR
+      - DOCKERFILE=Dockerfile.aws
+      - echo Building the Docker image...
+      - docker buildx build --platform linux/amd64 -f $DOCKERFILE -t ${ECR_REPOSITORY_NAME}:${IMAGE_TAG} .
+
 
   post_build:
     commands:
-      # Push the Docker image to the ECR repository. Fargate will pick it up an deploy automatically
-      - echo Build completed on `date`
+      - echo Build completed at `date`
       - echo Pushing the Docker images...
       - cd $CODEBUILD_SRC_DIR
-      - docker push $ECR_REPOSITORY_URI:$IMAGE_TAG
+      - docker tag ${ECR_REPOSITORY_NAME}:${IMAGE_TAG} ${ECR_REGISTRY}/${ECR_REPOSITORY_NAME}:${IMAGE_TAG}
+      - docker tag ${ECR_REPOSITORY_NAME}:${IMAGE_TAG} ${ECR_REGISTRY}/${ECR_REPOSITORY_NAME}:${IMAGE_TAG}-${BUILD_DATE}
+      - docker push ${ECR_REGISTRY}/${ECR_REPOSITORY_NAME}:${IMAGE_TAG}
+      - docker push ${ECR_REGISTRY}/${ECR_REPOSITORY_NAME}:${IMAGE_TAG}-${BUILD_DATE}
+      - |
+        if [ "$INITIAL_BUILD" == "true" ]; then 
+          echo "This is and initial build.  Pushing ${TASKDEF_IMAGETAG} tag also."
+          docker tag ${ECR_REPOSITORY_NAME}:${IMAGE_TAG} ${ECR_REGISTRY}/${ECR_REPOSITORY_NAME}:${TASKDEF_IMAGETAG}
+          docker push ${ECR_REGISTRY}/${ECR_REPOSITORY_NAME}:${TASKDEF_IMAGETAG}
+        fi
 
-      - echo Writing image definitions file...
-      - printf '[{"name":"%s","imageUri":"%s"}]' $TASK_DEFINITION_CONTAINER_NAME $ECR_REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-
-      - echo Build completed on `date`
-
-artifacts:
-  # The Deploy step is expecting this name
-  files: imagedefinitions.json
-
+      # Check UPDATE_RELEASE_MANIFEST
+      #
+      # If indicated, we auto-update release-manifest when semver is a dev tag
+      - |
+        if [ "$UPDATE_RELEASE_MANIFEST" == "true" ]; then
+          if [ -n "$(echo $IMAGE_TAG | egrep "^[0-9]+\.[0-9]+\.[0-9]-dev[0-9]+$")" ]; then
+            echo "Updating release-manifest"
+            aws ssm put-parameter --name $SSM_PATH --value $IMAGE_TAG --type String --overwrite
+          fi
+        fi
